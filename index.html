@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Copart / IAA External Review Analysis Tool</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand-wrap">
+      <img
+        id="brand-logo"
+        class="brand-logo"
+        src="assets/copart-logo.svg"
+        alt="Copart logo"
+      />
+      <div>
+        <h1 id="app-title">Copart External Review Analysis Tool</h1>
+      </div>
+    </div>
+    <div class="business-switcher" id="business-switcher" aria-label="Website selector">
+      <button type="button" class="business-option is-active" data-business="copart" aria-pressed="true">
+        <img src="assets/copart-logo.svg" alt="Copart" />
+        <span>Copart</span>
+      </button>
+      <button type="button" class="business-option" data-business="iaa" aria-pressed="false">
+        <img src="assets/iaa-logo.png" alt="IAA" />
+        <span>IAA</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <section class="sentiment-panel negative" id="negative-panel" data-sentiment="negative">
+      <div class="panel-title-row">
+        <h2>Negative Reviews</h2>
+        <div class="panel-controls">
+          <label>
+            Website
+            <select class="website-filter"></select>
+          </label>
+          <label>
+            Year
+            <select class="year-filter"></select>
+          </label>
+          <label>
+            Month
+            <select class="month-filter"></select>
+          </label>
+          <button class="download-btn" type="button">Download CSV</button>
+        </div>
+      </div>
+
+      <div class="panel-layout">
+        <div class="left-col">
+          <article class="chart-card">
+            <h3>Tier 1</h3>
+            <div class="chart tier1-chart"></div>
+          </article>
+
+          <article class="chart-card tier2-card is-hidden">
+            <div class="chart-title-line">
+              <h3>Tier 2</h3>
+              <button type="button" class="clear-tier1">Clear Tier 1</button>
+            </div>
+            <p class="selected-label selected-tier1-label"></p>
+            <div class="chart tier2-chart"></div>
+          </article>
+
+          <article class="chart-card tier3-card is-hidden">
+            <div class="chart-title-line">
+              <h3>Tier 3</h3>
+              <button type="button" class="clear-tier2">Clear Tier 2</button>
+            </div>
+            <p class="selected-label selected-tier2-label"></p>
+            <div class="chart tier3-chart"></div>
+          </article>
+        </div>
+
+        <aside class="right-col">
+          <article class="summary-card">
+            <h3>Top Reviewed Topics (Top 10)</h3>
+            <ol class="top-topics"></ol>
+          </article>
+
+          <article class="summary-card">
+            <h3>Top Websites By Current Tier Level</h3>
+            <div class="website-tier-table"></div>
+          </article>
+
+          <article class="summary-card">
+            <h3>Selected Tier Summary (Top 5 Reviews)</h3>
+            <p class="selection-path"></p>
+            <div class="selection-metrics"></div>
+            <ol class="top-reviews"></ol>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <section class="sentiment-panel positive" id="positive-panel" data-sentiment="positive">
+      <div class="panel-title-row">
+        <h2>Positive / General Reviews and Questions</h2>
+        <div class="panel-controls">
+          <label>
+            Website
+            <select class="website-filter"></select>
+          </label>
+          <label>
+            Year
+            <select class="year-filter"></select>
+          </label>
+          <label>
+            Month
+            <select class="month-filter"></select>
+          </label>
+          <button class="download-btn" type="button">Download CSV</button>
+        </div>
+      </div>
+
+      <div class="panel-layout">
+        <div class="left-col">
+          <article class="chart-card">
+            <h3>Tier 1</h3>
+            <div class="chart tier1-chart"></div>
+          </article>
+
+          <article class="chart-card tier2-card is-hidden">
+            <div class="chart-title-line">
+              <h3>Tier 2</h3>
+              <button type="button" class="clear-tier1">Clear Tier 1</button>
+            </div>
+            <p class="selected-label selected-tier1-label"></p>
+            <div class="chart tier2-chart"></div>
+          </article>
+
+          <article class="chart-card tier3-card is-hidden">
+            <div class="chart-title-line">
+              <h3>Tier 3</h3>
+              <button type="button" class="clear-tier2">Clear Tier 2</button>
+            </div>
+            <p class="selected-label selected-tier2-label"></p>
+            <div class="chart tier3-chart"></div>
+          </article>
+        </div>
+
+        <aside class="right-col">
+          <article class="summary-card">
+            <h3>Top Reviewed Topics (Top 10)</h3>
+            <ol class="top-topics"></ol>
+          </article>
+
+          <article class="summary-card">
+            <h3>Top Websites By Current Tier Level</h3>
+            <div class="website-tier-table"></div>
+          </article>
+
+          <article class="summary-card">
+            <h3>Selected Tier Summary (Top 5 Reviews)</h3>
+            <p class="selection-path"></p>
+            <div class="selection-metrics"></div>
+            <ol class="top-reviews"></ol>
+          </article>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <section class="sources" id="sources-section">
+    <details class="sources-dropdown">
+      <summary>Collected Sources</summary>
+      <ul id="source-list"></ul>
+    </details>
+  </section>
+
+  <script src="data/tiers-data.js"></script>
+  <script src="data/reviews-data.js"></script>
+  <script src="data/reviews-data-iaa.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
