@@ -24,29 +24,64 @@ concurrency:
 jobs:
   refresh-data:
     runs-on: ubuntu-latest
+    timeout-minutes: 90
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: "requirements.txt"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: python -m pip install --disable-pip-version-check -r requirements.txt
 
-      - name: Refresh data
+      - name: Resolve refresh window
+        id: refresh-window
         env:
           INPUT_SINCE: ${{ github.event.inputs.since }}
           INPUT_UNTIL: ${{ github.event.inputs.until }}
         run: |
-          if [ -n "$INPUT_UNTIL" ]; then
-            python scripts/refresh_review_data.py --since "${INPUT_SINCE:-2023-01-01}" --until "$INPUT_UNTIL"
+          if [ -n "$INPUT_SINCE" ]; then
+            SINCE_VALUE="$INPUT_SINCE"
           else
-            python scripts/refresh_review_data.py --since "${INPUT_SINCE:-2023-01-01}"
+            SINCE_VALUE="2023-01-01"
           fi
+          if [ -n "$INPUT_UNTIL" ]; then
+            UNTIL_VALUE="$INPUT_UNTIL"
+          else
+            UNTIL_VALUE="$(date -u -d "$(date -u +%Y-%m-01) -1 day" +%F)"
+          fi
+          echo "since=$SINCE_VALUE" >> "$GITHUB_OUTPUT"
+          echo "until=$UNTIL_VALUE" >> "$GITHUB_OUTPUT"
+          echo "Refreshing reviews from $SINCE_VALUE through $UNTIL_VALUE"
+
+      - name: Build Copart review data
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: |
+          python scripts/build_reviews.py \
+            --since "${{ steps.refresh-window.outputs.since }}" \
+            --until "${{ steps.refresh-window.outputs.until }}" \
+            --target 0 \
+            --max-output 120000
+
+      - name: Build IAA review data
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: |
+          python scripts/build_reviews_iaa.py \
+            --since "${{ steps.refresh-window.outputs.since }}" \
+            --until "${{ steps.refresh-window.outputs.until }}" \
+            --target 0 \
+            --max-output 120000
+
+      - name: Build JS data bundles
+        run: python scripts/build_js_data.py
 
       - name: Prepare Pages artifact
         run: |
@@ -60,10 +95,10 @@ jobs:
           touch site-dist/.nojekyll
 
       - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: site-dist
 
@@ -71,7 +106,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .
+          git add data/reviews.json data/reviews.csv data/reviews-iaa.json data/reviews-iaa.csv data/reviews-data.js data/reviews-data-iaa.js
           if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0
@@ -89,4 +124,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
