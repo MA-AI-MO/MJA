@@ -139,6 +139,7 @@ class Collector:
         self.allowed_paths = self._load_allowed_paths()
         self.records = []
         self._seen = set()
+        self.collector_failures = []
         self._build_path_constants()
 
     def _load_allowed_paths(self):
@@ -1326,6 +1327,7 @@ class Collector:
                 "generated_at_utc": datetime.now(timezone.utc).isoformat(),
                 "since_date": self.since,
                 "until_date": self.until,
+                "collector_failures": self.collector_failures,
                 "youtube_excluded": True,
                 "usa_only": False,
                 "english_only": True,
@@ -1362,6 +1364,25 @@ class Collector:
             writer.writeheader()
             writer.writerows(rows)
 
+    def run_collectors(self):
+        collectors = [
+            ("google_play", self.collect_google_play),
+            ("trustpilot", self.collect_trustpilot),
+            ("reddit_pullpush", self.collect_reddit_pullpush),
+            ("bbb_customer_reviews", self.collect_bbb_customer_reviews),
+            ("bbb_complaints", self.collect_bbb_complaints),
+            ("pissedconsumer", self.collect_pissedconsumer),
+            ("ripoffreport", self.collect_ripoffreport),
+            ("smartcustomer", self.collect_smartcustomer),
+            ("apple", self.collect_apple),
+        ]
+        for name, fn in collectors:
+            try:
+                fn()
+            except Exception as exc:
+                self.collector_failures.append({"collector": name, "error": str(exc)})
+                print(f"[warn] collector failed: {name}: {exc}")
+
 
 def main():
     parser = argparse.ArgumentParser(description="Collect and classify IAA reviews")
@@ -1373,15 +1394,7 @@ def main():
 
     collector = Collector(target=args.target, since=args.since, until=args.until, max_output=args.max_output)
 
-    collector.collect_google_play()
-    collector.collect_trustpilot()
-    collector.collect_reddit_pullpush()
-    collector.collect_bbb_customer_reviews()
-    collector.collect_bbb_complaints()
-    collector.collect_pissedconsumer()
-    collector.collect_ripoffreport()
-    collector.collect_smartcustomer()
-    collector.collect_apple()
+    collector.run_collectors()
 
     collector.finalize()
 
