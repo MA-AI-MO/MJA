@@ -88,7 +88,7 @@ jobs:
           mkdir -p site-dist
           cp index.html site-dist/index.html
           cp index.html site-dist/404.html
-          cp app.js site-dist/app.js
+          base64 -d app.js.gz.b64 | gunzip > site-dist/app.js
           cp styles.css site-dist/styles.css
           cp -R assets site-dist/assets
           cp -R data site-dist/data

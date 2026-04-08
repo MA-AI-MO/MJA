@@ -8,6 +8,7 @@ on:
     paths:
       - index.html
       - app.js
+      - app.js.gz.b64
       - styles.css
       - 404.html
       - assets/**
@@ -38,7 +39,7 @@ jobs:
           mkdir -p site-dist
           cp index.html site-dist/index.html
           if [ -f 404.html ]; then cp 404.html site-dist/404.html; else cp index.html site-dist/404.html; fi
-          cp app.js site-dist/app.js
+          base64 -d app.js.gz.b64 | gunzip > site-dist/app.js
           cp styles.css site-dist/styles.css
           cp -R assets site-dist/assets
           cp -R data site-dist/data
