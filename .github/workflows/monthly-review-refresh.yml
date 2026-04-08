@@ -14,6 +14,12 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
   refresh-data:
@@ -42,6 +48,25 @@ jobs:
             python scripts/refresh_review_data.py --since "${INPUT_SINCE:-2023-01-01}"
           fi
 
+      - name: Prepare Pages artifact
+        run: |
+          mkdir -p site-dist
+          cp index.html site-dist/index.html
+          cp index.html site-dist/404.html
+          cp app.js site-dist/app.js
+          cp styles.css site-dist/styles.css
+          cp -R assets site-dist/assets
+          cp -R data site-dist/data
+          touch site-dist/.nojekyll
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site-dist
+
       - name: Commit and push refreshed data
         run: |
           git config user.name "github-actions[bot]"
@@ -53,3 +78,15 @@ jobs:
           fi
           git commit -m "Automated monthly review data refresh"
           git push
+
+  deploy:
+    needs: refresh-data
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
