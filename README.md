@@ -66,7 +66,6 @@ The repository includes a GitHub Actions workflow at `.github/workflows/monthly-
 - Scheduled run: monthly on the 2nd day of the month
 - Manual run: GitHub repo `Actions` > `Monthly review data refresh` > `Run workflow`
 - Default behavior: refreshes data through the last completed month, commits the updated `data/` files back to `main`, and deploys the site to GitHub Pages in the same workflow
-- One-time GitHub setting: in repo `Settings` > `Pages`, change the source to `GitHub Actions`
 
 ## Share With Someone Else
 
