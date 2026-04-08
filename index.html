@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Copart / IAA External Review Analysis Tool</title>
+  <title>Copart / IAA Web Sentiment Analysis Tool</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -16,7 +16,7 @@
         alt="Copart logo"
       />
       <div>
-        <h1 id="app-title">Copart External Review Analysis Tool</h1>
+        <h1 id="app-title">Copart Web Sentiment Analysis Tool</h1>
       </div>
     </div>
     <div class="business-switcher" id="business-switcher" aria-label="Website selector">
@@ -36,18 +36,18 @@
       <div class="panel-title-row">
         <h2>Negative Reviews</h2>
         <div class="panel-controls">
-          <label>
-            Website
-            <select class="website-filter"></select>
-          </label>
-          <label>
-            Year
-            <select class="year-filter"></select>
-          </label>
-          <label>
-            Month
-            <select class="month-filter"></select>
-          </label>
+          <div class="filter-group">
+            <span class="filter-label">Website</span>
+            <div class="website-filter"></div>
+          </div>
+          <div class="filter-group">
+            <span class="filter-label">Year</span>
+            <div class="year-filter"></div>
+          </div>
+          <div class="filter-group">
+            <span class="filter-label">Month</span>
+            <div class="month-filter"></div>
+          </div>
           <button class="download-btn" type="button">Download CSV</button>
         </div>
       </div>
@@ -90,7 +90,12 @@
           </article>
 
           <article class="summary-card">
-            <h3>Selected Tier Summary (Top 5 Reviews)</h3>
+            <h3>AI Summary Of Current Selection</h3>
+            <div class="ai-summary"></div>
+          </article>
+
+          <article class="summary-card">
+            <h3>Selected Tier Summary (3 Representative Reviews)</h3>
             <p class="selection-path"></p>
             <div class="selection-metrics"></div>
             <ol class="top-reviews"></ol>
@@ -103,18 +108,18 @@
       <div class="panel-title-row">
         <h2>Positive / General Reviews and Questions</h2>
         <div class="panel-controls">
-          <label>
-            Website
-            <select class="website-filter"></select>
-          </label>
-          <label>
-            Year
-            <select class="year-filter"></select>
-          </label>
-          <label>
-            Month
-            <select class="month-filter"></select>
-          </label>
+          <div class="filter-group">
+            <span class="filter-label">Website</span>
+            <div class="website-filter"></div>
+          </div>
+          <div class="filter-group">
+            <span class="filter-label">Year</span>
+            <div class="year-filter"></div>
+          </div>
+          <div class="filter-group">
+            <span class="filter-label">Month</span>
+            <div class="month-filter"></div>
+          </div>
           <button class="download-btn" type="button">Download CSV</button>
         </div>
       </div>
@@ -157,7 +162,12 @@
           </article>
 
           <article class="summary-card">
-            <h3>Selected Tier Summary (Top 5 Reviews)</h3>
+            <h3>AI Summary Of Current Selection</h3>
+            <div class="ai-summary"></div>
+          </article>
+
+          <article class="summary-card">
+            <h3>Selected Tier Summary (3 Representative Reviews)</h3>
             <p class="selection-path"></p>
             <div class="selection-metrics"></div>
             <ol class="top-reviews"></ol>
