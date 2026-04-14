@@ -85,13 +85,14 @@ jobs:
 
       - name: Prepare Pages artifact
         run: |
-          mkdir -p site-dist
+          rm -rf site-dist
+          mkdir -p site-dist/data site-dist/assets
           cp index.html site-dist/index.html
           cp index.html site-dist/404.html
           base64 -d app.js.gz.b64 | gunzip > site-dist/app.js
           cp styles.css site-dist/styles.css
-          cp -R assets site-dist/assets
-          cp -R data site-dist/data
+          cp -R assets/. site-dist/assets/
+          cp -R data/. site-dist/data/
           touch site-dist/.nojekyll
 
       - name: Configure GitHub Pages
