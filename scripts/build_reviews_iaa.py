@@ -65,6 +65,51 @@ APPLE_APP_IDS = [
 
 APPLE_COUNTRIES = ["us", "ca", "gb"]
 
+US_GEO_MARKERS = {
+    " usa ", " united states ", " us yard ", " us lot ", " us auction ",
+    " iaa chicago ", " iaa houston ", " iaa dallas ", " iaa florida ", " iaa california ",
+    " iaai chicago ", " iaai houston ", " iaai dallas ", " iaai florida ", " iaai california ",
+    " buying from the us ", " bought from the us ", " shipped from the us ",
+    " shipping to the us ", " imported from the us ", " dmv ", " salvage title ",
+    " texas ", " dallas ", " houston ", " florida ", " miami ", " california ",
+    " los angeles ", " new jersey ", " new york ", " chicago ", " arizona ",
+    " nevada ", " georgia ", " north carolina ", " south carolina ", " illinois ",
+    " pennsylvania ", " ohio ", " washington state ", " united states yard ",
+}
+STRONG_US_GEO_MARKERS = {
+    " us yard ", " us lot ", " us auction ",
+    " iaa chicago ", " iaa houston ", " iaa dallas ", " iaa florida ", " iaa california ",
+    " iaai chicago ", " iaai houston ", " iaai dallas ", " iaai florida ", " iaai california ",
+    " buying from the us ", " bought from the us ", " purchased from the us ",
+    " purchase from the us ", " shipped from the us ", " shipped to the us ",
+    " shipping to the us ", " imported from the us ", " imported to the us ",
+    " import into the us ", " export to the us ", " exported to the us ",
+    " texas ", " dallas ", " houston ", " florida ",
+    " miami ", " california ", " los angeles ", " new jersey ", " new york ",
+    " chicago ", " arizona ", " nevada ", " north carolina ",
+    " south carolina ", " illinois ", " pennsylvania ", " ohio ", " washington state ",
+}
+
+NON_US_GEO_MARKERS = {
+    " uk ", " united kingdom ", " england ", " scotland ", " wales ", " northern ireland ",
+    " london ", " bristol ", " manchester ", " canada ", " ontario ", " alberta ",
+    " british columbia ", " manitoba ", " saskatchewan ", " mpi ", " icbc ",
+    " dvla ", " mot ", " v5c ", " vat ", " £", " ł", " australia ", " new zealand ",
+}
+
+MIXED_SOURCE_WEBSITES = {"reddit.com", "pissedconsumer.com", "smartcustomer.com", "ripoffreport.com"}
+EXPECTED_SOURCE_WEBSITES = [
+    "play.google.com",
+    "apps.apple.com",
+    "bbb.org",
+    "trustpilot.com",
+    "reddit.com",
+    "pissedconsumer.com",
+    "ripoffreport.com",
+    "smartcustomer.com",
+]
+REQUIRED_SOURCE_WEBSITES = ["play.google.com", "apps.apple.com", "bbb.org"]
+
 BBB_SEARCH_URL = "https://www.bbb.org/search?find_country=USA&find_text=Insurance+Auto+Auctions&find_type=business"
 BBB_FALLBACK_PROFILES = [
     "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839",
@@ -140,6 +185,9 @@ class Collector:
         self.records = []
         self._seen = set()
         self.collector_failures = []
+        self.geo_validation_counts = Counter()
+        self.geo_excluded_counts = Counter()
+        self.geo_excluded_examples = []
         self._build_path_constants()
 
     def _load_allowed_paths(self):
@@ -253,6 +301,72 @@ class Collector:
             return d.date().isoformat()
         except Exception:
             return "1970-01-01"
+
+    @staticmethod
+    def geo_haystack(source_label: str, source_url: str, text: str) -> str:
+        return f" {source_label or ''} {source_url or ''} {text or ''} ".lower()
+
+    @staticmethod
+    def has_geo_marker(haystack: str, markers: set[str]) -> bool:
+        for marker in markers:
+            cleaned = str(marker or "").strip().lower()
+            if not cleaned:
+                continue
+            if re.fullmatch(r"[a-z0-9 ]+", cleaned):
+                pattern = rf"(?<![a-z0-9]){re.escape(cleaned)}(?![a-z0-9])"
+                if re.search(pattern, haystack):
+                    return True
+            elif cleaned in haystack:
+                return True
+        return False
+
+    def validate_us_scope(self, source_website: str, source_label: str, source_url: str, text: str):
+        label_lower = str(source_label or "").lower()
+        url_lower = str(source_url or "").lower()
+        text_haystack = f" {text or ''} ".lower()
+        has_strong_us_marker = self.has_geo_marker(text_haystack, STRONG_US_GEO_MARKERS)
+        has_non_us_marker = self.has_geo_marker(text_haystack, NON_US_GEO_MARKERS)
+
+        if source_website == "bbb.org":
+            if has_non_us_marker and not has_strong_us_marker:
+                return False, "bbb_us_profile_non_us_marker"
+            return True, "bbb_us_business"
+
+        if source_website == "play.google.com":
+            if "gl=us" in url_lower:
+                if has_non_us_marker and not has_strong_us_marker:
+                    return False, "google_play_us_store_non_us_marker"
+                return True, "google_play_us_store"
+            if has_strong_us_marker:
+                return True, "google_play_us_exception"
+            return False, "google_play_non_us_store"
+
+        if source_website == "apps.apple.com":
+            if "/us/" in url_lower:
+                if has_non_us_marker and not has_strong_us_marker:
+                    return False, "apple_us_store_non_us_marker"
+                return True, "apple_us_store"
+            if has_strong_us_marker:
+                return True, "apple_us_exception"
+            return False, "apple_non_us_store"
+
+        if source_website == "trustpilot.com":
+            if "(iaai.com)" in label_lower:
+                if has_non_us_marker and not has_strong_us_marker:
+                    return False, "trustpilot_us_slug_non_us_marker"
+                return True, "trustpilot_us_slug"
+            if has_strong_us_marker:
+                return True, "trustpilot_us_exception"
+            return False, "trustpilot_non_us_slug"
+
+        if source_website in MIXED_SOURCE_WEBSITES:
+            if has_non_us_marker and not has_strong_us_marker:
+                return False, "mixed_source_non_us_marker"
+            return True, "mixed_source_ok"
+
+        if has_non_us_marker and not has_strong_us_marker:
+            return False, "default_non_us_marker"
+        return True, "default_ok"
 
     @staticmethod
     def word_count(text: str) -> int:
@@ -490,6 +604,20 @@ class Collector:
         if not self.is_copart_relevant(source_website, source_label, txt):
             return False
 
+        is_us_scope, geo_reason = self.validate_us_scope(source_website, source_label, source_url, txt)
+        if not is_us_scope:
+            self.geo_excluded_counts[f"{source_website}:{geo_reason}"] += 1
+            if len(self.geo_excluded_examples) < 20:
+                self.geo_excluded_examples.append({
+                    "source_website": source_website,
+                    "source_label": source_label,
+                    "source_url": source_url,
+                    "review_date": normalized_date,
+                    "reason": geo_reason,
+                    "review_text": txt[:240],
+                })
+            return False
+
         key_id = (source_website, str(external_id or ""))
         if key_id[1] and key_id in self._seen:
             return False
@@ -518,10 +646,12 @@ class Collector:
             "rating": rating if rating is not None else None,
             "sentiment": sentiment,
             "review_text": txt,
+            "geo_validation": geo_reason,
             "tier1": tier1,
             "tier2": tier2,
             "tier3": tier3,
         }
+        self.geo_validation_counts[geo_reason] += 1
         self.records.append(row)
         return True
 
@@ -579,11 +709,76 @@ class Collector:
                     if not continuation:
                         break
 
+    @staticmethod
+    def _decode_apple_html_value(value: str) -> str:
+        text = str(value or "")
+        try:
+            text = json.loads(f'"{text}"')
+        except Exception:
+            pass
+        if any(token in text for token in ("â", "Ã", "ā")):
+            for source_encoding in ("latin-1", "cp1252"):
+                try:
+                    repaired = text.encode(source_encoding).decode("utf-8")
+                    if repaired:
+                        text = repaired
+                        break
+                except Exception:
+                    continue
+        return text
+
+    def collect_apple_html_reviews(self, app_id: str, country: str) -> int:
+        page_url = f"https://apps.apple.com/{country}/app/id{app_id}?see-all=reviews&platform=iphone"
+        try:
+            resp = S.get(page_url, timeout=35)
+            if resp.status_code != 200:
+                return 0
+            html = resp.text
+        except Exception:
+            return 0
+
+        pattern = re.compile(
+            r'"\$kind":"ProductReview".*?"review":\{"\$kind":"Review","id":"(?P<id>\d+)".*?"title":"(?P<title>(?:[^"\\]|\\.)*)".*?"date":"(?P<date>[^"]+)".*?"contents":"(?P<contents>(?:[^"\\]|\\.)*)".*?"rating":(?P<rating>\d+).*?"reviewerName":"(?P<author>(?:[^"\\]|\\.)*)"',
+            re.S,
+        )
+
+        seen_review_ids = set()
+        added = 0
+        for match in pattern.finditer(html):
+            review_id = match.group("id")
+            if review_id in seen_review_ids:
+                continue
+            seen_review_ids.add(review_id)
+
+            title = self._decode_apple_html_value(match.group("title"))
+            contents = self._decode_apple_html_value(match.group("contents"))
+            author = self._decode_apple_html_value(match.group("author")) or "Apple user"
+            review_text = f"{title}. {contents}".strip(". ").strip()
+            review_date = (match.group("date") or "1970-01-01")[:10]
+            try:
+                rating = int(match.group("rating"))
+            except Exception:
+                rating = None
+
+            if self.add_review(
+                source_website="apps.apple.com",
+                source_label=f"Apple App Store ({app_id}, {country})",
+                source_url=f"{page_url}&reviewId={review_id}",
+                author=author,
+                review_date=review_date,
+                rating=rating,
+                review_text=review_text,
+                external_id=f"apple_html_{app_id}_{country}_{review_id}",
+            ):
+                added += 1
+        return added
+
     def collect_apple(self):
-        print("[collect] Apple App Store RSS reviews")
+        print("[collect] Apple App Store reviews")
         for app_id in APPLE_APP_IDS:
             for country in APPLE_COUNTRIES:
                 empty_streak = 0
+                rss_entries_found = False
                 for page in range(1, 13):
                     url = f"https://itunes.apple.com/{country}/rss/customerreviews/page={page}/id={app_id}/sortby=mostrecent/json"
                     try:
@@ -610,28 +805,34 @@ class Collector:
                             break
                         continue
 
+                    rss_entries_found = True
                     empty_streak = 0
                     review_entries = entries[1:] if len(entries) > 1 else entries
                     page_oldest_date = None
                     for e in review_entries:
                         text = (e.get("content") or {}).get("label") or ""
+                        review_id = (e.get("id") or {}).get("label") or ""
                         rating_raw = (e.get("im:rating") or {}).get("label")
                         try:
                             rating = int(rating_raw)
                         except Exception:
                             rating = None
 
-                        review_url = (e.get("id") or {}).get("label") or f"https://apps.apple.com/app/id{app_id}"
+                        link_attrs = ((e.get("link") or {}).get("attributes")) or {}
+                        review_url = link_attrs.get("href") or f"https://apps.apple.com/{country}/app/id{app_id}"
+                        if review_id and "reviewid=" not in review_url.lower():
+                            sep = "&" if "?" in review_url else "?"
+                            review_url = f"{review_url}{sep}reviewId={review_id}"
                         author = ((e.get("author") or {}).get("name") or {}).get("label") or "Apple user"
                         updated = (e.get("updated") or {}).get("label") or "1970-01-01"
                         review_date = updated[:10]
                         if page_oldest_date is None or review_date < page_oldest_date:
                             page_oldest_date = review_date
 
-                        external_id = review_url
+                        external_id = f"apple_{app_id}_{country}_{review_id}" if review_id else review_url
                         self.add_review(
                             source_website="apps.apple.com",
-                            source_label=f"Apple App Store ({app_id})",
+                            source_label=f"Apple App Store ({app_id}, {country})",
                             source_url=review_url,
                             author=author,
                             review_date=review_date,
@@ -641,6 +842,10 @@ class Collector:
                         )
                     if page_oldest_date and page_oldest_date < self.since:
                         break
+                if not rss_entries_found:
+                    added = self.collect_apple_html_reviews(app_id, country)
+                    if added:
+                        print(f"  - HTML fallback {app_id} {country}: +{added}")
 
                     
     def collect_youtube_comments(self):
@@ -1319,6 +1524,14 @@ class Collector:
                 "description": "Large-scale English-only IAA textual review/problem dataset from public web sources (recency-first).",
                 "review_count": len(rows),
                 "source_counts": dict(source_counts),
+                "source_audit": [
+                    {
+                        "source_website": source_website,
+                        "review_count": int(source_counts.get(source_website, 0)),
+                        "present": bool(source_counts.get(source_website, 0)),
+                    }
+                    for source_website in EXPECTED_SOURCE_WEBSITES
+                ],
                 "sentiments": {
                     "positive": int(sentiment_counts.get("positive", 0)),
                     "negative": int(sentiment_counts.get("negative", 0)),
@@ -1329,8 +1542,24 @@ class Collector:
                 "until_date": self.until,
                 "collector_failures": self.collector_failures,
                 "youtube_excluded": True,
-                "usa_only": False,
+                "usa_only": True,
                 "english_only": True,
+                "expected_source_websites": EXPECTED_SOURCE_WEBSITES,
+                "required_source_websites": REQUIRED_SOURCE_WEBSITES,
+                "geo_validation_counts": dict(self.geo_validation_counts),
+                "geo_excluded_counts": dict(self.geo_excluded_counts),
+                "geo_excluded_examples": self.geo_excluded_examples,
+                "active_collectors": [
+                    "google_play",
+                    "trustpilot",
+                    "reddit_pullpush",
+                    "bbb_customer_reviews",
+                    "bbb_complaints",
+                    "pissedconsumer",
+                    "ripoffreport",
+                    "smartcustomer",
+                    "apple",
+                ],
             },
             "reviews": rows,
         }
@@ -1350,6 +1579,7 @@ class Collector:
             "source_website",
             "source_label",
             "source_url",
+            "geo_validation",
             "author",
             "review_date",
             "rating",

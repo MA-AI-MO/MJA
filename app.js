@@ -424,7 +424,7 @@
     if (signalThemes.length) {
       bullets.push(
         `${sentiment === "negative" ? "Across the review text, people most often describe" : "Across the review text, people most often discuss"} ${naturalJoin(
-          signalThemes.map((theme) => `${theme.text} (${theme.count} reviews))`)
+          signalThemes.map((theme) => `${theme.text} (${theme.count} reviews)`)
         )}.`
       );
     } else if (detailedThemes.length) {
@@ -441,7 +441,7 @@
 
     if (questionShare >= 0.2) {
       bullets.push(
-        `${Math.round(questionShare * 100)}%of these posts are written as questions or follow-up requests, so many users were still trying to resolve the issue when they posted.`
+        `${Math.round(questionShare * 100)}% of these posts are written as questions or follow-up requests, so many users were still trying to resolve the issue when they posted.`
       );
     } else if (avgRating !== "n/a") {
       bullets.push(
@@ -619,4 +619,588 @@
     }
 
     const max = entries[0][1] || 1;
-    entries.forEach(([
+    entries.forEach(([label, count]) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "bar-row";
+      if (selectedLabel === label) button.classList.add("is-selected");
+
+      const main = document.createElement("div");
+      main.className = "bar-main";
+
+      const labelNode = document.createElement("div");
+      labelNode.className = "bar-label";
+      labelNode.textContent = label;
+
+      const track = document.createElement("div");
+      track.className = "bar-track";
+
+      const fill = document.createElement("div");
+      fill.className = "bar-fill";
+      fill.style.width = `${(count / max) * 100}%`;
+      track.appendChild(fill);
+
+      const valueNode = document.createElement("div");
+      valueNode.className = "bar-count";
+      valueNode.textContent = String(count);
+
+      main.appendChild(labelNode);
+      main.appendChild(track);
+      main.appendChild(valueNode);
+      button.appendChild(main);
+
+      if (compareMap && compareYear) {
+        const previousCount = compareMap.get(label) || 0;
+        const yoy = document.createElement("div");
+        yoy.className = "bar-yoy";
+        yoy.textContent = `YoY vs ${compareYear}: ${previousCount} last year | ${formatChangeText(count, previousCount)}`;
+        button.appendChild(yoy);
+      }
+
+      button.addEventListener("click", () => onClick(label));
+      container.appendChild(button);
+    });
+  }
+
+  class SentimentPanel {
+    constructor(root, sentiment) {
+      this.root = root;
+      this.sentiment = sentiment;
+      this.state = {
+        websites: [],
+        years: [],
+        months: [],
+        tier1: null,
+        tier2: null,
+        tier3: null,
+      };
+
+      this.bindElements();
+      this.initFilters();
+      this.bindEvents();
+      this.populateWebsiteOptions();
+      this.populateYearOptions();
+      this.populateMonthOptions();
+      this.render();
+    }
+
+    onDatasetChanged() {
+      this.state = {
+        websites: [],
+        years: [],
+        months: [],
+        tier1: null,
+        tier2: null,
+        tier3: null,
+      };
+      this.populateWebsiteOptions();
+      this.populateYearOptions();
+      this.populateMonthOptions();
+      this.render();
+    }
+
+    bindElements() {
+      this.websiteFilter = this.root.querySelector(".website-filter");
+      this.yearFilter = this.root.querySelector(".year-filter");
+      this.monthFilter = this.root.querySelector(".month-filter");
+      this.downloadBtn = this.root.querySelector(".download-btn");
+      this.tier1Chart = this.root.querySelector(".tier1-chart");
+      this.tier2Card = this.root.querySelector(".tier2-card");
+      this.tier2Chart = this.root.querySelector(".tier2-chart");
+      this.tier3Card = this.root.querySelector(".tier3-card");
+      this.tier3Chart = this.root.querySelector(".tier3-chart");
+      this.clearTier1Btn = this.root.querySelector(".clear-tier1");
+      this.clearTier2Btn = this.root.querySelector(".clear-tier2");
+      this.selTier1Label = this.root.querySelector(".selected-tier1-label");
+      this.selTier2Label = this.root.querySelector(".selected-tier2-label");
+      this.topTopics = this.root.querySelector(".top-topics");
+      this.websiteTierTable = this.root.querySelector(".website-tier-table");
+      this.selectionPath = this.root.querySelector(".selection-path");
+      this.selectionMetrics = this.root.querySelector(".selection-metrics");
+      this.topReviews = this.root.querySelector(".top-reviews");
+      this.aiSummary = this.root.querySelector(".ai-summary");
+    }
+
+    initFilters() {
+      this.websiteDropdown = new CheckboxMultiSelect(this.websiteFilter, {
+        emptyText: "All websites",
+      });
+      this.yearDropdown = new CheckboxMultiSelect(this.yearFilter, {
+        emptyText: "All years",
+      });
+      this.monthDropdown = new CheckboxMultiSelect(this.monthFilter, {
+        emptyText: "All months",
+        labelFor: (month) => MONTH_NAMES[month] || month,
+      });
+
+      this.websiteDropdown.setOnChange((values) => {
+        this.state.websites = values;
+        this.populateWebsiteOptions();
+        this.populateYearOptions();
+        this.populateMonthOptions();
+        this.render();
+      });
+
+      this.yearDropdown.setOnChange((values) => {
+        this.state.years = values;
+        this.populateYearOptions();
+        this.populateMonthOptions();
+        this.render();
+      });
+
+      this.monthDropdown.setOnChange((values) => {
+        this.state.months = values;
+        this.populateMonthOptions();
+        this.render();
+      });
+    }
+
+    bindEvents() {
+      this.clearTier1Btn.addEventListener("click", () => {
+        this.state.tier1 = null;
+        this.state.tier2 = null;
+        this.state.tier3 = null;
+        this.render();
+      });
+
+      this.clearTier2Btn.addEventListener("click", () => {
+        this.state.tier2 = null;
+        this.state.tier3 = null;
+        this.render();
+      });
+
+      this.downloadBtn.addEventListener("click", () => {
+        const rows = this.getSelectionRows();
+        const part = this.state.tier3 || this.state.tier2 || this.state.tier1 || "all";
+        const websites = this.state.websites.length ? this.state.websites.join("-") : "all-sites";
+        const years = this.state.years.length ? this.state.years.join("-") : "all-years";
+        const months = this.state.months.length ? this.state.months.join("-") : "all-months";
+        const prefix = businessConfig[activeBusiness].csvPrefix;
+        const file = `${prefix}-${this.sentiment}-${slugify(websites)}-${slugify(years)}-${slugify(months)}-${slugify(part)}.csv`;
+        downloadCsv(rows, file);
+      });
+    }
+
+    getSentimentRows() {
+      return getAllReviews().filter((r) => r.sentiment === this.sentiment);
+    }
+
+    getFilteredRows() {
+      let rows = this.getSentimentRows();
+
+      if (this.state.websites.length) {
+        const siteSet = new Set(this.state.websites);
+        rows = rows.filter((r) => siteSet.has(r.source_website));
+      }
+
+      if (this.state.years.length) {
+        const yearSet = new Set(this.state.years);
+        rows = rows.filter((r) => yearSet.has(getReviewYear(r)));
+      }
+
+      if (this.state.months.length) {
+        const monthSet = new Set(this.state.months);
+        rows = rows.filter((r) => monthSet.has(getReviewMonth(r)));
+      }
+
+      return rows;
+    }
+
+    getPreviousYearRows() {
+      if (this.state.years.length !== 1) return null;
+
+      const selectedYear = Number(this.state.years[0]);
+      if (!Number.isFinite(selectedYear) || selectedYear <= 0) return null;
+
+      let rows = this.getSentimentRows();
+      if (this.state.websites.length) {
+        const websiteSet = new Set(this.state.websites);
+        rows = rows.filter((row) => websiteSet.has(row.source_website));
+      }
+
+      const previousYear = String(selectedYear - 1);
+      rows = rows.filter((row) => getReviewYear(row) === previousYear);
+
+      if (this.state.months.length) {
+        const monthSet = new Set(this.state.months);
+        rows = rows.filter((row) => monthSet.has(getReviewMonth(row)));
+      }
+
+      return rows;
+    }
+
+    getComparisonYear() {
+      if (this.state.years.length !== 1) return null;
+      const selectedYear = Number(this.state.years[0]);
+      if (!Number.isFinite(selectedYear) || selectedYear <= 0) return null;
+      return String(selectedYear - 1);
+    }
+
+    getSelectionRows() {
+      let rows = this.getFilteredRows();
+      if (this.state.tier1) rows = rows.filter((r) => r.tier1 === this.state.tier1);
+      if (this.state.tier2) rows = rows.filter((r) => r.tier2 === this.state.tier2);
+      if (this.state.tier3) rows = rows.filter((r) => r.tier3 === this.state.tier3);
+      return rows;
+    }
+
+    getScopedSummaryRows() {
+      const filteredRows = this.getFilteredRows();
+      let rows = this.getSelectionRows();
+      let scope = this.state.tier3 || this.state.tier2 || this.state.tier1 || "All tiers";
+
+      if (!this.state.tier1 && !this.state.tier2 && !this.state.tier3) {
+        const topTier1 = countBy(filteredRows, "tier1")[0];
+        if (topTier1) {
+          rows = filteredRows.filter((row) => row.tier1 === topTier1[0]);
+          scope = `Top Tier 1: ${topTier1[0]}`;
+        }
+      }
+
+      return { filteredRows, rows, scope };
+    }
+
+    retainValidValues(values, allowedValues) {
+      const allowed = new Set(allowedValues);
+      return (values || []).filter((value) => allowed.has(value));
+    }
+
+    getWebsiteValues() {
+      return Array.from(new Set(this.getSentimentRows().map((r) => r.source_website))).sort();
+    }
+
+    populateWebsiteOptions() {
+      const sites = this.getWebsiteValues();
+      this.state.websites = this.retainValidValues(this.state.websites, sites);
+      this.websiteDropdown.setOptions(sites, this.state.websites);
+    }
+
+    getDateOptionRows() {
+      let rows = this.getSentimentRows();
+      if (this.state.websites.length) {
+        const websiteSet = new Set(this.state.websites);
+        rows = rows.filter((r) => websiteSet.has(r.source_website));
+      }
+      return rows;
+    }
+
+    getYearValues() {
+      return Array.from(
+        new Set(
+          this.getDateOptionRows()
+            .map((r) => getReviewYear(r))
+            .filter((y) => /^\d{4}$/.test(y) && y !== "1970")
+        )
+      ).sort((a, b) => b.localeCompare(a));
+    }
+
+    populateYearOptions() {
+      const years = this.getYearValues();
+      this.state.years = this.retainValidValues(this.state.years, years);
+      this.yearDropdown.setOptions(years, this.state.years);
+    }
+
+    getMonthValues() {
+      let rows = this.getDateOptionRows();
+      if (this.state.years.length) {
+        const yearSet = new Set(this.state.years);
+        rows = rows.filter((r) => yearSet.has(getReviewYear(r)));
+      }
+
+      return Array.from(
+        new Set(
+          rows
+            .map((r) => getReviewMonth(r))
+            .filter((m) => /^\d{2}$/.test(m) && m >= "01" && m <= "12")
+        )
+      ).sort((a, b) => a.localeCompare(b));
+    }
+
+    populateMonthOptions() {
+      const months = this.getMonthValues();
+      this.state.months = this.retainValidValues(this.state.months, months);
+      this.monthDropdown.setOptions(months, this.state.months);
+    }
+
+    ensureValidSelection() {
+      const filtered = this.getFilteredRows();
+      const hasTier1 = this.state.tier1 && filtered.some((r) => r.tier1 === this.state.tier1);
+      if (!hasTier1) {
+        this.state.tier1 = null;
+        this.state.tier2 = null;
+        this.state.tier3 = null;
+        return;
+      }
+
+      const tier1Rows = filtered.filter((r) => r.tier1 === this.state.tier1);
+      const hasTier2 = this.state.tier2 && tier1Rows.some((r) => r.tier2 === this.state.tier2);
+      if (!hasTier2) {
+        this.state.tier2 = null;
+        this.state.tier3 = null;
+        return;
+      }
+
+      const tier2Rows = tier1Rows.filter((r) => r.tier2 === this.state.tier2);
+      const hasTier3 = this.state.tier3 && tier2Rows.some((r) => r.tier3 === this.state.tier3);
+      if (!hasTier3) {
+        this.state.tier3 = null;
+      }
+    }
+
+    render() {
+      this.ensureValidSelection();
+      const filtered = this.getFilteredRows();
+      const previousYearRows = this.getPreviousYearRows();
+
+      this.renderTier1(filtered, previousYearRows);
+      this.renderTier2(filtered, previousYearRows);
+      this.renderTier3(filtered, previousYearRows);
+      this.renderTopTopics(filtered);
+      this.renderWebsiteByTier(filtered);
+      this.renderSelectionSummary();
+    }
+
+    renderTier1(filtered, previousYearRows) {
+      const entries = countBy(filtered, "tier1");
+      const compareMap = previousYearRows ? countByMap(previousYearRows, "tier1") : null;
+      renderBars(this.tier1Chart, entries, {
+        selectedLabel: this.state.tier1,
+        compareMap,
+        compareYear: this.getComparisonYear(),
+        onClick: (label) => {
+          if (this.state.tier1 === label) {
+            this.state.tier1 = null;
+            this.state.tier2 = null;
+            this.state.tier3 = null;
+          } else {
+            this.state.tier1 = label;
+            this.state.tier2 = null;
+            this.state.tier3 = null;
+          }
+          this.render();
+        },
+      });
+    }
+
+    renderTier2(filtered, previousYearRows) {
+      if (!this.state.tier1) {
+        this.tier2Card.classList.add("is-hidden");
+        return;
+      }
+
+      this.tier2Card.classList.remove("is-hidden");
+      this.selTier1Label.textContent = this.state.tier1;
+
+      const tier1Rows = filtered.filter((r) => r.tier1 === this.state.tier1);
+      const entries = countBy(tier1Rows, "tier2");
+      const previousTier1Rows = previousYearRows
+        ? previousYearRows.filter((row) => row.tier1 === this.state.tier1)
+        : null;
+      const compareMap = previousTier1Rows ? countByMap(previousTier1Rows, "tier2") : null;
+      renderBars(this.tier2Chart, entries, {
+        selectedLabel: this.state.tier2,
+        compareMap,
+        compareYear: this.getComparisonYear(),
+        onClick: (label) => {
+          if (this.state.tier2 === label) {
+            this.state.tier2 = null;
+            this.state.tier3 = null;
+          } else {
+            this.state.tier2 = label;
+            this.state.tier3 = null;
+          }
+          this.render();
+        },
+      });
+    }
+
+    renderTier3(filtered, previousYearRows) {
+      if (!this.state.tier1 || !this.state.tier2) {
+        this.tier3Card.classList.add("is-hidden");
+        return;
+      }
+
+      this.tier3Card.classList.remove("is-hidden");
+      this.selTier2Label.textContent = `${this.state.tier1} -> ${this.state.tier2}`;
+
+      const tier2Rows = filtered.filter(
+        (r) => r.tier1 === this.state.tier1 && r.tier2 === this.state.tier2
+      );
+      const entries = countBy(tier2Rows, "tier3");
+      const previousTier2Rows = previousYearRows
+        ? previousYearRows.filter(
+            (row) => row.tier1 === this.state.tier1 && row.tier2 === this.state.tier2
+          )
+        : null;
+      const compareMap = previousTier2Rows ? countByMap(previousTier2Rows, "tier3") : null;
+      renderBars(this.tier3Chart, entries, {
+        selectedLabel: this.state.tier3,
+        compareMap,
+        compareYear: this.getComparisonYear(),
+        onClick: (label) => {
+          this.state.tier3 = this.state.tier3 === label ? null : label;
+          this.render();
+        },
+      });
+    }
+
+    renderTopTopics(filtered) {
+      const entries = countBy(filtered, "tier3").slice(0, 10);
+      this.topTopics.innerHTML = "";
+
+      if (!entries.length) {
+        const li = document.createElement("li");
+        li.textContent = "No topic data.";
+        this.topTopics.appendChild(li);
+        return;
+      }
+
+      entries.forEach(([topic, count]) => {
+        const li = document.createElement("li");
+        li.textContent = `${topic} (${count})`;
+        this.topTopics.appendChild(li);
+      });
+    }
+
+    renderWebsiteByTier(filtered) {
+      this.websiteTierTable.innerHTML = "";
+
+      let levelField = "tier1";
+      let scoped = filtered;
+      if (this.state.tier1 && this.state.tier2) {
+        levelField = "tier3";
+        scoped = filtered.filter((r) => r.tier1 === this.state.tier1 && r.tier2 === this.state.tier2);
+      } else if (this.state.tier1) {
+        levelField = "tier2";
+        scoped = filtered.filter((r) => r.tier1 === this.state.tier1);
+      }
+
+      const byTier = new Map();
+      scoped.forEach((row) => {
+        const tierKey = row[levelField];
+        if (!byTier.has(tierKey)) byTier.set(tierKey, []);
+        byTier.get(tierKey).push(row);
+      });
+
+      const rows = Array.from(byTier.entries())
+        .map(([tierName, items]) => {
+          const siteCounts = countBy(items, "source_website");
+          const [topSite, topCount] = siteCounts[0] || ["-", 0];
+          return {
+            tierName,
+            topSite,
+            topCount,
+            total: items.length,
+          };
+        })
+        .sort((a, b) => b.total - a.total)
+        .slice(0, 10);
+
+      if (!rows.length) {
+        this.websiteTierTable.textContent = "No website data for this selection.";
+        return;
+      }
+
+      const table = document.createElement("table");
+      const thead = document.createElement("thead");
+      thead.innerHTML = `<tr><th>${levelField.toUpperCase()}</th><th>Top Website</th><th>Count</th></tr>`;
+      table.appendChild(thead);
+
+      const tbody = document.createElement("tbody");
+      rows.forEach((row) => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `<td>${row.tierName}</td><td>${row.topSite}</td><td>${row.topCount}/${row.total}</td>`;
+        tbody.appendChild(tr);
+      });
+      table.appendChild(tbody);
+
+      this.websiteTierTable.appendChild(table);
+    }
+
+    renderSelectionSummary() {
+      const { rows, scope } = this.getScopedSummaryRows();
+
+      const siteText = toSummaryText(this.state.websites, "All websites");
+      const yearText = toSummaryText(this.state.years, "All years");
+      const monthText = this.state.months.length
+        ? toSummaryText(this.state.months.map((m) => MONTH_NAMES[m] || m), "All months")
+        : "All months";
+      this.selectionPath.textContent = `Scope: ${scope} | Website: ${siteText} | Year: ${yearText} | Month: ${monthText}`;
+
+      const rated = rows.filter((r) => typeof r.rating === "number");
+      const avgRating = rated.length
+        ? (rated.reduce((sum, r) => sum + r.rating, 0) / rated.length).toFixed(2)
+        : "n/a";
+      const websiteCount = new Set(rows.map((r) => r.source_website)).size;
+
+      this.selectionMetrics.innerHTML = "";
+      [
+        `Reviews: ${rows.length}`,
+        `Websites: ${websiteCount}`,
+        `Avg rating: ${avgRating}`,
+      ].forEach((text) => {
+        const span = document.createElement("span");
+        span.className = "metric-pill";
+        span.textContent = text;
+        this.selectionMetrics.appendChild(span);
+      });
+
+      this.aiSummary.innerHTML = "";
+      const aiSummary = buildAiSummary(rows, scope, this.sentiment);
+      const aiParagraph = document.createElement("p");
+      aiParagraph.textContent = aiSummary.intro;
+      this.aiSummary.appendChild(aiParagraph);
+
+      if (aiSummary.bullets.length) {
+        const aiList = document.createElement("ul");
+        aiList.className = "ai-summary-list";
+        aiSummary.bullets.forEach((text) => {
+          const li = document.createElement("li");
+          li.textContent = text;
+          aiList.appendChild(li);
+        });
+        this.aiSummary.appendChild(aiList);
+      }
+
+      this.topReviews.innerHTML = "";
+      const representativeRows = pickRepresentativeReviews(rows, 3);
+      if (!representativeRows.length) {
+        const li = document.createElement("li");
+        li.textContent = "No reviews in current selection.";
+        this.topReviews.appendChild(li);
+        return;
+      }
+
+      representativeRows.forEach((row) => {
+        const li = document.createElement("li");
+        li.textContent = `${row.review_text} (${row.source_label}, ${row.author}, ${formatDate(row.review_date)})`;
+        this.topReviews.appendChild(li);
+      });
+    }
+  }
+
+  const panels = [
+    new SentimentPanel(document.getElementById("negative-panel"), "negative"),
+    new SentimentPanel(document.getElementById("positive-panel"), "positive"),
+  ];
+
+  function switchBusiness(nextBusiness) {
+    if (!datasets[nextBusiness] || nextBusiness === activeBusiness) return;
+    activeBusiness = nextBusiness;
+    reviewsPayload = datasets[activeBusiness];
+    applyBusinessTheme();
+    renderSources();
+    panels.forEach((panel) => panel.onDatasetChanged());
+  }
+
+  document.querySelectorAll(".business-option").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      switchBusiness(btn.dataset.business);
+    });
+  });
+
+  applyBusinessTheme();
+  renderSources();
+})();
+
+
