@@ -7,6 +7,7 @@ import time
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import unquote
 
 import requests
 from bs4 import BeautifulSoup
@@ -64,6 +65,7 @@ APPLE_APP_IDS = [
 ]
 
 APPLE_COUNTRIES = ["us", "ca", "gb"]
+COMPLAINTSBOARD_ROOT = "https://www.complaintsboard.com/iaa-b133628"
 
 US_GEO_MARKERS = {
     " usa ", " united states ", " us yard ", " us lot ", " us auction ",
@@ -97,7 +99,7 @@ NON_US_GEO_MARKERS = {
     " dvla ", " mot ", " v5c ", " vat ", " £", " ł", " australia ", " new zealand ",
 }
 
-MIXED_SOURCE_WEBSITES = {"reddit.com", "pissedconsumer.com", "smartcustomer.com", "ripoffreport.com"}
+MIXED_SOURCE_WEBSITES = {"reddit.com", "pissedconsumer.com", "smartcustomer.com", "ripoffreport.com", "complaintsboard.com"}
 EXPECTED_SOURCE_WEBSITES = [
     "play.google.com",
     "apps.apple.com",
@@ -107,6 +109,7 @@ EXPECTED_SOURCE_WEBSITES = [
     "pissedconsumer.com",
     "ripoffreport.com",
     "smartcustomer.com",
+    "complaintsboard.com",
 ]
 REQUIRED_SOURCE_WEBSITES = ["play.google.com", "apps.apple.com", "bbb.org"]
 
@@ -140,6 +143,8 @@ NEGATIVE_WORDS = {
     "refund", "fee", "fees", "overcharge", "rude", "unhelpful", "unable", "cannot", "cant",
     "locked", "suspend", "suspended", "declined", "error", "dispute", "not working",
     "deceptive", "misleading", "bait", "switch", "extortion", "nightmare",
+    "stolen", "stole", "theft", "thief", "scammers", "misrepresentation", "misrepresented",
+    "lied", "lying", "stress", "horrible", "inoperable",
 }
 
 COPART_TERMS = {"iaai", "insurance auto auctions", "iaa"}
@@ -256,8 +261,8 @@ class Collector:
             (["wire", "bank transfer", "pending transfer"], self.PATHS["wire_delay"]),
             (["title not received", "no title", "title pending", "waiting title"], self.PATHS["title_not_received"]),
             (["power of attorney", "poa"], self.PATHS["poa_requirements"]),
-            (["damaged", "damage", "missing parts", "not as described", "condition issue", "frame damage"], self.PATHS["lot_damage"]),
-            (["personal belongings", "belongings left", "items left", "left in vehicle", "retrieve items"], self.PATHS["belongings"]),
+            (["damaged", "damage", "missing parts", "not as described", "condition issue", "frame damage", "run and drive", "run and drives", "misrepresentation", "misrepresented", "not disclosed", "did not mention"], self.PATHS["lot_damage"]),
+            (["personal belongings", "belongings left", "items left", "left in vehicle", "retrieve items", "belongings", "stolen items", "items missing", "property missing", "contents missing", "stolen from vehicle"], self.PATHS["belongings"]),
             (["inspection", "inspect", "preview"], self.PATHS["inspection"]),
             (["reschedule pickup", "schedule pickup", "pickup appointment"], self.PATHS["pickup_reschedule"]),
             (["pickup delay", "missed pickup", "dispatch window", "pickup hold"], self.PATHS["pickup_delay"]),
@@ -284,6 +289,12 @@ class Collector:
         m = re.search(r"(\d{4}-\d{2}-\d{2})", s)
         if m:
             return m.group(1)
+        for fmt in ("%b %d, %Y", "%B %d, %Y"):
+            try:
+                d = datetime.strptime(s, fmt)
+                return d.date().isoformat()
+            except Exception:
+                pass
         try:
             d = datetime.fromisoformat(s.replace("Z", "+00:00"))
             return d.date().isoformat()
@@ -349,6 +360,11 @@ class Collector:
             if has_strong_us_marker:
                 return True, "apple_us_exception"
             return False, "apple_non_us_store"
+
+        if source_website == "complaintsboard.com":
+            if has_non_us_marker and not has_strong_us_marker:
+                return False, "complaintsboard_us_profile_non_us_marker"
+            return True, "complaintsboard_us_profile"
 
         if source_website == "trustpilot.com":
             if "(iaai.com)" in label_lower:
@@ -469,6 +485,11 @@ class Collector:
         neg_hits = sum(1 for w in NEGATIVE_WORDS if w in t)
         exonerated = any(re.search(pattern, t) for pattern in COPART_EXONERATION_PATTERNS)
 
+        if source_website == "complaintsboard.com":
+            if neg_hits == 0 and any(k in t for k in {"resolved to the customer's satisfaction", "issue resolved", "highly recommend", "very satisfied"}):
+                return "positive"
+            return "negative"
+
         if rating is not None:
             try:
                 r = float(rating)
@@ -571,7 +592,11 @@ class Collector:
         if best_path and best_score > 0:
             return best_path
 
-        if any(k in t for k in ["app", "crash", "freeze", "glitch", "bug", "update", "loading", "load", "login", "log in", "password"]):
+        if any(re.search(pattern, t) for pattern in [
+            r"\bapp\b", r"\bapplication\b", r"\bcrash(?:ed|es|ing)?\b", r"\bfreeze(?:s|d|ing)?\b",
+            r"\bglitch(?:es|y)?\b", r"\bbug(?:s)?\b", r"\bupdate(?:d|s)?\b", r"\bloading\b",
+            r"\bload(?:ing|s|ed)?\b", r"\blog[\s-]?in\b", r"\bpassword\b",
+        ]):
             return self.PATHS["app_login"]
         if any(k in t for k in ["title", "poa", "ownership", "registration"]):
             return self.PATHS["title_not_received"] if sentiment == "negative" else self.PATHS["poa_requirements"]
@@ -727,11 +752,30 @@ class Collector:
                     continue
         return text
 
+    @staticmethod
+    def apple_get(url: str):
+        headers = {
+            "User-Agent": "Mozilla/5.0",
+            "Accept": "application/json,text/plain,text/html,*/*",
+            "Accept-Language": "en-US,en;q=0.9",
+        }
+        for attempt in range(3):
+            try:
+                resp = requests.get(url, timeout=35, headers=headers)
+                if resp.status_code == 200:
+                    return resp
+                if resp.status_code in {400, 404}:
+                    return resp
+            except Exception:
+                pass
+            time.sleep(0.4 * (attempt + 1))
+        return None
+
     def collect_apple_html_reviews(self, app_id: str, country: str) -> int:
         page_url = f"https://apps.apple.com/{country}/app/id{app_id}?see-all=reviews&platform=iphone"
         try:
-            resp = S.get(page_url, timeout=35)
-            if resp.status_code != 200:
+            resp = self.apple_get(page_url)
+            if not resp or resp.status_code != 200:
                 return 0
             html = resp.text
         except Exception:
@@ -768,7 +812,7 @@ class Collector:
                 review_date=review_date,
                 rating=rating,
                 review_text=review_text,
-                external_id=f"apple_html_{app_id}_{country}_{review_id}",
+                external_id=f"apple_{app_id}_{country}_{review_id}",
             ):
                 added += 1
         return added
@@ -778,11 +822,12 @@ class Collector:
         for app_id in APPLE_APP_IDS:
             for country in APPLE_COUNTRIES:
                 empty_streak = 0
-                rss_entries_found = False
                 for page in range(1, 13):
                     url = f"https://itunes.apple.com/{country}/rss/customerreviews/page={page}/id={app_id}/sortby=mostrecent/json"
                     try:
-                        resp = S.get(url, timeout=35)
+                        resp = self.apple_get(url)
+                        if not resp or resp.status_code == 400:
+                            break
                         if resp.status_code != 200:
                             empty_streak += 1
                             if empty_streak >= 2:
@@ -805,11 +850,11 @@ class Collector:
                             break
                         continue
 
-                    rss_entries_found = True
                     empty_streak = 0
                     review_entries = entries[1:] if len(entries) > 1 else entries
                     page_oldest_date = None
                     for e in review_entries:
+                        title = (e.get("title") or {}).get("label") or ""
                         text = (e.get("content") or {}).get("label") or ""
                         review_id = (e.get("id") or {}).get("label") or ""
                         rating_raw = (e.get("im:rating") or {}).get("label")
@@ -837,15 +882,14 @@ class Collector:
                             author=author,
                             review_date=review_date,
                             rating=rating,
-                            review_text=text,
+                            review_text=self.normalize_text(f"{title}. {text}"),
                             external_id=external_id,
                         )
                     if page_oldest_date and page_oldest_date < self.since:
                         break
-                if not rss_entries_found:
-                    added = self.collect_apple_html_reviews(app_id, country)
-                    if added:
-                        print(f"  - HTML fallback {app_id} {country}: +{added}")
+                added = self.collect_apple_html_reviews(app_id, country)
+                if added:
+                    print(f"  - HTML supplement {app_id} {country}: +{added}")
 
                     
     def collect_youtube_comments(self):
@@ -1271,6 +1315,115 @@ class Collector:
 
         print(f"  - Added {len(self.records) - start_count} SmartCustomer reviews")
 
+    def collect_complaintsboard(self):
+        print("[collect] ComplaintsBoard reviews")
+        start_count = len(self.records)
+
+        queue = [COMPLAINTSBOARD_ROOT]
+        seen_pages = set()
+        seen_signatures = set()
+
+        while queue and len(seen_pages) < 10:
+            url = queue.pop(0).split("#")[0]
+            if url in seen_pages:
+                continue
+            seen_pages.add(url)
+
+            try:
+                html = S.get(url, timeout=45).text
+            except Exception:
+                continue
+
+            soup = BeautifulSoup(html, "html.parser")
+            cards = soup.select(".complaint")
+            if not cards:
+                continue
+
+            page_signature = []
+            for card in cards:
+                title_node = card.select_one(".complaint-main__header-name")
+                body_node = card.select_one(".complaint-main__text[itemprop='reviewBody']")
+                author_node = card.select_one(".author-header__name")
+                location_node = card.select_one(".author-header__address")
+                date_node = card.select_one(".author-header__date[itemprop='datePublished']")
+                share_node = card.select_one(".js-share[data-url]")
+
+                title = self.normalize_text(title_node.get_text(" ", strip=True) if title_node else "")
+                body = self.normalize_text(body_node.get_text(" ", strip=True) if body_node else "")
+                author = self.normalize_text(author_node.get_text(" ", strip=True) if author_node else "ComplaintsBoard user")
+                location = self.normalize_text(location_node.get_text(" ", strip=True) if location_node else "")
+                location = re.sub(r"^of\s+", "", location, flags=re.I).strip()
+                review_date = self.normalize_date(date_node.get_text(" ", strip=True) if date_node else "1970-01-01")
+                country_map = {
+                    "US": "United States",
+                    "GB": "United Kingdom",
+                    "AE": "United Arab Emirates",
+                    "CA": "Canada",
+                    "AU": "Australia",
+                    "NZ": "New Zealand",
+                    "IE": "Ireland",
+                }
+                location_hint = location
+                country_match = re.search(r"(?:,\s*|^)([A-Z]{2})$", location)
+                if country_match:
+                    code = country_match.group(1)
+                    if code in country_map:
+                        location_hint = f"{location} ({country_map[code]})"
+
+                extras = []
+                for row in card.select(".complaint-new__charge-info-row"):
+                    raw = self.normalize_text(row.get_text(" ", strip=True))
+                    if not raw or raw.lower().startswith("confidential information hidden"):
+                        continue
+                    extras.append(raw)
+
+                decoded_url = ""
+                if share_node and share_node.get("data-url"):
+                    decoded_url = unquote(share_node.get("data-url"))
+                if decoded_url.startswith("/"):
+                    decoded_url = f"https://www.complaintsboard.com{decoded_url}"
+                review_url = decoded_url or url
+                review_id_match = re.search(r"#c(\d+)", review_url)
+                review_id = review_id_match.group(1) if review_id_match else None
+
+                review_text = ". ".join(part for part in [
+                    f"Reporter location: {location_hint}" if location_hint else "",
+                    title,
+                    body,
+                    *extras,
+                ] if part)
+
+                if title or body:
+                    page_signature.append((review_id or review_url, title[:60], review_date))
+
+                self.add_review(
+                    source_website="complaintsboard.com",
+                    source_label="ComplaintsBoard",
+                    source_url=review_url,
+                    author=author,
+                    review_date=review_date,
+                    rating=None,
+                    review_text=review_text,
+                    external_id=f"complaintsboard_{review_id}" if review_id else review_url,
+                )
+
+            signature = tuple(page_signature[:8])
+            if signature in seen_signatures:
+                continue
+            seen_signatures.add(signature)
+
+            for a in soup.select("a[href]"):
+                href = (a.get("href") or "").strip()
+                if not href or "/iaa-b133628/page/" not in href:
+                    continue
+                if href.startswith("/"):
+                    href = f"https://www.complaintsboard.com{href}"
+                href = href.split("#")[0]
+                if href not in seen_pages and href not in queue:
+                    queue.append(href)
+
+        print(f"  - Added {len(self.records) - start_count} ComplaintsBoard reviews")
+
     def discover_bbb_profiles(self):
         profiles = set(BBB_FALLBACK_PROFILES)
 
@@ -1558,6 +1711,7 @@ class Collector:
                     "pissedconsumer",
                     "ripoffreport",
                     "smartcustomer",
+                    "complaintsboard",
                     "apple",
                 ],
             },
@@ -1604,6 +1758,7 @@ class Collector:
             ("pissedconsumer", self.collect_pissedconsumer),
             ("ripoffreport", self.collect_ripoffreport),
             ("smartcustomer", self.collect_smartcustomer),
+            ("complaintsboard", self.collect_complaintsboard),
             ("apple", self.collect_apple),
         ]
         for name, fn in collectors:

@@ -1,24 +1,25 @@
 window.IAA_REVIEWS_DATA = {
   "meta": {
     "description": "Large-scale English-only IAA textual review/problem dataset from public web sources (recency-first).",
-    "review_count": 1449,
+    "review_count": 1573,
     "source_counts": {
-      "play.google.com": 170,
+      "trustpilot.com": 49,
+      "play.google.com": 165,
       "bbb.org": 249,
-      "trustpilot.com": 47,
+      "apps.apple.com": 128,
       "pissedconsumer.com": 3,
       "reddit.com": 976,
-      "apps.apple.com": 4
+      "complaintsboard.com": 3
     },
     "source_audit": [
       {
         "source_website": "play.google.com",
-        "review_count": 170,
+        "review_count": 165,
         "present": true
       },
       {
         "source_website": "apps.apple.com",
-        "review_count": 4,
+        "review_count": 128,
         "present": true
       },
       {
@@ -28,7 +29,7 @@ window.IAA_REVIEWS_DATA = {
       },
       {
         "source_website": "trustpilot.com",
-        "review_count": 47,
+        "review_count": 49,
         "present": true
       },
       {
@@ -50,13 +51,20 @@ window.IAA_REVIEWS_DATA = {
         "source_website": "smartcustomer.com",
         "review_count": 0,
         "present": false
+      },
+      {
+        "source_website": "complaintsboard.com",
+        "review_count": 3,
+        "present": true
       }
     ],
     "sentiments": {
-      "positive": 550,
-      "negative": 899
+      "positive": 541,
+      "negative": 1032
     },
     "source_urls": [
+      "https://www.trustpilot.com/reviews/69d66bb09449607e8072b9e2",
+      "https://www.trustpilot.com/reviews/69d038eb7b6f1408831fde68",
       "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_24679733",
       "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
@@ -64,6 +72,7 @@ window.IAA_REVIEWS_DATA = {
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_24670501",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_24653716",
       "https://play.google.com/store/apps/details?id=com.iaai.android&hl=ru&gl=us",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13845475030",
       "https://www.trustpilot.com/reviews/69adfb814bb82caee4c9b0b5",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#0654_88276839_663575",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#0654_88276839_663397",
@@ -74,32 +83,43 @@ window.IAA_REVIEWS_DATA = {
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#0654_88276839_660772",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_24531263",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_24523125",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13728809386",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13726453972",
       "https://www.trustpilot.com/reviews/698621d568f85821bc84e75f",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_24477105",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_24463070",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13679003769",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#0654_88276839_656751",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_24392484",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13629344875",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#0654_88276839_655249",
       "https://www.trustpilot.com/reviews/695c19337f7c7cb6efb8fcda",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13599774001",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#0654_88276839_653193",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=2#0654_88276839_24338253",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13545087986",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=2#0654_88276839_24296359",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#0654_88276839_651624",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13526083154",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=2#0654_88276839_24275790",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=2#0654_88276839_24234863",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=2#0654_88276839_24210691",
       "https://www.trustpilot.com/reviews/6929d0a008813c0ba49fe2b1",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=2#0654_88276839_24187756",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13438289166",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13434123310",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#0654_88276839_646935",
       "https://www.trustpilot.com/reviews/691c42a1ce863fc9dda205af",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=2#0654_88276839_24158719",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=2#0654_88276839_24149711",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=3#0654_88276839_24140604",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13373270208",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=3#0654_88276839_24117156",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#0654_88276839_639108",
       "https://www.trustpilot.com/reviews/68e68793d716625ee642a317",
       "https://www.trustpilot.com/reviews/68e57a7408b00626249c6ab7",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=3#0654_88276839_23956980",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13209774327",
       "https://www.trustpilot.com/reviews/68d34e448e55f58a9bdc3a72",
       "https://www.trustpilot.com/reviews/68cc215139d96b326b7f386c",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=3#0654_88276839_23904913",
@@ -108,36 +128,46 @@ window.IAA_REVIEWS_DATA = {
       "https://play.google.com/store/apps/details?id=com.iaai.android&hl=es&gl=us",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=4#0654_88276839_23856843",
       "https://insurance-auto-auctions.pissedconsumer.com/review.html?page=1#review-6843611",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13090498900",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=4#0654_88276839_23761707",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#0654_88276839_629545",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13064868895",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#0654_88276839_629330",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=4#0654_88276839_23793253",
       "https://www.trustpilot.com/reviews/68a4a82295611f8385f94648",
+      "https://itunes.apple.com/us/review?id=992957183&type=Purple%20Software&reviewId=13031808837",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=4#0654_88276839_23713531",
-      "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=4#0654_88276839_23695801",
+      "https://itunes.apple.com/us/review?id=992957183&type=Purple%20Software&reviewId=12977524536",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=4#0654_88276839_23683160",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=4#0654_88276839_23673833",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=4#0654_88276839_23667793",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#0654_88276839_600000",
+      "https://itunes.apple.com/us/review?id=992957183&type=Purple%20Software&reviewId=12911462429",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#0654_88276839_599460",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=5#0654_88276839_23617141",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=5#0654_88276839_23614929",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=5#0654_88276839_23612562",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=5#0654_88276839_23605386",
+      "https://itunes.apple.com/us/review?id=992957183&type=Purple%20Software&reviewId=12891407282",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#0654_88276839_598443",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=5#0654_88276839_23582686",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=5#0654_88276839_23575749",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=5#0654_88276839_23573792",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=5#0654_88276839_23555040",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12844429173",
       "https://www.trustpilot.com/reviews/68644b22fb60b20d4b993108",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=6#0654_88276839_23543011",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12833740903",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=6#0654_88276839_23518431",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=6#0654_88276839_23518412",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=6#0654_88276839_23516827",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12817846162",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=6#0654_88276839_23497729",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=6#0654_88276839_23471594",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=6#0654_88276839_23445207",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=6#0654_88276839_23428683",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12739640276",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12726265309",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=6#0654_88276839_23394486",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#0654_88276839_591657",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=7#0654_88276839_23381858",
@@ -146,6 +176,7 @@ window.IAA_REVIEWS_DATA = {
       "https://www.reddit.com/r/StupidCarQuestions/comments/1ki7ghz/rule_of_thumb_when_buying_a_car_with_a_rebuilt/mrdkxwz/",
       "https://www.reddit.com/r/carflipping/comments/1kh8mtx/rebuilt_title/mrbkcch/",
       "https://www.reddit.com/r/carflipping/comments/1kh8mtx/rebuilt_title/mr9mdke/",
+      "https://www.reddit.com/r/UsedCars/comments/1khioc6/potential_purchase_confused_on_the_status_of_the/mr85jwp/",
       "https://www.reddit.com/r/Autobody/comments/1kh2tv2/does_this_seem_like_its_worth_the_trouble_i_can/mr3sosu/",
       "https://www.reddit.com/r/gmcsierra/comments/1kh29rp/greetings_from_finland/mr3oace/",
       "https://www.reddit.com/r/AudiA4/comments/1kfafxh/buying_used_audi_a4_b9_help_me_to_choose_the_car/",
@@ -154,6 +185,7 @@ window.IAA_REVIEWS_DATA = {
       "https://www.reddit.com/r/UAE/comments/1kdg852/buying_a_usspec_car_in_the_uae_the_ultimate_guide/",
       "https://www.reddit.com/r/DubaiPetrolHeads/comments/1kdf7wz/the_truth_about_usspec_used_cars_why_the_vehicle/",
       "https://www.reddit.com/r/whatcarshouldIbuy/comments/1kcee8a/advice_for_buying_cheap_cars/",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12607035533",
       "https://www.reddit.com/r/accord/comments/1kba6wn/2023_honda_accord_touring_stolen/mpv1d2i/",
       "https://www.reddit.com/r/prius/comments/1kauu19/someone_is_selling_a_prius_of_unknown_year_for/mpphach/",
       "https://www.reddit.com/r/Scams/comments/1kacqcu/sca_auction_buyer_beware_this_company_is_a_scam/",
@@ -172,18 +204,19 @@ window.IAA_REVIEWS_DATA = {
       "https://www.reddit.com/r/carflipping/comments/1k3feym/finding_cars/mo46vzf/",
       "https://www.reddit.com/r/carflipping/comments/1k3feym/finding_cars/mo3tsi6/",
       "https://www.reddit.com/r/carflipping/comments/1k3feym/finding_cars/mo370dr/",
-      "https://www.reddit.com/r/AskMechanics/comments/1k2wh14/is_my_car_totaled_please_say_no/mo2kgoq/",
       "https://www.reddit.com/r/WRX/comments/1k3vxrb/sti_decision/",
       "https://www.reddit.com/r/HotShotTrucking/comments/1k2flp4/looking_for_a_40_gooseneck/mnzn8z0/",
       "https://www.reddit.com/r/carflipping/comments/1k2dixm/anybody_go_to_the_manheim_or_copart_auctions_in/mnuisda/",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=7#0654_88276839_23223384",
       "https://www.reddit.com/r/legaladvice/comments/1k01aqr/am_i_a_sucker_with_no_legal_recourse_i_bought_a/mndzy5v/",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=7#0654_88276839_23214727",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12545254500",
       "https://www.reddit.com/r/prius/comments/1jx0f39/which_gen_2_would_you_buy/mmq499u/",
       "https://www.reddit.com/r/CarRepair/comments/1jv8mez/what_parts_would_i_need_for_repair_of_this_vehicle/mmmp9qe/",
       "https://www.reddit.com/r/whatcarshouldIbuy/comments/1jwbwqq/need_advice_is_this_2014_mazda3_worth_it_despite/",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=7#0654_88276839_23187695",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=8#0654_88276839_23186284",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12524465100",
       "https://www.reddit.com/r/urbancarliving/comments/1ju0byg/i_stayed_in_a_house_for_2_weeks_and_now_im_back/mm0kqqf/",
       "https://www.reddit.com/r/Insurance/comments/1jtwvtk/tesla_hit_me_can_i_prevent_having_my_car_totaled/mlxpo29/",
       "https://www.reddit.com/r/Nissan/comments/1jt5y3t/bought_a_car_from_iaai_trunk_full_of_rot_trash/mlrxk03/",
@@ -200,6 +233,7 @@ window.IAA_REVIEWS_DATA = {
       "https://www.reddit.com/r/Cartalk/comments/1jmjm74/write_off_or_not/mkdrtrj/",
       "https://www.reddit.com/r/prius/comments/1jlx5wv/how_did_you_find_your_prius/mk7r5xe/",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=8#0654_88276839_23129019",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12474914376",
       "https://www.reddit.com/r/whatcarshouldIbuy/comments/1jkh8zm/won_this_car_in_auction_for_450/mjwep7y/",
       "https://www.reddit.com/r/AMG/comments/1jkbzlj/buy_or_not/mjw03ec/",
       "https://www.reddit.com/r/Lexus/comments/1jk8ny9/do_japanese_lexus_plants_produce_left_hand_drive/mjt7uqw/",
@@ -210,13 +244,14 @@ window.IAA_REVIEWS_DATA = {
       "https://www.reddit.com/r/carflipping/comments/1jfvijh/car_flip_blog_first_auction_experience/mjed41j/",
       "https://www.reddit.com/r/fordranger/comments/1jgzt2a/my_truck_got_hit_they_said_it_was_totaled/mj9ecfp/",
       "https://www.reddit.com/r/whatcarshouldIbuy/comments/1jhfcv3/is_this_a_smart_buy/mj86tne/",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12450654535",
       "https://www.reddit.com/r/Corvette/comments/1fia79v/c5_corvette/miwwijz/",
       "https://www.reddit.com/r/Volkswagen/comments/1jgrugc/does_this_engine_sound_normal/",
-      "https://www.reddit.com/r/cbr/comments/1jfeqpf/cbr500r_no_key/",
       "https://www.reddit.com/r/car/comments/1jdvrnk/car_import/",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=3#0654_88276839_580015",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=8#0654_88276839_23083088",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=8#0654_88276839_23082730",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12433491924",
       "https://www.reddit.com/r/UkraineRussiaReport/comments/1jcpnj2/ru_pov_abandoned_ua_pickup_truck_in_sudzha_region/mi51ikf/",
       "https://www.reddit.com/r/VolvoXC90/comments/1jbzexn/maitance_xc90_t6_awd/mhyn3si/",
       "https://www.reddit.com/r/Insurance/comments/1jc1o0s/my_2014_audi_s5_manual_was_hit_on_the_side_and/mhz13ku/",
@@ -243,6 +278,7 @@ window.IAA_REVIEWS_DATA = {
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=8#0654_88276839_23013414",
       "https://www.reddit.com/r/Justrolledintotheshop/comments/1j0jub3/customer_states_can_you_just_put_my_side_step/mftf649/",
       "https://www.reddit.com/r/PorscheCayenne/comments/1j25uwp/rolled_back_porsches_cayennes_everywhere/",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12378526003",
       "https://www.reddit.com/r/askcarsales/comments/1j25bu4/iaai_selling_rolled_back_porsches/mfp13p6/",
       "https://www.reddit.com/r/askcarsales/comments/1j25bu4/iaai_selling_rolled_back_porsches/",
       "https://www.reddit.com/r/Justrolledintotheshop/comments/1j0jub3/customer_states_can_you_just_put_my_side_step/mfg113d/",
@@ -262,6 +298,7 @@ window.IAA_REVIEWS_DATA = {
       "https://www.reddit.com/r/prius/comments/1iqybwr/are_these_good_prius_deals/md45ecy/",
       "https://www.reddit.com/r/BMW/comments/1iqgcys/is_it_totaled/mczzxlo/",
       "https://www.reddit.com/r/CarRepair/comments/1iql027/i_damaged_my_moms_car_and_dont_know_what_to_do/md3dv5p/",
+      "https://www.reddit.com/r/civic/comments/1if6cay/i_barely_get_20mpg_on_my_2019_civic_lx/mcwl5w7/",
       "https://www.reddit.com/r/Fiat500e/comments/1iipskn/totaled_after_ear_end/mctqq6m/",
       "https://www.reddit.com/r/mr2/comments/1iprynl/thinking_about_getting_a_mr2_again/",
       "https://www.reddit.com/r/carflipping/comments/1imtfh5/would_someone_be_willing_to_do_this/mcr8gtt/",
@@ -307,7 +344,6 @@ window.IAA_REVIEWS_DATA = {
       "https://www.reddit.com/r/MechanicAdvice/comments/1idxtuj/bypass_subaru_steering_lock_not_afraid_to_brake/",
       "https://www.reddit.com/r/whatcarshouldIbuy/comments/1id3vfq/is_buying_of_off_copart_worth_it/m9vzt11/",
       "https://www.reddit.com/r/carflipping/comments/1ich9iu/what_auctions_do_you_use/m9qtzog/",
-      "https://www.reddit.com/r/careerguidance/comments/1icc34h/which_one_of_this_job_offerings_should_i_choose/",
       "https://www.reddit.com/r/auction/comments/1gu1v9i/plcauction/m9omkpx/",
       "https://www.reddit.com/r/cayadservices/comments/1ic1qik/top_car_auctions_in_the_us_this_year/",
       "https://www.reddit.com/r/Autobody/comments/1ibh7rm/process_for_repair_recommendations/",
@@ -316,6 +352,7 @@ window.IAA_REVIEWS_DATA = {
       "https://www.reddit.com/r/auction/comments/1fflsh6/proxibid_dealer_only/m95ryjx/",
       "https://www.reddit.com/r/auction/comments/1i9xrm6/proxibid_dealer_only_auction_itemim_not_a_dealer/",
       "https://www.reddit.com/r/Insurance/comments/1i9udvc/i_think_my_insurance_may_have_lost_my_car_title/",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12229390762",
       "https://www.reddit.com/r/Insurance/comments/1i921oh/aftermarket_parts_removal_before_accepting/m8zji81/",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=9#0654_88276839_22853030",
       "https://www.reddit.com/r/Lexus/comments/1i6cngn/60k_miles_i_bought_it_for_6k/m8nz2d8/",
@@ -325,42 +362,11 @@ window.IAA_REVIEWS_DATA = {
       "https://www.reddit.com/r/askcarsales/comments/1i72vnq/auction_records/m8hdwju/",
       "https://www.reddit.com/r/askcarsales/comments/1i72vnq/auction_records/",
       "https://www.reddit.com/r/cars4bid/comments/1i6ko4r/come_prepared_buying_cars_at_copart_and_iaai/",
-      "https://www.reddit.com/r/UsedCars/comments/1i6tt3v/auction_records/",
-      "https://www.reddit.com/r/turo/comments/1i5kc7r/turo_claims_scam/m85g5js/",
-      "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=9#0654_88276839_22833686",
-      "https://www.reddit.com/r/Ornithology/comments/1i3v2ym/ducks_have_been_around_for_a_lot_longer_than_you/m7t5jer/",
-      "https://www.reddit.com/r/Challenger/comments/1i3il0p/limp_mode_when_i_reverse_left/m7ro12j/",
-      "https://www.reddit.com/r/whatcarshouldIbuy/comments/1i40skg/salvage_titlediscount_cars/m7rmmcz/",
-      "https://www.reddit.com/r/mildlyinteresting/comments/1i3q2wr/our_work_van_that_was_considered_totaled_in_a/m7qpim3/",
-      "https://www.reddit.com/r/Camry/comments/1i3huwp/is_this_a_total_loss/m7n7589/",
-      "https://www.reddit.com/r/poland/comments/1i1u1jb/how_the_hell_did_they_get_the_fully_a_cop_car/m7gxuw0/",
-      "https://www.reddit.com/r/fireinvestigation/comments/1i2opc8/what_fire_investigation_firms_do_most_insurance/m7g673t/",
-      "https://www.reddit.com/r/GilmoreGirls/comments/1i2y2tm/iaai_shelley_cole/",
-      "https://www.reddit.com/r/fireinvestigation/comments/1i2opc8/what_fire_investigation_firms_do_most_insurance/",
-      "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=10#0654_88276839_22821143",
-      "https://www.reddit.com/r/ft86/comments/1i1ztku/update_the_iaai_86_is_here/",
-      "https://www.reddit.com/r/GrandCherokee/comments/1i0qm23/sad_day_total_loss/m720baz/",
-      "https://www.reddit.com/r/sweatystartup/comments/1hxwqwg/anyone_in_carflipping/m71lsmw/",
-      "https://www.reddit.com/r/Cartalk/comments/1i0w76v/rebuilt_title_porsche/m71jnu0/",
-      "https://www.reddit.com/r/370z/comments/1i0mpag/i_bought_a_2015_370z_for_5500_is_that_a_good_price/m70fzc5/",
-      "https://www.reddit.com/r/UsedCars/comments/1i04l1n/i_want_help_on_how_to_buy_clean_title_car_from/",
-      "https://www.reddit.com/r/Autobody/comments/1hxfx5k/first_salvage_car_repair/m6riwdb/",
-      "https://www.reddit.com/r/BMWG20/comments/1hzgd0z/m340i/",
-      "https://www.reddit.com/r/pillarchase2/comments/1hy6m86/if_you_could_make_a_pillar_chase_inspired_game/m6f3bav/",
-      "https://www.reddit.com/r/Hookit/comments/1hjz297/what_insurance_is_the_best_but_low_cost/m6ckpa3/",
-      "https://www.reddit.com/r/Hookit/comments/1hxsmwa/recently_started_my_own_buisness_need_help_with/m6cguqw/",
-      "https://www.reddit.com/r/fireinvestigation/comments/1hxpebr/companies_that_hire_folks_with_an_iaaifit/m6b7o42/",
-      "https://www.reddit.com/r/projectcar/comments/1hwzxw5/would_you_buy_this_at_auction_it_runs_and_airbags/m694591/",
-      "https://www.reddit.com/r/AutoTransport/comments/1hxdzwq/car_transport_from_copart_and_iaai_auctions/",
-      "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=10#0654_88276839_22790593",
-      "https://www.reddit.com/r/ft86/comments/1hwt82q/just_bought_an_86_at_iaai_sight_unseen_am_i_cooked/m63rqwq/",
-      "https://www.reddit.com/r/prius/comments/1hwdftz/2007_prius_still_a_good_buy_in_2025/m63fewo/",
-      "https://www.reddit.com/r/whatcarshouldIbuy/comments/1hv92rs/cars_you_bought_but_regretted/m62jwq8/",
-      "https://www.reddit.com/r/carflipping/comments/1hw7b10/copart/m62fo8j/"
+      "https://www.reddit.com/r/UsedCars/comments/1i6tt3v/auction_records/"
     ],
-    "generated_at_utc": "2026-04-14T04:58:08.503516+00:00",
+    "generated_at_utc": "2026-04-15T02:54:07.866121+00:00",
     "since_date": "2023-01-01",
-    "until_date": "2026-03-31",
+    "until_date": "2026-04-14",
     "collector_failures": [],
     "youtube_excluded": true,
     "usa_only": true,
@@ -373,7 +379,8 @@ window.IAA_REVIEWS_DATA = {
       "reddit.com",
       "pissedconsumer.com",
       "ripoffreport.com",
-      "smartcustomer.com"
+      "smartcustomer.com",
+      "complaintsboard.com"
     ],
     "required_source_websites": [
       "play.google.com",
@@ -381,17 +388,18 @@ window.IAA_REVIEWS_DATA = {
       "bbb.org"
     ],
     "geo_validation_counts": {
-      "google_play_us_store": 170,
-      "trustpilot_us_slug": 47,
+      "google_play_us_store": 165,
+      "trustpilot_us_slug": 49,
       "mixed_source_ok": 979,
       "bbb_us_business": 249,
-      "apple_us_store": 4
+      "complaintsboard_us_profile": 3,
+      "apple_us_store": 128
     },
     "geo_excluded_counts": {
       "play.google.com:google_play_us_store_non_us_marker": 6,
       "trustpilot.com:trustpilot_us_slug_non_us_marker": 3,
       "reddit.com:mixed_source_non_us_marker": 45,
-      "apps.apple.com:apple_non_us_store": 8
+      "apps.apple.com:apple_non_us_store": 12
     },
     "geo_excluded_examples": [
       {
@@ -564,12 +572,43 @@ window.IAA_REVIEWS_DATA = {
       "pissedconsumer",
       "ripoffreport",
       "smartcustomer",
+      "complaintsboard",
       "apple"
     ]
   },
   "reviews": [
     {
       "id": "rvw-000001",
+      "source_website": "trustpilot.com",
+      "source_label": "Trustpilot (iaai.com)",
+      "source_url": "https://www.trustpilot.com/reviews/69d66bb09449607e8072b9e2",
+      "author": "Tony Sampson",
+      "review_date": "2026-04-08",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Place is shady as I'll get out. Place is shady as I'll get out. How anybody dose business with these people is amazing. $200 registration? 4 what? Nobody speaks English. Nobody can answer simple questions!!!. Place is a joke. Don't waste your money here",
+      "geo_validation": "trustpilot_us_slug",
+      "tier1": "Title, Ownership, POA and Documentation",
+      "tier2": "Title Delivery & Status",
+      "tier3": "Title Not Received"
+    },
+    {
+      "id": "rvw-000002",
+      "source_website": "trustpilot.com",
+      "source_label": "Trustpilot (iaai.com)",
+      "source_url": "https://www.trustpilot.com/reviews/69d038eb7b6f1408831fde68",
+      "author": "Meero",
+      "review_date": "2026-04-04",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "By far the worst auction to purchase…. By far the worst auction to purchase from. The customer service is terrible. Cars get misrepresented often, and fees are outrageous",
+      "geo_validation": "trustpilot_us_slug",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "id": "rvw-000003",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -584,7 +623,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000002",
+      "id": "rvw-000004",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_24679733",
@@ -599,7 +638,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Missed/ Delayed Pickup and Dispatch Window"
     },
     {
-      "id": "rvw-000003",
+      "id": "rvw-000005",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaa.mobile.IaaTow)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
@@ -614,7 +653,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000004",
+      "id": "rvw-000006",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#0654_88276839_666096",
@@ -629,7 +668,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000005",
+      "id": "rvw-000007",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_24670501",
@@ -644,7 +683,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Escalation Required"
     },
     {
-      "id": "rvw-000006",
+      "id": "rvw-000008",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -659,7 +698,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000007",
+      "id": "rvw-000009",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_24653716",
@@ -674,7 +713,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-000008",
+      "id": "rvw-000010",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=ru&gl=us",
@@ -689,7 +728,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Title Not Received"
     },
     {
-      "id": "rvw-000009",
+      "id": "rvw-000011",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13845475030",
+      "author": "L boogie Milwaukee eastsider",
+      "review_date": "2026-03-13",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Great Auction. I love the app and the company IAAI Auctions…",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-000012",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/69adfb814bb82caee4c9b0b5",
@@ -704,7 +758,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000010",
+      "id": "rvw-000013",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -719,7 +773,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000011",
+      "id": "rvw-000014",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#0654_88276839_663575",
@@ -734,7 +788,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000012",
+      "id": "rvw-000015",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#0654_88276839_663397",
@@ -749,7 +803,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000013",
+      "id": "rvw-000016",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#0654_88276839_663201",
@@ -764,7 +818,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000014",
+      "id": "rvw-000017",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/69a668c678677f9763f65429",
@@ -779,7 +833,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000015",
+      "id": "rvw-000018",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_24595358",
@@ -794,7 +848,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Long Hold Time / Hard to Reach Support"
     },
     {
-      "id": "rvw-000016",
+      "id": "rvw-000019",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -809,7 +863,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000017",
+      "id": "rvw-000020",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/6997153a66e9d6cdf7a34ca1",
@@ -824,7 +878,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000018",
+      "id": "rvw-000021",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#0654_88276839_660772",
@@ -839,7 +893,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-000019",
+      "id": "rvw-000022",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_24531263",
@@ -854,7 +908,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000020",
+      "id": "rvw-000023",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_24523125",
@@ -869,7 +923,37 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000021",
+      "id": "rvw-000024",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13728809386",
+      "author": "Rizerlo",
+      "review_date": "2026-02-08",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "It’s so slow and it freezes more often on iPhone. IAA Software developers should do something. This app is so slow and it freezes more often on iPhone. They should do something about it. I went ahead and upgraded my iPhone and that didn’t help. My friends also have the same experience. Those on Android are enjoying good speed and performance.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-000025",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13726453972",
+      "author": "Will smth",
+      "review_date": "2026-02-08",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "App is outdated. It’s slow , constantly crashing, can’t see if you won pre bids after pre bid time ends. Can’t see auction results or final bid amounts. IAA charges high fees and their app is out of date compared to to Auction sites. Horrible.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-000026",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/698621d568f85821bc84e75f",
@@ -884,7 +968,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000022",
+      "id": "rvw-000027",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -899,7 +983,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000023",
+      "id": "rvw-000028",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_24477105",
@@ -914,7 +998,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000024",
+      "id": "rvw-000029",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_24463070",
@@ -929,7 +1013,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000025",
+      "id": "rvw-000030",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13679003769",
+      "author": "Mido2258",
+      "review_date": "2026-01-26",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Storage fees. You guys needs to stop charging people storage fees on Saturday and Sunday while you guys are closed doesn’t make no sense.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-000031",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#0654_88276839_656751",
@@ -944,7 +1043,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Selling/ Relisting vehicle or Parts purchase"
     },
     {
-      "id": "rvw-000026",
+      "id": "rvw-000032",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -959,7 +1058,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000027",
+      "id": "rvw-000033",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_24392484",
@@ -974,7 +1073,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-000028",
+      "id": "rvw-000034",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13629344875",
+      "author": "matt tows cars",
+      "review_date": "2026-01-13",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Waste of $200. Wasted $200 on a membership everything is overpriced and even if you win the vehicle the likelihood of it getting approved is quite low and most likely be postponed to another auction for it to be sold for more plus their is way to many fees internet fee, environmental fee, service fee, buyer fee",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-000035",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#0654_88276839_655249",
@@ -989,7 +1103,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Issue Not Resolved"
     },
     {
-      "id": "rvw-000029",
+      "id": "rvw-000036",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/695c19337f7c7cb6efb8fcda",
@@ -1004,7 +1118,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000030",
+      "id": "rvw-000037",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -1019,7 +1133,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000031",
+      "id": "rvw-000038",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13599774001",
+      "author": "Periko509",
+      "review_date": "2026-01-05",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "I was highest bidder and they dint offer the car to me got sold on buy now to someone else. I dislike how hard it is to navigate now it used to be easy now they made it to complicated. I also dislike that when ever am the higher bidder and is on pending offer they don’t ask me to buy the car first instead they put it on buy now and by the time I get a alert it’s sold.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-000039",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#0654_88276839_653193",
@@ -1034,7 +1163,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-000032",
+      "id": "rvw-000040",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=2#0654_88276839_24338253",
@@ -1049,22 +1178,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Escalation Required"
     },
     {
-      "id": "rvw-000033",
-      "source_website": "play.google.com",
-      "source_label": "Google Play (com.iaa.mobile.IaaTow)",
-      "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
-      "author": "Mary Scott",
-      "review_date": "2025-12-26",
-      "rating": 5,
-      "sentiment": "positive",
-      "review_text": "IAA great/ loaders operator in the Wichita Ks yard, I would, whether step in honey and walk across a red ant hill before dealing with them.",
-      "geo_validation": "google_play_us_store",
+      "id": "rvw-000041",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13545087986",
+      "author": "muslim90@90",
+      "review_date": "2025-12-22",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Update. When you share a link it takes you to google instead of the app and it tells you to download the app, even though I already have the app",
+      "geo_validation": "apple_us_store",
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000034",
+      "id": "rvw-000042",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=2#0654_88276839_24296359",
@@ -1079,7 +1208,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000035",
+      "id": "rvw-000043",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#0654_88276839_651624",
@@ -1094,7 +1223,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000036",
+      "id": "rvw-000044",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13526083154",
+      "author": "183764!.&;!,\"\".",
+      "review_date": "2025-12-17",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "App glitches all the time. The app is glitching all the time, for premium fee which they charge on cars you will want a better experience.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-000045",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=2#0654_88276839_24275790",
@@ -1109,7 +1253,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000037",
+      "id": "rvw-000046",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -1124,7 +1268,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000038",
+      "id": "rvw-000047",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=2#0654_88276839_24234863",
@@ -1139,7 +1283,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delayed Email/Phone Response"
     },
     {
-      "id": "rvw-000039",
+      "id": "rvw-000048",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=2#0654_88276839_24210691",
@@ -1154,7 +1298,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Issue Not Resolved"
     },
     {
-      "id": "rvw-000040",
+      "id": "rvw-000049",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/6929d0a008813c0ba49fe2b1",
@@ -1164,12 +1308,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "negative",
       "review_text": "Don't place bids. Don't place bids. Lately, the system has been automatically stacking bids. If you place a bid, they'll automatically approach the maximum stack to take all your money. I've been buying on this auction for seven years, but now they've turned into scammers. They also claim the title is clean, but a month after purchase, it becomes a total loss (salvage).",
       "geo_validation": "trustpilot_us_slug",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
+      "tier1": "Title, Ownership, POA and Documentation",
+      "tier2": "Title Delivery & Status",
+      "tier3": "Title Not Received"
     },
     {
-      "id": "rvw-000041",
+      "id": "rvw-000050",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -1184,7 +1328,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000042",
+      "id": "rvw-000051",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaa.mobile.IaaTow)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
@@ -1199,7 +1343,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000043",
+      "id": "rvw-000052",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=2#0654_88276839_24187756",
@@ -1214,7 +1358,37 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Unable to Bid"
     },
     {
-      "id": "rvw-000044",
+      "id": "rvw-000053",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13438289166",
+      "author": "Jloc87",
+      "review_date": "2025-11-24",
+      "rating": 3,
+      "sentiment": "positive",
+      "review_text": "Thank you. Finally, Dark Mode!!! Now just add pure sale and it will be five stars. Doing good so far with the other parts of the app.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-000054",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13434123310",
+      "author": "A.B.L.X",
+      "review_date": "2025-11-23",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Sellouts. Horrible customer service. Horrible app and website interface. They sell out their customers and run up the bids because they guarantee the insurance companies a certain high bid.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "id": "rvw-000055",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#0654_88276839_646935",
@@ -1224,12 +1398,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "negative",
       "review_text": "Iaai no longer operates as a legitimate auction. Winning a vehicle only to have the sale immediately declined and transferred to Buy Now undermines the entire purpose of an auction process. This happens all the time. At this point, it functions no differently than a conventional car dealership especially in the case of Progressive. The situation has become quite frustrating. A total joke.",
       "geo_validation": "bbb_us_business",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
     },
     {
-      "id": "rvw-000045",
+      "id": "rvw-000056",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaa.mobile.IaaTow)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
@@ -1244,7 +1418,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000046",
+      "id": "rvw-000057",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/691c42a1ce863fc9dda205af",
@@ -1259,7 +1433,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000047",
+      "id": "rvw-000058",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=2#0654_88276839_24158719",
@@ -1274,7 +1448,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-000048",
+      "id": "rvw-000059",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=2#0654_88276839_24149711",
@@ -1289,7 +1463,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000049",
+      "id": "rvw-000060",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=3#0654_88276839_24140604",
@@ -1304,7 +1478,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000050",
+      "id": "rvw-000061",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13373270208",
+      "author": "Itsjonbro1995",
+      "review_date": "2025-11-08",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Log in problems. It logs me out every time I close the app. N it makes me log in every time I try to add to my watch list. Every single time I have to log in it says wrong password. I have to reset my password every single time",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-000062",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=3#0654_88276839_24117156",
@@ -1319,7 +1508,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000051",
+      "id": "rvw-000063",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -1334,7 +1523,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000052",
+      "id": "rvw-000064",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaa.mobile.IaaTow)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
@@ -1349,7 +1538,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000053",
+      "id": "rvw-000065",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#0654_88276839_639108",
@@ -1364,7 +1553,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000054",
+      "id": "rvw-000066",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/68e68793d716625ee642a317",
@@ -1379,7 +1568,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000055",
+      "id": "rvw-000067",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/68e57a7408b00626249c6ab7",
@@ -1394,7 +1583,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-000056",
+      "id": "rvw-000068",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -1409,7 +1598,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000057",
+      "id": "rvw-000069",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=3#0654_88276839_23956980",
@@ -1424,7 +1613,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000058",
+      "id": "rvw-000070",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13209774327",
+      "author": "gorgees26",
+      "review_date": "2025-10-01",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Scam. My first experience with IAA was this way I did bid on golf cart and the amount was $75 and they ended up telling me horrible stuff about Max’s bed, which is I did not put it a penny all of our $75 and they charge me 250. I don’t know why I called them. They said that’s what did you pay for so you guys be careful I was so happy with Copart. I did a big mistake. Be careful by from them.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-000071",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/68d34e448e55f58a9bdc3a72",
@@ -1439,7 +1643,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000059",
+      "id": "rvw-000072",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -1454,7 +1658,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Long Hold Time / Hard to Reach Support"
     },
     {
-      "id": "rvw-000060",
+      "id": "rvw-000073",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/68cc215139d96b326b7f386c",
@@ -1469,7 +1673,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Upload Troubleshooting"
     },
     {
-      "id": "rvw-000061",
+      "id": "rvw-000074",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=3#0654_88276839_23904913",
@@ -1484,7 +1688,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000062",
+      "id": "rvw-000075",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=3#0654_88276839_23890988",
@@ -1499,7 +1703,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000063",
+      "id": "rvw-000076",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=4#0654_88276839_23874599",
@@ -1514,7 +1718,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000064",
+      "id": "rvw-000077",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -1529,7 +1733,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000065",
+      "id": "rvw-000078",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=es&gl=us",
@@ -1544,7 +1748,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000066",
+      "id": "rvw-000079",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=4#0654_88276839_23856843",
@@ -1559,7 +1763,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delayed Email/Phone Response"
     },
     {
-      "id": "rvw-000067",
+      "id": "rvw-000080",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -1574,7 +1778,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000068",
+      "id": "rvw-000081",
       "source_website": "pissedconsumer.com",
       "source_label": "PissedConsumer",
       "source_url": "https://insurance-auto-auctions.pissedconsumer.com/review.html?page=1#review-6843611",
@@ -1589,7 +1793,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000069",
+      "id": "rvw-000082",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaa.mobile.IaaTow)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
@@ -1604,7 +1808,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000070",
+      "id": "rvw-000083",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaa.mobile.IaaTow)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
@@ -1619,7 +1823,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000071",
+      "id": "rvw-000084",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13090498900",
+      "author": "Vitalik Kuklishin",
+      "review_date": "2025-09-02",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "App is super slow today. App is super slow today",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-000085",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -1634,7 +1853,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000072",
+      "id": "rvw-000086",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=4#0654_88276839_23761707",
@@ -1649,7 +1868,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000073",
+      "id": "rvw-000087",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#0654_88276839_629545",
@@ -1659,12 +1878,27 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "positive",
       "review_text": "the action is doing great, but i have license for many years and i notice they are not trust in many cars, for example many cars that have not wheel is posted as run and drive, that is playing with the customers it is lie",
       "geo_validation": "bbb_us_business",
-      "tier1": "Membership / Licensing / Fees & Bidding Policies",
-      "tier2": "Bidding Process, Rules and Fees",
-      "tier3": "How to Bid (First Time)"
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000074",
+      "id": "rvw-000088",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13064868895",
+      "author": "_Bam2004",
+      "review_date": "2025-08-26",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "App is slow it is better on the computer. Very slow, can not keep up with bids and you will lose money using it",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-000089",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#0654_88276839_629330",
@@ -1679,7 +1913,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Long Hold Time / Hard to Reach Support"
     },
     {
-      "id": "rvw-000075",
+      "id": "rvw-000090",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=4#0654_88276839_23793253",
@@ -1694,7 +1928,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000076",
+      "id": "rvw-000091",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/68a4a82295611f8385f94648",
@@ -1709,7 +1943,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Selling/ Relisting vehicle or Parts purchase"
     },
     {
-      "id": "rvw-000077",
+      "id": "rvw-000092",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -1724,7 +1958,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000078",
+      "id": "rvw-000093",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (992957183, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=992957183&type=Purple%20Software&reviewId=13031808837",
+      "author": "vova tiburon",
+      "review_date": "2025-08-18",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Bad app. I spend 1 hours for answering on stupid questions. 5 times change passwords. And I must go to office. So what sense in this app???",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-000094",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -1739,37 +1988,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000079",
-      "source_website": "play.google.com",
-      "source_label": "Google Play (com.iaai.android)",
-      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=es&gl=us",
-      "author": "abdiel rampie",
-      "review_date": "2025-08-11",
-      "rating": 4,
-      "sentiment": "positive",
-      "review_text": "Ver y food apps For car business",
-      "geo_validation": "google_play_us_store",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
-    },
-    {
-      "id": "rvw-000080",
-      "source_website": "play.google.com",
-      "source_label": "Google Play (com.iaai.android)",
-      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
-      "author": "Ashley D Story",
-      "review_date": "2025-08-09",
-      "rating": 2,
-      "sentiment": "negative",
-      "review_text": "apps fine. it does what it's supposed to...",
-      "geo_validation": "google_play_us_store",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
-    },
-    {
-      "id": "rvw-000081",
+      "id": "rvw-000095",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=4#0654_88276839_23713531",
@@ -1784,7 +2003,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Wire Pending/Posting Delay"
     },
     {
-      "id": "rvw-000082",
+      "id": "rvw-000096",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -1799,22 +2018,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Title Not Received"
     },
     {
-      "id": "rvw-000083",
-      "source_website": "bbb.org",
-      "source_label": "BBB Complaints",
-      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=4#0654_88276839_23695801",
-      "author": "BBB complainant",
+      "id": "rvw-000097",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (992957183, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=992957183&type=Purple%20Software&reviewId=12977524536",
+      "author": "Crashdummy616",
       "review_date": "2025-08-04",
       "rating": 1,
       "sentiment": "negative",
-      "review_text": "Service or Repair Issues. Car was picked up on Friday and not checked in until Monday morning after I showed up. The reclamation center did verify payment and was supposed to set up appointment. When I arrived they told me that it still had not been processed. The number I was given stated business hours started at 8 am so I could set an appointment but no one answered. I explained I had medication in the car that was needed. I was refused access to my contents and I have currently been without medicine for 3 days.",
-      "geo_validation": "bbb_us_business",
+      "review_text": "Needs attention. App constantly crashes, deletes photos after submitted a major headache",
+      "geo_validation": "apple_us_store",
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000084",
+      "id": "rvw-000098",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -1829,7 +2048,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000085",
+      "id": "rvw-000099",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -1844,7 +2063,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000086",
+      "id": "rvw-000100",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -1859,7 +2078,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000087",
+      "id": "rvw-000101",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -1874,7 +2093,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000088",
+      "id": "rvw-000102",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -1889,7 +2108,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000089",
+      "id": "rvw-000103",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -1904,7 +2123,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000090",
+      "id": "rvw-000104",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=4#0654_88276839_23683160",
@@ -1919,7 +2138,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000091",
+      "id": "rvw-000105",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -1934,7 +2153,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000092",
+      "id": "rvw-000106",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -1949,7 +2168,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000093",
+      "id": "rvw-000107",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=4#0654_88276839_23673833",
@@ -1964,7 +2183,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delayed Email/Phone Response"
     },
     {
-      "id": "rvw-000094",
+      "id": "rvw-000108",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=4#0654_88276839_23667793",
@@ -1979,7 +2198,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-000095",
+      "id": "rvw-000109",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -1994,7 +2213,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000096",
+      "id": "rvw-000110",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -2009,7 +2228,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000097",
+      "id": "rvw-000111",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaa.mobile.IaaTow)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
@@ -2024,7 +2243,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000098",
+      "id": "rvw-000112",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#0654_88276839_600000",
@@ -2039,7 +2258,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000099",
+      "id": "rvw-000113",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -2054,7 +2273,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000100",
+      "id": "rvw-000114",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (992957183, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=992957183&type=Purple%20Software&reviewId=12911462429",
+      "author": "Pavlo Chehorskyi",
+      "review_date": "2025-07-19",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Worst app I’ve ever used 🤬. This app is absolutely useless. Constant crashes, login issues, and nothing ever works when you need it most. Slow, buggy, and frustrating beyond belief. How is this even approved for use by IAA? Total disaster. If I could give it zero stars, I would. Complete waste of time – fix your app or shut it down.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-000115",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#0654_88276839_599460",
@@ -2069,7 +2303,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000101",
+      "id": "rvw-000116",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -2084,7 +2318,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000102",
+      "id": "rvw-000117",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=5#0654_88276839_23617141",
@@ -2099,7 +2333,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000103",
+      "id": "rvw-000118",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=5#0654_88276839_23614929",
@@ -2114,7 +2348,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-000104",
+      "id": "rvw-000119",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=5#0654_88276839_23612562",
@@ -2129,7 +2363,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-000105",
+      "id": "rvw-000120",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=5#0654_88276839_23605386",
@@ -2144,7 +2378,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-000106",
+      "id": "rvw-000121",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (992957183, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=992957183&type=Purple%20Software&reviewId=12891407282",
+      "author": "Shamail 09",
+      "review_date": "2025-07-14",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Not working. I don’t know why?! Not working guys. I’m still waiting when my email coming, is not working!!!",
+      "geo_validation": "apple_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Case Resolution Quality",
+      "tier3": "Issue Not Resolved"
+    },
+    {
+      "id": "rvw-000122",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -2159,7 +2408,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000107",
+      "id": "rvw-000123",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#0654_88276839_598443",
@@ -2174,7 +2423,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Selling/ Relisting vehicle or Parts purchase"
     },
     {
-      "id": "rvw-000108",
+      "id": "rvw-000124",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=5#0654_88276839_23582686",
@@ -2189,7 +2438,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000109",
+      "id": "rvw-000125",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=5#0654_88276839_23575749",
@@ -2200,11 +2449,11 @@ window.IAA_REVIEWS_DATA = {
       "review_text": "Service or Repair Issues. I bought a salvage auction car that was misrepresented as a run and drive which on their website says it goes in gear moves forward or reverse and starts and steering turns both directions one full revolution the employees left out the part where it goes in gear and moves so they lied when I brought it to their attention that the car won't go in gear or move. It should have been listed mechanical or stationarynot run and drive you can see in the photo the engine is moved from its original location forward and down tearing the throttle cable off and the gear selector cable. The inspectors who checked the car when they got it did not do their job correctly.",
       "geo_validation": "bbb_us_business",
       "tier1": "Lot Condition, Listing Status and related",
-      "tier2": "Third-Party Inspection Authorization & Scheduling",
-      "tier3": "Previewing/ Inspecting Vehicles"
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000110",
+      "id": "rvw-000126",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=5#0654_88276839_23573792",
@@ -2219,7 +2468,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delayed Email/Phone Response"
     },
     {
-      "id": "rvw-000111",
+      "id": "rvw-000127",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=5#0654_88276839_23555040",
@@ -2234,7 +2483,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Upload Troubleshooting"
     },
     {
-      "id": "rvw-000112",
+      "id": "rvw-000128",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12844429173",
+      "author": "E_____H",
+      "review_date": "2025-07-02",
+      "rating": 4,
+      "sentiment": "positive",
+      "review_text": "Features. You guys should add dark mode feature to the app.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-000129",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/68644b22fb60b20d4b993108",
@@ -2249,7 +2513,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000113",
+      "id": "rvw-000130",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -2264,7 +2528,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000114",
+      "id": "rvw-000131",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=6#0654_88276839_23543011",
@@ -2279,7 +2543,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delayed Email/Phone Response"
     },
     {
-      "id": "rvw-000115",
+      "id": "rvw-000132",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12833740903",
+      "author": "Rlopez93",
+      "review_date": "2025-06-29",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "I have issues with the app running on my apple device. App does not load sometimes and breaks down all of a sudden",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-000133",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=6#0654_88276839_23518431",
@@ -2294,7 +2573,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000116",
+      "id": "rvw-000134",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=6#0654_88276839_23518412",
@@ -2305,11 +2584,11 @@ window.IAA_REVIEWS_DATA = {
       "review_text": "Service or Repair Issues. My 06 REMOVED was repossessed for nonpayment on 6-11-25. I setup an appt to retrieve my belongings on a certain date and when that date came i was turned away due to an error on the companys behalf w scheduling. I made another appointment and was told 2 different pieces of information at that time my belongings would be held for by the lot for either 15 days or 60 days. When i went to my appointment i was urged to sign an inventory sheet that was highly inaccurate. When my belongings were brought outside the lot. It was 2 boxes and missing multiple items.. including my handicap decal that was hanging on the rear view mirror. I was told to make a claim and that there was no further help or information available.",
       "geo_validation": "bbb_us_business",
       "tier1": "Lot Condition, Listing Status and related",
-      "tier2": "Listing Status",
-      "tier3": "Selling/ Relisting vehicle or Parts purchase"
+      "tier2": "Personal belongings/ items",
+      "tier3": "Removal / Retrieval of items left in vehicle"
     },
     {
-      "id": "rvw-000117",
+      "id": "rvw-000135",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=6#0654_88276839_23516827",
@@ -2324,7 +2603,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000118",
+      "id": "rvw-000136",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12817846162",
+      "author": "Donkey dooo",
+      "review_date": "2025-06-25",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Trash. This app is trash it tells you you have to be a upgraded member to bid on stuff and then when you try to upgrade it won’t let you",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-000137",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaa.mobile.IaaTow)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
@@ -2339,7 +2633,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000119",
+      "id": "rvw-000138",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=6#0654_88276839_23497729",
@@ -2354,7 +2648,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delayed Email/Phone Response"
     },
     {
-      "id": "rvw-000120",
+      "id": "rvw-000139",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -2369,7 +2663,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000121",
+      "id": "rvw-000140",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=6#0654_88276839_23471594",
@@ -2384,7 +2678,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-000122",
+      "id": "rvw-000141",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -2399,7 +2693,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000123",
+      "id": "rvw-000142",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -2414,7 +2708,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000124",
+      "id": "rvw-000143",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=6#0654_88276839_23445207",
@@ -2429,7 +2723,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000125",
+      "id": "rvw-000144",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=6#0654_88276839_23428683",
@@ -2444,7 +2738,37 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000126",
+      "id": "rvw-000145",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12739640276",
+      "author": "Qarar Z",
+      "review_date": "2025-06-05",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Poor customer support. Providing very poor customer service and excessive fees. It takes more than an hour to get in touch with customer support unit.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "id": "rvw-000146",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12726265309",
+      "author": "Mrodjon",
+      "review_date": "2025-06-01",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Expensive and salvage. They’re selling expensive ahh cars with high mileage and damage. i can find it on marketplace cheaper and clear title with no damage.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
+    },
+    {
+      "id": "rvw-000147",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=6#0654_88276839_23394486",
@@ -2459,7 +2783,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Deposit Refund Status"
     },
     {
-      "id": "rvw-000127",
+      "id": "rvw-000148",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#0654_88276839_591657",
@@ -2474,7 +2798,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000128",
+      "id": "rvw-000149",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=7#0654_88276839_23381858",
@@ -2489,7 +2813,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000129",
+      "id": "rvw-000150",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=7#0654_88276839_23371663",
@@ -2504,7 +2828,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000130",
+      "id": "rvw-000151",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaa.mobile.IaaTow)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
@@ -2519,7 +2843,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000131",
+      "id": "rvw-000152",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaa.mobile.IaaTow)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
@@ -2534,7 +2858,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000132",
+      "id": "rvw-000153",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaa.mobile.IaaTow)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
@@ -2549,7 +2873,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000133",
+      "id": "rvw-000154",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/681defa568f6e3bad3504204",
@@ -2564,7 +2888,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000134",
+      "id": "rvw-000155",
       "source_website": "reddit.com",
       "source_label": "Reddit r/StupidCarQuestions",
       "source_url": "https://www.reddit.com/r/StupidCarQuestions/comments/1ki7ghz/rule_of_thumb_when_buying_a_car_with_a_rebuilt/mrdkxwz/",
@@ -2579,7 +2903,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000135",
+      "id": "rvw-000156",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1kh8mtx/rebuilt_title/mrbkcch/",
@@ -2594,7 +2918,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000136",
+      "id": "rvw-000157",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1kh8mtx/rebuilt_title/mr9mdke/",
@@ -2609,7 +2933,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000137",
+      "id": "rvw-000158",
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/UsedCars",
+      "source_url": "https://www.reddit.com/r/UsedCars/comments/1khioc6/potential_purchase_confused_on_the_status_of_the/mr85jwp/",
+      "author": "Odd_Adagio_9650",
+      "review_date": "2025-05-08",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "A lot of salvage cars that have been recovered thefts will show this on Carfax. This happens bc the insurance pays the previous owner on their stolen car claim, after the car is found they send it to Copart, IAAI, or other auctions. It's no big problem at all, I've boight over 100 cars like this directly at actions. There's plenty of examples if you need some reassurance",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-000159",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Autobody",
       "source_url": "https://www.reddit.com/r/Autobody/comments/1kh2tv2/does_this_seem_like_its_worth_the_trouble_i_can/mr3sosu/",
@@ -2624,7 +2963,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000138",
+      "id": "rvw-000160",
       "source_website": "reddit.com",
       "source_label": "Reddit r/gmcsierra",
       "source_url": "https://www.reddit.com/r/gmcsierra/comments/1kh29rp/greetings_from_finland/mr3oace/",
@@ -2639,7 +2978,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000139",
+      "id": "rvw-000161",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AudiA4",
       "source_url": "https://www.reddit.com/r/AudiA4/comments/1kfafxh/buying_used_audi_a4_b9_help_me_to_choose_the_car/",
@@ -2654,7 +2993,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000140",
+      "id": "rvw-000162",
       "source_website": "reddit.com",
       "source_label": "Reddit r/InsuranceClaims",
       "source_url": "https://www.reddit.com/r/InsuranceClaims/comments/1ke989w/totaled_m3_acv_help/mqh60ag/",
@@ -2664,12 +3003,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "positive",
       "review_text": "Its been a month since the accident and almost two weeks since it was declared a total loss. They moved the car to IAAI without my approval and my car is listed on there with my VIN and everything as “not ready for auction”. But I have yet to receive an offer. Is it not best to wait for an offer before invoking the clause?",
       "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000141",
+      "id": "rvw-000163",
       "source_website": "reddit.com",
       "source_label": "Reddit r/DubaiPetrolHeads",
       "source_url": "https://www.reddit.com/r/DubaiPetrolHeads/comments/1kdhlvy/buying_a_usspec_car_in_the_uae_the_ultimate_guide/",
@@ -2684,7 +3023,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Proactive Follow-up"
     },
     {
-      "id": "rvw-000142",
+      "id": "rvw-000164",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UAE",
       "source_url": "https://www.reddit.com/r/UAE/comments/1kdg852/buying_a_usspec_car_in_the_uae_the_ultimate_guide/",
@@ -2699,7 +3038,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Proactive Follow-up"
     },
     {
-      "id": "rvw-000143",
+      "id": "rvw-000165",
       "source_website": "reddit.com",
       "source_label": "Reddit r/DubaiPetrolHeads",
       "source_url": "https://www.reddit.com/r/DubaiPetrolHeads/comments/1kdf7wz/the_truth_about_usspec_used_cars_why_the_vehicle/",
@@ -2714,7 +3053,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Proactive Follow-up"
     },
     {
-      "id": "rvw-000144",
+      "id": "rvw-000166",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/1kcee8a/advice_for_buying_cheap_cars/",
@@ -2729,7 +3068,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000145",
+      "id": "rvw-000167",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaa.mobile.IaaTow)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
@@ -2744,7 +3083,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000146",
+      "id": "rvw-000168",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12607035533",
+      "author": "DHarnadek",
+      "review_date": "2025-05-01",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Making ‘the other guys’ appear awesome. I’ve been trying for months to pay my $200 registration fee. There’s no phone number, no email address, no access to chat - you’re redirecting to open a ticket for SAP assistance!! I’ve since seen other reviews where people pay the $200 and can’t access anything … with zero customer service. And I guess I’m glad I couldn’t pay the fee. There’s another big, national auto auction site - I recommend you use that one instead. They are bad … but way better than IAA.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "id": "rvw-000169",
       "source_website": "reddit.com",
       "source_label": "Reddit r/accord",
       "source_url": "https://www.reddit.com/r/accord/comments/1kba6wn/2023_honda_accord_touring_stolen/mpv1d2i/",
@@ -2759,7 +3113,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-000147",
+      "id": "rvw-000170",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -2774,7 +3128,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000148",
+      "id": "rvw-000171",
       "source_website": "reddit.com",
       "source_label": "Reddit r/prius",
       "source_url": "https://www.reddit.com/r/prius/comments/1kauu19/someone_is_selling_a_prius_of_unknown_year_for/mpphach/",
@@ -2789,7 +3143,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000149",
+      "id": "rvw-000172",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Scams",
       "source_url": "https://www.reddit.com/r/Scams/comments/1kacqcu/sca_auction_buyer_beware_this_company_is_a_scam/",
@@ -2804,7 +3158,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000150",
+      "id": "rvw-000173",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=7#0654_88276839_23260376",
@@ -2819,7 +3173,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000151",
+      "id": "rvw-000174",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=7#0654_88276839_23247246",
@@ -2834,7 +3188,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delayed Email/Phone Response"
     },
     {
-      "id": "rvw-000152",
+      "id": "rvw-000175",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1k9car0/how_do_i_buy_a_totaled_vehicle/mpdw7ps/",
@@ -2849,7 +3203,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Issue Resolved"
     },
     {
-      "id": "rvw-000153",
+      "id": "rvw-000176",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Autobody",
       "source_url": "https://www.reddit.com/r/Autobody/comments/1k8y3gk/anybody_with_iaa_auction_experience_is_this_a/",
@@ -2864,7 +3218,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000154",
+      "id": "rvw-000177",
       "source_website": "reddit.com",
       "source_label": "Reddit r/mechanics",
       "source_url": "https://www.reddit.com/r/mechanics/comments/1k8y4j4/anyone_with_iaa_auction_experience_is_this_a_good/",
@@ -2879,7 +3233,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000155",
+      "id": "rvw-000178",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1k77r9g/tips_of_buying_car_in_us_auctions/movxaef/",
@@ -2894,7 +3248,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000156",
+      "id": "rvw-000179",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1k77r9g/tips_of_buying_car_in_us_auctions/",
@@ -2909,7 +3263,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000157",
+      "id": "rvw-000180",
       "source_website": "reddit.com",
       "source_label": "Reddit r/prius",
       "source_url": "https://www.reddit.com/r/prius/comments/1k6wvug/what_auctions_do_people_get_priuses_from/moul369/",
@@ -2924,7 +3278,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000158",
+      "id": "rvw-000181",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=7#0654_88276839_23245272",
@@ -2939,7 +3293,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000159",
+      "id": "rvw-000182",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Toyota_Matrix",
       "source_url": "https://www.reddit.com/r/Toyota_Matrix/comments/1k4ifxh/exiting_thoughts_on_the_xrs/mobevg3/",
@@ -2954,7 +3308,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000160",
+      "id": "rvw-000183",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=7#0654_88276839_23230212",
@@ -2964,12 +3318,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "negative",
       "review_text": "Service or Repair Issues. I bought a car from IAAI auctions in REMOVED and in the description it said the car Runs and drives. It is a code they put on all their cars so incase your sitatution is like mine and you cant make it to the branch they let you know whether it is \"stationary\" Does not run or drive or they lable it \"Run and Drive\" which means that they turned it on with or without a jump box and the car started and moved backwards and forwards on its own. After I recieved the car, there was no way anyone was able to start that car. It was mechanically impossible. The fuel line had been cut as well as the wiring to the fuel pump and holes in the gas tank. I immediately let IAAI know and let them know what was going on,",
       "geo_validation": "bbb_us_business",
-      "tier1": "Membership / Licensing / Fees & Bidding Policies",
-      "tier2": "Bidding Process, Rules and Fees",
-      "tier3": "Fees"
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000161",
+      "id": "rvw-000184",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1k3feym/finding_cars/mo4k70c/",
@@ -2984,7 +3338,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000162",
+      "id": "rvw-000185",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1k3feym/finding_cars/mo46vzf/",
@@ -2999,7 +3353,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000163",
+      "id": "rvw-000186",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1k3feym/finding_cars/mo3tsi6/",
@@ -3014,7 +3368,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000164",
+      "id": "rvw-000187",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1k3feym/finding_cars/mo370dr/",
@@ -3029,22 +3383,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000165",
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/AskMechanics",
-      "source_url": "https://www.reddit.com/r/AskMechanics/comments/1k2wh14/is_my_car_totaled_please_say_no/mo2kgoq/",
-      "author": "polskisamuraj",
-      "review_date": "2025-04-20",
-      "rating": null,
-      "sentiment": "positive",
-      "review_text": "Funny thing is if it end up on copart or iaai someone will be happy to get it",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
-    },
-    {
-      "id": "rvw-000166",
+      "id": "rvw-000188",
       "source_website": "reddit.com",
       "source_label": "Reddit r/WRX",
       "source_url": "https://www.reddit.com/r/WRX/comments/1k3vxrb/sti_decision/",
@@ -3059,7 +3398,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Schedule/ Reschedule Pickup"
     },
     {
-      "id": "rvw-000167",
+      "id": "rvw-000189",
       "source_website": "reddit.com",
       "source_label": "Reddit r/HotShotTrucking",
       "source_url": "https://www.reddit.com/r/HotShotTrucking/comments/1k2flp4/looking_for_a_40_gooseneck/mnzn8z0/",
@@ -3074,7 +3413,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000168",
+      "id": "rvw-000190",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1k2dixm/anybody_go_to_the_manheim_or_copart_auctions_in/mnuisda/",
@@ -3089,7 +3428,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000169",
+      "id": "rvw-000191",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=7#0654_88276839_23223384",
@@ -3104,7 +3443,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Title Not Received"
     },
     {
-      "id": "rvw-000170",
+      "id": "rvw-000192",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -3119,7 +3458,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000171",
+      "id": "rvw-000193",
       "source_website": "reddit.com",
       "source_label": "Reddit r/legaladvice",
       "source_url": "https://www.reddit.com/r/legaladvice/comments/1k01aqr/am_i_a_sucker_with_no_legal_recourse_i_bought_a/mndzy5v/",
@@ -3134,7 +3473,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000172",
+      "id": "rvw-000194",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=7#0654_88276839_23214727",
@@ -3149,7 +3488,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-000173",
+      "id": "rvw-000195",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12545254500",
+      "author": "Abdul qasimi",
+      "review_date": "2025-04-15",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "They block my account and they want $1000 dollar. I have a small car dealership and I buy and sell a lot of car from those guys every time I go there in the front desk customer service will low and professional also did block my account twice. They want thousand dollar they try to rape you off every time.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "id": "rvw-000196",
       "source_website": "reddit.com",
       "source_label": "Reddit r/prius",
       "source_url": "https://www.reddit.com/r/prius/comments/1jx0f39/which_gen_2_would_you_buy/mmq499u/",
@@ -3164,7 +3518,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000174",
+      "id": "rvw-000197",
       "source_website": "reddit.com",
       "source_label": "Reddit r/CarRepair",
       "source_url": "https://www.reddit.com/r/CarRepair/comments/1jv8mez/what_parts_would_i_need_for_repair_of_this_vehicle/mmmp9qe/",
@@ -3179,7 +3533,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000175",
+      "id": "rvw-000198",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/1jwbwqq/need_advice_is_this_2014_mazda3_worth_it_despite/",
@@ -3194,7 +3548,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000176",
+      "id": "rvw-000199",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -3209,7 +3563,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000177",
+      "id": "rvw-000200",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -3224,7 +3578,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000178",
+      "id": "rvw-000201",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=7#0654_88276839_23187695",
@@ -3239,7 +3593,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000179",
+      "id": "rvw-000202",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=8#0654_88276839_23186284",
@@ -3254,7 +3608,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000180",
+      "id": "rvw-000203",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -3269,7 +3623,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000181",
+      "id": "rvw-000204",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -3284,7 +3638,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000182",
+      "id": "rvw-000205",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -3299,7 +3653,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000183",
+      "id": "rvw-000206",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12524465100",
+      "author": "BlackCristal137",
+      "review_date": "2025-04-09",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Customer Service. How incompetent are those people taking calls. I've wasted hours waiting for someone to answer my call, and they never pick up. What bad service.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "id": "rvw-000207",
       "source_website": "reddit.com",
       "source_label": "Reddit r/urbancarliving",
       "source_url": "https://www.reddit.com/r/urbancarliving/comments/1ju0byg/i_stayed_in_a_house_for_2_weeks_and_now_im_back/mm0kqqf/",
@@ -3309,12 +3678,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "positive",
       "review_text": "Just buy an rv, don’t be the weird guy who claims to love being homeless but want to use inside “overrated” amenities. You can go to Copart or IAA and get an RV for a pretty good price (got a side business where we flip them) . Might have to do some cleaning but you see still like this for 1500-4000 all the time Check out this 1998 FORD ECONOLINE at IAA before its scheduled auction on . https://link-mapp.iaai.com/jpYTCGiSKic6AeYj7",
       "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000184",
+      "id": "rvw-000208",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -3329,7 +3698,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000185",
+      "id": "rvw-000209",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -3344,7 +3713,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000186",
+      "id": "rvw-000210",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -3359,7 +3728,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000187",
+      "id": "rvw-000211",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -3374,7 +3743,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000188",
+      "id": "rvw-000212",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1jtwvtk/tesla_hit_me_can_i_prevent_having_my_car_totaled/mlxpo29/",
@@ -3389,7 +3758,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-000189",
+      "id": "rvw-000213",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -3404,7 +3773,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000190",
+      "id": "rvw-000214",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -3419,7 +3788,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delayed Email/Phone Response"
     },
     {
-      "id": "rvw-000191",
+      "id": "rvw-000215",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Nissan",
       "source_url": "https://www.reddit.com/r/Nissan/comments/1jt5y3t/bought_a_car_from_iaai_trunk_full_of_rot_trash/mlrxk03/",
@@ -3434,7 +3803,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000192",
+      "id": "rvw-000216",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Flipping",
       "source_url": "https://www.reddit.com/r/Flipping/comments/1js90es/on_pace_to_beat_my_full_time_salary/mlmxqyp/",
@@ -3449,7 +3818,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000193",
+      "id": "rvw-000217",
       "source_website": "reddit.com",
       "source_label": "Reddit r/ValueInvesting",
       "source_url": "https://www.reddit.com/r/ValueInvesting/comments/1jsaw95/salvaging_net_worth_with_salvage/mlmwz33/",
@@ -3464,7 +3833,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000194",
+      "id": "rvw-000218",
       "source_website": "reddit.com",
       "source_label": "Reddit r/legaladvice",
       "source_url": "https://www.reddit.com/r/legaladvice/comments/1jt6fm9/what_legal_options_do_i_have_after_discovering/",
@@ -3479,7 +3848,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000195",
+      "id": "rvw-000219",
       "source_website": "reddit.com",
       "source_label": "Reddit r/legaladvice",
       "source_url": "https://www.reddit.com/r/legaladvice/comments/1jt6dlh/what_legal_options_do_i_have_after_discovering/",
@@ -3494,7 +3863,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000196",
+      "id": "rvw-000220",
       "source_website": "reddit.com",
       "source_label": "Reddit r/legaladvice",
       "source_url": "https://www.reddit.com/r/legaladvice/comments/1jt6bmx/what_legal_options_do_i_have_after_discovering/",
@@ -3509,7 +3878,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000197",
+      "id": "rvw-000221",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Nissan",
       "source_url": "https://www.reddit.com/r/Nissan/comments/1jt5y3t/bought_a_car_from_iaai_trunk_full_of_rot_trash/",
@@ -3524,7 +3893,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Deposit Refund Status"
     },
     {
-      "id": "rvw-000198",
+      "id": "rvw-000222",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Volvo",
       "source_url": "https://www.reddit.com/r/Volvo/comments/1jrgiir/which_volvo_do_you_drive_and_how_old_are_you/mlppcdv/",
@@ -3539,7 +3908,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000199",
+      "id": "rvw-000223",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -3554,7 +3923,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000200",
+      "id": "rvw-000224",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -3569,7 +3938,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000201",
+      "id": "rvw-000225",
       "source_website": "reddit.com",
       "source_label": "Reddit r/camaro",
       "source_url": "https://www.reddit.com/r/camaro/comments/1jr99cz/seller_says_the_airbag_light_is_on_and_there_is_a/mlfcdms/",
@@ -3584,7 +3953,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000202",
+      "id": "rvw-000226",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -3599,7 +3968,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000203",
+      "id": "rvw-000227",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/1jpqnwe/how_to_find_reasonable_price_to_sell_to_totalled/ml2pys9/",
@@ -3614,7 +3983,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000204",
+      "id": "rvw-000228",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -3629,7 +3998,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000205",
+      "id": "rvw-000229",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -3644,7 +4013,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Long Hold Time / Hard to Reach Support"
     },
     {
-      "id": "rvw-000206",
+      "id": "rvw-000230",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Louisville",
       "source_url": "https://www.reddit.com/r/Louisville/comments/1jo669v/stripped_chrysler_300_at_iroquois_park/mkqeukn/",
@@ -3659,7 +4028,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000207",
+      "id": "rvw-000231",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -3674,7 +4043,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000208",
+      "id": "rvw-000232",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=ru&gl=us",
@@ -3689,7 +4058,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000209",
+      "id": "rvw-000233",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Cartalk",
       "source_url": "https://www.reddit.com/r/Cartalk/comments/1jmjm74/write_off_or_not/mkdrtrj/",
@@ -3704,7 +4073,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000210",
+      "id": "rvw-000234",
       "source_website": "reddit.com",
       "source_label": "Reddit r/prius",
       "source_url": "https://www.reddit.com/r/prius/comments/1jlx5wv/how_did_you_find_your_prius/mk7r5xe/",
@@ -3714,12 +4083,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "positive",
       "review_text": "I have looked at some great deals for Prius's from the insurance auctions in both Seattle and near Portland. Many are in your price range or lower. Try looking thru [iaai.com](http://iaai.com) for those deals in WA and OR. I always choose them in Run and drive condition so they can be driven home and many have dented fenders or trunks so replacing a fender or trunk might be needed. Can be much less expensive if you get parts from a local salvage yard. I've looked in the WA area bc my son lives up there and buying a car in OR or WA gives me a chance to visit him in Renton. I did a quick search and found 24 Prius's for sale in WA and OR with body damage. I always filter for under 120k mi and check the dash photos to see how many warning lights are on. Also verify the mileage with a site called [goodcar.com](http://goodcar.com), which is about $3 for a week trial and run as many reports as you want. Here's a 2013 Prius V w 68k mi in Eugene with some damage to rear bumper. Looks like it will need a new bumper cover, left side brake light and maybe a replacement rear hatch, or you pull the dent out. No warning lights on the dash. I usually win by bidding 30-40% of the blue book value. Plus they have some fees tacked on, but prob much less than $10k. DM me if you have more questions. [https://www.iaai.com/VehicleDetail/42232700\\~US](https://www.iaai.com/VehicleDetail/42232700~US) [https://www.iaai.com/VehicleDetail/42089463\\~US](https://www.iaai.com/VehicleDetail/42089463~US) one in Seattle with similar damage in the back.",
       "geo_validation": "mixed_source_ok",
-      "tier1": "Membership / Licensing / Fees & Bidding Policies",
-      "tier2": "Bidding Process, Rules and Fees",
-      "tier3": "Fees"
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000211",
+      "id": "rvw-000235",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=8#0654_88276839_23129019",
@@ -3734,7 +4103,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Long Hold Time / Hard to Reach Support"
     },
     {
-      "id": "rvw-000212",
+      "id": "rvw-000236",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12474914376",
+      "author": "Soranov",
+      "review_date": "2025-03-28",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "IAA > Copart. Copart auction are like football matches, 10 thousand people participate in a single auction and every car is extremely overbid. IAA is where you find the true hidden gems.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)"
+    },
+    {
+      "id": "rvw-000237",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/1jkh8zm/won_this_car_in_auction_for_450/mjwep7y/",
@@ -3749,7 +4133,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000213",
+      "id": "rvw-000238",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AMG",
       "source_url": "https://www.reddit.com/r/AMG/comments/1jkbzlj/buy_or_not/mjw03ec/",
@@ -3764,7 +4148,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000214",
+      "id": "rvw-000239",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Lexus",
       "source_url": "https://www.reddit.com/r/Lexus/comments/1jk8ny9/do_japanese_lexus_plants_produce_left_hand_drive/mjt7uqw/",
@@ -3779,7 +4163,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000215",
+      "id": "rvw-000240",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1i33vbm/why_is_iaa_fees_so_expensivethis_is_out_of_control/mjsq5h3/",
@@ -3794,7 +4178,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000216",
+      "id": "rvw-000241",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -3809,7 +4193,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000217",
+      "id": "rvw-000242",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Acura",
       "source_url": "https://www.reddit.com/r/Acura/comments/1jj7vg9/let_my_wife_drive_the_rl_home/mjllp8f/",
@@ -3824,7 +4208,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000218",
+      "id": "rvw-000243",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1jj8wjp/iaai_pick_up_process/mjl99s4/",
@@ -3839,7 +4223,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000219",
+      "id": "rvw-000244",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -3854,7 +4238,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000220",
+      "id": "rvw-000245",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carbuying",
       "source_url": "https://www.reddit.com/r/carbuying/comments/1jj4kga/first_time_car_buyer_help/mjkb4ug/",
@@ -3869,7 +4253,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000221",
+      "id": "rvw-000246",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1jfvijh/car_flip_blog_first_auction_experience/mjed41j/",
@@ -3884,7 +4268,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000222",
+      "id": "rvw-000247",
       "source_website": "reddit.com",
       "source_label": "Reddit r/fordranger",
       "source_url": "https://www.reddit.com/r/fordranger/comments/1jgzt2a/my_truck_got_hit_they_said_it_was_totaled/mj9ecfp/",
@@ -3899,7 +4283,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000223",
+      "id": "rvw-000248",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -3914,7 +4298,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000224",
+      "id": "rvw-000249",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -3929,7 +4313,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000225",
+      "id": "rvw-000250",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/1jhfcv3/is_this_a_smart_buy/mj86tne/",
@@ -3944,22 +4328,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000226",
-      "source_website": "play.google.com",
-      "source_label": "Google Play (com.iaai.android)",
-      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
-      "author": "Mohammad Aref Faizi",
+      "id": "rvw-000251",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12450654535",
+      "author": "Larry Gotti",
       "review_date": "2025-03-22",
-      "rating": 5,
-      "sentiment": "positive",
-      "review_text": "happy business with iaa",
-      "geo_validation": "google_play_us_store",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
+      "rating": 3,
+      "sentiment": "negative",
+      "review_text": "Cool site but too many fees. It don’t make any sense of all the fees you have to pay for example I won a vehicle for $275 and ended up paying almost $800 smh just highway robbery other than that it’s cool",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
     },
     {
-      "id": "rvw-000227",
+      "id": "rvw-000252",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Corvette",
       "source_url": "https://www.reddit.com/r/Corvette/comments/1fia79v/c5_corvette/miwwijz/",
@@ -3974,7 +4358,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000228",
+      "id": "rvw-000253",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Volkswagen",
       "source_url": "https://www.reddit.com/r/Volkswagen/comments/1jgrugc/does_this_engine_sound_normal/",
@@ -3989,22 +4373,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000229",
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/cbr",
-      "source_url": "https://www.reddit.com/r/cbr/comments/1jfeqpf/cbr500r_no_key/",
-      "author": "tahoee",
-      "review_date": "2025-03-20",
-      "rating": null,
-      "sentiment": "positive",
-      "review_text": "CBR500r no key hey there, i just bought a 2020 500r (upgrading from my 2024 R3) at my local iaai auction. it doesn't have any keys due to theft recovery. at this moment, im not sure if the ignition is wrecked or not, until i go pick it up tomorrow. what should i be expecting? is it a bring the title to the locksmith &amp; have them cut a key and program it on the spot (if the ignition is intact) or is it more complicated than that? if the ignition is shot, an amazon replacement should do, at this point i take it to the honda dealership, correct?",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Title, Ownership, POA and Documentation",
-      "tier2": "Power of Attorney (POA) Handling",
-      "tier3": "POA Requirements Clarification"
-    },
-    {
-      "id": "rvw-000230",
+      "id": "rvw-000254",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -4019,7 +4388,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000231",
+      "id": "rvw-000255",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -4034,7 +4403,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000232",
+      "id": "rvw-000256",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -4049,7 +4418,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000233",
+      "id": "rvw-000257",
       "source_website": "reddit.com",
       "source_label": "Reddit r/car",
       "source_url": "https://www.reddit.com/r/car/comments/1jdvrnk/car_import/",
@@ -4064,7 +4433,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000234",
+      "id": "rvw-000258",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -4079,7 +4448,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000235",
+      "id": "rvw-000259",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=3#0654_88276839_580015",
@@ -4094,7 +4463,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Removal / Retrieval of items left in vehicle"
     },
     {
-      "id": "rvw-000236",
+      "id": "rvw-000260",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=8#0654_88276839_23083088",
@@ -4109,7 +4478,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000237",
+      "id": "rvw-000261",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=8#0654_88276839_23082730",
@@ -4124,7 +4493,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Upload Troubleshooting"
     },
     {
-      "id": "rvw-000238",
+      "id": "rvw-000262",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -4139,7 +4508,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000239",
+      "id": "rvw-000263",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12433491924",
+      "author": "Musab aljbory",
+      "review_date": "2025-03-17",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Disappointed. Auction fees way much compare to other auto auction",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-000264",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UkraineRussiaReport",
       "source_url": "https://www.reddit.com/r/UkraineRussiaReport/comments/1jcpnj2/ru_pov_abandoned_ua_pickup_truck_in_sudzha_region/mi51ikf/",
@@ -4154,7 +4538,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Title Not Received"
     },
     {
-      "id": "rvw-000240",
+      "id": "rvw-000265",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -4169,7 +4553,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000241",
+      "id": "rvw-000266",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -4184,7 +4568,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000242",
+      "id": "rvw-000267",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -4199,7 +4583,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000243",
+      "id": "rvw-000268",
       "source_website": "reddit.com",
       "source_label": "Reddit r/VolvoXC90",
       "source_url": "https://www.reddit.com/r/VolvoXC90/comments/1jbzexn/maitance_xc90_t6_awd/mhyn3si/",
@@ -4214,7 +4598,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000244",
+      "id": "rvw-000269",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1jc1o0s/my_2014_audi_s5_manual_was_hit_on_the_side_and/mhz13ku/",
@@ -4229,7 +4613,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000245",
+      "id": "rvw-000270",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1jc0ttm/is_the_iaa_still_worth_buying_from/mhydz24/",
@@ -4244,7 +4628,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000246",
+      "id": "rvw-000271",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1jc0ttm/is_the_iaa_still_worth_buying_from/",
@@ -4259,7 +4643,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000247",
+      "id": "rvw-000272",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Ransomfeed",
       "source_url": "https://www.reddit.com/r/Ransomfeed/comments/1jbeg4s/iaaicom_washington_dc_dmv/",
@@ -4274,7 +4658,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000248",
+      "id": "rvw-000273",
       "source_website": "reddit.com",
       "source_label": "Reddit r/WhatCarShouldIBuyGULF",
       "source_url": "https://www.reddit.com/r/WhatCarShouldIBuyGULF/comments/1jbd7vu/how_to_buy_a_maserati_for_half_the_price_the/",
@@ -4289,7 +4673,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000249",
+      "id": "rvw-000274",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Character-Gur-5928",
       "source_url": "https://www.reddit.com/r/u_Character-Gur-5928/comments/1jbd4b6/how_to_buy_a_maserati_for_half_the_price_the/",
@@ -4304,7 +4688,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000250",
+      "id": "rvw-000275",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -4319,7 +4703,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000251",
+      "id": "rvw-000276",
       "source_website": "reddit.com",
       "source_label": "Reddit r/e60",
       "source_url": "https://www.reddit.com/r/e60/comments/1j9p10t/got_it_for_700_on_action_with_fees_1300/mhj2lh9/",
@@ -4334,7 +4718,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000252",
+      "id": "rvw-000277",
       "source_website": "reddit.com",
       "source_label": "Reddit r/adjusters",
       "source_url": "https://www.reddit.com/r/adjusters/comments/1jaikie/please_share_your_day_in_the_life_of_a_claims/",
@@ -4349,7 +4733,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Escalation Required"
     },
     {
-      "id": "rvw-000253",
+      "id": "rvw-000278",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=8#0654_88276839_23062164",
@@ -4364,7 +4748,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000254",
+      "id": "rvw-000279",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=8#0654_88276839_23055809",
@@ -4379,7 +4763,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000255",
+      "id": "rvw-000280",
       "source_website": "reddit.com",
       "source_label": "Reddit r/EVConversion",
       "source_url": "https://www.reddit.com/r/EVConversion/comments/1j7xuq4/tesla_used_car_price_crashes_model_y_model_3/mh6h1r0/",
@@ -4394,7 +4778,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000256",
+      "id": "rvw-000281",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1j87rvw/progressive_insurance_question/",
@@ -4409,7 +4793,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000257",
+      "id": "rvw-000282",
       "source_website": "reddit.com",
       "source_label": "Reddit r/autorepair",
       "source_url": "https://www.reddit.com/r/autorepair/comments/1j6pnic/need_advice_on_a_salvage_car_from_auction_im/mgqm861/",
@@ -4424,7 +4808,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000258",
+      "id": "rvw-000283",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/67cad9bafdae60c67ef83aba",
@@ -4439,7 +4823,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000259",
+      "id": "rvw-000284",
       "source_website": "reddit.com",
       "source_label": "Reddit r/PHXList",
       "source_url": "https://www.reddit.com/r/PHXList/comments/1j5961f/2015_nissan_altima_for_sale/mghy4rr/",
@@ -4454,7 +4838,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000260",
+      "id": "rvw-000285",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -4469,7 +4853,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000261",
+      "id": "rvw-000286",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=8#0654_88276839_23036764",
@@ -4484,7 +4868,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000262",
+      "id": "rvw-000287",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=8#0654_88276839_23032977",
@@ -4499,7 +4883,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000263",
+      "id": "rvw-000288",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/67c8623850a0a71549e00a10",
@@ -4514,7 +4898,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000264",
+      "id": "rvw-000289",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/1j3ntt4/used_car_was_at_coparts_auction_red_flag/mg3h7x4/",
@@ -4529,7 +4913,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000265",
+      "id": "rvw-000290",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=3#0654_88276839_577878",
@@ -4544,7 +4928,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000266",
+      "id": "rvw-000291",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=8#0654_88276839_23019172",
@@ -4559,7 +4943,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Upload Troubleshooting"
     },
     {
-      "id": "rvw-000267",
+      "id": "rvw-000292",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=8#0654_88276839_23013414",
@@ -4574,7 +4958,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000268",
+      "id": "rvw-000293",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Justrolledintotheshop",
       "source_url": "https://www.reddit.com/r/Justrolledintotheshop/comments/1j0jub3/customer_states_can_you_just_put_my_side_step/mftf649/",
@@ -4589,7 +4973,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Title Not Received"
     },
     {
-      "id": "rvw-000269",
+      "id": "rvw-000294",
       "source_website": "reddit.com",
       "source_label": "Reddit r/PorscheCayenne",
       "source_url": "https://www.reddit.com/r/PorscheCayenne/comments/1j25uwp/rolled_back_porsches_cayennes_everywhere/",
@@ -4604,7 +4988,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000270",
+      "id": "rvw-000295",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -4619,7 +5003,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000271",
+      "id": "rvw-000296",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12378526003",
+      "author": "Mhaidi Michael",
+      "review_date": "2025-03-03",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "It is come auction. This is coming to time they give me two cars and a broken transmission broken.. Just discount auction, they discount the people they sell the car half damage, but they don’t show in the picture",
+      "geo_validation": "apple_us_store",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
+    },
+    {
+      "id": "rvw-000297",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1j25bu4/iaai_selling_rolled_back_porsches/mfp13p6/",
@@ -4634,7 +5033,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000272",
+      "id": "rvw-000298",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1j25bu4/iaai_selling_rolled_back_porsches/",
@@ -4649,7 +5048,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000273",
+      "id": "rvw-000299",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Justrolledintotheshop",
       "source_url": "https://www.reddit.com/r/Justrolledintotheshop/comments/1j0jub3/customer_states_can_you_just_put_my_side_step/mfg113d/",
@@ -4664,7 +5063,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000274",
+      "id": "rvw-000300",
       "source_website": "reddit.com",
       "source_label": "Reddit r/DubaiPetrolHeads",
       "source_url": "https://www.reddit.com/r/DubaiPetrolHeads/comments/1j00nsi/need_expert_advice_on_buying_a_salvagerepaired/",
@@ -4679,7 +5078,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000275",
+      "id": "rvw-000301",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=9#0654_88276839_23002818",
@@ -4694,7 +5093,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000276",
+      "id": "rvw-000302",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1emh0hb/iaai_delivery/mf0dvry/",
@@ -4709,7 +5108,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000277",
+      "id": "rvw-000303",
       "source_website": "reddit.com",
       "source_label": "Reddit r/passive_income",
       "source_url": "https://www.reddit.com/r/passive_income/comments/1iyx67s/need_to_a_find_a_way_to_get_28000_in_the_next_4/mezl0dt/",
@@ -4724,7 +5123,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000278",
+      "id": "rvw-000304",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1iz19sb/iaai_promoreferral/",
@@ -4739,7 +5138,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000279",
+      "id": "rvw-000305",
       "source_website": "reddit.com",
       "source_label": "Reddit r/fireinvestigation",
       "source_url": "https://www.reddit.com/r/fireinvestigation/comments/1iwdpva/private_investigator_moving_into_fire/med383y/",
@@ -4754,7 +5153,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000280",
+      "id": "rvw-000306",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/67b899c307d9b19b6c738cde",
@@ -4769,7 +5168,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000281",
+      "id": "rvw-000307",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Miata",
       "source_url": "https://www.reddit.com/r/Miata/comments/1iuucg0/update_to_well_this_happened/me12rwb/",
@@ -4784,7 +5183,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000282",
+      "id": "rvw-000308",
       "source_website": "reddit.com",
       "source_label": "Reddit r/couriersofreddit",
       "source_url": "https://www.reddit.com/r/couriersofreddit/comments/c1phuy/emergency_roadside_assistance_gigs/mdwyy25/",
@@ -4799,7 +5198,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-000283",
+      "id": "rvw-000309",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaa.mobile.IaaTow)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
@@ -4814,7 +5213,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000284",
+      "id": "rvw-000310",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaa.mobile.IaaTow)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
@@ -4829,7 +5228,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000285",
+      "id": "rvw-000311",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaa.mobile.IaaTow)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
@@ -4844,7 +5243,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000286",
+      "id": "rvw-000312",
       "source_website": "reddit.com",
       "source_label": "Reddit r/LSSwapTheWorld",
       "source_url": "https://www.reddit.com/r/LSSwapTheWorld/comments/1itntc9/not_ls_swapped_but_thinking_of_buying_this_c7/mdr5bpe/",
@@ -4859,7 +5258,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000287",
+      "id": "rvw-000313",
       "source_website": "reddit.com",
       "source_label": "Reddit r/prius",
       "source_url": "https://www.reddit.com/r/prius/comments/1isiis1/should_i_get_a_prius/mdgzyab/",
@@ -4874,7 +5273,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000288",
+      "id": "rvw-000314",
       "source_website": "reddit.com",
       "source_label": "Reddit r/turo",
       "source_url": "https://www.reddit.com/r/turo/comments/1iryi9d/turo_guest_crashed_car_tow_yard_wants_955_to/mdd1ocr/",
@@ -4889,7 +5288,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000289",
+      "id": "rvw-000315",
       "source_website": "reddit.com",
       "source_label": "Reddit r/prius",
       "source_url": "https://www.reddit.com/r/prius/comments/1iqybwr/are_these_good_prius_deals/md47spi/",
@@ -4904,7 +5303,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000290",
+      "id": "rvw-000316",
       "source_website": "reddit.com",
       "source_label": "Reddit r/prius",
       "source_url": "https://www.reddit.com/r/prius/comments/1iqybwr/are_these_good_prius_deals/md45ecy/",
@@ -4914,12 +5313,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "negative",
       "review_text": "I've found great deals for used Prius's at the insurance auctions in PHX and Tucson. Go to [iaai.com](http://iaai.com) and look for them in their upcoming auctions. I won 2x of them back in 2023 with under 120k mi, 2008 and 2009 with small fender damage for $3k out the door. Many Gen 3 offered there too. I look for cars in Run and Drive condition, repos are the best deals, and run vin checks on them to verify the mileage. If you live near those cities, you can even inspect them 2 days before the auction. Each listing has a video of the engine running so you can hear how the engine sounds. Watch other listings to get an idea of what a low purring sound the engines make. All three cars had minor bodywork needed that avg $600-700. It is more hassle, but you'd be looking at prices about half of what you are currently looking at with less miles on them. The two cars I bid on I won with bids like $2100-2200 and it was $3k with all their fees added on, no sales tax usually. I had better luck with the PHX auctions as more cars were available. There is currently a Lexus C200 one coming up for auction that is a 2012 w 50k mi on it and a broken piece on the front fender. Looks like a great deal, but Lexus's are the luxury version of a Toyota. I usually bid about 20-25% of the Cash Value of the cars and win.",
       "geo_validation": "mixed_source_ok",
-      "tier1": "Membership / Licensing / Fees & Bidding Policies",
-      "tier2": "Bidding Process, Rules and Fees",
-      "tier3": "Fees"
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000291",
+      "id": "rvw-000317",
       "source_website": "reddit.com",
       "source_label": "Reddit r/BMW",
       "source_url": "https://www.reddit.com/r/BMW/comments/1iqgcys/is_it_totaled/mczzxlo/",
@@ -4934,7 +5333,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000292",
+      "id": "rvw-000318",
       "source_website": "reddit.com",
       "source_label": "Reddit r/CarRepair",
       "source_url": "https://www.reddit.com/r/CarRepair/comments/1iql027/i_damaged_my_moms_car_and_dont_know_what_to_do/md3dv5p/",
@@ -4949,7 +5348,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000293",
+      "id": "rvw-000319",
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/civic",
+      "source_url": "https://www.reddit.com/r/civic/comments/1if6cay/i_barely_get_20mpg_on_my_2019_civic_lx/mcwl5w7/",
+      "author": "Impossible_Gnebo_148",
+      "review_date": "2025-02-15",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Well I have no idea about stolen cars being shipped here … what I know is , I bought mine from the auction iaai.com",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-000320",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Fiat500e",
       "source_url": "https://www.reddit.com/r/Fiat500e/comments/1iipskn/totaled_after_ear_end/mctqq6m/",
@@ -4964,7 +5378,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000294",
+      "id": "rvw-000321",
       "source_website": "reddit.com",
       "source_label": "Reddit r/mr2",
       "source_url": "https://www.reddit.com/r/mr2/comments/1iprynl/thinking_about_getting_a_mr2_again/",
@@ -4979,7 +5393,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000295",
+      "id": "rvw-000322",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1imtfh5/would_someone_be_willing_to_do_this/mcr8gtt/",
@@ -4994,7 +5408,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000296",
+      "id": "rvw-000323",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Volvo",
       "source_url": "https://www.reddit.com/r/Volvo/comments/1ip1emm/insurance_finally_reached_out_need_opinions_on/mcojucy/",
@@ -5009,7 +5423,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000297",
+      "id": "rvw-000324",
       "source_website": "reddit.com",
       "source_label": "Reddit r/neoliberal",
       "source_url": "https://www.reddit.com/r/neoliberal/comments/1iodevo/discussion_thread/mcodx1s/",
@@ -5024,7 +5438,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000298",
+      "id": "rvw-000325",
       "source_website": "reddit.com",
       "source_label": "Reddit r/DMV",
       "source_url": "https://www.reddit.com/r/DMV/comments/1iorc8u/i_just_bought_a_clean_title_vehicle_and_dmv/mco1p9y/",
@@ -5039,7 +5453,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000299",
+      "id": "rvw-000326",
       "source_website": "reddit.com",
       "source_label": "Reddit r/ChevySonic",
       "source_url": "https://www.reddit.com/r/ChevySonic/comments/1ioua7t/my_little_headache/mcnkfkr/",
@@ -5054,7 +5468,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000300",
+      "id": "rvw-000327",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/1iolby7/iaai/",
@@ -5069,7 +5483,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000301",
+      "id": "rvw-000328",
       "source_website": "reddit.com",
       "source_label": "Reddit r/USAA",
       "source_url": "https://www.reddit.com/r/USAA/comments/1infdir/usaa_moved_my_car_to_copart_without_permission/mceg8sc/",
@@ -5084,7 +5498,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000302",
+      "id": "rvw-000329",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Autobody",
       "source_url": "https://www.reddit.com/r/Autobody/comments/1inebua/unlicensed_advice_iaa_auction_buy/",
@@ -5099,7 +5513,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000303",
+      "id": "rvw-000330",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=3#0654_88276839_574207",
@@ -5114,7 +5528,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Long Hold Time / Hard to Reach Support"
     },
     {
-      "id": "rvw-000304",
+      "id": "rvw-000331",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=3#0654_88276839_574095",
@@ -5129,7 +5543,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-000305",
+      "id": "rvw-000332",
       "source_website": "reddit.com",
       "source_label": "Reddit r/saskatoon",
       "source_url": "https://www.reddit.com/r/saskatoon/comments/1imbxpv/where_to_buy_a_beater_car/mc3k76h/",
@@ -5144,7 +5558,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000306",
+      "id": "rvw-000333",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Imaginary_Magician31",
       "source_url": "https://www.reddit.com/r/u_Imaginary_Magician31/comments/1imwmdn/can_a_68millionyearold_bird_fossil_inspire_better/",
@@ -5159,7 +5573,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000307",
+      "id": "rvw-000334",
       "source_website": "reddit.com",
       "source_label": "Reddit r/mazda3",
       "source_url": "https://www.reddit.com/r/mazda3/comments/1imgotx/should_i_consider_buying_this_2021_mazda_3_with/mc3jyh8/",
@@ -5174,7 +5588,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000308",
+      "id": "rvw-000335",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1inbctj/buy_back_my_nearly_new_leased_totaled_car_from/",
@@ -5189,7 +5603,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000309",
+      "id": "rvw-000336",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=9#0654_88276839_22929247",
@@ -5204,7 +5618,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Title Not Received"
     },
     {
-      "id": "rvw-000310",
+      "id": "rvw-000337",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=9#0654_88276839_22927770",
@@ -5219,7 +5633,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000311",
+      "id": "rvw-000338",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/67a81fb399049148d1aaa5d1",
@@ -5234,7 +5648,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000312",
+      "id": "rvw-000339",
       "source_website": "reddit.com",
       "source_label": "Reddit r/FordTrucks",
       "source_url": "https://www.reddit.com/r/FordTrucks/comments/1ilhrox/54_to_50_swap/mbv4qoz/",
@@ -5249,7 +5663,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000313",
+      "id": "rvw-000340",
       "source_website": "reddit.com",
       "source_label": "Reddit r/crz",
       "source_url": "https://www.reddit.com/r/crz/comments/1ikqhq9/from_crash_to_flash_a_cars_second_life/",
@@ -5264,7 +5678,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000314",
+      "id": "rvw-000341",
       "source_website": "reddit.com",
       "source_label": "Reddit r/mechanic",
       "source_url": "https://www.reddit.com/r/mechanic/comments/1ikd0v4/is_it_worth_to_buy/",
@@ -5279,7 +5693,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000315",
+      "id": "rvw-000342",
       "source_website": "reddit.com",
       "source_label": "Reddit r/projectcar",
       "source_url": "https://www.reddit.com/r/projectcar/comments/1g2iom7/where_have_all_the_junk_yards_gone/mblzjxl/",
@@ -5294,7 +5708,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000316",
+      "id": "rvw-000343",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -5309,7 +5723,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000317",
+      "id": "rvw-000344",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=3#0654_88276839_573704",
@@ -5324,7 +5738,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delayed Email/Phone Response"
     },
     {
-      "id": "rvw-000318",
+      "id": "rvw-000345",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Mustang",
       "source_url": "https://www.reddit.com/r/Mustang/comments/1ik9e28/is_it_worth_to_fix/",
@@ -5339,7 +5753,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000319",
+      "id": "rvw-000346",
       "source_website": "reddit.com",
       "source_label": "Reddit r/350z",
       "source_url": "https://www.reddit.com/r/350z/comments/1ik7mb6/2005_350z_from_auction/",
@@ -5354,7 +5768,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000320",
+      "id": "rvw-000347",
       "source_website": "reddit.com",
       "source_label": "Reddit r/JDM",
       "source_url": "https://www.reddit.com/r/JDM/comments/1iixo5i/im_getting_very_close_to_pulling_the_trigger_on/mbd9rnn/",
@@ -5369,7 +5783,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000321",
+      "id": "rvw-000348",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Rivian",
       "source_url": "https://www.reddit.com/r/Rivian/comments/1iilo9l/f_safeway_truck_hit_me/mb88937/",
@@ -5384,7 +5798,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000322",
+      "id": "rvw-000349",
       "source_website": "reddit.com",
       "source_label": "Reddit r/prius",
       "source_url": "https://www.reddit.com/r/prius/comments/1iigsf8/hey_could_i_bum_some_quick_wisdom/mb5k0vw/",
@@ -5399,7 +5813,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000323",
+      "id": "rvw-000350",
       "source_website": "reddit.com",
       "source_label": "Reddit r/RoastMyCar",
       "source_url": "https://www.reddit.com/r/RoastMyCar/comments/1ih8svk/roast_my_old_car_that_i_wrecked_2000_saab_95_aero/mb145jd/",
@@ -5414,7 +5828,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000324",
+      "id": "rvw-000351",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/67a18d06cc1d69867b46b2d7",
@@ -5424,12 +5838,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "negative",
       "review_text": "Internal scam bidders. I am absolutely convinced they have fake bidders internally. Too many times the reserve comes off and the bidder disappears and drops it on you. Why would they not bid again after they went all the way?",
       "geo_validation": "trustpilot_us_slug",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
     },
     {
-      "id": "rvw-000325",
+      "id": "rvw-000352",
       "source_website": "reddit.com",
       "source_label": "Reddit r/ModelX",
       "source_url": "https://www.reddit.com/r/ModelX/comments/1ih452z/have_opportunity_to_buy_a_2019_long_range_mx/mavdi0t/",
@@ -5444,7 +5858,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000326",
+      "id": "rvw-000353",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AutoTransport",
       "source_url": "https://www.reddit.com/r/AutoTransport/comments/1ihmx07/looking_to_for_a_broker_to_transport_cars_from/mazwwy7/",
@@ -5459,7 +5873,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000327",
+      "id": "rvw-000354",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AutoTransport",
       "source_url": "https://www.reddit.com/r/AutoTransport/comments/1ihmx07/looking_to_for_a_broker_to_transport_cars_from/maygm4k/",
@@ -5474,7 +5888,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000328",
+      "id": "rvw-000355",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=9#0654_88276839_22899030",
@@ -5489,7 +5903,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Long Hold Time / Hard to Reach Support"
     },
     {
-      "id": "rvw-000329",
+      "id": "rvw-000356",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AutoTransport",
       "source_url": "https://www.reddit.com/r/AutoTransport/comments/1igwk9n/need_quote_for_2005_mazda_6_wagon_from_ca_94565/mashem8/",
@@ -5504,7 +5918,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000330",
+      "id": "rvw-000357",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Autobody",
       "source_url": "https://www.reddit.com/r/Autobody/comments/1igqwhy/2019_accura_ilx/maqu3qf/",
@@ -5519,22 +5933,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Title Not Received"
     },
     {
-      "id": "rvw-000331",
+      "id": "rvw-000358",
       "source_website": "reddit.com",
       "source_label": "Reddit r/civic",
       "source_url": "https://www.reddit.com/r/civic/comments/1if6cay/i_barely_get_20mpg_on_my_2019_civic_lx/mafx5yh/",
       "author": "Impossible_Gnebo_148",
       "review_date": "2025-02-01",
       "rating": null,
-      "sentiment": "positive",
+      "sentiment": "negative",
       "review_text": "It’s impossible to buy a stolen car and get it registered here … please with the greatest of respect . I personally Purchased it from the auction website www.iaai.com",
       "geo_validation": "mixed_source_ok",
       "tier1": "Membership / Licensing / Fees & Bidding Policies",
       "tier2": "Bidding Process, Rules and Fees",
-      "tier3": "How to Bid (First Time)"
+      "tier3": "Fees"
     },
     {
-      "id": "rvw-000332",
+      "id": "rvw-000359",
       "source_website": "reddit.com",
       "source_label": "Reddit r/LexusGX",
       "source_url": "https://www.reddit.com/r/LexusGX/comments/1iee6ja/looking_to_buy_2021_gx_premium_from_iaai/",
@@ -5549,7 +5963,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000333",
+      "id": "rvw-000360",
       "source_website": "reddit.com",
       "source_label": "Reddit r/accord",
       "source_url": "https://www.reddit.com/r/accord/comments/1icoxjo/i_fucked_up_so_bad/ma6r163/",
@@ -5564,7 +5978,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000334",
+      "id": "rvw-000361",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Copartonline",
       "source_url": "https://www.reddit.com/r/Copartonline/comments/1ielbwh/hey_reddit_community_we_are_working_with_copart/",
@@ -5579,7 +5993,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000335",
+      "id": "rvw-000362",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Salary",
       "source_url": "https://www.reddit.com/r/Salary/comments/1iczsin/22m_used_car_dealer/m9xcktu/",
@@ -5594,7 +6008,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000336",
+      "id": "rvw-000363",
       "source_website": "reddit.com",
       "source_label": "Reddit r/MechanicAdvice",
       "source_url": "https://www.reddit.com/r/MechanicAdvice/comments/1idxtuj/bypass_subaru_steering_lock_not_afraid_to_brake/",
@@ -5609,7 +6023,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Schedule/ Reschedule Pickup"
     },
     {
-      "id": "rvw-000337",
+      "id": "rvw-000364",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/1id3vfq/is_buying_of_off_copart_worth_it/m9vzt11/",
@@ -5624,7 +6038,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000338",
+      "id": "rvw-000365",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1ich9iu/what_auctions_do_you_use/m9qtzog/",
@@ -5639,22 +6053,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000339",
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/careerguidance",
-      "source_url": "https://www.reddit.com/r/careerguidance/comments/1icc34h/which_one_of_this_job_offerings_should_i_choose/",
-      "author": "NoAbbreviations5288",
-      "review_date": "2025-01-28",
-      "rating": null,
-      "sentiment": "positive",
-      "review_text": "Which one of this job offerings should i choose? Hello im 20 years old and i currently work in a logistical company which transports cars from USA to my country ( cars from COPART IAAI and so on ) it is my first month and my current salary is 300 usd for 2 months after that 500 usd and then if i work hard they will make me senior salesman and salary will be 600 usd., but still i went to another job interview and they hired me as well, this is my first month and i already told them i am going to leave and they offered me 500 usd base salary on the second month instead of 300 usd and on the third month if i work hard enough i will get 600 usd base. Now i really need your advice and guidance guys, i dont know what to do, i will list the two jobs and their benefits and cons and tell me which one of them would you choose if you were in my situation. Keep in mind that average salary in my country is 500 usd. Job number one ( current job,) : offers 2 salary options - 1) 400 usd plus 130 usd per activated dealer plus 100 usd per individual client. 2) 600 usd plus 65 usd per activated dealer plus 100 usd per individual client. (Activated dealer = somebody who buys 5 or more cars in 2 months) ( Individual client = somebody who will just buy one car for themselves) For a month i will have 500 usd salary. Startup so it currently has no marketing and nothing yet I can choose 600 usd lets say before i get 4 activated dealers and after that they will let me change to 400 usd base with higher bonuses so my salary will be higher. Work hours from 11am to 8pm (9 hour work day) Location is little bit better. Second job : 0 usd base salary plus 175 usd per individual sale plus 25 usd per each dealers car. The recruiters also who are the owners od the place told me that on average salesman should sell approximately 10 cars a month. I dont know if he is lying to me or not. Marketing is better here Work hours from 10 am to 6 pm Commute for each job will be 3 hours for both ways approximately. I have an old car but the salary doesnt sustain the petrol price yet, if i get more money then i will use my car to commute. I dont know which one to choose Your help and mindsets will be appreciated guys. Also sorry for my english i am really tired from commute and work and i am writing this just as im going to sleep.",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
-    },
-    {
-      "id": "rvw-000340",
+      "id": "rvw-000366",
       "source_website": "reddit.com",
       "source_label": "Reddit r/auction",
       "source_url": "https://www.reddit.com/r/auction/comments/1gu1v9i/plcauction/m9omkpx/",
@@ -5669,7 +6068,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Selling/ Relisting vehicle or Parts purchase"
     },
     {
-      "id": "rvw-000341",
+      "id": "rvw-000367",
       "source_website": "reddit.com",
       "source_label": "Reddit r/cayadservices",
       "source_url": "https://www.reddit.com/r/cayadservices/comments/1ic1qik/top_car_auctions_in_the_us_this_year/",
@@ -5684,7 +6083,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000342",
+      "id": "rvw-000368",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Autobody",
       "source_url": "https://www.reddit.com/r/Autobody/comments/1ibh7rm/process_for_repair_recommendations/",
@@ -5699,7 +6098,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000343",
+      "id": "rvw-000369",
       "source_website": "reddit.com",
       "source_label": "Reddit r/BMW",
       "source_url": "https://www.reddit.com/r/BMW/comments/1i9mebj/does_anyone_know_whats_going_on_with_x56m_and_m8/m96kdg9/",
@@ -5714,7 +6113,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000344",
+      "id": "rvw-000370",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/1iapqd7/auction_records/",
@@ -5729,7 +6128,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Title Not Received"
     },
     {
-      "id": "rvw-000345",
+      "id": "rvw-000371",
       "source_website": "reddit.com",
       "source_label": "Reddit r/auction",
       "source_url": "https://www.reddit.com/r/auction/comments/1fflsh6/proxibid_dealer_only/m95ryjx/",
@@ -5744,7 +6143,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000346",
+      "id": "rvw-000372",
       "source_website": "reddit.com",
       "source_label": "Reddit r/auction",
       "source_url": "https://www.reddit.com/r/auction/comments/1i9xrm6/proxibid_dealer_only_auction_itemim_not_a_dealer/",
@@ -5759,7 +6158,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000347",
+      "id": "rvw-000373",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1i9udvc/i_think_my_insurance_may_have_lost_my_car_title/",
@@ -5774,7 +6173,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Issue Resolved"
     },
     {
-      "id": "rvw-000348",
+      "id": "rvw-000374",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12229390762",
+      "author": "TJWerks",
+      "review_date": "2025-01-25",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "They started removing floor mats!!. Recently noticed that most of the lots being purchased do have the floor mats missing, not sure if the new management decided on doing that to resell those maybe? But regardless of the reason, ppl r not happy with that! Its a floor mat! One of the car components…",
+      "geo_validation": "apple_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "id": "rvw-000375",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1i921oh/aftermarket_parts_removal_before_accepting/m8zji81/",
@@ -5789,7 +6203,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000349",
+      "id": "rvw-000376",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=9#0654_88276839_22853030",
@@ -5804,7 +6218,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000350",
+      "id": "rvw-000377",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Lexus",
       "source_url": "https://www.reddit.com/r/Lexus/comments/1i6cngn/60k_miles_i_bought_it_for_6k/m8nz2d8/",
@@ -5819,7 +6233,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000351",
+      "id": "rvw-000378",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -5834,7 +6248,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Upload Troubleshooting"
     },
     {
-      "id": "rvw-000352",
+      "id": "rvw-000379",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=9#0654_88276839_22849015",
@@ -5849,7 +6263,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Escalation Required"
     },
     {
-      "id": "rvw-000353",
+      "id": "rvw-000380",
       "source_website": "reddit.com",
       "source_label": "Reddit r/fiat500",
       "source_url": "https://www.reddit.com/r/fiat500/comments/1i7o7w6/the_minor_damage_the_apparently_constitutes_a/m8muiyh/",
@@ -5864,7 +6278,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000354",
+      "id": "rvw-000381",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Lexus",
       "source_url": "https://www.reddit.com/r/Lexus/comments/1i6cngn/60k_miles_i_bought_it_for_6k/m8jsru6/",
@@ -5879,7 +6293,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000355",
+      "id": "rvw-000382",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1i72vnq/auction_records/m8hdwju/",
@@ -5894,7 +6308,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000356",
+      "id": "rvw-000383",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1i72vnq/auction_records/",
@@ -5909,7 +6323,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Title Not Received"
     },
     {
-      "id": "rvw-000357",
+      "id": "rvw-000384",
       "source_website": "reddit.com",
       "source_label": "Reddit r/cars4bid",
       "source_url": "https://www.reddit.com/r/cars4bid/comments/1i6ko4r/come_prepared_buying_cars_at_copart_and_iaai/",
@@ -5924,7 +6338,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000358",
+      "id": "rvw-000385",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/1i6tt3v/auction_records/",
@@ -5939,7 +6353,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000359",
+      "id": "rvw-000386",
       "source_website": "reddit.com",
       "source_label": "Reddit r/turo",
       "source_url": "https://www.reddit.com/r/turo/comments/1i5kc7r/turo_claims_scam/m85g5js/",
@@ -5954,7 +6368,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000360",
+      "id": "rvw-000387",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=9#0654_88276839_22833686",
@@ -5969,7 +6383,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000361",
+      "id": "rvw-000388",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Ornithology",
       "source_url": "https://www.reddit.com/r/Ornithology/comments/1i3v2ym/ducks_have_been_around_for_a_lot_longer_than_you/m7t5jer/",
@@ -5984,7 +6398,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000362",
+      "id": "rvw-000389",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Challenger",
       "source_url": "https://www.reddit.com/r/Challenger/comments/1i3il0p/limp_mode_when_i_reverse_left/m7ro12j/",
@@ -5999,7 +6413,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000363",
+      "id": "rvw-000390",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/1i40skg/salvage_titlediscount_cars/m7rmmcz/",
@@ -6014,7 +6428,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000364",
+      "id": "rvw-000391",
       "source_website": "reddit.com",
       "source_label": "Reddit r/mildlyinteresting",
       "source_url": "https://www.reddit.com/r/mildlyinteresting/comments/1i3q2wr/our_work_van_that_was_considered_totaled_in_a/m7qpim3/",
@@ -6029,7 +6443,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000365",
+      "id": "rvw-000392",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Camry",
       "source_url": "https://www.reddit.com/r/Camry/comments/1i3huwp/is_this_a_total_loss/m7n7589/",
@@ -6044,7 +6458,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000366",
+      "id": "rvw-000393",
       "source_website": "reddit.com",
       "source_label": "Reddit r/poland",
       "source_url": "https://www.reddit.com/r/poland/comments/1i1u1jb/how_the_hell_did_they_get_the_fully_a_cop_car/m7gxuw0/",
@@ -6059,37 +6473,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000367",
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/fireinvestigation",
-      "source_url": "https://www.reddit.com/r/fireinvestigation/comments/1i2opc8/what_fire_investigation_firms_do_most_insurance/m7g673t/",
-      "author": "Exotic_Car4948",
-      "review_date": "2025-01-16",
-      "rating": null,
-      "sentiment": "positive",
-      "review_text": "Thanks for the advice! I filled out the NAFI and IAAI applications and believe I qualify. So if they approve my exam I will be able to take the test to get those credentials.",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
-    },
-    {
-      "id": "rvw-000368",
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/GilmoreGirls",
-      "source_url": "https://www.reddit.com/r/GilmoreGirls/comments/1i2y2tm/iaai_shelley_cole/",
-      "author": "mrmerrbs",
-      "review_date": "2025-01-16",
-      "rating": null,
-      "sentiment": "positive",
-      "review_text": "IAAI - Shelley Cole Just listened to I Am All In, Love and War and Snow, with Scott, Suzanne, and Shelley Cole who played Madeline She said apparently they originally really wanted Robert Downey Jr to play Christopher. Also her least favorite of Lorelais boyfriends was Jason Stiles It was a good listen but I thought those two tidbits were interesting to share ☺️",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
-    },
-    {
-      "id": "rvw-000369",
+      "id": "rvw-000394",
       "source_website": "reddit.com",
       "source_label": "Reddit r/fireinvestigation",
       "source_url": "https://www.reddit.com/r/fireinvestigation/comments/1i2opc8/what_fire_investigation_firms_do_most_insurance/",
@@ -6104,7 +6488,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000370",
+      "id": "rvw-000395",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=10#0654_88276839_22821143",
@@ -6119,7 +6503,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000371",
+      "id": "rvw-000396",
       "source_website": "reddit.com",
       "source_label": "Reddit r/ft86",
       "source_url": "https://www.reddit.com/r/ft86/comments/1i1ztku/update_the_iaai_86_is_here/",
@@ -6134,7 +6518,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000372",
+      "id": "rvw-000397",
       "source_website": "reddit.com",
       "source_label": "Reddit r/GrandCherokee",
       "source_url": "https://www.reddit.com/r/GrandCherokee/comments/1i0qm23/sad_day_total_loss/m720baz/",
@@ -6149,7 +6533,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000373",
+      "id": "rvw-000398",
       "source_website": "reddit.com",
       "source_label": "Reddit r/sweatystartup",
       "source_url": "https://www.reddit.com/r/sweatystartup/comments/1hxwqwg/anyone_in_carflipping/m71lsmw/",
@@ -6164,7 +6548,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000374",
+      "id": "rvw-000399",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Cartalk",
       "source_url": "https://www.reddit.com/r/Cartalk/comments/1i0w76v/rebuilt_title_porsche/m71jnu0/",
@@ -6179,7 +6563,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000375",
+      "id": "rvw-000400",
       "source_website": "reddit.com",
       "source_label": "Reddit r/370z",
       "source_url": "https://www.reddit.com/r/370z/comments/1i0mpag/i_bought_a_2015_370z_for_5500_is_that_a_good_price/m70fzc5/",
@@ -6194,7 +6578,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Unable to Bid"
     },
     {
-      "id": "rvw-000376",
+      "id": "rvw-000401",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/1i04l1n/i_want_help_on_how_to_buy_clean_title_car_from/",
@@ -6209,7 +6593,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000377",
+      "id": "rvw-000402",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Autobody",
       "source_url": "https://www.reddit.com/r/Autobody/comments/1hxfx5k/first_salvage_car_repair/m6riwdb/",
@@ -6224,7 +6608,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000378",
+      "id": "rvw-000403",
       "source_website": "reddit.com",
       "source_label": "Reddit r/BMWG20",
       "source_url": "https://www.reddit.com/r/BMWG20/comments/1hzgd0z/m340i/",
@@ -6239,7 +6623,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000379",
+      "id": "rvw-000404",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaa.mobile.IaaTow)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
@@ -6254,7 +6638,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000380",
+      "id": "rvw-000405",
       "source_website": "reddit.com",
       "source_label": "Reddit r/pillarchase2",
       "source_url": "https://www.reddit.com/r/pillarchase2/comments/1hy6m86/if_you_could_make_a_pillar_chase_inspired_game/m6f3bav/",
@@ -6269,22 +6653,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000381",
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/Hookit",
-      "source_url": "https://www.reddit.com/r/Hookit/comments/1hjz297/what_insurance_is_the_best_but_low_cost/m6ckpa3/",
-      "author": "VeterinarianRude8700",
-      "review_date": "2025-01-10",
-      "rating": null,
-      "sentiment": "positive",
-      "review_text": "Hello, I've been actually looking for the answer to this question as well, where to get the million dollar coverage.... Did you happen to find any good answers? From what i can tell you need the million dollar coverage to haul for copart and iaai but I can't find a for sure answer",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
-    },
-    {
-      "id": "rvw-000382",
+      "id": "rvw-000406",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Hookit",
       "source_url": "https://www.reddit.com/r/Hookit/comments/1hxsmwa/recently_started_my_own_buisness_need_help_with/m6cguqw/",
@@ -6299,7 +6668,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-000383",
+      "id": "rvw-000407",
       "source_website": "reddit.com",
       "source_label": "Reddit r/fireinvestigation",
       "source_url": "https://www.reddit.com/r/fireinvestigation/comments/1hxpebr/companies_that_hire_folks_with_an_iaaifit/m6b7o42/",
@@ -6314,7 +6683,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000384",
+      "id": "rvw-000408",
       "source_website": "reddit.com",
       "source_label": "Reddit r/projectcar",
       "source_url": "https://www.reddit.com/r/projectcar/comments/1hwzxw5/would_you_buy_this_at_auction_it_runs_and_airbags/m694591/",
@@ -6329,7 +6698,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000385",
+      "id": "rvw-000409",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AutoTransport",
       "source_url": "https://www.reddit.com/r/AutoTransport/comments/1hxdzwq/car_transport_from_copart_and_iaai_auctions/",
@@ -6344,7 +6713,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000386",
+      "id": "rvw-000410",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=10#0654_88276839_22790593",
@@ -6359,7 +6728,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Escalation Required"
     },
     {
-      "id": "rvw-000387",
+      "id": "rvw-000411",
       "source_website": "reddit.com",
       "source_label": "Reddit r/ft86",
       "source_url": "https://www.reddit.com/r/ft86/comments/1hwt82q/just_bought_an_86_at_iaai_sight_unseen_am_i_cooked/m63rqwq/",
@@ -6374,7 +6743,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000388",
+      "id": "rvw-000412",
       "source_website": "reddit.com",
       "source_label": "Reddit r/prius",
       "source_url": "https://www.reddit.com/r/prius/comments/1hwdftz/2007_prius_still_a_good_buy_in_2025/m63fewo/",
@@ -6389,7 +6758,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000389",
+      "id": "rvw-000413",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/1hv92rs/cars_you_bought_but_regretted/m62jwq8/",
@@ -6404,7 +6773,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000390",
+      "id": "rvw-000414",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1hw7b10/copart/m62fo8j/",
@@ -6419,7 +6788,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000391",
+      "id": "rvw-000415",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1hqzkdp/what_do_i_need_to_know_about_car_auctions/m600f05/",
@@ -6434,7 +6803,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000392",
+      "id": "rvw-000416",
       "source_website": "reddit.com",
       "source_label": "Reddit r/ft86",
       "source_url": "https://www.reddit.com/r/ft86/comments/1hwt82q/just_bought_an_86_at_iaai_sight_unseen_am_i_cooked/",
@@ -6449,7 +6818,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000393",
+      "id": "rvw-000417",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Copartonline",
       "source_url": "https://www.reddit.com/r/Copartonline/comments/1hwnkt0/transport_from_copart/",
@@ -6464,7 +6833,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000394",
+      "id": "rvw-000418",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1hulbvo/can_i_car_flip_without_having_any_mechanic_skills/m5y49zq/",
@@ -6479,7 +6848,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000395",
+      "id": "rvw-000419",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -6494,7 +6863,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000396",
+      "id": "rvw-000420",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1hv4xnc/flipperz/",
@@ -6509,7 +6878,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000397",
+      "id": "rvw-000421",
       "source_website": "reddit.com",
       "source_label": "Reddit r/HotShotTrucking",
       "source_url": "https://www.reddit.com/r/HotShotTrucking/comments/1hupcxd/part_time/",
@@ -6524,7 +6893,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-000398",
+      "id": "rvw-000422",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Copartonline",
       "source_url": "https://www.reddit.com/r/Copartonline/comments/1hhbzb8/copart_broker_with_reasonable_fees/m5d0yq6/",
@@ -6539,7 +6908,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000399",
+      "id": "rvw-000423",
       "source_website": "reddit.com",
       "source_label": "Reddit r/fireinvestigation",
       "source_url": "https://www.reddit.com/r/fireinvestigation/comments/1hrxvvi/joined_the_iaai_what_are_the_perks/m515fpz/",
@@ -6554,7 +6923,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000400",
+      "id": "rvw-000424",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=10#0654_88276839_22756844",
@@ -6569,7 +6938,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000401",
+      "id": "rvw-000425",
       "source_website": "reddit.com",
       "source_label": "Reddit r/phoenix",
       "source_url": "https://www.reddit.com/r/phoenix/comments/1hq40yn/what_to_do_with_junk_car/m4nt8d3/",
@@ -6584,7 +6953,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000402",
+      "id": "rvw-000426",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1hq9vjy/flip_of_the_week/",
@@ -6599,7 +6968,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000403",
+      "id": "rvw-000427",
       "source_website": "reddit.com",
       "source_label": "Reddit r/saskatoon",
       "source_url": "https://www.reddit.com/r/saskatoon/comments/1hpbua6/sgi_salvage_vehicle/m4j77v5/",
@@ -6614,7 +6983,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000404",
+      "id": "rvw-000428",
       "source_website": "reddit.com",
       "source_label": "Reddit r/335i",
       "source_url": "https://www.reddit.com/r/335i/comments/1hn5kc3/how_did_i_do/m4dmu7n/",
@@ -6629,7 +6998,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000405",
+      "id": "rvw-000429",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Autobody",
       "source_url": "https://www.reddit.com/r/Autobody/comments/1honjwm/was_this_hit_hard_enough_to_cause_damage_to_the/m4b3hb9/",
@@ -6644,7 +7013,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000406",
+      "id": "rvw-000430",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=3#0654_88276839_567213",
@@ -6659,7 +7028,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000407",
+      "id": "rvw-000431",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12122216542",
+      "author": "mike kor",
+      "review_date": "2024-12-29",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Don’t spend your time.. Worthless if you not dealer. You have to be a dealer to buy salvage vehicles. You pay 200$ and yo can not make any bids.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-000432",
       "source_website": "reddit.com",
       "source_label": "Reddit r/therewasanattempt",
       "source_url": "https://www.reddit.com/r/therewasanattempt/comments/1ho4ckr/to_brake_check_a_truck/m48b1am/",
@@ -6674,7 +7058,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Upload Troubleshooting"
     },
     {
-      "id": "rvw-000408",
+      "id": "rvw-000433",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/12hrkw6/how_to_buy_a_car_from_iaai_canada_closed_auctions/m43bf6t/",
@@ -6689,7 +7073,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000409",
+      "id": "rvw-000434",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1hluwke/i_need_advice_from_the_heart_for_a_beginner/m3yrel6/",
@@ -6704,7 +7088,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000410",
+      "id": "rvw-000435",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=3#0654_88276839_567083",
@@ -6719,7 +7103,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000411",
+      "id": "rvw-000436",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1hluwke/i_need_advice_from_the_heart_for_a_beginner/",
@@ -6734,7 +7118,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000412",
+      "id": "rvw-000437",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1hkyhe6/how_do_you_guys_even_profit_as_an_idividual/m3k6obh/",
@@ -6749,7 +7133,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000413",
+      "id": "rvw-000438",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/6769bc241575fcc395648b40",
@@ -6764,7 +7148,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Pickup Hours and Cutoff"
     },
     {
-      "id": "rvw-000414",
+      "id": "rvw-000439",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Cartalk",
       "source_url": "https://www.reddit.com/r/Cartalk/comments/1hkvoqu/salvage_auction_buy_how_to_navigate_nonrepairable/",
@@ -6779,7 +7163,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000415",
+      "id": "rvw-000440",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=3#0654_88276839_566527",
@@ -6794,7 +7178,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Pickup Hours and Cutoff"
     },
     {
-      "id": "rvw-000416",
+      "id": "rvw-000441",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1hjjqx7/im_trying_to_find_the_kia_forte_gt_owner_from_iaai/m370wbe/",
@@ -6809,7 +7193,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000417",
+      "id": "rvw-000442",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1hjjqx7/im_trying_to_find_the_kia_forte_gt_owner_from_iaai/",
@@ -6824,7 +7208,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000418",
+      "id": "rvw-000443",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Autobody",
       "source_url": "https://www.reddit.com/r/Autobody/comments/1hjjp3a/im_trying_to_find_the_kia_forte_gt_owner_from_iaai/",
@@ -6839,7 +7223,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000419",
+      "id": "rvw-000444",
       "source_website": "reddit.com",
       "source_label": "Reddit r/KiaForte",
       "source_url": "https://www.reddit.com/r/KiaForte/comments/1hjjlbb/im_trying_to_find_the_kia_forte_gt_owner_from_iaai/",
@@ -6854,7 +7238,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000420",
+      "id": "rvw-000445",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=4#0654_88276839_566241",
@@ -6869,7 +7253,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000421",
+      "id": "rvw-000446",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AcuraTL",
       "source_url": "https://www.reddit.com/r/AcuraTL/comments/1hi9uwg/just_bought_an_acura_tl_type_s_2007_for_25k/m30gior/",
@@ -6884,7 +7268,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000422",
+      "id": "rvw-000447",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Charger",
       "source_url": "https://www.reddit.com/r/Charger/comments/1hgs9xm/wanting_to_hellcat_swap/m2whhjc/",
@@ -6899,7 +7283,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000423",
+      "id": "rvw-000448",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Kerala",
       "source_url": "https://www.reddit.com/r/Kerala/comments/1hhjgmj/protests_escalate_over_denial_of_pointofcall_for/m2tfbl0/",
@@ -6914,11 +7298,11 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000424",
+      "id": "rvw-000449",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
-      "author": "Mohammed Sultan",
+      "author": "M S",
       "review_date": "2024-12-18",
       "rating": 1,
       "sentiment": "negative",
@@ -6929,7 +7313,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000425",
+      "id": "rvw-000450",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/1hgdv09/what_is_the_most_reliable_safe_and_relatively/m2jqndf/",
@@ -6944,7 +7328,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000426",
+      "id": "rvw-000451",
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/Autobody",
+      "source_url": "https://www.reddit.com/r/Autobody/comments/1hg4lee/2021_4runner_with_collision_damage_worth_the_risk/m2grwul/",
+      "author": "ABigBigMac1",
+      "review_date": "2024-12-17",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "look at theft cars with no damage on iaai or something you can find good cars like this 4runner: [https://www.iaai.com/VehicleDetail/39652664\\~US](https://www.iaai.com/VehicleDetail/39652664~US) currently bidding for 14k",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
+    },
+    {
+      "id": "rvw-000452",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Camry",
       "source_url": "https://www.reddit.com/r/Camry/comments/1hg0cww/is_that_worth_to_buy_2004_camry_in_4500/m2g6u3x/",
@@ -6959,7 +7358,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000427",
+      "id": "rvw-000453",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Copartonline",
       "source_url": "https://www.reddit.com/r/Copartonline/comments/1hc9fi6/bestcheapest_broker_service_for_cars_over_10k/m2dgrhc/",
@@ -6974,7 +7373,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000428",
+      "id": "rvw-000454",
       "source_website": "reddit.com",
       "source_label": "Reddit r/prius",
       "source_url": "https://www.reddit.com/r/prius/comments/1hel3t1/buying_20_year_old_prius/m26izui/",
@@ -6989,7 +7388,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000429",
+      "id": "rvw-000455",
       "source_website": "reddit.com",
       "source_label": "Reddit r/okc",
       "source_url": "https://www.reddit.com/r/okc/comments/1hdr3ax/how_long_does_the_dmvservice_oklahoma_take_to_fix/m1ymln9/",
@@ -7004,7 +7403,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000430",
+      "id": "rvw-000456",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=10#0654_88276839_22658082",
@@ -7019,7 +7418,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000431",
+      "id": "rvw-000457",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12060162344",
+      "author": "P.King-Cole",
+      "review_date": "2024-12-13",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Lies and more lies. I stay in Washington state and the site lies a lot. I got a car from them this year. Was told on the add the car runs and drive. When I got the car. It didn’t drive or run. They brought the car on a forklift to my tow guy. If the car runs and drive like you said on the add. Why are you guys using a forklift? Anyone buying from this site please be careful. I’m a father of 6 and pretty much car less till I can get this car up and running. Buyer please be careful. If I could give it one star. I would",
+      "geo_validation": "apple_us_store",
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Tow and Storage Charges",
+      "tier3": "Tow and Storage Fees"
+    },
+    {
+      "id": "rvw-000458",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Miata",
       "source_url": "https://www.reddit.com/r/Miata/comments/1hc9cy1/reputable/m1mi0lc/",
@@ -7034,7 +7448,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000432",
+      "id": "rvw-000459",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Calgary",
       "source_url": "https://www.reddit.com/r/Calgary/comments/1hc4aqm/looking_for_a_car/m1nc6du/",
@@ -7049,7 +7463,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000433",
+      "id": "rvw-000460",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Washington",
       "source_url": "https://www.reddit.com/r/Washington/comments/1hc4sca/forgot_to_remove_vehicle_plates/m1lh34t/",
@@ -7064,7 +7478,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000434",
+      "id": "rvw-000461",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Washington",
       "source_url": "https://www.reddit.com/r/Washington/comments/1hc4sca/forgot_to_remove_vehicle_plates/m1lgrjy/",
@@ -7079,7 +7493,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000435",
+      "id": "rvw-000462",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=4#0654_88276839_563838",
@@ -7094,7 +7508,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000436",
+      "id": "rvw-000463",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1hajp1d/2015_nissan_altima_174k_miles/m19sjyb/",
@@ -7109,7 +7523,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Missed/ Delayed Pickup and Dispatch Window"
     },
     {
-      "id": "rvw-000437",
+      "id": "rvw-000464",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1h8qot1/winning_bid_1100_iaai_1690_after_fees_196734_all/m10hb9q/",
@@ -7124,7 +7538,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000438",
+      "id": "rvw-000465",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1h8qot1/winning_bid_1100_iaai_1690_after_fees_196734_all/m0vusrl/",
@@ -7139,7 +7553,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000439",
+      "id": "rvw-000466",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1h91etq/paid_974_after_feees_at_iaai_should_i_keep_or_sale/",
@@ -7154,7 +7568,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000440",
+      "id": "rvw-000467",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1h8qovr/winning_bid_1100_iaai_1690_after_fees_196734_all/",
@@ -7169,7 +7583,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000441",
+      "id": "rvw-000468",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1h8qot1/winning_bid_1100_iaai_1690_after_fees_196734_all/",
@@ -7184,7 +7598,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000442",
+      "id": "rvw-000469",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1h5wwee/32k_to_invest_6k_a_month_profit_possible/m0nypxo/",
@@ -7199,7 +7613,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000443",
+      "id": "rvw-000470",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -7214,7 +7628,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000444",
+      "id": "rvw-000471",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1h5wwee/32k_to_invest_6k_a_month_profit_possible/m0ahzns/",
@@ -7229,7 +7643,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000445",
+      "id": "rvw-000472",
       "source_website": "reddit.com",
       "source_label": "Reddit r/prius",
       "source_url": "https://www.reddit.com/r/prius/comments/1h5rkf3/are_gen_2_prius_still_worth_it_in_2025/m09l9sz/",
@@ -7244,7 +7658,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000446",
+      "id": "rvw-000473",
       "source_website": "reddit.com",
       "source_label": "Reddit r/prius",
       "source_url": "https://www.reddit.com/r/prius/comments/1h5rkf3/are_gen_2_prius_still_worth_it_in_2025/m08ka1k/",
@@ -7259,7 +7673,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000447",
+      "id": "rvw-000474",
       "source_website": "reddit.com",
       "source_label": "Reddit r/uberdrivers",
       "source_url": "https://www.reddit.com/r/uberdrivers/comments/1h4iob7/best_cars_and_options_for_uberlyft_buying_guide/m02haom/",
@@ -7274,7 +7688,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000448",
+      "id": "rvw-000475",
       "source_website": "reddit.com",
       "source_label": "Reddit r/uberdrivers",
       "source_url": "https://www.reddit.com/r/uberdrivers/comments/1h4iob7/best_cars_and_options_for_uberlyft_buying_guide/",
@@ -7289,7 +7703,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000449",
+      "id": "rvw-000476",
       "source_website": "reddit.com",
       "source_label": "Reddit r/missoula",
       "source_url": "https://www.reddit.com/r/missoula/comments/1h57vna/in_desperate_need_of_cheap_running_care/m04c2t8/",
@@ -7304,7 +7718,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000450",
+      "id": "rvw-000477",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12019426692",
+      "author": "Jamison,Michal",
+      "review_date": "2024-12-02",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Why I had the worst experience. I bought a car from Atlanta East and I was five minutes late and they told me come back tomorrow cause they had closed. I drove 6 hours away. The manager was really rude. I will never buy a car from there again",
+      "geo_validation": "apple_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "id": "rvw-000478",
       "source_website": "reddit.com",
       "source_label": "Reddit r/projectcar",
       "source_url": "https://www.reddit.com/r/projectcar/comments/1fveed5/anyone_want_to_share_their_copartautobidmaster/lzw0jxv/",
@@ -7319,7 +7748,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000451",
+      "id": "rvw-000479",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=10#0654_88276839_22616677",
@@ -7334,7 +7763,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000452",
+      "id": "rvw-000480",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Camry",
       "source_url": "https://www.reddit.com/r/Camry/comments/1h0j84k/buying_camry_2025_se/lz6v3pi/",
@@ -7349,7 +7778,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000453",
+      "id": "rvw-000481",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=4#0654_88276839_560757",
@@ -7364,7 +7793,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000454",
+      "id": "rvw-000482",
+      "source_website": "bbb.org",
+      "source_label": "BBB Complaints",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=10#0654_88276839_22605329",
+      "author": "BBB complainant",
+      "review_date": "2024-11-25",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Service or Repair Issues. My car was reposssed. I went and picked up my belongings that were in my car that they put in a box before I got there. Items that I KNOW to be in my car were missing. All of the items missing were small valuable items that were all in the same compartment of my car. I was told to file a claim and after an investigation if my items were not recovered I would be rembersed the value of my items. Not on REMOVED did REMOVED ever get in touch with me after 2 months I final REMOVED was able to talk with someone o REMOVED to be told that my claim was denied 3 weeks ago and there's nothing more they can do. This is the second time this company has stolen items out of my car",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Personal belongings/ items",
+      "tier3": "Removal / Retrieval of items left in vehicle"
+    },
+    {
+      "id": "rvw-000483",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/67426e5682c27b69f4f7f2d9",
@@ -7375,11 +7819,11 @@ window.IAA_REVIEWS_DATA = {
       "review_text": "SHAMELESS THIEVES AND LIARS. No these people are actually straight up THIEVES with zero shame. They listed a car as run and drive but when my friend that is a car dealer received the car he soon found out that the transmission was completely messed up. They had completely lied to him. They go through manipulative loopholes to ensure that they can legally lie and scam you but they know VERY WELL what they are doing. They know that their cars are useless junk but will scam you out of your hard earned money with false descriptions pretending that these are driveable cars. ONLY GOD WILL DEAL WITH YOU IMMORAL SHAMELESS S***BAGS",
       "geo_validation": "trustpilot_us_slug",
       "tier1": "Lot Condition, Listing Status and related",
-      "tier2": "Listing Status",
-      "tier3": "Selling/ Relisting vehicle or Parts purchase"
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000455",
+      "id": "rvw-000484",
       "source_website": "reddit.com",
       "source_label": "Reddit r/fireinvestigation",
       "source_url": "https://www.reddit.com/r/fireinvestigation/comments/1gidco9/how_did_you_get_into_the_field/lyoe21w/",
@@ -7394,7 +7838,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000456",
+      "id": "rvw-000485",
       "source_website": "reddit.com",
       "source_label": "Reddit r/energy",
       "source_url": "https://www.reddit.com/r/energy/comments/1gy3ohq/trumps_us_energy_dominance_delusion_could_render/lyqb29s/",
@@ -7409,7 +7853,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Schedule/ Reschedule Pickup"
     },
     {
-      "id": "rvw-000457",
+      "id": "rvw-000486",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/14zwh9e/what_appswebsites_do_you_guys_recommend_for/lyndo6c/",
@@ -7424,7 +7868,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000458",
+      "id": "rvw-000487",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/1gx66g5/purchase_from_iaai_auction_can_carfax_report_have/",
@@ -7439,7 +7883,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000459",
+      "id": "rvw-000488",
       "source_website": "reddit.com",
       "source_label": "Reddit r/mercedes_benz",
       "source_url": "https://www.reddit.com/r/mercedes_benz/comments/1gwt9zf/should_i_buy_this_or_is_it_a_bad_decision_117k/lycwhb0/",
@@ -7454,7 +7898,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000460",
+      "id": "rvw-000489",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=4#0654_88276839_560082",
@@ -7469,7 +7913,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000461",
+      "id": "rvw-000490",
       "source_website": "reddit.com",
       "source_label": "Reddit r/LexusGX",
       "source_url": "https://www.reddit.com/r/LexusGX/comments/1gw4nhn/purchasing_a_2020_gx460_copartiaai/ly7tor4/",
@@ -7484,7 +7928,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000462",
+      "id": "rvw-000491",
       "source_website": "reddit.com",
       "source_label": "Reddit r/LexusGX",
       "source_url": "https://www.reddit.com/r/LexusGX/comments/1gw4nhn/purchasing_a_2020_gx460_copartiaai/ly7tjxu/",
@@ -7499,7 +7943,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000463",
+      "id": "rvw-000492",
       "source_website": "reddit.com",
       "source_label": "Reddit r/LexusGX",
       "source_url": "https://www.reddit.com/r/LexusGX/comments/1gw4nhn/purchasing_a_2020_gx460_copartiaai/ly6mk6y/",
@@ -7514,7 +7958,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000464",
+      "id": "rvw-000493",
       "source_website": "reddit.com",
       "source_label": "Reddit r/LexusGX",
       "source_url": "https://www.reddit.com/r/LexusGX/comments/1gw4nhn/purchasing_a_2020_gx460_copartiaai/",
@@ -7529,7 +7973,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000465",
+      "id": "rvw-000494",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AcademicBiblical",
       "source_url": "https://www.reddit.com/r/AcademicBiblical/comments/1gr82oq/sothebys_ten_commandments_inscription/lyb5ugx/",
@@ -7539,12 +7983,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "negative",
       "review_text": "Perhaps errors and inaccuracies were present in some of the other comment threads, but if you scroll up you will see I quoted from an English-language journal article that notes that the inscription is in Samaritan script. (Judaism of course has a lot of Babylonian influences and their Hebrew script is one of them; given this subreddit, many people probably know that.) I am unfortunately unable to read Hebrew, and so even though I had access to some of the papers (as I cited above) I appreciate the summary of the background on this. It definitely augments the information we previously had from the journal article and media reports. It's worth stressing though that fellow scholars have questioned Ben-Zvi's dating of the artifact and it's very much uncertain. Thanks also for the note on Robert Deutsch. I googled both Deustches and found the following interesting articles from 2008: https://www.upi.com/Odd_News/2008/04/14/Suit-Rabbi-stole-Ten-Commandments/53761208213567/ &gt; The dealer, Robert Deutsch, claims Rabbi Shaul Shimon Deutsch -- no relation to the plaintiff -- stole the fifth-century piece for the Living Torah Museum in New York's Borough Park, the New York Post reported Monday. &gt; Rabbi Deutsch said he originally agreed to pay $110,000, but stopped payments after the dealer told him he would have to return the item to the Israeli Antiquities Authority in five years -- a condition he says the dealer forgot to mention until after the agreement was made. &gt; The rabbi said he stopped payments after giving $27,500 to Deutsch and told the dealer he wanted to call off the deal. https://jpost.com/jewish-world/jewish-news/10-commandments-focus-of-antiquities-dispute &gt; Rabbi Deutsch, who runs the Living Torah Museum in Brooklyn, where the slab is showcased, says he sent a $27,500 deposit on the slab with the understanding that the dealer would provide export permits from the Israel Antiquities Authority. Those permits arrived, but specified a five-year time limit, after which Rabbi Deutsch was expected to return the artifact to Israel. \"We told Deutsch we are not interested in renting the stone,\" said the Brooklyn rabbi. \"He is trying to perpetrate a theft against the museum over an artifact inscribed with 'Thou shalt not steal.'\" The rabbi has refused to return the artifact until he receives his down payment back... According to Robert Deutsch's attorney Thomas McGowan, the rabbi failed to pay for several other items he purchased and was well aware that the permit on the Samaritan slab was for five years. \"I have a letter signed by him asking for a five-year permit, so the implication is that he understood,\" said McGowan. \"Perhaps he needs to read the other commandment 'Thou shalt not bear false witness.'\" Nearly a year ago, an Israeli court ruled against Rabbi Deutsch, stating that he owes Robert Deutsch NIS 428,890, according to McGowan. \"All we are trying to do is collect the money he owes.\" Shaul Deutsch has [also been accused of selling a Holocaust's survivor's Ark without the son's required permission](https://nypost.com/2019/09/10/holocaust-survivors-son-asks-judge-to-block-auction-of-dads-relic/) and also [accused of selling forgeries such as of holy dollar bills of a Rebbe](https://collive.com/what-collive-missed-in-the-chabad-auction-expose/). Regardless, there definitely seems to be something(s) shady with the owner(s) of the tablet after the Kaplan family sold it. But unless someone forged and disappeared with the original tablet, this artifact has its own academic provenance and legitimacy. You make a good point about the Samaritans being a very marginal people today, and their cultural artifacts being taken by others for profit. This is an issue with the antiquities trade overall and it is certainly disappointing that nothing is done about this in this case. Do you know if the IAA tends to repurchase important artifacts when they are up for public sale? The first sale appears to have been wholly private and the IAA might not have had an opportunity to buy it. And with this current auction, the IAA has made its position clear that this is not a state treasure. The second auction is more questionable though because there are claims that the IAA did call it a national treasure at the time but was seemingly unable or unwilling to take action to recover the artifact. I also see you have crossposted this comment across several subreddits and most of your account activity is regarding this auction. Do you have a personal stake in this sale or the artifact?",
       "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000466",
+      "id": "rvw-000495",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AcademicBiblical",
       "source_url": "https://www.reddit.com/r/AcademicBiblical/comments/1gr82oq/sothebys_ten_commandments_inscription/ly5htww/",
@@ -7559,7 +8003,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000467",
+      "id": "rvw-000496",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -7574,7 +8018,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000468",
+      "id": "rvw-000497",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaa.mobile.IaaTow)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
@@ -7589,7 +8033,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000469",
+      "id": "rvw-000498",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=10#0654_88276839_22584055",
@@ -7604,7 +8048,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000470",
+      "id": "rvw-000499",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=10#0654_88276839_22583680",
@@ -7619,7 +8063,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000471",
+      "id": "rvw-000500",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1gtoq2k/is_sca_auctions_reliable/lxpa4bm/",
@@ -7634,7 +8078,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000472",
+      "id": "rvw-000501",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11965169066",
+      "author": "Luiss -",
+      "review_date": "2024-11-18",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Terrible. Paid $200 for a license.. it’s been three months since then and I still do not have access to make purchases.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-000502",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarguys",
       "source_url": "https://www.reddit.com/r/askcarguys/comments/1gtozpr/what_makes_a_car_benefit_the_most_from_a/lxnzpel/",
@@ -7649,7 +8108,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Upload Troubleshooting"
     },
     {
-      "id": "rvw-000473",
+      "id": "rvw-000503",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1gtoq2k/is_sca_auctions_reliable/lxnp8mh/",
@@ -7664,7 +8123,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000474",
+      "id": "rvw-000504",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1gtoq2k/is_sca_auctions_reliable/",
@@ -7679,7 +8138,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Selling/ Relisting vehicle or Parts purchase"
     },
     {
-      "id": "rvw-000475",
+      "id": "rvw-000505",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/67361e61fc4bec5576ad1f58",
@@ -7694,7 +8153,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000476",
+      "id": "rvw-000506",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AcademicBiblical",
       "source_url": "https://www.reddit.com/r/AcademicBiblical/comments/1gr82oq/sothebys_ten_commandments_inscription/lx4ivc0/",
@@ -7709,7 +8168,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000477",
+      "id": "rvw-000507",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Washington",
       "source_url": "https://www.reddit.com/r/Washington/comments/1dxueip/vehicle_declared_total_loss_but_dealer_says_it/lx0ldlq/",
@@ -7724,7 +8183,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Pickup Hours and Cutoff"
     },
     {
-      "id": "rvw-000478",
+      "id": "rvw-000508",
       "source_website": "reddit.com",
       "source_label": "Reddit r/infiniti",
       "source_url": "https://www.reddit.com/r/infiniti/comments/1gpw18q/is_this_worth_buying_2016_rebuilt_redsport/lwyo2i0/",
@@ -7739,7 +8198,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000479",
+      "id": "rvw-000509",
       "source_website": "reddit.com",
       "source_label": "Reddit r/CryptoScams",
       "source_url": "https://www.reddit.com/r/CryptoScams/comments/1gq7uyt/chassis_number_check/",
@@ -7754,7 +8213,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Upload Troubleshooting"
     },
     {
-      "id": "rvw-000480",
+      "id": "rvw-000510",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=4#0654_88276839_557624",
@@ -7769,7 +8228,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000481",
+      "id": "rvw-000511",
       "source_website": "reddit.com",
       "source_label": "Reddit r/towing",
       "source_url": "https://www.reddit.com/r/towing/comments/1gp726c/help_on_new_towing_business/lwu0bmz/",
@@ -7784,7 +8243,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000482",
+      "id": "rvw-000512",
       "source_website": "reddit.com",
       "source_label": "Reddit r/BMW",
       "source_url": "https://www.reddit.com/r/BMW/comments/1goyjrn/can_this_f90_be_saved/lwm7q1e/",
@@ -7799,7 +8258,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000483",
+      "id": "rvw-000513",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AutoTransport",
       "source_url": "https://www.reddit.com/r/AutoTransport/comments/1gp0lwj/car_transport_150200_quantity/",
@@ -7814,7 +8273,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000484",
+      "id": "rvw-000514",
       "source_website": "reddit.com",
       "source_label": "Reddit r/E90",
       "source_url": "https://www.reddit.com/r/E90/comments/1gn0ec1/i_bought_a_non_running_e91_on_copart_for_1500/lwbufbg/",
@@ -7829,7 +8288,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000485",
+      "id": "rvw-000515",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Oman",
       "source_url": "https://www.reddit.com/r/Oman/comments/1gmksyl/planing_to_buy_a_used_car_budget_6000_riyals/lw8l3gb/",
@@ -7839,12 +8298,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "positive",
       "review_text": "Copart.com and IAAI.com also I just realised it’s not as easy since you’ll need to have a license for these auctions. You’ll also have to wait for the car approximately 2 months to arrive, so if you want the car asap go to uae and get something from there it’d be better.",
       "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000486",
+      "id": "rvw-000516",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Warthunder",
       "source_url": "https://www.reddit.com/r/Warthunder/comments/1glrdj5/some_aircrafts_at_my_university/lw866wh/",
@@ -7859,7 +8318,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000487",
+      "id": "rvw-000517",
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/AskMechanics",
+      "source_url": "https://www.reddit.com/r/AskMechanics/comments/1gm1ykl/should_i_be_worried_about_this/lvzr6kj/",
+      "author": "badcoupe",
+      "review_date": "2024-11-08",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "What is the vehicle? The ford escapes commonly got short block replacements due to coolant intrusion issues. Remember at copart and iaai that run and drive only means it will start and move 1ft doesn’t matter if it’s spewing parts out the bottom or fluid only moves in reverse etc. (I’m a broker for salvage cars)",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
+    },
+    {
+      "id": "rvw-000518",
       "source_website": "reddit.com",
       "source_label": "Reddit r/GhostsCBS",
       "source_url": "https://www.reddit.com/r/GhostsCBS/comments/1b1w1hm/what_happens_to_car_ghosts_when_the_car_they_die/lw49566/",
@@ -7874,7 +8348,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000488",
+      "id": "rvw-000519",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Apprehensive_Ice_560",
       "source_url": "https://www.reddit.com/r/u_Apprehensive_Ice_560/comments/1gm0yhp/should_i_buy_this_bolt_2950_score_iaai/",
@@ -7889,7 +8363,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000489",
+      "id": "rvw-000520",
       "source_website": "reddit.com",
       "source_label": "Reddit r/DMV",
       "source_url": "https://www.reddit.com/r/DMV/comments/1glo9zm/certificate_of_title_with_salvage_mention/",
@@ -7904,7 +8378,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Upload Troubleshooting"
     },
     {
-      "id": "rvw-000490",
+      "id": "rvw-000521",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -7919,7 +8393,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000491",
+      "id": "rvw-000522",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1gjw9st/iaa_oshawa_insurance_company_stole_my_stuff/",
@@ -7934,7 +8408,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000492",
+      "id": "rvw-000523",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -7944,12 +8418,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "negative",
       "review_text": "Bad experience, confusing hours, auctions in west coast are run at central time and lag of any notifications what's happening with cars that you are currently bidding...",
       "geo_validation": "google_play_us_store",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
     },
     {
-      "id": "rvw-000493",
+      "id": "rvw-000524",
       "source_website": "reddit.com",
       "source_label": "Reddit r/TeslaSupport",
       "source_url": "https://www.reddit.com/r/TeslaSupport/comments/1gjh840/seeking_advice_on_selling_totaled_2023_model_y/lvfao8q/",
@@ -7964,7 +8438,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000494",
+      "id": "rvw-000525",
       "source_website": "reddit.com",
       "source_label": "Reddit r/TeslaModelX",
       "source_url": "https://www.reddit.com/r/TeslaModelX/comments/1dc1k0t/got_rear_ended_with_no_damage_what_should_i_do/lv2fpna/",
@@ -7979,7 +8453,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000495",
+      "id": "rvw-000526",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AudiS4",
       "source_url": "https://www.reddit.com/r/AudiS4/comments/1ggg81l/rebuilt_tile_2015_s4_with_41k_miles_worth_it/luqh5lb/",
@@ -7994,7 +8468,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000496",
+      "id": "rvw-000527",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/1ggafh8/need_a_first_car_46k_budget/luo7t4e/",
@@ -8009,7 +8483,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000497",
+      "id": "rvw-000528",
       "source_website": "reddit.com",
       "source_label": "Reddit r/rva",
       "source_url": "https://www.reddit.com/r/rva/comments/1gg0phj/any_public_adjusters_totaled_carsalvage_here/lun0b02/",
@@ -8024,7 +8498,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000498",
+      "id": "rvw-000529",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Volvo",
       "source_url": "https://www.reddit.com/r/Volvo/comments/1ffeoxg/the_volvo_c70_was_awesome/lulushg/",
@@ -8039,7 +8513,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000499",
+      "id": "rvw-000530",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/1gf9x93/confused_by_carfax_report/luhxst3/",
@@ -8054,7 +8528,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000500",
+      "id": "rvw-000531",
       "source_website": "reddit.com",
       "source_label": "Reddit r/ToyotaSienna",
       "source_url": "https://www.reddit.com/r/ToyotaSienna/comments/1gbfeoj/what_should_i_consider_with_having_this_sienna/lucjcg2/",
@@ -8069,7 +8543,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000501",
+      "id": "rvw-000532",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1gejge9/is_the_salvage_fee_on_a_totaled_vehicle_normally/luc8lml/",
@@ -8084,7 +8558,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000502",
+      "id": "rvw-000533",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Autobody",
       "source_url": "https://www.reddit.com/r/Autobody/comments/1gdpgqf/looking_for_advice/lu4b1ws/",
@@ -8099,7 +8573,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000503",
+      "id": "rvw-000534",
       "source_website": "reddit.com",
       "source_label": "Reddit r/jacksonville",
       "source_url": "https://www.reddit.com/r/jacksonville/comments/1gdqocw/local_trackarea_to_let_loose_legally/lu64m5m/",
@@ -8114,7 +8588,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000504",
+      "id": "rvw-000535",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=4#0654_88276839_554681",
@@ -8129,7 +8603,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-000505",
+      "id": "rvw-000536",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=10#0654_88276839_22483721",
@@ -8144,7 +8618,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000506",
+      "id": "rvw-000537",
       "source_website": "reddit.com",
       "source_label": "Reddit r/zx6r",
       "source_url": "https://www.reddit.com/r/zx6r/comments/1gbin5b/my_40th_anniversary_edition_zx6r_got_stolen/lto4gbi/",
@@ -8159,7 +8633,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000507",
+      "id": "rvw-000538",
       "source_website": "reddit.com",
       "source_label": "Reddit r/regina",
       "source_url": "https://www.reddit.com/r/regina/comments/1gbloh9/sgi_total_loss_vehicles/ltq3l2j/",
@@ -8174,7 +8648,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000508",
+      "id": "rvw-000539",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=11#0654_88276839_22475409",
@@ -8189,7 +8663,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Upload Troubleshooting"
     },
     {
-      "id": "rvw-000509",
+      "id": "rvw-000540",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/1gawxev/seamless_iaai_roro_services_with_best_4_shipping/",
@@ -8204,7 +8678,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000510",
+      "id": "rvw-000541",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Rivian",
       "source_url": "https://www.reddit.com/r/Rivian/comments/1gacnfw/salvage_purchase/ltk893w/",
@@ -8219,7 +8693,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000511",
+      "id": "rvw-000542",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Rivian",
       "source_url": "https://www.reddit.com/r/Rivian/comments/1ea56nv/ama_i_just_bought_a_used_2022_rivian_r1t_for_45k/ltk7ajk/",
@@ -8234,7 +8708,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000512",
+      "id": "rvw-000543",
       "source_website": "reddit.com",
       "source_label": "Reddit r/SouthBend",
       "source_url": "https://www.reddit.com/r/SouthBend/comments/1fg52wm/residents_of_st_joseph_county_an_illinoisbased/lt2s3is/",
@@ -8249,7 +8723,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Proactive Follow-up"
     },
     {
-      "id": "rvw-000513",
+      "id": "rvw-000544",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11859088168",
+      "author": "Joel Mta",
+      "review_date": "2024-10-21",
+      "rating": 3,
+      "sentiment": "negative",
+      "review_text": "To many fees. To many fees , the pictures and descriptions is not enough good. I think is possible make a better job in the pictures. And correct information about the bad things in the cars there sales",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-000545",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1g6r8ob/titling_and_registering/lsv7w7e/",
@@ -8264,7 +8753,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000514",
+      "id": "rvw-000546",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1g6wh0o/total_loss/lsm2u37/",
@@ -8279,7 +8768,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-000515",
+      "id": "rvw-000547",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/1g5msqn/dependable_iaai_roro_shipping_with_best_4/",
@@ -8294,7 +8783,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000516",
+      "id": "rvw-000548",
       "source_website": "reddit.com",
       "source_label": "Reddit r/fireinvestigation",
       "source_url": "https://www.reddit.com/r/fireinvestigation/comments/1g5426z/how_to_go_about_moving_to_the_private_sector/ls8nzfp/",
@@ -8309,7 +8798,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000517",
+      "id": "rvw-000549",
       "source_website": "reddit.com",
       "source_label": "Reddit r/fireinvestigation",
       "source_url": "https://www.reddit.com/r/fireinvestigation/comments/1g59zp9/looking_for_clarity_on_this_career/",
@@ -8324,7 +8813,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000518",
+      "id": "rvw-000550",
       "source_website": "reddit.com",
       "source_label": "Reddit r/fireinvestigation",
       "source_url": "https://www.reddit.com/r/fireinvestigation/comments/1g5426z/how_to_go_about_moving_to_the_private_sector/",
@@ -8339,7 +8828,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000519",
+      "id": "rvw-000551",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11840345215",
+      "author": "qasrana",
+      "review_date": "2024-10-16",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "0 star. App is slow",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-000552",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1g4gsuq/car_wrecked_and_now_at_insurance_auto_auctions/",
@@ -8354,7 +8858,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000520",
+      "id": "rvw-000553",
       "source_website": "reddit.com",
       "source_label": "Reddit r/personalfinance",
       "source_url": "https://www.reddit.com/r/personalfinance/comments/1ck2jir/can_you_tell_me_what_is_going_on_here_auto/ls2dkz2/",
@@ -8369,7 +8873,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000521",
+      "id": "rvw-000554",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=11#0654_88276839_22428040",
@@ -8384,7 +8888,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-000522",
+      "id": "rvw-000555",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=11#0654_88276839_22423940",
@@ -8399,7 +8903,52 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000523",
+      "id": "rvw-000556",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11836584941",
+      "author": "l0veb0x",
+      "review_date": "2024-10-15",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Terrible slow loading time. Loading time on the app it was always a huge issue all along!!!",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-000557",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11833507079",
+      "author": "Redshift 5000",
+      "review_date": "2024-10-14",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "Buyer fee. Too many fee",
+      "geo_validation": "apple_us_store",
+      "tier1": "Payment Refunds, Transaction Issues and Deposits",
+      "tier2": "Fees & Charges Disputes",
+      "tier3": "Buyer Fees Explanation"
+    },
+    {
+      "id": "rvw-000558",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11832906986",
+      "author": "majid 86",
+      "review_date": "2024-10-14",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Forklift drivers. The biggest problem right now we have it’s the forklift drivers at the auction lot when they pick up the cards. They absolutely don’t care at all. Majority of the cars comes in with damage because of the forklift and we can see the damage sometimes suspension sometimes transmission. It’s because the way they left or they pick up the car and the way they drive if you guys can figure away to make it a little bit less damage for us.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
+    },
+    {
+      "id": "rvw-000559",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Acura",
       "source_url": "https://www.reddit.com/r/Acura/comments/1g2dtjy/how_did_i_do_on_this_purchase/lrr192y/",
@@ -8414,7 +8963,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000524",
+      "id": "rvw-000560",
       "source_website": "reddit.com",
       "source_label": "Reddit r/SouthBend",
       "source_url": "https://www.reddit.com/r/SouthBend/comments/1g2vp90/auto_auction_company_decided_to_pull_the_rezoning/",
@@ -8429,7 +8978,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000525",
+      "id": "rvw-000561",
       "source_website": "reddit.com",
       "source_label": "Reddit r/DubaiPetrolHeads",
       "source_url": "https://www.reddit.com/r/DubaiPetrolHeads/comments/1g1tmdd/helping_people_import_cars_from_usa/lrj4rd9/",
@@ -8444,7 +8993,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000526",
+      "id": "rvw-000562",
       "source_website": "reddit.com",
       "source_label": "Reddit r/dubai",
       "source_url": "https://www.reddit.com/r/dubai/comments/1dyl29e/how_to_import_a_car_to_dubai_uae_through_copart/lrj23zu/",
@@ -8459,7 +9008,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000527",
+      "id": "rvw-000563",
       "source_website": "reddit.com",
       "source_label": "Reddit r/dubai",
       "source_url": "https://www.reddit.com/r/dubai/comments/1fspkp4/bought_a_car_from_the_usa_need_advice_on_shipping/lrj1uk3/",
@@ -8474,7 +9023,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000528",
+      "id": "rvw-000564",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UAE",
       "source_url": "https://www.reddit.com/r/UAE/comments/1g1ua28/helping_people_import_cars_from_usa/",
@@ -8489,7 +9038,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000529",
+      "id": "rvw-000565",
       "source_website": "reddit.com",
       "source_label": "Reddit r/dubai",
       "source_url": "https://www.reddit.com/r/dubai/comments/1g1to0d/helping_people_import_cars_from_usa/",
@@ -8504,7 +9053,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000530",
+      "id": "rvw-000566",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UAE",
       "source_url": "https://www.reddit.com/r/UAE/comments/1g1tn64/helping_people_import_cars_from_usa/",
@@ -8519,7 +9068,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000531",
+      "id": "rvw-000567",
       "source_website": "reddit.com",
       "source_label": "Reddit r/DubaiPetrolHeads",
       "source_url": "https://www.reddit.com/r/DubaiPetrolHeads/comments/1g1tmdd/helping_people_import_cars_from_usa/",
@@ -8534,7 +9083,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000532",
+      "id": "rvw-000568",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/1g1gpdc/want_to_buy_a_car_with_rebuilt_title_claims_hit_a/lrick3b/",
@@ -8549,7 +9098,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000533",
+      "id": "rvw-000569",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Autobody",
       "source_url": "https://www.reddit.com/r/Autobody/comments/1g21bs6/method_for_learning_about_vehicles/",
@@ -8564,7 +9113,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000534",
+      "id": "rvw-000570",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=4#0654_88276839_550634",
@@ -8579,7 +9128,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Title Not Received"
     },
     {
-      "id": "rvw-000535",
+      "id": "rvw-000571",
       "source_website": "reddit.com",
       "source_label": "Reddit r/GR86",
       "source_url": "https://www.reddit.com/r/GR86/comments/1g1l02t/thinking_about_buying_this_auction_car/lrhrv9k/",
@@ -8594,7 +9143,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000536",
+      "id": "rvw-000572",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/1g1gpdc/want_to_buy_a_car_with_rebuilt_title_claims_hit_a/lrgyeyu/",
@@ -8604,12 +9153,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "positive",
       "review_text": "If he got it from an auction, how does he know it hit a mailbox? I've bought from IAAI and they never told me what happened. I would just ask for pictures of the accident or just the vin and then Google it. If they did a good enough job, $5k is a great deal.",
       "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000537",
+      "id": "rvw-000573",
       "source_website": "reddit.com",
       "source_label": "Reddit r/rav4club",
       "source_url": "https://www.reddit.com/r/rav4club/comments/1g1gf3y/flooded_rav4s/lrgcydm/",
@@ -8624,7 +9173,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000538",
+      "id": "rvw-000574",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1g158do/state_farm_total_loss/lrektn3/",
@@ -8639,7 +9188,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000539",
+      "id": "rvw-000575",
       "source_website": "reddit.com",
       "source_label": "Reddit r/CyberStuck",
       "source_url": "https://www.reddit.com/r/CyberStuck/comments/1g0pnot/cybertruck_manages_2_donuts_before_the_wheel/lrauswk/",
@@ -8654,7 +9203,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000540",
+      "id": "rvw-000576",
       "source_website": "reddit.com",
       "source_label": "Reddit r/GrandCherokee",
       "source_url": "https://www.reddit.com/r/GrandCherokee/comments/1g0jrev/gc_in_accident_last_week_hardly_hit_but_insurance/lr9sssq/",
@@ -8669,7 +9218,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000541",
+      "id": "rvw-000577",
       "source_website": "reddit.com",
       "source_label": "Reddit r/SFV",
       "source_url": "https://www.reddit.com/r/SFV/comments/1fzhmji/where_cars_for_sale_parked/lr7yqyd/",
@@ -8684,7 +9233,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-000542",
+      "id": "rvw-000578",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Flipping",
       "source_url": "https://www.reddit.com/r/Flipping/comments/1fzaq7u/copart_again/lr3by3w/",
@@ -8699,7 +9248,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000543",
+      "id": "rvw-000579",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=11#0654_88276839_22400407",
@@ -8714,7 +9263,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000544",
+      "id": "rvw-000580",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1fyud2x/dealer_used_car_auctions/lqyycbq/",
@@ -8729,7 +9278,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000545",
+      "id": "rvw-000581",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1fyud2x/dealer_used_car_auctions/lqyw4ru/",
@@ -8744,7 +9293,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000546",
+      "id": "rvw-000582",
       "source_website": "reddit.com",
       "source_label": "Reddit r/tulsa",
       "source_url": "https://www.reddit.com/r/tulsa/comments/1fyj740/local_car_auctions/lqxpv7x/",
@@ -8759,7 +9308,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Unable to Bid"
     },
     {
-      "id": "rvw-000547",
+      "id": "rvw-000583",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1fyud2x/dealer_used_car_auctions/lqxkq3j/",
@@ -8774,7 +9323,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000548",
+      "id": "rvw-000584",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=4#0654_88276839_549900",
@@ -8789,7 +9338,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000549",
+      "id": "rvw-000585",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=11#0654_88276839_22394479",
@@ -8804,7 +9353,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000550",
+      "id": "rvw-000586",
       "source_website": "reddit.com",
       "source_label": "Reddit r/CyberStuck",
       "source_url": "https://www.reddit.com/r/CyberStuck/comments/1fylitb/cyber_beast_more_like_cyber_stuck/lquucfq/",
@@ -8819,7 +9368,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000551",
+      "id": "rvw-000587",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=11#0654_88276839_22391721",
@@ -8834,7 +9383,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000552",
+      "id": "rvw-000588",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Civic_Type_R",
       "source_url": "https://www.reddit.com/r/Civic_Type_R/comments/1fxba74/want_to_buy_fk8_from_an_auction_any_advice_on_how/lqocmql/",
@@ -8849,7 +9398,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000553",
+      "id": "rvw-000589",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Hawaii",
       "source_url": "https://www.reddit.com/r/Hawaii/comments/1fwih7h/copart_and_iaai_auctions/",
@@ -8864,7 +9413,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000554",
+      "id": "rvw-000590",
       "source_website": "reddit.com",
       "source_label": "Reddit r/TeslaLounge",
       "source_url": "https://www.reddit.com/r/TeslaLounge/comments/1fvo3ll/salvage_s_plaid_enroute/",
@@ -8879,7 +9428,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000555",
+      "id": "rvw-000591",
       "source_website": "reddit.com",
       "source_label": "Reddit r/volt",
       "source_url": "https://www.reddit.com/r/volt/comments/1ft42l4/dead_volt/lpz99yd/",
@@ -8894,7 +9443,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000556",
+      "id": "rvw-000592",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=4#0654_88276839_548083",
@@ -8909,7 +9458,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000557",
+      "id": "rvw-000593",
       "source_website": "reddit.com",
       "source_label": "Reddit r/turo",
       "source_url": "https://www.reddit.com/r/turo/comments/1fq9ui2/car_totaled/lp8979m/",
@@ -8924,7 +9473,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000558",
+      "id": "rvw-000594",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Rivian",
       "source_url": "https://www.reddit.com/r/Rivian/comments/1fpzp6o/bets_on_totaled_or_repairable/lp1us4f/",
@@ -8939,7 +9488,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000559",
+      "id": "rvw-000595",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=11#0654_88276839_22345144",
@@ -8954,7 +9503,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000560",
+      "id": "rvw-000596",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/1fp5ao9/any_reason_to_not_buy_salvage_title_in_california/loxixta/",
@@ -8969,7 +9518,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000561",
+      "id": "rvw-000597",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/15b867d/iaa_lot/low266y/",
@@ -8984,7 +9533,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000562",
+      "id": "rvw-000598",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=11#0654_88276839_22329171",
@@ -8999,7 +9548,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delayed Email/Phone Response"
     },
     {
-      "id": "rvw-000563",
+      "id": "rvw-000599",
       "source_website": "reddit.com",
       "source_label": "Reddit r/TeslaLounge",
       "source_url": "https://www.reddit.com/r/TeslaLounge/comments/1fnokgp/has_anyone_ever_bought_a_salvage_tesla_tell_us/lojxot2/",
@@ -9014,7 +9563,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000564",
+      "id": "rvw-000600",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=11#0654_88276839_22323162",
@@ -9029,7 +9578,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000565",
+      "id": "rvw-000601",
       "source_website": "reddit.com",
       "source_label": "Reddit r/salvage",
       "source_url": "https://www.reddit.com/r/salvage/comments/1fmmu7c/buying_salvagerebuilt_vehicles/",
@@ -9044,7 +9593,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000566",
+      "id": "rvw-000602",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/1fmidc4/good_or_bad_purchase/loeiv2p/",
@@ -9059,7 +9608,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000567",
+      "id": "rvw-000603",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1flphjs/worth_a_try_198000_miles_car_was_stolen_no_lights/lo8wguz/",
@@ -9074,7 +9623,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000568",
+      "id": "rvw-000604",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/66ed27e92a5f36777efe5733",
@@ -9089,7 +9638,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000569",
+      "id": "rvw-000605",
       "source_website": "reddit.com",
       "source_label": "Reddit r/FordFlex",
       "source_url": "https://www.reddit.com/r/FordFlex/comments/1e8zjwz/damnit_20/lnw6l8k/",
@@ -9104,7 +9653,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000570",
+      "id": "rvw-000606",
       "source_website": "reddit.com",
       "source_label": "Reddit r/ToyotaHighlander",
       "source_url": "https://www.reddit.com/r/ToyotaHighlander/comments/1fk1fhv/vent_experience_with_toyota_regarding_my_stolen/lnsd797/",
@@ -9119,7 +9668,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000571",
+      "id": "rvw-000607",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Foxbody",
       "source_url": "https://www.reddit.com/r/Foxbody/comments/1fjwms7/end_of_an_era/lnrlt14/",
@@ -9134,7 +9683,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Unable to Bid"
     },
     {
-      "id": "rvw-000572",
+      "id": "rvw-000608",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -9149,7 +9698,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000573",
+      "id": "rvw-000609",
       "source_website": "reddit.com",
       "source_label": "Reddit r/RPClipsONX",
       "source_url": "https://www.reddit.com/r/RPClipsONX/comments/1fhtvnz/weekly_rp_recap_0909_0915/",
@@ -9164,7 +9713,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Long Hold Time / Hard to Reach Support"
     },
     {
-      "id": "rvw-000574",
+      "id": "rvw-000610",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=4#0654_88276839_545740",
@@ -9179,7 +9728,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Long Hold Time / Hard to Reach Support"
     },
     {
-      "id": "rvw-000575",
+      "id": "rvw-000611",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=12#0654_88276839_22291115",
@@ -9194,7 +9743,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000576",
+      "id": "rvw-000612",
       "source_website": "reddit.com",
       "source_label": "Reddit r/povertyfinance",
       "source_url": "https://www.reddit.com/r/povertyfinance/comments/1fh3uqp/should_i_buy_a_salvage_title/ln8z23i/",
@@ -9209,7 +9758,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Upload Troubleshooting"
     },
     {
-      "id": "rvw-000577",
+      "id": "rvw-000613",
       "source_website": "reddit.com",
       "source_label": "Reddit r/SouthBend",
       "source_url": "https://www.reddit.com/r/SouthBend/comments/1fg52wm/residents_of_st_joseph_county_an_illinoisbased/ln2vijf/",
@@ -9224,7 +9773,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000578",
+      "id": "rvw-000614",
       "source_website": "reddit.com",
       "source_label": "Reddit r/turo",
       "source_url": "https://www.reddit.com/r/turo/comments/1ffdcwu/renter_totaled_my_car_i_dont_know_how_to_bargain/lmwptsh/",
@@ -9239,7 +9788,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000579",
+      "id": "rvw-000615",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AmazonFlexDrivers",
       "source_url": "https://www.reddit.com/r/AmazonFlexDrivers/comments/1fewoas/what_are_your_other_income_sources_and_how_much/lmsr6b2/",
@@ -9254,7 +9803,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000580",
+      "id": "rvw-000616",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/1fe343u/reliable_iaai_shipping_dubai_with_best_4_shipping/",
@@ -9269,7 +9818,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000581",
+      "id": "rvw-000617",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Mustang",
       "source_url": "https://www.reddit.com/r/Mustang/comments/1f8dq6d/missing_vin_car_purchase_from_a_dealership/lmdosbh/",
@@ -9284,7 +9833,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Upload Troubleshooting"
     },
     {
-      "id": "rvw-000582",
+      "id": "rvw-000618",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=12#0654_88276839_22264719",
@@ -9299,7 +9848,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000583",
+      "id": "rvw-000619",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1fctav2/flip_report_about_20_cars_this_year/lmb9rge/",
@@ -9314,7 +9863,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000584",
+      "id": "rvw-000620",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AutoTransport",
       "source_url": "https://www.reddit.com/r/AutoTransport/comments/1fcuxx1/looking_for_a_quote_and_new_broker/lmb8a79/",
@@ -9329,7 +9878,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000585",
+      "id": "rvw-000621",
       "source_website": "reddit.com",
       "source_label": "Reddit r/projectcar",
       "source_url": "https://www.reddit.com/r/projectcar/comments/1fd0tzs/where_to_buy_parts_cars_copart_iaai_ebay/",
@@ -9344,7 +9893,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000586",
+      "id": "rvw-000622",
       "source_website": "reddit.com",
       "source_label": "Reddit r/motorcycles",
       "source_url": "https://www.reddit.com/r/motorcycles/comments/1fd1ev9/help_me_find_jkbzxjg19pa022192/",
@@ -9359,7 +9908,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000587",
+      "id": "rvw-000623",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Autobody",
       "source_url": "https://www.reddit.com/r/Autobody/comments/1fbxwfy/boy_did_they_screwup_my_car_park_auto_body/",
@@ -9374,7 +9923,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-000588",
+      "id": "rvw-000624",
       "source_website": "reddit.com",
       "source_label": "Reddit r/SouthJersey",
       "source_url": "https://www.reddit.com/r/SouthJersey/comments/1fbif7t/has_an_official_reason_for_atco_dragway_was/lm5kub2/",
@@ -9389,7 +9938,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-000589",
+      "id": "rvw-000625",
       "source_website": "reddit.com",
       "source_label": "Reddit r/fireinvestigation",
       "source_url": "https://www.reddit.com/r/fireinvestigation/comments/10lqzu6/started_seeing_a_ton_of_ads_for_this_service/llnf5yz/",
@@ -9404,7 +9953,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000590",
+      "id": "rvw-000626",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/1f8ryw0/streamlined_iaai_shipping_qatar_expert_services/",
@@ -9419,7 +9968,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000591",
+      "id": "rvw-000627",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=5#0654_88276839_543797",
@@ -9434,7 +9983,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Long Hold Time / Hard to Reach Support"
     },
     {
-      "id": "rvw-000592",
+      "id": "rvw-000628",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=12#0654_88276839_22236928",
@@ -9449,7 +9998,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000593",
+      "id": "rvw-000629",
       "source_website": "reddit.com",
       "source_label": "Reddit r/toyotasolara",
       "source_url": "https://www.reddit.com/r/toyotasolara/comments/1ewacls/my_first_car_bought_for_900_at_auction/ll6qcl9/",
@@ -9464,7 +10013,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000594",
+      "id": "rvw-000630",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1f6ntf5/buying_a_stolen_car_from_an_insurance_company/ll2hua6/",
@@ -9479,22 +10028,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000595",
+      "id": "rvw-000631",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1f6ntf5/buying_a_stolen_car_from_an_insurance_company/ll22qcf/",
       "author": "5everc",
       "review_date": "2024-09-01",
       "rating": null,
-      "sentiment": "positive",
+      "sentiment": "negative",
       "review_text": "Well, in my opinion I would say it's pretty dumb to touch a stolen car or even be close enough to see what's on the floor, but it would be really dumb to try contacting the insurance to buy it. They will probably think it's some sort of fraud, ask why you didn't report it to the police when you first noticed etc. Best thing OP can do is write down the VIN (since they are comfortable getting that close) and check auctions sites like Copart, Manheim, IAAI periodically to see if it shows up, or set a Google alert if that savvy. Some states require a dealers license to bid, some don't.",
       "geo_validation": "mixed_source_ok",
       "tier1": "Customer Service & Communication",
       "tier2": "Agent Professionalism & Responsiveness",
-      "tier3": "Helpful Support Experience"
+      "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000596",
+      "id": "rvw-000632",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1f6ntf5/buying_a_stolen_car_from_an_insurance_company/ll1t3c9/",
@@ -9509,7 +10058,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000597",
+      "id": "rvw-000633",
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/XR650L",
+      "source_url": "https://www.reddit.com/r/XR650L/comments/1f4ta5l/what_to_be_aware_of/lkyaa85/",
+      "author": "Deep-Shake-9425",
+      "review_date": "2024-09-01",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "You saying that bikes on Carfax and IAAI are stolen and then sold to auctions? Or i dont get it. This bike is imported from USA",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-000634",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AuctionCars",
       "source_url": "https://www.reddit.com/r/AuctionCars/comments/1f6fafi/2024_subaru_forester_touring/",
@@ -9524,7 +10088,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000598",
+      "id": "rvw-000635",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1f6ntf5/buying_a_stolen_car_from_an_insurance_company/ll25tn0/",
@@ -9539,7 +10103,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000599",
+      "id": "rvw-000636",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/1f5tgli/im_thinking_of_using_auction_websites_to_buy_my/lkvu0ts/",
@@ -9554,7 +10118,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000600",
+      "id": "rvw-000637",
       "source_website": "reddit.com",
       "source_label": "Reddit r/CyberStuck",
       "source_url": "https://www.reddit.com/r/CyberStuck/comments/1f538pp/cybertruck_crashes_rear_axel_snaps_in_half_and/lkse362/",
@@ -9569,7 +10133,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000601",
+      "id": "rvw-000638",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -9584,7 +10148,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000602",
+      "id": "rvw-000639",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=5#0654_88276839_542152",
@@ -9599,7 +10163,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000603",
+      "id": "rvw-000640",
       "source_website": "reddit.com",
       "source_label": "Reddit r/dubai",
       "source_url": "https://www.reddit.com/r/dubai/comments/1e6a8sp/help_the_eternal_problem_of_starting_a_business/lknfwmf/",
@@ -9614,7 +10178,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000604",
+      "id": "rvw-000641",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1f43my4/adesa_auction/lkiyg7k/",
@@ -9629,7 +10193,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000605",
+      "id": "rvw-000642",
       "source_website": "reddit.com",
       "source_label": "Reddit r/cars4bid",
       "source_url": "https://www.reddit.com/r/cars4bid/comments/1f3c3st/which_certificates_are_ok_for_export_from_the_usa/",
@@ -9644,7 +10208,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Upload Troubleshooting"
     },
     {
-      "id": "rvw-000606",
+      "id": "rvw-000643",
       "source_website": "reddit.com",
       "source_label": "Reddit r/CyberStuck",
       "source_url": "https://www.reddit.com/r/CyberStuck/comments/1f23f6y/every_wrecked_cybertruck_in_the_us_at_auction/lk8ebwb/",
@@ -9659,7 +10223,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000607",
+      "id": "rvw-000644",
       "source_website": "reddit.com",
       "source_label": "Reddit r/CyberStuck",
       "source_url": "https://www.reddit.com/r/CyberStuck/comments/1f219o5/cyber_truck_was_involved_in_a_fatal_accident_a/lk3vgs6/",
@@ -9674,7 +10238,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000608",
+      "id": "rvw-000645",
       "source_website": "reddit.com",
       "source_label": "Reddit r/CyberStuck",
       "source_url": "https://www.reddit.com/r/CyberStuck/comments/1f219o5/cyber_truck_was_involved_in_a_fatal_accident_a/lk88e1g/",
@@ -9689,7 +10253,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000609",
+      "id": "rvw-000646",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Symbology",
       "source_url": "https://www.reddit.com/r/Symbology/comments/1f2ckhf/unknown_symbol_below_drugs_on_abandoned_vehicle/lk7s2d4/",
@@ -9704,7 +10268,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Schedule/ Reschedule Pickup"
     },
     {
-      "id": "rvw-000610",
+      "id": "rvw-000647",
       "source_website": "reddit.com",
       "source_label": "Reddit r/CyberStuck",
       "source_url": "https://www.reddit.com/r/CyberStuck/comments/1f219o5/cyber_truck_was_involved_in_a_fatal_accident_a/lk4shkz/",
@@ -9719,7 +10283,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000611",
+      "id": "rvw-000648",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=5#0654_88276839_541059",
@@ -9734,7 +10298,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-000612",
+      "id": "rvw-000649",
       "source_website": "reddit.com",
       "source_label": "Reddit r/personalfinance",
       "source_url": "https://www.reddit.com/r/personalfinance/comments/1f176u6/is_there_any_hope_to_buy_a_car/ljxhe4a/",
@@ -9749,7 +10313,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000613",
+      "id": "rvw-000650",
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/GXOR",
+      "source_url": "https://www.reddit.com/r/GXOR/comments/1f0xhdm/thoughts_on_theft_recovered_vehicle/ljve8c1/",
+      "author": "ruskijim",
+      "review_date": "2024-08-25",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "This is not true. You can go on Copart or IAAI and see several examples of clean title theft recovery vehicles. On the subject of Salvage titles, they are issued to the buyer upon purchase. Buyer then has to do to rebuild process in their state. You can buy salvage from any state and convert to rebuilt in your state. The only time you can’t is when the title is branded junk.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Title, Ownership, POA and Documentation",
+      "tier2": "Title Delivery & Status",
+      "tier3": "Title Not Received"
+    },
+    {
+      "id": "rvw-000651",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarguys",
       "source_url": "https://www.reddit.com/r/askcarguys/comments/1d6x0gf/junk_title_cars_in_missouri/ljsikk6/",
@@ -9764,7 +10343,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000614",
+      "id": "rvw-000652",
       "source_website": "reddit.com",
       "source_label": "Reddit r/BMW",
       "source_url": "https://www.reddit.com/r/BMW/comments/1dk04tf/2015_m235i_80k_miles_15k_should_i_buy/ljper19/",
@@ -9779,7 +10358,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000615",
+      "id": "rvw-000653",
       "source_website": "reddit.com",
       "source_label": "Reddit r/powerstroke",
       "source_url": "https://www.reddit.com/r/powerstroke/comments/1f0ftb5/won_a_2016_f350_off_iaai_in_dallas_texas_started/",
@@ -9789,12 +10368,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "negative",
       "review_text": "Won a 2016 F350 off IAAI in Dallas Texas. Started filming for Youtube episodes. Hey guys. Late last year I sold my Kenworth T600 and got out of the trucking industry. Started looking around for a diesel pickup and came across this 2016 F350. The truck was in Texas and I was in Missouri. Unfortunately I wasn't able to come look at it in person beforehand, which is why I bought a truck with a missing engine. In the auction photos, they made it look like it was in the bed of the truck covered by floor mats but no, it was just a tote with more parts. If you're at all interested, take a look at these couple episodes and if you like my content, I would super appreciate it if you would consider subscribing. I'm still hunting for the right donor truck since I'm also missing a lot of small parts and don't really know what goes where. I've played that game many times before and would much rather get a smashed truck with a running engine and do the swap myself. Thank you and take care. Episode One [https://youtu.be/-8K9uSNjfw4](https://youtu.be/-8K9uSNjfw4) Episode Two [https://youtu.be/IAImOoGGgTU](https://youtu.be/IAImOoGGgTU)",
       "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Scheduled Pickup Status",
+      "tier3": "Missed/ Delayed Pickup and Dispatch Window"
     },
     {
-      "id": "rvw-000616",
+      "id": "rvw-000654",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1ezoqxw/iaai_payment_options/ljm44oa/",
@@ -9809,7 +10388,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000617",
+      "id": "rvw-000655",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1ezoqxw/iaai_payment_options/",
@@ -9824,7 +10403,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000618",
+      "id": "rvw-000656",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=12#0654_88276839_22186875",
@@ -9839,7 +10418,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Escalation Required"
     },
     {
-      "id": "rvw-000619",
+      "id": "rvw-000657",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Paleontology",
       "source_url": "https://www.reddit.com/r/Paleontology/comments/1ey23x8/the_sounds_in_this_clip_could_be_a_window_into/ljcdmyy/",
@@ -9854,7 +10433,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000620",
+      "id": "rvw-000658",
       "source_website": "reddit.com",
       "source_label": "Reddit r/cars4bid",
       "source_url": "https://www.reddit.com/r/cars4bid/comments/1eyvr0r/hail_damage_at_salvage_auto_auctions_what_you/",
@@ -9869,7 +10448,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000621",
+      "id": "rvw-000659",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1ey92fw/insurance_auction_acv/ljbkymr/",
@@ -9884,7 +10463,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000622",
+      "id": "rvw-000660",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1ey92fw/insurance_auction_acv/",
@@ -9894,12 +10473,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "positive",
       "review_text": "Insurance Auction ACV I'm looking to buy a particular car on IAA through a broker, with an ACV just north of $1,000. Given it runs and drives with a clean title, how often do bids on cars at insurance auctions exceed the listed ACV? I'm mainly looking know this in order to determine my approach to bidding",
       "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
+      "tier1": "Title, Ownership, POA and Documentation",
+      "tier2": "Power of Attorney (POA) Handling",
+      "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000623",
+      "id": "rvw-000661",
       "source_website": "reddit.com",
       "source_label": "Reddit r/cars4bid",
       "source_url": "https://www.reddit.com/r/cars4bid/comments/1ey0hil/6_steps_to_buy_quality_car_at_cars_at_copart_iaai/",
@@ -9914,7 +10493,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000624",
+      "id": "rvw-000662",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_CivilTowel7509",
       "source_url": "https://www.reddit.com/r/u_CivilTowel7509/comments/1exmi07/is_the_charge_port_damaged/",
@@ -9929,7 +10508,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000625",
+      "id": "rvw-000663",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/1exlb2t/streamlined_iaai_shipping_qatar_expert_services/",
@@ -9944,7 +10523,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000626",
+      "id": "rvw-000664",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1exa2oe/iaai_seller_countered_offer_my_bid_do_i_have_to/lj4fknn/",
@@ -9959,7 +10538,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-000627",
+      "id": "rvw-000665",
       "source_website": "reddit.com",
       "source_label": "Reddit r/TropicalWeather",
       "source_url": "https://www.reddit.com/r/TropicalWeather/comments/1evz0a8/generally_speaking_how_accurate_is_the_nhcs/lizmsla/",
@@ -9974,7 +10553,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000628",
+      "id": "rvw-000666",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1exa2oe/iaai_seller_countered_offer_my_bid_do_i_have_to/",
@@ -9989,7 +10568,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-000629",
+      "id": "rvw-000667",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Saturn_Cars",
       "source_url": "https://www.reddit.com/r/Saturn_Cars/comments/1ewwsgd/312k_what_a_way_to_go/",
@@ -10004,7 +10583,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000630",
+      "id": "rvw-000668",
       "source_website": "reddit.com",
       "source_label": "Reddit r/BMW",
       "source_url": "https://www.reddit.com/r/BMW/comments/1evqddt/known_s58_swaps/livxje8/",
@@ -10019,7 +10598,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000631",
+      "id": "rvw-000669",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11625290260",
+      "author": "Avjojo",
+      "review_date": "2024-08-18",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Can’t even get into the app. Everytime I try to accept the terms of use I press it and nothing happens I can’t even get past login",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-000670",
       "source_website": "reddit.com",
       "source_label": "Reddit r/prius",
       "source_url": "https://www.reddit.com/r/prius/comments/1etw7cs/im_do_sad_not_sure_what_to_dojust_liability/lij425u/",
@@ -10034,7 +10628,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000632",
+      "id": "rvw-000671",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11621060859",
+      "author": "Tuns77",
+      "review_date": "2024-08-17",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "IAA App. So easy to navigate, awesome development!",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-000672",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Porsche",
       "source_url": "https://www.reddit.com/r/Porsche/comments/1eqlakg/considering_a_salvage_title_yolo_on_a_gts_40_how/lhytas6/",
@@ -10049,7 +10658,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Proactive Follow-up"
     },
     {
-      "id": "rvw-000633",
+      "id": "rvw-000673",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Porsche",
       "source_url": "https://www.reddit.com/r/Porsche/comments/1eqlakg/considering_a_salvage_title_yolo_on_a_gts_40_how/lhtn49x/",
@@ -10064,7 +10673,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000634",
+      "id": "rvw-000674",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/1epo4t4/looking_for_1st_car_for_teenage_son/lhpd1wr/",
@@ -10079,7 +10688,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000635",
+      "id": "rvw-000675",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=12#0654_88276839_22130313",
@@ -10094,7 +10703,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Issue Not Resolved"
     },
     {
-      "id": "rvw-000636",
+      "id": "rvw-000676",
       "source_website": "reddit.com",
       "source_label": "Reddit r/PhillyWiki",
       "source_url": "https://www.reddit.com/r/PhillyWiki/comments/1eneg1r/stealing_srts_hellcats_and_etc/lh85rmc/",
@@ -10109,7 +10718,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000637",
+      "id": "rvw-000677",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Cartalk",
       "source_url": "https://www.reddit.com/r/Cartalk/comments/1eo8lzq/interior_burn_in_tesla_s/",
@@ -10124,7 +10733,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000638",
+      "id": "rvw-000678",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=5#0654_88276839_538067",
@@ -10139,7 +10748,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000639",
+      "id": "rvw-000679",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=12#0654_88276839_22112801",
@@ -10154,7 +10763,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000640",
+      "id": "rvw-000680",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=12#0654_88276839_22108127",
@@ -10169,7 +10778,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000641",
+      "id": "rvw-000681",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1ei39ir/cars4bid/lgyoikx/",
@@ -10184,7 +10793,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000642",
+      "id": "rvw-000682",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1emh0hb/iaai_delivery/",
@@ -10194,12 +10803,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "positive",
       "review_text": "IAAI delivery? Anyone use IAAI? Were trying to buy a car and have it shipped through IAA transport... What kind of transporter do they bring it on? On their website FAQ it says \"The Buyer is responsible for arranging the proper unloading of equipment at the destination.\" and \"P*roper offloading assistance must be available at the delivery location.\"* Doesn't say any specifics anywhere ...",
       "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Scheduled Pickup Status",
+      "tier3": "Schedule/ Reschedule Pickup"
     },
     {
-      "id": "rvw-000643",
+      "id": "rvw-000683",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=12#0654_88276839_22107160",
@@ -10214,7 +10823,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delayed Email/Phone Response"
     },
     {
-      "id": "rvw-000644",
+      "id": "rvw-000684",
       "source_website": "reddit.com",
       "source_label": "Reddit r/prius",
       "source_url": "https://www.reddit.com/r/prius/comments/1eiasvd/in_the_market_for_used_prius_around_1012k_budget/lgbomu8/",
@@ -10229,22 +10838,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000645",
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/Insurance",
-      "source_url": "https://www.reddit.com/r/Insurance/comments/1eh3bxo/why_is_my_totaled_car_in_ukraine/lg8m9cz/",
-      "author": "CaptainFalconA1",
-      "review_date": "2024-08-03",
-      "rating": null,
-      "sentiment": "positive",
-      "review_text": "I know many many of the buyers on CoPart/IAAI are from Ukraine. This is not related to the war, it's been happening for 10+ years that I've seen (likely much longer) Not sure about Ukraine specifically, but my understanding is that in some countries it's cheaper to import a parts car than it would be a new car (import duty is a smaller percentage or maybe just the lower value) and they repair them much cheaper than we could here, fix and sell for a profit.",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
-    },
-    {
-      "id": "rvw-000646",
+      "id": "rvw-000685",
       "source_website": "reddit.com",
       "source_label": "Reddit r/turo",
       "source_url": "https://www.reddit.com/r/turo/comments/1ei1e5z/does_turo_keep_the_car_if_its_totaled/lg3st5u/",
@@ -10259,7 +10853,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-000647",
+      "id": "rvw-000686",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=5#0654_88276839_536827",
@@ -10274,7 +10868,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Title Not Received"
     },
     {
-      "id": "rvw-000648",
+      "id": "rvw-000687",
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/prius",
+      "source_url": "https://www.reddit.com/r/prius/comments/1eh68jo/i_have_8000_and_a_looking_for_a_prius_all_i_see/lfxndfh/",
+      "author": "Neo1881",
+      "review_date": "2024-08-01",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Check out the cars at the insurance auctions. You'll find lots of good deals for under $5k. I go to [iaai.com](http://iaai.com) and you can find those deals in your state or one close by. I'm in NV but they won't ley private bidders bid in cars. But over in AZ, they do let the public bid on cars so I've won cars in Phoenix and flown down there and driven them back. Repos and theft recoveries usually have little damage on them. Others might just need a new bumper cover. PM me if you want more details.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
+    },
+    {
+      "id": "rvw-000688",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1eg5sgx/what_do_i_need_to_know_to_start_flipping_cars/lg1f9dj/",
@@ -10289,7 +10898,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Unable to Bid"
     },
     {
-      "id": "rvw-000649",
+      "id": "rvw-000689",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1eh3bxo/why_is_my_totaled_car_in_ukraine/lfwlu9n/",
@@ -10304,7 +10913,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000650",
+      "id": "rvw-000690",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1ef9n9p/buying_a_ford_mustang_v6_20152017_with_56k_damage/lfjja6n/",
@@ -10319,7 +10928,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000651",
+      "id": "rvw-000691",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1ef9n9p/buying_a_ford_mustang_v6_20152017_with_56k_damage/",
@@ -10334,7 +10943,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000652",
+      "id": "rvw-000692",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1edzse8/what_does_usually_happen_to_cars_that_are_deemed/lfapqej/",
@@ -10344,12 +10953,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "positive",
       "review_text": "Taken to an auction yard like CoPart, IAA or a smaller local one. They are then sold at auction and either rebuilt or parted out and what is left over sent to scrapyards Vehicle involved in a major collision being rear ended may have an engine that is still good and another that rear ended something else needs a new engine it can be swapped.",
       "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000653",
+      "id": "rvw-000693",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -10364,7 +10973,37 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000654",
+      "id": "rvw-000694",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11542321443",
+      "author": "EIIWOWKA",
+      "review_date": "2024-07-27",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "Update your media player. Your videos never play. On mobile and PC it won’t play more than 2 seconds without stalling. It literally takes 200 seconds to listen to 10 seconds and it’s not even continuous play. Total failure. Are you even testing your site?",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-000695",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11540704354",
+      "author": "Junkma1978",
+      "review_date": "2024-07-27",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "Poor quality. This app is very slow and buggy. It’s laid out pretty good but takes forever to load screens and even longer to load a live auction.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-000696",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1eb8tjp/g37_donation_copart/lf2a8vi/",
@@ -10379,7 +11018,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000655",
+      "id": "rvw-000697",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1ecrwk3/why_would_a_car_be_sold_at_an_iaai_auction/lf1wjxo/",
@@ -10394,7 +11033,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000656",
+      "id": "rvw-000698",
       "source_website": "reddit.com",
       "source_label": "Reddit r/subaruimpreza",
       "source_url": "https://www.reddit.com/r/subaruimpreza/comments/1ecyg0b/2012_subaru_impreza_20_salvage_weird_engine_sound/",
@@ -10409,7 +11048,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000657",
+      "id": "rvw-000699",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1ecrwk3/why_would_a_car_be_sold_at_an_iaai_auction/",
@@ -10424,7 +11063,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000658",
+      "id": "rvw-000700",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1eckofr/minor_damage_total_loss_clean_title/lf0ghaf/",
@@ -10439,7 +11078,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000659",
+      "id": "rvw-000701",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/1ecktmn/clean_title_total_loss/",
@@ -10454,7 +11093,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000660",
+      "id": "rvw-000702",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AskMechanics",
       "source_url": "https://www.reddit.com/r/AskMechanics/comments/1eckspk/clean_title_minor_damage_total_loss/",
@@ -10469,7 +11108,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000661",
+      "id": "rvw-000703",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Cartalk",
       "source_url": "https://www.reddit.com/r/Cartalk/comments/1eckqo3/minor_damage_clean_title_total_loss_help_me/",
@@ -10484,7 +11123,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000662",
+      "id": "rvw-000704",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1eckpbt/minor_damage_but_total_loss_clean_title/",
@@ -10499,7 +11138,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000663",
+      "id": "rvw-000705",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1eckofr/minor_damage_total_loss_clean_title/",
@@ -10514,7 +11153,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000664",
+      "id": "rvw-000706",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=13#0654_88276839_22044496",
@@ -10529,7 +11168,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-000665",
+      "id": "rvw-000707",
       "source_website": "reddit.com",
       "source_label": "Reddit r/electrical",
       "source_url": "https://www.reddit.com/r/electrical/comments/1eb6qq9/concern_about_electrical_fire_risk_help_please/ler26z1/",
@@ -10544,7 +11183,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000666",
+      "id": "rvw-000708",
       "source_website": "reddit.com",
       "source_label": "Reddit r/fireinvestigation",
       "source_url": "https://www.reddit.com/r/fireinvestigation/comments/1eb6aft/things_i_can_do_now_to_help_me_become_a_fire/leqh3ir/",
@@ -10559,7 +11198,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000667",
+      "id": "rvw-000709",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarguys",
       "source_url": "https://www.reddit.com/r/askcarguys/comments/1dk36fb/anyone_know_about_have_experience_with_car4bid/lepxn30/",
@@ -10574,7 +11213,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000668",
+      "id": "rvw-000710",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1eanwmx/total_loss_and_salvage_question/",
@@ -10589,7 +11228,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000669",
+      "id": "rvw-000711",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/1e9yyks/reliable_iaai_shipping_qatar_with_best_4_shipping/",
@@ -10604,7 +11243,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000670",
+      "id": "rvw-000712",
       "source_website": "reddit.com",
       "source_label": "Reddit r/ecoboostmustang",
       "source_url": "https://www.reddit.com/r/ecoboostmustang/comments/1ea8xdf/how_many_mustangs_have_you_owned/lekz5gl/",
@@ -10619,7 +11258,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000671",
+      "id": "rvw-000713",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Knoxville",
       "source_url": "https://www.reddit.com/r/Knoxville/comments/13o2rl1/reputable_car_auctions/lejqzsl/",
@@ -10634,7 +11273,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000672",
+      "id": "rvw-000714",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11528096018",
+      "author": "Oakland_hustle",
+      "review_date": "2024-07-23",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Outdated. App Outdated compared to Copart",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-000715",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/669db40063ae7ff2c0895502",
@@ -10644,12 +11298,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "negative",
       "review_text": "SCAM auction!. SCAM auction!! They have the words RUN AND DRIVE next to their cars but the cars DO NOT DRIVE, the cars only start, and the cars that do start clearly have engine issues.",
       "geo_validation": "trustpilot_us_slug",
-      "tier1": "Membership / Licensing / Fees & Bidding Policies",
-      "tier2": "Bidding Process, Rules and Fees",
-      "tier3": "Fees"
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000673",
+      "id": "rvw-000716",
       "source_website": "reddit.com",
       "source_label": "Reddit r/CyberStuck",
       "source_url": "https://www.reddit.com/r/CyberStuck/comments/1e98kt8/yes_yes_it_was/lefoq0s/",
@@ -10659,12 +11313,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "positive",
       "review_text": "Not that easy with type of vehicle. Copart and IAA are full of them (teslas in general/not cyber truck) because they don’t sell well at auction. For repairs, anything that is structural has to go to certified shop since they are the only ones that Tesla will sell parts to. These shops typically won’t use recycled parts for Tesla repairs because of the position statements from Tesla. Your regular (non certified) body shops don’t want anything to with them. And your advanced home mechanic/collision man can’t do anything because of the software. Same thing happens to high end vehicles. Rolls royces, high end exotics, etc. they only go for a fraction of acv at salvage sale since there is no market for the parts. Many go overseas. This Tesla is a whole different animal.",
       "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000674",
+      "id": "rvw-000717",
       "source_website": "reddit.com",
       "source_label": "Reddit r/370z",
       "source_url": "https://www.reddit.com/r/370z/comments/1e8wdzc/yay_or_nay_on_this_car/",
@@ -10679,7 +11333,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000675",
+      "id": "rvw-000718",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=13#0654_88276839_22022658",
@@ -10694,22 +11348,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000676",
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/AutoTransport",
-      "source_url": "https://www.reddit.com/r/AutoTransport/comments/1e6zw1s/79118_to_79407/ldyjc8e/",
-      "author": "BrenFL",
-      "review_date": "2024-07-19",
-      "rating": null,
-      "sentiment": "positive",
-      "review_text": "Hello, I have a lot of experience utilizing drivers to pick up from copart, IAAI, adesa, etc. As long as there are keys, we can get it done. **Be leery of anybody replying here that doesn't post their company name or promises to \"beat the lowest price you received\".** Goliath Auto Transport [goliathautotransport.com](http://goliathautotransport.com)",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Vehicle Pickup, Delivery and Scheduling",
-      "tier2": "Scheduled Pickup Status",
-      "tier3": "Schedule/ Reschedule Pickup"
-    },
-    {
-      "id": "rvw-000677",
+      "id": "rvw-000719",
       "source_website": "reddit.com",
       "source_label": "Reddit r/FordBronco",
       "source_url": "https://www.reddit.com/r/FordBronco/comments/1e6jtt8/in_march_i_bought_a_wrecked_22_big_bend_at_copart/ldzry3w/",
@@ -10724,7 +11363,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000678",
+      "id": "rvw-000720",
       "source_website": "reddit.com",
       "source_label": "Reddit r/mazda",
       "source_url": "https://www.reddit.com/r/mazda/comments/1e6ang3/is_my_mazda_totaled/ldruoka/",
@@ -10739,7 +11378,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000679",
+      "id": "rvw-000721",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1e56k2c/is_my_total_loss_settlement_fair/ldod3pc/",
@@ -10754,7 +11393,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-000680",
+      "id": "rvw-000722",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/15wnn4o/buying_from_a_dealer_vs_directly_from_an_auction/ldmg6th/",
@@ -10769,7 +11408,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000681",
+      "id": "rvw-000723",
       "source_website": "reddit.com",
       "source_label": "Reddit r/poor",
       "source_url": "https://www.reddit.com/r/poor/comments/1e4c3vv/how_to_get_a_car_after_getting_it_repossessed/ldepjqp/",
@@ -10784,7 +11423,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000682",
+      "id": "rvw-000724",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/1di4d5b/2k_corolla_5_years_ago_is_like_5k_minimum_now/ld1uw6g/",
@@ -10799,7 +11438,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000683",
+      "id": "rvw-000725",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11485336360",
+      "author": "eradft",
+      "review_date": "2024-07-12",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "All are junk cars. Even u think there is nothing wrong with engine there is something for sure.. Just rest title",
+      "geo_validation": "apple_us_store",
+      "tier1": "Title, Ownership, POA and Documentation",
+      "tier2": "Title Delivery & Status",
+      "tier3": "Title Not Received"
+    },
+    {
+      "id": "rvw-000726",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1dzgrm7/how_to_find_auto_broker_for_copart_or_iaa/lcqm2lm/",
@@ -10814,7 +11468,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000684",
+      "id": "rvw-000727",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=13#0654_88276839_21974348",
@@ -10829,7 +11483,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-000685",
+      "id": "rvw-000728",
       "source_website": "reddit.com",
       "source_label": "Reddit r/fireinvestigation",
       "source_url": "https://www.reddit.com/r/fireinvestigation/comments/17yaurd/fire_investigations_career_input/lcafnou/",
@@ -10844,22 +11498,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000686",
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/conlangs",
-      "source_url": "https://www.reddit.com/r/conlangs/comments/1dsoekk/faq_small_discussions_20240701_to_20240714/lca2f2n/",
-      "author": "fruitharpy",
-      "review_date": "2024-07-09",
-      "rating": null,
-      "sentiment": "positive",
-      "review_text": "I think this is phonemically being described in an unusual way, so you might not find an inventory that uses these symbols but /i ʉ ɯ u e ə ɵ o a/ is not a crazy inventory (I desrcibed it as this because it's about the contrasts not the specific phonological realisation) ok, I would break this down into these parts: front vowels: /i e/ - nothing unusual there\\ unrounded non front vowels: /ɯ ə/ - these don't have to pattern together, but often they do, either like /ɨ ə/ or /ɯ ɤ/. various Amazonian languages, as well as Vietnamese or Thai have this sort of patterning with their non frontt unrounded vowels. I think mismatching place is fine if you really want that, but in any case, the contrast of [ɯ u] is perfectly fine for Turkic languages, as well as others. rounded vowels: /u o ʉ ɵ/ is again in many ways not that crazy. the central rounded vowels are not especially common, but they do occur and contrast with eachother and non front unrounded vowels. the contrast of /ə ɵ/ is not particularly common, which brings me to my final point of this system kinda looking like a vowel harmony system. the contrast of [ə ɵ] often seems to appear in systems where they cannot both appear in the same conditions, either through vowel harmony (like in Turkic or \"Altaic\" sprachbund languages) or stress based stuff (like in Germanic languages where it appears). This vowel inventory is quite similar to something like /i~y ɯ~u e~ø ɤ~o a/ (which is just Turkish + /ɤ/). Some of these contrasts can be more stable in this system cause they don't directly contrast. In any case, you don't have to make this a vowel harmony language, there are some notable languages with similar inventories (Iaai in new Caledonia /i y u e ø ɤ o æ ɔ a/, or Estonians /i y u e ø ɤ o æ ɑ/ [which did come from a vowel harmony system which has since collapsed]). in any case, reduction of unstressed vowels based on place seems perfectly reasonable here! hope this was helpful",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Customer Service & Communication",
-      "tier2": "Agent Professionalism & Responsiveness",
-      "tier3": "Helpful Support Experience"
-    },
-    {
-      "id": "rvw-000687",
+      "id": "rvw-000729",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=13#0654_88276839_21962854",
@@ -10874,22 +11513,67 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000688",
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/fireinvestigation",
-      "source_url": "https://www.reddit.com/r/fireinvestigation/comments/1dxrdmd/fire_call_this_afternoon/lc6c14f/",
-      "author": "rogo725",
-      "review_date": "2024-07-08",
-      "rating": null,
-      "sentiment": "positive",
-      "review_text": "I started as a county public investigator and transitioned to the private sector because I was so bored of the fires where I couldn’t do anything at or dive deeper into, plus the money I make on my days off from my career FF job is nice. But to earn all this and have this process, etc; I read 1033 and 921 cover to cover every year. Take every and any class you can through CFI Trainer and/or your local IAAI Chapter, go to fires with a private sector guy and learn from them. I always invite the local municipal investigator out with me to go over scenes together. This build a rapport, but also helps both of us learn and put a second set of eyes on a scene that maybe saw the fire scene in a different state from when I saw it. I’m always learning, trust me, but I’ve been doing this now for like 14 years or so you learn quite a bit and kind of pick up on what to look for and the process to look and preserve it.",
-      "geo_validation": "mixed_source_ok",
+      "id": "rvw-000730",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11475724666",
+      "author": "ariliano",
+      "review_date": "2024-07-09",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Scam every time i bid im got out bid rigth away. Scam dont bid on this",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-000731",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11475642058",
+      "author": "rebdbd",
+      "review_date": "2024-07-09",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Horrible company BEWARE. Your purchase vehicles from them and they on purpose have missing or unavailable titles had to wait 3 months to get the title for my vehicle! DO NOT PURCHASE Vehicles from them unless you want a really bad headache",
+      "geo_validation": "apple_us_store",
+      "tier1": "Title, Ownership, POA and Documentation",
+      "tier2": "Title Delivery & Status",
+      "tier3": "Title Not Received"
+    },
+    {
+      "id": "rvw-000732",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11474233868",
+      "author": "Dozer $",
+      "review_date": "2024-07-09",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "This app is no good. I hate this app doesn’t work like a should. Does not save cars like it should when you go to see your purchases there’s nothing there. It is very unfriendly. I’ve been buying here for over 20 years and things. I’ve done nothing but got worse. buyer fees have gotten higher some of the employees are not very friendly, I thought about switching to Copart i used to like buying here but with the app and all the other problems I don’t know if it’s hardly worth it much longer",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-000733",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11473673333",
+      "author": "939mhz",
+      "review_date": "2024-07-09",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "939mhz. App is very glitchy needs repair or update upgrade something smh",
+      "geo_validation": "apple_us_store",
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000689",
+      "id": "rvw-000734",
       "source_website": "reddit.com",
       "source_label": "Reddit r/DubaiPetrolHeads",
       "source_url": "https://www.reddit.com/r/DubaiPetrolHeads/comments/1dyl40h/how_to_import_a_car_to_dubai_uae_through_copart/",
@@ -10904,7 +11588,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000690",
+      "id": "rvw-000735",
       "source_website": "reddit.com",
       "source_label": "Reddit r/dubai",
       "source_url": "https://www.reddit.com/r/dubai/comments/1dyl29e/how_to_import_a_car_to_dubai_uae_through_copart/",
@@ -10919,7 +11603,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000691",
+      "id": "rvw-000736",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11471580800",
+      "author": "StalAlex",
+      "review_date": "2024-07-08",
+      "rating": 3,
+      "sentiment": "positive",
+      "review_text": "Lately it became very slow. Lately it became very slow.It can’t pull up data for the watch list.Going through the menu became a real torment.Website works perfectly fine while access through the app is literally impossible.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-000737",
       "source_website": "reddit.com",
       "source_label": "Reddit r/ElectricalEngineering",
       "source_url": "https://www.reddit.com/r/ElectricalEngineering/comments/1dxopwo/oshasafety_engineering_as_an_ee/lc3wxca/",
@@ -10934,7 +11633,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000692",
+      "id": "rvw-000738",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1dxei5n/wholesaling_salvaged_cars/lc3jbgg/",
@@ -10949,7 +11648,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000693",
+      "id": "rvw-000739",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11468168141",
+      "author": "Torque69",
+      "review_date": "2024-07-07",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "Slow and clunky. App runs very slow and is always crashing.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-000740",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1dtcr3p/need_help_cracking_the_mystery_of_the_total_loss/lbow66f/",
@@ -10964,7 +11678,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000694",
+      "id": "rvw-000741",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/66867a4d1c135fdf694c58ed",
@@ -10979,7 +11693,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delayed Email/Phone Response"
     },
     {
-      "id": "rvw-000695",
+      "id": "rvw-000742",
       "source_website": "reddit.com",
       "source_label": "Reddit r/CyberStuck",
       "source_url": "https://www.reddit.com/r/CyberStuck/comments/1duom9u/cybertruck_rollover_in_santa_clarita/",
@@ -10994,7 +11708,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000696",
+      "id": "rvw-000743",
       "source_website": "reddit.com",
       "source_label": "Reddit r/indianapolis",
       "source_url": "https://www.reddit.com/r/indianapolis/comments/1dsfipu/wtf_is_on_fire/lb2fvrb/",
@@ -11009,7 +11723,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000697",
+      "id": "rvw-000744",
       "source_website": "reddit.com",
       "source_label": "Reddit r/BMW",
       "source_url": "https://www.reddit.com/r/BMW/comments/1ds238k/anyone_moved_tofrom_benz/lazqa8i/",
@@ -11024,7 +11738,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000698",
+      "id": "rvw-000745",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/1drz3u1/are_there_any_porsche_cars_under_10000/laysryg/",
@@ -11039,7 +11753,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000699",
+      "id": "rvw-000746",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1dqjce5/i_bought_a_car_on_copart_i_would_like_to_retrieve/laobkq0/",
@@ -11054,7 +11768,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000700",
+      "id": "rvw-000747",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1dqjce5/i_bought_a_car_on_copart_i_would_like_to_retrieve/",
@@ -11069,7 +11783,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000701",
+      "id": "rvw-000748",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=13#0654_88276839_21918245",
@@ -11084,7 +11798,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000702",
+      "id": "rvw-000749",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Corvette",
       "source_url": "https://www.reddit.com/r/Corvette/comments/1dp8vxp/got_my_c7_delivered_today_update/lafu3vs/",
@@ -11099,7 +11813,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000703",
+      "id": "rvw-000750",
       "source_website": "reddit.com",
       "source_label": "Reddit r/lebanon",
       "source_url": "https://www.reddit.com/r/lebanon/comments/1dp6njw/how_much_is_the_imported_car_tax_now/laf7zzj/",
@@ -11114,7 +11828,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000704",
+      "id": "rvw-000751",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1dntaau/am_i_a_victim_of_title_washing/la50x7e/",
@@ -11124,12 +11838,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "negative",
       "review_text": "My thinking of what happened Is that the insurance company declared it a total loss after the accident then sold it at an IAAI salvage auction. The dealer then bought it and brought it across state lines, repaired it, and got a new title issued in Michigan before any of this caught up on record. This car should have a salvage title in both Wisconsin and Michigan.",
       "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
+      "tier1": "Title, Ownership, POA and Documentation",
+      "tier2": "Title Delivery & Status",
+      "tier3": "Title Not Received"
     },
     {
-      "id": "rvw-000705",
+      "id": "rvw-000752",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1dntaau/am_i_a_victim_of_title_washing/la4wruv/",
@@ -11144,7 +11858,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000706",
+      "id": "rvw-000753",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1dntaau/am_i_a_victim_of_title_washing/",
@@ -11159,7 +11873,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000707",
+      "id": "rvw-000754",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1dmlt4n/does_ohio_title_sales_tax_include_the_iaai_fees/l9xhlv7/",
@@ -11174,7 +11888,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000708",
+      "id": "rvw-000755",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1dmlt4n/does_ohio_title_sales_tax_include_the_iaai_fees/l9whrrg/",
@@ -11189,7 +11903,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000709",
+      "id": "rvw-000756",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1dmlt4n/does_ohio_title_sales_tax_include_the_iaai_fees/",
@@ -11204,7 +11918,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000710",
+      "id": "rvw-000757",
       "source_website": "reddit.com",
       "source_label": "Reddit r/fuckcars",
       "source_url": "https://www.reddit.com/r/fuckcars/comments/1dkwzxd/i_wish_more_were_done_about_people_who_do_street/l9yg9wu/",
@@ -11219,7 +11933,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000711",
+      "id": "rvw-000758",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Cartalk",
       "source_url": "https://www.reddit.com/r/Cartalk/comments/1dlyhlj/branded_title_car_that_was_sold_as_clean/l9tfjip/",
@@ -11234,7 +11948,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000712",
+      "id": "rvw-000759",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/1ajvmb2/how_to_find_a_totalled_car_at_auction/l9n15hw/",
@@ -11249,7 +11963,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000713",
+      "id": "rvw-000760",
       "source_website": "reddit.com",
       "source_label": "Reddit r/chrome_extensions",
       "source_url": "https://www.reddit.com/r/chrome_extensions/comments/1dkqhyt/i_made_chrome_extensions_for_car_dealers_flippers/",
@@ -11264,7 +11978,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000714",
+      "id": "rvw-000761",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1dlf3fs/dealerlicencenet/l9ogkpd/",
@@ -11279,7 +11993,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000715",
+      "id": "rvw-000762",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/1dl9i7p/should_i_pay_for_this_car/l9noyd4/",
@@ -11294,7 +12008,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000716",
+      "id": "rvw-000763",
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/maybemaybemaybe",
+      "source_url": "https://www.reddit.com/r/maybemaybemaybe/comments/1dl5t0v/maybe_maybe_maybe/l9nflue/",
+      "author": "Consistent-Speech-56",
+      "review_date": "2024-06-21",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "What makes everyone so sure it was stolen? If you watch the car auctions on copart or IAA, bidders from UAE, Africa, Asia always bid up cars and have them shipped. Mostly car accident or theft/repo cars, but it's not them stealing them... Just sayin...",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-000764",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarguys",
       "source_url": "https://www.reddit.com/r/askcarguys/comments/1dk36fb/anyone_know_about_have_experience_with_car4bid/",
@@ -11309,7 +12038,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000717",
+      "id": "rvw-000765",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Autobody",
       "source_url": "https://www.reddit.com/r/Autobody/comments/1dirj41/shop_is_slow/l98a8cw/",
@@ -11324,7 +12053,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000718",
+      "id": "rvw-000766",
       "source_website": "reddit.com",
       "source_label": "Reddit r/PorscheMacan",
       "source_url": "https://www.reddit.com/r/PorscheMacan/comments/1dg9yk1/2018_macan_s_clicking_near_shifter_area/",
@@ -11339,7 +12068,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000719",
+      "id": "rvw-000767",
       "source_website": "reddit.com",
       "source_label": "Reddit r/motorcycles",
       "source_url": "https://www.reddit.com/r/motorcycles/comments/1dg1sg5/should_i_buy_a_motorcycle_with_rebuilt_title/l8n6ij5/",
@@ -11354,7 +12083,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Selling/ Relisting vehicle or Parts purchase"
     },
     {
-      "id": "rvw-000720",
+      "id": "rvw-000768",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=13#0654_88276839_21849081",
@@ -11369,7 +12098,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-000721",
+      "id": "rvw-000769",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=5#0654_88276839_526408",
@@ -11384,7 +12113,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Deposit Refund Status"
     },
     {
-      "id": "rvw-000722",
+      "id": "rvw-000770",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarguys",
       "source_url": "https://www.reddit.com/r/askcarguys/comments/p86ek1/should_i_buy_my_first_car_from_a_car_auction/l89vuy8/",
@@ -11399,7 +12128,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000723",
+      "id": "rvw-000771",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Autocross",
       "source_url": "https://www.reddit.com/r/Autocross/comments/1dclaxw/csm_and_csx_how_is_it_going_so_far/l7z8qh8/",
@@ -11414,7 +12143,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000724",
+      "id": "rvw-000772",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1dc6qp9/why_would_a_car_with_normal_wear_be_on_a_salvage/l7wbgwf/",
@@ -11429,7 +12158,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000725",
+      "id": "rvw-000773",
       "source_website": "reddit.com",
       "source_label": "Reddit r/S2000",
       "source_url": "https://www.reddit.com/r/S2000/comments/1db66lw/fathers_day_message/",
@@ -11444,7 +12173,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000726",
+      "id": "rvw-000774",
       "source_website": "reddit.com",
       "source_label": "Reddit r/subaru",
       "source_url": "https://www.reddit.com/r/subaru/comments/1d8yui5/my_car_died_today/l7dy04e/",
@@ -11454,12 +12183,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "positive",
       "review_text": "The good news is you’ll be paid top dollar from insurance and buy a newer model. That’s what happened to my 2018 Impala (got it from an auction and fixed it), got 20k for it and purchased 3 impalas one parts car two to fix. At the end I had two cars with low mileage. I love IAAI and Copart.",
       "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000727",
+      "id": "rvw-000775",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaa.mobile.IaaTow)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
@@ -11474,7 +12203,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000728",
+      "id": "rvw-000776",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Silverado",
       "source_url": "https://www.reddit.com/r/Silverado/comments/1d8gruu/buy_back_my_truck_or_take_the_money_and_get/l77e1to/",
@@ -11489,7 +12218,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000729",
+      "id": "rvw-000777",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Indiana",
       "source_url": "https://www.reddit.com/r/Indiana/comments/1d8zy5l/rolled_back_odometer_what_to_do/",
@@ -11499,12 +12228,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "positive",
       "review_text": "Rolled back odometer what to do? Hi again I posted couple days ago about not being able to title my car I recently bought. A commenter said could be due to missing a date of sale somewhere. I looked back at the title and did notice one before original guy on the title and peddle llc. So the title has original guy, peddle llc, dealership I got it from then me. Dealership got it from an Auction house only dealers can buy from the IAA. I guess they’re like the middle man for peddle llc and they don’t go on the title of the car. Okay so after seeing missing date of sale I looked on Facebook for original owner of title and found him. After chatting with him for a bit I found out miles were not correct. He said when he sold to peddle the van was at atleast 252,000. The title said 158,000. Anyways I called auction house and they had proof of the odometer saying 252,000. So either dealership rolled miles back or auction house did after snapping the picture of the dash. What do I do? The dealership said they would take it back and give me my money. The van has new transmission, fixed engine, everything I wanted in a family vehicle. I fell in love with it. Anyway way I could still get it titled? Should I even try to? It’s a lot of miles. Or just cut it loose and give back to dealer and forget this whole thing happened. Thanks in advance for any advice",
       "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
+      "tier1": "Title, Ownership, POA and Documentation",
+      "tier2": "Power of Attorney (POA) Handling",
+      "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000730",
+      "id": "rvw-000778",
       "source_website": "reddit.com",
       "source_label": "Reddit r/USAA",
       "source_url": "https://www.reddit.com/r/USAA/comments/1d8s1c5/what_really_happens_when_you_get_in_an_accident/",
@@ -11519,7 +12248,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000731",
+      "id": "rvw-000779",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -11534,7 +12263,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000732",
+      "id": "rvw-000780",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AutoTransport",
       "source_url": "https://www.reddit.com/r/AutoTransport/comments/1d7ro8s/looking_to_interview_car_haulers_for_a_research/l729dbc/",
@@ -11549,7 +12278,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000733",
+      "id": "rvw-000781",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=5#0654_88276839_523904",
@@ -11564,7 +12293,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000734",
+      "id": "rvw-000782",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -11579,7 +12308,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-000735",
+      "id": "rvw-000783",
       "source_website": "reddit.com",
       "source_label": "Reddit r/springfieldMO",
       "source_url": "https://www.reddit.com/r/springfieldMO/comments/1d5c21a/railcams_in_springfield/l6peb41/",
@@ -11594,7 +12323,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000736",
+      "id": "rvw-000784",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/665a1b07813b7c371dc66638",
@@ -11609,7 +12338,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000737",
+      "id": "rvw-000785",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/6659e59fa3c755ee63f63712",
@@ -11624,7 +12353,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-000738",
+      "id": "rvw-000786",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=13#0654_88276839_21782687",
@@ -11639,7 +12368,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000739",
+      "id": "rvw-000787",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Jaguar",
       "source_url": "https://www.reddit.com/r/Jaguar/comments/1d2wc11/putting_my_jaguar_up_for_auction/",
@@ -11654,7 +12383,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000740",
+      "id": "rvw-000788",
       "source_website": "reddit.com",
       "source_label": "Reddit r/shouldibuythiscar",
       "source_url": "https://www.reddit.com/r/shouldibuythiscar/comments/1d2w5wd/2011_jaguar_for_auction/",
@@ -11669,7 +12398,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000741",
+      "id": "rvw-000789",
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=5#0654_88276839_522605",
+      "author": "Kenny H",
+      "review_date": "2024-05-27",
+      "rating": 1.0,
+      "sentiment": "negative",
+      "review_text": "Iaai REMOVED announced a car run and drive, upon picking the vehicle up, the vehicle just starts but does not go forward or backwards also steering wheel does not turn left or right.",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
+    },
+    {
+      "id": "rvw-000790",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Lexus",
       "source_url": "https://www.reddit.com/r/Lexus/comments/1czvomv/hail_damage/l5p01aa/",
@@ -11684,7 +12428,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000742",
+      "id": "rvw-000791",
       "source_website": "reddit.com",
       "source_label": "Reddit r/ReadyOrNotGame",
       "source_url": "https://www.reddit.com/r/ReadyOrNotGame/comments/1d0y01n/whats_your_opinion_on_hide_and_seek/l5rjkhk/",
@@ -11699,7 +12443,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000743",
+      "id": "rvw-000792",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -11714,7 +12458,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000744",
+      "id": "rvw-000793",
       "source_website": "reddit.com",
       "source_label": "Reddit r/fireinvestigation",
       "source_url": "https://www.reddit.com/r/fireinvestigation/comments/1cz8x8r/interested_in_fire_investigation/l5euqt1/",
@@ -11729,7 +12473,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000745",
+      "id": "rvw-000794",
       "source_website": "reddit.com",
       "source_label": "Reddit r/fireinvestigation",
       "source_url": "https://www.reddit.com/r/fireinvestigation/comments/1cz8x8r/interested_in_fire_investigation/l5ercud/",
@@ -11744,7 +12488,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000746",
+      "id": "rvw-000795",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11301713029",
+      "author": "Danik_Banik",
+      "review_date": "2024-05-24",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Can’t see current bid. I used to always watch cars on here and send to my dealer friend now it won’t show the current bid unless you pay and have an approved account",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-000796",
       "source_website": "reddit.com",
       "source_label": "Reddit r/subaru",
       "source_url": "https://www.reddit.com/r/subaru/comments/1cxen7w/rear_ended_a_fucking_tesla_this_morning/l52v1xb/",
@@ -11759,7 +12518,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000747",
+      "id": "rvw-000797",
       "source_website": "reddit.com",
       "source_label": "Reddit r/TeslaModelY",
       "source_url": "https://www.reddit.com/r/TeslaModelY/comments/1cwhun3/got_into_an_accident_3_weeks_ago_and_my_previous/l4ys6e0/",
@@ -11774,7 +12533,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000748",
+      "id": "rvw-000798",
       "source_website": "reddit.com",
       "source_label": "Reddit r/CX5",
       "source_url": "https://www.reddit.com/r/CX5/comments/1cvu1pa/my_cx5_in_ukraine/l4xr1ga/",
@@ -11784,12 +12543,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "negative",
       "review_text": "I mean no disrespect but I had the same thing happen to me. I always got outbid by Ukraine buyers. It led me to the point where I asked myself \"how can a country so submerged in war have so many people buying cars in copart and iaai\" I just hope they are not that badly hit so that many people still live their normal everyday life. And I hope OP stays safe.",
       "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
     },
     {
-      "id": "rvw-000749",
+      "id": "rvw-000799",
       "source_website": "reddit.com",
       "source_label": "Reddit r/electricvehicles",
       "source_url": "https://www.reddit.com/r/electricvehicles/comments/1cwdscw/why_your_car_insurance_is_ripping_you_off_by/l4wwols/",
@@ -11804,7 +12563,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000750",
+      "id": "rvw-000800",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=13#0654_88276839_21738276",
@@ -11814,12 +12573,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "negative",
       "review_text": "Service or Repair Issues. Here is a list of the several items that were stolen from my vehicle recently, resulting in a significant financial and emotional loss. The situation has been deeply frustrating and distressing for me. I will attach pictures.Among the stolen items are numerous belongings which were of considerable value to me. The perpetrator not only took these items but also left behind empty boxes, indicating a thorough search of the vehicle. Regrettably, I cannot provide an exhaustive list of stolen items as there were many possessions within the vehicle, and the incident has made it difficult for me to recall everything that was taken.This incident is wholly unacceptable, and I am profoundly dismayed by the violation of my property. I have worked diligently to acquire these belongings, and their theft represents a gross breach of trust and security. Moreover, the loss is compounded by the fact that my vehicle has been rendered inoperable, exacerbating the financial strain caused by this ordeal.In an effort to facilitate the recovery process, I have endeavored to provide receipts for as many of the stolen items as possible. For those items for which I do not possess receipts, I have conducted online research to ascertain their respective values.I urge for swift action to address this matter and apprehend the perpetrator responsible for this reprehensible act. The stress and burden of this situation are overwhelming, and I am eager to see justice served.Thank you for your attention to this matter. Let me know if you need anything else.",
       "geo_validation": "bbb_us_business",
-      "tier1": "Vehicle Pickup, Delivery and Scheduling",
-      "tier2": "Scheduled Pickup Status",
-      "tier3": "Pickup Hours and Cutoff"
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Personal belongings/ items",
+      "tier3": "Removal / Retrieval of items left in vehicle"
     },
     {
-      "id": "rvw-000751",
+      "id": "rvw-000801",
       "source_website": "reddit.com",
       "source_label": "Reddit r/findapath",
       "source_url": "https://www.reddit.com/r/findapath/comments/1cthwbp/i_feel_like_my_life_has_hit_a_major_dead_end/l4o1fh7/",
@@ -11834,7 +12593,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Proactive Follow-up"
     },
     {
-      "id": "rvw-000752",
+      "id": "rvw-000802",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/664798cec8631f1de24cff71",
@@ -11849,7 +12608,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000753",
+      "id": "rvw-000803",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/66475f71c39772cc24814d54",
@@ -11864,7 +12623,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Long Hold Time / Hard to Reach Support"
     },
     {
-      "id": "rvw-000754",
+      "id": "rvw-000804",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Autobody",
       "source_url": "https://www.reddit.com/r/Autobody/comments/1cthvy2/first_time_fixingreplacing_a_quarter_panel8months/l4eaums/",
@@ -11879,7 +12638,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000755",
+      "id": "rvw-000805",
       "source_website": "reddit.com",
       "source_label": "Reddit r/USAA",
       "source_url": "https://www.reddit.com/r/USAA/comments/1cu7fwf/any_advice_on_auto_damage_assessment_options/l4hha5x/",
@@ -11894,7 +12653,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000756",
+      "id": "rvw-000806",
       "source_website": "pissedconsumer.com",
       "source_label": "PissedConsumer",
       "source_url": "https://insurance-auto-auctions.pissedconsumer.com/review.html?page=1#review-5859013",
@@ -11909,7 +12668,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Long Hold Time / Hard to Reach Support"
     },
     {
-      "id": "rvw-000757",
+      "id": "rvw-000807",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=6#0654_88276839_519864",
@@ -11924,7 +12683,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000758",
+      "id": "rvw-000808",
       "source_website": "reddit.com",
       "source_label": "Reddit r/BoltEV",
       "source_url": "https://www.reddit.com/r/BoltEV/comments/1csnquc/obdii_usedcrashed_bolt_gotchas/l47qlh7/",
@@ -11939,7 +12698,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000759",
+      "id": "rvw-000809",
       "source_website": "reddit.com",
       "source_label": "Reddit r/prius",
       "source_url": "https://www.reddit.com/r/prius/comments/1csbuyl/2014_toyota_prius_plug_in_for_7500_is_it_an_ok/l449svs/",
@@ -11954,7 +12713,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000760",
+      "id": "rvw-000810",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -11969,7 +12728,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Issue Not Resolved"
     },
     {
-      "id": "rvw-000761",
+      "id": "rvw-000811",
       "source_website": "reddit.com",
       "source_label": "Reddit r/LUCID",
       "source_url": "https://www.reddit.com/r/LUCID/comments/1crfvtk/got_my_lucid_back_heres_what_was_done/l3y93j7/",
@@ -11984,7 +12743,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000762",
+      "id": "rvw-000812",
       "source_website": "reddit.com",
       "source_label": "Reddit r/civic",
       "source_url": "https://www.reddit.com/r/civic/comments/1cr3rag/how_much_would_you_pay/l3y5wjc/",
@@ -11999,7 +12758,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000763",
+      "id": "rvw-000813",
       "source_website": "reddit.com",
       "source_label": "Reddit r/pics",
       "source_url": "https://www.reddit.com/r/pics/comments/1cpqexm/someones_insurance_company_isnt_going_to_be_happy/l3nekpn/",
@@ -12014,7 +12773,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000764",
+      "id": "rvw-000814",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Porsche",
       "source_url": "https://www.reddit.com/r/Porsche/comments/1cpizja/130k_value_for_a_burnt_carcus_what/",
@@ -12029,7 +12788,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000765",
+      "id": "rvw-000815",
       "source_website": "reddit.com",
       "source_label": "Reddit r/volt",
       "source_url": "https://www.reddit.com/r/volt/comments/1cnlbix/follow_up_to_my_auction_car_post/l39vfxi/",
@@ -12044,7 +12803,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000766",
+      "id": "rvw-000816",
       "source_website": "reddit.com",
       "source_label": "Reddit r/volt",
       "source_url": "https://www.reddit.com/r/volt/comments/1cnlbix/follow_up_to_my_auction_car_post/",
@@ -12059,7 +12818,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-000767",
+      "id": "rvw-000817",
       "source_website": "reddit.com",
       "source_label": "Reddit r/volt",
       "source_url": "https://www.reddit.com/r/volt/comments/1cnlbix/follow_up_to_my_auction_car_post/l38dz1p/",
@@ -12074,7 +12833,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000768",
+      "id": "rvw-000818",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Lexus",
       "source_url": "https://www.reddit.com/r/Lexus/comments/1clhdxl/are_they_going_to_try_to_total_my_car/l2wpyif/",
@@ -12089,7 +12848,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000769",
+      "id": "rvw-000819",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11243580205",
+      "author": "moh toufiq",
+      "review_date": "2024-05-07",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "It was auction. On all sites It was an auction, but now it is only a sale. Buy now. They do not accept bids. The name must be changed to buy now only.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-000820",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=6#0654_88276839_518029",
@@ -12104,22 +12878,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000770",
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/autobidmaster",
-      "source_url": "https://www.reddit.com/r/autobidmaster/comments/1cjyz9f/buying_a_car_from_the_auctionautobidmaster/",
-      "author": "chocbunnyx",
-      "review_date": "2024-05-04",
-      "rating": null,
+      "id": "rvw-000821",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11240127700",
+      "author": "owen.cashen",
+      "review_date": "2024-05-06",
+      "rating": 4,
       "sentiment": "positive",
-      "review_text": "Buying a car from the auction…AutoBidMaster So I tried to look this up and I seen one guys thing from like two years ago and it’s a little outdated because some of the things he said did not happen with me so let’s get into it. So life happened and I need a new vehicle and in this economy, I’m not trying to pay a car note because I just had a car note for a car that I love that got destroyed and I’m never gonna see it again so at this point I’m only paying no more than 3k for a car (Audi 2015 at least (suv). Everyone told me it would be impossible, but I know there’s auctions and getting the best car auctions…. You need a dealers license that I don’t have that…. my friend has but he let his business license expire so that fucked me in the ass! Then I see on IAA you can have a general business and you can get some better cars than public can get (too many hoops plus the $200 membership). Then somebody directs me to Copart OK Copart seems easy enough $99 membership. I can set up as a business. I have a business!! no I need an operational license for certain businesses and a privilege license.(mind you I had my friend who has a mechanic shop do all the stuff and they still was denying him so you know what I’m over it I wasn’t about to make him pay $50 for an operational license and pay tax to be considered an engineer.) So don’t bother with IAai unless you’re Dealer or just want the public cars which are very minimal and everyone’s bidding on those! don’t go with Copart unless you want to again by the individual vehicles because certain states you need a broker and those are the best cars. (Like mines) Auto Bid Master!!! wants a $600 refundable deposit for me to be able to bid up to 3500k one one car. OK, that’s good. That’s all I need now. They have a way where you can send them the $600 in Zelle and that can be applied towards your final car purchase don’t do that because Zelle is going to hold that payment for 14 days and unless you catch it and call your bank and they can cancel it you might be fucked if you don’t have extra money laying around. ( did it and canceled ) . So I just went old-school &amp; I put my card information in there and paid it that way ( after I tried Apple Pay .. and it took $69 not the $669 lol ) OK so I’ve been watching this 2015 Audi Q5 for the last like two weeks ( trying to get on a site) was buy now for 2900 it went through a bidding cycle. No one got the car. They dropped it down to 2400. 🤪. But I start seeing $500 bids on it so at this point I need this vehicle before someone else takes it because nothing is wrong with it besides a front bumper and some high mileage. (A little over where my old car was.) Anyway, push cam to shove I’m logged in. I put a bid on it. Two minutes later someone else bids on it. I’ve bid on it again. They bid on it again. Fuck it. I just bought it now. So you do not have to use their shipping it is optional and please make sure when you see the final price you uncheck upgrading to their premium membership unless you need it. Oh and also there is a auction fee for that vehicle at 2400. It was $738 worth of the auction fee and then there’s documents fees of $119. And the $300 transaction fee that I was expecting. Now what that person didn’t tell you is you do have the option to go pick up your vehicle from the lot. You just cannot drive the vehicle off the lot. You have to tow it off the lot. You can call the law and schedule a pick up if it’s closed mine happens to be Spartanburg so it’s close, you can preview the vehicle before you purchase after you have upgraded your membership and auto bidder. So now I need to wire transfer the money over to them. I have about two days to get that done that the wire transfer takes about two days so I’m probably gonna have to pay an extra five dollars for storage because the car might be over a day because I can’t pick up the car unless it’s actually paid for, so I’ll be back in with the pick up process",
-      "geo_validation": "mixed_source_ok",
+      "review_text": "Ok auction not bad at all. Not bad at all",
+      "geo_validation": "apple_us_store",
       "tier1": "Membership / Licensing / Fees & Bidding Policies",
       "tier2": "Bidding Process, Rules and Fees",
-      "tier3": "Fees"
+      "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000771",
+      "id": "rvw-000822",
       "source_website": "reddit.com",
       "source_label": "Reddit r/4Runner",
       "source_url": "https://www.reddit.com/r/4Runner/comments/1chbt8o/does_this_look_totaled/l26u8pd/",
@@ -12134,7 +12908,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000772",
+      "id": "rvw-000823",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AuctionCars",
       "source_url": "https://www.reddit.com/r/AuctionCars/comments/1cgy81l/2020_dodge_charger_scat_pack_rwd/",
@@ -12149,7 +12923,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000773",
+      "id": "rvw-000824",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Progressiveinsurance",
       "source_url": "https://www.reddit.com/r/Progressiveinsurance/comments/1cdrdla/progressive_wants_to_take_my_total_loss_vehicle/l1vh430/",
@@ -12164,7 +12938,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Pickup Hours and Cutoff"
     },
     {
-      "id": "rvw-000774",
+      "id": "rvw-000825",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -12179,7 +12953,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000775",
+      "id": "rvw-000826",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1cdya1r/if_a_vehicle_is_located_at_a_salvage_auction_does/l1f30yc/",
@@ -12194,7 +12968,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000776",
+      "id": "rvw-000827",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1cdya1r/if_a_vehicle_is_located_at_a_salvage_auction_does/",
@@ -12209,7 +12983,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Upload Troubleshooting"
     },
     {
-      "id": "rvw-000777",
+      "id": "rvw-000828",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carcrash",
       "source_url": "https://www.reddit.com/r/carcrash/comments/1cckusv/is_my_car_totaled/l1a11q3/",
@@ -12224,7 +12998,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000778",
+      "id": "rvw-000829",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AuctionCars",
       "source_url": "https://www.reddit.com/r/AuctionCars/comments/1ccp8ur/2022_ford_f250_xlt/",
@@ -12239,7 +13013,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000779",
+      "id": "rvw-000830",
       "source_website": "reddit.com",
       "source_label": "Reddit r/mechanics",
       "source_url": "https://www.reddit.com/r/mechanics/comments/tebzlj/whats_yalls_experience_with_iaai_auctions/l138ykt/",
@@ -12254,7 +13028,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-000780",
+      "id": "rvw-000831",
       "source_website": "reddit.com",
       "source_label": "Reddit r/holdmycosmo",
       "source_url": "https://www.reddit.com/r/holdmycosmo/comments/1cbs4b4/hmc_as_i_dance_for_you/l11tpga/",
@@ -12269,7 +13043,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000781",
+      "id": "rvw-000832",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1cbb3e7/flip_report_iaai_fees_are_too_high/l0y2e29/",
@@ -12284,7 +13058,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000782",
+      "id": "rvw-000833",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1cbb3e7/flip_report_iaai_fees_are_too_high/l0xsseq/",
@@ -12299,7 +13073,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000783",
+      "id": "rvw-000834",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1cbb3e7/flip_report_iaai_fees_are_too_high/l0x7ijx/",
@@ -12314,7 +13088,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000784",
+      "id": "rvw-000835",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1cbb3e7/flip_report_iaai_fees_are_too_high/",
@@ -12329,7 +13103,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000785",
+      "id": "rvw-000836",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=14#0654_88276839_21613397",
@@ -12344,7 +13118,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Upload Troubleshooting"
     },
     {
-      "id": "rvw-000786",
+      "id": "rvw-000837",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AutoTransport",
       "source_url": "https://www.reddit.com/r/AutoTransport/comments/1cae5va/wanting_to_move_my_truck_from_oh_to_ne/l0rgkbh/",
@@ -12359,7 +13133,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000787",
+      "id": "rvw-000838",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/1ca0ilh/what_does_bio_law_para_sharps_mean_on_a_iaai/",
@@ -12374,7 +13148,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000788",
+      "id": "rvw-000839",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Oman",
       "source_url": "https://www.reddit.com/r/Oman/comments/1c5xvby/used_car_market_potential_in_oman/l0m3au2/",
@@ -12389,7 +13163,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000789",
+      "id": "rvw-000840",
       "source_website": "reddit.com",
       "source_label": "Reddit r/CX5",
       "source_url": "https://www.reddit.com/r/CX5/comments/1c8yjsn/should_i_buy_2016_cx5_grand_touring_with_90k/l0jvhfz/",
@@ -12404,7 +13178,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000790",
+      "id": "rvw-000841",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Honda",
       "source_url": "https://www.reddit.com/r/Honda/comments/1c98x36/my_lease_ends_soon_and_i_dont_know_what_to_do/l0mzwge/",
@@ -12419,7 +13193,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000791",
+      "id": "rvw-000842",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=6#0654_88276839_515748",
@@ -12434,7 +13208,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000792",
+      "id": "rvw-000843",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/1c8n0w4/efficient_iaai_trucking_solutions_in_nigeria_by/",
@@ -12449,7 +13223,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000793",
+      "id": "rvw-000844",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1c8b51s/how_to_insurance_adjusters_determine_value_and/l0dhin9/",
@@ -12464,7 +13238,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000794",
+      "id": "rvw-000845",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1c7df3o/insurance_deems_my_car_a_total_loss/l0ahad7/",
@@ -12479,7 +13253,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000795",
+      "id": "rvw-000846",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1c7n4sn/state_farm_totaled_but_is_auctioning_my_car_as/l0934fe/",
@@ -12494,22 +13268,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000796",
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/ft86",
-      "source_url": "https://www.reddit.com/r/ft86/comments/1c6vzi9/i_want_to_buy_my_old_frs_but_i_dont_know_where_it/l05ja32/",
-      "author": "daemonxmachine",
-      "review_date": "2024-04-18",
-      "rating": null,
-      "sentiment": "positive",
-      "review_text": "when did this happen? You'd have the best chance of finding it on Copart or IAAI 1-4 weeks after insurance totals it.",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
-    },
-    {
-      "id": "rvw-000797",
+      "id": "rvw-000847",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1c7df3o/insurance_deems_my_car_a_total_loss/l07bqjc/",
@@ -12524,7 +13283,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000798",
+      "id": "rvw-000848",
       "source_website": "reddit.com",
       "source_label": "Reddit r/CarfaxReports",
       "source_url": "https://www.reddit.com/r/CarfaxReports/comments/1c75ml5/structural_damage_falsely_reported/",
@@ -12539,22 +13298,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000799",
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/tdi",
-      "source_url": "https://www.reddit.com/r/tdi/comments/1c6kg03/felt_like_a_funeral_looking_at_my_car/l01t5fu/",
-      "author": "KeyHuckleberry827",
-      "review_date": "2024-04-17",
-      "rating": null,
-      "sentiment": "positive",
-      "review_text": "Hopefully you can buy it back. This happened to my son and his car went through an IAAI in Texas that was not made available to the public, only dealers, scrappers, etc. Good news for my son, his 170k mile Jetta was able to be replaced with a 100k mile Golf (which is what he wanted in the first place) due to a good insurance payout.",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
-    },
-    {
-      "id": "rvw-000800",
+      "id": "rvw-000849",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1c69f07/bought_a_car_from_a_used_car_dealer_apparently/kzzhqjb/",
@@ -12569,7 +13313,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Selling/ Relisting vehicle or Parts purchase"
     },
     {
-      "id": "rvw-000801",
+      "id": "rvw-000850",
       "source_website": "reddit.com",
       "source_label": "Reddit r/DubaiPetrolHeads",
       "source_url": "https://www.reddit.com/r/DubaiPetrolHeads/comments/1c6500t/salvage_car_from_usa/",
@@ -12584,7 +13328,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000802",
+      "id": "rvw-000851",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/1c61s0g/fast_and_secure_amazon_shipping_to_nigeria_with/",
@@ -12599,7 +13343,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000803",
+      "id": "rvw-000852",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=6#0654_88276839_514103",
@@ -12614,7 +13358,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000804",
+      "id": "rvw-000853",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=14#0654_88276839_21589630",
@@ -12629,7 +13373,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000805",
+      "id": "rvw-000854",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AuctionCars",
       "source_url": "https://www.reddit.com/r/AuctionCars/comments/1c5n7o6/2018_lexus_nx_300/",
@@ -12644,7 +13388,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000806",
+      "id": "rvw-000855",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -12659,7 +13403,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000807",
+      "id": "rvw-000856",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Frugal",
       "source_url": "https://www.reddit.com/r/Frugal/comments/1c3up42/finding_good_used_car_deals/kzkj2t4/",
@@ -12674,7 +13418,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000808",
+      "id": "rvw-000857",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -12689,7 +13433,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000809",
+      "id": "rvw-000858",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Justrolledintotheshop",
       "source_url": "https://www.reddit.com/r/Justrolledintotheshop/comments/1c1e0uy/the_247th_used_tesla_in_the_last_5_months_just/kzchz4u/",
@@ -12704,7 +13448,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000810",
+      "id": "rvw-000859",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -12719,7 +13463,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000811",
+      "id": "rvw-000860",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1c1onok/iaai_sales_tax_possible_exemption_for_individual/",
@@ -12734,7 +13478,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Deposit Refund Status"
     },
     {
-      "id": "rvw-000812",
+      "id": "rvw-000861",
       "source_website": "reddit.com",
       "source_label": "Reddit r/MiataNC",
       "source_url": "https://www.reddit.com/r/MiataNC/comments/1c1bmxz/searching_for_taillight_need_help/",
@@ -12749,7 +13493,67 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000813",
+      "id": "rvw-000862",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11146206256",
+      "author": "Bostontobwi",
+      "review_date": "2024-04-11",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Aweful. If I am high bidder on a car and they do not take my bid….sometimes they post it as a buy it now or a timed auction. The app does not send a notification to me to tell me a car I was high bid on is being put out for sale again. Just dumb Also when I add a vehicle to my watch list …I get no notification when the vehicle is available to bid on. That is dumb as well. Times auctions do not get moved to the top of the list above or under vehicles that are available to bid on.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-000863",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11144283504",
+      "author": "Blrbrest",
+      "review_date": "2024-04-10",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "App crashing after new update. It is crashing right when I open the app, I use iphone 15 pro,",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-000864",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11142639364",
+      "author": "Mohammed alsaqi",
+      "review_date": "2024-04-10",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "False Information and Glitchy. I bought a car that was stated to be “run & drive” but came with a completely blown transmission. Didn’t even move an inch. All gears were neutral. Plus, the app can be very glitchy and it’s not user friendly.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-000865",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11138766600",
+      "author": "nickroth",
+      "review_date": "2024-04-09",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Bad. They remove the option for guest account to see current bids not good, this offers transparency for indirect buyers. Not a good move.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-000866",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/1bypu92/seamless_shipping_solutions_iaai_shipping_qatar/",
@@ -12764,7 +13568,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000814",
+      "id": "rvw-000867",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Cartalk",
       "source_url": "https://www.reddit.com/r/Cartalk/comments/1byat7x/buying_and_selling_cars/kyllc74/",
@@ -12779,7 +13583,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000815",
+      "id": "rvw-000868",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=pl&gl=us",
@@ -12794,7 +13598,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000816",
+      "id": "rvw-000869",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/1bx54u5/efficient_iaai_trucking_services_to_nigeria_by/",
@@ -12809,7 +13613,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000817",
+      "id": "rvw-000870",
       "source_website": "reddit.com",
       "source_label": "Reddit r/hondafit",
       "source_url": "https://www.reddit.com/r/hondafit/comments/1bwm9et/other_drivers_suck/kyda7b3/",
@@ -12824,7 +13628,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000818",
+      "id": "rvw-000871",
       "source_website": "reddit.com",
       "source_label": "Reddit r/gtaonline",
       "source_url": "https://www.reddit.com/r/gtaonline/comments/1bx1ola/i_want_this_thing_in_warstock_so_bad/kychrna/",
@@ -12839,7 +13643,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000819",
+      "id": "rvw-000872",
       "source_website": "reddit.com",
       "source_label": "Reddit r/ScatPack",
       "source_url": "https://www.reddit.com/r/ScatPack/comments/1bxf6up/plan_on_gettin_wb_scat_charger_soon/",
@@ -12849,12 +13653,27 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "negative",
       "review_text": "Plan on gettin WB scat charger soon I plan on buying a scat pack charger really soon I’m buying it from an auction and then rebuilding it to save money. My budget is $18-$20,000. Is there anything I may need to worry about I’m preferring one that has been hit in the rear, and one under 50,000 miles, it is run and drive. I have someone who has a membership with IAA and Copart and then he also knows the body shop. So I’m going this path with getting a widebody scat. My current vehicle is a g37x so I’m jumping really high with this, I already know insurance is gna be crazy and the gas prices. Definitely getting a kill switch to. Is there anything else I need to worry about and contemplate before purchasing?",
       "geo_validation": "mixed_source_ok",
-      "tier1": "Membership / Licensing / Fees & Bidding Policies",
-      "tier2": "Bidding Process, Rules and Fees",
-      "tier3": "Fees"
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000820",
+      "id": "rvw-000873",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11127083973",
+      "author": "bad pickney",
+      "review_date": "2024-04-06",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Lovin it. The IAA app is very great to work with until you find out you only can pay through PayPal or in person. I bought my car and went to Seattle and paid for it and I had shipping company picked it up the next day. Easy to use",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-000874",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/1bvtlz1/clean_title_with_hail_damage/ky4ct99/",
@@ -12869,7 +13688,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000821",
+      "id": "rvw-000875",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Mustang",
       "source_url": "https://www.reddit.com/r/Mustang/comments/1bvecfh/thoughts/ky0xuki/",
@@ -12884,7 +13703,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Title Not Received"
     },
     {
-      "id": "rvw-000822",
+      "id": "rvw-000876",
       "source_website": "reddit.com",
       "source_label": "Reddit r/XTerra",
       "source_url": "https://www.reddit.com/r/XTerra/comments/1bv6rzx/the_gang/kxziigv/",
@@ -12899,7 +13718,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000823",
+      "id": "rvw-000877",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/1bvs0hf/looking_to_buy_lexus/",
@@ -12914,7 +13733,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000824",
+      "id": "rvw-000878",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -12929,7 +13748,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000825",
+      "id": "rvw-000879",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11120487802",
+      "author": "zoukiu",
+      "review_date": "2024-04-04",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "The company is getting greedier. A lot of fees.. They used to treat people fairly compared to other auction. Now it’s all about taking money from people.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-000880",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1buvomo/inter_city_towing_company/kxv7vek/",
@@ -12944,7 +13778,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000826",
+      "id": "rvw-000881",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1buvomo/inter_city_towing_company/",
@@ -12959,7 +13793,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-000827",
+      "id": "rvw-000882",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/1btpr1x/streamlined_shipping_solutions_iaai_trucking/",
@@ -12974,7 +13808,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000828",
+      "id": "rvw-000883",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11110694049",
+      "author": "IAA Nightmare",
+      "review_date": "2024-04-01",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Greed is the Word of the Day all year long.. Too expensive to buy, internet fee and buyer too high. Highly recommend Copart or other auction before IAA car rating feature are not 100% accurate. I know this review is probably finding a needle in the middle if Hstack and Inknow nothing will be done about this because you all are greedy. Just been hones",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-000884",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1bry1af/is_carsfromwestcom_car_auction_broker_legit/kxc4kvp/",
@@ -12989,7 +13838,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000829",
+      "id": "rvw-000885",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1bry1af/is_carsfromwestcom_car_auction_broker_legit/",
@@ -13004,7 +13853,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000830",
+      "id": "rvw-000886",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=14#0654_88276839_21508580",
@@ -13019,7 +13868,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Title Not Received"
     },
     {
-      "id": "rvw-000831",
+      "id": "rvw-000887",
       "source_website": "reddit.com",
       "source_label": "Reddit r/leaf",
       "source_url": "https://www.reddit.com/r/leaf/comments/1bomocx/i_fed_up/kwyclly/",
@@ -13034,7 +13883,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000832",
+      "id": "rvw-000888",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/1bpmcsh/streamlined_iaai_roro_shipping_solutions_by_best/",
@@ -13049,7 +13898,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000833",
+      "id": "rvw-000889",
       "source_website": "reddit.com",
       "source_label": "Reddit r/camaro",
       "source_url": "https://www.reddit.com/r/camaro/comments/1bpj7lg/21_just_bought_my_camaro/kwx9eu9/",
@@ -13064,7 +13913,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000834",
+      "id": "rvw-000890",
       "source_website": "reddit.com",
       "source_label": "Reddit r/G37",
       "source_url": "https://www.reddit.com/r/G37/comments/1bgkx94/buying_a_used_g37xs_coupe/kwtjwbz/",
@@ -13074,12 +13923,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "positive",
       "review_text": "I got mine from IAAI. My uncle knows a mechanic who is allowed to put bets in on auction cars. Thing is if you spend over 10k you have to pay in money orders… only the mechanic who bet on it is allowed to pay in cash. Happened to me recently when I got a newer forester. Luckily my sibling works at a credit union and was able to get all the money orders for me",
       "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000835",
+      "id": "rvw-000891",
       "source_website": "reddit.com",
       "source_label": "Reddit r/RealTesla",
       "source_url": "https://www.reddit.com/r/RealTesla/comments/1bn71mz/totaled_crashed_cybertruck_in_tampa/kwlxhpc/",
@@ -13094,22 +13943,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000836",
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/UsedCars",
-      "source_url": "https://www.reddit.com/r/UsedCars/comments/1bn2ccc/copart_car_clean_title_and_no_damage_copart/kwhx561/",
-      "author": "lobsterpockets",
-      "review_date": "2024-03-25",
-      "rating": null,
-      "sentiment": "negative",
-      "review_text": "NO. I've bought a few cars from copart. I got scammed on one recently from IAAI on odometer rollback. Found a bunch after looking closer after it happened to me. It's a popular scam. Get a Carfax for any car.",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
-    },
-    {
-      "id": "rvw-000837",
+      "id": "rvw-000892",
       "source_website": "reddit.com",
       "source_label": "Reddit r/electricvehicles",
       "source_url": "https://www.reddit.com/r/electricvehicles/comments/1asnxdd/salvagerebuilt_title_does_it_qualify_for_used_ev/kw8ihm8/",
@@ -13124,7 +13958,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000838",
+      "id": "rvw-000893",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -13139,7 +13973,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000839",
+      "id": "rvw-000894",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/1bkdlv5/is_buying_from_an_auction_house_a_goodbad_idea/kvxkrlu/",
@@ -13154,7 +13988,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Bid Cancellation & Relist Fees"
     },
     {
-      "id": "rvw-000840",
+      "id": "rvw-000895",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -13169,7 +14003,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000841",
+      "id": "rvw-000896",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=14#0654_88276839_21464260",
@@ -13184,7 +14018,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delayed Email/Phone Response"
     },
     {
-      "id": "rvw-000842",
+      "id": "rvw-000897",
       "source_website": "reddit.com",
       "source_label": "Reddit r/cincinnati",
       "source_url": "https://www.reddit.com/r/cincinnati/comments/1bi3nle/cars/kviw4c2/",
@@ -13199,7 +14033,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000843",
+      "id": "rvw-000898",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/1bicb2o/streamline_your_shipping_needs_with_iaai_trucking/",
@@ -13214,7 +14048,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000844",
+      "id": "rvw-000899",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=6#0654_88276839_507585",
@@ -13229,7 +14063,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000845",
+      "id": "rvw-000900",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Hawaii",
       "source_url": "https://www.reddit.com/r/Hawaii/comments/1bfqc2r/whats_the_deal_with_the_oahu_car_market/kvh8hhk/",
@@ -13244,7 +14078,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000846",
+      "id": "rvw-000901",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/1bh3q6h/rebuilt_car_isnt_worth_anymore/kvc2yw5/",
@@ -13259,7 +14093,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000847",
+      "id": "rvw-000902",
       "source_website": "reddit.com",
       "source_label": "Reddit r/asheville",
       "source_url": "https://www.reddit.com/r/asheville/comments/1bffnn7/best_place_to_sell_a_car/kuzzop3/",
@@ -13274,7 +14108,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000848",
+      "id": "rvw-000903",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11047586261",
+      "author": "bigjames01",
+      "review_date": "2024-03-15",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "App will not let me log in. I followed all the directions from the “pardon our interruption” page, including manually entering my email and password, and enabling cookies and JavaScript. Basically sold my phone’s soul and it still won’t let me in. I can log in online so I know the email and password is good.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "id": "rvw-000904",
       "source_website": "reddit.com",
       "source_label": "Reddit r/genesiscoupe",
       "source_url": "https://www.reddit.com/r/genesiscoupe/comments/1bc9boo/smokemaking_machine/kuq9e1m/",
@@ -13289,7 +14138,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000849",
+      "id": "rvw-000905",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1bdyapt/is_it_unusual_vehicled_serviced_after_theft_and/kupq7ma/",
@@ -13304,7 +14153,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000850",
+      "id": "rvw-000906",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -13319,7 +14168,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000851",
+      "id": "rvw-000907",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Autobody",
       "source_url": "https://www.reddit.com/r/Autobody/comments/1bcmsnd/update_final_estimate_nearly_double_the/kuhrfv8/",
@@ -13334,7 +14183,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000852",
+      "id": "rvw-000908",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/1bcq4zn/efficient_iaai_roro_shipping_solutions_by_best_4/",
@@ -13349,7 +14198,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000853",
+      "id": "rvw-000909",
       "source_website": "reddit.com",
       "source_label": "Reddit r/RhodeIsland",
       "source_url": "https://www.reddit.com/r/RhodeIsland/comments/1bat1w1/used_cars/ku65oz9/",
@@ -13364,7 +14213,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000854",
+      "id": "rvw-000910",
       "source_website": "reddit.com",
       "source_label": "Reddit r/electricvehicles",
       "source_url": "https://www.reddit.com/r/electricvehicles/comments/1asnxdd/salvagerebuilt_title_does_it_qualify_for_used_ev/ku9pcyd/",
@@ -13379,7 +14228,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000855",
+      "id": "rvw-000911",
       "source_website": "reddit.com",
       "source_label": "Reddit r/LexusGX",
       "source_url": "https://www.reddit.com/r/LexusGX/comments/1b8iy5l/a_game_called_is_this_totalled/ku99l02/",
@@ -13394,7 +14243,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000856",
+      "id": "rvw-000912",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=ar&gl=us",
@@ -13404,12 +14253,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "positive",
       "review_text": "Since two days ago, the current bid price has not appeared, so i can't know the price of the vehicle التطبيق لايعمل بصورة صحيحة ولايظهر اسعار السيارات قبل المزاد ارجو التحديث وتصحيح الخلل",
       "geo_validation": "google_play_us_store",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000857",
+      "id": "rvw-000913",
       "source_website": "reddit.com",
       "source_label": "Reddit r/ToyotaTundra",
       "source_url": "https://www.reddit.com/r/ToyotaTundra/comments/1ba2vek/is_it_totaled/ku0pwhs/",
@@ -13424,7 +14273,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000858",
+      "id": "rvw-000914",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=14#0654_88276839_21408710",
@@ -13439,7 +14288,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-000859",
+      "id": "rvw-000915",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1b9748g/total_loss_question_could_raising_cars_acv_high/ktyybnh/",
@@ -13454,7 +14303,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000860",
+      "id": "rvw-000916",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/65e9e7b242f3a391e88ce54f",
@@ -13469,7 +14318,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000861",
+      "id": "rvw-000917",
       "source_website": "reddit.com",
       "source_label": "Reddit r/turo",
       "source_url": "https://www.reddit.com/r/turo/comments/1b8tqzl/turo_insurance_sold_my_car_in_auction_without/ktswmia/",
@@ -13484,7 +14333,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-000862",
+      "id": "rvw-000918",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Autobody",
       "source_url": "https://www.reddit.com/r/Autobody/comments/1b8mkdm/insurance_companies_deeming_vehicles_parts_only/",
@@ -13499,7 +14348,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000863",
+      "id": "rvw-000919",
       "source_website": "reddit.com",
       "source_label": "Reddit r/GMT400",
       "source_url": "https://www.reddit.com/r/GMT400/comments/1b8j7d1/hi_all_questions_regarding_buying_a_truck/ktprn9z/",
@@ -13514,7 +14363,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000864",
+      "id": "rvw-000920",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=6#0654_88276839_505725",
@@ -13529,7 +14378,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000865",
+      "id": "rvw-000921",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/18fij83/i_bought_a_car_at_auction_and_it_turns_out_to/ktler70/",
@@ -13544,7 +14393,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000866",
+      "id": "rvw-000922",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/1b7ryf0/best_4_shipping_inc_leading_iaai_shipping_qatar/",
@@ -13559,7 +14408,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000867",
+      "id": "rvw-000923",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Pontiac",
       "source_url": "https://www.reddit.com/r/Pontiac/comments/1b70kim/how_much_should_i_pay_for_this_pontiac_g8_salvage/ktkkhyh/",
@@ -13574,7 +14423,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000868",
+      "id": "rvw-000924",
       "source_website": "reddit.com",
       "source_label": "Reddit r/TeslaLounge",
       "source_url": "https://www.reddit.com/r/TeslaLounge/comments/1b6nvll/how_people_in_eastern_europe_have_a_lot_of_tesla/",
@@ -13589,7 +14438,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000869",
+      "id": "rvw-000925",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1b6ishv/car_rearended_total_loss_never_got_title_in_my/",
@@ -13604,7 +14453,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000870",
+      "id": "rvw-000926",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Oahu",
       "source_url": "https://www.reddit.com/r/Oahu/comments/1b6608c/best_auction_on_oahu_for_diesel_work_truck/kt9viiq/",
@@ -13619,7 +14468,52 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000871",
+      "id": "rvw-000927",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11005112883",
+      "author": "Faizy209",
+      "review_date": "2024-03-03",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Great App!! Only one minor issue. It’s a great app. Love the fact it has all cars and shows if cars are from insurance or not. Only minor flaw after the new update would be that the pre-bid is not showing anymore like how it use to before the update. I would love if the pre bid starts showing once again so we can have like idea of how much bid can be place based on the pre bid.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-000928",
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/UsedCars",
+      "source_url": "https://www.reddit.com/r/UsedCars/comments/1b4r5ey/ma_and_pa_used_car_dealers/kt2gq9c/",
+      "author": "Neo1881",
+      "review_date": "2024-03-02",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "I've bid on and won some cars from the insurance auctions. Most have been good deals at about 30-40% of blue book value. All were in running condition and all needed minor repairs that cost about $500 or less. The auction I use, won't allow me to bid in my home state, but the state next to me, AZ, allows public bidders, not just dealers, so I have bid and won 3x cars and fly down there and drive them back. Save lots of money and take a small trip. Check them out on [iaai.com](https://iaai.com), the repos and theft recoveries are often in very good running condition with no damage. Almost all are salvage or rebuilt titles but that doesn't matter to me. They drive fine.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
+    },
+    {
+      "id": "rvw-000929",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=11002202389",
+      "author": "Dima96!!!",
+      "review_date": "2024-03-02",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "App as guest.. After update I can’t see the pre bid or buy now options logged in as a guest. Horrible update.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-000930",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AskReddit",
       "source_url": "https://www.reddit.com/r/AskReddit/comments/1b3uoaj/used_a_promo_code_from_online_which_worked_to/",
@@ -13634,7 +14528,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Deposit Refund Status"
     },
     {
-      "id": "rvw-000872",
+      "id": "rvw-000931",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=14#0654_88276839_21373568",
@@ -13649,7 +14543,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000873",
+      "id": "rvw-000932",
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/prius",
+      "source_url": "https://www.reddit.com/r/prius/comments/1b1loi3/college_student_looking_for_used_prius_advice/ksjr36y/",
+      "author": "Neo1881",
+      "review_date": "2024-02-28",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "You might consider looking at the insurance auctions for Prius's with low miles. OR, WA and AZ allow private people to bid on the cars, vs just dealers. I see lots of them that may just need a bumper cover replaces, or one fender and I've bought 2x Prius's 2008 &amp; 2009, last year for just under $3000 out the door. Both under 130k mi. There are lots of repos, not so much with the older models, and theft recoveries that are often in perfect driving condition with no dents or damage. Currently own a 2011 Gen 3 but the other two I bot last year were Gen 2s and have driven a Prius C before also. Personally, I like the instrument layout of the Gen 3 the most. C model feels cheap and cheesy compared to a regular Gen 3. Lots of them to be found in Seattle, Portland and Eugene if you don't mind saving $2-3k and a drive home. One of the ones I got had dashboard warning lights on and I talked to a local Greentech guy who said he would probably find some local shop to reset them and drive it back. I drove it the 320 mi back to Vegas and it ran fine, but some lights came on again. It eventually needed a new catalytic converter and I got a local shop to put one in for about $600 and then sold it. Here's one in Phoenix that looks it just needs a bumper cover, but there are warning lights on in the dash. https://www.iaai.com/VehicleDetail/38949763\\~US",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-000933",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Cartalk",
       "source_url": "https://www.reddit.com/r/Cartalk/comments/1b26xcg/2018_mercedes_glc/ksjqetb/",
@@ -13664,7 +14573,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000874",
+      "id": "rvw-000934",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1b1o7vo/is_it_just_me_or_is_copart_insane_right_now_usamo/ksjdfb3/",
@@ -13679,7 +14588,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000875",
+      "id": "rvw-000935",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/1b12zl1/the_used_car_market_is_complete_trash/kse4i5v/",
@@ -13694,7 +14603,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000876",
+      "id": "rvw-000936",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=14#0654_88276839_21351975",
@@ -13709,7 +14618,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000877",
+      "id": "rvw-000937",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/1b0afxh/best_4_shipping_inc_leading_iaai_shipping_qatar/",
@@ -13724,7 +14633,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000878",
+      "id": "rvw-000938",
       "source_website": "reddit.com",
       "source_label": "Reddit r/E90",
       "source_url": "https://www.reddit.com/r/E90/comments/19ddso9/at_least_i_dont_have_to_change_the_valve_cover_i/ks5er61/",
@@ -13739,7 +14648,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000879",
+      "id": "rvw-000939",
       "source_website": "reddit.com",
       "source_label": "Reddit r/adjusters",
       "source_url": "https://www.reddit.com/r/adjusters/comments/1az23oh/fire_inspection_attire/kryrot1/",
@@ -13754,7 +14663,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000880",
+      "id": "rvw-000940",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/1ayl43o/help_buying_a_reliable_car/krw2ox9/",
@@ -13769,7 +14678,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000881",
+      "id": "rvw-000941",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/1aydi8z/how_to_really_know_that_a_fair_price_is/kruo8kb/",
@@ -13784,7 +14693,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000882",
+      "id": "rvw-000942",
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/UsedCars",
+      "source_url": "https://www.reddit.com/r/UsedCars/comments/1aydi8z/how_to_really_know_that_a_fair_price_is/krui3ks/",
+      "author": "Neo1881",
+      "review_date": "2024-02-24",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "I've had good luck getting cars at the insurance auctions around the country. You can look them up for your specified model and search your state. Many states won't let private buyers bid on them, but states like WA, OR, AZ and MI do let the public. Many cars have dented fenders or bumper covers. but the repos and theft recoveries are often cars with no damage and in Run and Drive condition. I bought 2 Prius's last year, 2008, 2009 with under 130k mi on them for about 30-40% of the blue book price. Also a 2012 Scion xB with 120k mi. All of them for just under $3000 out the door, and each required about $1000 or less in repairs. All from the Phoenix location, and I fly down to PHX, $40 flight and then drive it 310 mi back to Vegas. The site is [iaai.com](https://iaai.com) and you can find the cities near you or in the next state. Maybe you can get a friend to drive you there to the site for pickup.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
+    },
+    {
+      "id": "rvw-000943",
       "source_website": "reddit.com",
       "source_label": "Reddit r/grandrapids",
       "source_url": "https://www.reddit.com/r/grandrapids/comments/1awt4md/used_camper_dealersbusinesses/krkd2yq/",
@@ -13799,7 +14723,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-000883",
+      "id": "rvw-000944",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Miata",
       "source_url": "https://www.reddit.com/r/Miata/comments/1aw0bu0/whats_the_catch_low_mileage_1_owner_and_low_price/krf5gow/",
@@ -13814,7 +14738,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000884",
+      "id": "rvw-000945",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=6#0654_88276839_502064",
@@ -13824,12 +14748,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "negative",
       "review_text": "I had my car taken to IAAI in REMOVED after I wrecked it and everyone was aware that I was buying the car back. I had a dash camera left in the car in the cup holder and it was stolen by IAAI employees. They steal your belongings out of your car before it is even out of your own name and sent to auction.",
       "geo_validation": "bbb_us_business",
-      "tier1": "Membership / Licensing / Fees & Bidding Policies",
-      "tier2": "Bidding Process, Rules and Fees",
-      "tier3": "Fees"
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Personal belongings/ items",
+      "tier3": "Removal / Retrieval of items left in vehicle"
     },
     {
-      "id": "rvw-000885",
+      "id": "rvw-000946",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1avquj6/what_happens_if_my_insurance_company_decides_not/krcj7y3/",
@@ -13844,7 +14768,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000886",
+      "id": "rvw-000947",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/1at50s5/got_rear_ended_dont_want_the_car_to_be_declared_a/kr81jhh/",
@@ -13859,7 +14783,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000887",
+      "id": "rvw-000948",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/1av9mdl/secure_iaai_trucking_ngeria_by_best_4_shipping_inc/",
@@ -13874,7 +14798,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000888",
+      "id": "rvw-000949",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -13889,22 +14813,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000889",
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/LifeAdvice",
-      "source_url": "https://www.reddit.com/r/LifeAdvice/comments/1auyhlr/would_buying_a_new_car_be_a_unnecessary_and/kr77po8/",
-      "author": "Neo1881",
-      "review_date": "2024-02-19",
-      "rating": null,
-      "sentiment": "positive",
-      "review_text": "Go find a nice used Prius for $15k and tell your mom you love this car, it gets 45 mpg and would she consider selling the Tesla to pay for the Prius. Gen 2 (2011-15) have the best body style, imo, but have a head gasket issue after 150-250k mi. Gen 2s don't have the problem and you can find those with under 120k mi around, or on the insurance auctions around the country. I bought 2x used Prius's last year for under $3k each that were in running condition, flew 350 mi to a nearby city, Phoenix, and drove them home no problems. Those cars can be found around the country at [iaai.com](https://iaai.com), not all states allow private buyers to bid, but AZ, OR, WA, MI and a few others in the Midwest do. Look for ones in Run and drive condition, intact airbags and the repos and theft recoveries usually are running with little damage.",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Lot Condition, Listing Status and related",
-      "tier2": "Lot Condition Reporting",
-      "tier3": "Lot Damage"
-    },
-    {
-      "id": "rvw-000890",
+      "id": "rvw-000950",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/1atzfmt/am_i_not_allowed_to_even_ask_about_a_carfax/kr612du/",
@@ -13919,7 +14828,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000891",
+      "id": "rvw-000951",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/1at50s5/got_rear_ended_dont_want_the_car_to_be_declared_a/kqx2qug/",
@@ -13934,7 +14843,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000892",
+      "id": "rvw-000952",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarguys",
       "source_url": "https://www.reddit.com/r/askcarguys/comments/1au1cjb/is_there_nationwide_dealer_or_available_who/",
@@ -13949,7 +14858,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000893",
+      "id": "rvw-000953",
       "source_website": "reddit.com",
       "source_label": "Reddit r/TeslaModel3",
       "source_url": "https://www.reddit.com/r/TeslaModel3/comments/1asjdsj/need_to_do_anything_with_computer_info_in_car/kqsx5xf/",
@@ -13964,7 +14873,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000894",
+      "id": "rvw-000954",
       "source_website": "reddit.com",
       "source_label": "Reddit r/TeslaModel3",
       "source_url": "https://www.reddit.com/r/TeslaModel3/comments/1asnzux/2021_model_3_fully_owned_and_paid_off_at_22_years/kqug4t6/",
@@ -13979,7 +14888,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000895",
+      "id": "rvw-000955",
       "source_website": "reddit.com",
       "source_label": "Reddit r/sanantonio",
       "source_url": "https://www.reddit.com/r/sanantonio/comments/1arpv4x/insurance_stole_my_car/kqpiio3/",
@@ -13994,7 +14903,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Title Not Received"
     },
     {
-      "id": "rvw-000896",
+      "id": "rvw-000956",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1aropli/how_to_buy_salvage_cars_from_auction_in_florida/kqkyejd/",
@@ -14009,7 +14918,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000897",
+      "id": "rvw-000957",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1aropli/how_to_buy_salvage_cars_from_auction_in_florida/",
@@ -14024,22 +14933,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000898",
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/CarTalkUK",
-      "source_url": "https://www.reddit.com/r/CarTalkUK/comments/yx740n/anyone_has_any_experience_buying_a_stolen/kqfqg76/",
-      "author": "Ill_Maximum735",
-      "review_date": "2024-02-14",
-      "rating": null,
-      "sentiment": "positive",
-      "review_text": "man, did you buy the car? i found a nice car on iaai auction (says stolen) idk if i should proceed buying it…",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Membership / Licensing / Fees & Bidding Policies",
-      "tier2": "Bidding Process, Rules and Fees",
-      "tier3": "How to Bid (First Time)"
-    },
-    {
-      "id": "rvw-000899",
+      "id": "rvw-000958",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1aqc2x4/progressive_totaling_car_100_not_my_fault_think/kqe542j/",
@@ -14054,7 +14948,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000900",
+      "id": "rvw-000959",
       "source_website": "reddit.com",
       "source_label": "Reddit r/TeslaModel3",
       "source_url": "https://www.reddit.com/r/TeslaModel3/comments/1aq8n8x/subscription_cancellation_premium_connectivity/kqbu0p3/",
@@ -14069,7 +14963,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-000901",
+      "id": "rvw-000960",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -14084,7 +14978,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000902",
+      "id": "rvw-000961",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=10937148788",
+      "author": "La59 sammy",
+      "review_date": "2024-02-14",
+      "rating": 3,
+      "sentiment": "negative",
+      "review_text": "Updated. This last update on the app is slow slow y’all need to work on that thanks",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-000962",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Paleontology",
       "source_url": "https://www.reddit.com/r/Paleontology/comments/1an3046/how_much_do_modern_archosaurs_contribute_to_our/kpqjd34/",
@@ -14099,7 +15008,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000903",
+      "id": "rvw-000963",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AskMen",
       "source_url": "https://www.reddit.com/r/AskMen/comments/1amrluj/what_to_do_after_a_car_accident/kpqgawe/",
@@ -14114,7 +15023,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000904",
+      "id": "rvw-000964",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1am5wvw/first_time_having_total_loss_a_bit_confused/",
@@ -14129,7 +15038,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Long Hold Time / Hard to Reach Support"
     },
     {
-      "id": "rvw-000905",
+      "id": "rvw-000965",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=10918017862",
+      "author": "Mohammed Alshuraify",
+      "review_date": "2024-02-08",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Review. It’s amazing apps to find and bid to n your dream ride.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)"
+    },
+    {
+      "id": "rvw-000966",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/65c39d0946c249752c033ed3",
@@ -14144,7 +15068,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000906",
+      "id": "rvw-000967",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/1alh3sz/state_farm_auction/kperr7z/",
@@ -14159,7 +15083,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000907",
+      "id": "rvw-000968",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1al9c7z/exporting_car_from_copartiaai_usa/kpd2lot/",
@@ -14174,7 +15098,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000908",
+      "id": "rvw-000969",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AutoAdvice",
       "source_url": "https://www.reddit.com/r/AutoAdvice/comments/1alc2bk/car_dealers_best_online_car_auction_website/",
@@ -14184,12 +15108,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "positive",
       "review_text": "Car Dealers - Best Online Car Auction Website?! Greetings fellow hustlers, We're currently researching the best online car auction services as my buddy plans to expand his business into the online realm soon. Some options we're considering include KAR Auction Services, Adesa, Copart, IAAI, and Manheim, among others. Additionally, we're curious about the popularity trends of online car auctions lately. With the reopening of various sectors, we're uncertain whether online auctions are gaining or losing traction. Any insights or thoughts on this matter would be greatly appreciated! In summary, which online car auction platform would you recommend from options like KAR Auction Services, Copart, Adesa, IAAI, and Manheim?",
       "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000909",
+      "id": "rvw-000970",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1al9c7z/exporting_car_from_copartiaai_usa/",
@@ -14204,7 +15128,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Upload Troubleshooting"
     },
     {
-      "id": "rvw-000910",
+      "id": "rvw-000971",
       "source_website": "reddit.com",
       "source_label": "Reddit r/DubaiPetrolHeads",
       "source_url": "https://www.reddit.com/r/DubaiPetrolHeads/comments/1al990z/importing_car_from_copartiaai_usa/",
@@ -14219,7 +15143,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Upload Troubleshooting"
     },
     {
-      "id": "rvw-000911",
+      "id": "rvw-000972",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/1akx6zp/global_shipping_excellence_best_4_shipping_inc/",
@@ -14234,7 +15158,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000912",
+      "id": "rvw-000973",
       "source_website": "reddit.com",
       "source_label": "Reddit r/fordranger",
       "source_url": "https://www.reddit.com/r/fordranger/comments/1akvoy8/new_to_me_2003_ranger_xlt_30l/",
@@ -14249,7 +15173,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000913",
+      "id": "rvw-000974",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=6#0654_88276839_499666",
@@ -14264,22 +15188,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000914",
-      "source_website": "apps.apple.com",
-      "source_label": "Apple App Store (468532534, us)",
-      "source_url": "https://apps.apple.com/us/app/id468532534?see-all=reviews&platform=iphone&reviewId=10910526693",
-      "author": "Eduardo InuIs",
-      "review_date": "2024-02-07",
-      "rating": 2,
-      "sentiment": "negative",
-      "review_text": "Too many fees. The app itself works good, could be better on how you save the searches for vehicles, however they want to charge for everything, they charge a buyer fee, pullout fee, internet fee, environment fee, I think is outrageous to add that many fees after the buyer fee, pull out fee is understandable until a certain point but $95 is outrageous, internet fee is just a total abuse, I’m paying for my own internet or are you? Makes no sense, and the invironment fee at this point is just charging for the fun of it might as well add a high wind fee, cloudy fee and maybe even some insurance for employees fee, I mean c’mon all of this is nonsense and all of this is per car and on top of that a yearly payment on subscription. Wouldn’t surprise me if the community gets together and starts boycotting, there’s many good deals in other places as well",
-      "geo_validation": "apple_us_store",
-      "tier1": "Membership / Licensing / Fees & Bidding Policies",
-      "tier2": "Bidding Process, Rules and Fees",
-      "tier3": "Fees"
-    },
-    {
-      "id": "rvw-000915",
+      "id": "rvw-000975",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Autobody",
       "source_url": "https://www.reddit.com/r/Autobody/comments/1akgx4i/anyone_here_using_iaai_copart_or_ebay_clean/",
@@ -14294,7 +15203,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000916",
+      "id": "rvw-000976",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AutoTransport",
       "source_url": "https://www.reddit.com/r/AutoTransport/comments/1akeh6a/michigan_49315_to_79924_pickup_today/",
@@ -14309,7 +15218,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Missed/ Delayed Pickup and Dispatch Window"
     },
     {
-      "id": "rvw-000917",
+      "id": "rvw-000977",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carbuying",
       "source_url": "https://www.reddit.com/r/carbuying/comments/1ajxf6o/buying_a_rebuilt/kp955us/",
@@ -14324,7 +15233,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000918",
+      "id": "rvw-000978",
       "source_website": "reddit.com",
       "source_label": "Reddit r/FordFlex",
       "source_url": "https://www.reddit.com/r/FordFlex/comments/192053t/enjoy_my_stupidity_followup_and_auction_purchase/kp7vgin/",
@@ -14339,7 +15248,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000919",
+      "id": "rvw-000979",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1ak0t85/copart/kp54r99/",
@@ -14354,7 +15263,37 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000920",
+      "id": "rvw-000980",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=10911039413",
+      "author": "meti yar",
+      "review_date": "2024-02-06",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Wrong picture. They never show the real damage of the car in the picture. There is no description of the damages nor any picture proofing the damage. It is so unfair because the car you get become such a surprise to you with all the damages that they didn’t list.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
+    },
+    {
+      "id": "rvw-000981",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=10910526693",
+      "author": "Eduardo InuIs",
+      "review_date": "2024-02-06",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "Too many fees. The app itself works good, could be better on how you save the searches for vehicles, however they want to charge for everything, they charge a buyer fee, pullout fee, internet fee, environment fee, I think is outrageous to add that many fees after the buyer fee, pull out fee is understandable until a certain point but $95 is outrageous, internet fee is just a total abuse, I’m paying for my own internet or are you? Makes no sense, and the invironment fee at this point is just charging for the fun of it might as well add a high wind fee, cloudy fee and maybe even some insurance for employees fee, I mean c’mon all of this is nonsense and all of this is per car and on top of that a yearly payment on subscription. Wouldn’t surprise me if the community gets together and starts boycotting, there’s many good deals in other places as well",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-000982",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Wellthatsucks",
       "source_url": "https://www.reddit.com/r/Wellthatsucks/comments/1aityoz/stolen_outback_must_be_destroyed_due_to_fentanyl/kp0elzm/",
@@ -14369,7 +15308,37 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000921",
+      "id": "rvw-000983",
+      "source_website": "complaintsboard.com",
+      "source_label": "ComplaintsBoard",
+      "source_url": "https://www.complaintsboard.com/iaa-stolen-items-c1933732",
+      "author": "Ti!",
+      "review_date": "2024-02-05",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Reporter location: West Memphis, US (United States). Stolen items. On January 23,2024 I picked up my ALREADY BOXED belongings from my vehicle that was repoed. After waiting 49 mins when my original appt was 3:30 the guy from the back finally came. He told me my items had been boxed since the 15th. Immediately while walking to the truck to get my possession the guy also asked me randomly the color of my daughter car seat. I...",
+      "geo_validation": "complaintsboard_us_profile",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Personal belongings/ items",
+      "tier3": "Removal / Retrieval of items left in vehicle"
+    },
+    {
+      "id": "rvw-000984",
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/Insurance",
+      "source_url": "https://www.reddit.com/r/Insurance/comments/1ailzp6/car_stolen_and_then_found_after_settlement/kow14gf/",
+      "author": "Embarrassed_Lab7320",
+      "review_date": "2024-02-04",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Bro, I work in Commercial Fire and Theft , as well as assisted in the total loss process. Something does not sound correct. The normal process is the following, on an unrecoverable theft turned recovered. 1. After x number of days and all the paperwork is done, your fire and theft adjuster will transfer the file to Total Loss. 2. The registered owner gets a call with a settlement offer, normally based off: ACV, Deductible, any remaining liens/financing amounts. The offer will be based on Company Retain since it is currently unrecovered. 3. The insurance carrier will have Copart or IAA transfer the title into their name. At this stage the insurance company legally owns the stolen car. 4. At recovery, insurance should he picking it up to either salvage it out or resell depending on the damages. It is normally resold through auctions that only those with a dealer license can access. - normally , at least in Commercial, we don't allow the prior owner to buy back the car. Due to how the paperwork is done. It is a huge headache to change it",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Auction Eligibility & Licensing",
+      "tier3": "Unable to Bid"
+    },
+    {
+      "id": "rvw-000985",
       "source_website": "reddit.com",
       "source_label": "Reddit r/BMW",
       "source_url": "https://www.reddit.com/r/BMW/comments/1aijp3g/previous_owner/",
@@ -14384,7 +15353,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000922",
+      "id": "rvw-000986",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarguys",
       "source_url": "https://www.reddit.com/r/askcarguys/comments/1ahyhau/could_weirdly_stcking_out_exhaust_mean_serious/",
@@ -14399,7 +15368,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000923",
+      "id": "rvw-000987",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -14414,7 +15383,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-000924",
+      "id": "rvw-000988",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=14#0654_88276839_21242906",
@@ -14429,7 +15398,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-000925",
+      "id": "rvw-000989",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Supra",
       "source_url": "https://www.reddit.com/r/Supra/comments/1ahae9d/is_something_like_this_worth_getting_and_fixing/konw3gx/",
@@ -14444,7 +15413,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000926",
+      "id": "rvw-000990",
       "source_website": "reddit.com",
       "source_label": "Reddit r/E90",
       "source_url": "https://www.reddit.com/r/E90/comments/1ag5eb5/best_scanning_tool_app_diagnostic/",
@@ -14459,7 +15428,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000927",
+      "id": "rvw-000991",
       "source_website": "reddit.com",
       "source_label": "Reddit r/MINI",
       "source_url": "https://www.reddit.com/r/MINI/comments/1aco93p/can_anyone_give_me_a_rough_idea_mini_cooper_07_r56/kocqu8p/",
@@ -14474,7 +15443,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Title Not Received"
     },
     {
-      "id": "rvw-000928",
+      "id": "rvw-000992",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=ar&gl=us",
@@ -14489,7 +15458,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Proactive Follow-up"
     },
     {
-      "id": "rvw-000929",
+      "id": "rvw-000993",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=10885122971",
+      "author": "jasonsir1",
+      "review_date": "2024-01-31",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "SLOW!! please fix. Very slow when searching for cars and logging into auction is a nightmare",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-000994",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1aeijtz/car_export_business_advise/kk889m8/",
@@ -14504,22 +15488,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000930",
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/AutoTransport",
-      "source_url": "https://www.reddit.com/r/AutoTransport/comments/1ael292/car_hauling_vehicle_transport/",
-      "author": "ErickGpautologistics",
-      "review_date": "2024-01-30",
-      "rating": null,
-      "sentiment": "positive",
-      "review_text": "Car hauling - Vehicle Transport Send Dm to get a Quote &amp; Book your transport ☑️ Door-to-door anywhere in the US (Alaska and Hawaii included) ☑️ Transparent pricing with no hidden fees ☑️ $250,000 insurance per car up to $1,000,000 ☑️ Available 24/7 ☑️ We offer military discounts ☑️ Inoperable vehicles included ☑️ Open and enclosed available ☑️ Auctions, (Copart, IAAI, Manheim) ☑️ Snowbird auto transportation service ☑️ Luxury vehicle Transportation Auto transport is a service - not a good If you want cheap service - I am not it I have been providing quality direct hauling from pick up to drop #shipping #transport #open #enclosed #copart #luxury #auction #vehicle #snowbird #iaai #EnclosedTrailer #dispatch #quote DISPONIBLE EN ESPAÑOL!",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Membership / Licensing / Fees & Bidding Policies",
-      "tier2": "Bidding Process, Rules and Fees",
-      "tier3": "Fees"
-    },
-    {
-      "id": "rvw-000931",
+      "id": "rvw-000995",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Entrepreneur",
       "source_url": "https://www.reddit.com/r/Entrepreneur/comments/1aeilz6/vehicle_export_business_advise/",
@@ -14534,7 +15503,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000932",
+      "id": "rvw-000996",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/1aeijtz/car_export_business_advise/",
@@ -14549,7 +15518,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000933",
+      "id": "rvw-000997",
       "source_website": "reddit.com",
       "source_label": "Reddit r/business",
       "source_url": "https://www.reddit.com/r/business/comments/1aeij17/business_advice_for_an_export_business/",
@@ -14564,7 +15533,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000934",
+      "id": "rvw-000998",
       "source_website": "reddit.com",
       "source_label": "Reddit r/legaladvice",
       "source_url": "https://www.reddit.com/r/legaladvice/comments/1aeiij0/business_advice/",
@@ -14579,7 +15548,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000935",
+      "id": "rvw-000999",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Audi",
       "source_url": "https://www.reddit.com/r/Audi/comments/1ae7mad/the_sht_i_see_while_delivering/kk7jwzp/",
@@ -14594,7 +15563,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000936",
+      "id": "rvw-001000",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -14609,7 +15578,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000937",
+      "id": "rvw-001001",
       "source_website": "reddit.com",
       "source_label": "Reddit r/fiat500",
       "source_url": "https://www.reddit.com/r/fiat500/comments/1adjinn/progressive_sent_my_car_to_an_auction_company_and/kk2yctf/",
@@ -14624,7 +15593,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000938",
+      "id": "rvw-001002",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -14639,7 +15608,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000939",
+      "id": "rvw-001003",
       "source_website": "reddit.com",
       "source_label": "Reddit r/techsupport",
       "source_url": "https://www.reddit.com/r/techsupport/comments/1ac1cza/specific_devices_on_my_network_will_not_connect/kjrmy0x/",
@@ -14654,7 +15623,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Pickup Hours and Cutoff"
     },
     {
-      "id": "rvw-000940",
+      "id": "rvw-001004",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -14669,7 +15638,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000941",
+      "id": "rvw-001005",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1abiouw/title/",
@@ -14679,12 +15648,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "positive",
       "review_text": "Title ? I’m new to car flipping, i bought the car from IAAI , what’s the next process ? IAAI gave me a reassignment title and with i go to the dmv n get the new title. ok i understand that but if i go get the title , dmv is saying the new title comes in in 1-6 months , this business is get in and get out . how i get the title back fast ? is there a faster approach ? i was thinking instant title but dmv don’t give instant title to salvage cars ? how do u guys do it ? pls help a brother out",
       "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
+      "tier1": "Title, Ownership, POA and Documentation",
+      "tier2": "Power of Attorney (POA) Handling",
+      "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000942",
+      "id": "rvw-001006",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AutoTransport",
       "source_url": "https://www.reddit.com/r/AutoTransport/comments/1abfqab/nationwide_auto_transport/",
@@ -14699,7 +15668,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000943",
+      "id": "rvw-001007",
       "source_website": "reddit.com",
       "source_label": "Reddit r/mercedes_benz",
       "source_url": "https://www.reddit.com/r/mercedes_benz/comments/19f5m6m/should_i_get_it/kjhmo86/",
@@ -14714,7 +15683,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000944",
+      "id": "rvw-001008",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/19f2vkh/iaai_roro_excellence_best_4_shipping_incs/",
@@ -14729,7 +15698,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000945",
+      "id": "rvw-001009",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=6#0654_88276839_497130",
@@ -14744,7 +15713,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000946",
+      "id": "rvw-001010",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=15#0654_88276839_21200690",
@@ -14754,12 +15723,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "negative",
       "review_text": "Sales and Advertising Issues. Purchased several cars that Auction sold as \"start, run and drive\", but cars need major repairs such as motors and transmission before could be sold at a fair market value price",
       "geo_validation": "bbb_us_business",
-      "tier1": "Membership / Licensing / Fees & Bidding Policies",
-      "tier2": "Bidding Process, Rules and Fees",
-      "tier3": "Fees"
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000947",
+      "id": "rvw-001011",
       "source_website": "reddit.com",
       "source_label": "Reddit r/e46",
       "source_url": "https://www.reddit.com/r/e46/comments/19erm4t/just_picked_up_this_very_clean_run_and_drive_e46/kjetmtl/",
@@ -14774,7 +15743,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000948",
+      "id": "rvw-001012",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/19dz8sl/buying_from_copart/kjalucn/",
@@ -14789,7 +15758,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000949",
+      "id": "rvw-001013",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/19dz8sl/buying_from_copart/kjal7p3/",
@@ -14804,7 +15773,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000950",
+      "id": "rvw-001014",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -14819,7 +15788,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000951",
+      "id": "rvw-001015",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/19dz8sl/buying_from_copart/kj9e7hp/",
@@ -14834,7 +15803,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000952",
+      "id": "rvw-001016",
       "source_website": "reddit.com",
       "source_label": "Reddit r/LexusGX",
       "source_url": "https://www.reddit.com/r/LexusGX/comments/19cifri/anybody_regear_their_gx/kj4x65r/",
@@ -14849,7 +15818,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Unable to Bid"
     },
     {
-      "id": "rvw-000953",
+      "id": "rvw-001017",
       "source_website": "reddit.com",
       "source_label": "Reddit r/LexusGX",
       "source_url": "https://www.reddit.com/r/LexusGX/comments/19cifri/anybody_regear_their_gx/kj4x131/",
@@ -14864,7 +15833,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000954",
+      "id": "rvw-001018",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Copartonline",
       "source_url": "https://www.reddit.com/r/Copartonline/comments/r89f3m/my_experience_with_buying_from_copart_and/kixpn76/",
@@ -14879,7 +15848,37 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000955",
+      "id": "rvw-001019",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=10849294914",
+      "author": "supreme max",
+      "review_date": "2024-01-21",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "Too much fees. Have a lot of fees",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-001020",
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/UsedCars",
+      "source_url": "https://www.reddit.com/r/UsedCars/comments/19bea3g/fix_transmission_or_buy_a_corolla/kissy92/",
+      "author": "Neo1881",
+      "review_date": "2024-01-20",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Don't rebuild the tranny. Get the used Toyota with low miles. I check on the insurance auctions and can find good used cars, some that are repos or theft recoveries that have almost no damage to them and many are $3k out the door. I pick the ones in 'Run and Drive' condition so I fly to the auctions (out of state for NV) that allow the public to bid on cars and then drive it home. check them out at [www.iaai.com](https://www.iaai.com), membership is $100/yr with a discount code.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
+    },
+    {
+      "id": "rvw-001021",
       "source_website": "reddit.com",
       "source_label": "Reddit r/NissanTitan",
       "source_url": "https://www.reddit.com/r/NissanTitan/comments/19bhiuu/wanted_to_share_my_insurance_auto_auction_titan/kirxypv/",
@@ -14894,7 +15893,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000956",
+      "id": "rvw-001022",
       "source_website": "reddit.com",
       "source_label": "Reddit r/infuriatingasfuck",
       "source_url": "https://www.reddit.com/r/infuriatingasfuck/comments/19a95l9/like_a_good_neighbor/kijjwe8/",
@@ -14909,7 +15908,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000957",
+      "id": "rvw-001023",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Hawaii",
       "source_url": "https://www.reddit.com/r/Hawaii/comments/199ec4p/lone_star_auto/kiippbq/",
@@ -14924,7 +15923,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000958",
+      "id": "rvw-001024",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -14939,7 +15938,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Selling/ Relisting vehicle or Parts purchase"
     },
     {
-      "id": "rvw-000959",
+      "id": "rvw-001025",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/198p8qp/iaai_roro_excellence_best_4_shipping_incs/",
@@ -14954,7 +15953,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000960",
+      "id": "rvw-001026",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/196ub12/i_live_in_pennsylvania_and_all_of_the_used_cars/ki587kj/",
@@ -14969,7 +15968,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000961",
+      "id": "rvw-001027",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AutoTransport",
       "source_url": "https://www.reddit.com/r/AutoTransport/comments/1980fh8/auto_shipping_car_carriers/",
@@ -14984,7 +15983,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000962",
+      "id": "rvw-001028",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_ErickGpautologistics",
       "source_url": "https://www.reddit.com/r/u_ErickGpautologistics/comments/1980j25/auto_shipping_car_carriers/",
@@ -14999,7 +15998,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000963",
+      "id": "rvw-001029",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=7#0654_88276839_494233",
@@ -15014,7 +16013,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000964",
+      "id": "rvw-001030",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=15#0654_88276839_21153705",
@@ -15029,7 +16028,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000965",
+      "id": "rvw-001031",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=7#0654_88276839_494184",
@@ -15044,7 +16043,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000966",
+      "id": "rvw-001032",
       "source_website": "reddit.com",
       "source_label": "Reddit r/GR86",
       "source_url": "https://www.reddit.com/r/GR86/comments/196jo8u/i_have_seen_more_totaled_gr86sbrzs_on_this/khutd0i/",
@@ -15059,7 +16058,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000967",
+      "id": "rvw-001033",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Cartalk",
       "source_url": "https://www.reddit.com/r/Cartalk/comments/196jdpp/some_of_you_need_to_know_this_because_its_clear/",
@@ -15074,7 +16073,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000968",
+      "id": "rvw-001034",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=10823124142",
+      "author": "Auto center",
+      "review_date": "2024-01-14",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Too far behind or their website. It’s so complicated to log in and when you are buying cars and you want to see the list and to view the vehicle and once you go back it will bring you to another page it’s worthless",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001035",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -15089,7 +16103,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000969",
+      "id": "rvw-001036",
       "source_website": "reddit.com",
       "source_label": "Reddit r/300zx",
       "source_url": "https://www.reddit.com/r/300zx/comments/18zqtez/fix_or_sell_while_im_behind/khc3bxw/",
@@ -15104,7 +16118,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000970",
+      "id": "rvw-001037",
       "source_website": "reddit.com",
       "source_label": "Reddit r/ToyotaPickup",
       "source_url": "https://www.reddit.com/r/ToyotaPickup/comments/1943esi/where_do_yall_find_these_trucks/khe4t4d/",
@@ -15119,7 +16133,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-000971",
+      "id": "rvw-001038",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=10812407363",
+      "author": "troy crete",
+      "review_date": "2024-01-11",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Could be better. It difficult to use and find cars and to know the current bid",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-001039",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Cartalk",
       "source_url": "https://www.reddit.com/r/Cartalk/comments/191g15j/was_i_about_to_get_finessed/kgz6rn9/",
@@ -15134,7 +16163,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000972",
+      "id": "rvw-001040",
       "source_website": "reddit.com",
       "source_label": "Reddit r/porsche911",
       "source_url": "https://www.reddit.com/r/porsche911/comments/191d9hf/are_coparts_with_collisions_worth_fixing/kguqgnj/",
@@ -15149,7 +16178,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000973",
+      "id": "rvw-001041",
       "source_website": "reddit.com",
       "source_label": "Reddit r/civic",
       "source_url": "https://www.reddit.com/r/civic/comments/1905zbv/rip_23_civic_sport/kgpfwx0/",
@@ -15164,7 +16193,37 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000974",
+      "id": "rvw-001042",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=10796975730",
+      "author": "155May-Circle",
+      "review_date": "2024-01-07",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "No Complaints. I’m an used car dealer and Iaa is LITERALLY the only App I use!",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001043",
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/Challenger",
+      "source_url": "https://www.reddit.com/r/Challenger/comments/18z7ii1/is_it_lame_to_put_a_widebody_kit_on_an_rt_38k_usd/kgklhj6/",
+      "author": "Weird-Bad-4083",
+      "review_date": "2024-01-06",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Id at least get a used scat for that tbh for 38k u could even get a stolen recovered hellcat off an auction @ iaai or copart",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-001044",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/18zrbwg/iaai_fees_when_buying_from_titlemax/kgjig7g/",
@@ -15179,7 +16238,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000975",
+      "id": "rvw-001045",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/18zrbwg/iaai_fees_when_buying_from_titlemax/",
@@ -15194,7 +16253,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000976",
+      "id": "rvw-001046",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=10793222430",
+      "author": "autosales2020",
+      "review_date": "2024-01-06",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "The app Needs attention. The app is horrible takes forever to load it will kick you out of the auction life out of nowhere it will never give you a warning if you have another car coming from a different line if you are open online A you will never see any other cars when they arrive for any other lines such a BCD or D E",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001047",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/18ywevq/auto_insurance_company_took_car_and_was_trying_to/kgdrtbh/",
@@ -15209,7 +16283,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Title Not Received"
     },
     {
-      "id": "rvw-000977",
+      "id": "rvw-001048",
       "source_website": "reddit.com",
       "source_label": "Reddit r/cars",
       "source_url": "https://www.reddit.com/r/cars/comments/18y01if/what_happened_to_my_car_after_it_was_totaled/kg9leiu/",
@@ -15224,7 +16298,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000978",
+      "id": "rvw-001049",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_learnexams-com",
       "source_url": "https://www.reddit.com/r/u_learnexams-com/comments/18ya952/get_these_exams_at_learnexamscom/",
@@ -15239,7 +16313,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000979",
+      "id": "rvw-001050",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/18y55o9/expedited_iaai_shipping_solutions_in_qatar_by/",
@@ -15254,7 +16328,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000980",
+      "id": "rvw-001051",
       "source_website": "reddit.com",
       "source_label": "Reddit r/cars",
       "source_url": "https://www.reddit.com/r/cars/comments/18y01if/what_happened_to_my_car_after_it_was_totaled/kg89cgb/",
@@ -15269,7 +16343,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-000981",
+      "id": "rvw-001052",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarguys",
       "source_url": "https://www.reddit.com/r/askcarguys/comments/18xx1u3/what_company_to_sell_wrecked_car_to/kg890my/",
@@ -15284,7 +16358,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000982",
+      "id": "rvw-001053",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=7#0654_88276839_492266",
@@ -15299,7 +16373,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000983",
+      "id": "rvw-001054",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=7#0654_88276839_492256",
@@ -15314,7 +16388,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Long Hold Time / Hard to Reach Support"
     },
     {
-      "id": "rvw-000984",
+      "id": "rvw-001055",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=15#0654_88276839_21098998",
@@ -15329,7 +16403,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000985",
+      "id": "rvw-001056",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=7#0654_88276839_491969",
@@ -15339,12 +16413,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "negative",
       "review_text": "Definitely not worth it. Copart is and REMOVED is much better ... This place is horrible.. no type of honor.I've spent millions with the company and when my dealer's license expired, they suspended my account. I was told to send out my receipt and they will give me a temporary extension , I did exactly that and they lie and did not ,Everyone else gives you a REMOVED Period But no not them. Plus they always lie about their cars being run and drive and I saw vehicles missing the whole knee assembly and they list it as a run and drive? U lost me thx IAA for nothing",
       "geo_validation": "bbb_us_business",
-      "tier1": "Membership / Licensing / Fees & Bidding Policies",
-      "tier2": "Bidding Process, Rules and Fees",
-      "tier3": "Fees"
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000986",
+      "id": "rvw-001057",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=15#0654_88276839_21028806",
@@ -15359,7 +16433,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-000987",
+      "id": "rvw-001058",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/18vufwi/iaai_auction_toyota_camry_2010/kfu25l5/",
@@ -15374,7 +16448,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000988",
+      "id": "rvw-001059",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/18vufwi/iaai_auction_toyota_camry_2010/kftj1km/",
@@ -15389,7 +16463,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-000989",
+      "id": "rvw-001060",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/18vufwi/iaai_auction_toyota_camry_2010/",
@@ -15399,12 +16473,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "positive",
       "review_text": "iaai auction TOYOTA CAMRY 2010 I’m going to bid a car at iaai, the video of the engine works good, but the problem is that there is no picture of the engine and internal parts because the hood doesn’t open. Car RUNS AND DRIVE Seller insurance company Any advices, please and excuse me my english isn’t my first language. Lot https://link-mapp.iaai.com/6njvBDF1B9xJ74817",
       "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-000990",
+      "id": "rvw-001061",
       "source_website": "reddit.com",
       "source_label": "Reddit r/BMWi3",
       "source_url": "https://www.reddit.com/r/BMWi3/comments/18vcht4/do_you_have_anxiety_of_getting_into_a_crash_with/kfqj9v7/",
@@ -15419,7 +16493,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000991",
+      "id": "rvw-001062",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Hyundai",
       "source_url": "https://www.reddit.com/r/Hyundai/comments/18uir20/owning_a_hyundai_has_been_a_vandalism_nightmare/kfphjql/",
@@ -15434,7 +16508,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000992",
+      "id": "rvw-001063",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Hyundai",
       "source_url": "https://www.reddit.com/r/Hyundai/comments/18qxszn/elantra_stolen_and_totaled/kforc5a/",
@@ -15449,7 +16523,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000993",
+      "id": "rvw-001064",
       "source_website": "reddit.com",
       "source_label": "Reddit r/poor",
       "source_url": "https://www.reddit.com/r/poor/comments/18ujhyb/got_laid_off_from_a_good_paying_job_and_now_im/kfkvxmi/",
@@ -15464,7 +16538,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-000994",
+      "id": "rvw-001065",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=7#0654_88276839_491471",
@@ -15479,7 +16553,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-000995",
+      "id": "rvw-001066",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=10757846026",
+      "author": "10MMT",
+      "review_date": "2023-12-29",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Needs work. Its slow and you cannot see buy it now prices when scrolling through the list of cars. You’re forced to click on the listing to see the pricing. Supposed to be efficient and easy to use not a tedious process. Fix the app and ill change the review.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001067",
       "source_website": "reddit.com",
       "source_label": "Reddit r/electricvehicles",
       "source_url": "https://www.reddit.com/r/electricvehicles/comments/18t2ag0/evdatabase_does_not_list_chevrolet_whats_the_story/kfbl79y/",
@@ -15494,7 +16583,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Upload Troubleshooting"
     },
     {
-      "id": "rvw-000996",
+      "id": "rvw-001068",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/18rtlqz/looking_into_buying_a_parts_car_from_iaai/",
@@ -15509,7 +16598,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-000997",
+      "id": "rvw-001069",
       "source_website": "reddit.com",
       "source_label": "Reddit r/unimog",
       "source_url": "https://www.reddit.com/r/unimog/comments/18ro5ev/this_makes_me_sad/",
@@ -15524,7 +16613,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-000998",
+      "id": "rvw-001070",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=10749497846",
+      "author": "KIngNaz28",
+      "review_date": "2023-12-26",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Horrible company. Expensive fees that keep going up, horrible service. Would not recommend!",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-001071",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Business_Ideas",
       "source_url": "https://www.reddit.com/r/Business_Ideas/comments/18q0x9f/i_was_thinking_about_getting_this_a_starting_a/ketegfx/",
@@ -15539,7 +16643,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-000999",
+      "id": "rvw-001072",
       "source_website": "reddit.com",
       "source_label": "Reddit r/mclaren",
       "source_url": "https://www.reddit.com/r/mclaren/comments/18px1mx/my_first_mclaren/kevcx64/",
@@ -15554,7 +16658,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001000",
+      "id": "rvw-001073",
       "source_website": "reddit.com",
       "source_label": "Reddit r/mazda",
       "source_url": "https://www.reddit.com/r/mazda/comments/18pj5ru/which_would_you_choose_cx30_or_cx5/kepjrge/",
@@ -15569,7 +16673,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001001",
+      "id": "rvw-001074",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Denton",
       "source_url": "https://www.reddit.com/r/Denton/comments/18pynqm/58_vehicles_involved_in_largescale_denton_county/kerii0b/",
@@ -15584,7 +16688,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001002",
+      "id": "rvw-001075",
       "source_website": "reddit.com",
       "source_label": "Reddit r/ToyotaTundra",
       "source_url": "https://www.reddit.com/r/ToyotaTundra/comments/18o7eu6/2002_tundra_47_sr5/keh5q1m/",
@@ -15599,7 +16703,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001003",
+      "id": "rvw-001076",
       "source_website": "reddit.com",
       "source_label": "Reddit r/HondaElement",
       "source_url": "https://www.reddit.com/r/HondaElement/comments/18o4nej/more_than_34_of_a_million_miles_and_still_runs/kef93zn/",
@@ -15614,7 +16718,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001004",
+      "id": "rvw-001077",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=10732969570",
+      "author": "M///3",
+      "review_date": "2023-12-22",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Barely even works. Fix the app!!!! After I log in it goes right back to the log in screen. I deleted & reinstalled and does same thing. I can log in the website on a PC just fine. Not here",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001078",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AutoTransport",
       "source_url": "https://www.reddit.com/r/AutoTransport/comments/18nnm10/2018_f250_transport_quote/",
@@ -15629,7 +16748,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001005",
+      "id": "rvw-001079",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=7#0654_88276839_490236",
@@ -15644,7 +16763,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-001006",
+      "id": "rvw-001080",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AskMechanics",
       "source_url": "https://www.reddit.com/r/AskMechanics/comments/18mcmo6/who_thinks_this_is_a_total_loss/ke4cesl/",
@@ -15659,7 +16778,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Title Not Received"
     },
     {
-      "id": "rvw-001007",
+      "id": "rvw-001081",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/18m9gnp/abandoned_civic_project/ke3oa21/",
@@ -15674,7 +16793,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001008",
+      "id": "rvw-001082",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Dallas",
       "source_url": "https://www.reddit.com/r/Dallas/comments/18m1jvl/anyone_knows_of_a_truck_auction_place_where_you/ke19csx/",
@@ -15689,7 +16808,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Unable to Bid"
     },
     {
-      "id": "rvw-001009",
+      "id": "rvw-001083",
       "source_website": "reddit.com",
       "source_label": "Reddit r/electricvehicles",
       "source_url": "https://www.reddit.com/r/electricvehicles/comments/18l84p8/general_questions_and_purchasing_advice_thread/kdx9s2o/",
@@ -15704,7 +16823,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-001010",
+      "id": "rvw-001084",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Autocross",
       "source_url": "https://www.reddit.com/r/Autocross/comments/18kl3zn/135i_dct_for_trackautocross/kdwk2w7/",
@@ -15719,7 +16838,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001011",
+      "id": "rvw-001085",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/18l32e2/cashing_out_insurance_claim_and_buying_new/kdxp0z2/",
@@ -15734,7 +16853,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001012",
+      "id": "rvw-001086",
       "source_website": "reddit.com",
       "source_label": "Reddit r/chicago",
       "source_url": "https://www.reddit.com/r/chicago/comments/18ksrl0/if_this_is_your_subaru_i_witnessed_this_taxi/kdxg24y/",
@@ -15749,7 +16868,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Title Not Received"
     },
     {
-      "id": "rvw-001013",
+      "id": "rvw-001087",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/18fij83/i_bought_a_car_at_auction_and_it_turns_out_to/kdpvazn/",
@@ -15764,7 +16883,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001014",
+      "id": "rvw-001088",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=7#0654_88276839_489313",
@@ -15779,7 +16898,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001015",
+      "id": "rvw-001089",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/18jmm3u/seamless_iaai_roro_services_by_best_4_shipping_inc/",
@@ -15794,7 +16913,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001016",
+      "id": "rvw-001090",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/18jm7bg/efficient_iaai_shipping_solutions_to_qatar_by/",
@@ -15809,7 +16928,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001017",
+      "id": "rvw-001091",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/18i0808/efficient_iaai_shipping_dubai_by_best_4_shipping/",
@@ -15824,7 +16943,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Schedule/ Reschedule Pickup"
     },
     {
-      "id": "rvw-001018",
+      "id": "rvw-001092",
       "source_website": "reddit.com",
       "source_label": "Reddit r/BoltEV",
       "source_url": "https://www.reddit.com/r/BoltEV/comments/18hz094/hv_battery_warranty_after_a_wreck/",
@@ -15839,7 +16958,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001019",
+      "id": "rvw-001093",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Car_Insurance_Help",
       "source_url": "https://www.reddit.com/r/Car_Insurance_Help/comments/18ilupo/owner_retention_vs_owner_buy_back/kde3i4o/",
@@ -15854,7 +16973,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001020",
+      "id": "rvw-001094",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/18ha8v5/iaai_trucking_nigeria_seamlessly_handled_by_best/",
@@ -15869,7 +16988,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Schedule/ Reschedule Pickup"
     },
     {
-      "id": "rvw-001021",
+      "id": "rvw-001095",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/18fij83/i_bought_a_car_at_auction_and_it_turns_out_to/kd0usq9/",
@@ -15884,7 +17003,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001022",
+      "id": "rvw-001096",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/18fij83/i_bought_a_car_at_auction_and_it_turns_out_to/kd032fi/",
@@ -15899,7 +17018,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001023",
+      "id": "rvw-001097",
       "source_website": "reddit.com",
       "source_label": "Reddit r/motorcycles",
       "source_url": "https://www.reddit.com/r/motorcycles/comments/18gpch0/my_08_r1/",
@@ -15914,7 +17033,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001024",
+      "id": "rvw-001098",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/18fij83/i_bought_a_car_at_auction_and_it_turns_out_to/kcxj6ns/",
@@ -15929,7 +17048,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-001025",
+      "id": "rvw-001099",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/18fij83/i_bought_a_car_at_auction_and_it_turns_out_to/kcwxc46/",
@@ -15944,7 +17063,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001026",
+      "id": "rvw-001100",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/18fij83/i_bought_a_car_at_auction_and_it_turns_out_to/kcwrop2/",
@@ -15959,7 +17078,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001027",
+      "id": "rvw-001101",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/18fij83/i_bought_a_car_at_auction_and_it_turns_out_to/kcwqskm/",
@@ -15974,7 +17093,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001028",
+      "id": "rvw-001102",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/18fij83/i_bought_a_car_at_auction_and_it_turns_out_to/kcwn57n/",
@@ -15989,22 +17108,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001029",
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/legaladvice",
-      "source_url": "https://www.reddit.com/r/legaladvice/comments/18fi7g0/i_bought_a_car_at_auction_and_it_turns_out_to/kcvs7mz/",
-      "author": "lobsterpockets",
-      "review_date": "2023-12-11",
-      "rating": null,
-      "sentiment": "negative",
-      "review_text": "The question here is how to get this sale cancelled with a little financial penalty aa possible. When one falls victim to a scam one tries to minimize the losses. I got one vincheck which didn't show it. The van appeared clean enough and more research has revealed that this is a scam that's running through IAAI whether they know or care.",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
-    },
-    {
-      "id": "rvw-001030",
+      "id": "rvw-001103",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/18fij83/i_bought_a_car_at_auction_and_it_turns_out_to/kcvr8ue/",
@@ -16019,7 +17123,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-001031",
+      "id": "rvw-001104",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/18fij83/i_bought_a_car_at_auction_and_it_turns_out_to/kcvqbti/",
@@ -16034,7 +17138,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-001032",
+      "id": "rvw-001105",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/18fij83/i_bought_a_car_at_auction_and_it_turns_out_to/",
@@ -16049,7 +17153,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Title Not Received"
     },
     {
-      "id": "rvw-001033",
+      "id": "rvw-001106",
       "source_website": "reddit.com",
       "source_label": "Reddit r/legaladvice",
       "source_url": "https://www.reddit.com/r/legaladvice/comments/18fi7g0/i_bought_a_car_at_auction_and_it_turns_out_to/",
@@ -16064,7 +17168,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-001034",
+      "id": "rvw-001107",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Money",
       "source_url": "https://www.reddit.com/r/Money/comments/18els02/18_years_old_f/kcsl677/",
@@ -16079,7 +17183,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001035",
+      "id": "rvw-001108",
+      "source_website": "complaintsboard.com",
+      "source_label": "ComplaintsBoard",
+      "source_url": "https://www.complaintsboard.com/iaa-b133628#c1924562",
+      "author": "BrenPC",
+      "review_date": "2023-12-08",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Reporter location: IE (Ireland). Unable to take a Ryanair flight due to illness. Flight Reservation No -HL8RJQ Ryanair Ref [protected]/HL8RJQ On the 18th of Nov my wife and I were booked to travel with Ryanair to Malaga. However my wife had to have an operation on her eye (Macular Hole Surgery) and was told by the Surgeon not to fly - I have a letter from him which I submitted too Ryanair. I asked Ryanair for a Credit Note but they have refused point blank. I feel that this condition falls under Ryanair's clause - \"Serious Illness - and are therefore unable to travel\" They say they will give a refund under this condition. Brendan Counihan 1 The Grove Cork. Claimed loss: â‚¬210.04. Desired outcome: Credit Note",
+      "geo_validation": "complaintsboard_us_profile",
+      "tier1": "Payment Refunds, Transaction Issues and Deposits",
+      "tier2": "Refunds & Membership Billing",
+      "tier3": "Deposit Refund Status"
+    },
+    {
+      "id": "rvw-001109",
       "source_website": "reddit.com",
       "source_label": "Reddit r/projectcar",
       "source_url": "https://www.reddit.com/r/projectcar/comments/18d2am0/anyone_ever_buy_vandalizedlight_damage_cars_from/kceo7q9/",
@@ -16090,11 +17209,11 @@ window.IAA_REVIEWS_DATA = {
       "review_text": "I have bought and sold on Copart and [iaai.com](https://iaai.com) and truthfully it is very hit and miss with the majority being misses. I was aiming at light/medium body or mechanical damage. Run and drive once = hard rod knock, once = slipping bad transmission. One engine fire ended up being a insurance fraud for another rod knock. If you are going to buy auctions go and inspect the car - but also expect to jump through hoops to get that inspection. I got to the point were I just gave up on the whole auction buying thing.",
       "geo_validation": "mixed_source_ok",
       "tier1": "Lot Condition, Listing Status and related",
-      "tier2": "Third-Party Inspection Authorization & Scheduling",
-      "tier3": "Previewing/ Inspecting Vehicles"
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001036",
+      "id": "rvw-001110",
       "source_website": "reddit.com",
       "source_label": "Reddit r/projectcar",
       "source_url": "https://www.reddit.com/r/projectcar/comments/18d2asr/anyone_ever_buy_vandalizedlight_damage_cars_from/",
@@ -16109,7 +17228,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001037",
+      "id": "rvw-001111",
       "source_website": "reddit.com",
       "source_label": "Reddit r/projectcar",
       "source_url": "https://www.reddit.com/r/projectcar/comments/18d2am0/anyone_ever_buy_vandalizedlight_damage_cars_from/",
@@ -16124,7 +17243,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001038",
+      "id": "rvw-001112",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/18cpqkk/efficient_iaai_shipping_dubai_by_best_4_shipping/",
@@ -16139,7 +17258,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Schedule/ Reschedule Pickup"
     },
     {
-      "id": "rvw-001039",
+      "id": "rvw-001113",
       "source_website": "reddit.com",
       "source_label": "Reddit r/fireinvestigation",
       "source_url": "https://www.reddit.com/r/fireinvestigation/comments/18b0yi2/online_training/kc4lgiq/",
@@ -16154,7 +17273,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001040",
+      "id": "rvw-001114",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Iowa",
       "source_url": "https://www.reddit.com/r/Iowa/comments/189kfom/auto_auctions/kbx8q3z/",
@@ -16169,7 +17288,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001041",
+      "id": "rvw-001115",
       "source_website": "reddit.com",
       "source_label": "Reddit r/CX5",
       "source_url": "https://www.reddit.com/r/CX5/comments/18afh3r/cx5_grand_touring_front_camera/",
@@ -16184,7 +17303,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001042",
+      "id": "rvw-001116",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Subaru_Outback",
       "source_url": "https://www.reddit.com/r/Subaru_Outback/comments/1893ken/transmission/kbomce6/",
@@ -16199,7 +17318,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001043",
+      "id": "rvw-001117",
       "source_website": "reddit.com",
       "source_label": "Reddit r/mechanic",
       "source_url": "https://www.reddit.com/r/mechanic/comments/188tzga/iaai_auction_non_insurance_seller/",
@@ -16214,7 +17333,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001044",
+      "id": "rvw-001118",
       "source_website": "reddit.com",
       "source_label": "Reddit r/mechanics",
       "source_url": "https://www.reddit.com/r/mechanics/comments/188tw37/non_insurance_seller_on_iaai_2023_model_x/",
@@ -16229,7 +17348,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001045",
+      "id": "rvw-001119",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/188cvq4/how_to_get_a_professional_to_inspect_a_rebuilt/kbjzmrx/",
@@ -16244,7 +17363,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001046",
+      "id": "rvw-001120",
       "source_website": "reddit.com",
       "source_label": "Reddit r/prius",
       "source_url": "https://www.reddit.com/r/prius/comments/1843oui/wrecked_2023_prius_prime/kbhpnyz/",
@@ -16254,12 +17373,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "negative",
       "review_text": "Notice why I said it was likely going to be parted out....What do you think happens to totaled cars after they're sent to the salvage yard, they get auctioned and the new owner can do whatever with it.... The people buying salvage lots at Copart, IAAI, and Manheim aren't the same people buying new Priuses with warranties.",
       "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
     },
     {
-      "id": "rvw-001047",
+      "id": "rvw-001121",
       "source_website": "reddit.com",
       "source_label": "Reddit r/LifeProTips",
       "source_url": "https://www.reddit.com/r/LifeProTips/comments/187wjjq/lpt_stay_away_from_geico_and_allstate_for_vehicle/kbhyzsu/",
@@ -16274,7 +17393,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001048",
+      "id": "rvw-001122",
       "source_website": "reddit.com",
       "source_label": "Reddit r/mechanics",
       "source_url": "https://www.reddit.com/r/mechanics/comments/tebzlj/whats_yalls_experience_with_iaai_auctions/kbeprdr/",
@@ -16289,7 +17408,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001049",
+      "id": "rvw-001123",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/187btjq/efficient_iaai_shipping_to_qatar_by_best_4/",
@@ -16304,7 +17423,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-001050",
+      "id": "rvw-001124",
       "source_website": "reddit.com",
       "source_label": "Reddit r/racing",
       "source_url": "https://www.reddit.com/r/racing/comments/186f2zu/enduro_racers_how_much_does_it_cost_to_race_4/kbbtsck/",
@@ -16319,7 +17438,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001051",
+      "id": "rvw-001125",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AmazonFlexDrivers",
       "source_url": "https://www.reddit.com/r/AmazonFlexDrivers/comments/185ni7d/bots_are_insane/kb5d3we/",
@@ -16334,7 +17453,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001052",
+      "id": "rvw-001126",
       "source_website": "reddit.com",
       "source_label": "Reddit r/USAA",
       "source_url": "https://www.reddit.com/r/USAA/comments/185ex6h/looking_to_buy_a_theftrecovered_vehicle_from_usaa/kb22jr6/",
@@ -16349,7 +17468,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Unable to Bid"
     },
     {
-      "id": "rvw-001053",
+      "id": "rvw-001127",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Autobody",
       "source_url": "https://www.reddit.com/r/Autobody/comments/184rune/insurance_wants_to_repair_and_not_total_out_lol/kaxdsko/",
@@ -16364,7 +17483,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001054",
+      "id": "rvw-001128",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Ioniq6",
       "source_url": "https://www.reddit.com/r/Ioniq6/comments/183z3r4/am_i_screwed/kavmnlk/",
@@ -16379,37 +17498,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001055",
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/motorcycle",
-      "source_url": "https://www.reddit.com/r/motorcycle/comments/1849n3o/2002_honda_vf750_for_15/kau9vhm/",
-      "author": "Arman4ik1986",
-      "review_date": "2023-11-26",
-      "rating": null,
-      "sentiment": "positive",
-      "review_text": "My friend is trying to sell his Shadow 400 for 4k,but the best he was offered is around 3k. Also I live close to Siberia and the season is short, so not a lot of bike life happening here. BTW there's a 2022 iron 883 on sale at iaai with one cylinder missing for 1450$, if I sell this one later, I'd probably go for something like this",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
-    },
-    {
-      "id": "rvw-001056",
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/snowrunner",
-      "source_url": "https://www.reddit.com/r/snowrunner/comments/180s375/continuing_with_snowrunner_easter_eggs/ka7zfip/",
-      "author": "EvilTodd1970",
-      "review_date": "2023-11-21",
-      "rating": null,
-      "sentiment": "positive",
-      "review_text": "The likelihood of any 8-digit number appearing on the internet is probably 100%. Here are the first five distinct results when I google \"37232719\": [https://carsfromwest.com/en/lot/iaai-37232719-2017-ford-explorer-xlt](https://carsfromwest.com/en/lot/iaai-37232719-2017-ford-explorer-xlt) [https://www.vestiairecollective.com/women-clothing/coats/burberry/grey-wool-burberry-coat-37232719.shtml](https://www.vestiairecollective.com/women-clothing/coats/burberry/grey-wool-burberry-coat-37232719.shtml) [https://www.bedbathandbeyond.com/Sports-Toys/Texas-A-M-Corpus-Christi-Islanders-Solid-Wood-2x3-Cornhole-Set/37232719/product.html](https://www.bedbathandbeyond.com/Sports-Toys/Texas-A-M-Corpus-Christi-Islanders-Solid-Wood-2x3-Cornhole-Set/37232719/product.html) [https://pubmed.ncbi.nlm.nih.gov/37232719/](https://pubmed.ncbi.nlm.nih.gov/37232719/) [https://classify.oclc.org/classify2/ClassifyDemo?wi=37232719](https://classify.oclc.org/classify2/ClassifyDemo?wi=37232719) There are thousands more.",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
-    },
-    {
-      "id": "rvw-001057",
+      "id": "rvw-001129",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=15#0654_88276839_20900058",
@@ -16424,7 +17513,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-001058",
+      "id": "rvw-001130",
       "source_website": "reddit.com",
       "source_label": "Reddit r/teslamotors",
       "source_url": "https://www.reddit.com/r/teslamotors/comments/17yxgjb/the_reincarnation_of_totaled_teslasin_ukraine/k9wn3g2/",
@@ -16439,7 +17528,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001059",
+      "id": "rvw-001131",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/17yai1q/is_it_reasonable_or_am_i_too_naive/k9s5eqw/",
@@ -16454,7 +17543,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001060",
+      "id": "rvw-001132",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/17yai1q/is_it_reasonable_or_am_i_too_naive/",
@@ -16469,7 +17558,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001061",
+      "id": "rvw-001133",
       "source_website": "reddit.com",
       "source_label": "Reddit r/burlington",
       "source_url": "https://www.reddit.com/r/burlington/comments/17xktmh/winter_arts_market/",
@@ -16484,7 +17573,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001062",
+      "id": "rvw-001134",
       "source_website": "reddit.com",
       "source_label": "Reddit r/WebWealthUniversity",
       "source_url": "https://www.reddit.com/r/WebWealthUniversity/comments/17wtcta/how_to_make_money_selling_cars_without_investment/",
@@ -16499,7 +17588,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001063",
+      "id": "rvw-001135",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Miata",
       "source_url": "https://www.reddit.com/r/Miata/comments/17w17os/a_total_steal_at_1k/k9ewbcu/",
@@ -16514,7 +17603,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001064",
+      "id": "rvw-001136",
       "source_website": "reddit.com",
       "source_label": "Reddit r/personalfinance",
       "source_url": "https://www.reddit.com/r/personalfinance/comments/17v0t4j/cosigned_on_sisters_car_that_she_had_voluntarily/k99m17p/",
@@ -16529,7 +17618,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001065",
+      "id": "rvw-001137",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Autobody",
       "source_url": "https://www.reddit.com/r/Autobody/comments/17uqj56/think_this_is_totaled/k95p265/",
@@ -16544,7 +17633,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-001066",
+      "id": "rvw-001138",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=7#0654_88276839_482700",
@@ -16559,7 +17648,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001067",
+      "id": "rvw-001139",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=16#0654_88276839_20854044",
@@ -16574,7 +17663,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001068",
+      "id": "rvw-001140",
       "source_website": "reddit.com",
       "source_label": "Reddit r/kia",
       "source_url": "https://www.reddit.com/r/kia/comments/17tiqg5/is_it_a_way_to_prevent_it/k8xdo5h/",
@@ -16589,7 +17678,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001069",
+      "id": "rvw-001141",
       "source_website": "reddit.com",
       "source_label": "Reddit r/BmwTech",
       "source_url": "https://www.reddit.com/r/BmwTech/comments/17spfcb/where_to_buy_a_project_m_car/k8sm66s/",
@@ -16604,7 +17693,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001070",
+      "id": "rvw-001142",
       "source_website": "reddit.com",
       "source_label": "Reddit r/TeslaModel3",
       "source_url": "https://www.reddit.com/r/TeslaModel3/comments/17s9a10/looking_to_replace_the_entire_interior_of_my_car/k8owqkk/",
@@ -16619,7 +17708,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001071",
+      "id": "rvw-001143",
       "source_website": "reddit.com",
       "source_label": "Reddit r/TeslaModel3",
       "source_url": "https://www.reddit.com/r/TeslaModel3/comments/17s9a10/looking_to_replace_the_entire_interior_of_my_car/k8oworw/",
@@ -16634,7 +17723,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001072",
+      "id": "rvw-001144",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=16#0654_88276839_20853339",
@@ -16649,7 +17738,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Title Not Received"
     },
     {
-      "id": "rvw-001073",
+      "id": "rvw-001145",
       "source_website": "reddit.com",
       "source_label": "Reddit r/F150Lightning",
       "source_url": "https://www.reddit.com/r/F150Lightning/comments/17esmfi/bye_bye_lightning_thanks_for_saving_our_lives_we/k8j4024/",
@@ -16664,7 +17753,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-001074",
+      "id": "rvw-001146",
       "source_website": "reddit.com",
       "source_label": "Reddit r/F150Lightning",
       "source_url": "https://www.reddit.com/r/F150Lightning/comments/17esmfi/bye_bye_lightning_thanks_for_saving_our_lives_we/k8j3xch/",
@@ -16679,7 +17768,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-001075",
+      "id": "rvw-001147",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=16#0654_88276839_20846808",
@@ -16694,7 +17783,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001076",
+      "id": "rvw-001148",
       "source_website": "reddit.com",
       "source_label": "Reddit r/GR86",
       "source_url": "https://www.reddit.com/r/GR86/comments/17q1a0p/got_into_a_tiny_accident/k8bagpc/",
@@ -16709,7 +17798,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001077",
+      "id": "rvw-001149",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Rivian",
       "source_url": "https://www.reddit.com/r/Rivian/comments/17qx6af/r1s_for_auction/",
@@ -16724,7 +17813,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-001078",
+      "id": "rvw-001150",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/17pobps/efficient_iaai_trucking_services_in_nigeria_by/",
@@ -16739,7 +17828,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001079",
+      "id": "rvw-001151",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UnethicalLifeProTips",
       "source_url": "https://www.reddit.com/r/UnethicalLifeProTips/comments/17oljhp/ulpt_request_i_think_i_just_bought_a_flood_car/k85y3zd/",
@@ -16754,22 +17843,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001080",
-      "source_website": "bbb.org",
-      "source_label": "BBB Customer Reviews",
-      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=8#0654_88276839_481181",
-      "author": "Tijuana S",
-      "review_date": "2023-11-07",
-      "rating": 1.0,
-      "sentiment": "negative",
-      "review_text": "I applied with this company. Got an offer letter, signed and put in my 2 weeks notice at my current job. A week before hire date, I received a letter telling me they are rescinding their offer due to a change in business circumstances what a waste! Just know I wont be ever interested in a company that operates as such. They his is poor value and inconsideration of my livelihood. The word is being spreaded very quickly!",
-      "geo_validation": "bbb_us_business",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
-    },
-    {
-      "id": "rvw-001081",
+      "id": "rvw-001152",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Miata",
       "source_url": "https://www.reddit.com/r/Miata/comments/17pawhd/anyone_know_what_happened/k84nncs/",
@@ -16784,7 +17858,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001082",
+      "id": "rvw-001153",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=16#0654_88276839_20831634",
@@ -16799,7 +17873,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001083",
+      "id": "rvw-001154",
       "source_website": "reddit.com",
       "source_label": "Reddit r/JeepWrangler",
       "source_url": "https://www.reddit.com/r/JeepWrangler/comments/17nkx20/should_i_purchase/k7sqz84/",
@@ -16814,7 +17888,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-001084",
+      "id": "rvw-001155",
       "source_website": "reddit.com",
       "source_label": "Reddit r/personalfinance",
       "source_url": "https://www.reddit.com/r/personalfinance/comments/17n62zm/auto_insurance_company_sent_my_car_to_auction/k7q71r1/",
@@ -16829,7 +17903,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001085",
+      "id": "rvw-001156",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/17nhelx/22_9k_miles_ford_edge_titanium_awd_for_30k_with/",
@@ -16844,7 +17918,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001086",
+      "id": "rvw-001157",
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/personalfinance",
+      "source_url": "https://www.reddit.com/r/personalfinance/comments/17n62zm/auto_insurance_company_sent_my_car_to_auction/k7qc5dd/",
+      "author": "Intelligent_Page3630",
+      "review_date": "2023-11-04",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Your insurance provider had it moved to Copart or IAA because if it is going to be a total loss, the shop won’t keep it there without charging storage. So they move it to a staging yard operated by a salvage company where it won’t be sold until they have completed a settlement for the vehicle. If they have actually sold it without you being provided a settlemt and signing paperwork, that is a serious problem. But that isn’t what it sounds like has happened here. Your provider will have a property damage adjuster complete the inspection, and they will contact you to discuss numbers. Right now total loss volume is high in most places, and it is probably taking them time to get somebody to complete the valuation for your vehicle. Unless it has actually sold at auction (this is different from being taken to a yard managed by a salvage company), donot listen to the people above telling you to call the police, report it stolen. Or file a complaint with your state DOI. You will be wasting your time, and making your adjuster less likely to get back to you quickly. Unless the vehicle has been sold at auction, nothing illegal has happened here. Just continue to follow up with your insurance provider for updates. - sincerely, a property damage adjuster that only handles totaled vehicles at a salvage yard",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Communication Follow-up & Escalation",
+      "tier3": "No Callback / Unresolved Case"
+    },
+    {
+      "id": "rvw-001158",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Mustang",
       "source_url": "https://www.reddit.com/r/Mustang/comments/17mcut1/someone_let_me_know_if_im_making_a_mistake_on/k7oxcs5/",
@@ -16859,7 +17948,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001087",
+      "id": "rvw-001159",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/17lvmye/question_on_rebuilt_titles_wa_state/k7h2t8f/",
@@ -16874,7 +17963,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001088",
+      "id": "rvw-001160",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=8#0654_88276839_479118",
@@ -16889,7 +17978,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-001089",
+      "id": "rvw-001161",
       "source_website": "reddit.com",
       "source_label": "Reddit r/turo",
       "source_url": "https://www.reddit.com/r/turo/comments/17ljp2q/my_guest_was_involved_in_a_car_accident_turo_is/k7fqnah/",
@@ -16904,7 +17993,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001090",
+      "id": "rvw-001162",
       "source_website": "reddit.com",
       "source_label": "Reddit r/BigIsland",
       "source_url": "https://www.reddit.com/r/BigIsland/comments/17l4n9k/auctions/k7bygvj/",
@@ -16919,7 +18008,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-001091",
+      "id": "rvw-001163",
       "source_website": "reddit.com",
       "source_label": "Reddit r/make_money_online_vip",
       "source_url": "https://www.reddit.com/r/make_money_online_vip/comments/17kjwnt/how_to_make_money_selling_cars_without_investment/",
@@ -16934,7 +18023,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Deposit Refund Status"
     },
     {
-      "id": "rvw-001092",
+      "id": "rvw-001164",
       "source_website": "reddit.com",
       "source_label": "Reddit r/make_money_online_vip",
       "source_url": "https://www.reddit.com/r/make_money_online_vip/comments/17kisun/how_to_make_money_selling_cars_with_no_money/",
@@ -16949,7 +18038,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Deposit Refund Status"
     },
     {
-      "id": "rvw-001093",
+      "id": "rvw-001165",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=8#0654_88276839_478570",
@@ -16964,7 +18053,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001094",
+      "id": "rvw-001166",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Challenger",
       "source_url": "https://www.reddit.com/r/Challenger/comments/17hho7m/can_i_just_replace_the_exhaust_tip_or_am_i_fucked/k6q9ylw/",
@@ -16979,7 +18068,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001095",
+      "id": "rvw-001167",
       "source_website": "reddit.com",
       "source_label": "Reddit r/leaf",
       "source_url": "https://www.reddit.com/r/leaf/comments/17htcut/what_do_you_think_about_this_leaf_damage/k6psbiu/",
@@ -16994,7 +18083,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001096",
+      "id": "rvw-001168",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/17gtueu/questions_about_iaai_clearvin_report/k6isdgk/",
@@ -17009,7 +18098,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001097",
+      "id": "rvw-001169",
       "source_website": "reddit.com",
       "source_label": "Reddit r/DubaiCentral",
       "source_url": "https://www.reddit.com/r/DubaiCentral/comments/17bp9iw/starting_a_used_car_resell_business_in_dubai/k6i0fmr/",
@@ -17024,7 +18113,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001098",
+      "id": "rvw-001170",
       "source_website": "reddit.com",
       "source_label": "Reddit r/DubaiCentral",
       "source_url": "https://www.reddit.com/r/DubaiCentral/comments/17bp9iw/starting_a_used_car_resell_business_in_dubai/k6i0f1r/",
@@ -17039,7 +18128,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001099",
+      "id": "rvw-001171",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/17gkuts/most_reliable_year_for_subaru_wrx_stis/k6hd3pm/",
@@ -17054,7 +18143,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-001100",
+      "id": "rvw-001172",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/17gtz0u/question_about_clearvin_report_iaai/",
@@ -17069,7 +18158,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001101",
+      "id": "rvw-001173",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/17gtueu/questions_about_iaai_clearvin_report/",
@@ -17084,7 +18173,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001102",
+      "id": "rvw-001174",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=16#0654_88276839_20778381",
@@ -17099,7 +18188,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-001103",
+      "id": "rvw-001175",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=16#0654_88276839_20781492",
@@ -17114,7 +18203,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Long Hold Time / Hard to Reach Support"
     },
     {
-      "id": "rvw-001104",
+      "id": "rvw-001176",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/17f3xrg/tree_fell_on_car_not_covered_by_insurance_what_to/k67p1n6/",
@@ -17129,7 +18218,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001105",
+      "id": "rvw-001177",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/17fq1q8/ohio_auto_insurance_keeping_totaled_vehicle_iaa/",
@@ -17144,7 +18233,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001106",
+      "id": "rvw-001178",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AutoTransport",
       "source_url": "https://www.reddit.com/r/AutoTransport/comments/17es5x5/gpautologistics/",
@@ -17159,7 +18248,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001107",
+      "id": "rvw-001179",
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/tdi",
+      "source_url": "https://www.reddit.com/r/tdi/comments/17e7nw7/wth/k62e5hy/",
+      "author": "dontworriaboutit",
+      "review_date": "2023-10-23",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "I can share my recent experience. I had a car get stolen that I owed about $7k, recovered, it was then sent to that same company for holding and appraisal. I declined to sign the paperwork that they emailed that would authorize them to legally transfer the title - especially since insurance was still being slow. After IAA / insurance finally figured out the value and payoff, I agreed to the settlement, but then I exercised first right of refusal (they won't tell you you can do this) to purchase my vehicle back for the salvage value.... $700. They just subtracted it from the payout. Got the car back the next day, but the bank sent the lien release to IAA instead of me, said IAA has to do it. Called IAA, they said oh no, you have to do it. Called back bank... luckily got the same guy and he was like OK we'll send it to you I guess. So I'm checking the mail for a week and what shows up from IAA? - My title, shortly followed by my lien release from the bank. Not sure how they legally were able to do it since I made an effort to never give them that power. All that took about 4 weeks from the day of recovery. After about the 2nd day it appeared on their lot (presumably similar to yours) listed as upcoming auction. Even more interesting is how they messed up the valuation and repair estimates. I was able to prove they did it wrong with their own paperwork, the value suddenly doubled and now the value/repair ratio was below the threshold that required the title be salvaged. Spent about $1000 in parts to bring it back so it kind of worked out. This is probably a similar scenario where if the car is totaled - undrivable, insurance will offer a settlement that's probably what IAA appraised the value before the accident. You can agree or get your car back as-is. If you agree, the car isn't yours anymore, including anything bolted to it, but you likely still could buy it back for salvage on the same phone call. Still check with a lawyer first if you have questions.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "id": "rvw-001180",
       "source_website": "reddit.com",
       "source_label": "Reddit r/USAA",
       "source_url": "https://www.reddit.com/r/USAA/comments/17e7p4w/what_do_i_do/k620lyh/",
@@ -17174,7 +18278,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-001108",
+      "id": "rvw-001181",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Volkswagen",
       "source_url": "https://www.reddit.com/r/Volkswagen/comments/17e7qa4/what_do_i_do/",
@@ -17189,7 +18293,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001109",
+      "id": "rvw-001182",
       "source_website": "reddit.com",
       "source_label": "Reddit r/legaladvice",
       "source_url": "https://www.reddit.com/r/legaladvice/comments/17e7pi0/what_do_i_do/",
@@ -17204,7 +18308,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001110",
+      "id": "rvw-001183",
       "source_website": "reddit.com",
       "source_label": "Reddit r/USAA",
       "source_url": "https://www.reddit.com/r/USAA/comments/17e7p4w/what_do_i_do/",
@@ -17219,7 +18323,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001111",
+      "id": "rvw-001184",
       "source_website": "reddit.com",
       "source_label": "Reddit r/tdi",
       "source_url": "https://www.reddit.com/r/tdi/comments/17e7nw7/wth/",
@@ -17234,7 +18338,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001112",
+      "id": "rvw-001185",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=pl&gl=us",
@@ -17249,7 +18353,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001113",
+      "id": "rvw-001186",
       "source_website": "reddit.com",
       "source_label": "Reddit r/G37",
       "source_url": "https://www.reddit.com/r/G37/comments/17ckdd9/how_much_would_you_pay/k5s4wie/",
@@ -17264,7 +18368,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001114",
+      "id": "rvw-001187",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=8#0654_88276839_476810",
@@ -17279,7 +18383,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001115",
+      "id": "rvw-001188",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Advice",
       "source_url": "https://www.reddit.com/r/Advice/comments/17ch2z0/brain_storm_with_me_please_im_begging/k5q5g4i/",
@@ -17294,7 +18398,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001116",
+      "id": "rvw-001189",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Car_Insurance_Help",
       "source_url": "https://www.reddit.com/r/Car_Insurance_Help/comments/17c15zc/my_paid_off_car_was_totaled_in_a_flood_on/",
@@ -17309,7 +18413,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Deposit Refund Status"
     },
     {
-      "id": "rvw-001117",
+      "id": "rvw-001190",
       "source_website": "reddit.com",
       "source_label": "Reddit r/rva",
       "source_url": "https://www.reddit.com/r/rva/comments/17b3fzi/what_is_this_on_295/k5hfl71/",
@@ -17324,7 +18428,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-001118",
+      "id": "rvw-001191",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/17bhvn1/efficient_iaai_shipping_to_qatar_by_best_4/",
@@ -17339,7 +18443,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001119",
+      "id": "rvw-001192",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/17bs2pf/b85_s4_vs_s5/",
@@ -17354,7 +18458,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001120",
+      "id": "rvw-001193",
       "source_website": "reddit.com",
       "source_label": "Reddit r/firePE",
       "source_url": "https://www.reddit.com/r/firePE/comments/17apkfu/continuing_education_in_fire_safety/k5e9mdu/",
@@ -17369,7 +18473,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001121",
+      "id": "rvw-001194",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=16#0654_88276839_20746588",
@@ -17384,7 +18488,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001122",
+      "id": "rvw-001195",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Flipping",
       "source_url": "https://www.reddit.com/r/Flipping/comments/179n0n8/car_flipping/",
@@ -17399,7 +18503,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001123",
+      "id": "rvw-001196",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AmazonFlexDrivers",
       "source_url": "https://www.reddit.com/r/AmazonFlexDrivers/comments/178iv03/whats_everyone_driving/k54nh8j/",
@@ -17414,22 +18518,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001124",
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/infiniti",
-      "source_url": "https://www.reddit.com/r/infiniti/comments/176hzw7/bought_my_son_his_1st_car/k51vhln/",
-      "author": "Electrical_Secret_11",
-      "review_date": "2023-10-16",
-      "rating": null,
-      "sentiment": "positive",
-      "review_text": "Lmfaoooo somebody is spoiled. Please explain as to why some 18yr old needs a 400hp car as their first car? I’ve gotten into plenty of trouble with my hand-me-down Camry from 03. Speeding, snow drifting, hell I even got a ticket for an air freshener lmfao. Can’t wait to see this thing in either a take over meet, street racing, or in a copart/iaai salvage yard. Buddy of mine had a 600hp 335i he built during HS and ended up wrapping it around a pole. Let’s hope you’re a good parent and teach him some good stern driving etiquette cuz I see that crowd muncher posted up in the back. Good luck🫡",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
-    },
-    {
-      "id": "rvw-001125",
+      "id": "rvw-001197",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Ninja400",
       "source_url": "https://www.reddit.com/r/Ninja400/comments/178ibsk/what_are_the_odds_my_bike_will_be_totaled/k50d6gq/",
@@ -17444,7 +18533,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001126",
+      "id": "rvw-001198",
       "source_website": "reddit.com",
       "source_label": "Reddit r/turo",
       "source_url": "https://www.reddit.com/r/turo/comments/175zydk/totaled_vehicle/k4lesqo/",
@@ -17459,7 +18548,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Title Not Received"
     },
     {
-      "id": "rvw-001127",
+      "id": "rvw-001199",
       "source_website": "reddit.com",
       "source_label": "Reddit r/projectcar",
       "source_url": "https://www.reddit.com/r/projectcar/comments/176kzar/looking_for_a_project_truck_on_the_easier_side/",
@@ -17474,7 +18563,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001128",
+      "id": "rvw-001200",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Autobody",
       "source_url": "https://www.reddit.com/r/Autobody/comments/174rpez/totaled/k4fvf7o/",
@@ -17489,7 +18578,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-001129",
+      "id": "rvw-001201",
       "source_website": "reddit.com",
       "source_label": "Reddit r/electricvehicles",
       "source_url": "https://www.reddit.com/r/electricvehicles/comments/175a3ih/us_auto_salvage_industry_braced_for_impending/k4fp780/",
@@ -17499,12 +18588,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "positive",
       "review_text": "? &amp;#x200B; &gt;**Since the bulk of the value of an EV was contained in the battery**, it “leads to potential different market dynamics” in recycling them, said John Kett, a former chief executive of IAA. Auction houses might sell batteries separately from old cars for use in new purposes like powering appliances. &amp;#x200B; &gt;“This is not a play for 2023 or even 2025 for us,” he said. **“This is a 10- to 15-year play . . .** The combination of their ability and process technology on the one hand, with our ability to source cores and batteries on the other hand — it could be a great partnership.”",
       "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001130",
+      "id": "rvw-001202",
       "source_website": "pissedconsumer.com",
       "source_label": "PissedConsumer",
       "source_url": "https://insurance-auto-auctions.pissedconsumer.com/review.html?page=1#review-5203649",
@@ -17519,7 +18608,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001131",
+      "id": "rvw-001203",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carvana",
       "source_url": "https://www.reddit.com/r/carvana/comments/174853v/moving_to_a_diff_state/k4cjl0c/",
@@ -17534,7 +18623,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Title Not Received"
     },
     {
-      "id": "rvw-001132",
+      "id": "rvw-001204",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Porsche_Cayman",
       "source_url": "https://www.reddit.com/r/Porsche_Cayman/comments/171fqje/cayman_repair/k45pvst/",
@@ -17549,7 +18638,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001133",
+      "id": "rvw-001205",
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/prius",
+      "source_url": "https://www.reddit.com/r/prius/comments/172401d/update_got_him_to_wiggle_down_the_price_to_7500/k42chge/",
+      "author": "Neo1881",
+      "review_date": "2023-10-09",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "I have a sister in law in MI and I am helping her find a replacement vehicle. Most of the cars in MI allow the public to bid on them. They have sites in Flint, Grand Rapids and Detroit. Might be worth it to have someone drive you out for the $$ you save. You do need to buy and annual membership to [iaai.com](https://iaai.com) and thats part of the cost. I've been flying into Phoenix, about a $40 flight and $20 Uber ride to the yard.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-001206",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=16#0654_88276839_20712767",
@@ -17564,14 +18668,14 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001134",
+      "id": "rvw-001207",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarguys",
       "source_url": "https://www.reddit.com/r/askcarguys/comments/171tavs/trustworthy_car/k3xbn8r/",
       "author": "aminy23",
       "review_date": "2023-10-08",
       "rating": null,
-      "sentiment": "positive",
+      "sentiment": "negative",
       "review_text": "That's more or less the exact business I'm in. In the US we have a few main dealer vehicle auctions like IAAI, Copart, and Adesa. There are many groups that sell these cars in the auctions. The big 3 are probably: * insurance pay offs - these can be accidents or recovered stolen cars * Bank/corporate liquidation - end of lease, repossessions, old rental cars, etc * Dealer trade ins An example of could be: 1. Your car gets stolen, and the insurance pays you for it. A month later your car is found. Since the insurance paid it, they will sell it in auction. 2. A company has 200 cars, and they want to buy a new fleet of cars. All of these cars might end up in auction. 3. You trade in an old Ford at a Honda dealer. They accept cash, but maybe they don't want it on their lot. Now many people have different strategies for auctions. I used to be a local car dealer who's go to an auction in my town, by cars, and sell them locally. But when the pandemic hit, the big dealers couldn't get new inventory. As a result they took over and dominated. If I bought a $6,000 car, and sold it for $8,000 cash - they'd buy that same car for $9,000 and flip it for $12,000-$15,000. They would have access to big banks which can then finance or lease those cars. This meant that I had to search across the country for good deals. Eventually I formed a new routine, where I try to find cities in the US that tend to have good deals. Then I buy enough cars to fill a shipping container, and I have it shipped to my city. I can't afford a big lot, so I don't actually have space for all those cars. I take them to mechanics to get inspected, smogged, and repaired as needed. I then flip the cars to other local dealers who are looking for inventory. They pick them up straight from my mechanics. This has been cheaper and easier for me, and I'm also now legally classified as a wholesaler. As a wholesaler, I can only sell to other dealers, I cannot sell to consumers directly. This saves me a lot of hassle with needing an office, needing a lot, giving test drives, having customers flake, registering vehicles, printing license plates, and even dealing with the taxes of each car. Dealers often sell or trade to other dealers. Often it's simply about inventory - someone might have too many cars that they can't store them, someone else might really need cars to sell. You can try googling the vin number, or searching on the websites of the main auctions I mentioned earlier. You might be able to find out a lot more details about the car. Under California law, you have the right to have a mechanic inspect the car. The car must pass smog inspection to be sold to a customer. A car cannot pass smog with the check engine light on.",
       "geo_validation": "mixed_source_ok",
       "tier1": "Lot Condition, Listing Status and related",
@@ -17579,7 +18683,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-001135",
+      "id": "rvw-001208",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/6520a3b7ae1ecadb82f5dd99",
@@ -17594,7 +18698,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001136",
+      "id": "rvw-001209",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Chevy",
       "source_url": "https://www.reddit.com/r/Chevy/comments/171bubd/my_impala_ss_just_got_towed_away_after_being/k3swq7h/",
@@ -17609,7 +18713,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-001137",
+      "id": "rvw-001210",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=16#0654_88276839_20696218",
@@ -17624,7 +18728,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-001138",
+      "id": "rvw-001211",
       "source_website": "reddit.com",
       "source_label": "Reddit r/prius",
       "source_url": "https://www.reddit.com/r/prius/comments/16x5vaw/60_month_financing_at_150_per_month_at_11_on_2007/k35l7zg/",
@@ -17639,7 +18743,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001139",
+      "id": "rvw-001212",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarguys",
       "source_url": "https://www.reddit.com/r/askcarguys/comments/16x6xw6/should_i_buy_a_salvage_car_from_craigslist/k3486x2/",
@@ -17654,7 +18758,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001140",
+      "id": "rvw-001213",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=17#0654_88276839_20685661",
@@ -17669,7 +18773,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001141",
+      "id": "rvw-001214",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Tucson",
       "source_url": "https://www.reddit.com/r/Tucson/comments/16vxon7/where_to_buy_a_decent_car_outright_craigslist/k2xilo1/",
@@ -17684,22 +18788,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001142",
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/fireinvestigation",
-      "source_url": "https://www.reddit.com/r/fireinvestigation/comments/16ujmo4/international_job_opportunities/k2mizps/",
-      "author": "BigDBigFriend",
-      "review_date": "2023-09-28",
-      "rating": null,
+      "id": "rvw-001215",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=10419771279",
+      "author": "that1guyBry",
+      "review_date": "2023-09-29",
+      "rating": 4,
       "sentiment": "positive",
-      "review_text": "I have looked around on job opportunity sites and not found anything in English speaking countries. I know there’s a lot of differences construction wise but I’d be more than happy to learn. I’m gonna talk to some friends at my chapter of the IAAI and see if they have any ideas.",
-      "geo_validation": "mixed_source_ok",
+      "review_text": "Not bad, but not great either. My biggest and only issue worth noting is that I can never get a transport quote over the app. Only the desktop version. Devs, could you please fix this?",
+      "geo_validation": "apple_us_store",
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001143",
+      "id": "rvw-001216",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Car_Insurance_Help",
       "source_url": "https://www.reddit.com/r/Car_Insurance_Help/comments/16u0yex/insurance_auto_auctions_on_payout_summary/",
@@ -17714,7 +18818,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-001144",
+      "id": "rvw-001217",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=10413503488",
+      "author": "eldridgetowing",
+      "review_date": "2023-09-27",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Sound for dispatch. Can you please put a sound on the app so when we’re dispatch vehicles it goes off because some of us do not look at our phones 24/7When I have my maps up if something comes in through the app it does not showing please make this friendlier for us",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001218",
       "source_website": "reddit.com",
       "source_label": "Reddit r/prius",
       "source_url": "https://www.reddit.com/r/prius/comments/16s4axl/damage_to_my_prius_from_a_tx_hail_storm_last/k2abxo7/",
@@ -17729,7 +18848,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001145",
+      "id": "rvw-001219",
       "source_website": "reddit.com",
       "source_label": "Reddit r/CarAuctions",
       "source_url": "https://www.reddit.com/r/CarAuctions/comments/16sfu2t/facebook_group_offering_auction_access_for_a_fee/",
@@ -17744,7 +18863,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001146",
+      "id": "rvw-001220",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=10410516811",
+      "author": "Dodge Guy",
+      "review_date": "2023-09-26",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "Needs improvement. Search options are complicated and repetitive. Poor layout. For such a large auction company it’s by far the worst auction app out there.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001221",
       "source_website": "reddit.com",
       "source_label": "Reddit r/prius",
       "source_url": "https://www.reddit.com/r/prius/comments/16rcjiw/2015_prius_with_233k_miles_deal_or_no_for_5900/k24pndv/",
@@ -17754,12 +18888,27 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "positive",
       "review_text": "Look around some more. I bet you could find a nice 2010-15 Gen 3 with 150k or less. Maybe not at that price, but certainly would last longer. I've bought 3 cars at the insurance auction this year and most at 30-40% or blue book and 2 of them were run and drive off the lot. The last run required some work, but got it running to drive 300 mi home that same day. [www.iaai.com](https://www.iaai.com)",
       "geo_validation": "mixed_source_ok",
-      "tier1": "Membership / Licensing / Fees & Bidding Policies",
-      "tier2": "Bidding Process, Rules and Fees",
-      "tier3": "How to Bid (First Time)"
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001147",
+      "id": "rvw-001222",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=10393531711",
+      "author": "السماوي١",
+      "review_date": "2023-09-21",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "Not user friendly. Need face recognition. Old style? No update on pick up status? Should be able to see when and who is going to pick te vehicle.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001223",
       "source_website": "reddit.com",
       "source_label": "Reddit r/mechanics",
       "source_url": "https://www.reddit.com/r/mechanics/comments/tebzlj/whats_yalls_experience_with_iaai_auctions/k1gheeu/",
@@ -17769,12 +18918,72 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "positive",
       "review_text": "I fell for that trick before too. I have bought three from copart. Two from insurance companies have been great and one from a dealer that is falling apart. Runs good, so we will keep rolling with it, but nobody will ever buy it from us. Currently looking at buying a truck from IAAI that is a storage lien, which means that the storage company took ownership. I think this happened when they were trying to negotiate with the insurance company. Should be a good bet as well like insurance.",
       "geo_validation": "mixed_source_ok",
+      "tier1": "Title, Ownership, POA and Documentation",
+      "tier2": "Power of Attorney (POA) Handling",
+      "tier3": "POA Requirements Clarification"
+    },
+    {
+      "id": "rvw-001224",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=10388521580",
+      "author": "MR. Fam Guy",
+      "review_date": "2023-09-20",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Impossible to search. They should try copart app to understand what I’m talking about, to many things wrong with IAA app.",
+      "geo_validation": "apple_us_store",
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001148",
+      "id": "rvw-001225",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=10386620172",
+      "author": "Price disclosure",
+      "review_date": "2023-09-19",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Auto Info. Overall the app is good for what we need it to do, but like to see what vehicles sold for once the auction ended, that would be very helpful for buyers.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience"
+    },
+    {
+      "id": "rvw-001226",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=10385289051",
+      "author": "falebabs",
+      "review_date": "2023-09-19",
+      "rating": 3,
+      "sentiment": "positive",
+      "review_text": "App not really perfect. App always froze up",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001227",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=10384851706",
+      "author": "D i a nee",
+      "review_date": "2023-09-19",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "👎🏻👎🏻. Going from bad to worst including the customer service. Copart getting better and you guys going worst.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "id": "rvw-001228",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/65088fda5c1d07a8f2a3b12c",
@@ -17789,7 +18998,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001149",
+      "id": "rvw-001229",
       "source_website": "reddit.com",
       "source_label": "Reddit r/seasianarchaeology",
       "source_url": "https://www.reddit.com/r/seasianarchaeology/comments/16lj86p/iaai_asks_national_museum_to_collect_data_on/",
@@ -17804,7 +19013,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001150",
+      "id": "rvw-001230",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=17#0654_88276839_20621886",
@@ -17819,22 +19028,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Selling/ Relisting vehicle or Parts purchase"
     },
     {
-      "id": "rvw-001151",
+      "id": "rvw-001231",
       "source_website": "apps.apple.com",
       "source_label": "Apple App Store (992957183, us)",
-      "source_url": "https://apps.apple.com/us/app/id992957183?see-all=reviews&platform=iphone&reviewId=10370732432",
+      "source_url": "https://itunes.apple.com/us/review?id=992957183&type=Purple%20Software&reviewId=10370732432",
       "author": "purplepeter18",
       "review_date": "2023-09-15",
       "rating": 1,
       "sentiment": "negative",
-      "review_text": "Every update it gets worse. Every update they do is like the tower is doing more and more of IAA job of checking cars in, asks dumb questions, now we have to take pictures and do inventory, why not just pictures only, and if I take the picture and hit approve, why does it basically ask me if I’m sure of the picture I took, way to time consuming and as a result makes the towers work slower and not be able to get as many cars done in a day. Worse now then ever after more updates more work for us to do, making us retake pictures cause there is a blur is outrageous we are outside with sun rain snow reflecting off the car",
+      "review_text": "Every update it gets worse. Every update they do is like the tower is doing more and more of IAA job of checking cars in, asks dumb questions, now we have to take pictures and do inventory, why not just pictures only, and if I take the picture and hit approve, why does it basically ask me if I’m sure of the picture I took, way to time consuming and as a result makes the towers work slower and not be able to get as many cars done in a day. Worse now then ever after more updates more work for us to do, making us retake pictures cause there is a blur is outrageous we are outside with sun rain snow reflecting off the car.",
       "geo_validation": "apple_us_store",
       "tier1": "Vehicle Pickup, Delivery and Scheduling",
       "tier2": "Delivery Coordination & Handoffs",
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-001152",
+      "id": "rvw-001232",
       "source_website": "reddit.com",
       "source_label": "Reddit r/lebanon",
       "source_url": "https://www.reddit.com/r/lebanon/comments/16hk9y6/tips_to_import_a_car_to_lebanon/k0j33jp/",
@@ -17849,7 +19058,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001153",
+      "id": "rvw-001233",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=8#0654_88276839_466247",
@@ -17859,12 +19068,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "positive",
       "review_text": "IAA lies about \"Run and Drive\"!!!Picked up a $8k truck with major transmission problems.No way this truck had moved prior to auction! Lost thousands on this deal!Very crooked business practices!!",
       "geo_validation": "bbb_us_business",
-      "tier1": "Membership / Licensing / Fees & Bidding Policies",
-      "tier2": "Bidding Process, Rules and Fees",
-      "tier3": "How to Bid (First Time)"
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001154",
+      "id": "rvw-001234",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=17#0654_88276839_20601266",
@@ -17879,7 +19088,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-001155",
+      "id": "rvw-001235",
       "source_website": "reddit.com",
       "source_label": "Reddit r/legaladvice",
       "source_url": "https://www.reddit.com/r/legaladvice/comments/16h7is7/car_crash_my_dad_didnt_cause_isnt_paying_us_and/k0c5o0d/",
@@ -17894,7 +19103,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-001156",
+      "id": "rvw-001236",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=17#0654_88276839_20595281",
@@ -17909,7 +19118,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001157",
+      "id": "rvw-001237",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=17#0654_88276839_20594197",
@@ -17924,7 +19133,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-001158",
+      "id": "rvw-001238",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=17#0654_88276839_20588257",
@@ -17939,7 +19148,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001159",
+      "id": "rvw-001239",
       "source_website": "reddit.com",
       "source_label": "Reddit r/USAA",
       "source_url": "https://www.reddit.com/r/USAA/comments/16dvtzg/usaa_statement_to_tdi/",
@@ -17954,7 +19163,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Long Hold Time / Hard to Reach Support"
     },
     {
-      "id": "rvw-001160",
+      "id": "rvw-001240",
       "source_website": "reddit.com",
       "source_label": "Reddit r/poor",
       "source_url": "https://www.reddit.com/r/poor/comments/16bwqxb/how_the_fuck_does_anybody_buy_a_car/jznuo23/",
@@ -17969,22 +19178,37 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001161",
+      "id": "rvw-001241",
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/ThatsInsane",
+      "source_url": "https://www.reddit.com/r/ThatsInsane/comments/16cz8fa/man_sees_car_after_being_stolen_for_one_year/jzmtugb/",
+      "author": "Scizmz",
+      "review_date": "2023-09-08",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "When you accept the insurance check, if you recover the vehicle, then it belongs to the insurance company. At that point the title is usually converted to a salvage title (because of theft) and the car is auctioned off to recover some of what was paid to you. [www.iaai.com](https://www.iaai.com) for many of them.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Title, Ownership, POA and Documentation",
+      "tier2": "Title Delivery & Status",
+      "tier3": "Title Not Received"
+    },
+    {
+      "id": "rvw-001242",
       "source_website": "apps.apple.com",
       "source_label": "Apple App Store (992957183, us)",
-      "source_url": "https://apps.apple.com/us/app/id992957183?see-all=reviews&platform=iphone&reviewId=10344358318",
+      "source_url": "https://itunes.apple.com/us/review?id=992957183&type=Purple%20Software&reviewId=10344358318",
       "author": "Slyfusion",
       "review_date": "2023-09-07",
       "rating": 2,
       "sentiment": "negative",
-      "review_text": "Please stop with the micromanaging!. Please stop with the micromanaging of camera functionality, you’re making the drivers job that much more difficult. The camera blur parameters are ridiculous, everyone’s phone is different, drivers treat their phones different, of course there is blur when the sun is beating down reflecting off the vehicle, I shouldn’t have to retake all my photos because someone felt it necessary to implement such a feature",
+      "review_text": "Please stop with the micromanaging!. Please stop with the micromanaging of camera functionality, you’re making the drivers job that much more difficult. The camera blur parameters are ridiculous, everyone’s phone is different, drivers treat their phones different, of course there is blur when the sun is beating down reflecting off the vehicle, I shouldn’t have to retake all my photos because someone felt it necessary to implement such a feature.",
       "geo_validation": "apple_us_store",
       "tier1": "Vehicle Pickup, Delivery and Scheduling",
       "tier2": "Delivery Coordination & Handoffs",
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-001162",
+      "id": "rvw-001243",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=17#0654_88276839_20565688",
@@ -17999,7 +19223,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-001163",
+      "id": "rvw-001244",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/16af9ou/efficient_iaai_shipping_to_qatar_best_4_shipping/",
@@ -18014,7 +19238,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001164",
+      "id": "rvw-001245",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Vespa",
       "source_url": "https://www.reddit.com/r/Vespa/comments/16a3vuc/just_wanted_to_share_the_wife_and_is_vespas/jz5hdsp/",
@@ -18029,7 +19253,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001165",
+      "id": "rvw-001246",
       "source_website": "reddit.com",
       "source_label": "Reddit r/GMCcanyon",
       "source_url": "https://www.reddit.com/r/GMCcanyon/comments/168g1zn/damage/jywe0qd/",
@@ -18044,7 +19268,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001166",
+      "id": "rvw-001247",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/169adyz/i_would_like_to_buy_a_car_from_the_auction_copart/",
@@ -18059,7 +19283,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001167",
+      "id": "rvw-001248",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Vespa",
       "source_url": "https://www.reddit.com/r/Vespa/comments/168l0bs/and_then_there_were_2/",
@@ -18074,7 +19298,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001168",
+      "id": "rvw-001249",
       "source_website": "reddit.com",
       "source_label": "Reddit r/projectcar",
       "source_url": "https://www.reddit.com/r/projectcar/comments/1671rld/beware_copart_scam_wbafr7c52bc800538/jyp47p5/",
@@ -18089,7 +19313,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001169",
+      "id": "rvw-001250",
       "source_website": "reddit.com",
       "source_label": "Reddit r/projectcar",
       "source_url": "https://www.reddit.com/r/projectcar/comments/1671rld/beware_copart_scam_wbafr7c52bc800538/jyp34z2/",
@@ -18104,7 +19328,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001170",
+      "id": "rvw-001251",
       "source_website": "reddit.com",
       "source_label": "Reddit r/projectcar",
       "source_url": "https://www.reddit.com/r/projectcar/comments/1671rld/beware_copart_scam_wbafr7c52bc800538/jyodkym/",
@@ -18119,7 +19343,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001171",
+      "id": "rvw-001252",
       "source_website": "reddit.com",
       "source_label": "Reddit r/projectcar",
       "source_url": "https://www.reddit.com/r/projectcar/comments/1671rld/beware_copart_scam_wbafr7c52bc800538/jynovrf/",
@@ -18134,7 +19358,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001172",
+      "id": "rvw-001253",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/64ee0637ba8ff58ca6303529",
@@ -18149,7 +19373,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001173",
+      "id": "rvw-001254",
       "source_website": "reddit.com",
       "source_label": "Reddit r/fireinvestigation",
       "source_url": "https://www.reddit.com/r/fireinvestigation/comments/1634wn1/advice_older_veteran_looking_to_start_in_fire/jy19o8f/",
@@ -18164,7 +19388,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001174",
+      "id": "rvw-001255",
       "source_website": "reddit.com",
       "source_label": "Reddit r/fireinvestigation",
       "source_url": "https://www.reddit.com/r/fireinvestigation/comments/1634wn1/advice_older_veteran_looking_to_start_in_fire/jy19ne0/",
@@ -18179,7 +19403,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001175",
+      "id": "rvw-001256",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=10309248237",
+      "author": "Evoix1988",
+      "review_date": "2023-08-28",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Worst customer service. Is easier for for god to answer your prayers then the customer service of this auction. If you call buyer services you will be waiting for half of your day. Copart customer service is much better.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "id": "rvw-001257",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/64eb96cd0a07722601b96cc6",
@@ -18194,7 +19433,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delayed Email/Phone Response"
     },
     {
-      "id": "rvw-001176",
+      "id": "rvw-001258",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=17#0654_88276839_20529624",
@@ -18209,7 +19448,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Issue Not Resolved"
     },
     {
-      "id": "rvw-001177",
+      "id": "rvw-001259",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=10307259755",
+      "author": "Suaronedarwin",
+      "review_date": "2023-08-27",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "No words to describe how poorly written is this app. Which word can describe an app that cant count how many vehicles you have saved in your watch list? Wether is 2 or 67, it shows you have more than one 1+. Wow! Good luck searching for a specific car, as “MERCEDES, Mercedes Benz and Mercedes-Benz are 3 different brands, and then, models are created depending on the direction the wind blows that day. Pictures have only one standard, hide any damage not obviously visible so users cant notice. Everything just topped by a $79 internet bid fee and another $79 service fee per vehice. A $1,000 vehicle pays 53% in fees.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-001260",
       "source_website": "reddit.com",
       "source_label": "Reddit r/skoolies",
       "source_url": "https://www.reddit.com/r/skoolies/comments/1613da7/how_to_find_60s_or_older_bus/jxpyyhz/",
@@ -18224,7 +19478,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001178",
+      "id": "rvw-001261",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=17#0654_88276839_20510715",
@@ -18239,7 +19493,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001179",
+      "id": "rvw-001262",
       "source_website": "reddit.com",
       "source_label": "Reddit r/mercedes_benz",
       "source_url": "https://www.reddit.com/r/mercedes_benz/comments/15yesoh/2013_c250_coupe_18_t/",
@@ -18254,7 +19508,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001180",
+      "id": "rvw-001263",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=8#0654_88276839_462049",
@@ -18269,7 +19523,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Long Hold Time / Hard to Reach Support"
     },
     {
-      "id": "rvw-001181",
+      "id": "rvw-001264",
       "source_website": "reddit.com",
       "source_label": "Reddit r/HondaElement",
       "source_url": "https://www.reddit.com/r/HondaElement/comments/15vn4vl/2008_awd_manual_saught_anywhere_in_canada_less/jwzxsrj/",
@@ -18284,7 +19538,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001182",
+      "id": "rvw-001265",
       "source_website": "reddit.com",
       "source_label": "Reddit r/tampa",
       "source_url": "https://www.reddit.com/r/tampa/comments/15we7pg/stolen_car/jx0ftvb/",
@@ -18299,7 +19553,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-001183",
+      "id": "rvw-001266",
       "source_website": "reddit.com",
       "source_label": "Reddit r/DubaiPetrolHeads",
       "source_url": "https://www.reddit.com/r/DubaiPetrolHeads/comments/15w94ap/are_all_american_specification_cars_crash_damaged/jx0zai1/",
@@ -18314,7 +19568,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001184",
+      "id": "rvw-001267",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Autobody",
       "source_url": "https://www.reddit.com/r/Autobody/comments/15vqfok/how_much_is_this_going_to_cost_me/jwxd43x/",
@@ -18329,7 +19583,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001185",
+      "id": "rvw-001268",
       "source_website": "reddit.com",
       "source_label": "Reddit r/USAA",
       "source_url": "https://www.reddit.com/r/USAA/comments/15v16hj/why_do_some_of_these_people_on_this_sub_complain/jwthi4w/",
@@ -18344,7 +19598,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001186",
+      "id": "rvw-001269",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=18#0654_88276839_20489169",
@@ -18359,7 +19613,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001187",
+      "id": "rvw-001270",
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/antiwork",
+      "source_url": "https://www.reddit.com/r/antiwork/comments/15tqrnv/update_to_wage_theft_report_in_pa/",
+      "author": "Icantcalmdwn",
+      "review_date": "2023-08-17",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Update to wage theft report in PA Original post here https://old.reddit.com/r/antiwork/comments/14s7dcl/we_are_short_staffed_so_you_cant_quit_update_i/ The Labor Law investigator called and said I had no claim. He emailed me this: #1. You cannot reject an employers required meal period as that would be insubordination on your part with the companies policy, #2. PA does not require employers to pay employees for a meal period that last longer than 20 minutes, and you are not performing work. #3. (FLSA) Fair Labor Standards act, does not require meal or rest / break periods, however except for employees between the age of 14 and 17 and for seasonal farm workers. 1. There was NO BREAK given. That's the issue. Number 2 doesn't apply because I never had any breaks, and number 3 is the only one that would apply. So basically, everyone in PA (and probably other states) can work continuously until they pass out with no breaks. He ignored the wage theft entirely. I worked through all the unpaid hours. Interestingly enough also is his title. Labor Law Investigator CFEI, CFII, CVFI, IAAI-ECT, CFI, BCO Don't bother reporting if you are in this situation. I was also denied UC benefits because I quit and wasn't terminated.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "id": "rvw-001271",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/15tegk8/iaai_roro_shipping_made_easy_best_4_shipping_inc/",
@@ -18374,7 +19643,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Upload Troubleshooting"
     },
     {
-      "id": "rvw-001188",
+      "id": "rvw-001272",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=18#0654_88276839_20484255",
@@ -18389,7 +19658,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001189",
+      "id": "rvw-001273",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=8#0654_88276839_459810",
@@ -18404,7 +19673,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001190",
+      "id": "rvw-001274",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/64dbdcc3df075d5faf599cc0",
@@ -18419,7 +19688,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001191",
+      "id": "rvw-001275",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=18#0654_88276839_20469362",
@@ -18434,7 +19703,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001192",
+      "id": "rvw-001276",
       "source_website": "reddit.com",
       "source_label": "Reddit r/teslamotors",
       "source_url": "https://www.reddit.com/r/teslamotors/comments/15r269e/former_owner_discovers_his_totaled_tesla_is_being/jw6ndvi/",
@@ -18449,7 +19718,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001193",
+      "id": "rvw-001277",
       "source_website": "reddit.com",
       "source_label": "Reddit r/USAA",
       "source_url": "https://www.reddit.com/r/USAA/comments/15qbout/usaa_fraud_i_have_audio_emails_statements/",
@@ -18464,7 +19733,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Long Hold Time / Hard to Reach Support"
     },
     {
-      "id": "rvw-001194",
+      "id": "rvw-001278",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Mustang",
       "source_url": "https://www.reddit.com/r/Mustang/comments/15ot3w7/got_this_2020_mustang_gt_base_manual_for_10k/jvwmlkk/",
@@ -18479,7 +19748,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001195",
+      "id": "rvw-001279",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Mustang",
       "source_url": "https://www.reddit.com/r/Mustang/comments/15ot3w7/got_this_2020_mustang_gt_base_manual_for_10k/jvvfxp4/",
@@ -18494,7 +19763,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-001196",
+      "id": "rvw-001280",
       "source_website": "reddit.com",
       "source_label": "Reddit r/BMW",
       "source_url": "https://www.reddit.com/r/BMW/comments/15oxg36/is_this_a_good_idea_to_buy/jvujpyn/",
@@ -18509,7 +19778,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001197",
+      "id": "rvw-001281",
       "source_website": "reddit.com",
       "source_label": "Reddit r/autorepair",
       "source_url": "https://www.reddit.com/r/autorepair/comments/15ox187/is_this_totaled_not_looking_for_an_estimate_just/jvvjgld/",
@@ -18524,7 +19793,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001198",
+      "id": "rvw-001282",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Mustang",
       "source_url": "https://www.reddit.com/r/Mustang/comments/15ot3w7/got_this_2020_mustang_gt_base_manual_for_10k/jvtuf6d/",
@@ -18539,7 +19808,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001199",
+      "id": "rvw-001283",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Appleton",
       "source_url": "https://www.reddit.com/r/Appleton/comments/15nnedn/current_youtubers_or_anyone_interested_in_filming/",
@@ -18554,7 +19823,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Upload Troubleshooting"
     },
     {
-      "id": "rvw-001200",
+      "id": "rvw-001284",
       "source_website": "reddit.com",
       "source_label": "Reddit r/sweden",
       "source_url": "https://www.reddit.com/r/sweden/comments/15neek3/sweedish_vehicle_auction_for_cars_declared/",
@@ -18569,7 +19838,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001201",
+      "id": "rvw-001285",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/64d2e05bc125ea027c4fa88f",
@@ -18584,7 +19853,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001202",
+      "id": "rvw-001286",
       "source_website": "reddit.com",
       "source_label": "Reddit r/wichita",
       "source_url": "https://www.reddit.com/r/wichita/comments/15lpe59/where_can_a_young_person_buy_an_affordable_car/jvgte09/",
@@ -18599,7 +19868,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001203",
+      "id": "rvw-001287",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/15m6dr1/best_4_shipping_inc_effortless_iaai_shipping/",
@@ -18614,7 +19883,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001204",
+      "id": "rvw-001288",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -18629,7 +19898,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001205",
+      "id": "rvw-001289",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=18#0654_88276839_20447928",
@@ -18639,12 +19908,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "negative",
       "review_text": "Service or Repair Issues. August 9th 2023, the amount paid is REMOVED Had items stolen in the process such as childs car seat, jumper cables, insurance paperwork and car title paper work, battery recharger, car jack.Was told their cameras showed nothing in the car.Had both sets of keys for car but some how company got it and claimed they had a key which was not given further explanation.Was told to file a claim but told nothing can be done.Numerous people who also have had their cars towed or taken by said company whether it's them or their title REMOVED partners have also stated their belongings were thrown out or taken and claimed but nothing was done afterwards",
       "geo_validation": "bbb_us_business",
-      "tier1": "Vehicle Pickup, Delivery and Scheduling",
-      "tier2": "Tow and Storage Charges",
-      "tier3": "Tow and Storage Fees"
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Personal belongings/ items",
+      "tier3": "Removal / Retrieval of items left in vehicle"
     },
     {
-      "id": "rvw-001206",
+      "id": "rvw-001290",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=18#0654_88276839_20447579",
@@ -18659,7 +19928,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001207",
+      "id": "rvw-001291",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Lexus",
       "source_url": "https://www.reddit.com/r/Lexus/comments/15l3szb/im_guessing_my_car_will_be_totaled_out_2019_rcf/jva8yc2/",
@@ -18674,7 +19943,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001208",
+      "id": "rvw-001292",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -18689,7 +19958,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001209",
+      "id": "rvw-001293",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=10235701688",
+      "author": "thewayiaaam",
+      "review_date": "2023-08-08",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Awful customer. Awful customer support center. Nobody wants to take a look into my problem. Impossible to find a competent agent to help me. I bought a car and was supposed to pay them with a wire transfer but a banker messed up with my payment and didn’t include some specific information so my money got stuck. It’s been already one month since I got this problem but I haven’t got any help yet. We sent numerous messages to the support center and we got 3 responses with the same message: “your case has been closed” but the problem hasn’t been solved yet. They don’t care about their customers.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "id": "rvw-001294",
       "source_website": "reddit.com",
       "source_label": "Reddit r/EVConversion",
       "source_url": "https://www.reddit.com/r/EVConversion/comments/15acqtt/how_to_get_a_salvage_leaf/jv6vll1/",
@@ -18704,7 +19988,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001210",
+      "id": "rvw-001295",
       "source_website": "reddit.com",
       "source_label": "Reddit r/crv",
       "source_url": "https://www.reddit.com/r/crv/comments/15k54k5/bad_upper_rear_differential_bushings_2000_crv_ex/jv5w3r2/",
@@ -18719,7 +20003,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001211",
+      "id": "rvw-001296",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Rivian",
       "source_url": "https://www.reddit.com/r/Rivian/comments/15k820d/got_rear_ended_after_another_car_in_front_of_me/jv4eq4e/",
@@ -18734,7 +20018,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001212",
+      "id": "rvw-001297",
       "source_website": "reddit.com",
       "source_label": "Reddit r/povertyfinance",
       "source_url": "https://www.reddit.com/r/povertyfinance/comments/15j8289/after_paying_off_my_braces_i_find_out_that_my/juz2jd7/",
@@ -18749,7 +20033,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001213",
+      "id": "rvw-001298",
       "source_website": "reddit.com",
       "source_label": "Reddit r/salvage",
       "source_url": "https://www.reddit.com/r/salvage/comments/15iw6vu/salvage_to_rebuilt_title/",
@@ -18764,7 +20048,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Upload Troubleshooting"
     },
     {
-      "id": "rvw-001214",
+      "id": "rvw-001299",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=10221906698",
+      "author": "Aureliatony",
+      "review_date": "2023-08-05",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Fraud. Bidding on live, takes scrolling and biding button a second to confuse the phone and charge you for a car that you do not want to bid on. I lost 1700$ on a truck that wasn’t worth 800$ bucks on. And if you try and explain that to them they will act like they are you friends and be very understanding and simply wait until your in default of the car. That way they don’t take a loss in the car due to there app frailty. So they would rather comite fraud with your money instead.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-001300",
       "source_website": "reddit.com",
       "source_label": "Reddit r/mazda3",
       "source_url": "https://www.reddit.com/r/mazda3/comments/15htsiz/too_good_to_be_true/jusbehr/",
@@ -18779,7 +20078,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001215",
+      "id": "rvw-001301",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -18794,7 +20093,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Deposit Refund Status"
     },
     {
-      "id": "rvw-001216",
+      "id": "rvw-001302",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -18809,7 +20108,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001217",
+      "id": "rvw-001303",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -18824,7 +20123,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001218",
+      "id": "rvw-001304",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/15gx8lr/best_iron_planet_shipping_nigeria/",
@@ -18839,7 +20138,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001219",
+      "id": "rvw-001305",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carbuying",
       "source_url": "https://www.reddit.com/r/carbuying/comments/15finkd/branded_title_but_dealer_claims_no_damage/judqh0x/",
@@ -18854,7 +20153,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001220",
+      "id": "rvw-001306",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -18869,7 +20168,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001221",
+      "id": "rvw-001307",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Mustang",
       "source_url": "https://www.reddit.com/r/Mustang/comments/15du6d8/2018_gt_salvage_title_worth_it/ju77gj6/",
@@ -18884,7 +20183,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-001222",
+      "id": "rvw-001308",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Harley",
       "source_url": "https://www.reddit.com/r/Harley/comments/15dg91z/fxbbs_but_wrecked/ju4g0px/",
@@ -18899,7 +20198,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001223",
+      "id": "rvw-001309",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Harley",
       "source_url": "https://www.reddit.com/r/Harley/comments/15dg91z/fxbbs_but_wrecked/ju4ab9b/",
@@ -18914,7 +20213,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001224",
+      "id": "rvw-001310",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Harley",
       "source_url": "https://www.reddit.com/r/Harley/comments/15dg91z/fxbbs_but_wrecked/ju46so0/",
@@ -18929,7 +20228,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001225",
+      "id": "rvw-001311",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Harley",
       "source_url": "https://www.reddit.com/r/Harley/comments/15dg91z/fxbbs_but_wrecked/",
@@ -18944,7 +20243,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001226",
+      "id": "rvw-001312",
       "source_website": "reddit.com",
       "source_label": "Reddit r/fordranger",
       "source_url": "https://www.reddit.com/r/fordranger/comments/15d2mzp/ranger_23l_engine_compatibility/ju0l6ui/",
@@ -18959,7 +20258,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001227",
+      "id": "rvw-001313",
       "source_website": "reddit.com",
       "source_label": "Reddit r/eGolf",
       "source_url": "https://www.reddit.com/r/eGolf/comments/15cqsnv/just_got_a_2017_e_golf_6_days_ago_and_got_the/jtzmn8x/",
@@ -18974,7 +20273,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001228",
+      "id": "rvw-001314",
       "source_website": "reddit.com",
       "source_label": "Reddit r/pcmasterrace",
       "source_url": "https://www.reddit.com/r/pcmasterrace/comments/15beluu/wife_complained_about_pc_being_slow/jtsmvih/",
@@ -18989,7 +20288,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001229",
+      "id": "rvw-001315",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Autobody",
       "source_url": "https://www.reddit.com/r/Autobody/comments/15bdsc1/how_bad_was_this_damage/jttniob/",
@@ -19004,7 +20303,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001230",
+      "id": "rvw-001316",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/15biblx/my_car_is_totaled_for_cosmetic_damage_and_i_owe/jtrshbg/",
@@ -19019,7 +20318,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-001231",
+      "id": "rvw-001317",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=18#0654_88276839_20392119",
@@ -19034,7 +20333,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001232",
+      "id": "rvw-001318",
       "source_website": "reddit.com",
       "source_label": "Reddit r/canton",
       "source_url": "https://www.reddit.com/r/canton/comments/15avwkv/hello_friends_is_there_anyone_who_lives_nearby/jto7150/",
@@ -19049,7 +20348,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001233",
+      "id": "rvw-001319",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/15b867d/iaa_lot/jtp19vd/",
@@ -19064,7 +20363,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-001234",
+      "id": "rvw-001320",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaa.mobile.IaaTow)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
@@ -19079,7 +20378,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001235",
+      "id": "rvw-001321",
       "source_website": "reddit.com",
       "source_label": "Reddit r/EVConversion",
       "source_url": "https://www.reddit.com/r/EVConversion/comments/15acqtt/how_to_get_a_salvage_leaf/",
@@ -19094,7 +20393,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001236",
+      "id": "rvw-001322",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Lexus",
       "source_url": "https://www.reddit.com/r/Lexus/comments/15abvzn/which_lexus_gx_460_is_best_or_are_differences/",
@@ -19109,7 +20408,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001237",
+      "id": "rvw-001323",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=8#0654_88276839_455367",
@@ -19124,7 +20423,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001238",
+      "id": "rvw-001324",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/159kw2u/online_car_buyeriaai/jtfq16x/",
@@ -19139,7 +20438,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001239",
+      "id": "rvw-001325",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/159kuu9/selling_to_online_websiteiaai/jtfpxwv/",
@@ -19154,7 +20453,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001240",
+      "id": "rvw-001326",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Cartalk",
       "source_url": "https://www.reddit.com/r/Cartalk/comments/1593pbk/already_bro/jtdynm4/",
@@ -19169,7 +20468,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001241",
+      "id": "rvw-001327",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/159l2hw/online_junk_cariaai/",
@@ -19184,7 +20483,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001242",
+      "id": "rvw-001328",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/159kuu9/selling_to_online_websiteiaai/",
@@ -19199,7 +20498,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001243",
+      "id": "rvw-001329",
       "source_website": "reddit.com",
       "source_label": "Reddit r/GR86",
       "source_url": "https://www.reddit.com/r/GR86/comments/157m2mk/looks_like_a_total_to_me/jt6sia0/",
@@ -19214,7 +20513,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001244",
+      "id": "rvw-001330",
       "source_website": "reddit.com",
       "source_label": "Reddit r/personalfinance",
       "source_url": "https://www.reddit.com/r/personalfinance/comments/154c8ba/i_need_advice_will_they_total_my_car/jspte3o/",
@@ -19229,7 +20528,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-001245",
+      "id": "rvw-001331",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=19#0654_88276839_20350290",
@@ -19244,7 +20543,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Removal / Retrieval of items left in vehicle"
     },
     {
-      "id": "rvw-001246",
+      "id": "rvw-001332",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=19#0654_88276839_20350031",
@@ -19259,7 +20558,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Removal / Retrieval of items left in vehicle"
     },
     {
-      "id": "rvw-001247",
+      "id": "rvw-001333",
       "source_website": "reddit.com",
       "source_label": "Reddit r/cars",
       "source_url": "https://www.reddit.com/r/cars/comments/1547e0c/iaaicom_fraud_listing_cofiling_a_complaint/",
@@ -19274,7 +20573,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001248",
+      "id": "rvw-001334",
       "source_website": "reddit.com",
       "source_label": "Reddit r/SouthJersey",
       "source_url": "https://www.reddit.com/r/SouthJersey/comments/153c6xm/atco_raceway_permanently_closed/jsj44im/",
@@ -19289,7 +20588,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-001249",
+      "id": "rvw-001335",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Ducati",
       "source_url": "https://www.reddit.com/r/Ducati/comments/15369p1/anyone_ever_purchase_salvage_from_iaai/",
@@ -19304,7 +20603,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001250",
+      "id": "rvw-001336",
       "source_website": "reddit.com",
       "source_label": "Reddit r/DodgeDurango",
       "source_url": "https://www.reddit.com/r/DodgeDurango/comments/152wq54/20_durango_pursuit_57l_hemi/",
@@ -19319,7 +20618,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001251",
+      "id": "rvw-001337",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=10155696470",
+      "author": "tayolet",
+      "review_date": "2023-07-18",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Worst auction app in the whole wide world. I have never seen any auction app as worst as this. I usually do my pre-bid on browser but I tried using it few days ago and I entered a different amount for a pre-bid and it recorded another figure with a higher max bid which I never did. I suggest IAAI needs to totally redesign this app. Left to me this app doesn’t even deserve any star, I just gave this star for passion sake.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001338",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/64b54da67f1eb779e2ac46f1",
@@ -19334,7 +20648,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Long Hold Time / Hard to Reach Support"
     },
     {
-      "id": "rvw-001252",
+      "id": "rvw-001339",
       "source_website": "reddit.com",
       "source_label": "Reddit r/GilmoreGirls",
       "source_url": "https://www.reddit.com/r/GilmoreGirls/comments/1521bmg/weekly_i_am_all_in_with_scott_patterson/jsdtmsu/",
@@ -19349,7 +20663,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Upload Troubleshooting"
     },
     {
-      "id": "rvw-001253",
+      "id": "rvw-001340",
       "source_website": "reddit.com",
       "source_label": "Reddit r/GilmoreGirls",
       "source_url": "https://www.reddit.com/r/GilmoreGirls/comments/14vteg9/weekly_i_am_all_in_with_scott_patterson/js7414k/",
@@ -19364,7 +20678,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001254",
+      "id": "rvw-001341",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=19#0654_88276839_20322579",
@@ -19379,7 +20693,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Upload Troubleshooting"
     },
     {
-      "id": "rvw-001255",
+      "id": "rvw-001342",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/14yf2s1/hasslefree_iaai_shipping_dubai_services_best_4/",
@@ -19394,7 +20708,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001256",
+      "id": "rvw-001343",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=19#0654_88276839_20312980",
@@ -19409,7 +20723,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001257",
+      "id": "rvw-001344",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=8#0654_88276839_451579",
@@ -19424,7 +20738,37 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001258",
+      "id": "rvw-001345",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=10128374752",
+      "author": "YourPapi163",
+      "review_date": "2023-07-11",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "The fees are getting out of control. 🫣 then they don’t approve nothing",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-001346",
+      "source_website": "complaintsboard.com",
+      "source_label": "ComplaintsBoard",
+      "source_url": "https://www.complaintsboard.com/iaa-b133628#c1757378",
+      "author": "Hunt.Bobby",
+      "review_date": "2023-07-10",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Reporter location: Charlottesville, US (United States). Damage to my yard. My husband called IAA to come and get our car after a Progressive user damaged it a week before. It took my husband calls every day to IAA before they came to get the car to inspect it to let Progressive know the damages to the car. Then the IAA driver called and he was unintelligible, we simply couldn't understand a word he said even the call back number as he had mumbled and slurred his words the entire voice message and kept saying \"uhhhh\". But when the IAA tow driver finally came after a week of footing around, he left giant, long, and deep ruts in my yard where he had got stuck. The IAA driver did extreme damage to my yard, at least 6 feet long and I don't even know how many inches deep. He even drug some of my yard's dirt into the main road.. Desired outcome: I will need the IAA company to pay for the damages to my yard that their IAA tow driver left.",
+      "geo_validation": "complaintsboard_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Communication Follow-up & Escalation",
+      "tier3": "No Callback / Unresolved Case"
+    },
+    {
+      "id": "rvw-001347",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AskReddit",
       "source_url": "https://www.reddit.com/r/AskReddit/comments/14tfr7k/whats_the_best_example_of_it_takes_20_years_to/jr4rgve/",
@@ -19439,7 +20783,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001259",
+      "id": "rvw-001348",
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/cars",
+      "source_url": "https://www.reddit.com/r/cars/comments/14s6w8p/best_and_worst_automobile_enthusiast_blog_comment/jqwdrkn/",
+      "author": "Impulse_XS",
+      "review_date": "2023-07-06",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "My Impulse was bought at an iaai auction sight unseen with pictures and the the damage listed as \"unkown/other\" but still had a clean title despite NOT being repoed/stolen/donated/rebranded ect. Needless to say this car had a confusing history at best, and that's what little I could find. I'm very knowledgeable about these cars so I was able to recognize it was a very nice example that ran and drove from the pictures. so I bought it and had it shipped across the country. It's even in better shape than the picture suggested and I got my dream car for incredibly cheap. Buying sight unseen can be done but it requires a lot of specific knowledge and experience with certain models. Most comments on BaT aren't coming from those people imo. The userbase on their is so accusatory. They often immediately assumes anything they point out is a result of some maliciousness from the seller if they failed to the lack of owner's manual or aftermarket floor mats. Between the scumbag sellers and the comment section it's really hard to feel safe on there.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
+    },
+    {
+      "id": "rvw-001349",
       "source_website": "reddit.com",
       "source_label": "Reddit r/prius",
       "source_url": "https://www.reddit.com/r/prius/comments/14rmeta/can_this_be_fixed/jqu7u4t/",
@@ -19454,22 +20813,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001260",
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/fireinvestigation",
-      "source_url": "https://www.reddit.com/r/fireinvestigation/comments/14s9hsz/how_is_american_fire_investigators_workplace/",
-      "author": "liuq05",
-      "review_date": "2023-07-06",
-      "rating": null,
-      "sentiment": "positive",
-      "review_text": "How is American fire investigators' workplace environment? And how many efforts should a foreigner do before becoming a fire investigator? Hi, everyone, firstly, let me introduce myself : I am a foreigner, I graduated from fire engineering in my country, and during the four years of learning, I'm the most interested in fire investigation, but my professor told me that this job is belong to police system, and rarely need women. Because of the sexism，the age discrimination and some policy factors, I have done other jobs after graduation for nearly 5 years. And now I accidentally knew that the master of fire and explosion investigate of the University of New Haven, and I would apply for it next year. Then my questions are : 1. Are there any limits for the beginners, like gender, eyesight, nationality or others? 2. The best way for me becoming a fire investigator is the master of fire and explosion investigation, but if I wasn't accepted by the University of New Haven, how could I become a fire investigator? I knew the IAAI and CFI, whether the first step is being certified? 3. Based on the No.2 question, can you recommand some textbooks? I knew nothing except NFPA 921 and 1033. Thanks for your reading, and thanks to the great Internet, it made me meet more chances, achieve more information and become more bravery.",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
-    },
-    {
-      "id": "rvw-001261",
+      "id": "rvw-001350",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=19#0654_88276839_20281455",
@@ -19484,7 +20828,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Long Hold Time / Hard to Reach Support"
     },
     {
-      "id": "rvw-001262",
+      "id": "rvw-001351",
       "source_website": "reddit.com",
       "source_label": "Reddit r/tundra",
       "source_url": "https://www.reddit.com/r/tundra/comments/14qt3tr/2015_toyota_tundra_1794_rebuild/jqpe7su/",
@@ -19499,7 +20843,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001263",
+      "id": "rvw-001352",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/14pache/free_iaai_shipping_dubai_services_best_4_shipping/",
@@ -19514,7 +20858,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001264",
+      "id": "rvw-001353",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/14p0gzy/if_you_have_a_car_accident_and_car_is_at_towing/jqgmf9n/",
@@ -19529,7 +20873,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001265",
+      "id": "rvw-001354",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/14n8qfw/how_would_state_farm_calculate_the_buy_back_price/jq62qee/",
@@ -19544,7 +20888,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001266",
+      "id": "rvw-001355",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=20#0654_88276839_20254491",
@@ -19559,7 +20903,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Long Hold Time / Hard to Reach Support"
     },
     {
-      "id": "rvw-001267",
+      "id": "rvw-001356",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/14kq4ci/2016_bmw_3_series_320i_with_60k_miles_for_only_95k/jps070d/",
@@ -19574,7 +20918,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001268",
+      "id": "rvw-001357",
       "source_website": "reddit.com",
       "source_label": "Reddit r/CarInformationNews",
       "source_url": "https://www.reddit.com/r/CarInformationNews/comments/14k200r/tips_for_bidding_on_and_winning_a_lexus_auction/",
@@ -19589,7 +20933,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001269",
+      "id": "rvw-001358",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=20#0654_88276839_20244993",
@@ -19604,7 +20948,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001270",
+      "id": "rvw-001359",
       "source_website": "reddit.com",
       "source_label": "Reddit r/TeslaModel3",
       "source_url": "https://www.reddit.com/r/TeslaModel3/comments/14jnu5h/model_3_auto_insurance/jpmplfj/",
@@ -19619,7 +20963,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001271",
+      "id": "rvw-001360",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Car_Insurance_Help",
       "source_url": "https://www.reddit.com/r/Car_Insurance_Help/comments/14j6c5f/what_is_collective_car_insurance/jpjsu7u/",
@@ -19634,7 +20978,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-001272",
+      "id": "rvw-001361",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=20#0654_88276839_20233364",
@@ -19649,22 +20993,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001273",
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/RandomThoughts",
-      "source_url": "https://www.reddit.com/r/RandomThoughts/comments/14hugoa/a_russian_civil_war_after_a_global_pandemic_while/jpdfaay/",
-      "author": "John_Doe4269",
-      "review_date": "2023-06-24",
-      "rating": null,
-      "sentiment": "positive",
-      "review_text": "Hello future IAAI (Internet Archeologist Artificial Intelligence). I am happy to meet you.I hope you are having a good day. Today I am enjoying nice weather on my day off, drinking soup and smoking. I hope you have days like that too, even if we are not there with you. Best regards \\-just a human being in 2023",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
-    },
-    {
-      "id": "rvw-001274",
+      "id": "rvw-001362",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -19679,7 +21008,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001275",
+      "id": "rvw-001363",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=8#0654_88276839_447540",
@@ -19694,7 +21023,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001276",
+      "id": "rvw-001364",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=20#0654_88276839_20224212",
@@ -19709,7 +21038,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Deposit Refund Status"
     },
     {
-      "id": "rvw-001277",
+      "id": "rvw-001365",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=20#0654_88276839_20221427",
@@ -19724,7 +21053,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Long Hold Time / Hard to Reach Support"
     },
     {
-      "id": "rvw-001278",
+      "id": "rvw-001366",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarguys",
       "source_url": "https://www.reddit.com/r/askcarguys/comments/p86ek1/should_i_buy_my_first_car_from_a_car_auction/jozkiiv/",
@@ -19739,7 +21068,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001279",
+      "id": "rvw-001367",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -19754,7 +21083,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001280",
+      "id": "rvw-001368",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/14dclxe/best_4_shipping_inc_reliable_iaai_roro_shipping/",
@@ -19769,22 +21098,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001281",
-      "source_website": "play.google.com",
-      "source_label": "Google Play (com.iaai.android)",
-      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
-      "author": "Shaker Mohammed",
-      "review_date": "2023-06-19",
-      "rating": 5,
-      "sentiment": "positive",
-      "review_text": "perfect but the BUGATI and 918spyder is not there",
-      "geo_validation": "google_play_us_store",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
-    },
-    {
-      "id": "rvw-001282",
+      "id": "rvw-001369",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=20#0654_88276839_20206467",
@@ -19799,7 +21113,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001283",
+      "id": "rvw-001370",
       "source_website": "reddit.com",
       "source_label": "Reddit r/FocusST",
       "source_url": "https://www.reddit.com/r/FocusST/comments/14bvho2/what_yall_think_for_10k/joi4io7/",
@@ -19814,7 +21128,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001284",
+      "id": "rvw-001371",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/14aoiuu/get_iaai_shipping_qatar_services/",
@@ -19829,7 +21143,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-001285",
+      "id": "rvw-001372",
       "source_website": "reddit.com",
       "source_label": "Reddit r/f150",
       "source_url": "https://www.reddit.com/r/f150/comments/149j2uy/tremor_down_for_the_count/jo5hkpb/",
@@ -19844,7 +21158,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001286",
+      "id": "rvw-001373",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/13u9eo7/sourcing_cars/jo572mn/",
@@ -19859,7 +21173,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Title Not Received"
     },
     {
-      "id": "rvw-001287",
+      "id": "rvw-001374",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/1487lfw/smooth_and_reliable_iaai_roro_shipping_services/",
@@ -19874,7 +21188,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001288",
+      "id": "rvw-001375",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -19889,7 +21203,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001289",
+      "id": "rvw-001376",
       "source_website": "reddit.com",
       "source_label": "Reddit r/NoStupidQuestions",
       "source_url": "https://www.reddit.com/r/NoStupidQuestions/comments/1476v7f/car_repoaccident/jnukw61/",
@@ -19904,7 +21218,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001290",
+      "id": "rvw-001377",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/6483914642dbadc629141c07",
@@ -19919,7 +21233,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Long Hold Time / Hard to Reach Support"
     },
     {
-      "id": "rvw-001291",
+      "id": "rvw-001378",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=9#0654_88276839_445382",
@@ -19934,7 +21248,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001292",
+      "id": "rvw-001379",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=20#0654_88276839_20166891",
@@ -19949,7 +21263,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001293",
+      "id": "rvw-001380",
       "source_website": "reddit.com",
       "source_label": "Reddit r/BMW",
       "source_url": "https://www.reddit.com/r/BMW/comments/1447pbj/3_week_old_230i_got_tboned/jnf02uj/",
@@ -19964,7 +21278,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Schedule/ Reschedule Pickup"
     },
     {
-      "id": "rvw-001294",
+      "id": "rvw-001381",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=20#0654_88276839_20160267",
@@ -19979,7 +21293,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001295",
+      "id": "rvw-001382",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=20#0654_88276839_20159533",
@@ -19994,7 +21308,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Quick Support Response"
     },
     {
-      "id": "rvw-001296",
+      "id": "rvw-001383",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=21#0654_88276839_20159000",
@@ -20009,7 +21323,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001297",
+      "id": "rvw-001384",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Hyundai",
       "source_url": "https://www.reddit.com/r/Hyundai/comments/142jc6u/theres_a_2021_hyundai_elantra_se_with_146249/jn6c5sg/",
@@ -20024,7 +21338,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001298",
+      "id": "rvw-001385",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/14173g9/when_a_car_is_totaled_out_how_does_that_work/jmz8c8i/",
@@ -20039,7 +21353,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-001299",
+      "id": "rvw-001386",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=10003811512",
+      "author": "sal shal",
+      "review_date": "2023-06-05",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Fix the app iPad. Fix the app for iPad can’t see any vehicle images from saved searches",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001387",
       "source_website": "reddit.com",
       "source_label": "Reddit r/DubaiPetrolHeads",
       "source_url": "https://www.reddit.com/r/DubaiPetrolHeads/comments/140g151/american_infinity_q60/jmvmwy4/",
@@ -20054,7 +21383,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Upload Troubleshooting"
     },
     {
-      "id": "rvw-001300",
+      "id": "rvw-001388",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Copartonline",
       "source_url": "https://www.reddit.com/r/Copartonline/comments/r89f3m/my_experience_with_buying_from_copart_and/jmrcch0/",
@@ -20069,7 +21398,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001301",
+      "id": "rvw-001389",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -20084,7 +21413,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001302",
+      "id": "rvw-001390",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=9#0654_88276839_443943",
@@ -20099,7 +21428,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001303",
+      "id": "rvw-001391",
       "source_website": "reddit.com",
       "source_label": "Reddit r/projectcar",
       "source_url": "https://www.reddit.com/r/projectcar/comments/13w4ya4/buying_project_from_copart/jmafbsz/",
@@ -20114,7 +21443,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001304",
+      "id": "rvw-001392",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/13wjgbf/reliable_iaai_roro_services_with_best_4_shipping/",
@@ -20129,7 +21458,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001305",
+      "id": "rvw-001393",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=9#0654_88276839_443646",
@@ -20144,7 +21473,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001306",
+      "id": "rvw-001394",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/13u9eo7/sourcing_cars/jm9iw0e/",
@@ -20159,14 +21488,14 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001307",
+      "id": "rvw-001395",
       "source_website": "reddit.com",
       "source_label": "Reddit r/DMV",
       "source_url": "https://www.reddit.com/r/DMV/comments/13tmw0t/planning_on_buying_an_auction_car_from_ny_mv907a/",
       "author": "smallishbuddah",
       "review_date": "2023-05-28",
       "rating": null,
-      "sentiment": "positive",
+      "sentiment": "negative",
       "review_text": "Planning on buying an auction car from NY (MV907A) but i live in PA Hi everyone, quick question about the MV907A So i am planning on purchasing a car from IAAI with a New York MV907A certificate I know i CANNOT use the MV907A in PA to get a PA Salvage Cert title I have purchased other cars with IAAI and they were from different states When the cars came in they came with (State) Salvage Certificates and i had to get the Rebuilt title through PA and it was a breeze With the MV907A I am confused since i havent dealt with it before 1) Lets say i buy the car and get it picked up at the auction site and get it delivered to PA. The auction company will provide the MV907A. Once i get the car to PA and fix everything that the car needs (It's literally a bumper and fender/headlight) replacement.(I know i need to provide proof that the parts arent stolen) Do i have to go TO NY Inspection site with the MV907a and the other docs to do an inspection in person? 2) Do i have to LIVE in NY to have the NY salvage certificate mailed to me? Since im an out of state resident? Alternatively i can just tow the car to NY get the inspection tow it BACK to PA wait for the salvage cert and then go to my PA tags and title place and do the regular NY Salvage to PA Rebuilt title process. Could anyone shed some insight? Thank you and much appreciated",
       "geo_validation": "mixed_source_ok",
       "tier1": "Lot Condition, Listing Status and related",
@@ -20174,7 +21503,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-001308",
+      "id": "rvw-001396",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9975493107",
+      "author": "Therealbuyer1997",
+      "review_date": "2023-05-28",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Keeps logging off. It keeps logging me off and having me type my password again.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001397",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=21#0654_88276839_20111756",
@@ -20189,7 +21533,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-001309",
+      "id": "rvw-001398",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/13r6qon/reliable_iaai_trucking_nigeria_services_with_best/",
@@ -20204,7 +21548,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001310",
+      "id": "rvw-001399",
       "source_website": "reddit.com",
       "source_label": "Reddit r/delusionalcraigslist",
       "source_url": "https://www.reddit.com/r/delusionalcraigslist/comments/13qq8yk/just_some_light_vandalism_retail_value_60k/jlht9ko/",
@@ -20219,7 +21563,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Selling/ Relisting vehicle or Parts purchase"
     },
     {
-      "id": "rvw-001311",
+      "id": "rvw-001400",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AskNYC",
       "source_url": "https://www.reddit.com/r/AskNYC/comments/13qkk5j/nyc_property_auctions_propertyroom_was_replaced/jlfclhi/",
@@ -20234,7 +21578,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-001312",
+      "id": "rvw-001401",
       "source_website": "reddit.com",
       "source_label": "Reddit r/s10",
       "source_url": "https://www.reddit.com/r/s10/comments/13nbtg0/my_new_s10_that_i_got_from_the_auction_at_650/jkzdeu3/",
@@ -20249,7 +21593,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-001313",
+      "id": "rvw-001402",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Justrolledintotheshop",
       "source_url": "https://www.reddit.com/r/Justrolledintotheshop/comments/13n6q9m/youre_on_the_road_with_these_folks/jkyu2ga/",
@@ -20264,7 +21608,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001314",
+      "id": "rvw-001403",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -20279,7 +21623,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001315",
+      "id": "rvw-001404",
       "source_website": "reddit.com",
       "source_label": "Reddit r/NewMexico",
       "source_url": "https://www.reddit.com/r/NewMexico/comments/13m3t1f/interested_in_moving_to_this_state/jkv7tb2/",
@@ -20294,7 +21638,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-001316",
+      "id": "rvw-001405",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=21#0654_88276839_20084340",
@@ -20309,7 +21653,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001317",
+      "id": "rvw-001406",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/13l8nfo/is_there_no_such_thing_as_a_500_car_anymore/jkpxbxf/",
@@ -20324,7 +21668,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Unable to Bid"
     },
     {
-      "id": "rvw-001318",
+      "id": "rvw-001407",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Scams",
       "source_url": "https://www.reddit.com/r/Scams/comments/13kkj90/trying_to_tow_my_car_but_i_dont_have_one/jkl8fhk/",
@@ -20339,7 +21683,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001319",
+      "id": "rvw-001408",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=9#0654_88276839_440384",
@@ -20354,7 +21698,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001320",
+      "id": "rvw-001409",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=21#0654_88276839_20073177",
@@ -20369,7 +21713,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001321",
+      "id": "rvw-001410",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=9#0654_88276839_440062",
@@ -20384,7 +21728,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001322",
+      "id": "rvw-001411",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9933160111",
+      "author": "Sanjhttehsv",
+      "review_date": "2023-05-16",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Transport quote not working. Since a month ago we still unable to get quote thru the App",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001412",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/13h4plk/copart/jk3wdhb/",
@@ -20399,7 +21758,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001323",
+      "id": "rvw-001413",
       "source_website": "reddit.com",
       "source_label": "Reddit r/LandCruisers",
       "source_url": "https://www.reddit.com/r/LandCruisers/comments/13f3a6l/in_light_of_the_new_gx_teasers_heres_mine_that_i/jk3bo19/",
@@ -20414,7 +21773,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-001324",
+      "id": "rvw-001414",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/12ysp2p/iaai_question/jk0zy7o/",
@@ -20429,7 +21788,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001325",
+      "id": "rvw-001415",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Scams",
       "source_url": "https://www.reddit.com/r/Scams/comments/13ffcmt/my_tesla_was_totaled_nearly_3_years_ago_and_i/jjx0j54/",
@@ -20444,7 +21803,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-001326",
+      "id": "rvw-001416",
       "source_website": "reddit.com",
       "source_label": "Reddit r/legaladvice",
       "source_url": "https://www.reddit.com/r/legaladvice/comments/13fcaj5/ebay_car_dealership_scam/jjvj193/",
@@ -20459,7 +21818,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001327",
+      "id": "rvw-001417",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Scams",
       "source_url": "https://www.reddit.com/r/Scams/comments/13ffcmt/my_tesla_was_totaled_nearly_3_years_ago_and_i/jjw8dn5/",
@@ -20474,7 +21833,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-001328",
+      "id": "rvw-001418",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9920507767",
+      "author": "Highly Mountain",
+      "review_date": "2023-05-12",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Have to sign in every time you open app. App freezes lot and i have to sign in every time I open the app",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001419",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -20489,7 +21863,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001329",
+      "id": "rvw-001420",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=21#0654_88276839_20048396",
@@ -20504,7 +21878,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001330",
+      "id": "rvw-001421",
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/legaladvice",
+      "source_url": "https://www.reddit.com/r/legaladvice/comments/13d8ov9/who_do_i_sue/",
+      "author": "knwldge54",
+      "review_date": "2023-05-09",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Who do I sue? This is all in San Antonio. IAAI admitted to misplacing my car’s key. I have a backup key, and that’s what I’ve been using since. I spent seven months of calling, leaving messages, and visiting the location. I finally got a call back recently. The manager offered to “have a key cut” by their local locksmith or $300 by check. I think this is bs, and that the entire lock set should be replaced (at a cost $1100). My justification (if that matters) is the fact that my key is NOT known to be destroyed or otherwise unrecoverable. Any time I park in public, it’s subject to burglary or theft by whoever may have the key. If and when I sell the car, I also have to explain this nonsense about the spare key being in an unknown status along with the cost to remedy it. I shouldn’t have to pay for a business misplacing my key. Here’s the actual hang up: When I contacted the local business and asked for the name of the business owner or Agent for service, I’m directed to email their customer service, so that the my request can be forwarded to their legal department. Cool. Never received a response. I’ve emailed them 4 times so far, and called to verify receipt. Keep in mind, the customer service email is for giant company. Imagine emailing Walmart customer service about a legal matter in your local store. Over the phone I’ve been asked to submit my attorney’s contact information. It’s me. I am my attorney. Do I waste my time filing a small claims court against the manager of the local business? What makes the most sense here? I’m not sure who exactly is subject to responsibility when it comes to an LLC. Is corporate really responsible for an office worker losing a car key? TLDR: Local LLC Business offered $300 to replace car key they lost. Owner wants lock set replaced for $1100. Where do I file and who am I filing against?",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Communication Follow-up & Escalation",
+      "tier3": "No Callback / Unresolved Case"
+    },
+    {
+      "id": "rvw-001422",
       "source_website": "reddit.com",
       "source_label": "Reddit r/mercedes_benz",
       "source_url": "https://www.reddit.com/r/mercedes_benz/comments/13cctlf/paying_2800_to_mb_dealership_for_nothing/jjf8kku/",
@@ -20519,7 +21908,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Issue Resolved"
     },
     {
-      "id": "rvw-001331",
+      "id": "rvw-001423",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=21#0654_88276839_20035330",
@@ -20534,7 +21923,52 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001332",
+      "id": "rvw-001424",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9911291579",
+      "author": "erasedcar",
+      "review_date": "2023-05-09",
+      "rating": 3,
+      "sentiment": "positive",
+      "review_text": "Asks to login. App prompts you to log in every time you open it. Getting frustrating. Will correct review once fixed.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001425",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9910394252",
+      "author": "Queptm",
+      "review_date": "2023-05-09",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "EVERY UPDATE IS A MESS!. Your developers need to be fired , every single update they Mess up everything can’t even search for assigned (date ) cars anymore , location is messed up as well whenever I type cars near my Location it will show me cars from another states !! What a nightmare !!",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001426",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9910249214",
+      "author": "pretetete",
+      "review_date": "2023-05-09",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "APP ALWAYS REQUIRES LOGIN EVERY TIME. I left 2 star because this app requires password EVERY TIME I opens it. Even if I login into it now and then opens it again in the next 30 minutes, it would still require my password and username. I might as well use the web since the browser remembers my login info",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001427",
       "source_website": "reddit.com",
       "source_label": "Reddit r/TeslaLounge",
       "source_url": "https://www.reddit.com/r/TeslaLounge/comments/13bzckz/options_for_selling_a_dead_tesla/",
@@ -20549,7 +21983,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001333",
+      "id": "rvw-001428",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/13bhbvt/best_iaai_trucking_nigeria_services/",
@@ -20564,7 +21998,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-001334",
+      "id": "rvw-001429",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=21#0654_88276839_20033175",
@@ -20579,7 +22013,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001335",
+      "id": "rvw-001430",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9906031667",
+      "author": "TuramBasmach",
+      "review_date": "2023-05-08",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Recent updates. Recent updates causing double login issues. Prior you would stay logged in now it asks log in and asks twice.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001431",
       "source_website": "reddit.com",
       "source_label": "Reddit r/BmwTech",
       "source_url": "https://www.reddit.com/r/BmwTech/comments/130vnwf/f12_44l_nocking_sound_wasnt_driven_in_a_long_time/jj7ovah/",
@@ -20594,7 +22043,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001336",
+      "id": "rvw-001432",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=22#0654_88276839_20025497",
@@ -20609,7 +22058,37 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001337",
+      "id": "rvw-001433",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9896963355",
+      "author": "JerryNomad",
+      "review_date": "2023-05-05",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "App broken since update. App keeps asking to sign in every time you close the app. Search no longer works at all.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001434",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9896724557",
+      "author": "Jesse. N",
+      "review_date": "2023-05-05",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Apps forces you to login every time. Every time I go on the app it forces me to login, just wasting my time and pissing me off, your already paying for a membership fee and this is what you get. Plus changing it to charge $20 per money order if you exceed 5 money orders is stupid. I don’t pay with money order so it isn’t a problem, this company is money grabbing to much.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-001435",
       "source_website": "reddit.com",
       "source_label": "Reddit r/TeslaModel3",
       "source_url": "https://www.reddit.com/r/TeslaModel3/comments/137ycjp/deleted_by_user/jivueis/",
@@ -20624,7 +22103,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001338",
+      "id": "rvw-001436",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/137k9tc/vehicle_had_accident_no_carfax_history_of_it_or/jiuhm9g/",
@@ -20639,7 +22118,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001339",
+      "id": "rvw-001437",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -20654,7 +22133,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001340",
+      "id": "rvw-001438",
       "source_website": "reddit.com",
       "source_label": "Reddit r/industrialhygiene",
       "source_url": "https://www.reddit.com/r/industrialhygiene/comments/13663wt/occupational_hazard_fire_inspection/jinuay1/",
@@ -20669,7 +22148,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001341",
+      "id": "rvw-001439",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9889173012",
+      "author": "Jaydabeadt",
+      "review_date": "2023-05-03",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Last makes it worse. Ever since after the last update I’ve been having to login every time I open the app. I’ve been using this app for years before the last update and I’ve been able to stay logged in.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001440",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=22#0654_88276839_20004354",
@@ -20684,7 +22178,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-001342",
+      "id": "rvw-001441",
       "source_website": "reddit.com",
       "source_label": "Reddit r/projectcar",
       "source_url": "https://www.reddit.com/r/projectcar/comments/1335e46/what_did_you_guys_use_to_find_your_project_car/jiatmw0/",
@@ -20699,7 +22193,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001343",
+      "id": "rvw-001442",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9876675138",
+      "author": "Karrar aljamal",
+      "review_date": "2023-04-30",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Good. Good apps you can get profit from this app",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001443",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -20714,7 +22223,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001344",
+      "id": "rvw-001444",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9873154610",
+      "author": "Dhectfig",
+      "review_date": "2023-04-29",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Mr smithi. It’s not a good app. Too many problems trying to find a car Dehydrated don’t they go back to the old days",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001445",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -20729,7 +22253,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001345",
+      "id": "rvw-001446",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -20744,7 +22268,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001346",
+      "id": "rvw-001447",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -20759,7 +22283,37 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001347",
+      "id": "rvw-001448",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9872229943",
+      "author": "Chibatanela",
+      "review_date": "2023-04-28",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "WORST AUCTION APP EVER CREATED. FOR THE AMOUNT OF MONEY THIS COMPAY MAKES ‘rape’ you every time you buy, sale, can’t pick up on time, this app is always freezing, not showing pictures, god forbid you pick more than 2 filters GOOD LUCK! Garbage app",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001449",
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/Autobody",
+      "source_url": "https://www.reddit.com/r/Autobody/comments/130xp8a/paying_out_of_pocket_big_repair_cost_need_advice/jhyxo4c/",
+      "author": "Diversionz27",
+      "review_date": "2023-04-27",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "If the leasing company allows you to buy out the vehicle, that might be the easiest way to eliminate the leasing company from the equation. If you do end up going this scenario, I would suggest contacting IAA or Copart (salvage yard who auction vehicles). Typically, the value they would purchase the wrecked vehicle from you is about 20% of the ACV (actual cash value) of the vehicle...ex. if they vehicle is worth $30k, 20% is $6k. $28k buyout from the leasing company, then $6k (in the above scenario) puts you at the $22k... which is what you would have paid to repair the vehicle based on the original shop estimate. Remember, the shop repair cost is likely to increase from the original estimate. Because the vehicle would not have a salvage title, it might actually be valued higher than the average 20% salvage bid from the salvage yard. Before you would be able to start the above scenario, you would have to buy out the vehicle from the leasing company, have the vehicle title put in your name, and be mailed to you from the DMV. This all takes time. Regarding purchasing your own replacement parts for the repairs...most shops will shy away from this repair. The shop would make less money, have to contend with incorrect parts (even shops sometimes have problems getting the correct OEM parts from a dealer), delays in you securing additional parts not on the estimate... If it was a bumper cover or headlamp, the shop might be more inclined to work with the scenario of customer supplied parts. Unfortunately, this is not that scenario. Best of luck, man, and insurance auto pay ftw! Source: Insurance adjuster, shop estimator, shop managet.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "id": "rvw-001450",
       "source_website": "reddit.com",
       "source_label": "Reddit r/MINI",
       "source_url": "https://www.reddit.com/r/MINI/comments/12zs6xp/auction_mini_added_to_the_fleet/",
@@ -20769,12 +22323,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "negative",
       "review_text": "Auction MINI added to the fleet! First MINI that my fiance and I got at a great price from IAAI. It's in fantastic shape for 13 years old and 115K miles but it's definitely got some issues we are working thru now. It's unfortunately in a limp mode with a very rough, unstable idle that i suspect is a vacuum leak amongst possibly some other things. Any insight or advice on this chassis is appreciated! Cheers!",
       "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
     },
     {
-      "id": "rvw-001348",
+      "id": "rvw-001451",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=9#0654_88276839_436637",
@@ -20789,7 +22343,37 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-001349",
+      "id": "rvw-001452",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9865175066",
+      "author": "Donx1",
+      "review_date": "2023-04-26",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "I love this app it’s awesome to use.. Nice one ☝🏾",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001453",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9863016954",
+      "author": "Black35thss",
+      "review_date": "2023-04-26",
+      "rating": 3,
+      "sentiment": "negative",
+      "review_text": "App is slow. App freezes even on wifi and is slow compared to ither auction apps I use.. can use a real update ..",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001454",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=9#0654_88276839_436478",
@@ -20804,7 +22388,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-001350",
+      "id": "rvw-001455",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=22#0654_88276839_19981767",
@@ -20819,7 +22403,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001351",
+      "id": "rvw-001456",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/12wvysr/looking_for_an_iaa_licensed_broker/",
@@ -20834,7 +22418,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001352",
+      "id": "rvw-001457",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Challenger",
       "source_url": "https://www.reddit.com/r/Challenger/comments/12tymje/will_a_dodge_charger_rear_parking_sensor_wiring/jh597x0/",
@@ -20849,7 +22433,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001353",
+      "id": "rvw-001458",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=22#0654_88276839_19966565",
@@ -20864,7 +22448,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "No Callback / Unresolved Case"
     },
     {
-      "id": "rvw-001354",
+      "id": "rvw-001459",
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=9#0654_88276839_435683",
+      "author": "Zaid A",
+      "review_date": "2023-04-19",
+      "rating": 1.0,
+      "sentiment": "negative",
+      "review_text": "Bought a car says run and drive and when I got it doesnt turn on and has mechanical issues when it says on it no mechanical issues.",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
+    },
+    {
+      "id": "rvw-001460",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/12qw59o/why_are_kia_souls_being_totaled_for_under_1000/jgrmmd4/",
@@ -20874,12 +22473,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "negative",
       "review_text": "Theft claims are tough. Customers will typically claim everything under the sun and because it's a theft hard to dispute. Also a lot of the thefts I've seen were recovered with drug paraphernalia. Most insurance companies aren't gonna deal with the liability of attempting to repair a car with drug stuff especially if it's meth or fentanyl. Easier just to total it. Also if they were recovered 30 plus days after the theft the insurance company has usually already paid the owner at that point and the insurance owns the car. So they send em off to auction. Edit to answer your question about keys. Usually the insurance will have the owner mail the keys to copart or IAA but for some reason they rarely make it to the car. Car is recovered in Denver let's say but the customer sent the keys to the copart in Phoenix because that's where the insurance company told them to send them. 99% of the time those keys are getting tossed. Since the ignition cylinder is usually a casualty of the theft the lack of keys doesn't really impact the salvage value as much so the insurance companies don't mind missing keys. On other run and drive vehicles they will try and get the keys to the salvage yard because it does increase the return at the auction.",
       "geo_validation": "mixed_source_ok",
-      "tier1": "Membership / Licensing / Fees & Bidding Policies",
-      "tier2": "Bidding Process, Rules and Fees",
-      "tier3": "Fees"
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001355",
+      "id": "rvw-001461",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=22#0654_88276839_19932899",
@@ -20894,7 +22493,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delayed Email/Phone Response"
     },
     {
-      "id": "rvw-001356",
+      "id": "rvw-001462",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
       "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=22#0654_88276839_19947951",
@@ -20909,7 +22508,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001357",
+      "id": "rvw-001463",
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/CivicSi",
+      "source_url": "https://www.reddit.com/r/CivicSi/comments/12nhk1p/any_chance_of_the_market_shifting_in_the_next_year/jgg6mpk/",
+      "author": "Yf-vax",
+      "review_date": "2023-04-16",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Insurance Auto Auctions if you are comfortable with a rebuilder. Edit: what year was the Si that was stolen? 🤔",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-001464",
       "source_website": "reddit.com",
       "source_label": "Reddit r/fireinvestigation",
       "source_url": "https://www.reddit.com/r/fireinvestigation/comments/12lef3g/fire_investigation_education/jg8eyfw/",
@@ -20924,7 +22538,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-001358",
+      "id": "rvw-001465",
       "source_website": "reddit.com",
       "source_label": "Reddit r/fireinvestigation",
       "source_url": "https://www.reddit.com/r/fireinvestigation/comments/12lz805/how_long_does_the_iaai_fit_application_take_to_be/",
@@ -20939,22 +22553,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001359",
-      "source_website": "bbb.org",
-      "source_label": "BBB Complaints",
-      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=22#0654_88276839_19935674",
-      "author": "BBB complainant",
+      "id": "rvw-001466",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9820150725",
+      "author": "faisalmyself",
       "review_date": "2023-04-14",
       "rating": 1,
       "sentiment": "negative",
-      "review_text": "Service or Repair Issues. I purchashe a REMOVED civic from IAA REMOVED North and at the time of purchase the vehicle has a catalytic converter. I have video of it running quiet at the time of their inspection. the inspection notes also say nothing about it being missing but i see other vehicles that do have this info posted on their auctions. upon me picking up the vehicle I noticed that the catalytic converter was stolen while at the iaa location. I did let them know while I was there that it was gone. I have tried to talk to the branch manager he will not REMOVED or return them. I also contacted the corporate and all they say is their policy does nothing to help me. It has costed me $550 to repair this and I have informed iaa that my dealership will no longer do business with them",
-      "geo_validation": "bbb_us_business",
-      "tier1": "Customer Service & Communication",
-      "tier2": "Agent Professionalism & Responsiveness",
-      "tier3": "Rude/Unhelpful Support"
+      "review_text": "Slow App. Fix your application it's slow.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001360",
+      "id": "rvw-001467",
       "source_website": "reddit.com",
       "source_label": "Reddit r/TeslaModelY",
       "source_url": "https://www.reddit.com/r/TeslaModelY/comments/12k9m1h/20_uberturbines/jg4zwiu/",
@@ -20969,7 +22583,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001361",
+      "id": "rvw-001468",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
       "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/12kqgxg/this_car_has_since_been_repaired_and_is_being/jg4flg7/",
@@ -20984,7 +22598,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-001362",
+      "id": "rvw-001469",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9815566475",
+      "author": "demo hunter 007",
+      "review_date": "2023-04-12",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Super app. I’m fully satisfied 👍",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001470",
       "source_website": "reddit.com",
       "source_label": "Reddit r/dubai",
       "source_url": "https://www.reddit.com/r/dubai/comments/12fszdd/copart_in_the_us/jfh9ij6/",
@@ -20999,7 +22628,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001363",
+      "id": "rvw-001471",
       "source_website": "reddit.com",
       "source_label": "Reddit r/asklinguistics",
       "source_url": "https://www.reddit.com/r/asklinguistics/comments/12e1hil/what_are_the_origins_of_vowel_harmony/jfakvu4/",
@@ -21014,7 +22643,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Selling/ Relisting vehicle or Parts purchase"
     },
     {
-      "id": "rvw-001364",
+      "id": "rvw-001472",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/642ef81828a7f2cd0a276543",
@@ -21029,7 +22658,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001365",
+      "id": "rvw-001473",
       "source_website": "reddit.com",
       "source_label": "Reddit r/F250",
       "source_url": "https://www.reddit.com/r/F250/comments/12da0ia/im_considering_buying_a_2002_73l_f250_for_8k_but/jf72e35/",
@@ -21044,7 +22673,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-001366",
+      "id": "rvw-001474",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/12ban9r/best_iaai_shipping_qatar/",
@@ -21059,7 +22688,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Pickup Hours and Cutoff"
     },
     {
-      "id": "rvw-001367",
+      "id": "rvw-001475",
       "source_website": "reddit.com",
       "source_label": "Reddit r/collapse",
       "source_url": "https://www.reddit.com/r/collapse/comments/129djc0/last_week_in_collapse_march_26april_1_2023/",
@@ -21074,7 +22703,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Escalation Required"
     },
     {
-      "id": "rvw-001368",
+      "id": "rvw-001476",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9781196163",
+      "author": "nooopl",
+      "review_date": "2023-04-02",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "To much fees. Iaa used to be fair on fees now they charging crazy money to buy a car plus I went last week to release a car the charge me 20$ processes Plus $800+ for the car I bought for $4300 they need to be fair on the fees they charge by the way I’m gonna stop buying from them now",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-001477",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/128t9g7/how_long_does_it_take_for_a_waiting_title_at_iaai/",
@@ -21089,7 +22733,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Title Not Received"
     },
     {
-      "id": "rvw-001369",
+      "id": "rvw-001478",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=ar&gl=us",
@@ -21104,7 +22748,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001370",
+      "id": "rvw-001479",
       "source_website": "reddit.com",
       "source_label": "Reddit r/leaf",
       "source_url": "https://www.reddit.com/r/leaf/comments/126mpmv/is_this_rip_leaf/je9vm1w/",
@@ -21119,7 +22763,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001371",
+      "id": "rvw-001480",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -21134,7 +22778,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001372",
+      "id": "rvw-001481",
       "source_website": "reddit.com",
       "source_label": "Reddit r/HondaElement",
       "source_url": "https://www.reddit.com/r/HondaElement/comments/124y7ic/where_to_look_for_great_deals/je364nb/",
@@ -21149,7 +22793,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001373",
+      "id": "rvw-001482",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/124hc24/best_iaai_roro/",
@@ -21164,7 +22808,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-001374",
+      "id": "rvw-001483",
       "source_website": "reddit.com",
       "source_label": "Reddit r/nissanfrontier",
       "source_url": "https://www.reddit.com/r/nissanfrontier/comments/11xz18u/my_vkswap_is_coming_along/jddgjfl/",
@@ -21179,7 +22823,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001375",
+      "id": "rvw-001484",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9744468530",
+      "author": "Ramprats6030",
+      "review_date": "2023-03-23",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Buyer be VERY AWARE!. 1st: Got charged twice in same day for my membership fee 400 total, took almost 2 weeks before the 200 was refunded, also I was told if I paid my membership I could view the vehicle I was interested in that day because that was the only day to view it before auction, WAS NOT ! Then I attempted to place a 50.00 pre bid a week prior to the actual bidding , my phone screen was busted up a little and accidentally made a 500.00 pre bid I immediately emailed and called site or branch manger to try and correct it , I talked to customer support they directed me to his voicemail claiming it was out of there control , I still to this day have NEVER GOTTEN A RESPONSE OF ANYKIND ! I left 9 voicemails & idk exactly the number of emails but a few , no reply !!!! Then naturally I won the bid I didn’t mean to place and it was gonna cost me 1700 less to buy the vehicle then to not due to fee’s for not completing purchase. So of course I came up with the money , and it’s crazy we have to pay a to pay to have the yard fork lift operator destroy the vehicle I purchased with no consideration at all he slammed the forks under there and didn’t even give two looks to make sure he wouldn’t pop the gas tank or destroy anything further , he drove that loader as fast as he possibly could with my vehicle not even in the forks all the way so it was bouncing up and down as he raced across the yard my tow truck driver tried to stop him , wouldn’t even look over , towards us ! But no regards to that is someone else’s property , needless to say the muffler and gas tank were completely destroyed which wasn’t prior also he ripped the wording harness from rear bent the tie rods from having vehicular weight supported on them bouncing up and down , so the vehicle that once started and ran NO LONGER BC 1 it would hold gas 2: the muffler was bent and closed off completely so exhaust gas couldn’t escape . I ATTEMPTED TO TALK ONCE AGAIN TO SOME ONE AT THE BRANCH STILL NO REPLY!!!! DO YOUR RESEARCH ON THE AUCTION GROUP YOU GO WITH BC THIS ONE DOESNT GIVE TWO DARMS ABOUT BEING A COMPANY THEY CAN BE PROUD OF AND ATLEAST DOING THE SOMEWHAT FAIR BUSINESS DEAL WITH THERE CLIENTS!!!! Copart is wayyy better atleast they guarantee satisfaction and have a trustworthy business approach!!!!! IAAI DOES NOT IN ANY WAY !",
+      "geo_validation": "apple_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Support Access & Response Time",
+      "tier3": "Delayed Email/Phone Response"
+    },
+    {
+      "id": "rvw-001485",
       "source_website": "reddit.com",
       "source_label": "Reddit r/ecoboostmustang",
       "source_url": "https://www.reddit.com/r/ecoboostmustang/comments/11wwq6q/any_ways_i_can_make_exhaust_sound_deeper_better/jd48d86/",
@@ -21194,7 +22853,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001376",
+      "id": "rvw-001486",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Hawaii",
       "source_url": "https://www.reddit.com/r/Hawaii/comments/11xr5xi/advice_on_buying_a_car_oahu/jd50vii/",
@@ -21209,7 +22868,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001377",
+      "id": "rvw-001487",
       "source_website": "reddit.com",
       "source_label": "Reddit r/fordranger",
       "source_url": "https://www.reddit.com/r/fordranger/comments/11w2pso/where_did_you_guys_buy_your_ranger/jcwp3kr/",
@@ -21224,7 +22883,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-001378",
+      "id": "rvw-001488",
       "source_website": "reddit.com",
       "source_label": "Reddit r/350z",
       "source_url": "https://www.reddit.com/r/350z/comments/11vrkq9/looking_for_a_350z_with_a_blown_motor/jcur67n/",
@@ -21239,7 +22898,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001379",
+      "id": "rvw-001489",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -21254,7 +22913,37 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001380",
+      "id": "rvw-001490",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9730124716",
+      "author": "Mrs Fields 19",
+      "review_date": "2023-03-19",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Worst app. App freezes during auctions, cars won’t stay on “watchlist” I had over 80 cars and now I open up my app and it tells me I don’t have any cars in my watchlist. This app is useless. Complete garbage and a waste of time.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001491",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (992957183, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=992957183&type=Purple%20Software&reviewId=9698971759",
+      "author": "Zo be",
+      "review_date": "2023-03-10",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Service. Very poor service they take to long to delivery your car",
+      "geo_validation": "apple_us_store",
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Scheduled Pickup Status",
+      "tier3": "Missed/ Delayed Pickup and Dispatch Window"
+    },
+    {
+      "id": "rvw-001492",
       "source_website": "reddit.com",
       "source_label": "Reddit r/camaro",
       "source_url": "https://www.reddit.com/r/camaro/comments/11mt2l1/my_camaro_is_totaled_rip_to_the_community/jblkd03/",
@@ -21264,12 +22953,12 @@ window.IAA_REVIEWS_DATA = {
       "sentiment": "positive",
       "review_text": "iaa , it’s still up the auction has not started yet , estimate repair was 17k around , also happy to hear your safe OP",
       "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001381",
+      "id": "rvw-001493",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/11kquj8/find_iaai_roro_services_best_4_shipping_inc/",
@@ -21284,22 +22973,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001382",
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/944",
-      "source_url": "https://www.reddit.com/r/944/comments/11hbnyf/transaxle_question/jazxvdo/",
-      "author": "Federal_Assistant_85",
-      "review_date": "2023-03-05",
-      "rating": null,
-      "sentiment": "negative",
-      "review_text": "If you have a site that can show me the part, that would make it a lot easier. That part number might be an Audi internal system thing because several searches and nothing came up. Worst case scenario on getting one would be finding out which cars have it and then check out [www.iaai.com](http://www.iaai.com) (sorry, I don't know of any sites like that outside the US) to see if any cars that have it have been totaled and try to buy it, then sell all the stuff you don't want to a scrapper. I actually have thought about doing just that to get the porsche [pdk dual clutch 7 spd](https://www.ebay.com/itm/184128118248?chn=ps&amp;mkevt=1&amp;mkcid=28&amp;srsltid=Ad5pg_EOCw1M7iLh4eiscFxj_iXLbydCwyoqgtB1yifki6u0FAC9o9G4Lrw) but, the previous ones I saw were nearly $13k. Edit: [We're you talking about this?](https://www.ebay.com/itm/403342839159?chn=ps&amp;_trkparms=ispr%3D1&amp;amdata=enc%3A1KsIgbhpER8SGvhJkkbqddg14&amp;norover=1&amp;mkevt=1&amp;mkrid=711-117182-37290-0&amp;mkcid=2&amp;mkscid=101&amp;itemid=403342839159&amp;targetid=1644837435803&amp;device=m&amp;mktype=&amp;googleloc=9003205&amp;poi=&amp;campaignid=16743749222&amp;mkgroupid=138744546207&amp;rlsatarget=pla-1644837435803&amp;abcId=9300842&amp;merchantid=263817010&amp;gclid=CjwKCAiAmJGgBhAZEiwA1JZoltMdazwg32AMWH9h76-sDdoOHUZewWfPBBe9iI0hrCO_G6nDZ1EZwRoC1m4QAvD_BwE)",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting"
-    },
-    {
-      "id": "rvw-001383",
+      "id": "rvw-001494",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Pennsylvania",
       "source_url": "https://www.reddit.com/r/Pennsylvania/comments/11grz2x/what_information_can_be_found_on_a_vehicle_with/jarbu6i/",
@@ -21314,7 +22988,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "POA Requirements Clarification"
     },
     {
-      "id": "rvw-001384",
+      "id": "rvw-001495",
       "source_website": "reddit.com",
       "source_label": "Reddit r/turo",
       "source_url": "https://www.reddit.com/r/turo/comments/11fsa5c/totaled_or_repairable/jaosqiz/",
@@ -21329,7 +23003,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001385",
+      "id": "rvw-001496",
       "source_website": "reddit.com",
       "source_label": "Reddit r/turo",
       "source_url": "https://www.reddit.com/r/turo/comments/11fsa5c/totaled_or_repairable/jamz5tg/",
@@ -21344,7 +23018,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001386",
+      "id": "rvw-001497",
       "source_website": "reddit.com",
       "source_label": "Reddit r/UsedCars",
       "source_url": "https://www.reddit.com/r/UsedCars/comments/11g0qne/hi_everyone_i_am_new_to_this_subreddit_i_ship/",
@@ -21359,22 +23033,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001387",
+      "id": "rvw-001498",
       "source_website": "apps.apple.com",
       "source_label": "Apple App Store (468532534, us)",
-      "source_url": "https://apps.apple.com/us/app/id468532534?see-all=reviews&platform=iphone&reviewId=9666934668",
-      "author": "CJplaysCOD",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9667916189",
+      "author": "hfjdkaksne",
       "review_date": "2023-03-01",
-      "rating": 5,
+      "rating": 3,
       "sentiment": "positive",
-      "review_text": "Could be better. There’s flaws here and there that make the app seem a little outdated, I personally prefer to search on my computer however it is VERY convenient to be able to watch and bid on the go especially when I have a car I need to bid on while i’m at work! I enjoy the buying process and delivery options as well over Coparts as the prices and fees are a little cheaper here on IAA. Roll out a couple updates to fix the bugs and add an option to stay LOGGED IN! PLEASE!",
+      "review_text": "So Laggy. Other than that the user interface is great, I love the app however I hate when I can’t use it especially when time is money!",
       "geo_validation": "apple_us_store",
-      "tier1": "Membership / Licensing / Fees & Bidding Policies",
-      "tier2": "Bidding Process, Rules and Fees",
-      "tier3": "Fees"
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001388",
+      "id": "rvw-001499",
       "source_website": "reddit.com",
       "source_label": "Reddit r/climatedisalarm",
       "source_url": "https://www.reddit.com/r/climatedisalarm/comments/11e4opl/want_a_cheap_low_mileage_secondhand_tesla_start/jacbed6/",
@@ -21389,7 +23063,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001389",
+      "id": "rvw-001500",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9666934668",
+      "author": "CJplaysCOD",
+      "review_date": "2023-02-28",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Could be better. There’s flaws here and there that make the app seem a little outdated, I personally prefer to search on my computer however it is VERY convenient to be able to watch and bid on the go especially when I have a car I need to bid on while i’m at work! I enjoy the buying process and delivery options as well over Coparts as the prices and fees are a little cheaper here on IAA. Roll out a couple updates to fix the bugs and add an option to stay LOGGED IN! PLEASE!",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-001501",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/115lwwg/does_anyone_here_need_help_tips_or_have_any/ja5vdqh/",
@@ -21404,7 +23093,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Selling/ Relisting vehicle or Parts purchase"
     },
     {
-      "id": "rvw-001390",
+      "id": "rvw-001502",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9659444719",
+      "author": "safibelmondo",
+      "review_date": "2023-02-26",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Vehicle. All cars that I’m seeing here can’t buy them so what’s the point of having the app?",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001503",
       "source_website": "reddit.com",
       "source_label": "Reddit r/morbidquestions",
       "source_url": "https://www.reddit.com/r/morbidquestions/comments/11bbuv6/if_someone_gets_shot_and_killed_in_a_car_what/j9zeq35/",
@@ -21419,7 +23123,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001391",
+      "id": "rvw-001504",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_ladakhvalues1",
       "source_url": "https://www.reddit.com/r/u_ladakhvalues1/comments/11bdg25/madras_travels_tours_pvt_ltd/",
@@ -21434,7 +23138,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001392",
+      "id": "rvw-001505",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9655548100",
+      "author": "S no thx",
+      "review_date": "2023-02-25",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "IAA it’s bad action. The pictures they take of the cars . Don’t show the real damage on a car?",
+      "geo_validation": "apple_us_store",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage"
+    },
+    {
+      "id": "rvw-001506",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/63f8965d92f05a53473b5ee1",
@@ -21449,7 +23168,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Missed/ Delayed Pickup and Dispatch Window"
     },
     {
-      "id": "rvw-001393",
+      "id": "rvw-001507",
       "source_website": "reddit.com",
       "source_label": "Reddit r/MechanicAdvice",
       "source_url": "https://www.reddit.com/r/MechanicAdvice/comments/11ah0mw/buy_a_car_from_pic_a_part/j9s1ei6/",
@@ -21464,7 +23183,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001394",
+      "id": "rvw-001508",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/11aie7k/principle_of_iaai_roro/",
@@ -21479,7 +23198,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-001395",
+      "id": "rvw-001509",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9651249068",
+      "author": "Its an Empire",
+      "review_date": "2023-02-24",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "From bad to worse. I thought it was bad before bc it would freeze constantly, but somehow it’s even worse now. Can’t even sign in anymore. Every time I try to sign in it takes me back to the sign in screen like I was just there smh. I tried deleting and redownloading- same thing keeps happening.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001510",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AskMechanics",
       "source_url": "https://www.reddit.com/r/AskMechanics/comments/119ovo7/what_is_the_difference_between_a_salvage_rebuilt/j9ncnk8/",
@@ -21494,7 +23228,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001396",
+      "id": "rvw-001511",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -21509,7 +23243,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001397",
+      "id": "rvw-001512",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/63f5456c9b64b1bdaf5eb644",
@@ -21524,7 +23258,37 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001398",
+      "id": "rvw-001513",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9642710601",
+      "author": "coovidzz",
+      "review_date": "2023-02-21",
+      "rating": 4,
+      "sentiment": "positive",
+      "review_text": "Mark. Please fix you app so we can pay with out crashing , but it works fine through the web browser",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001514",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9642470625",
+      "author": "Yuriy1809",
+      "review_date": "2023-02-21",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Outdated app…. I don’t like app at all! Outdated design and features! They need to check out COPART app with all nice features and interface",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001515",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/63f3542f6f3134764b6eae54",
@@ -21539,7 +23303,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001399",
+      "id": "rvw-001516",
       "source_website": "reddit.com",
       "source_label": "Reddit r/florafour",
       "source_url": "https://www.reddit.com/r/florafour/comments/11789j1/experts_professionals_involved_in_the/",
@@ -21554,7 +23318,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Proactive Follow-up"
     },
     {
-      "id": "rvw-001400",
+      "id": "rvw-001517",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -21569,7 +23333,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001401",
+      "id": "rvw-001518",
       "source_website": "reddit.com",
       "source_label": "Reddit r/projectcar",
       "source_url": "https://www.reddit.com/r/projectcar/comments/116o08f/iaai_insurance_auction_sign_up_discount_codes/",
@@ -21584,7 +23348,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001402",
+      "id": "rvw-001519",
       "source_website": "reddit.com",
       "source_label": "Reddit r/projectbike",
       "source_url": "https://www.reddit.com/r/projectbike/comments/116l42b/iaai_insurance_auction_sign_up_discount_codes/",
@@ -21599,7 +23363,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001403",
+      "id": "rvw-001520",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -21614,7 +23378,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001404",
+      "id": "rvw-001521",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/63ed67799b64b1bdaf58dc81",
@@ -21629,7 +23393,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001405",
+      "id": "rvw-001522",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9625278996",
+      "author": "Kifa123",
+      "review_date": "2023-02-16",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Major bugs. Won’t open dashboard- very difficult to use. Get professional help",
+      "geo_validation": "apple_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "id": "rvw-001523",
       "source_website": "reddit.com",
       "source_label": "Reddit r/MechanicAdvice",
       "source_url": "https://www.reddit.com/r/MechanicAdvice/comments/112ssci/iaai_dot_com/",
@@ -21644,7 +23423,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001406",
+      "id": "rvw-001524",
       "source_website": "reddit.com",
       "source_label": "Reddit r/boating",
       "source_url": "https://www.reddit.com/r/boating/comments/110y4ar/risks_of_buying_boat_after_hurricane_ian/",
@@ -21659,7 +23438,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001407",
+      "id": "rvw-001525",
       "source_website": "reddit.com",
       "source_label": "Reddit r/askcarsales",
       "source_url": "https://www.reddit.com/r/askcarsales/comments/110j18q/buying_salvage_in_florida_can_a_friend_with/j893gmo/",
@@ -21674,7 +23453,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001408",
+      "id": "rvw-001526",
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/Washington",
+      "source_url": "https://www.reddit.com/r/Washington/comments/10gojhq/rebuilt_title_rules/j82gizi/",
+      "author": "notthedol",
+      "review_date": "2023-02-11",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "&gt;I had a vehicle totaled by insurance and IAAI said the same thing about it Bill of sale, I just don't want to buy a vehicle and not have it get a rebuilt title because of the market threshold. Hey you may have figured this out but if not I can answer your question. If you buy a vehicle from an insurance auction (e.g. IAA, Copart, etc) it will need to be inspected by WSP then you can put it in your name and get a branded title. The numbers you are looking at about the rebuilt title threshold are only about whether the new title will list the brand, not that you won't get a title at all. If the vehicle does not meet the threshold then it will come back with a title that appears clean, meaning it doesn't list the salvage/rebuilt brand at all. This makes less than no sense to me personally, but that is what they do. You will need to bring your paperwork from the auction and receipts for any major components you had to replace with you to your inspection, as WSP is actually looking for stolen parts and stolen vehicles, it is not a safety inspection.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Third-Party Inspection Authorization & Scheduling",
+      "tier3": "Previewing/ Inspecting Vehicles"
+    },
+    {
+      "id": "rvw-001527",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/63e4ef29745e4800219fa4f6",
@@ -21689,7 +23483,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001409",
+      "id": "rvw-001528",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -21704,7 +23498,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001410",
+      "id": "rvw-001529",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Autobody",
       "source_url": "https://www.reddit.com/r/Autobody/comments/10wmsd7/tesla_m3_damage_underneath_in_rearend_collision/j7recr8/",
@@ -21719,7 +23513,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Tow and Storage Fees"
     },
     {
-      "id": "rvw-001411",
+      "id": "rvw-001530",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -21734,7 +23528,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001412",
+      "id": "rvw-001531",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -21749,7 +23543,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001413",
+      "id": "rvw-001532",
       "source_website": "reddit.com",
       "source_label": "Reddit r/RX8",
       "source_url": "https://www.reddit.com/r/RX8/comments/10wa3ir/well_looks_like_i_just_saved_one_from_the_scrapper/j7lupzp/",
@@ -21764,7 +23558,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Delivery Status and ETA"
     },
     {
-      "id": "rvw-001414",
+      "id": "rvw-001533",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/10vtwsu/best_iaai_shipping_dubai_services/",
@@ -21779,7 +23573,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001415",
+      "id": "rvw-001534",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Mustang",
       "source_url": "https://www.reddit.com/r/Mustang/comments/10uwjon/this_pic_didnt_do_so_hot_over_on_rcorvette_those/j7iav1r/",
@@ -21794,7 +23588,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001416",
+      "id": "rvw-001535",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -21809,7 +23603,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001417",
+      "id": "rvw-001536",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -21824,7 +23618,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001418",
+      "id": "rvw-001537",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -21839,7 +23633,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001419",
+      "id": "rvw-001538",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -21854,7 +23648,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001420",
+      "id": "rvw-001539",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -21869,7 +23663,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001421",
+      "id": "rvw-001540",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -21884,7 +23678,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001422",
+      "id": "rvw-001541",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -21899,7 +23693,37 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001423",
+      "id": "rvw-001542",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9590676173",
+      "author": "jaimeygise",
+      "review_date": "2023-02-06",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "App freeze. I can’t login. App just restarted and restarted and restarted and I can’t login.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001543",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9589253449",
+      "author": "iaaiuser",
+      "review_date": "2023-02-06",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Slow after update. I updated to the latest version last night and now it’s super slow. Reminded me of the internet in the 90’s",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001544",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -21914,7 +23738,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001424",
+      "id": "rvw-001545",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -21929,7 +23753,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001425",
+      "id": "rvw-001546",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -21944,7 +23768,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001426",
+      "id": "rvw-001547",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -21959,7 +23783,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001427",
+      "id": "rvw-001548",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9584263064",
+      "author": "TajikFNBOCustomer",
+      "review_date": "2023-02-04",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Frozen. After the update, I am not able to see my watchlist. It shows 0 even though I can my watch cars on the website. Plz fix.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001549",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Unexpected",
       "source_url": "https://www.reddit.com/r/Unexpected/comments/10op1yx/they_got_the_snap/j6je0h2/",
@@ -21974,7 +23813,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001428",
+      "id": "rvw-001550",
       "source_website": "reddit.com",
       "source_label": "Reddit r/climatedisalarm",
       "source_url": "https://www.reddit.com/r/climatedisalarm/comments/10oc6y4/tesla_insurers_take_different_paths_to_deal_with/j6dovzg/",
@@ -21989,7 +23828,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001429",
+      "id": "rvw-001551",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/63d45d119b64b1bdaf45527e",
@@ -22004,7 +23843,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001430",
+      "id": "rvw-001552",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
       "source_url": "https://www.trustpilot.com/reviews/63d35e414b01fb3f548e487c",
@@ -22019,7 +23858,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Rude/Unhelpful Support"
     },
     {
-      "id": "rvw-001431",
+      "id": "rvw-001553",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/10mhkqc/best_copart_roro/",
@@ -22034,7 +23873,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-001432",
+      "id": "rvw-001554",
       "source_website": "reddit.com",
       "source_label": "Reddit r/mercedes_benz",
       "source_url": "https://www.reddit.com/r/mercedes_benz/comments/10mgclq/glc_300_from_salvage_auction/",
@@ -22049,7 +23888,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001433",
+      "id": "rvw-001555",
       "source_website": "reddit.com",
       "source_label": "Reddit r/GilmoreGirls",
       "source_url": "https://www.reddit.com/r/GilmoreGirls/comments/10kb5i3/do_you_guys_listen_to_the_podcast_often_if_yes/j5soqpl/",
@@ -22064,7 +23903,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001434",
+      "id": "rvw-001556",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/10jts7u/total_loss_progressive/j5mm47p/",
@@ -22079,7 +23918,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001435",
+      "id": "rvw-001557",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
       "source_url": "https://www.reddit.com/r/Insurance/comments/10jts7u/total_loss_progressive/j5mlnrg/",
@@ -22094,7 +23933,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "How to Bid (First Time)"
     },
     {
-      "id": "rvw-001436",
+      "id": "rvw-001558",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Vespa",
       "source_url": "https://www.reddit.com/r/Vespa/comments/10gc3sd/hello_vespa_community_recently_bought_a_theft/",
@@ -22109,7 +23948,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Wire Pending/Posting Delay"
     },
     {
-      "id": "rvw-001437",
+      "id": "rvw-001559",
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=9523722086",
+      "author": "Brightose",
+      "review_date": "2023-01-19",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "App Errors issues. This app is nice but I think the it shoes errors a lot , that should be worked on",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting"
+    },
+    {
+      "id": "rvw-001560",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Autobody",
       "source_url": "https://www.reddit.com/r/Autobody/comments/10dh1qq/i_want_to_start_fixingbuying_and_selling_cars/",
@@ -22124,7 +23978,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001438",
+      "id": "rvw-001561",
       "source_website": "reddit.com",
       "source_label": "Reddit r/mclaren",
       "source_url": "https://www.reddit.com/r/mclaren/comments/10dm59j/found_a_great_deal_on_a_2018_570s_but_needs_front/j4n3lnc/",
@@ -22139,7 +23993,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001439",
+      "id": "rvw-001562",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AskARussian",
       "source_url": "https://www.reddit.com/r/AskARussian/comments/109zagp/is_it_possible_to_import_a_russian_car_to_europe/j429vmt/",
@@ -22154,7 +24008,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Schedule/ Reschedule Pickup"
     },
     {
-      "id": "rvw-001440",
+      "id": "rvw-001563",
       "source_website": "reddit.com",
       "source_label": "Reddit r/CasualConversation",
       "source_url": "https://www.reddit.com/r/CasualConversation/comments/109r1le/looking_for_longterm_friends_or_gaming_buddies/j40sf8d/",
@@ -22169,7 +24023,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001441",
+      "id": "rvw-001564",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Volkswagen",
       "source_url": "https://www.reddit.com/r/Volkswagen/comments/109fpnw/insurance_actual_cash_value_of_a_mkiv_jetta/j3y7rne/",
@@ -22184,7 +24038,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001442",
+      "id": "rvw-001565",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Volkswagen",
       "source_url": "https://www.reddit.com/r/Volkswagen/comments/109fpnw/insurance_actual_cash_value_of_a_mkiv_jetta/",
@@ -22199,7 +24053,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001443",
+      "id": "rvw-001566",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
       "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
@@ -22214,7 +24068,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "App Login Troubleshooting"
     },
     {
-      "id": "rvw-001444",
+      "id": "rvw-001567",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/107b477/best_iaai_shipping_dubai/",
@@ -22229,7 +24083,22 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Helpful Support Experience"
     },
     {
-      "id": "rvw-001445",
+      "id": "rvw-001568",
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/4Runner",
+      "source_url": "https://www.reddit.com/r/4Runner/comments/103oeab/what_does_everyone_do_for_work/j35p0lx/",
+      "author": "Fromwhichstars",
+      "review_date": "2023-01-06",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "I bought mine recovered stolen at an iaa auction. Was only missing a side mirror which was an easy fix. Has a few small scratches but that would’ve happened eventually anyway",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-001569",
       "source_website": "reddit.com",
       "source_label": "Reddit r/AskMechanics",
       "source_url": "https://www.reddit.com/r/AskMechanics/comments/101vhm3/2008_honda_civic_overheating_coolant_seems_to_be/j2yenpy/",
@@ -22244,7 +24113,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Fees"
     },
     {
-      "id": "rvw-001446",
+      "id": "rvw-001570",
       "source_website": "reddit.com",
       "source_label": "Reddit r/u_Best4shipping",
       "source_url": "https://www.reddit.com/r/u_Best4shipping/comments/1031j1u/find_best_iaai_shipping_dubai_services_at/",
@@ -22259,7 +24128,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
-      "id": "rvw-001447",
+      "id": "rvw-001571",
       "source_website": "reddit.com",
       "source_label": "Reddit r/OffGrid",
       "source_url": "https://www.reddit.com/r/OffGrid/comments/101tl13/living_in_a_camper_inside_a_steel_building/j2pti67/",
@@ -22274,7 +24143,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001448",
+      "id": "rvw-001572",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Sacramento",
       "source_url": "https://www.reddit.com/r/Sacramento/comments/1012pd4/regarding_the_flaw_in_our_urban_forest/j2nyczc/",
@@ -22289,7 +24158,7 @@ window.IAA_REVIEWS_DATA = {
       "tier3": "Lot Damage"
     },
     {
-      "id": "rvw-001449",
+      "id": "rvw-001573",
       "source_website": "reddit.com",
       "source_label": "Reddit r/HaggardGarage",
       "source_url": "https://www.reddit.com/r/HaggardGarage/comments/zxg1zo/adams_wrecked_gt3_showed_up_on_copart/j2h7u4z/",
