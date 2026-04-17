@@ -60,28 +60,15 @@ jobs:
           echo "until=$UNTIL_VALUE" >> "$GITHUB_OUTPUT"
           echo "Refreshing reviews from $SINCE_VALUE through $UNTIL_VALUE"
 
-      - name: Build Copart review data
+      - name: Refresh review data
         env:
           PYTHONUNBUFFERED: "1"
         run: |
-          python scripts/build_reviews.py \
+          python scripts/refresh_review_data.py \
             --since "${{ steps.refresh-window.outputs.since }}" \
             --until "${{ steps.refresh-window.outputs.until }}" \
             --target 0 \
             --max-output 120000
-
-      - name: Build IAA review data
-        env:
-          PYTHONUNBUFFERED: "1"
-        run: |
-          python scripts/build_reviews_iaa.py \
-            --since "${{ steps.refresh-window.outputs.since }}" \
-            --until "${{ steps.refresh-window.outputs.until }}" \
-            --target 0 \
-            --max-output 120000
-
-      - name: Build JS data bundles
-        run: python scripts/build_js_data.py
 
       - name: Prepare Pages artifact
         run: |
@@ -89,7 +76,7 @@ jobs:
           mkdir -p site-dist/data site-dist/assets
           cp index.html site-dist/index.html
           cp index.html site-dist/404.html
-          base64 -d app.js.gz.b64 | gunzip > site-dist/app.js
+          cp app.js site-dist/app.js
           cp styles.css site-dist/styles.css
           cp -R assets/. site-dist/assets/
           cp -R data/. site-dist/data/
@@ -107,7 +94,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/reviews.json data/reviews.csv data/reviews-iaa.json data/reviews-iaa.csv data/reviews-data.js data/reviews-data-iaa.js
+          git add data/
           if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0

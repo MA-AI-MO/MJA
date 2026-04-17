@@ -432,32 +432,53 @@
       .slice(0, limit);
   }
 
-  function pickRepresentativeReviews(rows, limit) {
+  function rankRepresentativeReviews(rows) {
     const sourceCounts = countByMap(rows, "source_website");
-    const ranked = [...rows].sort((a, b) => {
+    return [...rows].sort((a, b) => {
       const scoreA = Math.min(wordCount(a.review_text), 90) + (sourceCounts.get(a.source_website) || 0);
       const scoreB = Math.min(wordCount(b.review_text), 90) + (sourceCounts.get(b.source_website) || 0);
       if (scoreB !== scoreA) return scoreB - scoreA;
       return formatDate(b.review_date).localeCompare(formatDate(a.review_date));
     });
+  }
+
+  function pickRepresentativeReviews(rows, limit, offset = 0) {
+    const ranked = rankRepresentativeReviews(rows);
+    if (!ranked.length) return [];
 
     const picked = [];
     const seenSources = new Set();
+    const total = ranked.length;
+    const start = offset >= 0 ? offset % total : 0;
 
-    ranked.forEach((row) => {
-      if (picked.length >= limit) return;
-      if (seenSources.has(row.source_website)) return;
+    for (let step = 0; step < total && picked.length < limit; step += 1) {
+      const row = ranked[(start + step) % total];
+      if (seenSources.has(row.source_website)) continue;
       picked.push(row);
       seenSources.add(row.source_website);
-    });
+    }
 
-    ranked.forEach((row) => {
-      if (picked.length >= limit) return;
-      if (picked.some((existing) => existing.id === row.id)) return;
+    for (let step = 0; step < total && picked.length < limit; step += 1) {
+      const row = ranked[(start + step) % total];
+      if (picked.some((existing) => existing.id === row.id)) continue;
       picked.push(row);
-    });
+    }
 
     return picked.slice(0, limit);
+  }
+
+  function buildSelectionSignature(panel, rowCount) {
+    return [
+      activeBusiness,
+      panel.sentiment,
+      panel.state.websites.join("|"),
+      panel.state.years.join("|"),
+      panel.state.months.join("|"),
+      panel.state.tier1 || "",
+      panel.state.tier2 || "",
+      panel.state.tier3 || "",
+      rowCount,
+    ].join("::");
   }
 
   function buildAiSummary(rows, scope, sentiment) {
@@ -751,6 +772,8 @@
         tier2: null,
         tier3: null,
       };
+      this.reviewOffset = 0;
+      this.reviewSignature = "";
 
       this.bindElements();
       this.initFilters();
@@ -770,6 +793,8 @@
         tier2: null,
         tier3: null,
       };
+      this.reviewOffset = 0;
+      this.reviewSignature = "";
       this.populateWebsiteOptions();
       this.populateYearOptions();
       this.populateMonthOptions();
@@ -796,6 +821,7 @@
       this.selectionMetrics = this.root.querySelector(".selection-metrics");
       this.topReviews = this.root.querySelector(".top-reviews");
       this.aiSummary = this.root.querySelector(".ai-summary");
+      this.refreshReviewsBtn = this.root.querySelector(".refresh-reviews-btn");
     }
 
     initFilters() {
@@ -845,6 +871,15 @@
         this.state.tier3 = null;
         this.render();
       });
+
+      if (this.refreshReviewsBtn) {
+        this.refreshReviewsBtn.addEventListener("click", () => {
+          const rows = this.getScopedSummaryRows().rows;
+          if (rows.length <= 3) return;
+          this.reviewOffset = (this.reviewOffset + 3) % rows.length;
+          this.renderSelectionSummary();
+        });
+      }
 
       this.downloadBtn.addEventListener("click", () => {
         const rows = this.getSelectionRows();
@@ -1196,6 +1231,11 @@
 
     renderSelectionSummary() {
       const { rows, scope } = this.getScopedSummaryRows();
+      const selectionSignature = buildSelectionSignature(this, rows.length);
+      if (selectionSignature !== this.reviewSignature) {
+        this.reviewOffset = 0;
+        this.reviewSignature = selectionSignature;
+      }
 
       const siteText = toSummaryText(this.state.websites, "All websites");
       const yearText = toSummaryText(this.state.years, "All years");
@@ -1240,7 +1280,10 @@
       }
 
       this.topReviews.innerHTML = "";
-      const representativeRows = pickRepresentativeReviews(rows, 3);
+      if (this.refreshReviewsBtn) {
+        this.refreshReviewsBtn.disabled = rows.length <= 3;
+      }
+      const representativeRows = pickRepresentativeReviews(rows, 3, this.reviewOffset);
       if (!representativeRows.length) {
         const li = document.createElement("li");
         li.textContent = "No reviews in current selection.";
