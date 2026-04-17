@@ -368,12 +368,15 @@ class Collector:
         if text == "yesterday":
             return (datetime.now(timezone.utc).date() - timedelta(days=1)).isoformat()
 
-        match = re.search(r"(\d+)\s+(day|week|month|year)s?\s+ago", text)
+        match = re.search(r"\b(a|an|\d+)\s+(minute|hour|day|week|month|year)s?\s+ago\b", text)
         if not match:
             return "1970-01-01"
 
-        amount = int(match.group(1))
+        amount_raw = match.group(1)
+        amount = 1 if amount_raw in {"a", "an"} else int(amount_raw)
         unit = match.group(2)
+        if unit in {"minute", "hour"}:
+            return datetime.now(timezone.utc).date().isoformat()
         days = {
             "day": amount,
             "week": amount * 7,
@@ -1418,53 +1421,80 @@ class Collector:
             return
 
         for page_url in BIRDEYE_PAGES:
-            try:
-                html = S.get(page_url, timeout=35).text
-            except Exception:
-                continue
+            seen_page_signatures = set()
+            for page in range(1, 450):
+                paged_url = page_url if page == 1 else f"{page_url}{'&' if '?' in page_url else '?'}page={page}"
+                try:
+                    html = S.get(paged_url, timeout=35).text
+                except Exception:
+                    break
 
-            soup = BeautifulSoup(html, "html.parser")
-            blocks = soup.find_all("div", class_=re.compile(r"CustomerReview_clientsReviews"))
+                soup = BeautifulSoup(html, "html.parser")
+                blocks = soup.find_all("div", class_=re.compile(r"CustomerReview_clientsReviews"))
+                if not blocks:
+                    break
 
-            for idx, block in enumerate(blocks, start=1):
-                text_node = block.find("p")
-                review_text = self.normalize_text(text_node.get_text(" ", strip=True) if text_node else "")
-                if not review_text:
-                    continue
+                page_signature = []
+                page_oldest_date = None
+                for idx, block in enumerate(blocks, start=1):
+                    text_node = block.find("p")
+                    review_text = self.normalize_text(text_node.get_text(" ", strip=True) if text_node else "")
+                    if not review_text:
+                        continue
 
-                author = "Birdeye user"
-                author_img = block.find("img", alt=True)
-                if author_img:
-                    author = self.normalize_text(re.sub(r"'s profile image$", "", author_img.get("alt") or "")) or author
+                    author = "Birdeye user"
+                    author_img = block.find("img", alt=True)
+                    if author_img:
+                        author = self.normalize_text(re.sub(r"'s profile image$", "", author_img.get("alt") or "")) or author
 
-                summary_parts = [
-                    self.normalize_text(part)
-                    for part in block.get_text("|", strip=True).split("|")
-                    if self.normalize_text(part)
-                ]
-                review_source = "Birdeye"
-                review_date_raw = ""
-                if "on" in summary_parts:
-                    on_index = summary_parts.index("on")
-                    if on_index + 1 < len(summary_parts):
-                        review_source = summary_parts[on_index + 1]
-                    if on_index + 2 < len(summary_parts):
-                        review_date_raw = summary_parts[on_index + 2]
+                    summary_parts = [
+                        self.normalize_text(part)
+                        for part in block.get_text("|", strip=True).split("|")
+                        if self.normalize_text(part)
+                    ]
+                    review_source = "Birdeye"
+                    review_date_raw = ""
+                    if "on" in summary_parts:
+                        on_index = summary_parts.index("on")
+                        if on_index + 1 < len(summary_parts):
+                            review_source = summary_parts[on_index + 1]
+                        if on_index + 2 < len(summary_parts):
+                            review_date_raw = summary_parts[on_index + 2]
 
-                review_date = self.normalize_relative_date(review_date_raw)
-                external_seed = f"{page_url}|{author}|{review_date}|{review_text[:160]}"
-                external_id = hashlib.md5(external_seed.encode("utf-8")).hexdigest()[:16]
+                    review_date = self.normalize_relative_date(review_date_raw)
+                    if review_date != "1970-01-01":
+                        if page_oldest_date is None or review_date < page_oldest_date:
+                            page_oldest_date = review_date
 
-                self.add_review(
-                    source_website="birdeye.com",
-                    source_label=f"Birdeye ({review_source})",
-                    source_url=f"{page_url}#review-{idx}",
-                    author=author,
-                    review_date=review_date,
-                    rating=None,
-                    review_text=review_text,
-                    external_id=f"birdeye_{external_id}",
-                )
+                    external_seed = f"{paged_url}|{author}|{review_date}|{review_text[:160]}"
+                    external_id = hashlib.md5(external_seed.encode("utf-8")).hexdigest()[:16]
+                    page_signature.append((author[:48], review_date, review_text[:96]))
+
+                    self.add_review(
+                        source_website="birdeye.com",
+                        source_label=f"Birdeye ({review_source})",
+                        source_url=f"{paged_url}#review-{idx}",
+                        author=author,
+                        review_date=review_date,
+                        rating=None,
+                        review_text=review_text,
+                        external_id=f"birdeye_{external_id}",
+                    )
+
+                compact_signature = tuple(page_signature[:8])
+                if compact_signature:
+                    if compact_signature in seen_page_signatures:
+                        break
+                    seen_page_signatures.add(compact_signature)
+
+                if page % 20 == 0:
+                    print(f"  - {page_url} page {page}: {len(self.records)} collected")
+
+                if page_oldest_date and page_oldest_date < self.since:
+                    break
+
+                if len(blocks) < 3:
+                    break
 
         print(f"  - Added {len(self.records) - start_count} Birdeye reviews")
 

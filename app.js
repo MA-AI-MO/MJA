@@ -48,62 +48,34 @@
     if (!switcher) return;
 
     switcher.innerHTML = "";
+    const wrap = document.createElement("label");
+    wrap.className = "business-selector-wrap";
+
+    const label = document.createElement("span");
+    label.className = "business-selector-label";
+    label.textContent = "Company";
+
+    const select = document.createElement("select");
+    select.className = "business-selector";
+    select.id = "business-selector";
     businessOrder.forEach((key) => {
       const cfg = businessConfig[key];
       const dataset = datasets[key] || { meta: {}, reviews: [] };
       const reviewCount = dataset?.meta?.review_count || 0;
-      const sourceCount = Object.keys(dataset?.meta?.source_counts || {}).length;
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = "business-option";
-      button.dataset.business = key;
-      button.setAttribute("aria-pressed", key === activeBusiness ? "true" : "false");
-
-      const topRow = document.createElement("div");
-      topRow.className = "business-option-top";
-
-      const img = document.createElement("img");
-      img.src = cfg.logo_src;
-      img.alt = cfg.logo_alt;
-
-      const copyWrap = document.createElement("div");
-      copyWrap.className = "business-option-copy";
-
-      const title = document.createElement("span");
-      title.className = "business-option-title";
-      title.textContent = cfg.switch_label || cfg.display_name || key;
-
-      const subtitle = document.createElement("span");
-      subtitle.className = "business-option-subtitle";
-      subtitle.textContent = reviewCount
-        ? `${formatCompactCount(reviewCount)} reviews collected`
-        : "No reviews collected yet";
-
-      copyWrap.appendChild(title);
-      copyWrap.appendChild(subtitle);
-      topRow.appendChild(img);
-      topRow.appendChild(copyWrap);
-
-      const metaRow = document.createElement("div");
-      metaRow.className = "business-option-meta";
-
-      const countChip = document.createElement("span");
-      countChip.className = "business-chip";
-      countChip.textContent = `${formatCompactCount(reviewCount)} reviews`;
-
-      const sourceChip = document.createElement("span");
-      sourceChip.className = "business-chip";
-      sourceChip.textContent = `${sourceCount} source${sourceCount === 1 ? "" : "s"}`;
-
-      metaRow.appendChild(countChip);
-      metaRow.appendChild(sourceChip);
-      button.appendChild(topRow);
-      button.appendChild(metaRow);
-      button.addEventListener("click", () => {
-        switchBusiness(key);
-      });
-      switcher.appendChild(button);
+      const option = document.createElement("option");
+      option.value = key;
+      option.textContent = `${cfg.switch_label || cfg.display_name || key} (${formatCompactCount(reviewCount)})`;
+      if (key === activeBusiness) option.selected = true;
+      select.appendChild(option);
     });
+
+    select.addEventListener("change", (event) => {
+      switchBusiness(event.target.value);
+    });
+
+    wrap.appendChild(label);
+    wrap.appendChild(select);
+    switcher.appendChild(wrap);
   }
 
   function applyBusinessTheme() {
@@ -128,11 +100,8 @@
     if (title) title.textContent = cfg.title;
     document.title = cfg.title;
 
-    document.querySelectorAll(".business-option").forEach((btn) => {
-      const isActive = btn.dataset.business === activeBusiness;
-      btn.classList.toggle("is-active", isActive);
-      btn.setAttribute("aria-pressed", isActive ? "true" : "false");
-    });
+    const selector = document.getElementById("business-selector");
+    if (selector) selector.value = activeBusiness;
   }
 
   function renderSources() {
@@ -486,6 +455,7 @@
       return {
         intro: "No reviews are available for the current selection.",
         bullets: [],
+        note: "",
       };
     }
 
@@ -512,44 +482,54 @@
       : `Across ${rows.length} reviews in ${scopeText}, most posts fall into a few repeat discussion themes, practical questions, or process-related experiences.`;
 
     if (tier3Entries.length > 1) {
-      bullets.push(
-        `${sentiment === "negative" ? "The biggest complaint clusters are" : "The biggest discussion clusters are"} ${formatBreakdown(tier3Entries, rows.length, 3)}.`
-      );
+      bullets.push({
+        lead: sentiment === "negative" ? "Issue concentration" : "Discussion concentration",
+        body: `${sentiment === "negative" ? "The biggest complaint clusters are" : "The biggest discussion clusters are"} ${formatBreakdown(tier3Entries, rows.length, 3)}.`,
+      });
     } else if (tier2Entries.length > 1) {
-      bullets.push(`Most of the volume in this selection sits in ${formatBreakdown(tier2Entries, rows.length, 3)}.`);
+      bullets.push({
+        lead: "Volume split",
+        body: `Most of the volume in this selection sits in ${formatBreakdown(tier2Entries, rows.length, 3)}.`,
+      });
     }
 
     if (signalThemes.length) {
-      bullets.push(
-        `${sentiment === "negative" ? "Across the review text, people most often describe" : "Across the review text, people most often discuss"} ${naturalJoin(
+      bullets.push({
+        lead: sentiment === "negative" ? "Repeated failure points" : "Repeated discussion points",
+        body: `${sentiment === "negative" ? "Across the review text, people most often describe" : "Across the review text, people most often discuss"} ${naturalJoin(
           signalThemes.map((theme) => `${theme.text} (${theme.count} reviews)`)
-        )}.`
-      );
+        )}.`,
+      });
     } else if (detailedThemes.length) {
-      bullets.push(
-        `${sentiment === "negative" ? "Repeated review language points to" : "Repeated review language focuses on"} ${naturalJoin(detailedThemes)}.`
-      );
+      bullets.push({
+        lead: "Repeated language",
+        body: `${sentiment === "negative" ? "Repeated review language points to" : "Repeated review language focuses on"} ${naturalJoin(detailedThemes)}.`,
+      });
     }
 
     if (sourceEntries.length) {
-      bullets.push(
-        `${sentiment === "negative" ? "Most of this complaint volume comes from" : "Most of this discussion volume comes from"} ${sourceText}.`
-      );
+      bullets.push({
+        lead: "Source mix",
+        body: `${sentiment === "negative" ? "Most of this complaint volume comes from" : "Most of this discussion volume comes from"} ${sourceText}.`,
+      });
     }
 
     if (questionShare >= 0.2) {
-      bullets.push(
-        `${Math.round(questionShare * 100)}% of these posts are written as questions or follow-up requests, so many users were still trying to resolve the issue when they posted.`
-      );
+      bullets.push({
+        lead: "Resolution signal",
+        body: `${Math.round(questionShare * 100)}% of these posts are written as questions or follow-up requests, so many users were still trying to resolve the issue when they posted.`,
+      });
     } else if (avgRating !== "n/a") {
-      bullets.push(
-        `${sentiment === "negative" ? "The average rating in this selection is" : "The average rating across this selection is"} ${avgRating}.`
-      );
+      bullets.push({
+        lead: "Rating signal",
+        body: `${sentiment === "negative" ? "The average rating in this selection is" : "The average rating across this selection is"} ${avgRating}.`,
+      });
     }
 
     return {
       intro,
       bullets: bullets.slice(0, 4),
+      note: "This summary updates with the current filters and tier selection, so it is most useful as a fast synthesis of the visible review set.",
     };
   }
 
@@ -772,6 +752,7 @@
         tier2: null,
         tier3: null,
       };
+      this.activeInsight = "summary";
       this.reviewOffset = 0;
       this.reviewSignature = "";
 
@@ -822,6 +803,8 @@
       this.topReviews = this.root.querySelector(".top-reviews");
       this.aiSummary = this.root.querySelector(".ai-summary");
       this.refreshReviewsBtn = this.root.querySelector(".refresh-reviews-btn");
+      this.insightTabs = Array.from(this.root.querySelectorAll(".insight-tab"));
+      this.insightCards = Array.from(this.root.querySelectorAll(".insight-card"));
     }
 
     initFilters() {
@@ -890,6 +873,30 @@
         const prefix = businessConfig[activeBusiness].csv_prefix;
         const file = `${prefix}-${this.sentiment}-${slugify(websites)}-${slugify(years)}-${slugify(months)}-${slugify(part)}.csv`;
         downloadCsv(rows, file);
+      });
+
+      this.insightTabs.forEach((button) => {
+        button.addEventListener("click", () => {
+          this.setActiveInsight(button.dataset.insightTarget || "summary");
+        });
+      });
+    }
+
+    setActiveInsight(nextInsight) {
+      this.activeInsight = nextInsight || "summary";
+      this.syncInsightState();
+    }
+
+    syncInsightState() {
+      this.insightTabs.forEach((button) => {
+        const isActive = (button.dataset.insightTarget || "") === this.activeInsight;
+        button.classList.toggle("is-active", isActive);
+        button.setAttribute("aria-selected", isActive ? "true" : "false");
+      });
+
+      this.insightCards.forEach((card) => {
+        const isActive = (card.dataset.insightPanel || "") === this.activeInsight;
+        card.classList.toggle("is-active", isActive);
       });
     }
 
@@ -1070,6 +1077,7 @@
       this.renderTopTopics(filtered);
       this.renderWebsiteByTier(filtered);
       this.renderSelectionSummary();
+      this.syncInsightState();
     }
 
     renderTier1(filtered, previousYearRows) {
@@ -1206,27 +1214,79 @@
           };
         })
         .sort((a, b) => b.total - a.total)
-        .slice(0, 10);
+        .slice(0, 6);
 
       if (!rows.length) {
         this.websiteTierTable.textContent = "No website data for this selection.";
         return;
       }
 
-      const table = document.createElement("table");
-      const thead = document.createElement("thead");
-      thead.innerHTML = `<tr><th>${levelField.toUpperCase()}</th><th>Top Website</th><th>Count</th></tr>`;
-      table.appendChild(thead);
+      const list = document.createElement("div");
+      list.className = "website-tier-list";
 
-      const tbody = document.createElement("tbody");
-      rows.forEach((row) => {
-        const tr = document.createElement("tr");
-        tr.innerHTML = `<td>${row.tierName}</td><td>${row.topSite}</td><td>${row.topCount}/${row.total}</td>`;
-        tbody.appendChild(tr);
+      rows.forEach((row, index) => {
+        const share = row.total ? (row.topCount / row.total) * 100 : 0;
+        const card = document.createElement("article");
+        card.className = "website-tier-item";
+
+        const head = document.createElement("div");
+        head.className = "website-tier-head";
+
+        const rank = document.createElement("span");
+        rank.className = "website-tier-rank";
+        rank.textContent = String(index + 1);
+
+        const tierName = document.createElement("div");
+        tierName.className = "website-tier-name";
+        tierName.textContent = row.tierName;
+
+        head.appendChild(rank);
+        head.appendChild(tierName);
+
+        const siteRow = document.createElement("div");
+        siteRow.className = "website-tier-site-row";
+
+        const site = document.createElement("span");
+        site.className = "website-tier-site";
+        site.textContent = row.topSite;
+
+        const count = document.createElement("span");
+        count.className = "website-tier-count";
+        count.textContent = `${row.topCount}/${row.total}`;
+
+        siteRow.appendChild(site);
+        siteRow.appendChild(count);
+
+        const track = document.createElement("div");
+        track.className = "website-tier-share-track";
+
+        const fill = document.createElement("div");
+        fill.className = "website-tier-share-fill";
+        fill.style.width = `${Math.max(6, Math.min(share, 100))}%`;
+        track.appendChild(fill);
+
+        const foot = document.createElement("div");
+        foot.className = "website-tier-foot";
+
+        const shareText = document.createElement("span");
+        shareText.className = "website-tier-share";
+        shareText.textContent = `${formatShare(row.topCount, row.total)} from top website`;
+
+        const level = document.createElement("span");
+        level.className = "website-tier-level";
+        level.textContent = levelField.toUpperCase();
+
+        foot.appendChild(shareText);
+        foot.appendChild(level);
+
+        card.appendChild(head);
+        card.appendChild(siteRow);
+        card.appendChild(track);
+        card.appendChild(foot);
+        list.appendChild(card);
       });
-      table.appendChild(tbody);
 
-      this.websiteTierTable.appendChild(table);
+      this.websiteTierTable.appendChild(list);
     }
 
     renderSelectionSummary() {
@@ -1265,18 +1325,34 @@
       this.aiSummary.innerHTML = "";
       const aiSummary = buildAiSummary(rows, scope, this.sentiment);
       const aiParagraph = document.createElement("p");
+      aiParagraph.className = "ai-summary-intro";
       aiParagraph.textContent = aiSummary.intro;
       this.aiSummary.appendChild(aiParagraph);
 
       if (aiSummary.bullets.length) {
         const aiList = document.createElement("ul");
         aiList.className = "ai-summary-list";
-        aiSummary.bullets.forEach((text) => {
+        aiSummary.bullets.forEach((entry) => {
           const li = document.createElement("li");
-          li.textContent = text;
+          const lead = document.createElement("strong");
+          lead.className = "ai-summary-lead";
+          lead.textContent = `${entry.lead}:`;
+
+          const body = document.createElement("span");
+          body.textContent = ` ${entry.body}`;
+
+          li.appendChild(lead);
+          li.appendChild(body);
           aiList.appendChild(li);
         });
         this.aiSummary.appendChild(aiList);
+      }
+
+      if (aiSummary.note) {
+        const note = document.createElement("p");
+        note.className = "ai-summary-note";
+        note.textContent = aiSummary.note;
+        this.aiSummary.appendChild(note);
       }
 
       this.topReviews.innerHTML = "";
@@ -1293,7 +1369,27 @@
 
       representativeRows.forEach((row) => {
         const li = document.createElement("li");
-        li.textContent = `${row.review_text} (${row.source_label}, ${row.author}, ${formatDate(row.review_date)})`;
+        li.className = "top-review-item";
+
+        const quote = document.createElement("p");
+        quote.className = "top-review-quote";
+        quote.textContent = row.review_text;
+
+        const meta = document.createElement("div");
+        meta.className = "top-review-meta";
+        [
+          row.source_label,
+          row.author,
+          formatDate(row.review_date),
+        ].filter(Boolean).forEach((value) => {
+          const chip = document.createElement("span");
+          chip.className = "top-review-chip";
+          chip.textContent = value;
+          meta.appendChild(chip);
+        });
+
+        li.appendChild(quote);
+        li.appendChild(meta);
         this.topReviews.appendChild(li);
       });
     }
