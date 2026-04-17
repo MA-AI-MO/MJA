@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Copart / IAA Web Sentiment Analysis Tool</title>
+  <title>Auction Web Sentiment Analysis Tool</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -13,22 +13,13 @@
         id="brand-logo"
         class="brand-logo"
         src="assets/copart-logo.svg"
-        alt="Copart logo"
+        alt="Business logo"
       />
       <div>
-        <h1 id="app-title">Copart Web Sentiment Analysis Tool</h1>
+        <h1 id="app-title">Auction Web Sentiment Analysis Tool</h1>
       </div>
     </div>
-    <div class="business-switcher" id="business-switcher" aria-label="Website selector">
-      <button type="button" class="business-option is-active" data-business="copart" aria-pressed="true">
-        <img src="assets/copart-logo.svg" alt="Copart" />
-        <span>Copart</span>
-      </button>
-      <button type="button" class="business-option" data-business="iaa" aria-pressed="false">
-        <img src="assets/iaa-logo.png" alt="IAA" />
-        <span>IAA</span>
-      </button>
-    </div>
+    <div class="business-switcher" id="business-switcher" aria-label="Website selector"></div>
   </header>
 
   <main class="dashboard">
@@ -184,9 +175,8 @@
     </details>
   </section>
 
-  <script src="data/tiers-data.js"></script>
-  <script src="data/reviews-data.js"></script>
-  <script src="data/reviews-data-iaa.js"></script>
+  <script src="data/app-config.js"></script>
+  <script src="data/reviews-data-all.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

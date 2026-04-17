@@ -1,0 +1,770 @@
+{
+  "business_order": [
+    "copart",
+    "iaa",
+    "manheim",
+    "adesa",
+    "openlane",
+    "acv",
+    "americas_auto_auction"
+  ],
+  "businesses": {
+    "copart": {
+      "display_name": "Copart",
+      "switch_label": "Copart",
+      "title": "Copart Web Sentiment Analysis Tool",
+      "logo_src": "assets/copart-logo.svg",
+      "logo_alt": "Copart logo",
+      "csv_prefix": "copart",
+      "theme": {
+        "brand_primary": "#002d4b",
+        "brand_secondary": "#1b75bb",
+        "title_shade": "#2661d9",
+        "negative_line": "#1b75bb",
+        "positive_line": "#1b75bb",
+        "header_start": "#1f56cb",
+        "header_end": "#3f75e6",
+        "page_accent_a": "rgba(27, 117, 187, 0.12)",
+        "page_accent_b": "rgba(163, 30, 34, 0.08)"
+      },
+      "output_json": "reviews.json",
+      "output_csv": "reviews.csv",
+      "terms": [
+        "copart",
+        "co part",
+        "copart transportation",
+        "copart go",
+        "quickauction"
+      ],
+      "google_play_apps": [
+        "com.copart.membermobile",
+        "com.copart.transportation",
+        "com.copart.seller.mobile",
+        "com.copart.seller.go",
+        "com.copart.quikauction"
+      ],
+      "google_play_markets": [
+        [
+          "us",
+          "en"
+        ],
+        [
+          "us",
+          "es"
+        ],
+        [
+          "us",
+          "fr"
+        ],
+        [
+          "us",
+          "de"
+        ],
+        [
+          "us",
+          "pt"
+        ],
+        [
+          "us",
+          "ru"
+        ],
+        [
+          "us",
+          "ar"
+        ],
+        [
+          "us",
+          "it"
+        ],
+        [
+          "us",
+          "nl"
+        ],
+        [
+          "us",
+          "tr"
+        ],
+        [
+          "us",
+          "pl"
+        ],
+        [
+          "us",
+          "ja"
+        ],
+        [
+          "us",
+          "ko"
+        ]
+      ],
+      "trustpilot_slugs": [
+        "copart.co.uk",
+        "copart.com",
+        "copart.de",
+        "copart.ie",
+        "copart.es",
+        "copart.fr",
+        "copart.nl",
+        "copart.it",
+        "copart.ca"
+      ],
+      "apple_app_ids": [
+        "414275302",
+        "1410332198",
+        "1461510275",
+        "1480604203",
+        "6474267839"
+      ],
+      "apple_countries": [
+        "us",
+        "gb",
+        "ca",
+        "au",
+        "nz",
+        "ie"
+      ],
+      "reviewsio_root": "https://www.reviews.io/company-reviews/store/copart-com-",
+      "reviewsio_url_tokens": [
+        "copart-com-"
+      ],
+      "complaintsboard_root": "https://www.complaintsboard.com/copart-b120065",
+      "smartcustomer_root": "https://www.smartcustomer.com/reviews/copart.com",
+      "bbb_search_text": "Copart",
+      "bbb_fallback_profiles": [
+        "https://www.bbb.org/us/tx/dallas/profile/online-car-dealers/copart-inc-0875-90403032"
+      ],
+      "bbb_profile_tokens": [
+        "copart-inc"
+      ],
+      "ripoff_search_term": "copart",
+      "us_geo_markers": [
+        "copart dallas",
+        "copart houston",
+        "copart florida",
+        "copart texas",
+        "copart california",
+        "copart chicago",
+        "copart new jersey",
+        "copart usa"
+      ],
+      "strong_us_geo_markers": [
+        "copart dallas",
+        "copart houston",
+        "copart florida",
+        "copart texas",
+        "copart california",
+        "copart chicago",
+        "copart new jersey"
+      ],
+      "non_us_geo_markers": [
+        "copart.co.uk",
+        "copart uk"
+      ],
+      "reddit_queries": [
+        [
+          "copart",
+          420,
+          260
+        ],
+        [
+          "copart auction",
+          120,
+          80
+        ],
+        [
+          "copart app",
+          120,
+          80
+        ],
+        [
+          "copart fees",
+          120,
+          80
+        ],
+        [
+          "copart title",
+          120,
+          80
+        ]
+      ],
+      "reddit_subreddits": [
+        "copart",
+        "copartonline"
+      ]
+    },
+    "iaa": {
+      "display_name": "IAA",
+      "switch_label": "IAA",
+      "title": "IAA Web Sentiment Analysis Tool",
+      "logo_src": "assets/iaa-logo.png",
+      "logo_alt": "IAA logo",
+      "csv_prefix": "iaa",
+      "theme": {
+        "brand_primary": "#1a1d24",
+        "brand_secondary": "#cc202f",
+        "title_shade": "#cc202f",
+        "negative_line": "#cc202f",
+        "positive_line": "#cc202f",
+        "header_start": "#111319",
+        "header_end": "#cc202f",
+        "page_accent_a": "rgba(204, 32, 47, 0.12)",
+        "page_accent_b": "rgba(31, 35, 44, 0.12)"
+      },
+      "output_json": "reviews-iaa.json",
+      "output_csv": "reviews-iaa.csv",
+      "terms": [
+        "iaa",
+        "iaai",
+        "insurance auto auctions",
+        "iaa buyer salvage auctions"
+      ],
+      "google_play_apps": [
+        "com.iaai.android",
+        "com.iaa.mobile.IaaTow",
+        "com.iaai.csatoday",
+        "com.iaa.android.MarketValue",
+        "com.iaa.mobile.MpiTow2"
+      ],
+      "google_play_markets": [
+        [
+          "us",
+          "en"
+        ],
+        [
+          "us",
+          "es"
+        ],
+        [
+          "us",
+          "fr"
+        ],
+        [
+          "us",
+          "de"
+        ],
+        [
+          "us",
+          "pt"
+        ],
+        [
+          "us",
+          "ru"
+        ],
+        [
+          "us",
+          "ar"
+        ],
+        [
+          "us",
+          "it"
+        ],
+        [
+          "us",
+          "nl"
+        ],
+        [
+          "us",
+          "tr"
+        ],
+        [
+          "us",
+          "pl"
+        ],
+        [
+          "us",
+          "ja"
+        ],
+        [
+          "us",
+          "ko"
+        ]
+      ],
+      "trustpilot_slugs": [
+        "iaai.com"
+      ],
+      "apple_app_ids": [
+        "468532534",
+        "992957183",
+        "700336688",
+        "1530627185",
+        "1445616088",
+        "1440515803"
+      ],
+      "apple_countries": [
+        "us",
+        "ca",
+        "gb"
+      ],
+      "complaintsboard_root": "https://www.complaintsboard.com/iaa-b133628",
+      "smartcustomer_root": "https://www.smartcustomer.com/reviews/iaai.com",
+      "bbb_search_text": "Insurance Auto Auctions",
+      "bbb_fallback_profiles": [
+        "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839"
+      ],
+      "bbb_profile_tokens": [
+        "iaa-"
+      ],
+      "ripoff_search_term": "iaai",
+      "us_geo_markers": [
+        "iaa chicago",
+        "iaa houston",
+        "iaa dallas",
+        "iaa florida",
+        "iaa california",
+        "iaai chicago",
+        "iaai houston",
+        "iaai dallas",
+        "iaai florida",
+        "iaai california"
+      ],
+      "strong_us_geo_markers": [
+        "iaa chicago",
+        "iaa houston",
+        "iaa dallas",
+        "iaa florida",
+        "iaa california",
+        "iaai chicago",
+        "iaai houston",
+        "iaai dallas",
+        "iaai florida",
+        "iaai california"
+      ],
+      "reddit_queries": [
+        [
+          "iaai",
+          420,
+          260
+        ],
+        [
+          "insurance auto auctions",
+          220,
+          140
+        ],
+        [
+          "iaa auction",
+          220,
+          140
+        ],
+        [
+          "iaai buyer",
+          220,
+          140
+        ],
+        [
+          "iaai fees",
+          220,
+          140
+        ],
+        [
+          "iaai title",
+          220,
+          140
+        ]
+      ],
+      "reddit_subreddits": [
+        "iaai",
+        "iaa"
+      ]
+    },
+    "manheim": {
+      "display_name": "Manheim",
+      "switch_label": "Manheim",
+      "title": "Manheim Web Sentiment Analysis Tool",
+      "logo_src": "assets/manheim-logo.svg",
+      "logo_alt": "Manheim logo",
+      "csv_prefix": "manheim",
+      "theme": {
+        "brand_primary": "#16324f",
+        "brand_secondary": "#f47b20",
+        "title_shade": "#f47b20",
+        "negative_line": "#f47b20",
+        "positive_line": "#f47b20",
+        "header_start": "#10273e",
+        "header_end": "#f47b20",
+        "page_accent_a": "rgba(244, 123, 32, 0.12)",
+        "page_accent_b": "rgba(22, 50, 79, 0.10)"
+      },
+      "output_json": "reviews-manheim.json",
+      "output_csv": "reviews-manheim.csv",
+      "terms": [
+        "manheim",
+        "manheim auction",
+        "manheim auctions",
+        "manheim express",
+        "manheim marketplace"
+      ],
+      "google_play_apps": [
+        "com.manheim.mktplace",
+        "com.manheim.mobile.refresh"
+      ],
+      "trustpilot_slugs": [
+        "manheim.com"
+      ],
+      "apple_app_ids": [
+        "6744660081",
+        "1480842917"
+      ],
+      "apple_countries": [
+        "us",
+        "gb",
+        "ca"
+      ],
+      "smartcustomer_root": "https://www.smartcustomer.com/reviews/manheim.com",
+      "bbb_search_text": "",
+      "bbb_fallback_profiles": [
+        "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743",
+        "https://www.bbb.org/us/pa/manheim/profile/auctioneer/manheim-pennsylvania-auto-auction-0241-184056004"
+      ],
+      "bbb_profile_tokens": [
+        "manheim-"
+      ],
+      "us_geo_markers": [
+        "manheim pennsylvania",
+        "manheim atlanta",
+        "manheim indianapolis",
+        "manheim phoenix",
+        "manheim texas"
+      ],
+      "strong_us_geo_markers": [
+        "manheim pennsylvania",
+        "manheim atlanta",
+        "manheim indianapolis",
+        "manheim phoenix",
+        "manheim texas"
+      ],
+      "reddit_queries": [
+        [
+          "manheim auction",
+          120,
+          60
+        ],
+        [
+          "manheim title",
+          40,
+          20
+        ],
+        [
+          "manheim fees",
+          40,
+          20
+        ],
+        [
+          "manheim arbitration",
+          30,
+          15
+        ]
+      ]
+    },
+    "adesa": {
+      "display_name": "ADESA",
+      "switch_label": "ADESA",
+      "title": "ADESA Web Sentiment Analysis Tool",
+      "logo_src": "assets/adesa-logo.svg",
+      "logo_alt": "ADESA logo",
+      "csv_prefix": "adesa",
+      "theme": {
+        "brand_primary": "#183a5a",
+        "brand_secondary": "#00a8b5",
+        "title_shade": "#00a8b5",
+        "negative_line": "#00a8b5",
+        "positive_line": "#00a8b5",
+        "header_start": "#112b43",
+        "header_end": "#00a8b5",
+        "page_accent_a": "rgba(0, 168, 181, 0.12)",
+        "page_accent_b": "rgba(24, 58, 90, 0.10)"
+      },
+      "output_json": "reviews-adesa.json",
+      "output_csv": "reviews-adesa.csv",
+      "terms": [
+        "adesa",
+        "adesa marketplace"
+      ],
+      "google_play_apps": [
+        "com.adesa.marketplace"
+      ],
+      "trustpilot_slugs": [
+        "adesa.com"
+      ],
+      "apple_app_ids": [
+        "1660253652",
+        "903860668"
+      ],
+      "apple_countries": [
+        "us",
+        "ca"
+      ],
+      "complaintsboard_root": "https://www.complaintsboard.com/adesa-united-states-b103064",
+      "smartcustomer_root": "https://www.smartcustomer.com/reviews/adesa.com",
+      "bbb_search_text": "",
+      "bbb_fallback_profiles": [
+        "https://www.bbb.org/us/fl/tampa/profile/auto-auction/adesa-tampa-0653-24838",
+        "https://www.bbb.org/us/ca/sacramento/profile/auto-auction/adesa-sacramento-1156-33008688"
+      ],
+      "bbb_profile_tokens": [
+        "adesa-"
+      ],
+      "us_geo_markers": [
+        "adesa tampa",
+        "adesa sacramento",
+        "adesa san diego",
+        "adesa las vegas",
+        "adesa riverside"
+      ],
+      "strong_us_geo_markers": [
+        "adesa tampa",
+        "adesa sacramento",
+        "adesa san diego",
+        "adesa las vegas",
+        "adesa riverside"
+      ],
+      "reddit_queries": [
+        [
+          "adesa auction",
+          100,
+          50
+        ],
+        [
+          "adesa marketplace",
+          40,
+          20
+        ],
+        [
+          "adesa title",
+          40,
+          20
+        ],
+        [
+          "adesa fees",
+          30,
+          15
+        ]
+      ]
+    },
+    "openlane": {
+      "display_name": "OPENLANE",
+      "switch_label": "OPENLANE",
+      "title": "OPENLANE Web Sentiment Analysis Tool",
+      "logo_src": "assets/openlane-logo.svg",
+      "logo_alt": "OPENLANE logo",
+      "csv_prefix": "openlane",
+      "theme": {
+        "brand_primary": "#1d3f45",
+        "brand_secondary": "#00a88e",
+        "title_shade": "#00a88e",
+        "negative_line": "#00a88e",
+        "positive_line": "#00a88e",
+        "header_start": "#143137",
+        "header_end": "#00a88e",
+        "page_accent_a": "rgba(0, 168, 142, 0.12)",
+        "page_accent_b": "rgba(29, 63, 69, 0.10)"
+      },
+      "output_json": "reviews-openlane.json",
+      "output_csv": "reviews-openlane.csv",
+      "terms": [
+        "openlane",
+        "openlane us",
+        "backlotcars"
+      ],
+      "google_play_apps": [
+        "com.backlotcars.backlotcars",
+        "com.nthgensoftware.traderev.android"
+      ],
+      "trustpilot_slugs": [
+        "openlane.com"
+      ],
+      "apple_app_ids": [
+        "1175036411"
+      ],
+      "apple_countries": [
+        "us",
+        "ca"
+      ],
+      "smartcustomer_root": "https://www.smartcustomer.com/reviews/openlane.com",
+      "bbb_search_text": "",
+      "bbb_fallback_profiles": [
+        "https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496"
+      ],
+      "bbb_profile_tokens": [
+        "openlane-inc"
+      ],
+      "non_us_geo_markers": [
+        "openlane europe",
+        "openlane uk"
+      ],
+      "reddit_queries": [
+        [
+          "openlane auction",
+          100,
+          50
+        ],
+        [
+          "backlotcars openlane",
+          40,
+          20
+        ],
+        [
+          "openlane title",
+          30,
+          15
+        ],
+        [
+          "openlane arbitration",
+          30,
+          15
+        ]
+      ]
+    },
+    "acv": {
+      "display_name": "ACV",
+      "switch_label": "ACV",
+      "title": "ACV Web Sentiment Analysis Tool",
+      "logo_src": "assets/acv-logo.svg",
+      "logo_alt": "ACV logo",
+      "csv_prefix": "acv",
+      "theme": {
+        "brand_primary": "#044f7b",
+        "brand_secondary": "#00a6d6",
+        "title_shade": "#00a6d6",
+        "negative_line": "#00a6d6",
+        "positive_line": "#00a6d6",
+        "header_start": "#043a5a",
+        "header_end": "#00a6d6",
+        "page_accent_a": "rgba(0, 166, 214, 0.12)",
+        "page_accent_b": "rgba(4, 79, 123, 0.10)"
+      },
+      "output_json": "reviews-acv.json",
+      "output_csv": "reviews-acv.csv",
+      "terms": [
+        "acv auctions",
+        "acv auction",
+        "acvauctions",
+        "carrier by acv",
+        "acv pro"
+      ],
+      "google_play_apps": [
+        "com.acvauctions.acvauctions",
+        "com.acv.carrier",
+        "com.acvauctions.acvpro"
+      ],
+      "trustpilot_slugs": [
+        "acvauctions.com"
+      ],
+      "apple_app_ids": [
+        "969808943",
+        "1585660869",
+        "6477305313"
+      ],
+      "apple_countries": [
+        "us",
+        "ca"
+      ],
+      "smartcustomer_root": "https://www.smartcustomer.com/reviews/acvauctions.com",
+      "bbb_search_text": "",
+      "bbb_fallback_profiles": [
+        "https://www.bbb.org/us/ca/san-diego/profile/used-car-dealers/acv-wholesale-1126-20007945"
+      ],
+      "bbb_profile_tokens": [
+        "acv-wholesale"
+      ],
+      "reddit_queries": [
+        [
+          "acv auctions",
+          120,
+          60
+        ],
+        [
+          "carrier by acv",
+          20,
+          10
+        ],
+        [
+          "acv arbitration",
+          30,
+          15
+        ],
+        [
+          "acv title",
+          30,
+          15
+        ]
+      ]
+    },
+    "americas_auto_auction": {
+      "display_name": "America's Auto Auction",
+      "switch_label": "America's Auto Auction",
+      "title": "America's Auto Auction Web Sentiment Analysis Tool",
+      "logo_src": "assets/americas-auto-auction-logo.svg",
+      "logo_alt": "America's Auto Auction logo",
+      "csv_prefix": "americas-auto-auction",
+      "theme": {
+        "brand_primary": "#1f4d8b",
+        "brand_secondary": "#c1272d",
+        "title_shade": "#c1272d",
+        "negative_line": "#c1272d",
+        "positive_line": "#c1272d",
+        "header_start": "#183b6a",
+        "header_end": "#c1272d",
+        "page_accent_a": "rgba(193, 39, 45, 0.12)",
+        "page_accent_b": "rgba(31, 77, 139, 0.10)"
+      },
+      "output_json": "reviews-americas-auto-auction.json",
+      "output_csv": "reviews-americas-auto-auction.csv",
+      "terms": [
+        "america's auto auction",
+        "americas auto auction",
+        "america auto auction"
+      ],
+      "trustpilot_slugs": [
+        "www.americasautoauction.com"
+      ],
+      "smartcustomer_root": "https://www.smartcustomer.com/reviews/americasautoauction.com",
+      "birdeye_pages": [
+        "https://reviews.birdeye.com/americas-auto-auction-166658630045147",
+        "https://reviews.birdeye.com/americas-auto-auction-atlanta-175285312123278",
+        "https://reviews.birdeye.com/americas-auto-auction-dallas-166773171368191",
+        "https://reviews.birdeye.com/americas-auto-auction-virginia-166943631585820",
+        "https://reviews.birdeye.com/americas-auto-auction-166687512715050",
+        "https://reviews.birdeye.com/americas-auto-auction-st-louis-165330156623701",
+        "https://reviews.birdeye.com/americas-auto-auction-boston-175285312088477",
+        "https://reviews.birdeye.com/americas-auto-auction-bowling-green-166752599691142"
+      ],
+      "bbb_search_text": "",
+      "bbb_fallback_profiles": [
+        "https://www.bbb.org/us/il/centreville/profile/auto-auction/americas-auto-auction-0734-310446804",
+        "https://www.bbb.org/us/tx/buda/profile/auto-auction/americas-auto-auction-austin-0825-90094147"
+      ],
+      "bbb_profile_tokens": [
+        "americas-auto-auction"
+      ],
+      "us_geo_markers": [
+        "america's auto auction chicago",
+        "america's auto auction austin",
+        "america's auto auction kansas city",
+        "america's auto auction pittsburgh"
+      ],
+      "strong_us_geo_markers": [
+        "america's auto auction chicago",
+        "america's auto auction austin",
+        "america's auto auction kansas city",
+        "america's auto auction pittsburgh"
+      ],
+      "reddit_queries": [
+        [
+          "america's auto auction",
+          60,
+          30
+        ],
+        [
+          "americas auto auction",
+          60,
+          30
+        ],
+        [
+          "america's auto auction title",
+          20,
+          10
+        ]
+      ]
+    }
+  }
+}

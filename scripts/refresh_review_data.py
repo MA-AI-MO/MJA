@@ -7,6 +7,17 @@ from pathlib import Path
 
 
 BASE_DIR = Path(__file__).resolve().parents[1]
+BUSINESSES_PATH = BASE_DIR / "data" / "businesses.json"
+MIN_RETAIN_RATIO = 0.90
+BUILDERS = {
+    "copart": "scripts/build_reviews.py",
+    "iaa": "scripts/build_reviews_iaa.py",
+    "manheim": "scripts/build_reviews_manheim.py",
+    "adesa": "scripts/build_reviews_adesa.py",
+    "openlane": "scripts/build_reviews_openlane.py",
+    "acv": "scripts/build_reviews_acv.py",
+    "americas_auto_auction": "scripts/build_reviews_americas_auto_auction.py",
+}
 
 
 def default_until_date() -> str:
@@ -43,9 +54,32 @@ def audit_dataset(relative_path: str, label: str) -> None:
         print(f"{label} source audit zero-count: {zero_count_sources}")
 
 
+def load_baseline_outputs(config_payload: dict) -> dict[str, dict[str, bytes]]:
+    baselines: dict[str, dict[str, bytes]] = {}
+    for business_key, business in config_payload["businesses"].items():
+        outputs: dict[str, bytes] = {}
+        for rel in [f"data/{business['output_json']}", f"data/{business['output_csv']}"]:
+            path = BASE_DIR / rel
+            if path.exists():
+                outputs[rel] = path.read_bytes()
+        baselines[business_key] = outputs
+    return baselines
+
+
+def restore_baseline_outputs(baselines: dict[str, dict[str, bytes]]) -> None:
+    for outputs in baselines.values():
+        for rel, content in outputs.items():
+            (BASE_DIR / rel).write_bytes(content)
+
+
+def review_count_for(relative_path: str) -> int:
+    payload = json.loads((BASE_DIR / relative_path).read_text(encoding="utf-8"))
+    return int((payload.get("meta") or {}).get("review_count") or 0)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Refresh Copart and IAA review data through the last completed month."
+        description="Refresh review data for all configured businesses through the last completed month."
     )
     parser.add_argument("--since", default="2023-01-01", help="Include reviews on/after this date (YYYY-MM-DD)")
     parser.add_argument(
@@ -55,7 +89,21 @@ def main() -> None:
     )
     parser.add_argument("--target", type=int, default=0, help="Minimum number of reviews to collect")
     parser.add_argument("--max-output", type=int, default=120000, help="Maximum number of rows to keep in output")
+    parser.add_argument(
+        "--allow-count-regression",
+        action="store_true",
+        help="Allow a business review count to fall below the previous approved dataset count.",
+    )
     args = parser.parse_args()
+
+    config_payload = json.loads(BUSINESSES_PATH.read_text(encoding="utf-8"))
+    business_order = config_payload.get("business_order") or list(config_payload["businesses"].keys())
+    baselines = load_baseline_outputs(config_payload)
+    baseline_counts = {
+        business_key: review_count_for(f"data/{config_payload['businesses'][business_key]['output_json']}")
+        for business_key in business_order
+        if (BASE_DIR / f"data/{config_payload['businesses'][business_key]['output_json']}").exists()
+    }
 
     until = args.until or default_until_date()
     common_args = [
@@ -70,12 +118,38 @@ def main() -> None:
     ]
 
     print(f"Refreshing datasets through {until}")
-    run_step([sys.executable, "scripts/build_reviews.py", *common_args])
-    run_step([sys.executable, "scripts/build_reviews_iaa.py", *common_args])
-    run_step([sys.executable, "scripts/build_js_data.py"])
-    audit_dataset("data/reviews.json", "Copart")
-    audit_dataset("data/reviews-iaa.json", "IAA")
-    print("Data refresh complete.")
+    try:
+        for business_key in business_order:
+            builder = BUILDERS.get(business_key)
+            if not builder:
+                raise RuntimeError(f"No build pipeline registered for {business_key}")
+            run_step([sys.executable, builder, *common_args])
+
+        run_step([sys.executable, "scripts/build_js_data.py"])
+
+        for business_key in business_order:
+            business = config_payload["businesses"][business_key]
+            relative_json = f"data/{business['output_json']}"
+            audit_dataset(relative_json, business["display_name"])
+
+            baseline_count = baseline_counts.get(business_key, 0)
+            current_count = review_count_for(relative_json)
+            threshold = int(baseline_count * MIN_RETAIN_RATIO)
+            if (
+                baseline_count > 0
+                and current_count < threshold
+                and not args.allow_count_regression
+            ):
+                raise RuntimeError(
+                    f"{business['display_name']}: refreshed count {current_count} dropped below safe threshold "
+                    f"{threshold} from baseline {baseline_count}"
+                )
+
+        print("Data refresh complete.")
+    except Exception:
+        restore_baseline_outputs(baselines)
+        run_step([sys.executable, "scripts/build_js_data.py"])
+        raise
 
 
 if __name__ == "__main__":

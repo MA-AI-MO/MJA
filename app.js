@@ -1,29 +1,17 @@
 (function () {
-  const datasets = {
-    copart: window.COPART_REVIEWS_DATA,
-    iaa: window.IAA_REVIEWS_DATA,
-  };
-  const tiersPayload = window.COPART_TIERS_DATA;
-  const businessConfig = {
-    copart: {
-      title: "Copart Web Sentiment Analysis Tool",
-      logoSrc: "assets/copart-logo.svg",
-      logoAlt: "Copart logo",
-      csvPrefix: "copart",
-    },
-    iaa: {
-      title: "IAA Web Sentiment Analysis Tool",
-      logoSrc: "assets/iaa-logo.png",
-      logoAlt: "IAA logo",
-      csvPrefix: "iaa",
-    },
-  };
+  const appConfig = window.REVIEW_APP_CONFIG || {};
+  const datasets = window.REVIEW_DATASETS || {};
+  const tiersPayload = appConfig.tierHierarchy;
+  const businessConfig = appConfig.businesses || {};
+  const businessOrder = (appConfig.businessOrder || Object.keys(businessConfig)).filter(
+    (key) => businessConfig[key]
+  );
 
-  let activeBusiness = "copart";
-  let reviewsPayload = datasets[activeBusiness];
+  let activeBusiness = businessOrder.includes("copart") ? "copart" : businessOrder[0];
+  let reviewsPayload = datasets[activeBusiness] || { meta: { source_urls: [] }, reviews: [] };
 
-  if (!datasets.copart || !datasets.iaa || !tiersPayload) {
-    throw new Error("Missing data bundles.");
+  if (!tiersPayload || !businessOrder.length) {
+    throw new Error("Missing app config.");
   }
 
   function getAllReviews() {
@@ -42,18 +30,100 @@
       console.warn(`Invalid tier assignments found for ${datasetKey}:`, invalidReviews);
     }
   }
-  warnInvalidAssignments("copart", datasets.copart);
-  warnInvalidAssignments("iaa", datasets.iaa);
+  businessOrder.forEach((key) => warnInvalidAssignments(key, datasets[key]));
+
+  function setThemeVar(name, value) {
+    if (value) document.documentElement.style.setProperty(name, value);
+  }
+
+  function formatCompactCount(value) {
+    const count = Number(value) || 0;
+    if (count >= 1000000) return `${(count / 1000000).toFixed(1).replace(/\.0$/, "")}M`;
+    if (count >= 1000) return `${(count / 1000).toFixed(1).replace(/\.0$/, "")}k`;
+    return String(count);
+  }
+
+  function renderBusinessSwitcher() {
+    const switcher = document.getElementById("business-switcher");
+    if (!switcher) return;
+
+    switcher.innerHTML = "";
+    businessOrder.forEach((key) => {
+      const cfg = businessConfig[key];
+      const dataset = datasets[key] || { meta: {}, reviews: [] };
+      const reviewCount = dataset?.meta?.review_count || 0;
+      const sourceCount = Object.keys(dataset?.meta?.source_counts || {}).length;
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "business-option";
+      button.dataset.business = key;
+      button.setAttribute("aria-pressed", key === activeBusiness ? "true" : "false");
+
+      const topRow = document.createElement("div");
+      topRow.className = "business-option-top";
+
+      const img = document.createElement("img");
+      img.src = cfg.logo_src;
+      img.alt = cfg.logo_alt;
+
+      const copyWrap = document.createElement("div");
+      copyWrap.className = "business-option-copy";
+
+      const title = document.createElement("span");
+      title.className = "business-option-title";
+      title.textContent = cfg.switch_label || cfg.display_name || key;
+
+      const subtitle = document.createElement("span");
+      subtitle.className = "business-option-subtitle";
+      subtitle.textContent = reviewCount
+        ? `${formatCompactCount(reviewCount)} reviews collected`
+        : "No reviews collected yet";
+
+      copyWrap.appendChild(title);
+      copyWrap.appendChild(subtitle);
+      topRow.appendChild(img);
+      topRow.appendChild(copyWrap);
+
+      const metaRow = document.createElement("div");
+      metaRow.className = "business-option-meta";
+
+      const countChip = document.createElement("span");
+      countChip.className = "business-chip";
+      countChip.textContent = `${formatCompactCount(reviewCount)} reviews`;
+
+      const sourceChip = document.createElement("span");
+      sourceChip.className = "business-chip";
+      sourceChip.textContent = `${sourceCount} source${sourceCount === 1 ? "" : "s"}`;
+
+      metaRow.appendChild(countChip);
+      metaRow.appendChild(sourceChip);
+      button.appendChild(topRow);
+      button.appendChild(metaRow);
+      button.addEventListener("click", () => {
+        switchBusiness(key);
+      });
+      switcher.appendChild(button);
+    });
+  }
 
   function applyBusinessTheme() {
     const cfg = businessConfig[activeBusiness];
     document.body.dataset.business = activeBusiness;
+    setThemeVar("--copart-blue-1", cfg.theme?.brand_primary);
+    setThemeVar("--copart-blue-2", cfg.theme?.brand_secondary);
+    setThemeVar("--title-shade", cfg.theme?.title_shade);
+    setThemeVar("--negative-line", cfg.theme?.negative_line);
+    setThemeVar("--positive-line", cfg.theme?.positive_line);
+    setThemeVar("--header-start", cfg.theme?.header_start);
+    setThemeVar("--header-end", cfg.theme?.header_end);
+    setThemeVar("--page-accent-a", cfg.theme?.page_accent_a);
+    setThemeVar("--page-accent-b", cfg.theme?.page_accent_b);
 
     const logo = document.getElementById("brand-logo");
     const title = document.getElementById("app-title");
     if (logo) {
-      logo.src = cfg.logoSrc;
-      logo.alt = cfg.logoAlt;
+      logo.src = cfg.logo_src;
+      logo.alt = cfg.logo_alt;
     }
     if (title) title.textContent = cfg.title;
     document.title = cfg.title;
@@ -159,9 +229,16 @@
     "than", "that", "their", "them", "then", "there", "these", "they", "thing", "think",
     "this", "those", "through", "time", "times", "title", "vehicle", "vehicles", "very",
     "want", "went", "were", "what", "when", "where", "which", "while", "with", "within",
-    "would", "your", "yard", "auction", "auctions", "copart", "iaa", "iaai", "insurance",
-    "auto",
+      "would", "your", "yard", "auction", "auctions", "copart", "iaa", "iaai", "insurance",
+      "auto",
   ]);
+
+  Object.values(businessConfig).forEach((business) => {
+    const tokens = String(business.display_name || "")
+      .toLowerCase()
+      .match(/[a-z0-9']+/g) || [];
+    tokens.forEach((token) => SUMMARY_STOPWORDS.add(token));
+  });
 
   const SIGNAL_THEMES = [
     {
@@ -775,7 +852,7 @@
         const websites = this.state.websites.length ? this.state.websites.join("-") : "all-sites";
         const years = this.state.years.length ? this.state.years.join("-") : "all-years";
         const months = this.state.months.length ? this.state.months.join("-") : "all-months";
-        const prefix = businessConfig[activeBusiness].csvPrefix;
+        const prefix = businessConfig[activeBusiness].csv_prefix;
         const file = `${prefix}-${this.sentiment}-${slugify(websites)}-${slugify(years)}-${slugify(months)}-${slugify(part)}.csv`;
         downloadCsv(rows, file);
       });
@@ -1193,12 +1270,7 @@
     panels.forEach((panel) => panel.onDatasetChanged());
   }
 
-  document.querySelectorAll(".business-option").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      switchBusiness(btn.dataset.business);
-    });
-  });
-
+  renderBusinessSwitcher();
   applyBusinessTheme();
   renderSources();
 })();

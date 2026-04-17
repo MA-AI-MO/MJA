@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" role="img" aria-label="ADESA">
+  <rect width="320" height="80" rx="14" fill="#ffffff"/>
+  <path d="M34 40l12-18 12 18-12 18z" fill="#00a8b5"/>
+  <text x="74" y="50" font-family="Bahnschrift, Arial, sans-serif" font-size="32" font-weight="800" fill="#183a5a">ADESA</text>
+</svg>

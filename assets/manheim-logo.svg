@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" role="img" aria-label="Manheim">
+  <rect width="320" height="80" rx="14" fill="#ffffff"/>
+  <circle cx="42" cy="40" r="20" fill="#f47b20"/>
+  <path d="M32 50V28h5l5 8 5-8h5v22h-5V36l-5 8-5-8v14z" fill="#16324f"/>
+  <text x="78" y="50" font-family="Bahnschrift, Arial, sans-serif" font-size="30" font-weight="700" fill="#16324f">MANHEIM</text>
+</svg>

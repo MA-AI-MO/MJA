@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 80" role="img" aria-label="America's Auto Auction">
+  <rect width="420" height="80" rx="14" fill="#ffffff"/>
+  <path d="M34 56l8-24 8 24-20-14h24z" fill="#c1272d"/>
+  <text x="66" y="39" font-family="Bahnschrift, Arial, sans-serif" font-size="24" font-weight="800" fill="#1f4d8b">AMERICA'S</text>
+  <text x="66" y="60" font-family="Bahnschrift, Arial, sans-serif" font-size="20" font-weight="700" fill="#c1272d">AUTO AUCTION</text>
+</svg>

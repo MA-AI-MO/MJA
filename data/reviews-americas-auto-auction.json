@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "description": "Large-scale English-only America's Auto Auction textual review/problem dataset from public web sources (recency-first).",
+    "review_count": 10,
+    "source_counts": {
+      "birdeye.com": 8,
+      "bbb.org": 2
+    },
+    "source_audit": [
+      {
+        "source_website": "reddit.com",
+        "review_count": 0,
+        "present": false
+      },
+      {
+        "source_website": "bbb.org",
+        "review_count": 2,
+        "present": true
+      },
+      {
+        "source_website": "trustpilot.com",
+        "review_count": 0,
+        "present": false
+      },
+      {
+        "source_website": "smartcustomer.com",
+        "review_count": 0,
+        "present": false
+      },
+      {
+        "source_website": "birdeye.com",
+        "review_count": 8,
+        "present": true
+      }
+    ],
+    "sentiments": {
+      "positive": 5,
+      "negative": 5
+    },
+    "source_urls": [
+      "https://reviews.birdeye.com/americas-auto-auction-atlanta-175285312123278#review-3",
+      "https://reviews.birdeye.com/americas-auto-auction-atlanta-175285312123278#review-4",
+      "https://reviews.birdeye.com/americas-auto-auction-166687512715050#review-3",
+      "https://reviews.birdeye.com/americas-auto-auction-boston-175285312088477#review-3",
+      "https://www.bbb.org/us/il/centreville/profile/auto-auction/americas-auto-auction-0734-310446804/complaints#0734_310446804_24425575",
+      "https://reviews.birdeye.com/americas-auto-auction-166658630045147#review-1",
+      "https://reviews.birdeye.com/americas-auto-auction-166658630045147#review-2",
+      "https://reviews.birdeye.com/americas-auto-auction-st-louis-165330156623701#review-2",
+      "https://reviews.birdeye.com/americas-auto-auction-166658630045147#review-5",
+      "https://www.bbb.org/us/il/centreville/profile/auto-auction/americas-auto-auction-0734-310446804/complaints#0734_310446804_23564283"
+    ],
+    "generated_at_utc": "2026-04-17T05:01:23.969951+00:00",
+    "since_date": "2023-01-01",
+    "until_date": "2026-03-31",
+    "collector_failures": [],
+    "youtube_excluded": true,
+    "usa_only": true,
+    "english_only": true,
+    "expected_source_websites": [
+      "reddit.com",
+      "bbb.org",
+      "trustpilot.com",
+      "smartcustomer.com",
+      "birdeye.com"
+    ],
+    "required_source_websites": [
+      "bbb.org"
+    ],
+    "geo_validation_counts": {
+      "bbb_us_business": 2,
+      "birdeye_us_profile": 8
+    },
+    "geo_excluded_counts": {},
+    "geo_excluded_examples": [],
+    "active_collectors": [
+      "trustpilot",
+      "reddit_pullpush",
+      "bbb_customer_reviews",
+      "bbb_complaints",
+      "smartcustomer",
+      "birdeye"
+    ]
+  },
+  "reviews": [
+    {
+      "id": "rvw-000001",
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/americas-auto-auction-atlanta-175285312123278#review-3",
+      "author": "Nadeem Akbar Khan",
+      "review_date": "2026-02-16",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Miss Olivia is the best!!!!! Always there to help very humble!!! America’s Auto Auction is a great place to do business! Very organized, professional staff, and the process is always smooth. The team is helpful, communication is clear, and they make buying and selling vehicles easy. Inventory selection is solid and transactions are handled efficiently. Highly recommend for any dealers looking for a reliable auction! Love New Age Auto Sales.",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience"
+    },
+    {
+      "id": "rvw-000002",
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/americas-auto-auction-atlanta-175285312123278#review-4",
+      "author": "Erick Respert",
+      "review_date": "2026-02-16",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Very clean and organized auction! Great experience! The team is very helpful as well..",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience"
+    },
+    {
+      "id": "rvw-000003",
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/americas-auto-auction-166687512715050#review-3",
+      "author": "David Schmucker",
+      "review_date": "2026-02-16",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Would not recommend. Staff is incredible dude and was yelling at me when making a delivery.",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience"
+    },
+    {
+      "id": "rvw-000004",
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/americas-auto-auction-boston-175285312088477#review-3",
+      "author": "Bob Richy sucks",
+      "review_date": "2026-02-16",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Do not by from this place they will knowing stick you with a bad car. Nobody knows what they are doing. Arbitration is a joke they will spend days looking at a car to tell you nope you own it .They have a machinic from herb chambers using 'parts cleaner' to spray off oil leaks to make the vehicles look as if they have no leaks. Put what you buy in post sale ? Dont bother if its bad they will send it to you no matter what or not even put it in the building and charge the customers anyways the little guy running the place shou... read more",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees"
+    },
+    {
+      "id": "rvw-000005",
+      "source_website": "bbb.org",
+      "source_label": "BBB Complaints",
+      "source_url": "https://www.bbb.org/us/il/centreville/profile/auto-auction/americas-auto-auction-0734-310446804/complaints#0734_310446804_24425575",
+      "author": "BBB complainant",
+      "review_date": "2026-01-21",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Sales and Advertising Issues. On 10/9/25 bought a car from America's Auto Auction St. Louis . I have been trying to retrieve the title. When I checked online, it told me that my title is at the auction, but when I went to pick it up, it was not there. When I spoke to Angel REMOVED manager) she tells me that they cannot get the title because it has a lein on it and that I need to speak with the General manager ( REMOVED ). When I stated to her that the car should not have been sold without a clean title and that I have spent $2300 in parts and labor for the car, she then tells me that I should have never started working on it until I had the title in my hand, as if I was to blame. Now I am getting the run around from Angel REMOVED manager) who now keeps avoiding my calls. At this point, I don't beleive that she has been relaying my messages to the General manager because no one has reached out to me to have this issue resolved. Customer Answer Date: 02/13/2026 This complaint was resolved by the business.",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "id": "rvw-000006",
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/americas-auto-auction-166658630045147#review-1",
+      "author": "bassheadtahoe",
+      "review_date": "2025-11-18",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Its was either these people or the tow company that stole my multi thousand dollar audio system out of my car",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Tow and Storage Charges",
+      "tier3": "Tow and Storage Fees"
+    },
+    {
+      "id": "rvw-000007",
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/americas-auto-auction-166658630045147#review-2",
+      "author": "T Ashford",
+      "review_date": "2025-11-18",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "I love the atmosphere, no hassle. Workers are friendly and very helpful. It's like one big family with the buyers and sellers. Hassle free and awesome selection of cars.",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience"
+    },
+    {
+      "id": "rvw-000008",
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/americas-auto-auction-st-louis-165330156623701#review-2",
+      "author": "Dmitry M.",
+      "review_date": "2025-11-18",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "That's an A+ service for the car pickup. They printed gate pass, gave me a ride to the car, jumpstarted and moved the car that blocked mine",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Pickup Order Management",
+      "tier3": "Gate Pass Assistance"
+    },
+    {
+      "id": "rvw-000009",
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/americas-auto-auction-166658630045147#review-5",
+      "author": "Demetrius Smith",
+      "review_date": "2025-09-19",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "I am a dealer and have been doing business with this auction for over 25 years before it was changed from tri state and the way I was treated by Julie K was not professional and very wrong I bout a car and sold it and and proof of sale and dated titled when sold she did not want to see it and barred my business from making any purchases and made me pay for tickets tickets that was caused by the buyer who bought the car and told me I responsible for someone else actions and wouldn't let me talk maria or Larry's she instructed... read more",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience"
+    },
+    {
+      "id": "rvw-000010",
+      "source_website": "bbb.org",
+      "source_label": "BBB Complaints",
+      "source_url": "https://www.bbb.org/us/il/centreville/profile/auto-auction/americas-auto-auction-0734-310446804/complaints#0734_310446804_23564283",
+      "author": "BBB complainant",
+      "review_date": "2025-07-07",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Billing Issues. On 6/26/25 I was issued a check Americas Auto Auction for a vehicle I sold. On 6/27/25, I picked the check up from the auction. I deposited the check on 6/30/25. On 7/3/25 I was alerted by my bank that the check had been returned. I contacted Americas Auto Auction and spoke to someone in accounting who told me that the vehicle was bought back and REMOVED said to stop payment on the check. I attempted to reach REMOVED and have been unsuccessful. I dont know why the vehicle was bought back considering all sales are final. I would not have been able to pick up the check had I not satisfied the requirements on my end. It seems this business is operating using discriminatory business practices and rules that apply to some, dont apply to all. I did not even receive a courtesy call letting me know that he was stopping payment on the check, so I have incurred additional fees by my bank. I operate a small business, so every dime matters to me.",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" role="img" aria-label="OPENLANE">
+  <rect width="320" height="80" rx="14" fill="#ffffff"/>
+  <circle cx="40" cy="40" r="18" fill="none" stroke="#00a88e" stroke-width="8"/>
+  <path d="M40 22a18 18 0 0 1 0 36" fill="none" stroke="#1d3f45" stroke-width="8" stroke-linecap="round"/>
+  <text x="72" y="50" font-family="Bahnschrift, Arial, sans-serif" font-size="28" font-weight="800" fill="#1d3f45">OPENLANE</text>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 80" role="img" aria-label="ACV">
+  <rect width="260" height="80" rx="14" fill="#ffffff"/>
+  <path d="M28 56l16-32 16 32h-8l-3-7H39l-3 7zm15-14h8l-4-9z" fill="#044f7b"/>
+  <text x="76" y="54" font-family="Bahnschrift, Arial, sans-serif" font-size="34" font-weight="800" fill="#00a6d6">CV</text>
+</svg>
