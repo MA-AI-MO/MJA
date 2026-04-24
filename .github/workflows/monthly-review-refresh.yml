@@ -48,6 +48,9 @@ jobs:
       - name: Install dependencies
         run: python -m pip install --disable-pip-version-check -r requirements.txt
 
+      - name: Install Playwright browser
+        run: python -m playwright install chromium
+
       - name: Resolve refresh window
         id: refresh-window
         env:

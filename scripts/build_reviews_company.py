@@ -14,6 +14,10 @@ from urllib.parse import unquote, urljoin
 import requests
 from bs4 import BeautifulSoup
 from google_play_scraper import Sort, reviews as gp_reviews
+try:
+    from playwright.sync_api import sync_playwright
+except Exception:
+    sync_playwright = None
 
 try:
     from langdetect import DetectorFactory, detect as detect_lang
@@ -242,6 +246,12 @@ class Collector:
         self.existing_review_count = 0
         self.reddit_verified = False
         self.reddit_verification_attempted = False
+        self.reddit_browser_ready = False
+        self.reddit_browser_attempted = False
+        self.reddit_playwright = None
+        self.reddit_browser = None
+        self.reddit_browser_context = None
+        self.reddit_browser_page = None
         self._build_path_constants()
         self._load_existing_rows()
 
@@ -1316,6 +1326,139 @@ class Collector:
             ordered.append(clean)
         return ordered[:6]
 
+    def _close_reddit_browser(self):
+        for attr in ("reddit_browser_page", "reddit_browser_context", "reddit_browser"):
+            handle = getattr(self, attr, None)
+            if handle is None:
+                continue
+            try:
+                handle.close()
+            except Exception:
+                pass
+            setattr(self, attr, None)
+        if self.reddit_playwright is not None:
+            try:
+                self.reddit_playwright.stop()
+            except Exception:
+                pass
+            self.reddit_playwright = None
+        self.reddit_browser_ready = False
+
+    def _sync_reddit_browser_cookies(self):
+        if not self.reddit_browser_context:
+            return
+        try:
+            cookies = self.reddit_browser_context.cookies()
+        except Exception:
+            return
+        for cookie in cookies:
+            name = cookie.get("name")
+            value = cookie.get("value")
+            if not name or value is None:
+                continue
+            S.cookies.set(
+                name,
+                value,
+                domain=cookie.get("domain"),
+                path=cookie.get("path") or "/",
+            )
+
+    def reddit_browser_fetch_text(self, url: str, params: dict | None = None):
+        if not self.reddit_browser_page:
+            return None
+
+        try:
+            result = self.reddit_browser_page.evaluate(
+                """async ({ url, params }) => {
+                    const target = new URL(url);
+                    Object.entries(params || {}).forEach(([key, value]) => {
+                        if (value === undefined || value === null || value === "") return;
+                        target.searchParams.set(key, String(value));
+                    });
+                    const response = await fetch(target.toString(), {
+                        credentials: "include",
+                        headers: {
+                            "Accept": "application/json,text/plain,*/*",
+                            "X-Requested-With": "XMLHttpRequest"
+                        }
+                    });
+                    return {
+                        ok: response.ok,
+                        status: response.status,
+                        contentType: response.headers.get("content-type") || "",
+                        text: await response.text()
+                    };
+                }""",
+                {"url": url, "params": params or {}},
+            )
+        except Exception:
+            return None
+
+        self._sync_reddit_browser_cookies()
+        if not isinstance(result, dict):
+            return None
+        return result
+
+    def reddit_browser_json_get(self, url: str, params: dict | None = None):
+        result = self.reddit_browser_fetch_text(url, params)
+        if not isinstance(result, dict):
+            return None
+        text = str(result.get("text") or "")
+        content_type = str(result.get("contentType") or "").lower()
+        if "application/json" not in content_type and not text.lstrip().startswith(("{", "[")):
+            return None
+        try:
+            return json.loads(text)
+        except Exception:
+            return None
+
+    def ensure_reddit_verified_via_browser(self, subreddit: str, probe_url: str, probe_params: dict) -> bool:
+        if sync_playwright is None:
+            return False
+        if self.reddit_browser_ready:
+            return True
+
+        self.reddit_browser_attempted = True
+        self._close_reddit_browser()
+        print(f"  - Trying browser-assisted Reddit verification via r/{subreddit}")
+
+        try:
+            self.reddit_playwright = sync_playwright().start()
+            self.reddit_browser = self.reddit_playwright.chromium.launch(
+                headless=True,
+                args=["--disable-blink-features=AutomationControlled", "--no-sandbox"],
+            )
+            self.reddit_browser_context = self.reddit_browser.new_context(
+                user_agent=S.headers.get("User-Agent"),
+                locale="en-US",
+                extra_http_headers={"Accept-Language": S.headers.get("Accept-Language", "en-US,en;q=0.9")},
+            )
+            self.reddit_browser_page = self.reddit_browser_context.new_page()
+            self.reddit_browser_page.goto(
+                f"https://www.reddit.com/r/{subreddit}/new/",
+                wait_until="domcontentloaded",
+                timeout=60000,
+            )
+
+            for _ in range(30):
+                self.reddit_browser_page.wait_for_timeout(1000)
+                result = self.reddit_browser_fetch_text(probe_url, probe_params)
+                text = str((result or {}).get("text") or "")
+                if result and str(result.get("contentType") or "").lower().find("application/json") >= 0:
+                    self.reddit_browser_ready = True
+                    return True
+                if result and text.lstrip().startswith(("{", "[")):
+                    self.reddit_browser_ready = True
+                    return True
+                if result and not self._reddit_is_verification_page(text):
+                    break
+        except Exception:
+            self._close_reddit_browser()
+            return False
+
+        self._close_reddit_browser()
+        return False
+
     def ensure_reddit_verified(self, force: bool = False) -> bool:
         if self.reddit_verified and not force:
             return True
@@ -1373,6 +1516,11 @@ class Collector:
             except Exception:
                 continue
 
+            if self.ensure_reddit_verified_via_browser(subreddit, probe_url, probe_params):
+                self.reddit_verified = True
+                print(f"  - Reddit session verified in browser via r/{subreddit}")
+                return True
+
         print("  - Reddit session verification failed")
         return False
 
@@ -1386,17 +1534,20 @@ class Collector:
             try:
                 resp = S.get(url, params=query, timeout=45)
             except Exception:
-                return None
+                resp = None
 
-            if resp.status_code == 200 and not self._reddit_is_verification_page(resp.text or ""):
+            if resp is not None and resp.status_code == 200 and not self._reddit_is_verification_page(resp.text or ""):
                 try:
                     return resp.json()
                 except Exception:
-                    return None
+                    break
 
             if attempt == 0 and self.ensure_reddit_verified(force=True):
                 continue
-            return None
+
+        browser_payload = self.reddit_browser_json_get(url, query)
+        if browser_payload is not None:
+            return browser_payload
         return None
 
     @staticmethod
@@ -2344,6 +2495,7 @@ class Collector:
 
     def finalize(self):
         if self.target > 0 and len(self.records) < self.target:
+            self._close_reddit_browser()
             raise RuntimeError(f"Collected {len(self.records)} reviews, below target {self.target}")
 
         # Keep newest first and cap payload size for browser performance.
@@ -2425,6 +2577,7 @@ class Collector:
 
         OUTPUT_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
         self._write_csv(rows)
+        self._close_reddit_browser()
 
         print(f"Wrote {OUTPUT_JSON}")
         print(f"Wrote {OUTPUT_CSV}")
