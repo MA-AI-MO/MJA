@@ -1,20 +1,19 @@
 {
   "meta": {
     "description": "Large-scale English-only IAA textual review/problem dataset from public web sources (recency-first).",
-    "review_count": 1643,
+    "review_count": 1654,
     "source_counts": {
       "play.google.com": 230,
       "trustpilot.com": 49,
+      "reddit.com": 991,
       "bbb.org": 249,
       "apps.apple.com": 132,
-      "pissedconsumer.com": 3,
-      "reddit.com": 977,
       "complaintsboard.com": 3
     },
     "source_audit": [
       {
         "source_website": "reddit.com",
-        "review_count": 977,
+        "review_count": 991,
         "present": true
       },
       {
@@ -54,13 +53,14 @@
       }
     ],
     "sentiments": {
-      "positive": 556,
-      "negative": 1087
+      "positive": 564,
+      "negative": 1090
     },
     "source_urls": [
       "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
       "https://www.trustpilot.com/reviews/69d66bb09449607e8072b9e2",
       "https://www.trustpilot.com/reviews/69d038eb7b6f1408831fde68",
+      "https://www.reddit.com/r/carflipping/comments/1sbeeia/hey_car_flippers_at_copart_iaa_other_savage/",
       "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_24679733",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#0654_88276839_666096",
@@ -78,13 +78,17 @@
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#0654_88276839_660772",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_24531263",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_24523125",
+      "https://www.reddit.com/r/carflipping/comments/1qz9nyo/auction_access_dealers_license_copart_iaaicar/",
       "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13728809386",
       "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13726453972",
       "https://www.trustpilot.com/reviews/698621d568f85821bc84e75f",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_24477105",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_24463070",
       "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13679003769",
+      "https://www.reddit.com/r/askcarsales/comments/1qlzmn9/is_my_car_title_washed/",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#0654_88276839_656751",
+      "https://www.reddit.com/r/carflipping/comments/1qj86zb/how_i_preinspect_cars_before_bidding/",
+      "https://www.reddit.com/r/askcarsales/comments/1qhgiil/how_to_find_a_dealer_to_sell_a_rebuilt_car_at/",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_24392484",
       "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13629344875",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#0654_88276839_655249",
@@ -113,6 +117,7 @@
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#0654_88276839_639108",
       "https://www.trustpilot.com/reviews/68e68793d716625ee642a317",
       "https://www.trustpilot.com/reviews/68e57a7408b00626249c6ab7",
+      "https://www.reddit.com/r/carflipping/comments/1nwmzez/copart_vs_iaa/",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=3#0654_88276839_23956980",
       "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13209774327",
       "https://www.trustpilot.com/reviews/68d34e448e55f58a9bdc3a72",
@@ -122,18 +127,21 @@
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=4#0654_88276839_23874599",
       "https://play.google.com/store/apps/details?id=com.iaai.android&hl=es&gl=us",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=4#0654_88276839_23856843",
-      "https://insurance-auto-auctions.pissedconsumer.com/review.html?page=1#review-6843611",
       "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13090498900",
+      "https://www.reddit.com/r/askcarsales/comments/1n5k677/please_help_me_find_a_specific_salvage_car/",
+      "https://www.reddit.com/r/askcarsales/comments/1n39e92/iaai_vs_sca_auctions/",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=4#0654_88276839_23761707",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#0654_88276839_629545",
       "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=13064868895",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#0654_88276839_629330",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=4#0654_88276839_23793253",
+      "https://www.reddit.com/r/askcarsales/comments/1mxn81z/anyone_here_think_iaai_auction_is_a_scam/",
       "https://www.trustpilot.com/reviews/68a4a82295611f8385f94648",
       "https://itunes.apple.com/us/review?id=992957183&type=Purple%20Software&reviewId=13031808837",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=4#0654_88276839_23713531",
       "https://itunes.apple.com/us/review?id=992957183&type=Purple%20Software&reviewId=12977524536",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=4#0654_88276839_23683160",
+      "https://www.reddit.com/r/carflipping/comments/1mcctm7/iaai_promo_code/",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=4#0654_88276839_23673833",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=4#0654_88276839_23667793",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#0654_88276839_600000",
@@ -148,6 +156,7 @@
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=5#0654_88276839_23582686",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=5#0654_88276839_23575749",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=5#0654_88276839_23573792",
+      "https://www.reddit.com/r/askcarsales/comments/1lrma31/recovered_vinswapped_vehicle_what_happens_next_usa/",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=5#0654_88276839_23555040",
       "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12844429173",
       "https://www.trustpilot.com/reviews/68644b22fb60b20d4b993108",
@@ -159,7 +168,9 @@
       "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12817846162",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=6#0654_88276839_23497729",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=6#0654_88276839_23471594",
+      "https://www.reddit.com/r/askcarsales/comments/1l7dvqn/buying_cars_directly_from_insurance_companies_is/",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=6#0654_88276839_23445207",
+      "https://www.reddit.com/r/carflipping/comments/1l4bn9r/can_you_drive_an_auction_car_home_if_registered/",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=6#0654_88276839_23428683",
       "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12739640276",
       "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12726265309",
@@ -167,6 +178,7 @@
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#0654_88276839_591657",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=7#0654_88276839_23381858",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=7#0654_88276839_23371663",
+      "https://www.reddit.com/r/askcarsales/comments/1klncnk/looking_to_get_into_auctions/",
       "https://www.trustpilot.com/reviews/681defa568f6e3bad3504204",
       "https://www.reddit.com/r/StupidCarQuestions/comments/1ki7ghz/rule_of_thumb_when_buying_a_car_with_a_rebuilt/mrdkxwz/",
       "https://www.reddit.com/r/carflipping/comments/1kh8mtx/rebuilt_title/mrbkcch/",
@@ -344,27 +356,14 @@
       "https://www.reddit.com/r/Autobody/comments/1ibh7rm/process_for_repair_recommendations/",
       "https://www.reddit.com/r/BMW/comments/1i9mebj/does_anyone_know_whats_going_on_with_x56m_and_m8/m96kdg9/",
       "https://www.reddit.com/r/UsedCars/comments/1iapqd7/auction_records/",
-      "https://www.reddit.com/r/auction/comments/1fflsh6/proxibid_dealer_only/m95ryjx/",
-      "https://www.reddit.com/r/auction/comments/1i9xrm6/proxibid_dealer_only_auction_itemim_not_a_dealer/",
-      "https://www.reddit.com/r/Insurance/comments/1i9udvc/i_think_my_insurance_may_have_lost_my_car_title/",
-      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=12229390762",
-      "https://www.reddit.com/r/Insurance/comments/1i921oh/aftermarket_parts_removal_before_accepting/m8zji81/",
-      "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=9#0654_88276839_22853030",
-      "https://www.reddit.com/r/Lexus/comments/1i6cngn/60k_miles_i_bought_it_for_6k/m8nz2d8/",
-      "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=9#0654_88276839_22849015",
-      "https://www.reddit.com/r/fiat500/comments/1i7o7w6/the_minor_damage_the_apparently_constitutes_a/m8muiyh/",
-      "https://www.reddit.com/r/Lexus/comments/1i6cngn/60k_miles_i_bought_it_for_6k/m8jsru6/",
-      "https://www.reddit.com/r/askcarsales/comments/1i72vnq/auction_records/m8hdwju/",
-      "https://www.reddit.com/r/askcarsales/comments/1i72vnq/auction_records/",
-      "https://www.reddit.com/r/cars4bid/comments/1i6ko4r/come_prepared_buying_cars_at_copart_and_iaai/",
-      "https://www.reddit.com/r/UsedCars/comments/1i6tt3v/auction_records/"
+      "https://www.reddit.com/r/auction/comments/1fflsh6/proxibid_dealer_only/m95ryjx/"
     ],
-    "generated_at_utc": "2026-04-24T19:52:36.036038+00:00",
+    "generated_at_utc": "2026-04-24T20:55:25.500247+00:00",
     "since_date": "2023-01-01",
     "until_date": "2026-04-24",
     "collector_failures": [],
-    "existing_review_count": 1643,
-    "new_reviews_added": 0,
+    "existing_review_count": 1640,
+    "new_reviews_added": 14,
     "youtube_excluded": true,
     "usa_only": true,
     "english_only": true,
@@ -383,10 +382,12 @@
       "apps.apple.com",
       "bbb.org"
     ],
-    "geo_validation_counts": {},
+    "geo_validation_counts": {
+      "mixed_source_ok": 14
+    },
     "geo_excluded_counts": {
       "play.google.com:google_play_us_store_non_us_marker": 8,
-      "reddit.com:mixed_source_non_us_marker": 9,
+      "reddit.com:mixed_source_non_us_marker": 14,
       "complaintsboard.com:complaintsboard_us_profile_non_us_marker": 1,
       "apps.apple.com:apple_non_us_store": 12
     },
@@ -528,35 +529,35 @@
         "review_text": "Cost of used cars is expected to increase anyhow. 1) the new safety regulations in Ontario force consumers to buy good cars - no more rust buckets on the road (decreasing supply) 2) weak Canadian dollar makes Canadian cars to be export targ"
       },
       {
-        "source_website": "complaintsboard.com",
-        "source_label": "ComplaintsBoard",
-        "source_url": "https://www.complaintsboard.com/iaa-b133628#c1924562",
-        "review_date": "2023-12-08",
-        "reason": "complaintsboard_us_profile_non_us_marker",
-        "review_text": "Reporter location: IE (Ireland). Unable to take a Ryanair flight due to illness. Flight Reservation No -HL8RJQ Ryanair Ref [protected]/HL8RJQ On the 18th of Nov my wife and I were booked to travel with Ryanair to Malaga. However my wife had"
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/askcarsales",
+        "source_url": "https://www.reddit.com/r/askcarsales/comments/1p7kldk/exporting_cars_from_canada_to_africa_europe/",
+        "review_date": "2025-11-26",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Exporting cars from Canada to Africa / Europe Hey everyone, I’m looking for some advice from people experienced in car export/import. I’m currently based in Canada and I’ve already exported a few cars this year from IAAI & Copart auctions —"
       },
       {
-        "source_website": "apps.apple.com",
-        "source_label": "Apple App Store (468532534, ca)",
-        "source_url": "https://itunes.apple.com/ca/review?id=468532534&type=Purple%20Software&reviewId=13622266759",
-        "review_date": "2026-01-11",
-        "reason": "apple_non_us_store",
-        "review_text": "Ridiculous. This is the most ridiculous app I have ever come across. The most user friendly information is hidden and the most irrelevant information to the end user is displayed up front."
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/carflipping",
+        "source_url": "https://www.reddit.com/r/carflipping/comments/1rl1sbd/canada_iaai_auction_non_dealer/",
+        "review_date": "2026-03-04",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Canada iaai auction non dealer i live in Ontario and i really want to bid on iaai, tried to set up a public account but my province wasn't allowed to bid, any advise on what to do next or how to get a license?"
       },
       {
-        "source_website": "apps.apple.com",
-        "source_label": "Apple App Store (468532534, ca)",
-        "source_url": "https://itunes.apple.com/ca/review?id=468532534&type=Purple%20Software&reviewId=13480711033",
-        "review_date": "2025-12-05",
-        "reason": "apple_non_us_store",
-        "review_text": "Doesn’t work in Canada. Its useless and the app doesn’t work in Canada"
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/carflipping",
+        "source_url": "https://www.reddit.com/r/carflipping/comments/1okewcb/need_advice_quebec_buyer_stuck_getting_iaai/",
+        "review_date": "2025-10-30",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Need advice: Quebec buyer stuck getting IAAI ownership without Ontario RIN Hey y'all, I recently bought a car from IAAI in Edmonton, but I’m based in Quebec. Nowwww ... IAAI won’t release ownership papers unless I provide an Ontario RIN (Re"
       }
     ],
     "active_collectors": [
       "google_play",
       "trustpilot",
       "reddit_pullpush",
-      "reddit_public_json",
+      "reddit_arctic_shift",
       "bbb_customer_reviews",
       "bbb_complaints",
       "ripoffreport",
@@ -625,6 +626,21 @@
       "tier1": "Customer Service & Communication",
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/carflipping",
+      "source_url": "https://www.reddit.com/r/carflipping/comments/1sbeeia/hey_car_flippers_at_copart_iaa_other_savage/",
+      "author": "Patient-Bonus-1198",
+      "review_date": "2026-04-03",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Hey car flippers at Copart, IAA, other Savage Auction — want to save hours and hundreds on every auction bid? I'm building an AI platform specifically for auction buyers like you. It analyses vehicle damage from photos, estimates real repair costs, predicts hidden problems based on car history, and calculates your max bid and potential profit — all in seconds. We're testing with real buyers right now and need your feedback. Takes about 3 minutes to fill out, and we're using responses to shape the final product. If you've ever lost money on a bad bid or spent hours researching parts pricing, this is for you. [https://docs.google.com/forms/d/e/1FAIpQLSchFUu-V9XajNtRwGIcdKelmSbmW3kqziT6Pb\\_6HtTJTexyHQ/viewform](https://docs.google.com/forms/d/e/1FAIpQLSchFUu-V9XajNtRwGIcdKelmSbmW3kqziT6Pb_6HtTJTexyHQ/viewform)",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-001644"
     },
     {
       "source_website": "play.google.com",
@@ -957,6 +973,21 @@
       "tier3": "Rude/Unhelpful Support"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/carflipping",
+      "source_url": "https://www.reddit.com/r/carflipping/comments/1qz9nyo/auction_access_dealers_license_copart_iaaicar/",
+      "author": "No_Television_8299",
+      "review_date": "2026-02-08",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Auction access, Dealers license, Copart, Iaai,car flipping I’m a licensed dealer based in Northern California and operate nationwide. I work with a small group of dealer representatives and regularly source vehicles through major auctions such as Manheim, ACV, IAA, Copart, ADESA, and Pipeline. My role typically involves assisting with auction purchases once a specific vehicle has been identified by lot number. Happy to answer general questions about the auction buying process.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-001645"
+    },
+    {
       "id": "rvw-000024",
       "source_website": "apps.apple.com",
       "source_label": "Apple App Store (468532534, us)",
@@ -1077,6 +1108,21 @@
       "tier3": "Fees"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1qlzmn9/is_my_car_title_washed/",
+      "author": "wtfbruhhuh",
+      "review_date": "2026-01-24",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Is my car title washed? I found a broker with website where you can bid on cars from copart and iaai Anyways, the car was saying CLEAN TITLE, But after paying all the fees, they sent me 3 documents: 1. Title 2. Florida motor vehicle title reassignment supplement 3. Bill of sale 1. Title was original from previous owner (pre-accident condition) and something was not right, there were different names other than my name on the back of the title where it says: Asignment of ownership 2. Reassignment supplement had my name on it I went to dmv to register the car, they were confused and said why you have a clean title but on our system it has salvage/junk record, it will be salvage title they said if you sign it I asked the chatgpt, it says: insurance company had to brand the title as salvage before transferring it to you, and even if the disclaimer says: AS IS, it doesn’t apply for legal documents such as title, “AS IS” only applies to car itself like: engine problem or any other mechanical problems” Can I file a lawsuit against the company for “title washing”?",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-001646"
+    },
+    {
       "id": "rvw-000031",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
@@ -1090,6 +1136,36 @@
       "tier1": "Lot Condition, Listing Status and related",
       "tier2": "Listing Status",
       "tier3": "Selling/ Relisting vehicle or Parts purchase"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/carflipping",
+      "source_url": "https://www.reddit.com/r/carflipping/comments/1qj86zb/how_i_preinspect_cars_before_bidding/",
+      "author": "onelabz",
+      "review_date": "2026-01-21",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "How i pre-inspect cars before bidding Hi, I've been restoring salvage cars for 10 years already so here's my routine. 1st and obvious , inspect the listing . you should understend whether a vehicle is being sold by dealer or an insurance company. IAAI gives you this information when you're logged in Copart does it sometimes , sometimes you'll need to look further. which brings to part 2. visit [bid.car](http://bid.car/) or [en.bidfax.info](http://en.bidfax.info/) usually [bid.car](http://bid.car/) will give you idea about the seller but not always in both websites you can check previous damages , make sure you search by vin and not by lot number, cause lot numbers change vin is permanent. you don't wanna end up buying someone's junk. ( i think it's obvious but check the title too , different states have different policies about reissuing rebuilt title)f.e certificate of destruction i think can't be registred in any state 3- once you have an idea of what you're looking at you proceed with vin history report. Carfax is the way to go I use [vincheckfast.com](http://vincheckfast.com/) because it gives comprahensive exact carfax for under $5. 4.after you've done your due dilligence you can submit your bid.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage",
+      "id": "rvw-001647"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1qhgiil/how_to_find_a_dealer_to_sell_a_rebuilt_car_at/",
+      "author": "John_von_bustos",
+      "review_date": "2026-01-19",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "How to find a dealer to sell a rebuilt car at auction I have a rebuilt title car (mustang Mach E) that I think would bring a decent number at copart / IAAI, but I’m a private seller. Cash offers from marketplace have been well below what I’m looking for, and I’d like to get rid of it semi-quickly. Any advice on how to approach? I would *think* that someone with a dealer license would be happy to take a small fee pass it along to auction, but I’m unsure of the logistics. Located in Austin, TX if that helps at all",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Auction Eligibility & Licensing",
+      "tier3": "Unable to Bid",
+      "id": "rvw-001648"
     },
     {
       "id": "rvw-000032",
@@ -1662,6 +1738,21 @@
       "tier3": "App Login Troubleshooting"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/carflipping",
+      "source_url": "https://www.reddit.com/r/carflipping/comments/1nwmzez/copart_vs_iaa/",
+      "author": "Several_Resort_3480",
+      "review_date": "2025-10-03",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Copart vs IAA So lately I’ve been watching Copart and IAA auction online no bidding yet just looking cars been going high but you can score a good deal every now and then just seeing which one you guys prefer trying get of fb marketplace",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)",
+      "id": "rvw-001649"
+    },
+    {
       "id": "rvw-000069",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
@@ -1857,21 +1948,6 @@
       "tier3": "Fees"
     },
     {
-      "id": "rvw-000081",
-      "source_website": "pissedconsumer.com",
-      "source_label": "PissedConsumer",
-      "source_url": "https://insurance-auto-auctions.pissedconsumer.com/review.html?page=1#review-6843611",
-      "author": "Guest-6843611",
-      "review_date": "2025-09-04",
-      "rating": null,
-      "sentiment": "positive",
-      "review_text": "2020 Lincoln MKZ | VIN: 3LNGLSKUSLR611561 | Title Information. Dear [Progressive/IAA], I am Yucel karaoglu, the registered owner of the vehicle with the VIN 3LNGLSKUSLR611561. I recently received a notification from Insurance Auto Auctions (IAA) regarding the vehicle's title. However, I must inform you that I do not possess the vehicle's title. As the vehicle was financed through Credit Acceptance, it may be more appropriate for your office to contact the finance company directly regarding the title. I am unable to complete any forms or provide authorization for the title transfer. Please advise on the next steps I should take to resolve this matter. I kindly request that all communication be made via email. Thank you for your assistance. Best regards, Yucel Karaoglu Email: ycelkrl@***.com",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Customer Service & Communication",
-      "tier2": "Agent Professionalism & Responsiveness",
-      "tier3": "Helpful Support Experience"
-    },
-    {
       "id": "rvw-000082",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaa.mobile.IaaTow)",
@@ -1945,6 +2021,36 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1n5k677/please_help_me_find_a_specific_salvage_car/",
+      "author": "Psychological_Yam881",
+      "review_date": "2025-09-01",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "PLEASE Help me find a specific salvage car auction website! I’ve been trying to find a website I used a while ago and can't remember the name of. It was an online auction site for \"total loss\" or \"insured loss\" vehicles. Here are the specific details I remember: It did NOT require a login to browse the listings. The layout was very simple and similar to an older version of Craigslist, with a long list of vehicles. The listings included a small thumbnail picture, year, make, model, and the type of damage. The most unique and important detail: it listed the name of the insurance company that had the vehicle insured (e.g., \"Geico,\" \"State Farm,\" “USAA”etc.). The listings also mentioned if the engine ran with video if yes. I've already checked and it is NOT Copart, IAA, AutoBidMaster, A Better Bid, SalvageReseller, or RideSafely. Does this sound familiar to anyone? Any help would be greatly appreciated!",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001650"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1n39e92/iaai_vs_sca_auctions/",
+      "author": "reddit-toq",
+      "review_date": "2025-08-29",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "IAAI vs SCA Auctions? I found a car listed on both SCA Auctions and IAAI Actions. I really want this car but which site should I use? Each site has different fees, different account requirements etc.... The car is listed as 'future auction' so I have a little time to figure it out. Would appreciate any advice.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-001651"
     },
     {
       "id": "rvw-000085",
@@ -2035,6 +2141,21 @@
       "tier1": "Customer Service & Communication",
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1mxn81z/anyone_here_think_iaai_auction_is_a_scam/",
+      "author": "knownunkn",
+      "review_date": "2025-08-23",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Anyone here think IAAI auction is a scam? [removed]",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-001652"
     },
     {
       "source_website": "play.google.com",
@@ -2350,6 +2471,21 @@
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting",
       "id": "rvw-001587"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/carflipping",
+      "source_url": "https://www.reddit.com/r/carflipping/comments/1mcctm7/iaai_promo_code/",
+      "author": "HereforSeriousness",
+      "review_date": "2025-07-29",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Iaai promo code? Trynna buy the membership, but I’ve heard it’s possible to get 50% off",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)",
+      "id": "rvw-001653"
     },
     {
       "id": "rvw-000106",
@@ -2712,6 +2848,21 @@
       "tier3": "Delayed Email/Phone Response"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1lrma31/recovered_vinswapped_vehicle_what_happens_next_usa/",
+      "author": "dasblinkinlites",
+      "review_date": "2025-07-04",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Recovered VIN-swapped vehicle. What happens next? (USA) My car was stolen last year and it was recently recovered. Police said the car had been VIN-swapped. I had insurance and paid me out so the insurance company owns the car. Of course they aren’t going to keep it though. I’m wondering what happens to the car. I see many wrecks listed on copart.com or iaai.com. They would come with a salvage title. But what happens if the car had a VIN-swap? Can it be sold? Does the old VIN get restored? Car get crushed? Buying a car like this would clearly be more of a hassle than a normal recovery, it would be harder to resell and you might need a bunch of paperwork. But that also might make the price even lower and more attractive for a buyer willing to deal with the hassle. Anyone have experience dealing with post-swapped cars? Are they available? What additional hassles does it create? (Is this the right forum or is there another “ask” forum that is better )",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Title, Ownership, POA and Documentation",
+      "tier2": "Title Delivery & Status",
+      "tier3": "Title Not Received",
+      "id": "rvw-001654"
+    },
+    {
       "id": "rvw-000127",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
@@ -2952,6 +3103,21 @@
       "tier3": "How to Bid (First Time)"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1l7dvqn/buying_cars_directly_from_insurance_companies_is/",
+      "author": "dustynb2323",
+      "review_date": "2025-06-09",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Buying Cars Directly from Insurance Companies — Is This Actually Possible? I’m in the car business and recently had someone tell me they’re buying vehicles *directly* from insurance companies before they ever hit auction sites like Copart or IAA. They claim they’re getting access to a list of total loss cars straight from the insurance company, skipping the auction process altogether. This caught my attention, but I’m skeptical — from everything I know, most insurance companies offload these vehicles in bulk to auction platforms. I’m genuinely curious: \\- Is it actually possible to purchase vehicles directly from insurance companies?",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)",
+      "id": "rvw-001655"
+    },
+    {
       "id": "rvw-000143",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
@@ -2965,6 +3131,21 @@
       "tier1": "Customer Service & Communication",
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/carflipping",
+      "source_url": "https://www.reddit.com/r/carflipping/comments/1l4bn9r/can_you_drive_an_auction_car_home_if_registered/",
+      "author": "captainmaxim",
+      "review_date": "2025-06-05",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Can you drive an auction car home, if registered at dmv by insuring it and got license plates already the next day you won the auction? If you win a car at on IAAI, can you register the car if they provide you an online copy of the TITLE to your email or you need a physical title to bring to dmv?",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-001656"
     },
     {
       "id": "rvw-000144",
@@ -3145,6 +3326,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1klncnk/looking_to_get_into_auctions/",
+      "author": "TheListener215",
+      "review_date": "2025-05-13",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Looking to get into auctions Good morning all, currently looking to get into the auctions, I been looking over Iaai & Copart a lot and we know their fees, would I need to purchase a broker as well like SCA? Or how would this work? Just want side business at this point and it’s hard to obtain a Dealer license in NY. Any help or recommendations on what to look at would be gratefully appreciated",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-001657"
     },
     {
       "id": "rvw-000154",
@@ -13287,21 +13483,6 @@
       "id": "rvw-001616"
     },
     {
-      "id": "rvw-000806",
-      "source_website": "pissedconsumer.com",
-      "source_label": "PissedConsumer",
-      "source_url": "https://insurance-auto-auctions.pissedconsumer.com/review.html?page=1#review-5859013",
-      "author": "Ray C Pej",
-      "review_date": "2024-05-16",
-      "rating": 1.0,
-      "sentiment": "negative",
-      "review_text": "Impossible to communicate with anyone. Absolutely no costumer care. the only thing they care is to sell you their cars.. I purchased a car. I wired the money and I do not know if they received the money or not. I cannot send the transport company to pick up the car before they confirm. This is the second day I've been trying to get in contact with them. Still, no answer. I hate this. Terrible management.",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Customer Service & Communication",
-      "tier2": "Support Access & Response Time",
-      "tier3": "Long Hold Time / Hard to Reach Support"
-    },
-    {
       "id": "rvw-000807",
       "source_website": "bbb.org",
       "source_label": "BBB Customer Reviews",
@@ -19360,21 +19541,6 @@
       "tier1": "Membership / Licensing / Fees & Bidding Policies",
       "tier2": "Bidding Process, Rules and Fees",
       "tier3": "How to Bid (First Time)"
-    },
-    {
-      "id": "rvw-001202",
-      "source_website": "pissedconsumer.com",
-      "source_label": "PissedConsumer",
-      "source_url": "https://insurance-auto-auctions.pissedconsumer.com/review.html?page=1#review-5203649",
-      "author": "John Z Uyg",
-      "review_date": "2023-10-11",
-      "rating": 2.3,
-      "sentiment": "negative",
-      "review_text": "Memphis office made a mistake and will not help me very rude. They reniged my purchase and will not help me they were very rude and absolutely said they would not help",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Customer Service & Communication",
-      "tier2": "Agent Professionalism & Responsiveness",
-      "tier3": "Rude/Unhelpful Support"
     },
     {
       "id": "rvw-001203",

@@ -63,7 +63,7 @@
       "https://reviews.birdeye.com/americas-auto-auction-166658630045147?page=2#review-5",
       "https://www.bbb.org/us/il/centreville/profile/auto-auction/americas-auto-auction-0734-310446804/complaints#0734_310446804_23564283"
     ],
-    "generated_at_utc": "2026-04-24T19:57:50.497785+00:00",
+    "generated_at_utc": "2026-04-24T21:00:50.321343+00:00",
     "since_date": "2023-01-01",
     "until_date": "2026-04-24",
     "collector_failures": [],
@@ -88,7 +88,7 @@
     "active_collectors": [
       "trustpilot",
       "reddit_pullpush",
-      "reddit_public_json",
+      "reddit_arctic_shift",
       "bbb_customer_reviews",
       "bbb_complaints",
       "smartcustomer",

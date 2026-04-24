@@ -1,19 +1,19 @@
 {
   "meta": {
     "description": "Large-scale English-only Manheim textual review/problem dataset from public web sources (recency-first).",
-    "review_count": 613,
+    "review_count": 649,
     "source_counts": {
       "play.google.com": 57,
       "birdeye.com": 30,
       "apps.apple.com": 86,
       "bbb.org": 144,
-      "trustpilot.com": 6,
-      "reddit.com": 290
+      "reddit.com": 326,
+      "trustpilot.com": 6
     },
     "source_audit": [
       {
         "source_website": "reddit.com",
-        "review_count": 290,
+        "review_count": 326,
         "present": true
       },
       {
@@ -48,8 +48,8 @@
       }
     ],
     "sentiments": {
-      "positive": 216,
-      "negative": 397
+      "positive": 237,
+      "negative": 412
     },
     "source_urls": [
       "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
@@ -63,14 +63,24 @@
       "https://reviews.birdeye.com/manheim-fredericksburg-167784557350491#review-3",
       "https://reviews.birdeye.com/manheim-indianapolis-167758900611879#review-3",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_24681952",
+      "https://www.reddit.com/r/askcarsales/comments/1s0wmrl/why_are_dealers_over_bidding_at_dealer_auctions/",
       "https://reviews.birdeye.com/manheim-dallas-fort-worth-166658799426873?page=2#review-3",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_24664622",
       "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=13866344691",
       "https://reviews.birdeye.com/manheim-indianapolis-167758900611879?page=2#review-3",
+      "https://www.reddit.com/r/askcarsales/comments/1rqoizk/broker_arizona/",
+      "https://www.reddit.com/r/askcarsales/comments/1rqoim9/broker/",
+      "https://www.reddit.com/r/askcarsales/comments/1rm0r45/how_can_i_get_access_to_adesa_or_manheim_i_want/",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_24601863",
+      "https://www.reddit.com/r/carflipping/comments/1re3co4/thoughts_on_idea/",
       "https://play.google.com/store/apps/details?id=com.manheim.mobile.refresh&hl=en&gl=us",
       "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=13765048387",
+      "https://www.reddit.com/r/askcarsales/comments/1r3nihm/selling_2020_camry_hybrid/",
+      "https://www.reddit.com/r/askcarsales/comments/1r2k9sb/manheim_auction_found_my_tradedin_car/",
       "https://www.trustpilot.com/reviews/698ce9a05f7c58f609dab87b",
+      "https://www.reddit.com/r/carflipping/comments/1qz9nyo/auction_access_dealers_license_copart_iaaicar/",
+      "https://www.reddit.com/r/askcarsales/comments/1qyo0p3/manheim_auction_green_light/",
+      "https://www.reddit.com/r/askcarsales/comments/1qxjb4g/manheim_title_issues/",
       "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=13691150454",
       "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=13690737817",
       "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=13686705120",
@@ -87,7 +97,10 @@
       "https://reviews.birdeye.com/manheim-pittsburgh-166598588464399#review-3",
       "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=13666657499",
       "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=13663674036",
+      "https://www.reddit.com/r/askcarsales/comments/1qgepli/what_am_i_doing_wrong/",
       "https://reviews.birdeye.com/manheim-pittsburgh-166598588464399?page=2#review-3",
+      "https://www.reddit.com/r/askcarsales/comments/1qdzbr5/manheim_houston_rant/",
+      "https://www.reddit.com/r/askcarsales/comments/1px1jti/can_you_access_old_manheim_adesa_acv_condition/",
       "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=13557362146",
       "https://reviews.birdeye.com/manheim-pittsburgh-166598588464399#review-5",
       "https://www.trustpilot.com/reviews/694ac90e896dcc9c49596f5b",
@@ -95,18 +108,27 @@
       "https://reviews.birdeye.com/manheim-pittsburgh-166598588464399?page=2#review-5",
       "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=13513929579",
       "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=13498248848",
+      "https://www.reddit.com/r/askcarsales/comments/1pdc1be/washington_state_dealers/",
+      "https://www.reddit.com/r/askcarsales/comments/1p7dz95/purchased_a_vehicle_as_isred_light_at_manheim_phx/",
       "https://reviews.birdeye.com/manheim-st-louis-166697023560226#review-1",
+      "https://www.reddit.com/r/carflipping/comments/1p50v2z/looking_to_partner_with_a_tx_dealer/",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews#0443_6001743_337032",
       "https://reviews.birdeye.com/manheim-st-louis-166697023560226?page=2#review-1",
+      "https://www.reddit.com/r/askcarsales/comments/1oz48ww/auction_driver_job_manheim/",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_24144148",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_24143540",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_24133433",
+      "https://www.reddit.com/r/carflipping/comments/1omeylg/is_auctionaccess_absolutely_necessary_for_car/",
       "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=13325541553",
+      "https://www.reddit.com/r/askcarsales/comments/1odq82s/auction_sales_report_data_help_for_a_project/",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_24054997",
       "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=13295660770",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=2#0443_6001743_24039169",
+      "https://www.reddit.com/r/askcarsales/comments/1o98pul/who_can_i_contact_at_manheim_dallas_to_report_a/",
+      "https://www.reddit.com/r/askcarsales/comments/1o98ol4/who_can_i_contact_at_manheim_dallas_to_report_a/",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=2#0443_6001743_24031402",
       "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=13278348764",
+      "https://www.reddit.com/r/askcarsales/comments/1o7eqqj/how_does_a_dealer_rep_license_work_in_michigan/",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=2#0443_6001743_24015262",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=2#0443_6001743_24014593",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=2#0443_6001743_24001142",
@@ -116,27 +138,38 @@
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=2#0443_6001743_23973909",
       "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=13211859070",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=2#0443_6001743_23949679",
+      "https://www.reddit.com/r/askcarsales/comments/1neswho/i_am_sick_of_manheim/",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=2#0443_6001743_23863736",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=3#0443_6001743_23842409",
       "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=13067828561",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews#0443_6001743_330128",
+      "https://www.reddit.com/r/askcarsales/comments/1mzxje4/cars_going_back_to_auction/",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews#0443_6001743_329945",
+      "https://www.reddit.com/r/askcarsales/comments/1megl2x/am_i_being_screwed_by_manheim_arbitration/",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=3#0443_6001743_23631460",
+      "https://www.reddit.com/r/askcarsales/comments/1m4tuat/negotiating_on_a_25_explorer_st/",
+      "https://www.reddit.com/r/askcarsales/comments/1m2wh0m/california_dealerneed_help_with_title_transfer/",
       "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=12874530769",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews#0443_6001743_326504",
+      "https://www.reddit.com/r/askcarsales/comments/1lt3q1l/who_is_kbb_designed_for/",
+      "https://www.reddit.com/r/carflipping/comments/1lnwo8o/retail_car_dealer/",
       "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=12836041493",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=3#0443_6001743_23518702",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=3#0443_6001743_23513686",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=3#0443_6001743_23499325",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews#0443_6001743_324786",
+      "https://www.reddit.com/r/askcarsales/comments/1ldxrc7/is_this_honda_crv_otd_price_good_or_bad/",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=3#0443_6001743_23483213",
+      "https://www.reddit.com/r/askcarsales/comments/1latz5j/is_manheim_black_book_still_the_best_for_historic/",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=3#0443_6001743_23457546",
       "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=12762591387",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=3#0443_6001743_23450809",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews#0443_6001743_324002",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=3#0443_6001743_23445314",
+      "https://www.reddit.com/r/askcarsales/comments/1kxvesf/baffled_by_dealer_negotiating_on_used_car/",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=4#0443_6001743_23384695",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=4#0443_6001743_23384462",
+      "https://www.reddit.com/r/askcarsales/comments/1kulm8o/manheim_car_arbitrated_twice/",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=4#0443_6001743_23372640",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=4#0443_6001743_23359266",
       "https://www.reddit.com/r/askcarsales/comments/1knlyiq/manheim_and_psi/",
@@ -144,6 +177,7 @@
       "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=12655951162",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews#0443_6001743_321870",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews#0443_6001743_321395",
+      "https://www.reddit.com/r/askcarsales/comments/1kfcn7b/dealers_bill_of_sale_contradicts_manheims/",
       "https://www.reddit.com/r/CarsAustralia/comments/1kdj140/how_to_sell_a_damaged_car/",
       "https://www.reddit.com/r/DealershipOffice/comments/1kcn34r/ca_title_help/mq7f6df/",
       "https://www.reddit.com/r/lancaster/comments/1kcbeys/potential_move_to_lancaster/mq2rnts/",
@@ -154,6 +188,7 @@
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=4#0443_6001743_23261428",
       "https://www.reddit.com/r/lancaster/comments/1k9fph4/community/mpdxuwz/",
       "https://www.reddit.com/r/askcarsales/comments/1k765i3/does_my_lender_owe_me_money_after_repossessing_my/mowm2fm/",
+      "https://www.reddit.com/r/askcarsales/comments/1k7s3lj/request_need_manheim_mmr_auction_lookup_for_2021/",
       "https://www.reddit.com/r/carflipping/comments/1k19olq/quick_advice/mnod1a8/",
       "https://www.reddit.com/r/askcarsales/comments/1k0n0g7/auto_auction_question/mnf7vh6/",
       "https://www.reddit.com/r/askcarsales/comments/1k0n0g7/auto_auction_question/",
@@ -166,6 +201,7 @@
       "https://www.reddit.com/r/OnceHumanOfficial/comments/1jq12om/crit_builds/ml5vi7p/",
       "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=12500550781",
       "https://www.reddit.com/r/LUCID/comments/1joywt8/tesla_trade_ins/mkvtsgx/",
+      "https://www.reddit.com/r/askcarsales/comments/1jnz7rz/did_we_do_something_wrong_first_car_buying/",
       "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=12488689320",
       "https://www.reddit.com/r/PublicFreakout/comments/1jnexx3/attack_on_nypd_at_a_takeover_in_nyc/mkjkybx/",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews#0443_6001743_318126",
@@ -315,50 +351,14 @@
       "https://www.reddit.com/r/Adelaide/comments/1eti7qe/what_are_my_rights/lidwbg3/",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=7#0443_6001743_22140211",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=7#0443_6001743_22139824",
-      "https://www.reddit.com/r/Justrolledintotheshop/comments/1erdws7/a_friend_sent_me_this_serious_car_issues/lhyve4f/",
-      "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=2#0443_6001743_297349",
-      "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=7#0443_6001743_22134716",
-      "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=11604995728",
-      "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=11604851906",
-      "https://apps.apple.com/us/app/id1480842917?see-all=reviews&platform=iphone&reviewId=11604995728",
-      "https://www.reddit.com/r/askcarsales/comments/1eqj9pu/looking_for_a_new_daily_but_i_have_no_idea_what/lhru4st/",
-      "https://www.reddit.com/r/whatcarshouldIbuy/comments/1eqjfgo/i_need_a_new_daily_but_no_idea_what_to_buy/",
-      "https://www.reddit.com/r/askcarsales/comments/1eqj9pu/looking_for_a_new_daily_but_i_have_no_idea_what/",
-      "https://www.reddit.com/r/CodingJobs/comments/1eq57bb/aug_12_75_new_mid_level_software_engineer_jobs/",
-      "https://www.reddit.com/r/OnceHumanOfficial/comments/1emnmx2/pve_manibus_phase_5_goals_for_people_in_phase_4/lh1cwql/",
-      "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=7#0443_6001743_22110420",
-      "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=7#0443_6001743_22094935",
-      "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=7#0443_6001743_22089530",
-      "https://www.reddit.com/r/Truckers/comments/1egvct8/carvana_earnings_local_driver_advice/lfyg0t8/",
-      "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=11561033747",
-      "https://www.reddit.com/r/lancaster/comments/1egiv27/car_related_activities/lfsm9zd/",
-      "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=11553172947",
-      "https://www.reddit.com/r/IntellectualDarkWeb/comments/1edneji/donald_trump_led_an_insurrection_against_the_us/lfez1rh/",
-      "https://www.reddit.com/r/apexlegends/comments/1ef06sr/your_weekly_rapexlegends_recap_for_the_week_of/",
-      "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=11531297724",
-      "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=11527040473",
-      "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=11525736390",
-      "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=11507957891",
-      "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=8#0443_6001743_22005160",
-      "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=8#0443_6001743_21991780",
-      "https://www.reddit.com/r/colchester/comments/1e27aup/are_there_any_good_part_time_jobs_in_the/lcz6fus/",
-      "https://www.reddit.com/r/askcarguys/comments/1e2g1tq/manheim_baltimorewashington_md_auto_auction/",
-      "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=8#0443_6001743_21964037",
-      "https://www.reddit.com/r/NASCAR/comments/1dxooes/race_thread_ncs_grant_park_165_at_chicago_street/lc3r0qm/",
-      "https://www.reddit.com/r/HondaOdyssey/comments/1dxgb6q/cannot_make_the_cost_to_own_math_work_upgrading/lc1e9wb/",
-      "https://www.reddit.com/r/brookiecookiesnark/comments/1duzf3g/brooke_milo_manheim/",
-      "https://www.reddit.com/r/geography/comments/1drp95e/what_is_this_humongous_structure_west_of_cologne/laycu3t/",
-      "https://www.reddit.com/r/askcarsales/comments/1dprv5s/has_anyone_ever_sold_a_car_on_manheim_what_are/laiwoxe/",
-      "https://www.reddit.com/r/askcarsales/comments/1dprv5s/has_anyone_ever_sold_a_car_on_manheim_what_are/",
-      "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=11425500127",
-      "https://www.reddit.com/r/askcarguys/comments/1dn7o7b/manheim_auto_auction/"
+      "https://www.reddit.com/r/Justrolledintotheshop/comments/1erdws7/a_friend_sent_me_this_serious_car_issues/lhyve4f/"
     ],
-    "generated_at_utc": "2026-04-24T19:53:53.163563+00:00",
+    "generated_at_utc": "2026-04-24T20:56:49.630180+00:00",
     "since_date": "2023-01-01",
     "until_date": "2026-04-24",
     "collector_failures": [],
     "existing_review_count": 613,
-    "new_reviews_added": 0,
+    "new_reviews_added": 36,
     "youtube_excluded": true,
     "usa_only": true,
     "english_only": true,
@@ -376,10 +376,12 @@
       "apps.apple.com",
       "bbb.org"
     ],
-    "geo_validation_counts": {},
+    "geo_validation_counts": {
+      "mixed_source_ok": 36
+    },
     "geo_excluded_counts": {
       "play.google.com:google_play_us_store_non_us_marker": 1,
-      "reddit.com:mixed_source_non_us_marker": 4,
+      "reddit.com:mixed_source_non_us_marker": 10,
       "apps.apple.com:apple_non_us_store": 2
     },
     "geo_excluded_examples": [
@@ -424,6 +426,54 @@
         "review_text": "You can get a rep on the phone 03457 740 740. For a van you have to go to manheim.co.uk and join the auction"
       },
       {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/askcarsales",
+        "source_url": "https://www.reddit.com/r/askcarsales/comments/1m7p6y4/anyway_to_get_access_to_dealer_only_auctions/",
+        "review_date": "2025-07-23",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Anyway to get access to dealer only auctions without dealer license? I’m in Ontario Canada and want to access manheim and other dealer only auctions so I can wholesale cars to Nigeria. Issue is in Ontario it’s pretty hard to get a dealer li"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/askcarsales",
+        "source_url": "https://www.reddit.com/r/askcarsales/comments/1kroky0/wanting_to_learn_from_us_based_car_dealers/",
+        "review_date": "2025-05-21",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Wanting to Learn from US Based Car Dealers - US$250/hr for your time. Hi all — I’m an independent researcher based in Australia, currently working on a project to better understand the U.S. used car wholesale market. I’m especially interest"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/askcarsales",
+        "source_url": "https://www.reddit.com/r/askcarsales/comments/1m7p6y4/anyway_to_get_access_to_dealer_only_auctions/",
+        "review_date": "2025-07-23",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Anyway to get access to dealer only auctions without dealer license? I’m in Ontario Canada and want to access manheim and other dealer only auctions so I can wholesale cars to Nigeria. Issue is in Ontario it’s pretty hard to get a dealer li"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/askcarsales",
+        "source_url": "https://www.reddit.com/r/askcarsales/comments/1kroky0/wanting_to_learn_from_us_based_car_dealers/",
+        "review_date": "2025-05-21",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Wanting to Learn from US Based Car Dealers - US$250/hr for your time. Hi all — I’m an independent researcher based in Australia, currently working on a project to better understand the U.S. used car wholesale market. I’m especially interest"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/carflipping",
+        "source_url": "https://www.reddit.com/r/carflipping/comments/1rla9hc/did_us_auctions_like_manheim_prices_gone_crazy/",
+        "review_date": "2026-03-05",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Did US auctions like Manheim prices gone crazy lately? A lot of Canadian wholesalers are buying in Canada and auction in the state. Don't have Manheim access so can't check. What happened?"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/carflipping",
+        "source_url": "https://www.reddit.com/r/carflipping/comments/1rla9hc/did_us_auctions_like_manheim_prices_gone_crazy/",
+        "review_date": "2026-03-05",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Did US auctions like Manheim prices gone crazy lately? A lot of Canadian wholesalers are buying in Canada and auction in the state. Don't have Manheim access so can't check. What happened?"
+      },
+      {
         "source_website": "apps.apple.com",
         "source_label": "Apple App Store (6744660081, gb)",
         "source_url": "https://apps.apple.com/gb/app/id6744660081?see-all=reviews&platform=iphone&reviewId=13789018899",
@@ -444,7 +494,7 @@
       "google_play",
       "trustpilot",
       "reddit_pullpush",
-      "reddit_public_json",
+      "reddit_arctic_shift",
       "bbb_customer_reviews",
       "bbb_complaints",
       "smartcustomer",
@@ -649,6 +699,21 @@
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1s0wmrl/why_are_dealers_over_bidding_at_dealer_auctions/",
+      "author": "Sajor1975",
+      "review_date": "2026-03-22",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Why are dealers over bidding at dealer auctions I know tax season is still hot and people are looking at ways to spend their refunds, I still dont get why are dealers over bidding by $2k + on some cars at auctions like manheim, adesa, metro, penske, I asked chatgpt same question, it says buyers are assuming a lot lol, assuming they will turn around the car in days, no major issues to repair, selling warranties and programs , i dont buy it lol, too much risk.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Payment Refunds, Transaction Issues and Deposits",
+      "tier2": "Refunds & Membership Billing",
+      "tier3": "Deposit Refund Status",
+      "id": "rvw-000614"
+    },
+    {
       "id": "rvw-000006",
       "source_website": "birdeye.com",
       "source_label": "Birdeye (Google)",
@@ -739,6 +804,51 @@
       "tier3": "Helpful Support Experience"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1rqoizk/broker_arizona/",
+      "author": "Ok-Speed-6076",
+      "review_date": "2026-03-11",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Broker Arizona Looking for a Manheim broker in Phoenix AZ area, buying clean title muscle cars for EU export. Any recommendations?",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Title, Ownership, POA and Documentation",
+      "tier2": "Power of Attorney (POA) Handling",
+      "tier3": "POA Requirements Clarification",
+      "id": "rvw-000615"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1rqoim9/broker/",
+      "author": "Ok-Speed-6076",
+      "review_date": "2026-03-11",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Broker Looking for a Manheim broker in Phoenix AZ area, buying clean title muscle cars for EU export. Any recommendations?",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Title, Ownership, POA and Documentation",
+      "tier2": "Power of Attorney (POA) Handling",
+      "tier3": "POA Requirements Clarification",
+      "id": "rvw-000616"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1rm0r45/how_can_i_get_access_to_adesa_or_manheim_i_want/",
+      "author": "Environmental-Row805",
+      "review_date": "2026-03-06",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "How can I get access to ADESA or Manheim?? I want to buy cars. Anybody can hook me up? I am willing to pay a fee or a membership or something to buy cars through someone's account. Thanks, any info is appreciated it.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-000617"
+    },
+    {
       "id": "rvw-000012",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
@@ -752,6 +862,21 @@
       "tier1": "Customer Service & Communication",
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/carflipping",
+      "source_url": "https://www.reddit.com/r/carflipping/comments/1re3co4/thoughts_on_idea/",
+      "author": "Connect-Biscotti7663",
+      "review_date": "2026-02-25",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Thoughts on idea I have an idea here of obtaining a dealer license and get access to dealer auctions, and basically flipping cars. I have a couple commercial properties where i have great frontage on major roads. I would just buy cars from auctions in 4-7k range and list them on marketplace and even store them on my lots right in front of the highway. Just wondering what yall would do in my position. Are manheim dealer auctions or others even worth going to?",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Auction Eligibility & Licensing",
+      "tier3": "Unable to Bid",
+      "id": "rvw-000618"
     },
     {
       "source_website": "play.google.com",
@@ -799,6 +924,21 @@
       "tier3": "App Login Troubleshooting"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1r3nihm/selling_2020_camry_hybrid/",
+      "author": "Kindly-D-4200",
+      "review_date": "2026-02-13",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Selling 2020 Camry Hybrid Hello! I hope all of you are doing well. Long story short, I’m overseas as a military contractor and will be heading back home to Cali in April. I made a few appointments for appraisals for my vehicle but I’m trying to sell it. It is paid off, clean title, and no accidents reported. However it does have a slight dent on the passenger side but no structural damage, just pushed in a bit. The car has only 62k miles on it. That being said, I’ve already told the dealerships I won't accept any seller fees, doc fees, inspection/appraisal fees, no transfer fees as it’s for the buyer not the seller, no smog fees since that’s the dealerships situation for their resale, no detail nor auction fees. I’m aware dealerships like to pay KBB because the rely on wholesale pricing tools (Black Book or Manheim) and profit margins. Plus have to make room for reconditioning, inspection, and retail mark up. But KBB or even CarMax private party & instant cash offers higher. However I'm aware that market can shift from now til April & there's other things that can be affected into the net amount. Is there anything else I should mention, ask for , or reasonable asking price? I was doing research and private seller can be around $18k. Unfortunately no pictures as I’m overseas to upload but aside from the dent, its clean!",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Third-Party Inspection Authorization & Scheduling",
+      "tier3": "Previewing/ Inspecting Vehicles",
+      "id": "rvw-000619"
+    },
+    {
       "source_website": "play.google.com",
       "source_label": "Google Play (com.manheim.mobile.refresh)",
       "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mobile.refresh&hl=en&gl=us",
@@ -812,6 +952,21 @@
       "tier2": "Bidding Process, Rules and Fees",
       "tier3": "Fees",
       "id": "rvw-000303"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1r2k9sb/manheim_auction_found_my_tradedin_car/",
+      "author": "Legal-Machine-8676",
+      "review_date": "2026-02-12",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Manheim Auction - Found my traded-in car! I was curious about how my dealership would dispose of my trade-in (it was a good minivan, mechanically completely sound, but with a number of dings in the body), so I did a search on my VIN number and lo and behold, I found that it's at a Manheim lot in New Jersey. Is there some way I - as just an individual - access the Manheim database to see what the minivan is being auctioned off for (reserve prices, etc.)? Is there a subscription I can buy? No compelling need for it - just curious how much it gets auctioned for vis a vis what I got for trade. Would be grateful for any advice.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)",
+      "id": "rvw-000620"
     },
     {
       "id": "rvw-000015",
@@ -842,6 +997,51 @@
       "tier1": "Customer Service & Communication",
       "tier2": "Case Resolution Quality",
       "tier3": "Escalation Required"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/carflipping",
+      "source_url": "https://www.reddit.com/r/carflipping/comments/1qz9nyo/auction_access_dealers_license_copart_iaaicar/",
+      "author": "No_Television_8299",
+      "review_date": "2026-02-08",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Auction access, Dealers license, Copart, Iaai,car flipping I’m a licensed dealer based in Northern California and operate nationwide. I work with a small group of dealer representatives and regularly source vehicles through major auctions such as Manheim, ACV, IAA, Copart, ADESA, and Pipeline. My role typically involves assisting with auction purchases once a specific vehicle has been identified by lot number. Happy to answer general questions about the auction buying process.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000621"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1qyo0p3/manheim_auction_green_light/",
+      "author": "Fun_Consequence5136",
+      "review_date": "2026-02-07",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Manheim auction green light Iv been told green light usually means good car and when i check them the pretty much are, with a price tag to match, but i still don't fully understand the meaning of green light hoping someone could explain it",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)",
+      "id": "rvw-000622"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1qxjb4g/manheim_title_issues/",
+      "author": "Better-Temporary1951",
+      "review_date": "2026-02-06",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Manheim title issues any dealers on here that work with Manheim know how good they are at getting title issues fixed? We just started buying with them and already have a title issue that needs fixed, and I'm sure there are more to come.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Title, Ownership, POA and Documentation",
+      "tier2": "Title Delivery & Status",
+      "tier3": "Title Not Received",
+      "id": "rvw-000623"
     },
     {
       "id": "rvw-000017",
@@ -1129,6 +1329,21 @@
       "tier3": "App Login Troubleshooting"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1qgepli/what_am_i_doing_wrong/",
+      "author": "rybab007",
+      "review_date": "2026-01-18",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "What am I doing wrong? I’m 48 years old. I’ve been doing used car sales/service since the mid 90’s, working for my father’s business. ..He recently sold the service business, retired and I took over the sales side of the business. I’ve been at it for 2 years, on my own. I have a nice sized lot in a busy suburb of Cincinnati, 2 doors down from where our original store was located. I keep about 25-35 cars in inventory. I have roughly $10K in monthly expenses, a couple employees, a couple floor plans, a couple lenders and I do sell some service contracts when I can. I have an older salesman working for me (helps buy and sell). He is very experienced but is very old school…he simply will not send emails, phone calls only. And he doesn’t really do much that I can’t already do. I will likely fire him this week. I have another guy working part time, helping w social media marketing. I am absolutely struggling to see any real gross lately! I buy nice clean cars ($8000- $24000 average sale price). Im selling maybe 10-15 cars a month but am only seeing $600-$1000 gross/unit, if you factor in the losers. And that’s the problem, the amount of losers is getting more and more as time goes on. Most of the cars on my lot have been here for 90 plus days, some even 200 plus days. These are all huge losers. Most units come from Manheim/adesa/openlane, 4.0 CR’s or better…nice clean cars..but still end up costing me $1000 plus in recon. Hell, Lately I’ve been sending almost half the units back to auction for arbitration. By the time I get a buyer, there just isn’t any skin left on the bone, and my customers don’t want it unless I’m discounting even further. It’s getting to be too hard of a game to play. I haven’t paid myself since August. I’m considering getting out of the business but this is literally all I’ve done, my whole life. Is there an obvious solution here, that I’m blind to? Any tips or ideas would be greatly appreciated. I’m happy to post specific expenses etc.. Also, I do not own the building. I share rent with a service center, who does most of our repairs.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000624"
+    },
+    {
       "id": "rvw-000033",
       "source_website": "birdeye.com",
       "source_label": "Birdeye (Google)",
@@ -1159,6 +1374,21 @@
       "tier3": "Schedule/ Reschedule Pickup"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1qdzbr5/manheim_houston_rant/",
+      "author": "Remote_Fig4479",
+      "review_date": "2026-01-15",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Manheim Houston Rant This is so stupid literally pissed off. Drop a car in Manheim in great condition very new only to be given the cr of 2.7. Went looking around at other cars, someone had more in the condition report than I with similar remarks listed but they got guess WHAT a goddamn 4.6???? Like are you serious?? That CR literally can add and take off thousands of dollars from the MMR and yet mine gets 2.7. Manheim isn’t kind to small dealers at all. Who had similar experiences like this? The bigger ones are always superior and treated as such. I hate this bs when we are trying soo hard to build things here and bc fucking dumbasses don’t give a single fuck. Sorry guys but this happened many times especially at the bigger location. Any tips would be appreciated to get a better score. Hope your experiences are better than mine",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage",
+      "id": "rvw-000625"
+    },
+    {
       "source_website": "play.google.com",
       "source_label": "Google Play (com.manheim.mobile.refresh)",
       "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mobile.refresh&hl=en&gl=us",
@@ -1187,6 +1417,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1px1jti/can_you_access_old_manheim_adesa_acv_condition/",
+      "author": "Zestyclose_Boss_1147",
+      "review_date": "2025-12-27",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Can you access old Manheim / Adesa / ACV condition reports after a car leaves auction? For curiosity and professional interest: if a car was previously sold through a dealer-only auction like Manheim, Adesa, ACV, etc., is it ever possible to get access to its old condition report (CR)? Do auction systems keep CRs permanently in history, and can dealers still retrieve them later, or are they deleted after sale? Just wondering if anyone has ever successfully pulled an old CR for a used car after it left the auction.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000626"
     },
     {
       "id": "rvw-000036",
@@ -1309,6 +1554,21 @@
       "tier3": "App Login Troubleshooting"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1pdc1be/washington_state_dealers/",
+      "author": "lnrover",
+      "review_date": "2025-12-03",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Washington State Dealers... Hey guys I am a Canadian wholesaler that exports to Manheim Seattle and DAA Seattle, are your sales numbers down? Auction looks super slow... just wondering how it is down there. Thanks!",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-000627"
+    },
+    {
       "source_website": "play.google.com",
       "source_label": "Google Play (com.manheim.mobile.refresh)",
       "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mobile.refresh&hl=en&gl=us",
@@ -1339,6 +1599,21 @@
       "tier3": "Rude/Unhelpful Support"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1p7dz95/purchased_a_vehicle_as_isred_light_at_manheim_phx/",
+      "author": "el33t75",
+      "review_date": "2025-11-26",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Purchased a vehicle as is/red light at manheim phx, advertised as drivable and starts, it does not start or is drivable About a month ago i purchased online (i know, i know) a truck at Manheim phx, prior to bidding it was advertised as drivable and starts, I can understand if it doesnt start as most vehicles purchased there need a new battery or jump start, but when i went to pick up the vehicle, the serpentine belt was hanging on the floor away from the pulley, it was not drivable you would need a bionic arm to turn the steering wheel, in autocheck it shows a big discrepancy in the mileage. I tried to arbitrate the vehicle even spoke with manager or arbitration, they said they don't honor auto check as proof of mileage discrepancy , the car started and ran though the sale lane on day of sale, I never removed the vehicle from maheim lot as it was not drivable, from day one they parked it in the TRA section , if the vehicle according to them was drivable and starts why did they park it an the lot where non operational vehicles are. The arbitration case was closed , anyone experienced something similar , do i still have a case? [Manheim Advertisement](https://imgur.com/a/vTnCEId)",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000628"
+    },
+    {
       "source_website": "birdeye.com",
       "source_label": "Birdeye (Google)",
       "source_url": "https://reviews.birdeye.com/manheim-st-louis-166697023560226#review-1",
@@ -1352,6 +1627,21 @@
       "tier2": "Third-Party Inspection Authorization & Scheduling",
       "tier3": "Previewing/ Inspecting Vehicles",
       "id": "rvw-000310"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/carflipping",
+      "source_url": "https://www.reddit.com/r/carflipping/comments/1p50v2z/looking_to_partner_with_a_tx_dealer/",
+      "author": "Alchemistry-101",
+      "review_date": "2025-11-23",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Looking to partner with a TX dealer I have the real estate, office etc but don’t really want to be in the business. Won’t be able to complete 5 transactions a year. Mainly want to be able to get access to auction sites like Manheim and buy cars for myself if something catches my eye. Maybe get a dealer plate. Research indicates that best bet is to partner with a dealer who can make me a dealer rep. Willing to pay for the privilege. Please let me know if anyone is interested.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)",
+      "id": "rvw-000629"
     },
     {
       "id": "rvw-000044",
@@ -1414,6 +1704,21 @@
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1oz48ww/auction_driver_job_manheim/",
+      "author": "splickedyliit",
+      "review_date": "2025-11-17",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Auction Driver job? (Manheim) I have an interview for a full time driver position at a Manheim auction location. I have a lot of experience delivery driving and working as a lot porter at a car dealership. Anyone who works as a driver at Manheim: what is the job like?",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Scheduled Pickup Status",
+      "tier3": "Schedule/ Reschedule Pickup",
+      "id": "rvw-000630"
+    },
+    {
       "id": "rvw-000048",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
@@ -1474,6 +1779,21 @@
       "tier3": "Rude/Unhelpful Support"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/carflipping",
+      "source_url": "https://www.reddit.com/r/carflipping/comments/1omeylg/is_auctionaccess_absolutely_necessary_for_car/",
+      "author": "SweetTax6748",
+      "review_date": "2025-11-02",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Is AuctionACCESS absolutely necessary for car flippers to succeed? Hey everyone, I’m stepping fully into this next chapter of growing my car-flipping business and wanted to get some insight from those who’ve been in the game for a while. How essential is AuctionACCESS when it comes to scaling and maintaining consistent profits? Is it truly a must-have to access the best deals, or can you still build a successful operation through other routes? I’m open to getting my dealer license and AuctionACCESS/Manheim account if that’s what it takes to take things to the next level — but before I go down that road, I’d love to hear from those who have built solid results without it. If you’ve had success without auction access, what routes worked for you — public auctions, private party purchases, wholesale relationships, trade-ins, or other creative sourcing methods? Appreciate any advice and perspective from the experienced flippers here. I’m locked in and ready to grow seriously this year.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Auction Eligibility & Licensing",
+      "tier3": "Unable to Bid",
+      "id": "rvw-000631"
+    },
+    {
       "id": "rvw-000052",
       "source_website": "apps.apple.com",
       "source_label": "Apple App Store (1480842917, us)",
@@ -1502,6 +1822,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1odq82s/auction_sales_report_data_help_for_a_project/",
+      "author": "SuToLoTuS",
+      "review_date": "2025-10-23",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Auction sales report data help for a project Reaching out to see if anyone is willing to provide me some info for a project. Ideally I'm looking for a couple Colorado auction run sale reports from the dealers auto auction of Rockies, Manheim and maybe Loveland. Ideally anything from the past couple months would be helpful. Feel free to msg me. Thanks!",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000632"
     },
     {
       "id": "rvw-000054",
@@ -1549,6 +1884,36 @@
       "tier3": "Lot Damage"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1o98pul/who_can_i_contact_at_manheim_dallas_to_report_a/",
+      "author": "Narrow-Routine-9767",
+      "review_date": "2025-10-17",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Who can I contact at Manheim Dallas to report a car being relisted with undisclosed mechanical issues? Long story short I bought a car on an auction website, it was completely misrepresented and I was able to return it for a full refund. Seller told me to do some things so he could list it as a greenlight for the Manheim auction and theres just no way this vehicle should be a greenlight. I was wondering if anyone knows of any anonymous ways to report it to be sure this car is reviewed thoroughly before it goes up for auction.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-000633"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1o98ol4/who_can_i_contact_at_manheim_dallas_to_report_a/",
+      "author": "Narrow-Routine-9767",
+      "review_date": "2025-10-17",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Who can I contact at Manheim Dallas to report a car being relisted with undisclosed mechanical issues? [removed]",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-000634"
+    },
+    {
       "id": "rvw-000057",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
@@ -1577,6 +1942,21 @@
       "tier1": "Membership / Licensing / Fees & Bidding Policies",
       "tier2": "Bidding Process, Rules and Fees",
       "tier3": "Fees"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1o7eqqj/how_does_a_dealer_rep_license_work_in_michigan/",
+      "author": "mmooooo21",
+      "review_date": "2025-10-15",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "How Does a Dealer Rep License Work in Michigan? Hey everyone, I wanna start by saying I’m very uneducated in this topic so If I come off as uneducated or ask some questions that would be considered a silly question, i’m sorry i’m trying to learn more about it. From what I know and read online, a dealer rep license in Michigan entails me to have to partner up with a used car dealership as one of their reps, and sell cars under their name. This then would allow me to have full access to auctions like Manheim, Copart, IAA, etc. and be able to sell as many cars in a calendar year as I’d like. But after reading into it some more, a lot of Reddit users are saying how a dealer rep license is something very risky and hard to establish as some dealerships are sleazy about it, and vise versa how some reps could lose the dealerships license with one bad deal, so on and so forth. What would the best option be for someone in Michigan looking to do this completely legally but can’t necessarily afford to drop $100,000+ on a location to be able to pass inspection and get their own dealers license? I wouldn’t want to get only my wholesale license and would want to sell to the public. I also don’t want to get into the world of ‘curbstoning’ and doing things that will come back to bite me in the … Thank you for the read, all and any advice and more information is greatly appreciated.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Third-Party Inspection Authorization & Scheduling",
+      "tier3": "Previewing/ Inspecting Vehicles",
+      "id": "rvw-000635"
     },
     {
       "id": "rvw-000059",
@@ -1729,6 +2109,21 @@
       "tier3": "Rude/Unhelpful Support"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1neswho/i_am_sick_of_manheim/",
+      "author": "banned_boyz",
+      "review_date": "2025-09-12",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "I AM SICK OF MANHEIM! man i gotta vent. i wholesale vehicle and damn good ones too! always buy greenlight and sell green light! very rarely am i arbitrated. I'd say out of the 46 cars ytd i have had 3 arbitrations. 1st arbitration Manheim claimed chatter sounds from engine! ok thats fine! i took it back, took it to kia for a diagnostics. Guess what ? nothing wrong with car and no sound present 2nd arbitration: delayed RPM shift! ok thats fine, it was a fusion i took it to ford for diagnostics. Guess what? NO ISSUE FOUND! CAR SHIFTS AS IT SHOULD!. what did Manheim say? we dont care what ford and kia said we trust our inspectors. LOL, you trust your min wage inspectors over certified techs from the manufacturer!? thats fucken comedy. today was 3rd arb. dealer couldn't get a hold of me to pick up car. i actually called manheim last week to see what the delay was and why hasn't the dealer picked up vehicle. they said he'd come monday. fucker never came. come to find out, someone at manheim edited the gate pass when updating pick up location and their dyslexic ass flipped my first 3 numbers around! so car sale was unwounded for failure to surrender vehicle to buyer. WTF!? you changed my phone number! they admitted to causing the issue but said im liable for the unwind WTTFFFFFF!? sorry everyone I had to vent. I'm sure there are similar stories like mine but i am tired of being taken advantage of for being a small player. if in was a bug franchise store they would bend over backwards like the little sluts they are",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Third-Party Inspection Authorization & Scheduling",
+      "tier3": "Previewing/ Inspecting Vehicles",
+      "id": "rvw-000636"
+    },
+    {
       "id": "rvw-000069",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
@@ -1787,6 +2182,21 @@
       "tier1": "Membership / Licensing / Fees & Bidding Policies",
       "tier2": "Bidding Process, Rules and Fees",
       "tier3": "Fees"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1mzxje4/cars_going_back_to_auction/",
+      "author": "notme-thanks",
+      "review_date": "2025-08-25",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Cars going back to Auction When a dealer has a car sitting on the lot of a longer period of time, whatever that is for them, and they decide to send it to auction, is the wholesale price in the ballpark of dealer trade value on NADA? Short of paying for access to Manheim previous auction history, just trying to get a ballpark. It always fascinates me that dealers would rather send a car to auction than attempt to sell it locally for slightly above what they think they will get at auction.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-000637"
     },
     {
       "id": "rvw-000073",
@@ -1849,6 +2259,21 @@
       "tier3": "App Login Troubleshooting"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1megl2x/am_i_being_screwed_by_manheim_arbitration/",
+      "author": "Glittering-Ad5809",
+      "review_date": "2025-07-31",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Am I being screwed by Manheim arbitration? Bought a 48,000 mile 2020 Tesla X Performance at the Tampa auction from RMKTG BY ELEMENT for $29,000 plus $800 auction fees. It was sold as is and I have no gripe with the condition. The problem is the condition report clearly states, EV charging cable present. When the car arrived it was missing. So I file an arbitration claim. They deny it because there was no picture of it in the CR. WTH? Anyone else experienced this? I bet if I listed a car as having something, charger, books, two keys, and it wasn't with the car, I would be required to provide them or make a price adjustment.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-000638"
+    },
+    {
       "id": "rvw-000076",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.manheim.mobile.refresh)",
@@ -1877,6 +2302,36 @@
       "tier1": "Customer Service & Communication",
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1m4tuat/negotiating_on_a_25_explorer_st/",
+      "author": "ModelingDenver101",
+      "review_date": "2025-07-20",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Negotiating on a '25 Explorer ST Dealer has a ST we want. They want $52,475+$600 dealer fee. Let's just call it $53k. I offered $51k and they let me walk, said they are going to lose $800 on deal: [https://www.cargurus.com/Cars/inventorylisting/vdp.action?listingId=410101039#listing=410101039](https://www.cargurus.com/Cars/inventorylisting/vdp.action?listingId=410101039#listing=410101039) I used this '25 ST, exact same options just different color with 800 miles more as a comp, 10 miles away. They are asking $49,800 including their dealer fee. It's Ford dealer, so I'm sure I can get a discount on the dealer installed door keypad. They are willing to negotiate, car was being loaned out over weekend, so only test drove a brand new one: [https://www.cargurus.com/Cars/inventorylisting/vdp.action?listingId=415151574#listing=415151574](https://www.cargurus.com/Cars/inventorylisting/vdp.action?listingId=415151574#listing=415151574) Do we really think the first dealer (ClearShift), has over $52k in this car and won't lower the price $2k? I do like the color and accessories previous owner did (clear bar, pedals, weathertech mats). I'm going to stay silent for a few days and maybe offer $51.5k. Can anyone tell me what these are going for at wholesale (Manheim)? How long will ClearShift keep this car? It's been there since May 5th, so coming on 80 days.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Listing Status",
+      "tier3": "Selling/ Relisting vehicle or Parts purchase",
+      "id": "rvw-000639"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1m2wh0m/california_dealerneed_help_with_title_transfer/",
+      "author": "IndependentGreen556",
+      "review_date": "2025-07-18",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "California Dealer—Need Help With Title Transfer Process (Confused Dealer Here) ⸻ Post: Hey guys, I’m a new licensed dealer in California and I’m still learning the process. I have some questions and would appreciate help from anyone who’s experienced: 1️⃣ When I buy a car from the auction (like Manheim or CarMax), I get the title. Do I keep the auction title or do I give that same title to the buyer when I sell the car? 2️⃣ I’m using QuickTag (Fairfax Imaging). Do I still need to go to DMV or mail paperwork, or does QuickTag handle everything electronically? 3️⃣ If the buyer is far away, can I mail the title to them after I process the deal? 4️⃣ What exact forms do I need to give to the buyer? So far I know: • Temporary plate • Temporary registration • Buyer’s guide (AS-IS) • Smog • REG 262 (Odometer) Is that correct? 5️⃣ For DMV, do I keep a copy of the title or send them something too? I’m trying to do things the right way, but every dealer tells me something different. Can someone break it down clearly? Thank you in advance!",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Title, Ownership, POA and Documentation",
+      "tier2": "Power of Attorney (POA) Handling",
+      "tier3": "POA Requirements Clarification",
+      "id": "rvw-000640"
     },
     {
       "id": "rvw-000078",
@@ -1937,6 +2392,36 @@
       "tier1": "Title, Ownership, POA and Documentation",
       "tier2": "Title Delivery & Status",
       "tier3": "Title Not Received"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1lt3q1l/who_is_kbb_designed_for/",
+      "author": "Reasonable_Ostrich76",
+      "review_date": "2025-07-06",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Who is KBB designed for? KBB is owned by Cox Automotive. They own Manheim auctions and Autotrader. So who exactly is KBB designed for? Im at Manheim looking at a car and pull up the Mmr. $7405 Typical retail $9500-11,200. In a perfect world that car sells for 7400, but we know that car is selling closer to 9000 than 7400 at auction before fees and recon. So I get the car retail and ready and let's list it on Autotrader. Market comparable $13,496. List the car at $13,249 to be seen. come back and check your Autotrader \"pricing analysis \" and see that your car, that MMR told you should sell for $11,200, and Autotrader said the local market is selling for $13,500, actually they have the \"Fair Purchase Price\" at $9997. Ok Cox, YOU are telling me the dealer I should pay X for the car, then telling the customer they should also pay X for the car. Same goes for trade ins. Had a customer come in with his trade in from KBB showing $4300. I run MMR and Carfax in front of him . MMR was $1900 and Carfax wholesale was $2100. This just leads to unhappy customers all around. Which goes back to the whole KBB/AUTOTRADER marriage. I dont even pay them any mind anymore. The same cars that Autotrader says I should sell for $9998, Carfax value, blackpool, account center all have at $13,500 range. So halfway through my 2nd cup of coffee on a Sunday morning who exactly is KBB designed for? Cause we have all had the customers come in with the \"Kbb said the price should be this, but there isnt any cars available at the Kbb store at that price\".",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-000641"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/carflipping",
+      "source_url": "https://www.reddit.com/r/carflipping/comments/1lnwo8o/retail_car_dealer/",
+      "author": "IndependentGreen556",
+      "review_date": "2025-06-30",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Retail car dealer Any tips? I purchased a car from Manheim and it’s been 3 weeks—I’m still waiting for the title. I also bought another vehicle and haven’t received the title for that one either. Do you guys have any suggestions for dealer-only auctions where the title is available quickly or present at the time of purchase?",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Delivery Coordination & Handoffs",
+      "tier3": "Delivery Status and ETA",
+      "id": "rvw-000642"
     },
     {
       "id": "rvw-000082",
@@ -2014,6 +2499,21 @@
       "tier3": "Rude/Unhelpful Support"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1ldxrc7/is_this_honda_crv_otd_price_good_or_bad/",
+      "author": "edmguru",
+      "review_date": "2025-06-17",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Is this Honda CRV OTD price good or bad? **2023 Honda CR-V Hybrid Sport Touring (11K miles) – Dealer Offer** * **Selling Price:** $36,500 (1500 discount from list price) * **Doc Fee:** $699 * **PULSE (brake light add-on):** $399 *(dealer add-on)* * **Estimated Tax :** \\~$3,000 **Total OTD:** \\~$40,635 Manheim MMR shows 36.9 estimated retail value",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Delivery Coordination & Handoffs",
+      "tier3": "Delivery Status and ETA",
+      "id": "rvw-000643"
+    },
+    {
       "id": "rvw-000087",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
@@ -2027,6 +2527,21 @@
       "tier1": "Lot Condition, Listing Status and related",
       "tier2": "Lot Condition Reporting",
       "tier3": "Lot Damage"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1latz5j/is_manheim_black_book_still_the_best_for_historic/",
+      "author": "SpectralEntity",
+      "review_date": "2025-06-13",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Is Manheim & Black Book still the best for historic valuations? Back when I sold, Manheim and Black Book were the main sources we used inside DealerTrack. There was a third I can’t recall but less utilized. Anyway, USAA alerted me earlier they’re totaling out my car. I live in Colorado and there was a major hail storm last May, due to life, work, and limited shop options with availability who worked with USAA, I carried in earlier this week. Details: Date of original incident: May 30, 2024 Zip: 80011 VIN: JF1ZNAA19G8702289 JF1ZNAA19G8702289 FNA JFNAdhdfhfhf 2016 Scion FRS Automatic Hot Lava 42000 miles Clean title Own outright Original estimate: $8210 Damage after pull apart: $9465 From what I’ve read, Colorado is a 100% ACV state for the total loss threshold. Current valuations on the condition before the storm range $13300 to $17100. But what was it trending a year ago, before May 30, 2024? If USAA uses valuation before date of loss. Thanks for anyone who can help out.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage",
+      "id": "rvw-000644"
     },
     {
       "id": "rvw-000088",
@@ -2104,6 +2619,21 @@
       "tier3": "Rude/Unhelpful Support"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1kxvesf/baffled_by_dealer_negotiating_on_used_car/",
+      "author": "jaspirr",
+      "review_date": "2025-05-28",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Baffled by dealer negotiating on used car I'm looking at buying a used SUV. It's been for sale for 4 months. In that 4 months they've lowered the price slowly from $67,000 to $59,900. It seems to have little interest. Only 4 saves on CarGurus. Keeps going up for auction on Manheim website with no bids and a BIN at 60k. MMR shows at $53,000. I've been texting with a salesman there. I offered $57,000, sight unseen, no inspection or anything. He responded that clearly this isn't the car for me, I'm wasting their time, they paid much more for it than that. I asked \"are we definitely talking about the same car that you have listed at 59k?\". He responded that the price must have gone down recently and he didn't notice that, but still no. I pointed out that their website has a coupon saying $1000 off any car which would bring this one to $58,900 advertised price. I offered 58k. He didn't like that. Salesman said he spoke to the GM and confirmed that $59,500 is the absolute rock bottom and if I'm not paying that don't even bother responding. I told him this felt pretty unfair, they are demanding a price higher than their own list price even after negotiating some. Salesman said again clearly this car is not right for me and i should look at others. I'm quite confused. I'm offering them 98.3% of their listed price. I'm offering to buy it sight unseen and wire the money. They are treating me like I'm the worst buyer they've ever met and they dont want to talk to me. Is this just some extreme level of playing hardball where the dealer wont even accept their own price listed on their website?",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Communication Follow-up & Escalation",
+      "tier3": "No Callback / Unresolved Case",
+      "id": "rvw-000645"
+    },
+    {
       "id": "rvw-000093",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.manheim.mobile.refresh)",
@@ -2147,6 +2677,21 @@
       "tier1": "Lot Condition, Listing Status and related",
       "tier2": "Lot Condition Reporting",
       "tier3": "Lot Damage"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1kulm8o/manheim_car_arbitrated_twice/",
+      "author": "executives",
+      "review_date": "2025-05-24",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "manheim car arbitrated twice I purchased a car, 2020 CLA 35 AMG with 50,000 miles green light from Manheim without knowing it was resprayed yellow and the oem color was blue, I tried arbitrating and got nothing. Shipped it here and upon delivery noticed a lot more cosmetic damage that wasn’t disclosed (car is keyed, a lot of deep scratches, etc), no problem I thought, coulda been the driver.. I started driving it and noticed a loud thudding and grinding sound coming from the rear. After driving around the dealership a little the coolant light, check engine light, and AWD system light came on and hasn’t gone. Surely I can rearbitrate this right? Nothing was mentioned of any of those problems. I’ll lose the shipping cost but it’s fine.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage",
+      "id": "rvw-000646"
     },
     {
       "id": "rvw-000096",
@@ -2252,6 +2797,21 @@
       "tier1": "Lot Condition, Listing Status and related",
       "tier2": "Lot Condition Reporting",
       "tier3": "Lot Damage"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1kfcn7b/dealers_bill_of_sale_contradicts_manheims/",
+      "author": "Acrobatic-Lunch793",
+      "review_date": "2025-05-05",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Dealer's Bill of Sale Contradicts Manheim's Statement and OEM's Warranty (Engine Sludge Issue) In Aug. 2022, I bought a 2019 Infiniti QX60 (28,067 miles) from a large used car dealer in metro Atlanta (the buyer's guide has the \"DEALER WARRANTY\" box checked; the \"AS-IS\" boxed is unchecked). In Dec. 2024, I brought it in for service to a certified Infiniti dealer who told me that the engine is sludged and needs to be replaced (for \\~$24,,000). * The dealer purchased the vehicle from another dealer at a Manheim auction on June 7, 2022 (the bill of sale, which was sent by the counsel representing this dealer, states \"Auction Lights - BLUE: Title Absent; GREEN: Buyer protection to conditions\" and \"Announcements & Notes: CLEAN CARFAX 1 OWNER\") * The warranty administrator at the certified Infiniti dealer I took the car to said that Infiniti’s warranty database shows on May 22, 2022, an exclusion (\"PNC B0005 “NO ENGINE WARRANTY”) was added. * I have a recorded statement from a phone call with Manheim, wherein Manheim confirms that an announcement was made regarding the engine sludge on the car at the time of purchase and therefore, the dealer was aware of the issue (we have to issue a subpoena to receive the official record from Manheim). The counsel for this dealer said \"I have reviewed the Manheim Bill of Sale for this vehicle which indicates that it was sold \"under the green light\" - meaning no known defects. Additionally, had there been any disclosures at the time of sale regarding this vehicle they would have been noted in the Announcements portion of the Bill of Sale. As you can see \\[...\\] no such notation exists.\" Two questions: 1. What's more likely in this scenario: the dealer (regardless of intent) did not maintain or disclose the accurate documentation - such as a PSI - and is using the clean bill of sale as the basis for refusing to purchase the vehicle back? OR could the Manheim representative been mistaken in what she told me about the vehicle? 2. Am I missing something about the legitimacy of my own case or my claim that the dealer had knowledge of the engine sludge and failed to disclose it? For nearly five months, I have worked on uncovering facts and documents, collecting recorded statements and essentially building what I believe is the basis for a very strong fraud case, yet this seems to be so niche of a case, that I can't get any attorneys to take it. I've reached out to more than a dozen Atlanta area firms and despite follow up, none are interested. Nearly half I spoke with for consultations said \"sorry, we can't help\" and referred me to the area's most prominent consumer protection attorney. However, despite me having shared all of the details with him, he's declined to take the case as well.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Communication Follow-up & Escalation",
+      "tier3": "No Callback / Unresolved Case",
+      "id": "rvw-000647"
     },
     {
       "source_website": "reddit.com",
@@ -2402,6 +2962,21 @@
       "tier2": "Fees & Charges Disputes",
       "tier3": "Buyer Fees Explanation",
       "id": "rvw-000319"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1k7s3lj/request_need_manheim_mmr_auction_lookup_for_2021/",
+      "author": "deimodos",
+      "review_date": "2025-04-25",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Request: Need Manheim MMR / auction lookup for 2021 F-150 PowerBoost VIN 1FTFW1ED3MFB53372 Hey everyone, I'm looking at buying a **2021 Ford F-150 PowerBoost** that has a **lemon title**. It was reported at auction in **April 2025** with around **38,684 miles**. VIN: **1FTFW1ED3MFB53372** I'm trying to find out what the auction sale price was, or at least the Manheim MMR value around that time, so I can get a better sense of what the dealer paid vs what they’re asking. If anyone with **Manheim access** (or Backlot, OVE, etc.) can pull a quick lookup, I’m happy to **tip via Venmo/CashApp** for your time. Would be awesome to get: * MMR value (April 2025, \\~38,600 miles) * Any auction sale notes if available Thanks a ton — seriously appreciate anyone willing to help!",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Title, Ownership, POA and Documentation",
+      "tier2": "Power of Attorney (POA) Handling",
+      "tier3": "POA Requirements Clarification",
+      "id": "rvw-000648"
     },
     {
       "source_website": "reddit.com",
@@ -2582,6 +3157,21 @@
       "tier2": "Bidding Process, Rules and Fees",
       "tier3": "How to Bid (First Time)",
       "id": "rvw-000327"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1jnz7rz/did_we_do_something_wrong_first_car_buying/",
+      "author": "PC_builder_98",
+      "review_date": "2025-03-31",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Did we do something wrong? First car buying experience and was not a good one Disclaimer: Yes there is a question that I am asking at the end of this. Also I do not have any experience or knowledge about sales or buying cars. I am in my mid-late 30s and have not needed to buy a car on my own or without any help/guidance. On top of that, I really only used Tiktok and youtube to educate myself on what the process of buying a car at a dealership is like. It was also my wife's first time as well. So keep that in mind and I'll try to make this short. I need a new car because mine is old and so I started shopping online. I spent a lot of time researching/shopping around to find good deals on the car I wanted as well as learning, all on my own, the whole process, what to expect, and navigating the whole car buying experience. So I found a 2024 Lexus RX for $44k when other dealers were selling for like $50k. So I thought it was a good deal and I did my research on that RX, combing through driving records, paying for the third party companies that can give you extra info on the car and learning the details regarding Lexus' CPO program. I tell my wife and we call the dealership and ask if it's available and it is. The salesman asked if we could come in that day which was a Saturday and I said that we would get back to him because I work weekdays and weekends and I barely have time to do anything other than work and sleep. Unfortunately we couldn't go to the dealership that Saturday or Sunday but I told him we were interested in the car and that I would reach out to him if I had sometime during the week, if not the following weekend. Of course didn't have time but kept in contact and then went in to test drive the RX the following weekend. Got there and he greeted us and then just immediately went to go get the RX. So we test drive it and all is good. We go in to talk about numbers and how we would pay for it. After watching enough Tiktok and youtube videos, we said that we aren't sure how we want to pay yet because we could pay cash, finance, both, or whatever combination you can think of, but we both were kind of set on cash but depending on the options presented to us, we were still open. So when sitting down I was asking questions about the RX and it's CPO status and I just wanted to make sure that what I had been researching was correct and that I understood it all. Because remember my only knowledge or ideas of the car buying process was from those videos and being self-taught. The salesman couldn't answer some questions and then just went to his boss to clarify and would come back (this happened multiple times). The salesman started to give us attitude about asking questions regarding all the different things that are included with buying a CPO (warranties etc). I also brought up that I had done a lot of research on Manheim and on KBB (which I know that KBB is not a good source to use however the point of using KBB is that having as much info/data from multiple sources would help to make the most informed decision). He continued to give attitude. And to prevent this from getting too long and if anyone actually reads this far and wants to know what happened after (which is the negotiating part) I will comment/edit. So we hadn't even gotten to the negotiating part yet but my wife and I were so shocked at our interactions with the salesman. We honestly thought that he would at least try to spark conversations with us like why we wanted the RX or even ask what I currently drive, or what we do for a living. He literally from the very beginning was just like a person that went with us on a test drive and just answered our questions except he didn't know the answer to more than half of them, even though I knew the answer but I just wanted to confirm because again, I basically know nothing about purchasing a car. So here is my question for those in this sub that are well seasoned...did we do something wrong? We were polite and respected what he wanted us to do for the test drive and then running numbers and going over the vehicle. Like...there was no effort in trying to be personable with us at all. I talked to some people about it afterwards and to one of my best friends who is a car salesman/in the business and he agrees with us that it was probably how we looked and what his expectations of us were. And nothing against him for that. I wouldn't blame him for thinking that once he saw us walk into the showroom he thought, \"seriously? These two kids are the ones that want to buy that $45k RX?\". We all may be wrong that that is the reason though. So I'm just asking and also posting what my first car buying experience was like, which I haven't even gotten to the negotiating part yet. Did we do something wrong or was it our fault? Or does our appearance or how we looked/dressed is the reason for maybe not being taken seriously or to not even try/put in effort to try to get us to buy the car?",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000649"
     },
     {
       "id": "rvw-000109",

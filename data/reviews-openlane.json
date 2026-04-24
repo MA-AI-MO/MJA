@@ -1,19 +1,19 @@
 {
   "meta": {
     "description": "Large-scale English-only OPENLANE textual review/problem dataset from public web sources (recency-first).",
-    "review_count": 408,
+    "review_count": 411,
     "source_counts": {
       "play.google.com": 234,
       "trustpilot.com": 38,
       "apps.apple.com": 108,
+      "reddit.com": 15,
       "bbb.org": 13,
-      "birdeye.com": 3,
-      "reddit.com": 12
+      "birdeye.com": 3
     },
     "source_audit": [
       {
         "source_website": "reddit.com",
-        "review_count": 12,
+        "review_count": 15,
         "present": true
       },
       {
@@ -48,7 +48,7 @@
       }
     ],
     "sentiments": {
-      "positive": 52,
+      "positive": 55,
       "negative": 356
     },
     "source_urls": [
@@ -82,8 +82,10 @@
       "https://itunes.apple.com/us/review?id=1175036411&type=Purple%20Software&reviewId=13658784706",
       "https://apps.apple.com/us/app/id1186571028?see-all=reviews&platform=iphone&reviewId=13652961253",
       "https://www.trustpilot.com/reviews/696d5441118bd96038dc7cb9",
+      "https://www.reddit.com/r/askcarsales/comments/1qgepli/what_am_i_doing_wrong/",
       "https://www.trustpilot.com/reviews/695d9dcef8448d57fec17e03",
       "https://www.trustpilot.com/reviews/695017c62bb32b76496817fd",
+      "https://www.reddit.com/r/askcarsales/comments/1px326o/openlane_web_scrape/",
       "https://www.trustpilot.com/reviews/694c661eb4281e996fe09654",
       "https://apps.apple.com/us/app/id6753570460?see-all=reviews&platform=iphone&reviewId=13526214223",
       "https://itunes.apple.com/us/review?id=1175036411&type=Purple%20Software&reviewId=13526208369",
@@ -99,6 +101,7 @@
       "https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/complaints#0382_90024496_24112034",
       "https://www.trustpilot.com/reviews/68f8f2f20432471b2684e708",
       "https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/complaints#0382_90024496_24045899",
+      "https://www.reddit.com/r/askcarsales/comments/1nwnk7t/openlane_acv_vs_inperson/",
       "https://itunes.apple.com/us/review?id=1186571028&type=Purple%20Software&reviewId=13215003125",
       "https://apps.apple.com/us/app/id1186571028?see-all=reviews&platform=iphone&reviewId=13215003125",
       "https://itunes.apple.com/us/review?id=1186571028&type=Purple%20Software&reviewId=13197986339",
@@ -232,12 +235,12 @@
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=9641434260",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=9619929878"
     ],
-    "generated_at_utc": "2026-04-24T19:55:34.996050+00:00",
+    "generated_at_utc": "2026-04-24T20:58:39.116069+00:00",
     "since_date": "2023-01-01",
     "until_date": "2026-04-24",
     "collector_failures": [],
     "existing_review_count": 408,
-    "new_reviews_added": 0,
+    "new_reviews_added": 3,
     "youtube_excluded": true,
     "usa_only": true,
     "english_only": true,
@@ -255,7 +258,9 @@
       "apps.apple.com",
       "bbb.org"
     ],
-    "geo_validation_counts": {},
+    "geo_validation_counts": {
+      "mixed_source_ok": 3
+    },
     "geo_excluded_counts": {
       "reddit.com:mixed_source_non_us_marker": 12,
       "apps.apple.com:apple_non_us_store": 8
@@ -426,7 +431,7 @@
       "google_play",
       "trustpilot",
       "reddit_pullpush",
-      "reddit_public_json",
+      "reddit_arctic_shift",
       "bbb_customer_reviews",
       "bbb_complaints",
       "smartcustomer",
@@ -1291,6 +1296,21 @@
       "tier3": "Delayed Email/Phone Response"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1qgepli/what_am_i_doing_wrong/",
+      "author": "rybab007",
+      "review_date": "2026-01-18",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "What am I doing wrong? I’m 48 years old. I’ve been doing used car sales/service since the mid 90’s, working for my father’s business. ..He recently sold the service business, retired and I took over the sales side of the business. I’ve been at it for 2 years, on my own. I have a nice sized lot in a busy suburb of Cincinnati, 2 doors down from where our original store was located. I keep about 25-35 cars in inventory. I have roughly $10K in monthly expenses, a couple employees, a couple floor plans, a couple lenders and I do sell some service contracts when I can. I have an older salesman working for me (helps buy and sell). He is very experienced but is very old school…he simply will not send emails, phone calls only. And he doesn’t really do much that I can’t already do. I will likely fire him this week. I have another guy working part time, helping w social media marketing. I am absolutely struggling to see any real gross lately! I buy nice clean cars ($8000- $24000 average sale price). Im selling maybe 10-15 cars a month but am only seeing $600-$1000 gross/unit, if you factor in the losers. And that’s the problem, the amount of losers is getting more and more as time goes on. Most of the cars on my lot have been here for 90 plus days, some even 200 plus days. These are all huge losers. Most units come from Manheim/adesa/openlane, 4.0 CR’s or better…nice clean cars..but still end up costing me $1000 plus in recon. Hell, Lately I’ve been sending almost half the units back to auction for arbitration. By the time I get a buyer, there just isn’t any skin left on the bone, and my customers don’t want it unless I’m discounting even further. It’s getting to be too hard of a game to play. I haven’t paid myself since August. I’m considering getting out of the business but this is literally all I’ve done, my whole life. Is there an obvious solution here, that I’m blind to? Any tips or ideas would be greatly appreciated. I’m happy to post specific expenses etc.. Also, I do not own the building. I share rent with a service center, who does most of our repairs.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000409"
+    },
+    {
       "id": "rvw-000043",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
@@ -1394,6 +1414,21 @@
       "tier1": "Lot Condition, Listing Status and related",
       "tier2": "Third-Party Inspection Authorization & Scheduling",
       "tier3": "Previewing/ Inspecting Vehicles"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1px326o/openlane_web_scrape/",
+      "author": "jupyterpeak",
+      "review_date": "2025-12-27",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "openlane web scrape has anyone tried to web scrape openlane? just generally curious. i'm pretty dissapointed in their portal and i think combining their data with other dealerships could be super helpful",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000410"
     },
     {
       "id": "rvw-000050",
@@ -1889,6 +1924,21 @@
       "tier1": "Customer Service & Communication",
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1nwnk7t/openlane_acv_vs_inperson/",
+      "author": "mfunktastic",
+      "review_date": "2025-10-03",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Openlane, ACV vs in-person Doing some research on Openlane, ACV vs in-person auctions from both seller and buyer perspective. I wanted to see if anyone here has any strong views / experiences one way or another? Greatly appreciate any help.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)",
+      "id": "rvw-000411"
     },
     {
       "id": "rvw-000076",

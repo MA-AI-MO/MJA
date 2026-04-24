@@ -1,19 +1,19 @@
 {
   "meta": {
     "description": "Large-scale English-only ADESA textual review/problem dataset from public web sources (recency-first).",
-    "review_count": 211,
+    "review_count": 219,
     "source_counts": {
       "apps.apple.com": 110,
+      "reddit.com": 46,
       "birdeye.com": 29,
       "bbb.org": 3,
       "trustpilot.com": 9,
-      "play.google.com": 22,
-      "reddit.com": 38
+      "play.google.com": 22
     },
     "source_audit": [
       {
         "source_website": "reddit.com",
-        "review_count": 38,
+        "review_count": 46,
         "present": true
       },
       {
@@ -53,29 +53,35 @@
       }
     ],
     "sentiments": {
-      "positive": 76,
-      "negative": 135
+      "positive": 82,
+      "negative": 137
     },
     "source_urls": [
       "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=13968753748",
       "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=13962344664",
       "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=13943418550",
+      "https://www.reddit.com/r/askcarsales/comments/1sd3mh4/pics_from_the_auction_is_this_a_common_thing_now/",
       "https://reviews.birdeye.com/adesa-las-vegas-164841342274985#review-2",
       "https://reviews.birdeye.com/adesa-cincinnati-dayton-149147997743249#review-1",
       "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=13886396596",
+      "https://www.reddit.com/r/askcarsales/comments/1s0wmrl/why_are_dealers_over_bidding_at_dealer_auctions/",
       "https://reviews.birdeye.com/adesa-las-vegas-164841342274985#review-1",
       "https://reviews.birdeye.com/adesa-las-vegas-164841342274985?page=2#review-1",
       "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=13836933966",
+      "https://www.reddit.com/r/askcarsales/comments/1rm0r45/how_can_i_get_access_to_adesa_or_manheim_i_want/",
       "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=13819919597",
       "https://www.bbb.org/us/nv/north-las-vegas/profile/auto-auction/adesa-las-vegas-1086-90040145/complaints#1086_90040145_24574719",
       "https://www.trustpilot.com/reviews/69a08bbd39f620d2266b459e",
       "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=13793234740",
       "https://reviews.birdeye.com/adesa-phoenix-166641883198682#review-5",
       "https://reviews.birdeye.com/adesa-phoenix-166641883198682?page=2#review-5",
+      "https://www.reddit.com/r/carflipping/comments/1qz9nyo/auction_access_dealers_license_copart_iaaicar/",
       "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=13705220441",
       "https://reviews.birdeye.com/adesa-charlotte-166631397236159#review-5",
+      "https://www.reddit.com/r/askcarsales/comments/1qgepli/what_am_i_doing_wrong/",
       "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=13626502728",
       "https://apps.apple.com/us/app/id1660253652?see-all=reviews&platform=iphone&reviewId=13626502728",
+      "https://www.reddit.com/r/askcarsales/comments/1px1jti/can_you_access_old_manheim_adesa_acv_condition/",
       "https://reviews.birdeye.com/adesa-portland-166735343287887#review-4",
       "https://reviews.birdeye.com/adesa-portland-166735343287887?page=2#review-4",
       "https://www.trustpilot.com/reviews/692dd509945917edecd96467",
@@ -113,6 +119,7 @@
       "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=13008202860",
       "https://www.trustpilot.com/reviews/68991f62953162899705b837",
       "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=13004758054",
+      "https://www.reddit.com/r/askcarsales/comments/1mka1qm/getting_repoed_car_back_from_adesa/",
       "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=12976687442",
       "https://apps.apple.com/us/app/id1660253652?see-all=reviews&platform=iphone&reviewId=12957633409",
       "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=12957633409",
@@ -147,6 +154,7 @@
       "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=12775662955",
       "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=12767714022",
       "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=12765389415",
+      "https://www.reddit.com/r/carflipping/comments/1l8sn18/is_wholesaling_still_worth_it_southern_california/",
       "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=12763937708",
       "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=12758096933",
       "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=12754935205",
@@ -238,12 +246,12 @@
       "https://itunes.apple.com/us/review?id=903860668&type=Purple%20Software&reviewId=9549096674",
       "https://www.reddit.com/r/vancouver/comments/100vhep/recommendations_for_place_that_will_buy_used_cars/j2k53tm/"
     ],
-    "generated_at_utc": "2026-04-24T19:54:48.575330+00:00",
+    "generated_at_utc": "2026-04-24T20:57:41.100511+00:00",
     "since_date": "2023-01-01",
     "until_date": "2026-04-24",
     "collector_failures": [],
     "existing_review_count": 211,
-    "new_reviews_added": 0,
+    "new_reviews_added": 8,
     "youtube_excluded": true,
     "usa_only": true,
     "english_only": true,
@@ -262,7 +270,9 @@
       "apps.apple.com",
       "bbb.org"
     ],
-    "geo_validation_counts": {},
+    "geo_validation_counts": {
+      "mixed_source_ok": 8
+    },
     "geo_excluded_counts": {
       "reddit.com:mixed_source_non_us_marker": 4,
       "apps.apple.com:apple_non_us_store": 13
@@ -409,7 +419,7 @@
       "google_play",
       "trustpilot",
       "reddit_pullpush",
-      "reddit_public_json",
+      "reddit_arctic_shift",
       "bbb_customer_reviews",
       "bbb_complaints",
       "smartcustomer",
@@ -465,6 +475,21 @@
       "id": "rvw-000148"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1sd3mh4/pics_from_the_auction_is_this_a_common_thing_now/",
+      "author": "FUPeiMe",
+      "review_date": "2026-04-05",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Pics From The Auction - Is This a Common Thing Now? Would love to hear some opinions from those in the industry, and maybe some shoppers too. I am currently in the market for a used sports car (though I am guessing this is not isolated just to that niche). I have Autotrader alerts setup and I do my own browsing. I am specifically noticing on the Autotrader alerts (because they email as soon as something fits my criteria) that dealers are snapping 7-10 pics at ADESA or similar and throwing them up for sale, often with a caption saying \"more pics coming soon\" or something like that. I've seen this with both *name brand* dealers (ie Bob Smith Audi) as well as mid tier dealers (ie Magic Motors of City). Presumably once they get it back they'll detail the car and take better pics, but I am wondering if cars are selling so quick now that they don't even need to do that, or are they just lazy? Also, do shoppers not know what signs to notice that indicate it's at an auction (keys hanging from the wheel, ten auction lanes in the background, etc)? Would love to get insight from industry pros. Thanks in advance!",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000212"
+    },
+    {
       "source_website": "birdeye.com",
       "source_label": "Birdeye (Google)",
       "source_url": "https://reviews.birdeye.com/adesa-las-vegas-164841342274985#review-2",
@@ -508,6 +533,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1s0wmrl/why_are_dealers_over_bidding_at_dealer_auctions/",
+      "author": "Sajor1975",
+      "review_date": "2026-03-22",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Why are dealers over bidding at dealer auctions I know tax season is still hot and people are looking at ways to spend their refunds, I still dont get why are dealers over bidding by $2k + on some cars at auctions like manheim, adesa, metro, penske, I asked chatgpt same question, it says buyers are assuming a lot lol, assuming they will turn around the car in days, no major issues to repair, selling warranties and programs , i dont buy it lol, too much risk.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Payment Refunds, Transaction Issues and Deposits",
+      "tier2": "Refunds & Membership Billing",
+      "tier3": "Deposit Refund Status",
+      "id": "rvw-000213"
     },
     {
       "id": "rvw-000002",
@@ -568,6 +608,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1rm0r45/how_can_i_get_access_to_adesa_or_manheim_i_want/",
+      "author": "Environmental-Row805",
+      "review_date": "2026-03-06",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "How can I get access to ADESA or Manheim?? I want to buy cars. Anybody can hook me up? I am willing to pay a fee or a membership or something to buy cars through someone's account. Thanks, any info is appreciated it.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-000214"
     },
     {
       "id": "rvw-000006",
@@ -675,6 +730,21 @@
       "tier3": "Helpful Support Experience"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/carflipping",
+      "source_url": "https://www.reddit.com/r/carflipping/comments/1qz9nyo/auction_access_dealers_license_copart_iaaicar/",
+      "author": "No_Television_8299",
+      "review_date": "2026-02-08",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Auction access, Dealers license, Copart, Iaai,car flipping I’m a licensed dealer based in Northern California and operate nationwide. I work with a small group of dealer representatives and regularly source vehicles through major auctions such as Manheim, ACV, IAA, Copart, ADESA, and Pipeline. My role typically involves assisting with auction purchases once a specific vehicle has been identified by lot number. Happy to answer general questions about the auction buying process.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000215"
+    },
+    {
       "id": "rvw-000012",
       "source_website": "apps.apple.com",
       "source_label": "Apple App Store (1660253652, us)",
@@ -720,6 +790,21 @@
       "id": "rvw-000153"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1qgepli/what_am_i_doing_wrong/",
+      "author": "rybab007",
+      "review_date": "2026-01-18",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "What am I doing wrong? I’m 48 years old. I’ve been doing used car sales/service since the mid 90’s, working for my father’s business. ..He recently sold the service business, retired and I took over the sales side of the business. I’ve been at it for 2 years, on my own. I have a nice sized lot in a busy suburb of Cincinnati, 2 doors down from where our original store was located. I keep about 25-35 cars in inventory. I have roughly $10K in monthly expenses, a couple employees, a couple floor plans, a couple lenders and I do sell some service contracts when I can. I have an older salesman working for me (helps buy and sell). He is very experienced but is very old school…he simply will not send emails, phone calls only. And he doesn’t really do much that I can’t already do. I will likely fire him this week. I have another guy working part time, helping w social media marketing. I am absolutely struggling to see any real gross lately! I buy nice clean cars ($8000- $24000 average sale price). Im selling maybe 10-15 cars a month but am only seeing $600-$1000 gross/unit, if you factor in the losers. And that’s the problem, the amount of losers is getting more and more as time goes on. Most of the cars on my lot have been here for 90 plus days, some even 200 plus days. These are all huge losers. Most units come from Manheim/adesa/openlane, 4.0 CR’s or better…nice clean cars..but still end up costing me $1000 plus in recon. Hell, Lately I’ve been sending almost half the units back to auction for arbitration. By the time I get a buyer, there just isn’t any skin left on the bone, and my customers don’t want it unless I’m discounting even further. It’s getting to be too hard of a game to play. I haven’t paid myself since August. I’m considering getting out of the business but this is literally all I’ve done, my whole life. Is there an obvious solution here, that I’m blind to? Any tips or ideas would be greatly appreciated. I’m happy to post specific expenses etc.. Also, I do not own the building. I share rent with a service center, who does most of our repairs.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000216"
+    },
+    {
       "id": "rvw-000013",
       "source_website": "birdeye.com",
       "source_label": "Birdeye (Google)",
@@ -763,6 +848,21 @@
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting",
       "id": "rvw-000154"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1px1jti/can_you_access_old_manheim_adesa_acv_condition/",
+      "author": "Zestyclose_Boss_1147",
+      "review_date": "2025-12-27",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Can you access old Manheim / Adesa / ACV condition reports after a car leaves auction? For curiosity and professional interest: if a car was previously sold through a dealer-only auction like Manheim, Adesa, ACV, etc., is it ever possible to get access to its old condition report (CR)? Do auction systems keep CRs permanently in history, and can dealers still retrieve them later, or are they deleted after sale? Just wondering if anyone has ever successfully pulled an old CR for a used car after it left the auction.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000217"
     },
     {
       "source_website": "birdeye.com",
@@ -1380,6 +1480,21 @@
       "tier3": "App Login Troubleshooting"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1mka1qm/getting_repoed_car_back_from_adesa/",
+      "author": "AffectionateLake9413",
+      "review_date": "2025-08-07",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Getting Repo'ed Car Back from Adesa My car was repo'ed last month, and it is super frustrating because I didn't know I could tell the tow driver to leave and come back another day. If I had, I could have paid off what I was behind because I just started a new job. Anyway, I didn't, and the car company wants the full remaining $26,000 to redeem. It is at Adesa Concord. I'm trying to find a dealer who will bid on the car for me. I have very high income ($300k) - I was just out of work this winter, had a death in the family, had to spend all savings, etc. ONE dealer said they would work with me but then wouldn't approve me for financing because my repo was too recent.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Tow and Storage Charges",
+      "tier3": "Tow and Storage Fees",
+      "id": "rvw-000218"
+    },
+    {
       "id": "rvw-000049",
       "source_website": "apps.apple.com",
       "source_label": "Apple App Store (1660253652, us)",
@@ -1888,6 +2003,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/carflipping",
+      "source_url": "https://www.reddit.com/r/carflipping/comments/1l8sn18/is_wholesaling_still_worth_it_southern_california/",
+      "author": "SpicyWiener_",
+      "review_date": "2025-06-11",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Is wholesaling still worth it? (Southern California) Hi everybody, I'm looking to get into wholesaling cars on the side (and hopefully eventually leverage that into a full time gig if possible). I have family in the car business right (uncles own car dealerships) now and worked in the car business as a salesman for a couple years before I went to college. I know dealers have people who dedicate all their time to buying cars from auctions and I'm just wondering how people who only wholesale are actually getting dealers to buy their cars from them? Are there other avenues to sell cars that don't involve opening up a full blown dealership? Are there ways to arbitrage like buying a car from Mannheim/adesa and selling it at a public auction/copart? Or am I just better off trying to buy cars private party or from public auctions and sell them to the public? I don't have a dealer license yet. I was thinking of buying from brokers at first. Thanks in advance for any replies!",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Auction Eligibility & Licensing",
+      "tier3": "Unable to Bid",
+      "id": "rvw-000219"
     },
     {
       "id": "rvw-000080",
