@@ -185,6 +185,129 @@
     "12": "December",
   };
 
+  const COVERAGE_SENTIMENTS = ["negative", "positive"];
+  const coverageAuditCache = new Map();
+
+  function listMonthKeysInRange(sinceDate, untilDate) {
+    if (!sinceDate || !untilDate || !/^\d{4}-\d{2}-\d{2}$/.test(sinceDate) || !/^\d{4}-\d{2}-\d{2}$/.test(untilDate)) {
+      return [];
+    }
+
+    const months = [];
+    const current = new Date(`${sinceDate.slice(0, 7)}-01T00:00:00Z`);
+    const end = new Date(`${untilDate.slice(0, 7)}-01T00:00:00Z`);
+    while (current <= end) {
+      months.push(current.toISOString().slice(0, 7));
+      current.setUTCMonth(current.getUTCMonth() + 1);
+    }
+    return months;
+  }
+
+  function formatMonthKey(monthKey) {
+    if (!/^\d{4}-\d{2}$/.test(monthKey || "")) return monthKey || "Unknown month";
+    return `${MONTH_NAMES[monthKey.slice(5, 7)] || monthKey.slice(5, 7)} ${monthKey.slice(0, 4)}`;
+  }
+
+  function getReviewMonthKey(row) {
+    const normalized = formatDate(row.review_date);
+    return /^\d{4}-\d{2}-\d{2}$/.test(normalized) ? normalized.slice(0, 7) : "";
+  }
+
+  function summarizeMonthKeys(monthKeys, limit = 4) {
+    const labels = (monthKeys || []).map((monthKey) => formatMonthKey(monthKey));
+    return toSummaryText(labels, "none");
+  }
+
+  function getCoverageAudit(businessKey) {
+    if (coverageAuditCache.has(businessKey)) return coverageAuditCache.get(businessKey);
+
+    const payload = datasets[businessKey] || { meta: {}, reviews: [] };
+    const meta = payload.meta || {};
+    const reviews = payload.reviews || [];
+    const months = listMonthKeysInRange(meta.since_date, meta.until_date);
+    const years = Array.from(new Set(months.map((monthKey) => monthKey.slice(0, 4)))).sort((a, b) => b.localeCompare(a));
+    const sources = Array.from(
+      new Set([
+        ...Object.keys(meta.source_counts || {}),
+        ...reviews.map((row) => row.source_website).filter(Boolean),
+      ])
+    ).sort();
+
+    const companyMonthCounts = {};
+    const sourceMonthCounts = {};
+    COVERAGE_SENTIMENTS.forEach((sentiment) => {
+      companyMonthCounts[sentiment] = new Map(months.map((monthKey) => [monthKey, 0]));
+      sourceMonthCounts[sentiment] = new Map();
+    });
+
+    reviews.forEach((row) => {
+      const sentiment = row.sentiment;
+      const source = row.source_website;
+      const monthKey = getReviewMonthKey(row);
+      if (!COVERAGE_SENTIMENTS.includes(sentiment) || !source || !monthKey) return;
+      if (!companyMonthCounts[sentiment].has(monthKey)) return;
+
+      companyMonthCounts[sentiment].set(monthKey, (companyMonthCounts[sentiment].get(monthKey) || 0) + 1);
+
+      if (!sourceMonthCounts[sentiment].has(source)) {
+        sourceMonthCounts[sentiment].set(source, new Map(months.map((value) => [value, 0])));
+      }
+      const monthMap = sourceMonthCounts[sentiment].get(source);
+      monthMap.set(monthKey, (monthMap.get(monthKey) || 0) + 1);
+    });
+
+    const companyGapMonths = {};
+    const sourceGapRows = [];
+
+    COVERAGE_SENTIMENTS.forEach((sentiment) => {
+      companyGapMonths[sentiment] = months.filter((monthKey) => (companyMonthCounts[sentiment].get(monthKey) || 0) <= 0);
+    });
+
+    sources.forEach((source) => {
+      COVERAGE_SENTIMENTS.forEach((sentiment) => {
+        const monthMap = sourceMonthCounts[sentiment].get(source) || new Map(months.map((monthKey) => [monthKey, 0]));
+        years.forEach((year) => {
+          const yearMonths = months.filter((monthKey) => monthKey.startsWith(`${year}-`));
+          if (!yearMonths.length) return;
+          const total = yearMonths.reduce((sum, monthKey) => sum + (monthMap.get(monthKey) || 0), 0);
+          if (total <= 0) return;
+          const missingMonths = yearMonths.filter((monthKey) => (monthMap.get(monthKey) || 0) <= 0);
+          if (!missingMonths.length) return;
+          sourceGapRows.push({
+            source,
+            sentiment,
+            year,
+            total,
+            missingMonths,
+          });
+        });
+      });
+    });
+
+    sourceGapRows.sort((a, b) => {
+      if (a.year !== b.year) return b.year.localeCompare(a.year);
+      if (a.source !== b.source) return a.source.localeCompare(b.source);
+      return a.sentiment.localeCompare(b.sentiment);
+    });
+
+    const audit = {
+      since: meta.since_date || "",
+      until: meta.until_date || "",
+      generatedAt: meta.generated_at_utc || "",
+      totalReviews: Number(meta.review_count) || reviews.length,
+      months,
+      years,
+      sources,
+      companyMonthCounts,
+      sourceMonthCounts,
+      companyGapMonths,
+      sourceGapRows,
+    };
+
+    coverageAuditCache.set(businessKey, audit);
+    return audit;
+  }
+
   const SUMMARY_STOPWORDS = new Set([
     "about", "after", "again", "against", "almost", "also", "although", "always", "among",
     "another", "anyone", "anything", "around", "because", "before", "being", "between",
@@ -786,6 +909,7 @@
       this.websiteFilter = this.root.querySelector(".website-filter");
       this.yearFilter = this.root.querySelector(".year-filter");
       this.monthFilter = this.root.querySelector(".month-filter");
+      this.coverageNote = this.root.querySelector(".coverage-note-inline");
       this.downloadBtn = this.root.querySelector(".download-btn");
       this.tier1Chart = this.root.querySelector(".tier1-chart");
       this.tier2Card = this.root.querySelector(".tier2-card");
@@ -1076,8 +1200,68 @@
       this.renderTier3(filtered, previousYearRows);
       this.renderTopTopics(filtered);
       this.renderWebsiteByTier(filtered);
+      this.renderCoverageNote(filtered);
       this.renderSelectionSummary();
       this.syncInsightState();
+    }
+
+    renderCoverageNote(filtered) {
+      if (!this.coverageNote) return;
+
+      const audit = getCoverageAudit(activeBusiness);
+      const selectedYears = this.state.years.length ? new Set(this.state.years) : null;
+      const selectedMonths = this.state.months.length ? new Set(this.state.months) : null;
+      const candidateMonths = audit.months.filter((monthKey) => {
+        const year = monthKey.slice(0, 4);
+        const month = monthKey.slice(5, 7);
+        if (selectedYears && !selectedYears.has(year)) return false;
+        if (selectedMonths && !selectedMonths.has(month)) return false;
+        return true;
+      });
+
+      if (!candidateMonths.length) {
+        this.coverageNote.textContent = "Coverage note: no months are available for the current year/month filter.";
+        return;
+      }
+
+      const companyGaps = candidateMonths.filter(
+        (monthKey) => (audit.companyMonthCounts[this.sentiment].get(monthKey) || 0) <= 0
+      );
+
+      const activeSources = this.state.websites.length ? this.state.websites : audit.sources;
+      let flaggedSourceRows = 0;
+      activeSources.forEach((source) => {
+        const monthMap = audit.sourceMonthCounts[this.sentiment].get(source);
+        if (!monthMap) return;
+        const visibleTotal = candidateMonths.reduce((sum, monthKey) => sum + (monthMap.get(monthKey) || 0), 0);
+        if (visibleTotal <= 0) return;
+        const missing = candidateMonths.filter((monthKey) => (monthMap.get(monthKey) || 0) <= 0);
+        if (missing.length) flaggedSourceRows += 1;
+      });
+
+      const parts = [
+        `Coverage note: ${formatCompactCount(filtered.length)} visible reviews across ${candidateMonths.length} month${candidateMonths.length === 1 ? "" : "s"}.`,
+      ];
+
+      if (companyGaps.length) {
+        parts.push(
+          `Company-level zero months for ${this.sentiment}: ${summarizeMonthKeys(companyGaps, 5)}.`
+        );
+      } else {
+        parts.push(`No company-level zero months detected for ${this.sentiment} in this selection.`);
+      }
+
+      if (flaggedSourceRows > 0) {
+        parts.push(`${flaggedSourceRows} selected website${flaggedSourceRows === 1 ? "" : "s"} still have source-month gaps in the visible window.`);
+      } else {
+        parts.push("No selected-source month gaps are flagged in the visible window.");
+      }
+
+      if (audit.until && candidateMonths.includes(audit.until.slice(0, 7))) {
+        parts.push("The latest month may still be in progress.");
+      }
+
+      this.coverageNote.textContent = parts.join(" ");
     }
 
     renderTier1(filtered, previousYearRows) {
@@ -1395,6 +1579,96 @@
     }
   }
 
+  function renderCoverageDiagnostics() {
+    const overview = document.getElementById("coverage-overview");
+    const details = document.getElementById("coverage-details");
+    if (!overview || !details) return;
+
+    const audit = getCoverageAudit(activeBusiness);
+    const displayName = businessConfig[activeBusiness]?.display_name || activeBusiness;
+    const generatedText = audit.generatedAt ? formatDate(audit.generatedAt) : "Unknown";
+
+    overview.innerHTML = "";
+    details.innerHTML = "";
+
+    const intro = document.createElement("p");
+    intro.className = "coverage-intro";
+    intro.textContent = `This audit scans every company/source/year/month combination in the active dataset. A flagged gap means the current dataset has zero rows for that month; it is a coverage warning, not an automatic data error.`;
+    overview.appendChild(intro);
+
+    const overviewPills = document.createElement("div");
+    overviewPills.className = "coverage-pills";
+    [
+      `${displayName} window: ${audit.since} to ${audit.until}`,
+      `Reviews: ${audit.totalReviews}`,
+      `Sources: ${audit.sources.length}`,
+      `Updated: ${generatedText}`,
+    ].forEach((text) => {
+      const pill = document.createElement("span");
+      pill.className = "metric-pill";
+      pill.textContent = text;
+      overviewPills.appendChild(pill);
+    });
+    overview.appendChild(overviewPills);
+
+    COVERAGE_SENTIMENTS.forEach((sentiment) => {
+      const card = document.createElement("article");
+      card.className = "coverage-card";
+
+      const heading = document.createElement("h3");
+      heading.textContent = sentiment === "negative" ? "Negative Coverage" : "Positive / General Coverage";
+      card.appendChild(heading);
+
+      const companySummary = document.createElement("p");
+      companySummary.className = "coverage-summary-line";
+      const companyGapMonths = audit.companyGapMonths[sentiment] || [];
+      companySummary.textContent = companyGapMonths.length
+        ? `Company-level zero months: ${summarizeMonthKeys(companyGapMonths, 8)}.`
+        : "Company-level zero months: none.";
+      card.appendChild(companySummary);
+
+      const rows = audit.sourceGapRows.filter((row) => row.sentiment === sentiment);
+      if (!rows.length) {
+        const empty = document.createElement("p");
+        empty.className = "coverage-empty";
+        empty.textContent = "No source/year/month gaps are currently flagged for this sentiment.";
+        card.appendChild(empty);
+      } else {
+        const list = document.createElement("div");
+        list.className = "coverage-gap-list";
+        rows.forEach((row) => {
+          const item = document.createElement("div");
+          item.className = "coverage-gap-item";
+
+          const top = document.createElement("div");
+          top.className = "coverage-gap-top";
+
+          const source = document.createElement("span");
+          source.className = "coverage-gap-source";
+          source.textContent = row.source;
+
+          const meta = document.createElement("span");
+          meta.className = "coverage-gap-meta";
+          meta.textContent = `${row.year} | ${row.total} rows`;
+
+          top.appendChild(source);
+          top.appendChild(meta);
+
+          const detail = document.createElement("p");
+          detail.className = "coverage-gap-detail";
+          detail.textContent = `Missing months: ${summarizeMonthKeys(row.missingMonths, 6)}.`;
+
+          item.appendChild(top);
+          item.appendChild(detail);
+          list.appendChild(item);
+        });
+        card.appendChild(list);
+      }
+
+      details.appendChild(card);
+    });
+  }
+
   const panels = [
     new SentimentPanel(document.getElementById("negative-panel"), "negative"),
     new SentimentPanel(document.getElementById("positive-panel"), "positive"),
@@ -1407,11 +1681,13 @@
     applyBusinessTheme();
     renderSources();
     panels.forEach((panel) => panel.onDatasetChanged());
+    renderCoverageDiagnostics();
   }
 
   renderBusinessSwitcher();
   applyBusinessTheme();
   renderSources();
+  renderCoverageDiagnostics();
 })();
 
 

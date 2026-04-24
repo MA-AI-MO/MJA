@@ -9,7 +9,7 @@ import time
 from collections import Counter
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from urllib.parse import unquote
+from urllib.parse import unquote, urljoin
 
 import requests
 from bs4 import BeautifulSoup
@@ -240,6 +240,8 @@ class Collector:
         self.geo_excluded_examples = []
         self.existing_latest_by_source = {}
         self.existing_review_count = 0
+        self.reddit_verified = False
+        self.reddit_verification_attempted = False
         self._build_path_constants()
         self._load_existing_rows()
 
@@ -1274,16 +1276,126 @@ class Collector:
             fetch_subreddit("comment", subreddit, page_limit=220)
             fetch_subreddit("submission", subreddit, page_limit=140)
 
+    @staticmethod
+    def _reddit_is_json_response(resp: requests.Response | None) -> bool:
+        if resp is None:
+            return False
+        content_type = (resp.headers.get("Content-Type") or "").lower()
+        text = (resp.text or "").lstrip()
+        return "application/json" in content_type or text.startswith("{") or text.startswith("[")
+
+    @staticmethod
+    def _reddit_is_verification_page(text: str) -> bool:
+        lowered = str(text or "").lower()
+        return (
+            "please wait for verification" in lowered
+            or "you've been blocked by network security" in lowered
+            or "js_challenge" in lowered
+        )
+
+    @staticmethod
+    def _reddit_challenge_seed(text: str) -> str:
+        patterns = [
+            r'await\(async e=>e\+e\)\("([0-9a-f]+)"\)',
+            r'\)\("([0-9a-f]{8,})"\)',
+        ]
+        for pattern in patterns:
+            match = re.search(pattern, text or "")
+            if match:
+                return match.group(1)
+        return ""
+
+    def _reddit_bootstrap_subreddits(self) -> list[str]:
+        ordered = []
+        for subreddit in REDDIT_SUBREDDITS + ["help", "AskReddit"]:
+            clean = str(subreddit or "").strip()
+            if not clean:
+                continue
+            if clean.lower() in {item.lower() for item in ordered}:
+                continue
+            ordered.append(clean)
+        return ordered[:6]
+
+    def ensure_reddit_verified(self, force: bool = False) -> bool:
+        if self.reddit_verified and not force:
+            return True
+        if self.reddit_verification_attempted and not force:
+            return self.reddit_verified
+
+        self.reddit_verification_attempted = True
+        print("[collect] Reddit session verification")
+
+        for subreddit in self._reddit_bootstrap_subreddits():
+            sitemap_url = f"https://www.reddit.com/r/{subreddit}/sitemap.xml"
+            try:
+                resp = S.get(sitemap_url, timeout=45)
+            except Exception:
+                continue
+
+            if self._reddit_is_json_response(resp) or "<?xml" in (resp.text or ""):
+                self.reddit_verified = True
+                print(f"  - Reddit session already open via r/{subreddit}")
+                return True
+
+            html = resp.text or ""
+            if not self._reddit_is_verification_page(html):
+                continue
+
+            action_match = re.search(r'<form hidden method="GET" action="([^"]+)"', html)
+            token_match = re.search(r'name="token" value="([^"]+)"', html)
+            seed = self._reddit_challenge_seed(html)
+            if not action_match or not token_match or not seed:
+                continue
+
+            verify_url = urljoin("https://www.reddit.com", action_match.group(1))
+            verify_params = {
+                "solution": f"{seed}{seed}",
+                "js_challenge": "1",
+                "token": token_match.group(1),
+            }
+
+            try:
+                verify_resp = S.get(verify_url, params=verify_params, timeout=45)
+                if self._reddit_is_verification_page(verify_resp.text or ""):
+                    continue
+
+                probe = S.get(
+                    f"https://www.reddit.com/r/{subreddit}/new.json",
+                    params={"raw_json": 1, "limit": 1},
+                    timeout=45,
+                )
+                if self._reddit_is_json_response(probe):
+                    self.reddit_verified = True
+                    print(f"  - Reddit session verified via r/{subreddit}")
+                    return True
+            except Exception:
+                continue
+
+        print("  - Reddit session verification failed")
+        return False
+
     def reddit_json_get(self, url: str, params: dict | None = None):
         query = dict(params or {})
         query.setdefault("raw_json", 1)
-        try:
-            resp = S.get(url, params=query, timeout=45, headers={"User-Agent": "AuctionWebSentimentBot/1.0"})
-            if resp.status_code != 200:
-                return None
-            return resp.json()
-        except Exception:
+        if not self.ensure_reddit_verified():
             return None
+
+        for attempt in range(2):
+            try:
+                resp = S.get(url, params=query, timeout=45)
+            except Exception:
+                return None
+
+            if resp.status_code == 200 and not self._reddit_is_verification_page(resp.text or ""):
+                try:
+                    return resp.json()
+                except Exception:
+                    return None
+
+            if attempt == 0 and self.ensure_reddit_verified(force=True):
+                continue
+            return None
+        return None
 
     @staticmethod
     def _reddit_children(payload):
@@ -1385,6 +1497,9 @@ class Collector:
 
     def collect_reddit_public_json(self):
         print("[collect] Reddit (public JSON current backfill)")
+        if not self.ensure_reddit_verified():
+            print("  - Reddit verification unavailable; skipping public JSON backfill")
+            return
         reddit_floor_date = self.source_floor_date("reddit.com", overlap_days=45)
         processed_posts = set()
 

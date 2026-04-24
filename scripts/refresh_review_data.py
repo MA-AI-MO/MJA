@@ -126,6 +126,7 @@ def main() -> None:
             run_step([sys.executable, builder, *common_args])
 
         run_step([sys.executable, "scripts/build_js_data.py"])
+        run_step([sys.executable, "scripts/audit_review_datasets.py"])
 
         for business_key in business_order:
             business = config_payload["businesses"][business_key]
