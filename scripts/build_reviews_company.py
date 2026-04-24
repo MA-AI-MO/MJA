@@ -83,6 +83,8 @@ RIPOFF_SEARCH_URL = (
 )
 REDDIT_QUERIES = [tuple(row) for row in BUSINESS_SETTINGS.get("reddit_queries", [])]
 REDDIT_SUBREDDITS = BUSINESS_SETTINGS.get("reddit_subreddits", [])
+DEFAULT_REDDIT_SEARCH_SUBREDDITS = ["askcarsales", "carflipping"]
+REDDIT_SEARCH_SUBREDDITS = BUSINESS_SETTINGS.get("reddit_search_subreddits", DEFAULT_REDDIT_SEARCH_SUBREDDITS)
 
 BASE_US_GEO_MARKERS = {
     " usa ", " united states ", " us yard ", " us lot ", " us auction ",
@@ -226,6 +228,21 @@ S.headers.update({
 })
 
 
+def unique_preserve(items):
+    seen = set()
+    ordered = []
+    for item in items or []:
+        clean = str(item or "").strip()
+        if not clean:
+            continue
+        key = clean.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        ordered.append(clean)
+    return ordered
+
+
 class Collector:
     def __init__(self, target: int, since: str, until: str | None, max_output: int):
         self.target = max(0, int(target))
@@ -252,6 +269,7 @@ class Collector:
         self.reddit_browser = None
         self.reddit_browser_context = None
         self.reddit_browser_page = None
+        self.reddit_post_context_cache = {}
         self._build_path_constants()
         self._load_existing_rows()
 
@@ -1738,6 +1756,212 @@ class Collector:
         for subreddit in REDDIT_SUBREDDITS:
             fetch_subreddit(subreddit, page_limit=12)
 
+    def arctic_shift_json_get(self, url: str, params: dict | None = None):
+        for attempt in range(3):
+            try:
+                resp = S.get(url, params=params or {}, timeout=60)
+                if resp.status_code != 200:
+                    time.sleep(0.4 + attempt * 0.4)
+                    continue
+                payload = resp.json()
+            except Exception:
+                time.sleep(0.4 + attempt * 0.4)
+                continue
+
+            if not isinstance(payload, dict):
+                return None
+
+            error = str(payload.get("error") or "").strip()
+            if error:
+                if "timeout" in error.lower():
+                    time.sleep(1.2 + attempt * 0.8)
+                    continue
+                return None
+
+            return payload
+        return None
+
+    def _reddit_add_arctic_post(self, post: dict):
+        title = self.normalize_text(post.get("title"))
+        selftext = self.normalize_text(post.get("selftext"))
+        text = self.normalize_text(f"{title} {selftext}")
+        if not text or text in {"[deleted]", "[removed]"}:
+            return False
+
+        created_date = self._reddit_date(post.get("created_utc"))
+        if created_date and created_date < self.source_floor_date("reddit.com", overlap_days=45):
+            return False
+
+        subreddit = str(post.get("subreddit") or "unknown").strip() or "unknown"
+        permalink = str(post.get("permalink") or "").strip()
+        if permalink.startswith("/"):
+            source_url = f"https://www.reddit.com{permalink}"
+        else:
+            source_url = str(post.get("url") or "https://www.reddit.com").strip()
+
+        post_id = str(post.get("id") or "").strip()
+        if post_id:
+            self.reddit_post_context_cache[post_id] = {
+                "subreddit": subreddit,
+                "title": title,
+                "selftext": selftext,
+                "source_url": source_url,
+            }
+
+        return self.add_review(
+            source_website="reddit.com",
+            source_label=f"Reddit r/{subreddit}",
+            source_url=source_url,
+            author=post.get("author") or "reddit_user",
+            review_date=created_date.isoformat() if created_date else "1970-01-01",
+            rating=None,
+            review_text=text,
+            external_id=f"reddit_arctic_post_{post_id}",
+        )
+
+    def _reddit_add_arctic_comment(self, comment: dict):
+        body = self.normalize_text(comment.get("body"))
+        if not body or body in {"[deleted]", "[removed]"}:
+            return False
+
+        created_date = self._reddit_date(comment.get("created_utc"))
+        if created_date and created_date < self.source_floor_date("reddit.com", overlap_days=45):
+            return False
+
+        subreddit = str(comment.get("subreddit") or "unknown").strip() or "unknown"
+        permalink = str(comment.get("permalink") or "").strip()
+        if permalink.startswith("/"):
+            source_url = f"https://www.reddit.com{permalink}"
+        else:
+            source_url = "https://www.reddit.com"
+
+        link_id = str(comment.get("link_id") or "").strip().lower()
+        post_id = link_id[3:] if link_id.startswith("t3_") else link_id
+        context = self.reddit_post_context_cache.get(post_id) or {}
+        title = self.normalize_text(context.get("title"))
+        selftext = self.normalize_text(context.get("selftext"))
+        context_text = self.normalize_text(f"Thread context: {title} {selftext[:700]}")
+        enriched_text = self.normalize_text(f"{body} {context_text}")
+
+        comment_id = str(comment.get("id") or "").strip()
+        return self.add_review(
+            source_website="reddit.com",
+            source_label=f"Reddit r/{subreddit}",
+            source_url=source_url,
+            author=comment.get("author") or "reddit_user",
+            review_date=created_date.isoformat() if created_date else "1970-01-01",
+            rating=None,
+            review_text=enriched_text,
+            external_id=f"reddit_arctic_comment_{comment_id}",
+        )
+
+    def collect_reddit_arctic_shift(self):
+        print("[collect] Reddit (Arctic Shift current backfill)")
+        floor_date = self.source_floor_date("reddit.com", overlap_days=45)
+        floor_ts = int(datetime(floor_date.year, floor_date.month, floor_date.day, tzinfo=timezone.utc).timestamp())
+
+        dedicated_subreddits = unique_preserve(REDDIT_SUBREDDITS)
+        search_subreddits = [
+            subreddit
+            for subreddit in unique_preserve(REDDIT_SEARCH_SUBREDDITS)
+            if subreddit.lower() not in {item.lower() for item in dedicated_subreddits}
+        ]
+        query_terms = unique_preserve([row[0] for row in REDDIT_QUERIES])[:4]
+
+        def page_posts(base_params: dict, page_limit: int):
+            before = None
+            for _page in range(max(1, page_limit)):
+                params = dict(base_params)
+                params["limit"] = min(int(params.get("limit") or 50), 100)
+                params["sort"] = "desc"
+                if before is not None:
+                    params["before"] = before
+                payload = self.arctic_shift_json_get(
+                    "https://arctic-shift.photon-reddit.com/api/posts/search",
+                    params=params,
+                )
+                data = (payload or {}).get("data") or []
+                if not data:
+                    break
+
+                oldest = None
+                for post in data:
+                    created_utc = post.get("created_utc")
+                    try:
+                        created_utc = int(float(created_utc))
+                    except Exception:
+                        created_utc = None
+                    if created_utc is not None:
+                        oldest = created_utc if oldest is None else min(oldest, created_utc)
+                    self._reddit_add_arctic_post(post)
+
+                if oldest is None or oldest < floor_ts or len(data) < params["limit"]:
+                    break
+                before = oldest - 1
+                time.sleep(0.25)
+
+        def page_comments(base_params: dict, page_limit: int):
+            before = None
+            for _page in range(max(1, page_limit)):
+                params = dict(base_params)
+                params["limit"] = min(int(params.get("limit") or 50), 100)
+                params["sort"] = "desc"
+                if before is not None:
+                    params["before"] = before
+                payload = self.arctic_shift_json_get(
+                    "https://arctic-shift.photon-reddit.com/api/comments/search",
+                    params=params,
+                )
+                data = (payload or {}).get("data") or []
+                if not data:
+                    break
+
+                oldest = None
+                for comment in data:
+                    created_utc = comment.get("created_utc")
+                    try:
+                        created_utc = int(float(created_utc))
+                    except Exception:
+                        created_utc = None
+                    if created_utc is not None:
+                        oldest = created_utc if oldest is None else min(oldest, created_utc)
+                    self._reddit_add_arctic_comment(comment)
+
+                if oldest is None or oldest < floor_ts or len(data) < params["limit"]:
+                    break
+                before = oldest - 1
+                time.sleep(0.25)
+
+        for subreddit in dedicated_subreddits:
+            page_posts(
+                {
+                    "subreddit": subreddit,
+                    "after": floor_date.isoformat(),
+                    "limit": 100,
+                },
+                page_limit=12,
+            )
+            page_comments(
+                {
+                    "subreddit": subreddit,
+                    "after": floor_date.isoformat(),
+                    "limit": 100,
+                },
+                page_limit=16,
+            )
+
+        for subreddit in search_subreddits:
+            for query in query_terms:
+                page_posts(
+                    {
+                        "subreddit": subreddit,
+                        "query": query,
+                        "after": floor_date.isoformat(),
+                        "limit": 50,
+                    },
+                    page_limit=6,
+                )
+
     def collect_trustpilot(self):
         print("[collect] Trustpilot reviews")
         start_count = len(self.records)
@@ -2616,7 +2840,7 @@ class Collector:
             collectors.append(("reviewsio", self.collect_reviewsio))
         if REDDIT_QUERIES or REDDIT_SUBREDDITS:
             collectors.append(("reddit_pullpush", self.collect_reddit_pullpush))
-            collectors.append(("reddit_public_json", self.collect_reddit_public_json))
+            collectors.append(("reddit_arctic_shift", self.collect_reddit_arctic_shift))
         if BBB_SEARCH_TEXT or BBB_FALLBACK_PROFILES:
             collectors.extend([
                 ("bbb_customer_reviews", self.collect_bbb_customer_reviews),
