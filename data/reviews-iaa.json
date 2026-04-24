@@ -359,12 +359,12 @@
       "https://www.reddit.com/r/cars4bid/comments/1i6ko4r/come_prepared_buying_cars_at_copart_and_iaai/",
       "https://www.reddit.com/r/UsedCars/comments/1i6tt3v/auction_records/"
     ],
-    "generated_at_utc": "2026-04-24T15:57:14.869220+00:00",
+    "generated_at_utc": "2026-04-24T17:35:13.474531+00:00",
     "since_date": "2023-01-01",
     "until_date": "2026-04-24",
     "collector_failures": [],
-    "existing_review_count": 1573,
-    "new_reviews_added": 70,
+    "existing_review_count": 1643,
+    "new_reviews_added": 0,
     "youtube_excluded": true,
     "usa_only": true,
     "english_only": true,
@@ -383,11 +383,7 @@
       "apps.apple.com",
       "bbb.org"
     ],
-    "geo_validation_counts": {
-      "google_play_us_store": 65,
-      "mixed_source_ok": 1,
-      "apple_us_store": 4
-    },
+    "geo_validation_counts": {},
     "geo_excluded_counts": {
       "play.google.com:google_play_us_store_non_us_marker": 8,
       "reddit.com:mixed_source_non_us_marker": 9,

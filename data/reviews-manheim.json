@@ -1,19 +1,19 @@
 {
   "meta": {
     "description": "Large-scale English-only Manheim textual review/problem dataset from public web sources (recency-first).",
-    "review_count": 612,
+    "review_count": 613,
     "source_counts": {
       "play.google.com": 57,
       "birdeye.com": 30,
       "apps.apple.com": 86,
       "bbb.org": 144,
       "trustpilot.com": 6,
-      "reddit.com": 289
+      "reddit.com": 290
     },
     "source_audit": [
       {
         "source_website": "reddit.com",
-        "review_count": 289,
+        "review_count": 290,
         "present": true
       },
       {
@@ -49,7 +49,7 @@
     ],
     "sentiments": {
       "positive": 216,
-      "negative": 396
+      "negative": 397
     },
     "source_urls": [
       "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
@@ -353,12 +353,12 @@
       "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=11425500127",
       "https://www.reddit.com/r/askcarguys/comments/1dn7o7b/manheim_auto_auction/"
     ],
-    "generated_at_utc": "2026-04-24T16:06:26.753604+00:00",
+    "generated_at_utc": "2026-04-24T17:37:02.987345+00:00",
     "since_date": "2023-01-01",
     "until_date": "2026-04-24",
     "collector_failures": [],
-    "existing_review_count": 293,
-    "new_reviews_added": 319,
+    "existing_review_count": 612,
+    "new_reviews_added": 1,
     "youtube_excluded": true,
     "usa_only": true,
     "english_only": true,
@@ -377,14 +377,11 @@
       "bbb.org"
     ],
     "geo_validation_counts": {
-      "google_play_us_store": 13,
-      "mixed_source_ok": 289,
-      "birdeye_us_profile": 12,
-      "apple_us_store": 5
+      "mixed_source_ok": 1
     },
     "geo_excluded_counts": {
       "play.google.com:google_play_us_store_non_us_marker": 1,
-      "reddit.com:mixed_source_non_us_marker": 34,
+      "reddit.com:mixed_source_non_us_marker": 4,
       "apps.apple.com:apple_non_us_store": 2
     },
     "geo_excluded_examples": [
@@ -406,11 +403,19 @@
       },
       {
         "source_website": "reddit.com",
-        "source_label": "Reddit r/tractors",
-        "source_url": "https://www.reddit.com/r/tractors/comments/1jgzxet/1997_john_deere_5400_with_loader_or_1985_jd_2950/mj4lql8/",
-        "review_date": "2025-03-22",
+        "source_label": "Reddit r/googlemapsshenanigans",
+        "source_url": "https://www.reddit.com/r/googlemapsshenanigans/comments/1khnbvl/phantom_buildings_near_coalmine_in_cologne_germany/",
+        "review_date": "2025-05-08",
         "reason": "mixed_source_non_us_marker",
-        "review_text": "go with the 5400, the handy aspect of the loader is immeasurable. I called mine my hired man. The manheim made Deere tractors are good but you may not be able to find loader brackets anymore for the frame. They were scarce in Canada already"
+        "review_text": "Phantom Buildings near coalmine in Cologne, Germany Near the city of Cologne, Germany (I come from there) there are 3 Major sites for digging up coal. The Energy-Giant RWE bought up multiple small towns and acres of land to expand their min"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/BootlegGifts",
+        "source_url": "https://www.reddit.com/r/BootlegGifts/comments/1k1ky7p/new_to_group/",
+        "review_date": "2025-04-17",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "New to group Hi all i’m new to this group and i’m looking for a few shows if anyone can help next to normal west end audio (jack wolfe) little shop of horrors broadway video (milo manheim) annie uk tour 2023 audio (only looking for the song"
       },
       {
         "source_website": "reddit.com",
@@ -421,132 +426,20 @@
         "review_text": "You can get a rep on the phone 03457 740 740. For a van you have to go to manheim.co.uk and join the auction"
       },
       {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/royalmail",
-        "source_url": "https://www.reddit.com/r/royalmail/comments/1iqo7ot/shtboxes_going_to_auction_whos_buying_these/mdcizry/",
-        "review_date": "2025-02-18",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Looks like it is! https://www.manheim.co.uk/auctions/van/vauxhall/combo?IsKm=False Set year to 2011 max and it appears they’re actually all going through debranded."
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (6744660081, gb)",
+        "source_url": "https://apps.apple.com/gb/app/id6744660081?see-all=reviews&platform=iphone&reviewId=13789018899",
+        "review_date": "2026-02-25",
+        "reason": "apple_non_us_store",
+        "review_text": "login issues. can’t login, log into website no problem but on this app same pw/user details don’t work"
       },
       {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/Slayer",
-        "source_url": "https://www.reddit.com/r/Slayer/comments/1ij4l31/i_never_know_which_solo_is_kerry_and_which_solo/mbhea7u/",
-        "review_date": "2025-02-07",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "1992 manheim germany with a couple army buddies. Close my eyes and can not hear the transitions between the 2 of them That was a \"wow\" moment for me first time live."
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/Slayer",
-        "source_url": "https://www.reddit.com/r/Slayer/comments/1i5pbmm/when_was_your_first_and_last_slayer_concert_and/m8r723y/",
-        "review_date": "2025-01-23",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Aug 15 1992 manheim while i was stationed in Germany. Riotfest 2024 indoctrination of my 13 year old daughter. 😆"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/TeslaUK",
-        "source_url": "https://www.reddit.com/r/TeslaUK/comments/1gerpg4/parkway_vw_tesla_sales/lubyka1/",
-        "review_date": "2024-10-29",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Probably an employee who's clued up on the Tesla's and knows how to sell them. They'll be ex-lease cars that have been shunted to BCA/Manheim for disposal, achieving low-mid prices at auction so they can make a decent margain on the forecou"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/UsedCars",
-        "source_url": "https://www.reddit.com/r/UsedCars/comments/1fl8a3x/going_to_test_drive_a_used_car_at_a_dealership/lo4x3zs/",
-        "review_date": "2024-09-21",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "I sell 2500-3000 cars yearly between open lane and manheim, I'll gladly take your money. I supply most of the franchise stores on the east coast of canada. If you don't have at least 5k spread on your retail to wholesale units what are you "
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/CarTalkUK",
-        "source_url": "https://www.reddit.com/r/CarTalkUK/comments/1f73zns/buying_ex_rental_cars/ll5360k/",
-        "review_date": "2024-09-02",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Try [https://www.manheim.co.uk/](https://www.manheim.co.uk/) for ex-rental auctions. Not all of them are public though."
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/InternationalMBA",
-        "source_url": "https://www.reddit.com/r/InternationalMBA/comments/1edi3le/should_i_go_for_mba_abroad/lf9wc4d/",
-        "review_date": "2024-07-28",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "I didnt say that, i just meant that if you are doing mba ,do it from top colleges such as manheim etc. career growth in Germany is not much of a thing and you should be fluent in business german if u want to make it big. You can lead a simp"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/CarTalkUK",
-        "source_url": "https://www.reddit.com/r/CarTalkUK/comments/1dwvj4u/should_i_stay_away_from_this_2019_69k_miles_11000/lbxsuvy/",
-        "review_date": "2024-07-06",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Auction grade 5 and below average condition https://www.manheim.co.uk/namacar"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/PoliticalCompassMemes",
-        "source_url": "https://www.reddit.com/r/PoliticalCompassMemes/comments/1d9u5mf/todays_news_stories_6th_june_2024_that_would/l7fsqdx/",
-        "review_date": "2024-06-06",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "AuthLeft: [https://apnews.com/article/spain-israel-icj-genocide-case-67d4d9b8ecf6fd88e718319a5d93465a](https://apnews.com/article/spain-israel-icj-genocide-case-67d4d9b8ecf6fd88e718319a5d93465a) AuthCenter: [https://apnews.com/article/cuba-"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/germany",
-        "source_url": "https://www.reddit.com/r/germany/comments/1ceetlx/university/l1j41hk/",
-        "review_date": "2024-04-27",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "As for IB private universities are better in geramany, the only public in germany that is a target school for IB is manheim and I am an international student with only A2 German ( learning B1 ) whereas manheim asks for C1."
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/CarTalkUK",
-        "source_url": "https://www.reddit.com/r/CarTalkUK/comments/1b6a5y4/am_i_crazy_to_consider_this_i_mean_150k_shouldnt/ktauhye/",
-        "review_date": "2024-03-04",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Manheim auctions is another we use. Some Auctions are trade only (I forget which) https://www.manheim.co.uk/search?IsKm=False"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/berlin",
-        "source_url": "https://www.reddit.com/r/berlin/comments/190ymov/gdlstrike_round_3/kgvhgli/",
-        "review_date": "2024-01-08",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Sure I can post some more accurate info: So as I am arriving in Frankfurt airport on 11th 16:15, I planned to take the trip from Frankfurt to Bohl igglheim somewhere after 17:15, as I am in a wheelchair and would also like to grab a bite to"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/mannheim",
-        "source_url": "https://www.reddit.com/r/mannheim/comments/17c8gsh/time_warp_2023_some_info/k68iapk/",
-        "review_date": "2023-10-24",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "You can get there for free using train, it’s included in the ticket… VRN trains. If you take the bus from the airport to baden Baden Hbf then from there take train to karlsruhe hbf then to manheim markhalle and walk from there. Easy and you"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/irishpersonalfinance",
-        "source_url": "https://www.reddit.com/r/irishpersonalfinance/comments/13px28w/car_finance/jlcxz7q/",
-        "review_date": "2023-05-23",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Pre-Brexit the sites I used were http://www.british-car-auctions.co.uk/ and https://www.manheim.co.uk/. They're the two biggest, and they are truly vast. To find ex-hire, look for cars around 3-4 years old and 5-6 years old, that's when ren"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/AskHistorians",
-        "source_url": "https://www.reddit.com/r/AskHistorians/comments/10oz6os/by_june_1918_the_german_high_command_knew_wwi_was/j6ktvfl/",
-        "review_date": "2023-01-31",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "The \"stab in the back\" myth is an attempt to shift blame away from German soldiers. Such a myth of course needs to be believable to the people who lived through the end of the first world war, and while it is based on motivated reasoning, i"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/googlemapsshenanigans",
-        "source_url": "https://www.reddit.com/r/googlemapsshenanigans/comments/1khnbvl/phantom_buildings_near_coalmine_in_cologne_germany/",
-        "review_date": "2025-05-08",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Phantom Buildings near coalmine in Cologne, Germany Near the city of Cologne, Germany (I come from there) there are 3 Major sites for digging up coal. The Energy-Giant RWE bought up multiple small towns and acres of land to expand their min"
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1480842917, gb)",
+        "source_url": "https://apps.apple.com/gb/app/id1480842917?see-all=reviews&platform=iphone&reviewId=11685057363",
+        "review_date": "2024-09-03",
+        "reason": "apple_non_us_store",
+        "review_text": "Defaults goes to US login. Which means you can’t login.. only after that fails twice does it go be you an option to select an international login at which point you can select you country and then you can login.. very poor UX design and pro"
       }
     ],
     "active_collectors": [
@@ -8451,6 +8344,21 @@
       "tier2": "Bidding Process, Rules and Fees",
       "tier3": "Fees",
       "id": "rvw-000555"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/GenesisG70",
+      "source_url": "https://www.reddit.com/r/GenesisG70/comments/14jjlby/good_price_on_a_certified_2023_genesis_g70_20t/jsyow56/",
+      "author": "test13371997",
+      "review_date": "2023-07-22",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "https://publish.manheim.com/content/dam/consulting/ManheimUsedVehicleValueIndex-LineGraph.png Wholesale(price that dealer pays for a car) is dropping substantially. The price that a customer pays retail lags this index by like 6 months. https://imgur.com/a/TIddWn3 Heres the average listing price for all used cars in the whole US Lets look at the average listing price for a 2022 G70 to be specific. Note that this includes 2.0,3.3, and all 3 trims for each engine. But its the best we have to look at https://imgur.com/a/AT9A4sS List price of these cars are almost going vertical. If we take this car https://my.caredge.com/buy/details?zip=75056&state=TX&vin=KMTG54TE4NU082752&mileage=31069&radius=7000&listingId=KMTG54TE4NU082752-38571f69-373a&inventoryType=used&make=GENESIS&model=G70 2022 3.3 RWD Sport Prestige, 31,069 miles and put it into the various car selling websites, you get this https://imgur.com/a/Jwzan8L So as soon as you drive off the lot in this car that they are charging $39k for($42k after taxes and fees), it will drop to $31k best case, and $25,600 worst case. And recall I said that retail prices(what we pay) lag what dealers pay by 6 months or so. So in 6 months, these cars will be listed on dealer websites for these prices. This 1 year old fully loaded g70 has already dropped to a value of $31k(new it was $52k), and car prices are currently outrageous. Thats not to say that you couldn't find a desperate dealer at the moment, present them the facts like I did, and get them to come down to reality. But it wont be easy.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-000613"
     },
     {
       "source_website": "reddit.com",

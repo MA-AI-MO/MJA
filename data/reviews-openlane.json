@@ -1,9 +1,9 @@
 {
   "meta": {
     "description": "Large-scale English-only OPENLANE textual review/problem dataset from public web sources (recency-first).",
-    "review_count": 407,
+    "review_count": 408,
     "source_counts": {
-      "play.google.com": 233,
+      "play.google.com": 234,
       "trustpilot.com": 38,
       "apps.apple.com": 108,
       "bbb.org": 13,
@@ -18,7 +18,7 @@
       },
       {
         "source_website": "play.google.com",
-        "review_count": 233,
+        "review_count": 234,
         "present": true
       },
       {
@@ -48,10 +48,11 @@
       }
     ],
     "sentiments": {
-      "positive": 51,
+      "positive": 52,
       "negative": 356
     },
     "source_urls": [
+      "https://play.google.com/store/apps/details?id=com.backlotcars.backlotcars&hl=en&gl=us",
       "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
       "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
       "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=ru&gl=us",
@@ -71,7 +72,6 @@
       "https://itunes.apple.com/us/review?id=1175036411&type=Purple%20Software&reviewId=13814539868",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=13813441636",
       "https://www.trustpilot.com/reviews/69a0e8624c2da3d7c264a1a1",
-      "https://play.google.com/store/apps/details?id=com.backlotcars.backlotcars&hl=en&gl=us",
       "https://www.trustpilot.com/reviews/698ca11b1037ed03fea51464",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=13731085350",
       "https://www.trustpilot.com/reviews/69834e7b02913aa3868a4851",
@@ -232,12 +232,12 @@
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=9641434260",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=9619929878"
     ],
-    "generated_at_utc": "2026-04-24T16:09:08.048857+00:00",
+    "generated_at_utc": "2026-04-24T17:39:04.051405+00:00",
     "since_date": "2023-01-01",
     "until_date": "2026-04-24",
     "collector_failures": [],
-    "existing_review_count": 336,
-    "new_reviews_added": 71,
+    "existing_review_count": 407,
+    "new_reviews_added": 1,
     "youtube_excluded": true,
     "usa_only": true,
     "english_only": true,
@@ -256,13 +256,10 @@
       "bbb.org"
     ],
     "geo_validation_counts": {
-      "google_play_us_store": 49,
-      "mixed_source_ok": 12,
-      "birdeye_us_profile": 1,
-      "apple_us_store": 9
+      "google_play_us_store": 1
     },
     "geo_excluded_counts": {
-      "reddit.com:mixed_source_non_us_marker": 16,
+      "reddit.com:mixed_source_non_us_marker": 12,
       "apps.apple.com:apple_non_us_store": 8
     },
     "geo_excluded_examples": [
@@ -273,22 +270,6 @@
         "review_date": "2024-06-29",
         "reason": "mixed_source_non_us_marker",
         "review_text": "Thanks. Hadn’t heard of that site. Seems to now be called openlane.eu. Ironically, the cars that match my criteria are all in Germany though!"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/askcarsales",
-        "source_url": "https://www.reddit.com/r/askcarsales/comments/18o498k/omvic_sales_person_working_without_salary_but_on/l5dn9ig/",
-        "review_date": "2024-05-23",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Yes they can participate in auctions. There are physical auctions like Manhiem and Adesa, but manhiem recently sold to adesa and is exiting Canada at the moment leaving behind their digital auction platform otolane. [https://www.otolane.com"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/askcarsales",
-        "source_url": "https://www.reddit.com/r/askcarsales/comments/18x4ck5/best_way_to_acquire_inventory/kg1v8g4/",
-        "review_date": "2024-01-02",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "***Thanks for posting, /u/AmirisInaUrus! This comment is a copy of your post so readers can see the original text if your post is edited or removed. This comment is NOT accusing you of anything.*** Hi! I have a small lot with dealers licens"
       },
       {
         "source_website": "reddit.com",
@@ -313,22 +294,6 @@
         "review_date": "2024-07-16",
         "reason": "mixed_source_non_us_marker",
         "review_text": "Anyone willing to give me access to OPENLANE Canada or send me screenshots? [removed]"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/askcarsales",
-        "source_url": "https://www.reddit.com/r/askcarsales/comments/18x4ck5/best_way_to_acquire_inventory/",
-        "review_date": "2024-01-02",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Best way to acquire inventory? Hi! I have a small lot with dealers license in Ontario, Canada. Basically I pay fk all beside the insurance &amp; looking for flip some cars, looking to start with 5 cars (10-15k value each) I signed up with a"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/Netherlands",
-        "source_url": "https://www.reddit.com/r/Netherlands/comments/18vwvvk/opening_an_account_on_adesa_openlane/",
-        "review_date": "2024-01-01",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Opening an account on Adesa / Openlane Hello everyone, &amp;#x200B; I am interested in opening an account on Openlane ( former Adesa ) as I would like to start a business in the Netherlands buying/selling cars. I was curious to see what kin"
       },
       {
         "source_website": "reddit.com",
@@ -425,6 +390,38 @@
         "review_date": "2025-06-26",
         "reason": "apple_non_us_store",
         "review_text": "Waste. It’s just a total waste of time and has no use adds to much to time to the job at hand"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1566419386, ca)",
+        "source_url": "https://apps.apple.com/ca/app/id1566419386?see-all=reviews&platform=iphone&reviewId=13572954510",
+        "review_date": "2025-12-30",
+        "reason": "apple_non_us_store",
+        "review_text": "This app sucks. The stupid app never submits the inspections and you have to do them four times before they submit, half the time I end up having to call the shipper and have them manually approve it because this app is so horribly designed"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1566419386, ca)",
+        "source_url": "https://apps.apple.com/ca/app/id1566419386?see-all=reviews&platform=iphone&reviewId=13121509849",
+        "review_date": "2025-09-10",
+        "reason": "apple_non_us_store",
+        "review_text": "1 star. Takes more time to fill out this app then load the vehicles"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1566419386, ca)",
+        "source_url": "https://apps.apple.com/ca/app/id1566419386?see-all=reviews&platform=iphone&reviewId=13010291542",
+        "review_date": "2025-08-13",
+        "reason": "apple_non_us_store",
+        "review_text": "Terrible. Out of all the apps I deal with I don’t like this one at all! not good at all slow very slow , have to put the same information in about 15 times before it loads up into it system literally takes forever and is time consuming . Co"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1566419386, ca)",
+        "source_url": "https://apps.apple.com/ca/app/id1566419386?see-all=reviews&platform=iphone&reviewId=12820183789",
+        "review_date": "2025-06-26",
+        "reason": "apple_non_us_store",
+        "review_text": "Waste. It’s just a total waste of time and has no use adds to much to time to the job at hand"
       }
     ],
     "active_collectors": [
@@ -440,6 +437,21 @@
     ]
   },
   "reviews": [
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.backlotcars.backlotcars)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.backlotcars.backlotcars&hl=en&gl=us",
+      "author": "Scott Guell",
+      "review_date": "2026-04-23",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Great app! Travis helped out a ton!",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000408"
+    },
     {
       "source_website": "play.google.com",
       "source_label": "Google Play (com.nthgensoftware.traderev.android)",

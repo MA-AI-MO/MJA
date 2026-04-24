@@ -156,12 +156,12 @@
       "https://itunes.apple.com/us/review?id=969808943&type=Purple%20Software&reviewId=9591184712",
       "https://itunes.apple.com/us/review?id=969808943&type=Purple%20Software&reviewId=9493843564"
     ],
-    "generated_at_utc": "2026-04-24T16:13:07.159723+00:00",
+    "generated_at_utc": "2026-04-24T17:41:00.097557+00:00",
     "since_date": "2023-01-01",
     "until_date": "2026-04-24",
     "collector_failures": [],
-    "existing_review_count": 116,
-    "new_reviews_added": 17,
+    "existing_review_count": 133,
+    "new_reviews_added": 0,
     "youtube_excluded": true,
     "usa_only": true,
     "english_only": true,
@@ -179,12 +179,7 @@
       "apps.apple.com",
       "bbb.org"
     ],
-    "geo_validation_counts": {
-      "google_play_us_store": 2,
-      "mixed_source_ok": 2,
-      "birdeye_us_profile": 8,
-      "apple_us_store": 5
-    },
+    "geo_validation_counts": {},
     "geo_excluded_counts": {},
     "geo_excluded_examples": [],
     "active_collectors": [

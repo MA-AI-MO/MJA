@@ -238,12 +238,12 @@
       "https://itunes.apple.com/us/review?id=903860668&type=Purple%20Software&reviewId=9549096674",
       "https://www.reddit.com/r/vancouver/comments/100vhep/recommendations_for_place_that_will_buy_used_cars/j2k53tm/"
     ],
-    "generated_at_utc": "2026-04-24T16:08:05.229456+00:00",
+    "generated_at_utc": "2026-04-24T17:38:01.934634+00:00",
     "since_date": "2023-01-01",
     "until_date": "2026-04-24",
     "collector_failures": [],
-    "existing_review_count": 145,
-    "new_reviews_added": 66,
+    "existing_review_count": 211,
+    "new_reviews_added": 0,
     "youtube_excluded": true,
     "usa_only": true,
     "english_only": true,
@@ -262,49 +262,12 @@
       "apps.apple.com",
       "bbb.org"
     ],
-    "geo_validation_counts": {
-      "google_play_us_store": 4,
-      "mixed_source_ok": 38,
-      "birdeye_us_profile": 12,
-      "apple_us_store": 12
-    },
+    "geo_validation_counts": {},
     "geo_excluded_counts": {
-      "reddit.com:mixed_source_non_us_marker": 8,
+      "reddit.com:mixed_source_non_us_marker": 4,
       "apps.apple.com:apple_non_us_store": 13
     },
     "geo_excluded_examples": [
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/Calgary",
-        "source_url": "https://www.reddit.com/r/Calgary/comments/1gtxs70/for_people_buying_hail_damaged_cars/lxq38m9/",
-        "review_date": "2024-11-18",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Yeah, basically, just do your homework and don't get ripped off. Use VMR canada website it's a pretty accurate website for vehicle pricing. And I can tell.you, especially in the this last calgary storm, most of the hail damage is easily 10-"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/Fisker",
-        "source_url": "https://www.reddit.com/r/Fisker/comments/1d591z0/inside_ev_startup_fiskers_collapse_how_the/l6lgis3/",
-        "review_date": "2024-06-01",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Most of their vehicles have been/are in the process of being liquidated at auctions. There is going to be a big sale which includes their vehicles that are still at ports and adesa locations. That specific sale will get rid of 90% of their "
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/askcarsales",
-        "source_url": "https://www.reddit.com/r/askcarsales/comments/18o498k/omvic_sales_person_working_without_salary_but_on/l5dn9ig/",
-        "review_date": "2024-05-23",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Yes they can participate in auctions. There are physical auctions like Manhiem and Adesa, but manhiem recently sold to adesa and is exiting Canada at the moment leaving behind their digital auction platform otolane. [https://www.otolane.com"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/Netherlands",
-        "source_url": "https://www.reddit.com/r/Netherlands/comments/18vwvvk/opening_an_account_on_adesa_openlane/",
-        "review_date": "2024-01-01",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Opening an account on Adesa / Openlane Hello everyone, &amp;#x200B; I am interested in opening an account on Openlane ( former Adesa ) as I would like to start a business in the Netherlands buying/selling cars. I was curious to see what kin"
-      },
       {
         "source_website": "reddit.com",
         "source_label": "Reddit r/Calgary",
@@ -432,6 +395,14 @@
         "review_date": "2024-06-27",
         "reason": "apple_non_us_store",
         "review_text": "Lane alert. Won’t alert when vehicle is coming up for sale"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (903860668, ca)",
+        "source_url": "https://apps.apple.com/ca/app/id903860668?see-all=reviews&platform=iphone&reviewId=11190392151",
+        "review_date": "2024-04-23",
+        "reason": "apple_non_us_store",
+        "review_text": "Openlane Sucks. Please don’t delete this app openlane sucks"
       }
     ],
     "active_collectors": [

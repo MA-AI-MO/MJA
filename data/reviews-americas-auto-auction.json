@@ -63,12 +63,12 @@
       "https://reviews.birdeye.com/americas-auto-auction-166658630045147?page=2#review-5",
       "https://www.bbb.org/us/il/centreville/profile/auto-auction/americas-auto-auction-0734-310446804/complaints#0734_310446804_23564283"
     ],
-    "generated_at_utc": "2026-04-24T16:14:28.018286+00:00",
+    "generated_at_utc": "2026-04-24T17:41:54.880267+00:00",
     "since_date": "2023-01-01",
     "until_date": "2026-04-24",
     "collector_failures": [],
-    "existing_review_count": 24,
-    "new_reviews_added": 10,
+    "existing_review_count": 34,
+    "new_reviews_added": 0,
     "youtube_excluded": true,
     "usa_only": true,
     "english_only": true,
@@ -82,9 +82,7 @@
     "required_source_websites": [
       "bbb.org"
     ],
-    "geo_validation_counts": {
-      "birdeye_us_profile": 10
-    },
+    "geo_validation_counts": {},
     "geo_excluded_counts": {},
     "geo_excluded_examples": [],
     "active_collectors": [
