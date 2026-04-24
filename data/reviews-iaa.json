@@ -1,25 +1,30 @@
 {
   "meta": {
     "description": "Large-scale English-only IAA textual review/problem dataset from public web sources (recency-first).",
-    "review_count": 1573,
+    "review_count": 1643,
     "source_counts": {
+      "play.google.com": 230,
       "trustpilot.com": 49,
-      "play.google.com": 165,
       "bbb.org": 249,
-      "apps.apple.com": 128,
+      "apps.apple.com": 132,
       "pissedconsumer.com": 3,
-      "reddit.com": 976,
+      "reddit.com": 977,
       "complaintsboard.com": 3
     },
     "source_audit": [
       {
+        "source_website": "reddit.com",
+        "review_count": 977,
+        "present": true
+      },
+      {
         "source_website": "play.google.com",
-        "review_count": 165,
+        "review_count": 230,
         "present": true
       },
       {
         "source_website": "apps.apple.com",
-        "review_count": 128,
+        "review_count": 132,
         "present": true
       },
       {
@@ -30,16 +35,6 @@
       {
         "source_website": "trustpilot.com",
         "review_count": 49,
-        "present": true
-      },
-      {
-        "source_website": "reddit.com",
-        "review_count": 976,
-        "present": true
-      },
-      {
-        "source_website": "pissedconsumer.com",
-        "review_count": 3,
         "present": true
       },
       {
@@ -59,15 +54,15 @@
       }
     ],
     "sentiments": {
-      "positive": 541,
-      "negative": 1032
+      "positive": 556,
+      "negative": 1087
     },
     "source_urls": [
+      "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
       "https://www.trustpilot.com/reviews/69d66bb09449607e8072b9e2",
       "https://www.trustpilot.com/reviews/69d038eb7b6f1408831fde68",
       "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_24679733",
-      "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#0654_88276839_666096",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_24670501",
       "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_24653716",
@@ -364,20 +359,21 @@
       "https://www.reddit.com/r/cars4bid/comments/1i6ko4r/come_prepared_buying_cars_at_copart_and_iaai/",
       "https://www.reddit.com/r/UsedCars/comments/1i6tt3v/auction_records/"
     ],
-    "generated_at_utc": "2026-04-15T02:54:07.866121+00:00",
+    "generated_at_utc": "2026-04-24T15:57:14.869220+00:00",
     "since_date": "2023-01-01",
-    "until_date": "2026-04-14",
+    "until_date": "2026-04-24",
     "collector_failures": [],
+    "existing_review_count": 1573,
+    "new_reviews_added": 70,
     "youtube_excluded": true,
     "usa_only": true,
     "english_only": true,
     "expected_source_websites": [
+      "reddit.com",
       "play.google.com",
       "apps.apple.com",
       "bbb.org",
       "trustpilot.com",
-      "reddit.com",
-      "pissedconsumer.com",
       "ripoffreport.com",
       "smartcustomer.com",
       "complaintsboard.com"
@@ -388,17 +384,14 @@
       "bbb.org"
     ],
     "geo_validation_counts": {
-      "google_play_us_store": 165,
-      "trustpilot_us_slug": 49,
-      "mixed_source_ok": 979,
-      "bbb_us_business": 249,
-      "complaintsboard_us_profile": 3,
-      "apple_us_store": 128
+      "google_play_us_store": 65,
+      "mixed_source_ok": 1,
+      "apple_us_store": 4
     },
     "geo_excluded_counts": {
-      "play.google.com:google_play_us_store_non_us_marker": 6,
-      "trustpilot.com:trustpilot_us_slug_non_us_marker": 3,
-      "reddit.com:mixed_source_non_us_marker": 45,
+      "play.google.com:google_play_us_store_non_us_marker": 8,
+      "reddit.com:mixed_source_non_us_marker": 9,
+      "complaintsboard.com:complaintsboard_us_profile_non_us_marker": 1,
       "apps.apple.com:apple_non_us_store": 12
     },
     "geo_excluded_examples": [
@@ -422,7 +415,7 @@
         "source_website": "play.google.com",
         "source_label": "Google Play (com.iaai.android)",
         "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
-        "review_date": "2024-09-30",
+        "review_date": "2024-10-01",
         "reason": "google_play_us_store_non_us_marker",
         "review_text": "Is there any app for auctions in Canada?"
       },
@@ -430,7 +423,15 @@
         "source_website": "play.google.com",
         "source_label": "Google Play (com.iaai.android)",
         "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
-        "review_date": "2024-02-22",
+        "review_date": "2024-05-16",
+        "reason": "google_play_us_store_non_us_marker",
+        "review_text": "USA is better if compare with Canada. For Canada site need more filter like year, fuel type, price ant etc"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.iaai.android)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+        "review_date": "2024-02-23",
         "reason": "google_play_us_store_non_us_marker",
         "review_text": "How to install iaa canada application?"
       },
@@ -446,105 +447,49 @@
         "source_website": "play.google.com",
         "source_label": "Google Play (com.iaai.android)",
         "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+        "review_date": "2023-12-04",
+        "reason": "google_play_us_store_non_us_marker",
+        "review_text": "Doesn't work in Canada. Why is it even available in the Canadian Google Play Store?"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.iaai.android)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
         "review_date": "2023-09-15",
         "reason": "google_play_us_store_non_us_marker",
         "review_text": "This application is not working for me I don't know why I paid already $226 in Canada dollar but still asking me to pay again"
       },
       {
-        "source_website": "trustpilot.com",
-        "source_label": "Trustpilot (iaai.com)",
-        "source_url": "https://www.trustpilot.com/reviews/68f2ada067bc62568782c085",
-        "review_date": "2025-10-17",
-        "reason": "trustpilot_us_slug_non_us_marker",
-        "review_text": "Bought a car from Charlottes Salvage on…. Bought a car from Charlottes Salvage on Synetiq auctions a few years ago. Bidded 3 hours before at £1430 and was the highest bidder at £720 until 10 minutes before the auction started. Then at 10 mi"
-      },
-      {
-        "source_website": "trustpilot.com",
-        "source_label": "Trustpilot (iaai.com)",
-        "source_url": "https://www.trustpilot.com/reviews/68c83be8172e8eb29d664b3b",
-        "review_date": "2025-09-15",
-        "reason": "trustpilot_us_slug_non_us_marker",
-        "review_text": "I bought a car from IAA UK in…. I bought a car from IAA UK in [month/year]. The auction listing and VIN data showed the engine code as CUNA (GTD spec, 184PS), but when I collected the vehicle it was fitted with CRBC (150PS). When I raised t"
-      },
-      {
-        "source_website": "trustpilot.com",
-        "source_label": "Trustpilot (iaai.com)",
-        "source_url": "https://www.trustpilot.com/reviews/63e0e4139b64b1bdaf4e5592",
-        "review_date": "2023-02-06",
-        "reason": "trustpilot_us_slug_non_us_marker",
-        "review_text": "***FRAUD STAY AWAY FROM THEM*** went to…. ***FRAUD STAY AWAY FROM THEM*** went to pick a car which we bought through the online auction, on approach we realized windscreen was cracked and rear seat belt was cut into 2 pieces ( and in pictur"
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/JeepGrandCherokee",
+        "source_url": "https://www.reddit.com/r/JeepGrandCherokee/comments/1jqow42/jeep_garnd_cherokee_2024_4xe_navigation/",
+        "review_date": "2025-04-03",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Jeep garnd cherokee 2024 4xe navigation Hello, I have an inquiry and I hope you can help me with it. I bought a Jeep Grand Cherokee 2024 from the iaai buyer auction and I live in Iraq and I want to download the map of the Middle East, as on"
       },
       {
         "source_website": "reddit.com",
-        "source_label": "Reddit r/Autobody",
-        "source_url": "https://www.reddit.com/r/Autobody/comments/1jor5s0/is_there_frame_damage_what_else_should_i_be_wary/mkwc517/",
-        "review_date": "2025-04-01",
+        "source_label": "Reddit r/autorepair",
+        "source_url": "https://www.reddit.com/r/autorepair/comments/1j6pnic/need_advice_on_a_salvage_car_from_auction_im/",
+        "review_date": "2025-03-08",
         "reason": "mixed_source_non_us_marker",
-        "review_text": "Depends on the price, plus auction fee's, shipping, taxes, VAT. IF you can get this at 20-30% of retail, even with repairing body panels you'll still be ahead of retail. The car runs, but has a check engine light and who knows what the enta"
+        "review_text": "Need advice on a salvage car from auction I’m looking to purchase I’m driving a Tesla, but want an iconic driver’s car to keep for a few years and drive in the weekend. I‘ve driven Mercedes AMG GT C in the past and love the drama of the cra"
       },
       {
         "source_website": "reddit.com",
-        "source_label": "Reddit r/Toyota",
-        "source_url": "https://www.reddit.com/r/Toyota/comments/1j82ita/two_white_toyota_avalons_parked_together/mh1nrku/",
-        "review_date": "2025-03-10",
+        "source_label": "Reddit r/economy",
+        "source_url": "https://www.reddit.com/r/economy/comments/1h13afl/cars_are_about_to_get_even_more_expensive_thanks/lz97nky/",
+        "review_date": "2024-11-27",
         "reason": "mixed_source_non_us_marker",
-        "review_text": "Quite possibly under marketed. I was just looking around at the IAAI auctions in the US vs. Here. It seems the latest Gen was MOSTLY Hybrid in the US, which would've done very well here. I cannot find a single hybrid in Canada, haven't seen"
+        "review_text": "My family had a body shop for a couple of decades. It’s a bunch of factors. Cars are more high tech now. It has been shown that the new technology does save lives and prevents accidents though. That’s why insurance is often lower on cars wi"
       },
       {
         "source_website": "reddit.com",
-        "source_label": "Reddit r/CanadaFinance",
-        "source_url": "https://www.reddit.com/r/CanadaFinance/comments/1iup1rq/will_trump_tariffs_increase_cost_of_used_vehicles/mdztz7d/",
-        "review_date": "2025-02-21",
+        "source_label": "Reddit r/whatcarshouldIbuy",
+        "source_url": "https://www.reddit.com/r/whatcarshouldIbuy/comments/1k7byyw/what_does_this_declaration_means_in_iaa_auction/",
+        "review_date": "2025-04-25",
         "reason": "mixed_source_non_us_marker",
-        "review_text": "Cost of used cars is expected to increase anyhow. 1) the new safety regulations in Ontario force consumers to buy good cars - no more rust buckets on the road (decreasing supply) 2) weak Canadian dollar makes Canadian cars to be export targ"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/NFSHeat",
-        "source_url": "https://www.reddit.com/r/NFSHeat/comments/1iph8ut/my_first_purchased_car_in_game/mdeqr1b/",
-        "review_date": "2025-02-18",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Try Copart &amp; IAAI, sometimes you can get a nice one very cheap. If you're from central Europe, BidCars does the whole import &amp; bidding for you. If you're in USA, even better, won't have to pay for shipping, tax and VAT."
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/Copartonline",
-        "source_url": "https://www.reddit.com/r/Copartonline/comments/w5agn3/iaai_canada_auction_broker/m42w4iv/",
-        "review_date": "2024-12-27",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "anyone found any broker for IAAI Canada?"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/auckland",
-        "source_url": "https://www.reddit.com/r/auckland/comments/1h3wljo/temu_charger_sparks_house_fire_in_greenhithe_on/lzx3xba/",
-        "review_date": "2024-12-01",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "It's not anecdotal. It's a common issue experienced by product regulation and testers around the world. There have been considerable reports among fire services and regulatory bodies, and a reported problem with 3rd party sales specifically"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/Porsche",
-        "source_url": "https://www.reddit.com/r/Porsche/comments/1f94ylg/said_bye_to_my_dream_car_today_it_was_a_great_3/llkogcf/",
-        "review_date": "2024-09-05",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Sorry for your loss, damn... I run a high end (porsche/mclaren/lambo/ferrari/etc) auto salvage dismantler yard up in Canada. We just parted out a similar gt4 (non rs) and I'd love to know what auction this is going to? Could easily 1+1 them"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/Oman",
-        "source_url": "https://www.reddit.com/r/Oman/comments/1c5xvby/used_car_market_potential_in_oman/l4zjcio/",
-        "review_date": "2024-05-21",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Since 2018, Im on this field that importing salvaged vehicles from USA 90% and Canada 10%, That time it wasn’t popular business and also peoples only preferred to buy the car in ready condition, no many dealers are in the market those who d"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/askcarsales",
-        "source_url": "https://www.reddit.com/r/askcarsales/comments/18x4ck5/best_way_to_acquire_inventory/kg1v8g4/",
-        "review_date": "2024-01-02",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "***Thanks for posting, /u/AmirisInaUrus! This comment is a copy of your post so readers can see the original text if your post is edited or removed. This comment is NOT accusing you of anything.*** Hi! I have a small lot with dealers licens"
+        "review_text": "what does this declaration means in iaa auction canada"
       },
       {
         "source_website": "reddit.com",
@@ -556,20 +501,68 @@
       },
       {
         "source_website": "reddit.com",
-        "source_label": "Reddit r/UnethicalLifeProTips",
-        "source_url": "https://www.reddit.com/r/UnethicalLifeProTips/comments/16pi4kn/ulpt_request_how_do_i_start_a_fire_without/k20295g/",
-        "review_date": "2023-09-24",
+        "source_label": "Reddit r/JeepGrandCherokee",
+        "source_url": "https://www.reddit.com/r/JeepGrandCherokee/comments/1jqow42/jeep_garnd_cherokee_2024_4xe_navigation/",
+        "review_date": "2025-04-03",
         "reason": "mixed_source_non_us_marker",
-        "review_text": "unsure if they exist in the UK, but in the US, we also have the IAAI (international association of arson investigators) who also conduct training burns. if you struck out with the fire department, it might be worth a shot reaching out to si"
+        "review_text": "Jeep garnd cherokee 2024 4xe navigation Hello, I have an inquiry and I hope you can help me with it. I bought a Jeep Grand Cherokee 2024 from the iaai buyer auction and I live in Iraq and I want to download the map of the Middle East, as on"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/carflipping",
+        "source_url": "https://www.reddit.com/r/carflipping/comments/1h6fl18/do_you_need_a_license_for_iaai_and_copart_in/",
+        "review_date": "2024-12-04",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Do You Need a License for IAAI and Copart in Canada? Hey everyone, Quick question for those of you flipping cars in Ontario, Canada: Can you buy cars from auctions like IAAI and Copart without a dealer license, or do you need one? How does "
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/carflipping",
+        "source_url": "https://www.reddit.com/r/carflipping/comments/12hrkw6/how_to_buy_a_car_from_iaai_canada_closed_auctions/",
+        "review_date": "2023-04-10",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "How to buy a car from IAAI Canada / Closed Auctions Hello, I'm not sure if this is the correct subreddit, so please excuse me if it's not the right place. I want to be able to buy a car (maybe even cars) from IAAI Canada - all auctions, fro"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/CanadaFinance",
+        "source_url": "https://www.reddit.com/r/CanadaFinance/comments/1iup1rq/will_trump_tariffs_increase_cost_of_used_vehicles/mdztz7d/",
+        "review_date": "2025-02-21",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Cost of used cars is expected to increase anyhow. 1) the new safety regulations in Ontario force consumers to buy good cars - no more rust buckets on the road (decreasing supply) 2) weak Canadian dollar makes Canadian cars to be export targ"
+      },
+      {
+        "source_website": "complaintsboard.com",
+        "source_label": "ComplaintsBoard",
+        "source_url": "https://www.complaintsboard.com/iaa-b133628#c1924562",
+        "review_date": "2023-12-08",
+        "reason": "complaintsboard_us_profile_non_us_marker",
+        "review_text": "Reporter location: IE (Ireland). Unable to take a Ryanair flight due to illness. Flight Reservation No -HL8RJQ Ryanair Ref [protected]/HL8RJQ On the 18th of Nov my wife and I were booked to travel with Ryanair to Malaga. However my wife had"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (468532534, ca)",
+        "source_url": "https://itunes.apple.com/ca/review?id=468532534&type=Purple%20Software&reviewId=13622266759",
+        "review_date": "2026-01-11",
+        "reason": "apple_non_us_store",
+        "review_text": "Ridiculous. This is the most ridiculous app I have ever come across. The most user friendly information is hidden and the most irrelevant information to the end user is displayed up front."
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (468532534, ca)",
+        "source_url": "https://itunes.apple.com/ca/review?id=468532534&type=Purple%20Software&reviewId=13480711033",
+        "review_date": "2025-12-05",
+        "reason": "apple_non_us_store",
+        "review_text": "Doesn’t work in Canada. Its useless and the app doesn’t work in Canada"
       }
     ],
     "active_collectors": [
       "google_play",
       "trustpilot",
       "reddit_pullpush",
+      "reddit_public_json",
       "bbb_customer_reviews",
       "bbb_complaints",
-      "pissedconsumer",
       "ripoffreport",
       "smartcustomer",
       "complaintsboard",
@@ -577,6 +570,36 @@
     ]
   },
   "reviews": [
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaa.mobile.IaaTow)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
+      "author": "Jason Woolsey",
+      "review_date": "2026-04-21",
+      "rating": 4,
+      "sentiment": "positive",
+      "review_text": "app update where, app saying it needs a update, then up date it Google doesn't show a up date or take the update down",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001574"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaa.mobile.IaaTow)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
+      "author": "Brian",
+      "review_date": "2026-04-16",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "I can't get past the registration on this app. I've registered, logged in, and it just asks me to register again. This is the most up to date version of the app available. I've tried deleting and reinstalling the app multiple times.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001575"
+    },
     {
       "id": "rvw-000001",
       "source_website": "trustpilot.com",
@@ -606,6 +629,21 @@
       "tier1": "Customer Service & Communication",
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Queen Valariejt",
+      "review_date": "2026-03-28",
+      "rating": 4,
+      "sentiment": "positive",
+      "review_text": "very detailed information on auctions and vehicles",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Delivery Coordination & Handoffs",
+      "tier3": "Delivery Status and ETA",
+      "id": "rvw-001576"
     },
     {
       "id": "rvw-000003",
@@ -951,6 +989,21 @@
       "tier1": "Membership / Licensing / Fees & Bidding Policies",
       "tier2": "Bidding Process, Rules and Fees",
       "tier3": "Fees"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Midnight Auto",
+      "review_date": "2026-02-07",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "they have progressively told their employees to take the worst photos ever so you can't tell how bad the damage is, so you will over bid on a vehicle so they can make more money. Copart is way better.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage",
+      "id": "rvw-001577"
     },
     {
       "id": "rvw-000026",
@@ -1583,6 +1636,21 @@
       "tier3": "Tow and Storage Fees"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Bufane Tech",
+      "review_date": "2025-10-07",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Fix the bugs that keep the app crashing.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001578"
+    },
+    {
       "id": "rvw-000068",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
@@ -1733,6 +1801,21 @@
       "tier3": "Fees"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=es&gl=us",
+      "author": "Danilo Cruz",
+      "review_date": "2025-09-09",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "When sharing links from the app, they can't be opened again; they are redirected to the page and then to Google Play. Images downloaded from the app aren't saved. The app takes a while to open the auction and searches.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001579"
+    },
+    {
       "id": "rvw-000078",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
@@ -1806,6 +1889,36 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaa.mobile.IaaTow)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
+      "author": "Vera Z.",
+      "review_date": "2025-09-03",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "with the last update can not open and see car picture. Android.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001580"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaa.mobile.IaaTow)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
+      "author": "Skot Services LLC",
+      "review_date": "2025-09-03",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "trash as soon as you login kicks you out.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001581"
     },
     {
       "id": "rvw-000083",
@@ -1928,6 +2041,21 @@
       "tier3": "Rude/Unhelpful Support"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Jl D",
+      "review_date": "2025-08-20",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "3.9* ? too much........this app builder need to bring back that money It's been 5 years I'm using that app with one problem that never stop, is that that the app keeps stopping in the middle of your search. You searching 50 cars, it's stopped 20 times before you done your search. Each time you need to start all over again. You guys could do better.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001582"
+    },
+    {
       "id": "rvw-000091",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (iaai.com)",
@@ -2018,6 +2146,21 @@
       "tier3": "Title Not Received"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Bee Ada",
+      "review_date": "2025-08-04",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "app.is terrible and actually now is not working",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001583"
+    },
+    {
       "id": "rvw-000097",
       "source_website": "apps.apple.com",
       "source_label": "Apple App Store (992957183, us)",
@@ -2046,6 +2189,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Alexsandr Semenko",
+      "review_date": "2025-08-03",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "you have to fix problems with images loading!",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001584"
     },
     {
       "id": "rvw-000099",
@@ -2078,6 +2236,21 @@
       "tier3": "App Login Troubleshooting"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Alex Semenko",
+      "review_date": "2025-08-02",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "new update killed stability. doesn't show image or show incorrect photos!",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001585"
+    },
+    {
       "id": "rvw-000101",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
@@ -2091,6 +2264,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Leonardo Del Cid",
+      "review_date": "2025-08-01",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "the app is not working properly!! when you select the car the app show you another car... I can't buy online if I can't see the cars obviously... 😐",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001586"
     },
     {
       "id": "rvw-000102",
@@ -2153,6 +2341,21 @@
       "tier3": "App Login Troubleshooting"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Yo mayo",
+      "review_date": "2025-07-30",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "was good until it updated, then it started to having all kinds of weird glitches. why freaking update if it don't solve problems",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001587"
+    },
+    {
       "id": "rvw-000106",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
@@ -2166,6 +2369,21 @@
       "tier1": "Membership / Licensing / Fees & Bidding Policies",
       "tier2": "Bidding Process, Rules and Fees",
       "tier3": "Fees"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Shawn Jensen rchelpmore",
+      "review_date": "2025-07-29",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Great App easy to use",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001588"
     },
     {
       "id": "rvw-000107",
@@ -2228,6 +2446,21 @@
       "tier3": "App Login Troubleshooting"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=ru&gl=us",
+      "author": "Truck Service",
+      "review_date": "2025-07-26",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "It's just awful to work, everything freezes and slows down.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001589"
+    },
+    {
       "id": "rvw-000111",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaa.mobile.IaaTow)",
@@ -2286,6 +2519,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Nick Koval",
+      "review_date": "2025-07-18",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "glitchy logs me out all the time saved cars disappear terrible app.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001590"
     },
     {
       "id": "rvw-000115",
@@ -2813,6 +3061,21 @@
       "tier3": "App Login Troubleshooting"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaa.mobile.IaaTow)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
+      "author": "Chavo_dela_sierra",
+      "review_date": "2025-05-23",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "app suckssssssss crashes every time",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001591"
+    },
+    {
       "id": "rvw-000150",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
@@ -2856,6 +3119,21 @@
       "tier1": "Customer Service & Communication",
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaa.mobile.IaaTow)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
+      "author": "Jovani Quintana",
+      "review_date": "2025-05-15",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "worst app ever on android it kicks you out!!",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001592"
     },
     {
       "id": "rvw-000153",
@@ -3533,6 +3811,36 @@
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "sayed sadat",
+      "review_date": "2025-04-11",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "i have to wait for 3 to 5 minutes to open the app 👎👎",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001593"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Ulises Pelaez",
+      "review_date": "2025-04-11",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "keeps freezing.. have uninstall and download again works for few days and freeze again.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001594"
+    },
+    {
       "id": "rvw-000198",
       "source_website": "reddit.com",
       "source_label": "Reddit r/whatcarshouldIbuy",
@@ -3576,6 +3884,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Jose constanza",
+      "review_date": "2025-04-10",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "app doesnt open 80% of the time",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001595"
     },
     {
       "id": "rvw-000201",
@@ -3743,6 +4066,21 @@
       "tier3": "App Login Troubleshooting"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Tayy Dayy",
+      "review_date": "2025-04-08",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "lags glitches after a while of use have to redownload multiple times...just use url",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001596"
+    },
+    {
       "id": "rvw-000212",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Insurance",
@@ -3908,6 +4246,21 @@
       "tier3": "Fees"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Timoxa Yevstratenko",
+      "review_date": "2025-04-06",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "terrible app. was ok, but then, with an update, they made it really bad. it just open the browser and the website instead of having their own app, but freezes all the time. better off just going through the website and separate browser. For the amount of money they charge fees off every sale, they definitely can afford to spend some funds and make the app good.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-001597"
+    },
+    {
       "id": "rvw-000223",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
@@ -3983,6 +4336,21 @@
       "tier3": "How to Bid (First Time)"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Kevin Wiederholt",
+      "review_date": "2025-04-02",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "iaa is great but their app is terrible. with the millions if not billions IAA is bringing in the should improve the app. recently it stopped opening unless I clear cache and data.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001598"
+    },
+    {
       "id": "rvw-000228",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
@@ -4041,6 +4409,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=ru&gl=us",
+      "author": "Артём Меленец",
+      "review_date": "2025-03-31",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "does not open the app !!! filters are broken !!!! horrible",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001599"
     },
     {
       "id": "rvw-000232",
@@ -4116,6 +4499,21 @@
       "tier1": "Membership / Licensing / Fees & Bidding Policies",
       "tier2": "Bidding Process, Rules and Fees",
       "tier3": "How to Bid (First Time)"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Andrew Russell",
+      "review_date": "2025-03-27",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "TERRIBLE! With as much as this company charges buyers you would think this app would be amazing. but absolutely junk. Copart is hands down a better experience Worst login ever, sometimes it works sometimes it doesn't. I Uninstalled it and reinstalled it still get the same issues long waiting through every step and that's if it decides to work today.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001600"
     },
     {
       "id": "rvw-000237",
@@ -4373,6 +4771,36 @@
       "tier3": "Delivery Status and ETA"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Kevin Mitchell",
+      "review_date": "2025-03-21",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Lately, it takes 4 to 6 minutes to open the app. What happened?",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001601"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Eduardo Martinez",
+      "review_date": "2025-03-21",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "been trying to open the app and takes hrs to open .",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001602"
+    },
+    {
       "id": "rvw-000254",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
@@ -4446,6 +4874,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Ole Llamas",
+      "review_date": "2025-03-18",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "can not open app since I have updated",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001603"
     },
     {
       "id": "rvw-000259",
@@ -4641,6 +5084,21 @@
       "tier1": "Lot Condition, Listing Status and related",
       "tier2": "Third-Party Inspection Authorization & Scheduling",
       "tier3": "Previewing/ Inspecting Vehicles"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "arin gaydos",
+      "review_date": "2025-03-15",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Won't load passed the first screen after updating",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001604"
     },
     {
       "id": "rvw-000272",
@@ -4926,6 +5384,21 @@
       "tier1": "Customer Service & Communication",
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "hdr hsm",
+      "review_date": "2025-03-04",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "-5 ☆ They scammed me with $200 subscription fees, didn't activate, and refuse to refund... all required documents submitted",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-001605"
     },
     {
       "id": "rvw-000291",
@@ -5241,6 +5714,36 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaa.mobile.IaaTow)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
+      "author": "Jasmin Copeland",
+      "review_date": "2025-02-21",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Not working with android. Asking to update but isn't giving an option to update. Even after reinstall.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001606"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaa.mobile.IaaTow)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
+      "author": "David Watts",
+      "review_date": "2025-02-21",
+      "rating": 4,
+      "sentiment": "positive",
+      "review_text": "Whoever updated the maps section needs to be fired.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001607"
     },
     {
       "id": "rvw-000312",
@@ -6201,6 +6704,21 @@
       "tier1": "Lot Condition, Listing Status and related",
       "tier2": "Lot Condition Reporting",
       "tier3": "Lot Damage"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "A A",
+      "review_date": "2025-01-24",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "****ATTENTION **** There's a problem with sales documents instructions pickup or fedex, in the phone I used android and iPhone it didn't work , please fix the issue , I won't let to change the instructions , before was working rn its not working . Thanks",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Document Upload & Verification",
+      "tier3": "Upload Troubleshooting",
+      "id": "rvw-001608"
     },
     {
       "id": "rvw-000376",
@@ -7598,6 +8116,21 @@
       "tier3": "Fees"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "B Zerk",
+      "review_date": "2024-12-07",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Quick loading, and easy to navigate",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001609"
+    },
+    {
       "id": "rvw-000469",
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
@@ -7611,6 +8144,21 @@
       "tier1": "Membership / Licensing / Fees & Bidding Policies",
       "tier2": "Bidding Process, Rules and Fees",
       "tier3": "How to Bid (First Time)"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Paul Hyde",
+      "review_date": "2024-12-06",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Need to make easy to buy or pickup ur vehicles because lots of customers like us have to pay people to buy pay to deliver n pay 600 n up on taxes n fees n we don't get back anything. Hope u all would consider about the lower class",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-001610"
     },
     {
       "id": "rvw-000470",
@@ -7986,6 +8534,21 @@
       "tier1": "Lot Condition, Listing Status and related",
       "tier2": "Lot Condition Reporting",
       "tier3": "Lot Damage"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaa.mobile.IaaTow)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
+      "author": "Ken Boyer",
+      "review_date": "2024-11-21",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "App needs a few fixes first is an option 2 set the default flash setting for pictures second Signature field on pickups is way too small need option to full screen it until phone is turned vertical last the login length is infuriating short please make option for biometric login or leave me logged in",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001611"
     },
     {
       "id": "rvw-000495",
@@ -9488,6 +10051,21 @@
       "tier3": "How to Bid (First Time)"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Umar Aminu",
+      "review_date": "2024-09-26",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "The new update is cool now thanks",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001612"
+    },
+    {
       "id": "rvw-000595",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
@@ -9786,6 +10364,21 @@
       "tier1": "Customer Service & Communication",
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Helpful Support Experience"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Quetzalcohatl Alvarado Silva",
+      "review_date": "2024-09-13",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Very user friendly, but hasn't been loading the car list correctly. Tried uninstalling and installing.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001613"
     },
     {
       "id": "rvw-000615",
@@ -10583,6 +11176,21 @@
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1exa2oe/iaai_seller_countered_offer_my_bid_do_i_have_to/",
+      "author": "Super_Dinner6497",
+      "review_date": "2024-08-20",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Iaai seller countered offer my bid! Do I have to respond? What happens if I ignore ? Will there be any fees or negative consequences? I don’t want the vehicle anymore! Iaai seller countered offer my bid! Do I have to respond? What happens if I ignore their offer ? Will there be any fees? I don’t want the vehicle anymore and I only see three options : 1. Keep my bid 2. Buy it 3. Raise my bid Thanks a lot.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Communication Follow-up & Escalation",
+      "tier3": "No Callback / Unresolved Case",
+      "id": "rvw-001614"
+    },
+    {
       "id": "rvw-000668",
       "source_website": "reddit.com",
       "source_label": "Reddit r/BMW",
@@ -10941,6 +11549,21 @@
       "tier1": "Lot Condition, Listing Status and related",
       "tier2": "Lot Condition Reporting",
       "tier3": "Lot Damage"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Denis Andrusewech",
+      "review_date": "2024-07-29",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Glitches out with a white screen, multiple times a day. Takes a few minutes to load something, need a update asap. Wifi is good",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001615"
     },
     {
       "id": "rvw-000692",
@@ -12653,6 +13276,21 @@
       "tier3": "Lot Damage"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "jacov ferro",
+      "review_date": "2024-05-16",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Cero or -0 stars I'm still waiting for 3 months the email for reset my credentials in one word is trash",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Case Resolution Quality",
+      "tier3": "Issue Not Resolved",
+      "id": "rvw-001616"
+    },
+    {
       "id": "rvw-000806",
       "source_website": "pissedconsumer.com",
       "source_label": "PissedConsumer",
@@ -13943,6 +14581,21 @@
       "tier3": "Lot Damage"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Тодор Тодоров",
+      "review_date": "2024-03-24",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "after update, model selection is not available after the make is selected!",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001617"
+    },
+    {
       "id": "rvw-000892",
       "source_website": "reddit.com",
       "source_label": "Reddit r/electricvehicles",
@@ -14423,6 +15076,21 @@
       "tier3": "Lot Damage"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Kevin Barker",
+      "review_date": "2024-03-06",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Dope AF website and staff for sure! All around great place of good business!",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-001618"
+    },
+    {
       "id": "rvw-000924",
       "source_website": "reddit.com",
       "source_label": "Reddit r/TeslaLounge",
@@ -14736,6 +15404,21 @@
       "tier1": "Membership / Licensing / Fees & Bidding Policies",
       "tier2": "Bidding Process, Rules and Fees",
       "tier3": "Fees"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "j lin jr",
+      "review_date": "2024-02-21",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Fantastic app and internet bidding.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001619"
     },
     {
       "id": "rvw-000945",
@@ -15188,6 +15871,21 @@
       "tier3": "Fees"
     },
     {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://apps.apple.com/us/app/id468532534?see-all=reviews&platform=iphone&reviewId=10910526693",
+      "author": "Eduardo InuIs",
+      "review_date": "2024-02-07",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "Too many fees. The app itself works good, could be better on how you save the searches for vehicles, however they want to charge for everything, they charge a buyer fee, pullout fee, internet fee, environment fee, I think is outrageous to add that many fees after the buyer fee, pull out fee is understandable until a certain point but $95 is outrageous, internet fee is just a total abuse, I’m paying for my own internet or are you? Makes no sense, and the invironment fee at this point is just charging for the fun of it might as well add a high wind fee, cloudy fee and maybe even some insurance for employees fee, I mean c’mon all of this is nonsense and all of this is per car and on top of that a yearly payment on subscription. Wouldn’t surprise me if the community gets together and starts boycotting, there’s many good deals in other places as well",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-001620"
+    },
+    {
       "id": "rvw-000975",
       "source_website": "reddit.com",
       "source_label": "Reddit r/Autobody",
@@ -15458,6 +16156,21 @@
       "tier3": "Proactive Follow-up"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Terrence Brathwaite",
+      "review_date": "2024-01-31",
+      "rating": 4,
+      "sentiment": "positive",
+      "review_text": "Can you allow us to take screenshots in app again please ?",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001621"
+    },
+    {
       "id": "rvw-000993",
       "source_website": "apps.apple.com",
       "source_label": "Apple App Store (468532534, us)",
@@ -15578,6 +16291,21 @@
       "tier3": "App Login Troubleshooting"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "dabir abdullah",
+      "review_date": "2024-01-30",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "To day I bought three cars the people work at the front desk one of them is very rude she almost blamed me that I told her beech but I didn’t this was my first time there I didn’t know why she was looking for problems I told her this is my first and last to do business with this company so I am taking about the location in Houston north whe you inter at this place she was sitting at the second char from the door unfortunately I don’t know her name this is for those who do business with this comp",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-001622"
+    },
+    {
       "id": "rvw-001001",
       "source_website": "reddit.com",
       "source_label": "Reddit r/fiat500",
@@ -15606,6 +16334,21 @@
       "tier1": "Customer Service & Communication",
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Narinderr Gillan",
+      "review_date": "2024-01-28",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "This app is not for India.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001623"
     },
     {
       "id": "rvw-001003",
@@ -16071,6 +16814,21 @@
       "tier1": "Lot Condition, Listing Status and related",
       "tier2": "Lot Condition Reporting",
       "tier3": "Lot Damage"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Kingsley Fordjour",
+      "review_date": "2024-01-14",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "This app is the best",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001624"
     },
     {
       "id": "rvw-001034",
@@ -16986,6 +17744,21 @@
       "tier1": "Vehicle Pickup, Delivery and Scheduling",
       "tier2": "Scheduled Pickup Status",
       "tier3": "Schedule/ Reschedule Pickup"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Tim! Nz!",
+      "review_date": "2023-12-13",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "just updated it ..and its started work much worse. Kicks out every 5 minutes",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001625"
     },
     {
       "id": "rvw-001095",
@@ -19043,6 +19816,21 @@
       "tier3": "Delivery Status and ETA"
     },
     {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (992957183, us)",
+      "source_url": "https://apps.apple.com/us/app/id992957183?see-all=reviews&platform=iphone&reviewId=10370732432",
+      "author": "purplepeter18",
+      "review_date": "2023-09-15",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Every update it gets worse. Every update they do is like the tower is doing more and more of IAA job of checking cars in, asks dumb questions, now we have to take pictures and do inventory, why not just pictures only, and if I take the picture and hit approve, why does it basically ask me if I’m sure of the picture I took, way to time consuming and as a result makes the towers work slower and not be able to get as many cars done in a day. Worse now then ever after more updates more work for us to do, making us retake pictures cause there is a blur is outrageous we are outside with sun rain snow reflecting off the car",
+      "geo_validation": "apple_us_store",
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Delivery Coordination & Handoffs",
+      "tier3": "Delivery Status and ETA",
+      "id": "rvw-001626"
+    },
+    {
       "id": "rvw-001232",
       "source_website": "reddit.com",
       "source_label": "Reddit r/lebanon",
@@ -19056,6 +19844,21 @@
       "tier1": "Lot Condition, Listing Status and related",
       "tier2": "Lot Condition Reporting",
       "tier3": "Lot Damage"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Mustafa Alhusseiny",
+      "review_date": "2023-09-14",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Lags and glitches all the time. Ends up kicking you out after 5 minutes.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001627"
     },
     {
       "id": "rvw-001233",
@@ -19206,6 +20009,21 @@
       "tier1": "Vehicle Pickup, Delivery and Scheduling",
       "tier2": "Delivery Coordination & Handoffs",
       "tier3": "Delivery Status and ETA"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (992957183, us)",
+      "source_url": "https://apps.apple.com/us/app/id992957183?see-all=reviews&platform=iphone&reviewId=10344358318",
+      "author": "Slyfusion",
+      "review_date": "2023-09-07",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "Please stop with the micromanaging!. Please stop with the micromanaging of camera functionality, you’re making the drivers job that much more difficult. The camera blur parameters are ridiculous, everyone’s phone is different, drivers treat their phones different, of course there is blur when the sun is beating down reflecting off the vehicle, I shouldn’t have to retake all my photos because someone felt it necessary to implement such a feature",
+      "geo_validation": "apple_us_store",
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Delivery Coordination & Handoffs",
+      "tier3": "Delivery Status and ETA",
+      "id": "rvw-001628"
     },
     {
       "id": "rvw-001243",
@@ -20048,6 +20866,21 @@
       "tier3": "Upload Troubleshooting"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Kirk S",
+      "review_date": "2023-08-05",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "IAA is slowly getting better however copart is still by far a much better option as a public buyer. IAA really needs to follow a similar deposit system as copart. $200 non refundable deposit just to be able to bid occasionally as a public buyer is way too much and unnecessary. If it was at least refundable after not being able to win anything for the year is just a waste of money.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Payment Refunds, Transaction Issues and Deposits",
+      "tier2": "Refunds & Membership Billing",
+      "tier3": "Deposit Refund Status",
+      "id": "rvw-001629"
+    },
+    {
       "id": "rvw-001299",
       "source_website": "apps.apple.com",
       "source_label": "Apple App Store (468532534, us)",
@@ -20316,6 +21149,21 @@
       "tier1": "Vehicle Pickup, Delivery and Scheduling",
       "tier2": "Delivery Coordination & Handoffs",
       "tier3": "Delivery Status and ETA"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaa.mobile.IaaTow)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
+      "author": "Chad",
+      "review_date": "2023-07-28",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "App sucks. Won't let me do anything. Can't schedule a pickup for tomorrow. Like app is frozen.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001630"
     },
     {
       "id": "rvw-001317",
@@ -20993,6 +21841,21 @@
       "tier3": "Rude/Unhelpful Support"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Manuel Borbon",
+      "review_date": "2023-06-24",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Horrible experience, I bought 2 cars here, they have fees for everything they can think of, I end up paying almost double my final bid, the forklift driver mess up the bottom side of the engine of one of the cars, and the other car had missing parts that were there before, they take no responsibility for anything, when I called they were rude and inconsiderate of my frustration, I wouldn't recommend anyone to buy here.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-001631"
+    },
+    {
       "id": "rvw-001362",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
@@ -21066,6 +21929,21 @@
       "tier1": "Membership / Licensing / Fees & Bidding Policies",
       "tier2": "Bidding Process, Rules and Fees",
       "tier3": "Fees"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Mohammed Shammaa",
+      "review_date": "2023-06-21",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Do not use this app if you are not sign in, it will freeze your phone.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001632"
     },
     {
       "id": "rvw-001367",
@@ -21171,6 +22049,21 @@
       "tier1": "Title, Ownership, POA and Documentation",
       "tier2": "Title Delivery & Status",
       "tier3": "Title Not Received"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Kornel",
+      "review_date": "2023-06-14",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Veeeeryy slow customer service",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-001633"
     },
     {
       "id": "rvw-001374",
@@ -21578,6 +22471,21 @@
       "tier3": "Delivery Status and ETA"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "B Goldman",
+      "review_date": "2023-05-22",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "Your search really sucks. Search settings get reset so easy. This app is a waist of time. Period!",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001634"
+    },
+    {
       "id": "rvw-001401",
       "source_website": "reddit.com",
       "source_label": "Reddit r/s10",
@@ -21833,6 +22741,21 @@
       "tier3": "POA Requirements Clarification"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Max. Alik",
+      "review_date": "2023-05-12",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Baaaaaaaaaaaad company and app they are really really really unfair...",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001635"
+    },
+    {
       "id": "rvw-001418",
       "source_website": "apps.apple.com",
       "source_label": "Apple App Store (468532534, us)",
@@ -22041,6 +22964,21 @@
       "tier1": "Lot Condition, Listing Status and related",
       "tier2": "Lot Condition Reporting",
       "tier3": "Lot Damage"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Khizar Zaman",
+      "review_date": "2023-05-05",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Nice App with easy access to listings.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001636"
     },
     {
       "id": "rvw-001432",
@@ -22883,6 +23821,21 @@
       "tier3": "POA Requirements Clarification"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Josh Walker",
+      "review_date": "2023-03-20",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Love this app Love the filters and love the process",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001637"
+    },
+    {
       "id": "rvw-001488",
       "source_website": "reddit.com",
       "source_label": "Reddit r/350z",
@@ -23046,6 +23999,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://apps.apple.com/us/app/id468532534?see-all=reviews&platform=iphone&reviewId=9666934668",
+      "author": "CJplaysCOD",
+      "review_date": "2023-03-01",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Could be better. There’s flaws here and there that make the app seem a little outdated, I personally prefer to search on my computer however it is VERY convenient to be able to watch and bid on the go especially when I have a car I need to bid on while i’m at work! I enjoy the buying process and delivery options as well over Coparts as the prices and fees are a little cheaper here on IAA. Roll out a couple updates to fix the bugs and add an option to stay LOGGED IN! PLEASE!",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-001638"
     },
     {
       "id": "rvw-001499",
@@ -23258,6 +24226,21 @@
       "tier3": "App Login Troubleshooting"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Workings Mans",
+      "review_date": "2023-02-21",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "App keeps crashing when getting ready to bid!",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001639"
+    },
+    {
       "id": "rvw-001513",
       "source_website": "apps.apple.com",
       "source_label": "Apple App Store (468532534, us)",
@@ -23331,6 +24314,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Pavel Strakhov",
+      "review_date": "2023-02-20",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "many bugs and glitches. I don't recommend it. I have to use a laptop.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001640"
     },
     {
       "id": "rvw-001518",
@@ -23466,6 +24464,21 @@
       "tier1": "Lot Condition, Listing Status and related",
       "tier2": "Third-Party Inspection Authorization & Scheduling",
       "tier3": "Previewing/ Inspecting Vehicles"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Seth Corley",
+      "review_date": "2023-02-10",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Lots of fee's over $500.00 charged minimum when you win a bid plus $200 to sign up.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-001641"
     },
     {
       "id": "rvw-001527",
@@ -23691,6 +24704,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "josh carter",
+      "review_date": "2023-02-06",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "Cannot open the app since the update",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001642"
     },
     {
       "id": "rvw-001542",
@@ -23991,6 +25019,21 @@
       "tier1": "Lot Condition, Listing Status and related",
       "tier2": "Lot Condition Reporting",
       "tier3": "Lot Damage"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "GAS NOS",
+      "review_date": "2023-01-13",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Quit working completely with the new update",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-001643"
     },
     {
       "id": "rvw-001562",
