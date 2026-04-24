@@ -12,7 +12,6 @@ on:
       - 404.html
       - assets/**
       - data/**
-      - .github/workflows/deploy-site.yml
 
 permissions:
   contents: read
@@ -33,6 +32,14 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Audit dataset windows
+        run: python scripts/audit_review_datasets.py
 
       - name: Prepare Pages artifact
         run: |

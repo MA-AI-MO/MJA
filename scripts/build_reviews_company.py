@@ -238,7 +238,10 @@ class Collector:
         self.geo_validation_counts = Counter()
         self.geo_excluded_counts = Counter()
         self.geo_excluded_examples = []
+        self.existing_latest_by_source = {}
+        self.existing_review_count = 0
         self._build_path_constants()
+        self._load_existing_rows()
 
     def _load_allowed_paths(self):
         payload = json.loads(HIERARCHY_PATH.read_text(encoding="utf-8"))
@@ -246,6 +249,82 @@ class Collector:
             (row["tier1"], row["tier2"], row["tier3"])
             for row in payload["allowed_paths"]
         }
+
+    def _load_existing_rows(self):
+        if not OUTPUT_JSON.exists():
+            return
+        try:
+            payload = json.loads(OUTPUT_JSON.read_text(encoding="utf-8"))
+        except Exception:
+            return
+
+        existing_rows = []
+        for row in payload.get("reviews", []):
+            if not isinstance(row, dict):
+                continue
+            clean_row = dict(row)
+            existing_rows.append(clean_row)
+            self._remember_existing_key(clean_row)
+
+            source_website = str(clean_row.get("source_website") or "").strip()
+            review_date = self.normalize_date(clean_row.get("review_date"))
+            if source_website and review_date > self.existing_latest_by_source.get(source_website, ""):
+                self.existing_latest_by_source[source_website] = review_date
+
+        self.records.extend(existing_rows)
+        self.existing_review_count = len(existing_rows)
+
+    def _remember_existing_key(self, row: dict):
+        source_website = str(row.get("source_website") or "").strip()
+        author = row.get("author") or "Anonymous"
+        review_date = row.get("review_date") or "1970-01-01"
+        review_text = row.get("review_text") or ""
+        source_url = row.get("source_url") or ""
+        fingerprints = self._content_fingerprints(
+            source_website=source_website,
+            source_url=source_url,
+            author=author,
+            review_date=review_date,
+            review_text=review_text,
+        )
+        for fingerprint in fingerprints:
+            self._seen.add(fingerprint)
+
+    def _content_fingerprints(self, *, source_website: str, source_url: str, author: str, review_date: str, review_text: str):
+        normalized_source = str(source_website or "").strip().lower()
+        normalized_url = str(source_url or "").strip()
+        normalized_author = self.normalize_text(author).lower()
+        normalized_date = self.normalize_date(review_date)
+        normalized_text = self.normalize_text(review_text).lower()
+        if not normalized_source or not normalized_text:
+            return []
+
+        primary = hashlib.sha1(
+            json.dumps(
+                [normalized_source, normalized_url, normalized_author, normalized_date, normalized_text],
+                ensure_ascii=False,
+            ).encode("utf-8")
+        ).hexdigest()
+        fallback = hashlib.sha1(
+            json.dumps(
+                [normalized_source, normalized_author, normalized_date, normalized_text],
+                ensure_ascii=False,
+            ).encode("utf-8")
+        ).hexdigest()
+        return [primary, fallback]
+
+    def source_floor_date(self, source_website: str, overlap_days: int = 21):
+        latest = self.existing_latest_by_source.get(source_website)
+        if not latest:
+            return self.since_date_obj
+        try:
+            latest_date = datetime.strptime(latest, "%Y-%m-%d").date()
+        except Exception:
+            return self.since_date_obj
+        floor = latest_date - timedelta(days=max(0, int(overlap_days)))
+        if floor < self.since_date_obj:
+            return self.since_date_obj
+        return floor
 
     def _assert_path(self, path):
         if path not in self.allowed_paths:
@@ -743,13 +822,21 @@ class Collector:
                 })
             return False
 
-        key_id = (source_website, str(external_id or ""))
-        if key_id[1] and key_id in self._seen:
-            return False
-        if not key_id[1]:
-            key_id = (source_website, f"{author}|{normalized_date}|{txt[:120]}")
+        key_id = None
+        if external_id:
+            key_id = f"ext:{source_website}:{external_id}"
             if key_id in self._seen:
                 return False
+
+        content_fingerprints = self._content_fingerprints(
+            source_website=source_website,
+            source_url=source_url,
+            author=author,
+            review_date=normalized_date,
+            review_text=txt,
+        )
+        if any(fingerprint in self._seen for fingerprint in content_fingerprints):
+            return False
 
         sentiment = self.infer_sentiment(txt, rating, source_website)
         if sentiment not in {"positive", "negative"}:
@@ -760,7 +847,10 @@ class Collector:
             return False
         tier1, tier2, tier3 = path
 
-        self._seen.add(key_id)
+        if key_id:
+            self._seen.add(key_id)
+        for fingerprint in content_fingerprints:
+            self._seen.add(fingerprint)
 
         row = {
             "source_website": source_website,
@@ -997,6 +1087,8 @@ class Collector:
 
     def collect_reddit_pullpush(self):
         print("[collect] Reddit (PullPush comments/submissions)")
+        reddit_floor_date = self.source_floor_date("reddit.com", overlap_days=45)
+        reddit_since_ts = int(datetime(reddit_floor_date.year, reddit_floor_date.month, reddit_floor_date.day, tzinfo=timezone.utc).timestamp())
 
         def parse_ts(ts):
             try:
@@ -1066,7 +1158,7 @@ class Collector:
                     if created_utc is not None:
                         if min_ts is None or created_utc < min_ts:
                             min_ts = created_utc
-                        if created_utc < self.since_ts:
+                        if created_utc < reddit_since_ts:
                             reached_since_boundary = True
 
                     self.add_review(
@@ -1086,7 +1178,7 @@ class Collector:
                 if min_ts is None:
                     break
                 before = int(min_ts) - 1
-                if reached_since_boundary or before < self.since_ts:
+                if reached_since_boundary or before < reddit_since_ts:
                     break
 
                 time.sleep(0.15)
@@ -1150,7 +1242,7 @@ class Collector:
                     if created_utc is not None:
                         if min_ts is None or created_utc < min_ts:
                             min_ts = created_utc
-                        if created_utc < self.since_ts:
+                        if created_utc < reddit_since_ts:
                             reached_since_boundary = True
 
                     self.add_review(
@@ -1170,7 +1262,7 @@ class Collector:
                 if min_ts is None:
                     break
                 before = int(min_ts) - 1
-                if reached_since_boundary or before < self.since_ts:
+                if reached_since_boundary or before < reddit_since_ts:
                     break
                 time.sleep(0.15)
 
@@ -1182,6 +1274,201 @@ class Collector:
             fetch_subreddit("comment", subreddit, page_limit=220)
             fetch_subreddit("submission", subreddit, page_limit=140)
 
+    def reddit_json_get(self, url: str, params: dict | None = None):
+        query = dict(params or {})
+        query.setdefault("raw_json", 1)
+        try:
+            resp = S.get(url, params=query, timeout=45, headers={"User-Agent": "AuctionWebSentimentBot/1.0"})
+            if resp.status_code != 200:
+                return None
+            return resp.json()
+        except Exception:
+            return None
+
+    @staticmethod
+    def _reddit_children(payload):
+        return (payload or {}).get("data", {}).get("children", []) or []
+
+    @staticmethod
+    def _reddit_after(payload):
+        return (payload or {}).get("data", {}).get("after")
+
+    @staticmethod
+    def _reddit_date(created_utc):
+        try:
+            return datetime.fromtimestamp(float(created_utc), tz=timezone.utc).date()
+        except Exception:
+            return None
+
+    def _reddit_comment_walk(self, children):
+        for child in children or []:
+            if not isinstance(child, dict):
+                continue
+            if child.get("kind") != "t1":
+                continue
+            data = child.get("data") or {}
+            yield data
+            replies = data.get("replies")
+            if isinstance(replies, dict):
+                yield from self._reddit_comment_walk((replies.get("data") or {}).get("children") or [])
+
+    def _reddit_add_submission(self, post: dict):
+        title = self.normalize_text(post.get("title"))
+        selftext = self.normalize_text(post.get("selftext"))
+        text = self.normalize_text(f"{title} {selftext}")
+        if not text or text in {"[deleted]", "[removed]"}:
+            return False
+
+        permalink = post.get("permalink") or ""
+        source_url = f"https://www.reddit.com{permalink}" if permalink.startswith("/") else (post.get("url") or "https://www.reddit.com")
+        source_label = f"Reddit r/{post.get('subreddit', 'unknown')}"
+        created_date = self._reddit_date(post.get("created_utc"))
+        if created_date and created_date < self.source_floor_date("reddit.com", overlap_days=45):
+            return False
+
+        return self.add_review(
+            source_website="reddit.com",
+            source_label=source_label,
+            source_url=source_url,
+            author=post.get("author") or "reddit_user",
+            review_date=created_date.isoformat() if created_date else "1970-01-01",
+            rating=None,
+            review_text=text,
+            external_id=f"reddit_json_submission_{post.get('id', '')}",
+        )
+
+    def _reddit_add_comments_for_submission(self, post: dict):
+        post_id = str(post.get("id") or "").strip()
+        if not post_id:
+            return 0
+
+        permalink = post.get("permalink") or ""
+        if permalink.startswith("/"):
+            comments_url = f"https://www.reddit.com{permalink}.json"
+        else:
+            comments_url = f"https://www.reddit.com/comments/{post_id}.json"
+
+        payload = self.reddit_json_get(comments_url, {"sort": "new", "limit": 500})
+        if not isinstance(payload, list) or len(payload) < 2:
+            return 0
+
+        post_title = self.normalize_text(post.get("title"))
+        post_selftext = self.normalize_text(post.get("selftext"))
+        post_context = self.normalize_text(f"Thread context: {post_title} {post_selftext[:700]}")
+        source_label = f"Reddit r/{post.get('subreddit', 'unknown')}"
+        added = 0
+
+        for comment in self._reddit_comment_walk(self._reddit_children(payload[1])):
+            body = self.normalize_text(comment.get("body"))
+            if not body or body in {"[deleted]", "[removed]"}:
+                continue
+            created_date = self._reddit_date(comment.get("created_utc"))
+            if created_date and created_date < self.source_floor_date("reddit.com", overlap_days=45):
+                continue
+
+            permalink = comment.get("permalink") or ""
+            source_url = f"https://www.reddit.com{permalink}" if permalink.startswith("/") else comments_url
+            enriched_text = self.normalize_text(f"{body} {post_context}")
+
+            added += int(self.add_review(
+                source_website="reddit.com",
+                source_label=source_label,
+                source_url=source_url,
+                author=comment.get("author") or "reddit_user",
+                review_date=created_date.isoformat() if created_date else "1970-01-01",
+                rating=None,
+                review_text=enriched_text,
+                external_id=f"reddit_json_comment_{comment.get('id', '')}",
+            ))
+
+        return added
+
+    def collect_reddit_public_json(self):
+        print("[collect] Reddit (public JSON current backfill)")
+        reddit_floor_date = self.source_floor_date("reddit.com", overlap_days=45)
+        processed_posts = set()
+
+        def process_post(post: dict):
+            post_id = str(post.get("id") or "").strip()
+            if not post_id or post_id in processed_posts:
+                return 0
+            created_date = self._reddit_date(post.get("created_utc"))
+            if created_date and created_date < reddit_floor_date:
+                return -1
+            processed_posts.add(post_id)
+            added = int(self._reddit_add_submission(post))
+            added += self._reddit_add_comments_for_submission(post)
+            return added
+
+        def fetch_search(query: str, page_limit: int):
+            after = None
+            for page in range(page_limit):
+                payload = self.reddit_json_get(
+                    "https://www.reddit.com/search.json",
+                    {
+                        "q": query,
+                        "sort": "new",
+                        "t": "all",
+                        "type": "link",
+                        "limit": 100,
+                        "after": after,
+                    },
+                )
+                children = self._reddit_children(payload)
+                if not children:
+                    break
+
+                reached_floor = False
+                for child in children:
+                    if child.get("kind") != "t3":
+                        continue
+                    result = process_post(child.get("data") or {})
+                    if result == -1:
+                        reached_floor = True
+                        break
+
+                after = self._reddit_after(payload)
+                if reached_floor or not after:
+                    break
+                if page % 3 == 0:
+                    print(f"  - Reddit search '{query}' page {page + 1}: {len(self.records)} collected")
+                time.sleep(0.2)
+
+        def fetch_subreddit(subreddit: str, page_limit: int):
+            after = None
+            for page in range(page_limit):
+                payload = self.reddit_json_get(
+                    f"https://www.reddit.com/r/{subreddit}/new.json",
+                    {
+                        "limit": 100,
+                        "after": after,
+                    },
+                )
+                children = self._reddit_children(payload)
+                if not children:
+                    break
+
+                reached_floor = False
+                for child in children:
+                    if child.get("kind") != "t3":
+                        continue
+                    result = process_post(child.get("data") or {})
+                    if result == -1:
+                        reached_floor = True
+                        break
+
+                after = self._reddit_after(payload)
+                if reached_floor or not after:
+                    break
+                if page % 2 == 0:
+                    print(f"  - Reddit subreddit r/{subreddit} page {page + 1}: {len(self.records)} collected")
+                time.sleep(0.2)
+
+        for query, _comment_limit, submission_limit in REDDIT_QUERIES:
+            fetch_search(query, page_limit=max(2, min(int(submission_limit or 1), 12)))
+
+        for subreddit in REDDIT_SUBREDDITS:
+            fetch_subreddit(subreddit, page_limit=12)
 
     def collect_trustpilot(self):
         print("[collect] Trustpilot reviews")
@@ -1947,8 +2234,29 @@ class Collector:
         self.records = self.records[: self.max_output]
 
         rows = []
-        for idx, r in enumerate(self.records, start=1):
-            rows.append({"id": f"rvw-{idx:06d}", **r})
+        next_id = 1
+        used_ids = set()
+        for record in self.records:
+            existing_id = str(record.get("id") or "").strip()
+            if re.fullmatch(r"rvw-(\d{6})", existing_id):
+                used_ids.add(existing_id)
+                next_id = max(next_id, int(existing_id.split("-")[1]) + 1)
+
+        for record in self.records:
+            row = dict(record)
+            existing_id = str(row.get("id") or "").strip()
+            if existing_id and existing_id not in used_ids:
+                used_ids.add(existing_id)
+                row["id"] = existing_id
+            elif existing_id and existing_id in used_ids:
+                row["id"] = existing_id
+            else:
+                while f"rvw-{next_id:06d}" in used_ids:
+                    next_id += 1
+                row["id"] = f"rvw-{next_id:06d}"
+                used_ids.add(row["id"])
+                next_id += 1
+            rows.append(row)
 
         source_counts = Counter(r["source_website"] for r in rows)
         sentiment_counts = Counter(r["sentiment"] for r in rows)
@@ -1983,6 +2291,8 @@ class Collector:
                 "since_date": self.since,
                 "until_date": self.until,
                 "collector_failures": self.collector_failures,
+                "existing_review_count": self.existing_review_count,
+                "new_reviews_added": max(0, len(rows) - self.existing_review_count),
                 "youtube_excluded": True,
                 "usa_only": True,
                 "english_only": True,
@@ -2036,6 +2346,7 @@ class Collector:
             collectors.append(("reviewsio", self.collect_reviewsio))
         if REDDIT_QUERIES or REDDIT_SUBREDDITS:
             collectors.append(("reddit_pullpush", self.collect_reddit_pullpush))
+            collectors.append(("reddit_public_json", self.collect_reddit_public_json))
         if BBB_SEARCH_TEXT or BBB_FALLBACK_PROFILES:
             collectors.extend([
                 ("bbb_customer_reviews", self.collect_bbb_customer_reviews),

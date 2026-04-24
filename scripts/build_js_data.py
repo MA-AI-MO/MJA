@@ -24,6 +24,28 @@ def empty_payload():
     }
 
 
+def validate_dataset_windows(business_order, config_payload, datasets):
+    windows = {}
+    for key in business_order:
+        business = config_payload["businesses"][key]
+        payload = datasets.get(key) or {}
+        meta = payload.get("meta") or {}
+        review_count = int(meta.get("review_count") or 0)
+        if review_count <= 0:
+            continue
+        since_date = meta.get("since_date")
+        until_date = meta.get("until_date")
+        windows[business["display_name"]] = (since_date, until_date)
+
+    unique_windows = {window for window in windows.values() if all(window)}
+    if len(unique_windows) > 1:
+        details = ", ".join(
+            f"{name}: {window[0]} -> {window[1]}"
+            for name, window in windows.items()
+        )
+        raise RuntimeError(f"Inconsistent dataset date windows detected. {details}")
+
+
 def main() -> None:
     config_payload = json.loads(BUSINESSES_PATH.read_text(encoding="utf-8"))
     tiers_payload = json.loads(TIERS_PATH.read_text(encoding="utf-8"))
@@ -50,6 +72,8 @@ def main() -> None:
           datasets[key] = json.loads(data_path.read_text(encoding="utf-8"))
       else:
           datasets[key] = empty_payload()
+
+    validate_dataset_windows(business_order, config_payload, datasets)
 
     APP_CONFIG_JS.write_text(
         "window.REVIEW_APP_CONFIG = "

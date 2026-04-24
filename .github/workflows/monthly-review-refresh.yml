@@ -9,6 +9,14 @@ on:
       until:
         description: "End date in YYYY-MM-DD format"
         required: false
+  push:
+    branches:
+      - main
+    paths:
+      - scripts/**
+      - data/businesses.json
+      - requirements.txt
+      - .github/workflows/monthly-review-refresh.yml
   schedule:
     - cron: "17 9 2 * *"
 
@@ -45,6 +53,7 @@ jobs:
         env:
           INPUT_SINCE: ${{ github.event.inputs.since }}
           INPUT_UNTIL: ${{ github.event.inputs.until }}
+          EVENT_NAME: ${{ github.event_name }}
         run: |
           if [ -n "$INPUT_SINCE" ]; then
             SINCE_VALUE="$INPUT_SINCE"
@@ -53,8 +62,10 @@ jobs:
           fi
           if [ -n "$INPUT_UNTIL" ]; then
             UNTIL_VALUE="$INPUT_UNTIL"
-          else
+          elif [ "$EVENT_NAME" = "schedule" ]; then
             UNTIL_VALUE="$(date -u -d "$(date -u +%Y-%m-01) -1 day" +%F)"
+          else
+            UNTIL_VALUE="$(date -u +%F)"
           fi
           echo "since=$SINCE_VALUE" >> "$GITHUB_OUTPUT"
           echo "until=$UNTIL_VALUE" >> "$GITHUB_OUTPUT"
@@ -69,6 +80,9 @@ jobs:
             --until "${{ steps.refresh-window.outputs.until }}" \
             --target 0 \
             --max-output 120000
+
+      - name: Audit dataset windows
+        run: python scripts/audit_review_datasets.py
 
       - name: Prepare Pages artifact
         run: |
