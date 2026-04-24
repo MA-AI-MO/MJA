@@ -70,7 +70,7 @@ APPLE_APP_IDS = BUSINESS_SETTINGS.get("apple_app_ids", [])
 APPLE_COUNTRIES = BUSINESS_SETTINGS.get("apple_countries", ["us", "gb", "ca"])
 REVIEWSIO_ROOT = BUSINESS_SETTINGS.get("reviewsio_root")
 COMPLAINTSBOARD_ROOT = BUSINESS_SETTINGS.get("complaintsboard_root")
-PISSEDCONSUMER_ROOT = BUSINESS_SETTINGS.get("pissedconsumer_root")
+PISSEDCONSUMER_ROOT = None
 SMARTCUSTOMER_ROOT = BUSINESS_SETTINGS.get("smartcustomer_root")
 BIRDEYE_PAGES = BUSINESS_SETTINGS.get("birdeye_pages", [])
 BBB_SEARCH_TEXT = BUSINESS_SETTINGS.get("bbb_search_text", DISPLAY_NAME)
@@ -119,7 +119,7 @@ US_GEO_MARKERS = BASE_US_GEO_MARKERS | {f" {token.lower()} " for token in BUSINE
 STRONG_US_GEO_MARKERS = BASE_STRONG_US_GEO_MARKERS | {f" {token.lower()} " for token in BUSINESS_SETTINGS.get("strong_us_geo_markers", [])}
 NON_US_GEO_MARKERS = BASE_NON_US_GEO_MARKERS | {f" {token.lower()} " for token in BUSINESS_SETTINGS.get("non_us_geo_markers", [])}
 
-MIXED_SOURCE_WEBSITES = {"reddit.com", "pissedconsumer.com", "smartcustomer.com", "ripoffreport.com", "complaintsboard.com", "reviews.io"}
+MIXED_SOURCE_WEBSITES = {"reddit.com", "smartcustomer.com", "ripoffreport.com", "complaintsboard.com", "reviews.io"}
 EXPECTED_SOURCE_WEBSITES = ["reddit.com"]
 if GOOGLE_PLAY_APPS:
     EXPECTED_SOURCE_WEBSITES.append("play.google.com")
@@ -131,8 +131,6 @@ if TRUSTPILOT_SLUGS:
     EXPECTED_SOURCE_WEBSITES.append("trustpilot.com")
 if REVIEWSIO_ROOT:
     EXPECTED_SOURCE_WEBSITES.append("reviews.io")
-if PISSEDCONSUMER_ROOT:
-    EXPECTED_SOURCE_WEBSITES.append("pissedconsumer.com")
 if RIPOFF_SEARCH_URL:
     EXPECTED_SOURCE_WEBSITES.append("ripoffreport.com")
 if SMARTCUSTOMER_ROOT:
@@ -293,6 +291,8 @@ class Collector:
             if not isinstance(row, dict):
                 continue
             clean_row = dict(row)
+            if str(clean_row.get("source_website") or "").strip().lower() == "pissedconsumer.com":
+                continue
             existing_rows.append(clean_row)
             self._remember_existing_key(clean_row)
 
