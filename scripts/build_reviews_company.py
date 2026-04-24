@@ -1326,18 +1326,27 @@ class Collector:
         print("[collect] Reddit session verification")
 
         for subreddit in self._reddit_bootstrap_subreddits():
-            sitemap_url = f"https://www.reddit.com/r/{subreddit}/sitemap.xml"
+            probe_url = f"https://www.reddit.com/r/{subreddit}/new.json"
+            probe_params = {"raw_json": 1, "limit": 1}
+            html_url = f"https://www.reddit.com/r/{subreddit}/new/"
             try:
-                resp = S.get(sitemap_url, timeout=45)
+                probe = S.get(probe_url, params=probe_params, timeout=45)
             except Exception:
                 continue
 
-            if self._reddit_is_json_response(resp) or "<?xml" in (resp.text or ""):
+            if self._reddit_is_json_response(probe):
                 self.reddit_verified = True
                 print(f"  - Reddit session already open via r/{subreddit}")
                 return True
 
-            html = resp.text or ""
+            html = probe.text or ""
+            if not self._reddit_is_verification_page(html):
+                try:
+                    html_resp = S.get(html_url, timeout=45)
+                    html = html_resp.text or ""
+                except Exception:
+                    html = ""
+
             if not self._reddit_is_verification_page(html):
                 continue
 
@@ -1355,15 +1364,8 @@ class Collector:
             }
 
             try:
-                verify_resp = S.get(verify_url, params=verify_params, timeout=45)
-                if self._reddit_is_verification_page(verify_resp.text or ""):
-                    continue
-
-                probe = S.get(
-                    f"https://www.reddit.com/r/{subreddit}/new.json",
-                    params={"raw_json": 1, "limit": 1},
-                    timeout=45,
-                )
+                S.get(verify_url, params=verify_params, timeout=45)
+                probe = S.get(probe_url, params=probe_params, timeout=45)
                 if self._reddit_is_json_response(probe):
                     self.reddit_verified = True
                     print(f"  - Reddit session verified via r/{subreddit}")
