@@ -353,12 +353,12 @@
       "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=11425500127",
       "https://www.reddit.com/r/askcarguys/comments/1dn7o7b/manheim_auto_auction/"
     ],
-    "generated_at_utc": "2026-04-24T17:37:02.987345+00:00",
+    "generated_at_utc": "2026-04-24T18:07:48.068073+00:00",
     "since_date": "2023-01-01",
     "until_date": "2026-04-24",
     "collector_failures": [],
-    "existing_review_count": 612,
-    "new_reviews_added": 1,
+    "existing_review_count": 613,
+    "new_reviews_added": 0,
     "youtube_excluded": true,
     "usa_only": true,
     "english_only": true,
@@ -376,9 +376,7 @@
       "apps.apple.com",
       "bbb.org"
     ],
-    "geo_validation_counts": {
-      "mixed_source_ok": 1
-    },
+    "geo_validation_counts": {},
     "geo_excluded_counts": {
       "play.google.com:google_play_us_store_non_us_marker": 1,
       "reddit.com:mixed_source_non_us_marker": 4,
