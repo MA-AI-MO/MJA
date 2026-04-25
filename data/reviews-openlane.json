@@ -1,19 +1,19 @@
 {
   "meta": {
     "description": "Large-scale English-only OPENLANE textual review/problem dataset from public web sources (recency-first).",
-    "review_count": 411,
+    "review_count": 405,
     "source_counts": {
       "play.google.com": 234,
       "trustpilot.com": 38,
       "apps.apple.com": 108,
-      "reddit.com": 15,
+      "reddit.com": 8,
       "bbb.org": 13,
-      "birdeye.com": 3
+      "birdeye.com": 4
     },
     "source_audit": [
       {
         "source_website": "reddit.com",
-        "review_count": 15,
+        "review_count": 8,
         "present": true
       },
       {
@@ -43,12 +43,12 @@
       },
       {
         "source_website": "birdeye.com",
-        "review_count": 3,
+        "review_count": 4,
         "present": true
       }
     ],
     "sentiments": {
-      "positive": 55,
+      "positive": 49,
       "negative": 356
     },
     "source_urls": [
@@ -143,16 +143,13 @@
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=12459020912",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=12439615672",
       "https://www.trustpilot.com/reviews/67d4414b791c8db8010c87f4",
-      "https://www.reddit.com/r/chipdesign/comments/1j62ea7/library_with_rtl_designs_and_their_parasitics/mgwk9j4/",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=12380780795",
       "https://itunes.apple.com/us/review?id=1175036411&type=Purple%20Software&reviewId=12370785699",
-      "https://www.reddit.com/r/ComputerEngineering/comments/1ixm2em/would_it_be_better_to_make_or_find_a_cpu/mep1v35/",
       "https://www.trustpilot.com/reviews/67ae7e93c18b90aade6a478a",
       "https://itunes.apple.com/us/review?id=1175036411&type=Purple%20Software&reviewId=12295455568",
       "https://www.trustpilot.com/reviews/67917cefc6be2b27ae2c6313",
       "https://itunes.apple.com/us/review?id=1175036411&type=Purple%20Software&reviewId=12199031988",
       "https://www.trustpilot.com/reviews/677d98eb96afb9673604d1df",
-      "https://www.reddit.com/r/embedded/comments/1huoytx/openlane_to_test_serial_protocols/m5nfynt/",
       "https://itunes.apple.com/us/review?id=1175036411&type=Purple%20Software&reviewId=12113196103",
       "https://apps.apple.com/us/app/id1175036411?see-all=reviews&platform=iphone&reviewId=12113196103",
       "https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/complaints#0382_90024496_22712003",
@@ -172,12 +169,9 @@
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=11663521564",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=11629023698",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=11610067978",
-      "https://www.reddit.com/r/povertyfinance/comments/1ec9g9k/brothers_family_is_homeless_crippling_debt_vet/lezb78o/",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=11534251779",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=11498128536",
-      "https://www.reddit.com/r/povertyfinance/comments/1dhivf2/its_fathers_day_my_day_off_and_im_working_for_my/l8y6roc/",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=11366298115",
-      "https://www.reddit.com/r/halifax/comments/1daaehc/will_the_city_do_something_to_an_abandoned_car/l7lrukw/",
       "https://itunes.apple.com/us/review?id=1186571028&type=Purple%20Software&reviewId=11351671975",
       "https://apps.apple.com/us/app/id1186571028?see-all=reviews&platform=iphone&reviewId=11351671975",
       "https://itunes.apple.com/us/review?id=1175036411&type=Purple%20Software&reviewId=11278676228",
@@ -197,7 +191,6 @@
       "https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/customer-reviews#0382_90024496_95437",
       "https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/complaints#0382_90024496_21230895",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=10871191089",
-      "https://www.reddit.com/r/askcarsales/comments/18x4ck5/best_way_to_acquire_inventory/kg20bc1/",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=10776624470",
       "https://www.reddit.com/r/chipdesign/comments/18lc02m/help_with_learning_openlane/",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=10690417191",
@@ -235,12 +228,12 @@
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=9641434260",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=9619929878"
     ],
-    "generated_at_utc": "2026-04-24T20:58:39.116069+00:00",
+    "generated_at_utc": "2026-04-25T01:45:34.691993+00:00",
     "since_date": "2023-01-01",
-    "until_date": "2026-04-24",
+    "until_date": "2026-04-25",
     "collector_failures": [],
-    "existing_review_count": 408,
-    "new_reviews_added": 3,
+    "existing_review_count": 404,
+    "new_reviews_added": 1,
     "youtube_excluded": true,
     "usa_only": true,
     "english_only": true,
@@ -259,21 +252,13 @@
       "bbb.org"
     ],
     "geo_validation_counts": {
-      "mixed_source_ok": 3
+      "birdeye_us_profile": 1
     },
     "geo_excluded_counts": {
-      "reddit.com:mixed_source_non_us_marker": 12,
+      "reddit.com:mixed_source_non_us_marker": 6,
       "apps.apple.com:apple_non_us_store": 8
     },
     "geo_excluded_examples": [
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/VolvoXC90",
-        "source_url": "https://www.reddit.com/r/VolvoXC90/comments/1dqs3ka/any_lookouts/lavnij6/",
-        "review_date": "2024-06-29",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Thanks. Hadn’t heard of that site. Seems to now be called openlane.eu. Ironically, the cars that match my criteria are all in Germany though!"
-      },
       {
         "source_website": "reddit.com",
         "source_label": "Reddit r/NovaScotia",
@@ -300,22 +285,6 @@
       },
       {
         "source_website": "reddit.com",
-        "source_label": "Reddit r/askcarsales",
-        "source_url": "https://www.reddit.com/r/askcarsales/comments/18o498k/omvic_sales_person_working_without_salary_but_on/l5dn9ig/",
-        "review_date": "2024-05-23",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Yes they can participate in auctions. There are physical auctions like Manhiem and Adesa, but manhiem recently sold to adesa and is exiting Canada at the moment leaving behind their digital auction platform otolane. [https://www.otolane.com"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/askcarsales",
-        "source_url": "https://www.reddit.com/r/askcarsales/comments/18x4ck5/best_way_to_acquire_inventory/kg1v8g4/",
-        "review_date": "2024-01-02",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "***Thanks for posting, /u/AmirisInaUrus! This comment is a copy of your post so readers can see the original text if your post is edited or removed. This comment is NOT accusing you of anything.*** Hi! I have a small lot with dealers licens"
-      },
-      {
-        "source_website": "reddit.com",
         "source_label": "Reddit r/NovaScotia",
         "source_url": "https://www.reddit.com/r/NovaScotia/comments/1hkgvt8/dealers_license_for_openlane/",
         "review_date": "2024-12-23",
@@ -329,30 +298,6 @@
         "review_date": "2024-01-02",
         "reason": "mixed_source_non_us_marker",
         "review_text": "Best way to acquire inventory? Hi! I have a small lot with dealers license in Ontario, Canada. Basically I pay fk all beside the insurance &amp; looking for flip some cars, looking to start with 5 cars (10-15k value each) I signed up with a"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/askcarsales",
-        "source_url": "https://www.reddit.com/r/askcarsales/comments/18o498k/omvic_sales_person_working_without_salary_but_on/l5dn9ig/",
-        "review_date": "2024-05-23",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Yes they can participate in auctions. There are physical auctions like Manhiem and Adesa, but manhiem recently sold to adesa and is exiting Canada at the moment leaving behind their digital auction platform otolane. [https://www.otolane.com"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/askcarsales",
-        "source_url": "https://www.reddit.com/r/askcarsales/comments/18o498k/omvic_sales_person_working_without_salary_but_on/l5dn9ig/",
-        "review_date": "2024-05-23",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Yes they can participate in auctions. There are physical auctions like Manhiem and Adesa, but manhiem recently sold to adesa and is exiting Canada at the moment leaving behind their digital auction platform otolane. [https://www.otolane.com"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/askcarsales",
-        "source_url": "https://www.reddit.com/r/askcarsales/comments/18x4ck5/best_way_to_acquire_inventory/kg1v8g4/",
-        "review_date": "2024-01-02",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "***Thanks for posting, /u/AmirisInaUrus! This comment is a copy of your post so readers can see the original text if your post is edited or removed. This comment is NOT accusing you of anything.*** Hi! I have a small lot with dealers licens"
       },
       {
         "source_website": "reddit.com",
@@ -2035,6 +1980,21 @@
       "source_label": "Birdeye (Google)",
       "source_url": "https://reviews.birdeye.com/openlane-166516131772584#review-5",
       "author": "Tamer Helal",
+      "review_date": "2025-09-27",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "The best Auction I’ve ever used to buy cars. Super easy to use, the inspiration is accurate. Also my Rep. Favi Montes is so helpful and very easy to work with. So responsive and she calls sellers to negotiate with them to get me the best deal, I really recommend Openlane to any dealership.",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000412"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/openlane-166516131772584#review-5",
+      "author": "Tamer Helal",
       "review_date": "2025-09-26",
       "rating": null,
       "sentiment": "positive",
@@ -2961,21 +2921,6 @@
       "tier3": "Issue Not Resolved"
     },
     {
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/chipdesign",
-      "source_url": "https://www.reddit.com/r/chipdesign/comments/1j62ea7/library_with_rtl_designs_and_their_parasitics/mgwk9j4/",
-      "author": "trashrooms",
-      "review_date": "2025-03-09",
-      "rating": null,
-      "sentiment": "positive",
-      "review_text": "So you only have the verilog; can’t extract parasitics out of that and no one will provide parasitics for it either, unless there’s some estimation method I’m not aware of. What you need is to either take this verilog through synthesis and pnr - a lot of effort - or find an open source design that’s already gone through those steps. Look up openlane flow and try to find some open source designs. There might be a way to write out parasitics using their open source tool or load it into FC and do so. Either way, both require effort. You might be able to find an open source design that’s already gone through pnr and has had the parasitics dumped out or kindly ask the author to do so.",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Account / Access / Login",
-      "tier2": "Password Reset & Login Troubleshooting",
-      "tier3": "App Login Troubleshooting",
-      "id": "rvw-000362"
-    },
-    {
       "id": "rvw-000140",
       "source_website": "apps.apple.com",
       "source_label": "Apple App Store (1566419386, us)",
@@ -3004,21 +2949,6 @@
       "tier1": "Customer Service & Communication",
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Helpful Support Experience"
-    },
-    {
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/ComputerEngineering",
-      "source_url": "https://www.reddit.com/r/ComputerEngineering/comments/1ixm2em/would_it_be_better_to_make_or_find_a_cpu/mep1v35/",
-      "author": "pcookie95",
-      "review_date": "2025-02-25",
-      "rating": null,
-      "sentiment": "positive",
-      "review_text": "Assuming this is a very ambitious guy with no background knowledge and not just some troll/bot, it is technically possible to build your own CPU from scratch. Now, of course, it's not going to follow the same steps as that video, since you won't be doing any of the chemical/material science needed for chip fabrication, which is largely impossible without billions of dollars and a team of highly trained/educated scientists and engineers. However you can design and tapeout your own physical CPU with the following steps. 1. Learn digital design and HDL (e.g. verilog). This could be done via online classes such as this [edx course](https://www.edx.org/learn/design/harvey-mudd-college-digital-design). 2. Learn basic computer architecture ([edx course](https://www.edx.org/learn/computer-architecture/harvey-mudd-college-computer-architecture)) 3. Create a simple RISC-V design in HDL 4. Figure out how to use [OpenLane](https://www.zerotoasiccourse.com/terminology/openlane/) with the Skywater130 PDK (will require basic programming skills for scripting) 5. Use [Tiny Tapeout](https://tinytapeout.com/) to tapeout your own physical chip for less than 1k USD. They will send it off to a fab that handles all the complicated steps described in the video you linked at the bottom of your post. 6. You now have your own physical processor that you built from \"scratch\". Now, keep in mind that with no knowledge of computer engineering, this will take a few years to do and cost 100x more than just buying a much faster and more efficient microcontroller. But it might be worth it if you want to learn about how CPUs are made. Also note, that if you are serious about doing this, it may be worth it to go to college to get a computer engineering degree. Most degrees will teach you up to step 3. Some undergraduate programs might have a senior level class that teaches step 4, but that's usually more of graduate level course. Either way, a computer engineering degree could turn a potential hobby/interest into a high-paying job.",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Customer Service & Communication",
-      "tier2": "Agent Professionalism & Responsiveness",
-      "tier3": "Helpful Support Experience",
-      "id": "rvw-000363"
     },
     {
       "id": "rvw-000142",
@@ -3154,21 +3084,6 @@
       "tier1": "Lot Condition, Listing Status and related",
       "tier2": "Third-Party Inspection Authorization & Scheduling",
       "tier3": "Previewing/ Inspecting Vehicles"
-    },
-    {
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/embedded",
-      "source_url": "https://www.reddit.com/r/embedded/comments/1huoytx/openlane_to_test_serial_protocols/m5nfynt/",
-      "author": "SAI_Peregrinus",
-      "review_date": "2025-01-06",
-      "rating": null,
-      "sentiment": "positive",
-      "review_text": "Should be. Not familiar with OpenLane, I assume you mean [this](https://github.com/efabless/openlane2) and not [this road lane map dataset](https://github.com/OpenDriveLab/OpenLane) or [this used car marketplace](https://www.openlane.com/)? An ASIC design framework that can't be used to implement the most common serial communication protocols is pretty useless. Though I do think it'd be hard to implement them via the used car dealer, so you should probably clarify which OpenLane you mean!",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Customer Service & Communication",
-      "tier2": "Agent Professionalism & Responsiveness",
-      "tier3": "Helpful Support Experience",
-      "id": "rvw-000364"
     },
     {
       "id": "rvw-000151",
@@ -3846,21 +3761,6 @@
       "tier3": "App Login Troubleshooting"
     },
     {
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/povertyfinance",
-      "source_url": "https://www.reddit.com/r/povertyfinance/comments/1ec9g9k/brothers_family_is_homeless_crippling_debt_vet/lezb78o/",
-      "author": "Mule_Wagon_777",
-      "review_date": "2024-07-26",
-      "rating": null,
-      "sentiment": "positive",
-      "review_text": "In addition to everyone applying for benefits, you can read through r/beermoney for part-time WFH. This is helpful if you don't have the space or schedule for a full-time job. And this list is for beginning WFH jobs. Thanks to Erica Carter on Facebook. Here are some companies that hire fairly quickly and Will Train: Alorica: https://www.alorica.com/careers/ Access2Care: https://careers.gmr.net/access2care Elite Care Staffing www.elitecarestaffing.org Teleperformance: https://www.teleperformance.com/en-us/careers/work-from-home-opportunity/ Foundever: https://jobs.foundever.com/ Omni Interactions-1099: https://omniinteractions.com/ Working Solutions-1099: https://workingsolutions.com/ Nexrep-1099: https://nexrep.com/careers/ LiveOps-1099: https://liveops.com/about-us/careers/ FiveStar Call Center: https://fivestarcallcenters.com/jobs/ Maximus: https://maximus.com/careers BroadPath: https://broad-path.com/careers/ Sagility: https://career.sagilityhealth.com/us/en Concentrix: https://jobs.concentrix.com/global/en ResultCX: https://careers.resultscx.com/ TSI: https://tsi.com/discover-tsi/careers/ Smith.ai: https://smith.ai/careers VXI: https://vxi.com/careers/ Global Payments: https://jobs.globalpayments.com/en/jobs/?search=&amp;remote=true&amp;pagesize=20#results TTEC: https://www.ttecjobs.com/en Continuum: https://careers.continuumgbl.com/ Kelly Connect: https://www.workforkellyconnect.com/careers-home/ Conduent: https://careers.conduent.com/us/en/search-results?keywords=remote RemX: https://www.remx.com/jobs/ Telus: https://www.telus.com/en/about/careers Amazon: https://www.amazon.jobs/en/ Dell: https://jobs.dell.com/ Humana: https://careers.humana.com/ Xerox: https://www.xerox.com/en-us/jobs Apple: https://www.apple.com/jobs/us/ UnitedHealth Group: https://careers.unitedhealthgroup.com/ SupportYourApp: https://supportyourapp.com/career/ Influx: https://influx.com/careers Williams-Sonoma, Inc.: https://www.williams-sonomainc.com/careers/jobs/ Verizon: https://www.verizon.com/about/careers/ Vivint: https://www.vivint.com/company/careers Working Solutions: https://jobs.workingsolutions.com/ Unum: https://careers.unum.com/ Miaplaza Inc.: https://miaprep.com/online-school/about-the-company/ Acumen LLC: https://www.acumenllc.com/careers CrowdStrike: https://www.crowdstrike.com/careers/ Taskrabbit: https://www.taskrabbit.com/careers Intradiem: https://www.intradiem.com/company/careers/ Salesforce: https://www.salesforce.com/company/careers/ Ansys: https://www.ansys.com/about-ansys/careers Guidepoint: https://www.guidepoint.com/careers/ MINDBODY: https://mindbodyonline.com/careers Mozilla: https://careers.mozilla.org/ NTT DATA: https://us.nttdata.com/careers OPENLANE, Inc.: https://corporate.openlane.com/careers/ Samsara: https://www.samsara.com/company/careers SAP: https://www.sap.com/about/careers.html Sutherland: https://www.sutherlandglobal.com/careers Twilio: https://www.twilio.com/company/jobs Veeva: https://careers.veeva.com/",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Customer Service & Communication",
-      "tier2": "Agent Professionalism & Responsiveness",
-      "tier3": "Helpful Support Experience",
-      "id": "rvw-000374"
-    },
-    {
       "id": "rvw-000187",
       "source_website": "apps.apple.com",
       "source_label": "Apple App Store (1566419386, us)",
@@ -4011,21 +3911,6 @@
       "tier3": "App Login Troubleshooting"
     },
     {
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/povertyfinance",
-      "source_url": "https://www.reddit.com/r/povertyfinance/comments/1dhivf2/its_fathers_day_my_day_off_and_im_working_for_my/l8y6roc/",
-      "author": "Mule_Wagon_777",
-      "review_date": "2024-06-17",
-      "rating": null,
-      "sentiment": "positive",
-      "review_text": "r/beermoney has good links to that kind of small job. And here is a list of companies that are always hiring for at-home work. Thanks to Erica Carter: Alorica: https://www.alorica.com/careers/ Access2Care: https://careers.gmr.net/access2care Elite Care Staffing www.elitecarestaffing.org Teleperformance: https://www.teleperformance.com/en-us/careers/work-from-home-opportunity/ Foundever: https://jobs.foundever.com/ Omni Interactions-1099: https://omniinteractions.com/ Working Solutions-1099: https://workingsolutions.com/ Nexrep-1099: https://nexrep.com/careers/ LiveOps-1099: https://liveops.com/about-us/careers/ FiveStar Call Center: https://fivestarcallcenters.com/jobs/ Maximus: https://maximus.com/careers BroadPath: https://broad-path.com/careers/ Sagility: https://career.sagilityhealth.com/us/en Concentrix: https://jobs.concentrix.com/global/en ResultCX: https://careers.resultscx.com/ TSI: https://tsi.com/discover-tsi/careers/ Smith.ai: https://smith.ai/careers VXI: https://vxi.com/careers/ Global Payments: https://jobs.globalpayments.com/en/jobs/?search=&amp;remote=true&amp;pagesize=20#results TTEC: https://www.ttecjobs.com/en Continuum: https://careers.continuumgbl.com/ Kelly Connect: https://www.workforkellyconnect.com/careers-home/ Conduent: https://careers.conduent.com/us/en/search-results?keywords=remote RemX: https://www.remx.com/jobs/ Telus: https://www.telus.com/en/about/careers Amazon: https://www.amazon.jobs/en/ Dell: https://jobs.dell.com/ Humana: https://careers.humana.com/ Xerox: https://www.xerox.com/en-us/jobs Apple: https://www.apple.com/jobs/us/ UnitedHealth Group: https://careers.unitedhealthgroup.com/ SupportYourApp: https://supportyourapp.com/career/ Influx: https://influx.com/careers Williams-Sonoma, Inc.: https://www.williams-sonomainc.com/careers/jobs/ Verizon: https://www.verizon.com/about/careers/ Vivint: https://www.vivint.com/company/careers Working Solutions: https://jobs.workingsolutions.com/ Unum: https://careers.unum.com/ Miaplaza Inc.: https://miaprep.com/online-school/about-the-company/ Acumen LLC: https://www.acumenllc.com/careers CrowdStrike: https://www.crowdstrike.com/careers/ Taskrabbit: https://www.taskrabbit.com/careers Intradiem: https://www.intradiem.com/company/careers/ Salesforce: https://www.salesforce.com/company/careers/ Ansys: https://www.ansys.com/about-ansys/careers Guidepoint: https://www.guidepoint.com/careers/ MINDBODY: https://mindbodyonline.com/careers Mozilla: https://careers.mozilla.org/ NTT DATA: https://us.nttdata.com/careers OPENLANE, Inc.: https://corporate.openlane.com/careers/ Samsara: https://www.samsara.com/company/careers SAP: https://www.sap.com/about/careers.html Sutherland: https://www.sutherlandglobal.com/careers Twilio: https://www.twilio.com/company/jobs Veeva: https://careers.veeva.com/",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Customer Service & Communication",
-      "tier2": "Agent Professionalism & Responsiveness",
-      "tier3": "Helpful Support Experience",
-      "id": "rvw-000378"
-    },
-    {
       "id": "rvw-000194",
       "source_website": "apps.apple.com",
       "source_label": "Apple App Store (1566419386, us)",
@@ -4039,21 +3924,6 @@
       "tier1": "Lot Condition, Listing Status and related",
       "tier2": "Third-Party Inspection Authorization & Scheduling",
       "tier3": "Previewing/ Inspecting Vehicles"
-    },
-    {
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/halifax",
-      "source_url": "https://www.reddit.com/r/halifax/comments/1daaehc/will_the_city_do_something_to_an_abandoned_car/l7lrukw/",
-      "author": "themdailygainsYO",
-      "review_date": "2024-06-07",
-      "rating": null,
-      "sentiment": "positive",
-      "review_text": "I bought my first car from these guys back like 20 years ago in a different province but they seem to have a location locally here in Hali. do a good inspection of a car before buying/bidding on one, there can be some lemons https://www.openlane.ca/en/locations/halifax/",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Lot Condition, Listing Status and related",
-      "tier2": "Third-Party Inspection Authorization & Scheduling",
-      "tier3": "Previewing/ Inspecting Vehicles",
-      "id": "rvw-000379"
     },
     {
       "id": "rvw-000195",
@@ -4594,21 +4464,6 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
-    },
-    {
-      "source_website": "reddit.com",
-      "source_label": "Reddit r/askcarsales",
-      "source_url": "https://www.reddit.com/r/askcarsales/comments/18x4ck5/best_way_to_acquire_inventory/kg20bc1/",
-      "author": "AmirisInaUrus",
-      "review_date": "2024-01-03",
-      "rating": null,
-      "sentiment": "positive",
-      "review_text": "For someone like me with no chance at getting trade-ins because I’m selling 10kish cars and only 5-6 inventory I guess auctions will be my best option because I’m not going to lie and say I enjoy buying private I rather save the stress/headache and purchase at auction even if I’m over paying a little, do you have any experience with openlane/traderev? I purchased from Adesa before but never from those trade in auctions. Would you recommend someone in my shoes to try these auctions?",
-      "geo_validation": "mixed_source_ok",
-      "tier1": "Lot Condition, Listing Status and related",
-      "tier2": "Listing Status",
-      "tier3": "Selling/ Relisting vehicle or Parts purchase",
-      "id": "rvw-000384"
     },
     {
       "id": "rvw-000227",
