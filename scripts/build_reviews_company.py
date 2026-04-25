@@ -241,6 +241,20 @@ def unique_preserve(items):
     return ordered
 
 
+def is_reddit_comment_reference(source_website: str, source_url: str, review_text: str = "") -> bool:
+    if str(source_website or "").strip().lower() != "reddit.com":
+        return False
+    text = str(review_text or "")
+    if "Thread context:" in text:
+        return True
+    try:
+        parsed = requests.utils.urlparse(str(source_url or "").strip())
+        parts = [part for part in (parsed.path or "").split("/") if part]
+    except Exception:
+        return False
+    return len(parts) >= 6 and len(parts) > 2 and parts[0].lower() == "r" and parts[2].lower() == "comments"
+
+
 class Collector:
     def __init__(self, target: int, since: str, until: str | None, max_output: int):
         self.target = max(0, int(target))
@@ -292,6 +306,12 @@ class Collector:
                 continue
             clean_row = dict(row)
             if str(clean_row.get("source_website") or "").strip().lower() == "pissedconsumer.com":
+                continue
+            if is_reddit_comment_reference(
+                clean_row.get("source_website"),
+                clean_row.get("source_url"),
+                clean_row.get("review_text"),
+            ):
                 continue
             existing_rows.append(clean_row)
             self._remember_existing_key(clean_row)
@@ -1116,7 +1136,7 @@ class Collector:
         print("[collect] YouTube comments: skipped (text-only mode)")
 
     def collect_reddit_pullpush(self):
-        print("[collect] Reddit (PullPush comments/submissions)")
+        print("[collect] Reddit (PullPush submissions only)")
         reddit_floor_date = self.source_floor_date("reddit.com", overlap_days=45)
         reddit_since_ts = int(datetime(reddit_floor_date.year, reddit_floor_date.month, reddit_floor_date.day, tzinfo=timezone.utc).timestamp())
 
@@ -1296,12 +1316,10 @@ class Collector:
                     break
                 time.sleep(0.15)
 
-        for query, comment_limit, submission_limit in REDDIT_QUERIES:
-            fetch("comment", query, page_limit=comment_limit)
+        for query, _comment_limit, submission_limit in REDDIT_QUERIES:
             fetch("submission", query, page_limit=submission_limit)
 
         for subreddit in REDDIT_SUBREDDITS:
-            fetch_subreddit("comment", subreddit, page_limit=220)
             fetch_subreddit("submission", subreddit, page_limit=140)
 
     @staticmethod
@@ -1667,7 +1685,7 @@ class Collector:
         return added
 
     def collect_reddit_public_json(self):
-        print("[collect] Reddit (public JSON current backfill)")
+        print("[collect] Reddit (public JSON submissions only)")
         if not self.ensure_reddit_verified():
             print("  - Reddit verification unavailable; skipping public JSON backfill")
             return
@@ -1682,9 +1700,7 @@ class Collector:
             if created_date and created_date < reddit_floor_date:
                 return -1
             processed_posts.add(post_id)
-            added = int(self._reddit_add_submission(post))
-            added += self._reddit_add_comments_for_submission(post)
-            return added
+            return int(self._reddit_add_submission(post))
 
         def fetch_search(query: str, page_limit: int):
             after = None
@@ -1900,38 +1916,6 @@ class Collector:
                 before = oldest - 1
                 time.sleep(0.25)
 
-        def page_comments(base_params: dict, page_limit: int):
-            before = None
-            for _page in range(max(1, page_limit)):
-                params = dict(base_params)
-                params["limit"] = min(int(params.get("limit") or 50), 100)
-                params["sort"] = "desc"
-                if before is not None:
-                    params["before"] = before
-                payload = self.arctic_shift_json_get(
-                    "https://arctic-shift.photon-reddit.com/api/comments/search",
-                    params=params,
-                )
-                data = (payload or {}).get("data") or []
-                if not data:
-                    break
-
-                oldest = None
-                for comment in data:
-                    created_utc = comment.get("created_utc")
-                    try:
-                        created_utc = int(float(created_utc))
-                    except Exception:
-                        created_utc = None
-                    if created_utc is not None:
-                        oldest = created_utc if oldest is None else min(oldest, created_utc)
-                    self._reddit_add_arctic_comment(comment)
-
-                if oldest is None or oldest < floor_ts or len(data) < params["limit"]:
-                    break
-                before = oldest - 1
-                time.sleep(0.25)
-
         for subreddit in dedicated_subreddits:
             page_posts(
                 {
@@ -1940,14 +1924,6 @@ class Collector:
                     "limit": 100,
                 },
                 page_limit=12,
-            )
-            page_comments(
-                {
-                    "subreddit": subreddit,
-                    "after": floor_date.isoformat(),
-                    "limit": 100,
-                },
-                page_limit=16,
             )
 
         for subreddit in search_subreddits:
