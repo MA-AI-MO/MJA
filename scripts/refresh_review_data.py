@@ -4,6 +4,7 @@ import subprocess
 import sys
 from datetime import date, timedelta
 from pathlib import Path
+from urllib.parse import urlparse
 
 
 BASE_DIR = Path(__file__).resolve().parents[1]
@@ -77,6 +78,37 @@ def review_count_for(relative_path: str) -> int:
     return int((payload.get("meta") or {}).get("review_count") or 0)
 
 
+def is_reddit_comment_reference(source_website: str, source_url: str, review_text: str = "") -> bool:
+    if str(source_website or "").strip().lower() != "reddit.com":
+        return False
+    text = str(review_text or "")
+    if "Thread context:" in text:
+        return True
+    try:
+        parsed = urlparse(str(source_url or "").strip())
+        parts = [part for part in (parsed.path or "").split("/") if part]
+    except Exception:
+        return False
+    return len(parts) >= 6 and len(parts) > 2 and parts[0].lower() == "r" and parts[2].lower() == "comments"
+
+
+def is_intentionally_excluded_review(row: dict) -> bool:
+    source_website = str(row.get("source_website") or "").strip().lower()
+    if source_website == "pissedconsumer.com":
+        return True
+    return is_reddit_comment_reference(
+        source_website,
+        row.get("source_url"),
+        row.get("review_text"),
+    )
+
+
+def allowed_baseline_review_count(relative_path: str) -> int:
+    payload = json.loads((BASE_DIR / relative_path).read_text(encoding="utf-8"))
+    reviews = payload.get("reviews") or []
+    return sum(1 for row in reviews if not is_intentionally_excluded_review(row))
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description="Refresh review data for all configured businesses through the last completed month."
@@ -100,7 +132,7 @@ def main() -> None:
     business_order = config_payload.get("business_order") or list(config_payload["businesses"].keys())
     baselines = load_baseline_outputs(config_payload)
     baseline_counts = {
-        business_key: review_count_for(f"data/{config_payload['businesses'][business_key]['output_json']}")
+        business_key: allowed_baseline_review_count(f"data/{config_payload['businesses'][business_key]['output_json']}")
         for business_key in business_order
         if (BASE_DIR / f"data/{config_payload['businesses'][business_key]['output_json']}").exists()
     }
