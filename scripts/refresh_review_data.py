@@ -4,7 +4,6 @@ import subprocess
 import sys
 from datetime import date, timedelta
 from pathlib import Path
-from urllib.parse import urlparse
 
 
 BASE_DIR = Path(__file__).resolve().parents[1]
@@ -78,27 +77,19 @@ def review_count_for(relative_path: str) -> int:
     return int((payload.get("meta") or {}).get("review_count") or 0)
 
 
-def is_reddit_comment_reference(source_website: str, source_url: str, review_text: str = "") -> bool:
+def is_context_enriched_reddit_comment(source_website: str, review_text: str = "") -> bool:
     if str(source_website or "").strip().lower() != "reddit.com":
         return False
     text = str(review_text or "")
-    if "Thread context:" in text:
-        return True
-    try:
-        parsed = urlparse(str(source_url or "").strip())
-        parts = [part for part in (parsed.path or "").split("/") if part]
-    except Exception:
-        return False
-    return len(parts) >= 6 and len(parts) > 2 and parts[0].lower() == "r" and parts[2].lower() == "comments"
+    return "Thread context:" in text
 
 
 def is_intentionally_excluded_review(row: dict) -> bool:
     source_website = str(row.get("source_website") or "").strip().lower()
     if source_website == "pissedconsumer.com":
         return True
-    return is_reddit_comment_reference(
+    return is_context_enriched_reddit_comment(
         source_website,
-        row.get("source_url"),
         row.get("review_text"),
     )
 

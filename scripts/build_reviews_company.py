@@ -191,6 +191,8 @@ COMPANY_CONTEXT_TERMS = BASE_CONTEXT_TERMS | {
 BASE_OFFTOPIC_TERMS = {
     "stock", "share price", "ticker", "cprt", "earnings call", "quarterly earnings",
     "investor", "market cap", "dividend", "trading", "options chain",
+    "i'm building an ai platform", "building an ai platform", "ai platform specifically",
+    "save hours and hundreds", "analyses vehicle damage",
 }
 OFFTOPIC_TERMS = BASE_OFFTOPIC_TERMS | {
     term.lower() for term in BUSINESS_SETTINGS.get("offtopic_terms", [])
@@ -255,6 +257,13 @@ def is_reddit_comment_reference(source_website: str, source_url: str, review_tex
     return len(parts) >= 6 and len(parts) > 2 and parts[0].lower() == "r" and parts[2].lower() == "comments"
 
 
+def is_context_enriched_reddit_comment(source_website: str, review_text: str = "") -> bool:
+    return (
+        str(source_website or "").strip().lower() == "reddit.com"
+        and "Thread context:" in str(review_text or "")
+    )
+
+
 class Collector:
     def __init__(self, target: int, since: str, until: str | None, max_output: int):
         self.target = max(0, int(target))
@@ -307,9 +316,11 @@ class Collector:
             clean_row = dict(row)
             if str(clean_row.get("source_website") or "").strip().lower() == "pissedconsumer.com":
                 continue
-            if is_reddit_comment_reference(
+            review_text = f" {str(clean_row.get('review_text') or '').lower()} "
+            if any(self._term_in_text(term, review_text) for term in OFFTOPIC_TERMS):
+                continue
+            if is_context_enriched_reddit_comment(
                 clean_row.get("source_website"),
-                clean_row.get("source_url"),
                 clean_row.get("review_text"),
             ):
                 continue
@@ -630,6 +641,77 @@ class Collector:
             return False
         lbl = str(source_label or "").lower()
         return any(f"r/{subreddit.lower()}" in lbl for subreddit in REDDIT_SUBREDDITS)
+
+    def is_reddit_comment_review_candidate(self, body: str, source_label: str, source_url: str = "") -> bool:
+        text = self.normalize_text(body)
+        lowered = f" {text.lower()} "
+        if not text or lowered.strip() in {"[deleted]", "[removed]"}:
+            return False
+        if self.word_count(text) < 8:
+            return False
+        if any(term in lowered for term in OFFTOPIC_TERMS):
+            return False
+
+        generic_reply_patterns = [
+            r"^\W*(same|same here|me too|following|subscribed|this|yes|no|yep|nope|thanks|thank you|good luck|lol|lmao)\W*$",
+            r"^\W*(call|email|ask|contact) (them|support|customer service)\W*$",
+            r"^\W*(try|just) (calling|emailing|contacting) (them|support|customer service)\W*$",
+        ]
+        if any(re.search(pattern, lowered.strip()) for pattern in generic_reply_patterns):
+            return False
+
+        dedicated_subreddit = self.is_copart_subreddit("reddit.com", source_label)
+        has_company_in_body = self.mentions_company(lowered)
+        if not has_company_in_body and not dedicated_subreddit:
+            return False
+        if not dedicated_subreddit and COMPANY_KEY not in {"copart", "iaa"}:
+            return False
+
+        has_context = any(self._term_in_text(term, lowered) for term in COMPANY_CONTEXT_TERMS)
+        first_person_or_case = bool(re.search(
+            r"\b(i|i'm|ive|i've|my|me|we|we're|weve|we've|our|customer|buyer|seller|dealer|member|account)\b",
+            lowered,
+        ))
+
+        strong_operational_signal_terms = {
+            "bought", "buying", "won", "bid", "bidding", "paid", "payment", "charged",
+            "fee", "fees", "refund", "deposit", "title", "paperwork", "listing", "lot",
+            "damage", "damaged", "condition", "misrepresented", "pickup", "pick up",
+            "picked up", "delivery", "delivered", "transport", "tow", "storage", "yard",
+            "gate pass", "membership", "license", "account", "login", "app", "support",
+            "customer service", "representative", "agent", "arbitration", "invoice",
+            "condition report", "inspection report", "auctionaccess", "if sale", "simulcast",
+            "green light", "seller guard", "autocheck",
+        }
+        broad_only_signal_terms = strong_operational_signal_terms | {
+            "seller", "buyer", "dealer", "auction", "vehicle", "car", "truck",
+        }
+
+        if dedicated_subreddit:
+            has_operational_signal = any(self._term_in_text(term, lowered) for term in broad_only_signal_terms)
+            if not (has_context and has_operational_signal and (first_person_or_case or has_company_in_body)):
+                return False
+            return self.is_copart_relevant("reddit.com", source_label, text)
+
+        # Broad Reddit searches are noisy for names like Manheim/Openlane/ACV, so a comment
+        # must describe a concrete auction-company interaction, not merely mention a place,
+        # stock ticker, software project, or general car-shopping advice.
+        has_strong_operational_signal = any(self._term_in_text(term, lowered) for term in strong_operational_signal_terms)
+        strong_company_phrase = any(
+            len(re.findall(r"[a-z0-9']+", term)) > 1 and self._term_in_text(term, lowered)
+            for term in COMPANY_TERMS
+        )
+        configured_context_phrase = any(
+            self._term_in_text(term, lowered)
+            for term in BUSINESS_SETTINGS.get("context_terms", [])
+            if len(re.findall(r"[a-z0-9']+", str(term))) > 1
+        )
+        if COMPANY_KEY != "copart" and not (strong_company_phrase or configured_context_phrase or has_strong_operational_signal):
+            return False
+        if not (has_context and has_strong_operational_signal and first_person_or_case):
+            return False
+
+        return self.is_copart_relevant("reddit.com", source_label, text)
 
     @staticmethod
     def _term_in_text(term: str, haystack: str) -> bool:
@@ -1136,7 +1218,7 @@ class Collector:
         print("[collect] YouTube comments: skipped (text-only mode)")
 
     def collect_reddit_pullpush(self):
-        print("[collect] Reddit (PullPush submissions only)")
+        print("[collect] Reddit (PullPush submissions and body-only comments)")
         reddit_floor_date = self.source_floor_date("reddit.com", overlap_days=45)
         reddit_since_ts = int(datetime(reddit_floor_date.year, reddit_floor_date.month, reddit_floor_date.day, tzinfo=timezone.utc).timestamp())
 
@@ -1176,9 +1258,12 @@ class Collector:
                 min_ts = None
                 reached_since_boundary = False
                 for row in data:
+                    source_label = f"Reddit r/{row.get('subreddit','unknown')}"
                     if endpoint == "comment":
                         body = self.normalize_text(row.get("body"))
                         if not body or body in {"[deleted]", "[removed]"}:
+                            continue
+                        if not self.is_reddit_comment_review_candidate(body, source_label, row.get("permalink") or ""):
                             continue
                         text = body
                         rid = f"c_{row.get('id','')}"
@@ -1213,7 +1298,7 @@ class Collector:
 
                     self.add_review(
                         source_website="reddit.com",
-                        source_label=f"Reddit r/{row.get('subreddit','unknown')}",
+                        source_label=source_label,
                         source_url=full_url,
                         author=row.get("author") or "reddit_user",
                         review_date=parse_ts(created_utc if created_utc is not None else created_utc_raw),
@@ -1263,9 +1348,12 @@ class Collector:
                 min_ts = None
                 reached_since_boundary = False
                 for row in data:
+                    source_label = f"Reddit r/{subreddit}"
                     if endpoint == "comment":
                         body = self.normalize_text(row.get("body"))
                         if not body or body in {"[deleted]", "[removed]"}:
+                            continue
+                        if not self.is_reddit_comment_review_candidate(body, source_label, row.get("permalink") or ""):
                             continue
                         text = body
                         rid = f"c_{row.get('id','')}"
@@ -1297,7 +1385,7 @@ class Collector:
 
                     self.add_review(
                         source_website="reddit.com",
-                        source_label=f"Reddit r/{subreddit}",
+                        source_label=source_label,
                         source_url=full_url,
                         author=row.get("author") or "reddit_user",
                         review_date=parse_ts(created_utc if created_utc is not None else created_utc_raw),
@@ -1316,10 +1404,12 @@ class Collector:
                     break
                 time.sleep(0.15)
 
-        for query, _comment_limit, submission_limit in REDDIT_QUERIES:
+        for query, comment_limit, submission_limit in REDDIT_QUERIES:
+            fetch("comment", query, page_limit=comment_limit)
             fetch("submission", query, page_limit=submission_limit)
 
         for subreddit in REDDIT_SUBREDDITS:
+            fetch_subreddit("comment", subreddit, page_limit=220)
             fetch_subreddit("submission", subreddit, page_limit=140)
 
     @staticmethod
@@ -1653,9 +1743,6 @@ class Collector:
         if not isinstance(payload, list) or len(payload) < 2:
             return 0
 
-        post_title = self.normalize_text(post.get("title"))
-        post_selftext = self.normalize_text(post.get("selftext"))
-        post_context = self.normalize_text(f"Thread context: {post_title} {post_selftext[:700]}")
         source_label = f"Reddit r/{post.get('subreddit', 'unknown')}"
         added = 0
 
@@ -1663,13 +1750,14 @@ class Collector:
             body = self.normalize_text(comment.get("body"))
             if not body or body in {"[deleted]", "[removed]"}:
                 continue
+            if not self.is_reddit_comment_review_candidate(body, source_label, comment.get("permalink") or comments_url):
+                continue
             created_date = self._reddit_date(comment.get("created_utc"))
             if created_date and created_date < self.source_floor_date("reddit.com", overlap_days=45):
                 continue
 
             permalink = comment.get("permalink") or ""
             source_url = f"https://www.reddit.com{permalink}" if permalink.startswith("/") else comments_url
-            enriched_text = self.normalize_text(f"{body} {post_context}")
 
             added += int(self.add_review(
                 source_website="reddit.com",
@@ -1678,7 +1766,7 @@ class Collector:
                 author=comment.get("author") or "reddit_user",
                 review_date=created_date.isoformat() if created_date else "1970-01-01",
                 rating=None,
-                review_text=enriched_text,
+                review_text=body,
                 external_id=f"reddit_json_comment_{comment.get('id', '')}",
             ))
 
@@ -1851,23 +1939,19 @@ class Collector:
         else:
             source_url = "https://www.reddit.com"
 
-        link_id = str(comment.get("link_id") or "").strip().lower()
-        post_id = link_id[3:] if link_id.startswith("t3_") else link_id
-        context = self.reddit_post_context_cache.get(post_id) or {}
-        title = self.normalize_text(context.get("title"))
-        selftext = self.normalize_text(context.get("selftext"))
-        context_text = self.normalize_text(f"Thread context: {title} {selftext[:700]}")
-        enriched_text = self.normalize_text(f"{body} {context_text}")
+        source_label = f"Reddit r/{subreddit}"
+        if not self.is_reddit_comment_review_candidate(body, source_label, source_url):
+            return False
 
         comment_id = str(comment.get("id") or "").strip()
         return self.add_review(
             source_website="reddit.com",
-            source_label=f"Reddit r/{subreddit}",
+            source_label=source_label,
             source_url=source_url,
             author=comment.get("author") or "reddit_user",
             review_date=created_date.isoformat() if created_date else "1970-01-01",
             rating=None,
-            review_text=enriched_text,
+            review_text=body,
             external_id=f"reddit_arctic_comment_{comment_id}",
         )
 
@@ -1916,6 +2000,38 @@ class Collector:
                 before = oldest - 1
                 time.sleep(0.25)
 
+        def page_comments(base_params: dict, page_limit: int):
+            before = None
+            for _page in range(max(1, page_limit)):
+                params = dict(base_params)
+                params["limit"] = min(int(params.get("limit") or 50), 100)
+                params["sort"] = "desc"
+                if before is not None:
+                    params["before"] = before
+                payload = self.arctic_shift_json_get(
+                    "https://arctic-shift.photon-reddit.com/api/comments/search",
+                    params=params,
+                )
+                data = (payload or {}).get("data") or []
+                if not data:
+                    break
+
+                oldest = None
+                for comment in data:
+                    created_utc = comment.get("created_utc")
+                    try:
+                        created_utc = int(float(created_utc))
+                    except Exception:
+                        created_utc = None
+                    if created_utc is not None:
+                        oldest = created_utc if oldest is None else min(oldest, created_utc)
+                    self._reddit_add_arctic_comment(comment)
+
+                if oldest is None or oldest < floor_ts or len(data) < params["limit"]:
+                    break
+                before = oldest - 1
+                time.sleep(0.25)
+
         for subreddit in dedicated_subreddits:
             page_posts(
                 {
@@ -1924,6 +2040,14 @@ class Collector:
                     "limit": 100,
                 },
                 page_limit=12,
+            )
+            page_comments(
+                {
+                    "subreddit": subreddit,
+                    "after": floor_date.isoformat(),
+                    "limit": 100,
+                },
+                page_limit=16,
             )
 
         for subreddit in search_subreddits:
@@ -1936,6 +2060,15 @@ class Collector:
                         "limit": 50,
                     },
                     page_limit=6,
+                )
+                page_comments(
+                    {
+                        "subreddit": subreddit,
+                        "query": query,
+                        "after": floor_date.isoformat(),
+                        "limit": 50,
+                    },
+                    page_limit=4,
                 )
 
     def collect_trustpilot(self):

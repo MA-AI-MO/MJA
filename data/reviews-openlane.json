@@ -1,28 +1,29 @@
 {
   "meta": {
     "description": "Large-scale English-only OPENLANE textual review/problem dataset from public web sources (recency-first).",
-    "review_count": 336,
+    "review_count": 367,
     "source_counts": {
+      "play.google.com": 197,
+      "apps.apple.com": 111,
       "trustpilot.com": 38,
-      "apps.apple.com": 99,
-      "play.google.com": 184,
+      "reddit.com": 5,
       "bbb.org": 13,
-      "birdeye.com": 2
+      "birdeye.com": 3
     },
     "source_audit": [
       {
         "source_website": "reddit.com",
-        "review_count": 0,
-        "present": false
+        "review_count": 5,
+        "present": true
       },
       {
         "source_website": "play.google.com",
-        "review_count": 184,
+        "review_count": 197,
         "present": true
       },
       {
         "source_website": "apps.apple.com",
-        "review_count": 99,
+        "review_count": 111,
         "present": true
       },
       {
@@ -42,63 +43,73 @@
       },
       {
         "source_website": "birdeye.com",
-        "review_count": 2,
+        "review_count": 3,
         "present": true
       }
     ],
     "sentiments": {
-      "positive": 35,
-      "negative": 301
+      "positive": 43,
+      "negative": 324
     },
     "source_urls": [
+      "https://play.google.com/store/apps/details?id=com.backlotcars.backlotcars&hl=en&gl=us",
+      "https://apps.apple.com/us/app/id6753570460?see-all=reviews&platform=iphone&reviewId=13989857472",
+      "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
+      "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=ru&gl=us",
       "https://www.trustpilot.com/reviews/69cab5f9745c84e1f851508c",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=13904699397",
-      "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=13882169321",
       "https://www.trustpilot.com/reviews/69c1b306f7cb6b04721276cd",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=13867642123",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=13866440339",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=13864324880",
+      "https://apps.apple.com/us/app/id1566419386?see-all=reviews&platform=iphone&reviewId=13864324880",
       "https://www.trustpilot.com/reviews/69bae914bd8c26ac0a7c73a1",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=13863106027",
       "https://www.trustpilot.com/reviews/69b97a444a7ebc35c5d2fb34",
       "https://www.trustpilot.com/reviews/69b865cff9cb2ad0cfb1b6ad",
-      "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
       "https://www.trustpilot.com/reviews/69ad3b180e197c46dd288603",
       "https://itunes.apple.com/us/review?id=1175036411&type=Purple%20Software&reviewId=13814539868",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=13813441636",
       "https://www.trustpilot.com/reviews/69a0e8624c2da3d7c264a1a1",
-      "https://play.google.com/store/apps/details?id=com.backlotcars.backlotcars&hl=en&gl=us",
       "https://www.trustpilot.com/reviews/698ca11b1037ed03fea51464",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=13731085350",
       "https://www.trustpilot.com/reviews/69834e7b02913aa3868a4851",
       "https://www.trustpilot.com/reviews/698343ebef2d2b3bd1fb318e",
       "https://apps.apple.com/us/app/id6753570460?see-all=reviews&platform=iphone&reviewId=13688958648",
+      "https://itunes.apple.com/us/review?id=6753570460&type=Purple%20Software&reviewId=13688958648",
       "https://www.trustpilot.com/reviews/697a723f0c735ece73aa83d1",
       "https://www.trustpilot.com/reviews/697a449ebf115ad4ce9a5a1f",
       "https://itunes.apple.com/us/review?id=1175036411&type=Purple%20Software&reviewId=13658784706",
       "https://apps.apple.com/us/app/id1186571028?see-all=reviews&platform=iphone&reviewId=13652961253",
       "https://www.trustpilot.com/reviews/696d5441118bd96038dc7cb9",
+      "https://www.reddit.com/r/askcarsales/comments/1qgepli/what_am_i_doing_wrong/",
       "https://www.trustpilot.com/reviews/695d9dcef8448d57fec17e03",
       "https://www.trustpilot.com/reviews/695017c62bb32b76496817fd",
+      "https://www.reddit.com/r/askcarsales/comments/1px326o/openlane_web_scrape/",
       "https://www.trustpilot.com/reviews/694c661eb4281e996fe09654",
+      "https://apps.apple.com/us/app/id6753570460?see-all=reviews&platform=iphone&reviewId=13526214223",
       "https://itunes.apple.com/us/review?id=1175036411&type=Purple%20Software&reviewId=13526208369",
       "https://itunes.apple.com/us/review?id=6753570460&type=Purple%20Software&reviewId=13526214223",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=13480052730",
       "https://www.trustpilot.com/reviews/6930aa4fd0469ba31dd92e76",
       "https://www.trustpilot.com/reviews/692a6093f7c381696c97f1d3",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=13425217460",
+      "https://apps.apple.com/us/app/id6753570460?see-all=reviews&platform=iphone&reviewId=13422347988",
       "https://itunes.apple.com/us/review?id=6753570460&type=Purple%20Software&reviewId=13422347988",
       "https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/customer-reviews#0382_90024496_117178",
       "https://www.trustpilot.com/reviews/690cd8c5d8606a086080c7c7",
       "https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/complaints#0382_90024496_24112034",
       "https://www.trustpilot.com/reviews/68f8f2f20432471b2684e708",
       "https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/complaints#0382_90024496_24045899",
+      "https://www.reddit.com/r/askcarsales/comments/1nwnk7t/openlane_acv_vs_inperson/",
       "https://itunes.apple.com/us/review?id=1186571028&type=Purple%20Software&reviewId=13215003125",
+      "https://apps.apple.com/us/app/id1186571028?see-all=reviews&platform=iphone&reviewId=13215003125",
+      "https://reviews.birdeye.com/openlane-166516131772584#review-5",
       "https://itunes.apple.com/us/review?id=1186571028&type=Purple%20Software&reviewId=13197986339",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=13171180867",
       "https://www.trustpilot.com/reviews/68cf021c4d19bb095b5206c4",
-      "https://reviews.birdeye.com/openlane-166516131772584#review-5",
       "https://reviews.birdeye.com/openlane-166516131772584?page=2#review-5",
       "https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/complaints#0382_90024496_23904597",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=13146398478",
@@ -137,20 +148,22 @@
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=12380780795",
       "https://itunes.apple.com/us/review?id=1175036411&type=Purple%20Software&reviewId=12370785699",
       "https://www.trustpilot.com/reviews/67ae7e93c18b90aade6a478a",
-      "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=ru&gl=us",
       "https://itunes.apple.com/us/review?id=1175036411&type=Purple%20Software&reviewId=12295455568",
       "https://www.trustpilot.com/reviews/67917cefc6be2b27ae2c6313",
       "https://itunes.apple.com/us/review?id=1175036411&type=Purple%20Software&reviewId=12199031988",
       "https://www.trustpilot.com/reviews/677d98eb96afb9673604d1df",
       "https://itunes.apple.com/us/review?id=1175036411&type=Purple%20Software&reviewId=12113196103",
+      "https://apps.apple.com/us/app/id1175036411?see-all=reviews&platform=iphone&reviewId=12113196103",
       "https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/complaints#0382_90024496_22712003",
       "https://www.trustpilot.com/reviews/6763376b6448eca887cded2e",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=12053042360",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=12051979162",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=11936543776",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=11833737967",
+      "https://www.reddit.com/r/UsedCars/comments/1g0xxl8/dealers_take_a_look_at_this_dealer_auction/",
       "https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/complaints#0382_90024496_22388217",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=11798026593",
+      "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=11797056266",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=11783355610",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=11699309984",
       "https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/complaints#0382_90024496_22219270",
@@ -161,6 +174,7 @@
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=11498128536",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=11366298115",
       "https://itunes.apple.com/us/review?id=1186571028&type=Purple%20Software&reviewId=11351671975",
+      "https://apps.apple.com/us/app/id1186571028?see-all=reviews&platform=iphone&reviewId=11351671975",
       "https://itunes.apple.com/us/review?id=1175036411&type=Purple%20Software&reviewId=11278676228",
       "https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/customer-reviews#0382_90024496_98975",
       "https://itunes.apple.com/us/review?id=1186571028&type=Purple%20Software&reviewId=11241497980",
@@ -184,6 +198,7 @@
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=10574182975",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=10497922983",
       "https://itunes.apple.com/us/review?id=1175036411&type=Purple%20Software&reviewId=10431965730",
+      "https://apps.apple.com/us/app/id1175036411?see-all=reviews&platform=iphone&reviewId=10431965730",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=10421074649",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=10417203558",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=10412191510",
@@ -191,6 +206,7 @@
       "https://itunes.apple.com/us/review?id=1186571028&type=Purple%20Software&reviewId=10273650041",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=10234779509",
       "https://itunes.apple.com/us/review?id=1175036411&type=Purple%20Software&reviewId=10111705815",
+      "https://www.reddit.com/r/kijiji/comments/14h7km4/openlaneadesa/",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=10056851285",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=10056812142",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=10056230652",
@@ -200,6 +216,7 @@
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=9995018356",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=9981336875",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=9973933920",
+      "https://apps.apple.com/us/app/id1566419386?see-all=reviews&platform=iphone&reviewId=9973933920",
       "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=es&gl=us",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=9944373097",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=9943172117",
@@ -208,12 +225,15 @@
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=9852324984",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=9808917580",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=9641434260",
-      "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=9619929878"
+      "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=9619929878",
+      "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=9601714155"
     ],
-    "generated_at_utc": "2026-04-17T14:29:33.721907+00:00",
+    "generated_at_utc": "2026-04-26T01:43:15.890909+00:00",
     "since_date": "2023-01-01",
-    "until_date": "2026-03-31",
+    "until_date": "2026-04-25",
     "collector_failures": [],
+    "existing_review_count": 336,
+    "new_reviews_added": 31,
     "youtube_excluded": true,
     "usa_only": true,
     "english_only": true,
@@ -232,24 +252,167 @@
       "bbb.org"
     ],
     "geo_validation_counts": {
-      "google_play_us_store": 184,
-      "trustpilot_us_slug": 38,
-      "bbb_us_business": 13,
-      "birdeye_us_profile": 2,
-      "apple_us_store": 99
+      "google_play_us_store": 13,
+      "mixed_source_ok": 5,
+      "birdeye_us_profile": 1,
+      "apple_us_store": 12
     },
     "geo_excluded_counts": {
-      "trustpilot.com:trustpilot_us_slug_non_us_marker": 1,
+      "reddit.com:mixed_source_non_us_marker": 19,
       "apps.apple.com:apple_non_us_store": 8
     },
     "geo_excluded_examples": [
       {
-        "source_website": "trustpilot.com",
-        "source_label": "Trustpilot (openlane.com)",
-        "source_url": "https://www.trustpilot.com/reviews/687f8f0a95c626e61fc3677d",
-        "review_date": "2025-07-22",
-        "reason": "trustpilot_us_slug_non_us_marker",
-        "review_text": "Openlane code of ethics for dealers…. Openlane code of ethics for dealers stipulates that all known problems with a vehicle must be disclaimed even if it's minor. Purchased a truck and upon leaving the compound it wouldn't shift out of firs"
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/NovaScotia",
+        "source_url": "https://www.reddit.com/r/NovaScotia/comments/1hkgvt8/dealers_license_for_openlane/",
+        "review_date": "2024-12-23",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Dealer’s license for OPENLANE Hi, I live in Chester, NS, Canada. I’m looking for someone with a dealer’s license to bid on a couple cars at the OPENLANE Auction near the airport. I’ll pay you a fee of $500 per car."
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/BMW",
+        "source_url": "https://www.reddit.com/r/BMW/comments/1fryfv7/x5_45e_phev_battery_warranty/",
+        "review_date": "2024-09-29",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "X5 45e PHEV battery warranty Hello, Do you know how BMW offers the PHEV battery warranty? I have the following case: buying a x5 45e, 2021, 32.000km, from openlane, no extra warranty added to the VIN, made for Germany, serviced in Germany a"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/askcarsales",
+        "source_url": "https://www.reddit.com/r/askcarsales/comments/1e4k7x7/anyone_willing_to_give_me_access_to_openlane/",
+        "review_date": "2024-07-16",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Anyone willing to give me access to OPENLANE Canada or send me screenshots? [removed]"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/askcarsales",
+        "source_url": "https://www.reddit.com/r/askcarsales/comments/18x4ck5/best_way_to_acquire_inventory/",
+        "review_date": "2024-01-02",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Best way to acquire inventory? Hi! I have a small lot with dealers license in Ontario, Canada. Basically I pay fk all beside the insurance &amp; looking for flip some cars, looking to start with 5 cars (10-15k value each) I signed up with a"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Netherlands",
+        "source_url": "https://www.reddit.com/r/Netherlands/comments/18vwvvk/opening_an_account_on_adesa_openlane/",
+        "review_date": "2024-01-01",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Opening an account on Adesa / Openlane Hello everyone, &amp;#x200B; I am interested in opening an account on Openlane ( former Adesa ) as I would like to start a business in the Netherlands buying/selling cars. I was curious to see what kin"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/NovaScotia",
+        "source_url": "https://www.reddit.com/r/NovaScotia/comments/1hkgvt8/dealers_license_for_openlane/",
+        "review_date": "2024-12-23",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Dealer’s license for OPENLANE Hi, I live in Chester, NS, Canada. I’m looking for someone with a dealer’s license to bid on a couple cars at the OPENLANE Auction near the airport. I’ll pay you a fee of $500 per car."
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/askcarsales",
+        "source_url": "https://www.reddit.com/r/askcarsales/comments/18x4ck5/best_way_to_acquire_inventory/",
+        "review_date": "2024-01-02",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Best way to acquire inventory? Hi! I have a small lot with dealers license in Ontario, Canada. Basically I pay fk all beside the insurance &amp; looking for flip some cars, looking to start with 5 cars (10-15k value each) I signed up with a"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/askcarsales",
+        "source_url": "https://www.reddit.com/r/askcarsales/comments/18x4ck5/best_way_to_acquire_inventory/",
+        "review_date": "2024-01-02",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Best way to acquire inventory? Hi! I have a small lot with dealers license in Ontario, Canada. Basically I pay fk all beside the insurance &amp; looking for flip some cars, looking to start with 5 cars (10-15k value each) I signed up with a"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/askcarsales",
+        "source_url": "https://www.reddit.com/r/askcarsales/comments/1hid1em/bmw_lease_termination/",
+        "review_date": "2024-12-20",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "BMW Lease Termination Hi guys, I had a vehicle with BMW Canada, and due to reasons beyond me, I had a few missed payments (which I wasn't aware of) and they seized my vehicle without notice. Now I am working with them and the car is with Op"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/askcarsales",
+        "source_url": "https://www.reddit.com/r/askcarsales/comments/1f7iw1y/lexus_purchase_advice_appreciated/",
+        "review_date": "2024-09-02",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Lexus purchase - advice appreciated Keen on buying a Lexus UX 250H. Help please! Been on the look for a new car for quite some time, looking for a Lexus/Toyota. Finally, it seems like I’ve found my dream second hand car- I’ve found a Lexus "
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/askcarsales",
+        "source_url": "https://www.reddit.com/r/askcarsales/comments/1e4k7x7/anyone_willing_to_give_me_access_to_openlane/",
+        "review_date": "2024-07-16",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Anyone willing to give me access to OPENLANE Canada or send me screenshots? [removed]"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/askcarsales",
+        "source_url": "https://www.reddit.com/r/askcarsales/comments/1cu45tz/dealership_auction_tools_canada/",
+        "review_date": "2024-05-17",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Dealership Auction Tools - Canada Hi all, Interesting in the Canadian automotive industry and would love the opinion of those who have insight here. When comparing inventory sourcing tools/options it seems Openlane Canada (Adesa / Trade rev"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/askcarsales",
+        "source_url": "https://www.reddit.com/r/askcarsales/comments/1bz17n4/can_i_sign_up_on_auctionaccess_as_a_foreigner/",
+        "review_date": "2024-04-08",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Can I sign up on AuctionAccess as a foreigner? As a foreigner, I am a dealer in Romania, but I would like to sign up on AuctionAccess to be able to register on OpenLane. Is this possible? I don't see any rules for restricting the website to"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/askcarsales",
+        "source_url": "https://www.reddit.com/r/askcarsales/comments/18x4ck5/best_way_to_acquire_inventory/",
+        "review_date": "2024-01-02",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Best way to acquire inventory? Hi! I have a small lot with dealers license in Ontario, Canada. Basically I pay fk all beside the insurance & looking for flip some cars, looking to start with 5 cars (10-15k value each) I signed up with all t"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/askcarsales",
+        "source_url": "https://www.reddit.com/r/askcarsales/comments/1hid1em/bmw_lease_termination/",
+        "review_date": "2024-12-20",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "BMW Lease Termination Hi guys, I had a vehicle with BMW Canada, and due to reasons beyond me, I had a few missed payments (which I wasn't aware of) and they seized my vehicle without notice. Now I am working with them and the car is with Op"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/askcarsales",
+        "source_url": "https://www.reddit.com/r/askcarsales/comments/1f7iw1y/lexus_purchase_advice_appreciated/",
+        "review_date": "2024-09-02",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Lexus purchase - advice appreciated Keen on buying a Lexus UX 250H. Help please! Been on the look for a new car for quite some time, looking for a Lexus/Toyota. Finally, it seems like I’ve found my dream second hand car- I’ve found a Lexus "
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/askcarsales",
+        "source_url": "https://www.reddit.com/r/askcarsales/comments/1cu45tz/dealership_auction_tools_canada/",
+        "review_date": "2024-05-17",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Dealership Auction Tools - Canada Hi all, Interesting in the Canadian automotive industry and would love the opinion of those who have insight here. When comparing inventory sourcing tools/options it seems Openlane Canada (Adesa / Trade rev"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/askcarsales",
+        "source_url": "https://www.reddit.com/r/askcarsales/comments/18x4ck5/best_way_to_acquire_inventory/",
+        "review_date": "2024-01-02",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Best way to acquire inventory? Hi! I have a small lot with dealers license in Ontario, Canada. Basically I pay fk all beside the insurance & looking for flip some cars, looking to start with 5 cars (10-15k value each) I signed up with all t"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/askcarsales",
+        "source_url": "https://www.reddit.com/r/askcarsales/comments/1bz17n4/can_i_sign_up_on_auctionaccess_as_a_foreigner/",
+        "review_date": "2024-04-08",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Can I sign up on AuctionAccess as a foreigner? As a foreigner, I am a dealer in Romania, but I would like to sign up on AuctionAccess to be able to register on OpenLane. Is this possible? I don't see any rules for restricting the website to"
       },
       {
         "source_website": "apps.apple.com",
@@ -258,68 +421,13 @@
         "review_date": "2025-12-30",
         "reason": "apple_non_us_store",
         "review_text": "This app sucks. The stupid app never submits the inspections and you have to do them four times before they submit, half the time I end up having to call the shipper and have them manually approve it because this app is so horribly designed"
-      },
-      {
-        "source_website": "apps.apple.com",
-        "source_label": "Apple App Store (1566419386, ca)",
-        "source_url": "https://itunes.apple.com/ca/review?id=1566419386&type=Purple%20Software&reviewId=13121509849",
-        "review_date": "2025-09-10",
-        "reason": "apple_non_us_store",
-        "review_text": "1 star. Takes more time to fill out this app then load the vehicles"
-      },
-      {
-        "source_website": "apps.apple.com",
-        "source_label": "Apple App Store (1566419386, ca)",
-        "source_url": "https://itunes.apple.com/ca/review?id=1566419386&type=Purple%20Software&reviewId=13010291542",
-        "review_date": "2025-08-13",
-        "reason": "apple_non_us_store",
-        "review_text": "Terrible. Out of all the apps I deal with I don’t like this one at all! not good at all slow very slow , have to put the same information in about 15 times before it loads up into it system literally takes forever and is time consuming . Co"
-      },
-      {
-        "source_website": "apps.apple.com",
-        "source_label": "Apple App Store (1566419386, ca)",
-        "source_url": "https://itunes.apple.com/ca/review?id=1566419386&type=Purple%20Software&reviewId=12820183789",
-        "review_date": "2025-06-26",
-        "reason": "apple_non_us_store",
-        "review_text": "Waste. It’s just a total waste of time and has no use adds to much to time to the job at hand"
-      },
-      {
-        "source_website": "apps.apple.com",
-        "source_label": "Apple App Store (1566419386, ca)",
-        "source_url": "https://apps.apple.com/ca/app/id1566419386?see-all=reviews&platform=iphone&reviewId=13572954510",
-        "review_date": "2025-12-30",
-        "reason": "apple_non_us_store",
-        "review_text": "This app sucks. The stupid app never submits the inspections and you have to do them four times before they submit, half the time I end up having to call the shipper and have them manually approve it because this app is so horribly designed"
-      },
-      {
-        "source_website": "apps.apple.com",
-        "source_label": "Apple App Store (1566419386, ca)",
-        "source_url": "https://apps.apple.com/ca/app/id1566419386?see-all=reviews&platform=iphone&reviewId=13121509849",
-        "review_date": "2025-09-10",
-        "reason": "apple_non_us_store",
-        "review_text": "1 star. Takes more time to fill out this app then load the vehicles"
-      },
-      {
-        "source_website": "apps.apple.com",
-        "source_label": "Apple App Store (1566419386, ca)",
-        "source_url": "https://apps.apple.com/ca/app/id1566419386?see-all=reviews&platform=iphone&reviewId=13010291542",
-        "review_date": "2025-08-13",
-        "reason": "apple_non_us_store",
-        "review_text": "Terrible. Out of all the apps I deal with I don’t like this one at all! not good at all slow very slow , have to put the same information in about 15 times before it loads up into it system literally takes forever and is time consuming . Co"
-      },
-      {
-        "source_website": "apps.apple.com",
-        "source_label": "Apple App Store (1566419386, ca)",
-        "source_url": "https://apps.apple.com/ca/app/id1566419386?see-all=reviews&platform=iphone&reviewId=12820183789",
-        "review_date": "2025-06-26",
-        "reason": "apple_non_us_store",
-        "review_text": "Waste. It’s just a total waste of time and has no use adds to much to time to the job at hand"
       }
     ],
     "active_collectors": [
       "google_play",
       "trustpilot",
       "reddit_pullpush",
+      "reddit_arctic_shift",
       "bbb_customer_reviews",
       "bbb_complaints",
       "smartcustomer",
@@ -328,6 +436,216 @@
     ]
   },
   "reviews": [
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.backlotcars.backlotcars)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.backlotcars.backlotcars&hl=en&gl=us",
+      "author": "Scott Guell",
+      "review_date": "2026-04-23",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Great app! Travis helped out a ton!",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000337"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (6753570460, us)",
+      "source_url": "https://apps.apple.com/us/app/id6753570460?see-all=reviews&platform=iphone&reviewId=13989857472",
+      "author": "josemono912",
+      "review_date": "2026-04-23",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Autohawk was better. I used to use the android version of this app that was discontinued and never had this amount of issues",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000338"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.nthgensoftware.traderev.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
+      "author": "Erik Blaney",
+      "review_date": "2026-04-19",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Slow Slow and Slow- super glitchy update",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000339"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "kegan palozola",
+      "review_date": "2026-04-15",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "lags, won't load, annoying process to log in, glitchs terribly. Wish my company didn't use it.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000340"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "Lay",
+      "review_date": "2026-04-14",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "app functionality is terrible , constantly freezing and logging you out , makes transporters jobs harder",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000341"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "Tom Pryor",
+      "review_date": "2026-04-10",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "worst app I have used",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000342"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "Michael Polk",
+      "review_date": "2026-04-09",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "app crashes entirely too much",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000343"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "Roman C",
+      "review_date": "2026-04-08",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "App freezes all the time. Most times it will not load. please fix it",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000344"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "Charlie Davis",
+      "review_date": "2026-04-08",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "don't like the app nothing but problems. constantly freezing up while taking the pictures and keeps being hard to get into.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000345"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=ru&gl=us",
+      "author": "Nugo Tapie",
+      "review_date": "2026-04-08",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Terrible app. It works with constant lag, awkward software, and constant problems when logging into your account. Take a cue from Super Dispatch",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000346"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "Walter Temples",
+      "review_date": "2026-04-06",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "needs a lot of work. continuously freezing up and taking too much time to do inspections.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Third-Party Inspection Authorization & Scheduling",
+      "tier3": "Previewing/ Inspecting Vehicles",
+      "id": "rvw-000347"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.nthgensoftware.traderev.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
+      "author": "Sergio Silva",
+      "review_date": "2026-04-03",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Update 2026-04-03: Keep pushing the users away! One more reason to use eblock. Another update/revamp, another feature gone. Can no longer share vehicle info with customers unless one pays another $699/month subscription. Update 2023-06-27: Perhaps not surprising, corporate greed strikes again. Market research, which was a great feature of the Traderev app, is now a $149/month \"service\" on top of the usual buy/sell fees. Way to go Adesa!",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-000348"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "Bryan Albayeros",
+      "review_date": "2026-04-03",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "bad app! i have to sig in every day",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000349"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "TOW-INCDIRECT",
+      "review_date": "2026-04-02",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "great app easy access pretty straightforward..",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000350"
+    },
     {
       "id": "rvw-000001",
       "source_website": "trustpilot.com",
@@ -537,6 +855,21 @@
       "tier1": "Customer Service & Communication",
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (1566419386, us)",
+      "source_url": "https://apps.apple.com/us/app/id1566419386?see-all=reviews&platform=iphone&reviewId=13864324880",
+      "author": "Fastronaught",
+      "review_date": "2026-03-19",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Unfriendly. This app is very restrictive for the user. Pictures are forced sizes, I need to stand out in the middle of the road to fit a car in it. If you have a car by itself in the middle of a vacant parking lot you'd be ok, but not with any traffic or real life situations (bushes, walls, other cars, guardrails) It constantly closes out and makes you sign back in again time and time again. You can't just leave it running in the background and pull it up easily to retrieve a contact number to call while operating your truck. If you lose signal bc you're in a remote area the gps location to retrieve the release slip won't come up The order in which you must take photos during inspection makes you get in and out of the vehicle multiple times which adds time to each car delivered/picked up and if it's inop needing to jump the vehicle multiple times if it can't stay running Also the load board of vehicles assigned becomes confusing due to a slide scroll lists rather than a typical listed view. It shows me potential pickups I would never get rather than the ones already assigned",
+      "geo_validation": "apple_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-000351"
     },
     {
       "id": "rvw-000015",
@@ -884,6 +1217,21 @@
       "tier3": "App Login Troubleshooting"
     },
     {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (6753570460, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=6753570460&type=Purple%20Software&reviewId=13688958648",
+      "author": "Tim C Henderson",
+      "review_date": "2026-01-29",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "A waste of. This app was obviously designed by people who know nothing about automobiles and have never imaged a car in their life. The flow is ridiculous. At one point, you pick up your paint gauge, put it down and pick up your tire gauge, put it down pick back up your paint gauge and on and on. The people that approved this app after it was designed should have recognized the dysfunction and corrected it but my guess is they were in a rush or incompetent. The saddest part is that this information has been passed upstairs but nothing has been done. I guess important people can’t admit their mistakes.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000352"
+    },
+    {
       "id": "rvw-000038",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (openlane.com)",
@@ -957,6 +1305,21 @@
       "tier1": "Customer Service & Communication",
       "tier2": "Support Access & Response Time",
       "tier3": "Delayed Email/Phone Response"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1qgepli/what_am_i_doing_wrong/",
+      "author": "rybab007",
+      "review_date": "2026-01-18",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "What am I doing wrong? I’m 48 years old. I’ve been doing used car sales/service since the mid 90’s, working for my father’s business. ..He recently sold the service business, retired and I took over the sales side of the business. I’ve been at it for 2 years, on my own. I have a nice sized lot in a busy suburb of Cincinnati, 2 doors down from where our original store was located. I keep about 25-35 cars in inventory. I have roughly $10K in monthly expenses, a couple employees, a couple floor plans, a couple lenders and I do sell some service contracts when I can. I have an older salesman working for me (helps buy and sell). He is very experienced but is very old school…he simply will not send emails, phone calls only. And he doesn’t really do much that I can’t already do. I will likely fire him this week. I have another guy working part time, helping w social media marketing. I am absolutely struggling to see any real gross lately! I buy nice clean cars ($8000- $24000 average sale price). Im selling maybe 10-15 cars a month but am only seeing $600-$1000 gross/unit, if you factor in the losers. And that’s the problem, the amount of losers is getting more and more as time goes on. Most of the cars on my lot have been here for 90 plus days, some even 200 plus days. These are all huge losers. Most units come from Manheim/adesa/openlane, 4.0 CR’s or better…nice clean cars..but still end up costing me $1000 plus in recon. Hell, Lately I’ve been sending almost half the units back to auction for arbitration. By the time I get a buyer, there just isn’t any skin left on the bone, and my customers don’t want it unless I’m discounting even further. It’s getting to be too hard of a game to play. I haven’t paid myself since August. I’m considering getting out of the business but this is literally all I’ve done, my whole life. Is there an obvious solution here, that I’m blind to? Any tips or ideas would be greatly appreciated. I’m happy to post specific expenses etc.. Also, I do not own the building. I share rent with a service center, who does most of our repairs.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000353"
     },
     {
       "id": "rvw-000043",
@@ -1064,6 +1427,21 @@
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1px326o/openlane_web_scrape/",
+      "author": "jupyterpeak",
+      "review_date": "2025-12-27",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "openlane web scrape has anyone tried to web scrape openlane? just generally curious. i'm pretty dissapointed in their portal and i think combining their data with other dealerships could be super helpful",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000354"
+    },
+    {
       "id": "rvw-000050",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (openlane.com)",
@@ -1092,6 +1470,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (6753570460, us)",
+      "source_url": "https://apps.apple.com/us/app/id6753570460?see-all=reviews&platform=iphone&reviewId=13526214223",
+      "author": "iAppmore",
+      "review_date": "2025-12-18",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Full of bugs and crashes randomly. The app crashes upon startup and I must repeat the login procedure many times, if it somehow remains running long enough to do some work it will unexpectedly crash and delete all the previous work. The user interface is complicated and glitchy. The app is full of bugs and needs a major overhaul",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000355"
     },
     {
       "id": "rvw-000052",
@@ -1242,6 +1635,21 @@
       "tier1": "Lot Condition, Listing Status and related",
       "tier2": "Third-Party Inspection Authorization & Scheduling",
       "tier3": "Previewing/ Inspecting Vehicles"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (6753570460, us)",
+      "source_url": "https://apps.apple.com/us/app/id6753570460?see-all=reviews&platform=iphone&reviewId=13422347988",
+      "author": "Adventuregamingvital",
+      "review_date": "2025-11-21",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "Need major update. I believe the app needs a big update and bug fix. Every time I open the app and try logging in it instantly closes the app and have to go back to the app. Does it a few times before it becomes stable to stay in the app. Once closing the app it logs you out instantly which will be a big problem if someone accidentally exits of the app and would have to sign back in. I’m not sure if other people are experiencing the same issue. Maybe in the next month or two it improves",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000356"
     },
     {
       "id": "rvw-000062",
@@ -1454,6 +1862,21 @@
       "tier3": "Rude/Unhelpful Support"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1nwnk7t/openlane_acv_vs_inperson/",
+      "author": "mfunktastic",
+      "review_date": "2025-10-03",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Openlane, ACV vs in-person Doing some research on Openlane, ACV vs in-person auctions from both seller and buyer perspective. I wanted to see if anyone here has any strong views / experiences one way or another? Greatly appreciate any help.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)",
+      "id": "rvw-000357"
+    },
+    {
       "id": "rvw-000076",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.nthgensoftware.traderev.android)",
@@ -1499,6 +1922,21 @@
       "tier3": "App Login Troubleshooting"
     },
     {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (1186571028, us)",
+      "source_url": "https://apps.apple.com/us/app/id1186571028?see-all=reviews&platform=iphone&reviewId=13215003125",
+      "author": "Danish31567",
+      "review_date": "2025-10-02",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Very buggy too many screens. App glitches and crashes all the time. Has too many screens to complete even basic task. Pop up notifications while in app linger way too long and it won’t let you swipe them away. App forces you to entered same info repeatedly if you minimize app or open different app. Bluetooth connectivity hit or miss",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000358"
+    },
+    {
       "id": "rvw-000079",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.nthgensoftware.traderev.android)",
@@ -1512,6 +1950,21 @@
       "tier1": "Customer Service & Communication",
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/openlane-166516131772584#review-5",
+      "author": "Tamer Helal",
+      "review_date": "2025-09-28",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "The best Auction I’ve ever used to buy cars. Super easy to use, the inspiration is accurate. Also my Rep. Favi Montes is so helpful and very easy to work with. So responsive and she calls sellers to negotiate with them to get me the best deal, I really recommend Openlane to any dealership.",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000359"
     },
     {
       "id": "rvw-000080",
@@ -2594,6 +3047,21 @@
       "tier3": "Rude/Unhelpful Support"
     },
     {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (1175036411, us)",
+      "source_url": "https://apps.apple.com/us/app/id1175036411?see-all=reviews&platform=iphone&reviewId=12113196103",
+      "author": "tsiparlana",
+      "review_date": "2024-12-27",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "App issues. They just can not get the filters to work right. So many functions on the app that used to work, no longer work. I constantly have to reapply the filters to get them to work. The more features they add, the worse the functionality gets. Absolutely hate absolute sale. Wait for days for seller response, only for cars to get run up in absolute sale. Only benefits sellers",
+      "geo_validation": "apple_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-000360"
+    },
+    {
       "id": "rvw-000152",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
@@ -2834,6 +3302,21 @@
       "tier3": "App Login Troubleshooting"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/UsedCars",
+      "source_url": "https://www.reddit.com/r/UsedCars/comments/1g0xxl8/dealers_take_a_look_at_this_dealer_auction/",
+      "author": "gg19197",
+      "review_date": "2024-10-11",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Dealers, take a look at this dealer auction😂😂 I own a small dealership and was looking to purchase this 2007 Lexus RX I saw on openlane. I just sold the same car last week which was a 2008, and driven about 10k miles less. Before auction fee I paid $8400, about $9k after fees (manheim). I had my top bid set for this 2007 at $7900, after fees and recon I would be around $8500 on it, hoping to retail it for around $10,500. I was top bid for $7400, take a look at the sellers counter offer. 😂😂 Why do franchise dealers want retail prices at a wholesale dealer only auction?? Go sell it yourself if you want retail for it. I really don't understand this one, he is literally asking for retail.",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-000361"
+    },
+    {
       "id": "rvw-000168",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.nthgensoftware.traderev.android)",
@@ -2877,6 +3360,21 @@
       "tier1": "Lot Condition, Listing Status and related",
       "tier2": "Third-Party Inspection Authorization & Scheduling",
       "tier3": "Previewing/ Inspecting Vehicles"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (1566419386, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=11797056266",
+      "author": "Chug1966",
+      "review_date": "2024-10-04",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Awful. Awful worst app out there hard to navigate super dispatch is the best",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000362"
     },
     {
       "id": "rvw-000171",
@@ -3252,6 +3750,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (1186571028, us)",
+      "source_url": "https://apps.apple.com/us/app/id1186571028?see-all=reviews&platform=iphone&reviewId=11351671975",
+      "author": "Lynneelardo",
+      "review_date": "2024-06-06",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Lagging. I sometimes have to hit the circle button to take a picture 10 to 20 times before it will take a picture!!! The app constantly seems like it’s lagging and freezing or it will just close out. I literally went and got a brand new 15 Pro Max because I thought something was wrong with my phone. I should’ve known better it’s this app. This app is horrible.. slows work down terribly. Also dim your phone, so the pictures you take are so dark you can barely see what they look like. I could just go on and on and on with the amount of issues. The AI pictures are just so off. It’s ridiculous. It won’t even take a picture if the sun is out. Please do better and fix these issues",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000363"
     },
     {
       "id": "rvw-000196",
@@ -4004,6 +4517,21 @@
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (1175036411, us)",
+      "source_url": "https://apps.apple.com/us/app/id1175036411?see-all=reviews&platform=iphone&reviewId=10431965730",
+      "author": "Gmes85",
+      "review_date": "2023-10-02",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "They don’t fulfill their obligations.. I bought the car, and the inspection report had no issues were pointed out that I later encountered, such as a falling off bumper and a hood that doesn’t close properly. They denied me the warranty, even though I paid for it. When a mechanic started looking into the car issue deeply, it turned out that the entire front part of the car was misaligned and needed adjustment",
+      "geo_validation": "apple_us_store",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Third-Party Inspection Authorization & Scheduling",
+      "tier3": "Previewing/ Inspecting Vehicles",
+      "id": "rvw-000364"
+    },
+    {
       "id": "rvw-000246",
       "source_website": "apps.apple.com",
       "source_label": "Apple App Store (1566419386, us)",
@@ -4634,6 +5162,21 @@
       "tier3": "App Login Troubleshooting"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/kijiji",
+      "source_url": "https://www.reddit.com/r/kijiji/comments/14h7km4/openlaneadesa/",
+      "author": "wh314n",
+      "review_date": "2023-06-23",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Openlane/Adesa I recently put up an add to sell a motorcycle and was contacted by openlane, a company that will auction my bike for me. I confirmed I can set a reserve price so there's really no down side. I have a hard time believing this is legit. Has anyone used them before or know anything about them?",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000365"
+    },
+    {
       "id": "rvw-000288",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.nthgensoftware.traderev.android)",
@@ -4827,6 +5370,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (1566419386, us)",
+      "source_url": "https://apps.apple.com/us/app/id1566419386?see-all=reviews&platform=iphone&reviewId=9973933920",
+      "author": "WakeBoarder_PR",
+      "review_date": "2023-05-28",
+      "rating": 3,
+      "sentiment": "positive",
+      "review_text": "Thanks for adding the flashlight.. UPDATE: I previously stated that I was going to change the rate from 1 star to 3 stars if the flashlight was added. Now I can add a total of 4 stars if this request is met: Do not force us to input the full VIN #. Some vehicles do not have the VIN bar codes. If we input the last 4 digits is enough to prove we are scanning the correct vehicle. And finally to make the app 5 stars: Add the vehicle year make and model or at least the last 4 of the VIN on the first page where all loads are visible. What's visible is the load ID and we the drivers are not seeing a load ID in front of us, what we see is a vehicle with color, year, make, model and VIN #. It is very annoying having to tap on each single load ID to see if the vehicle you want to scan is that load ID, if that's not it then I we have to go back and try the next load ID. But if the VIN is visible instead of the load ID then we can find it by scrolling instead of entering on each one of the loads. Thanks",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000366"
     },
     {
       "id": "rvw-000301",
@@ -5277,6 +5835,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (1566419386, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=9601714155",
+      "author": "93chipper",
+      "review_date": "2023-02-09",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Aaron. Doesn’t scan gm vins with qr code requires 17 digits for vin, cannot scan vin numbers at night because the flashlight is not activated and cannot be activated 1 dispatch is 1,000 times better than this app",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000367"
     },
     {
       "id": "rvw-000331",

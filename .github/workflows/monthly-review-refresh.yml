@@ -9,14 +9,6 @@ on:
       until:
         description: "End date in YYYY-MM-DD format"
         required: false
-  push:
-    branches:
-      - main
-    paths:
-      - scripts/**
-      - data/businesses.json
-      - requirements.txt
-      - .github/workflows/monthly-review-refresh.yml
   schedule:
     - cron: "17 9 2 * *"
 

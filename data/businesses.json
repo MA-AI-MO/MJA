@@ -722,6 +722,19 @@
         "openlane europe",
         "openlane uk"
       ],
+      "offtopic_terms": [
+        "verilog",
+        "yosys",
+        "skywater",
+        "pdk",
+        "sta report",
+        "rtl",
+        "parasitic",
+        "parasitics",
+        "signoff folder",
+        "open source tools",
+        "ece student"
+      ],
       "reddit_queries": [
         [
           "openlane",
