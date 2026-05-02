@@ -1,13 +1,13 @@
 {
   "meta": {
     "description": "Large-scale English-only ACV textual review/problem dataset from public web sources (recency-first).",
-    "review_count": 130,
+    "review_count": 140,
     "source_counts": {
-      "birdeye.com": 15,
+      "birdeye.com": 23,
       "trustpilot.com": 13,
       "apps.apple.com": 74,
       "bbb.org": 3,
-      "play.google.com": 24,
+      "play.google.com": 26,
       "reddit.com": 1
     },
     "source_audit": [
@@ -18,7 +18,7 @@
       },
       {
         "source_website": "play.google.com",
-        "review_count": 24,
+        "review_count": 26,
         "present": true
       },
       {
@@ -43,13 +43,13 @@
       },
       {
         "source_website": "birdeye.com",
-        "review_count": 15,
+        "review_count": 23,
         "present": true
       }
     ],
     "sentiments": {
-      "positive": 51,
-      "negative": 79
+      "positive": 53,
+      "negative": 87
     },
     "source_urls": [
       "https://reviews.birdeye.com/acv-auctions-164822889606828#review-1",
@@ -155,12 +155,12 @@
       "https://www.reddit.com/r/askcarsales/comments/10gc18q/new_buyer_here_did_i_make_a_mistake/",
       "https://itunes.apple.com/us/review?id=969808943&type=Purple%20Software&reviewId=9493843564"
     ],
-    "generated_at_utc": "2026-04-26T01:45:35.342080+00:00",
+    "generated_at_utc": "2026-05-02T10:28:31.849220+00:00",
     "since_date": "2023-01-01",
-    "until_date": "2026-04-25",
+    "until_date": "2026-04-30",
     "collector_failures": [],
-    "existing_review_count": 116,
-    "new_reviews_added": 14,
+    "existing_review_count": 130,
+    "new_reviews_added": 10,
     "youtube_excluded": true,
     "usa_only": true,
     "english_only": true,
@@ -179,9 +179,8 @@
       "bbb.org"
     ],
     "geo_validation_counts": {
-      "mixed_source_ok": 1,
-      "birdeye_us_profile": 8,
-      "apple_us_store": 5
+      "google_play_us_store": 2,
+      "birdeye_us_profile": 8
     },
     "geo_excluded_counts": {},
     "geo_excluded_examples": [],
@@ -212,6 +211,21 @@
       "tier2": "Third-Party Inspection Authorization & Scheduling",
       "tier3": "Previewing/ Inspecting Vehicles",
       "id": "rvw-000117"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Birdeye)",
+      "source_url": "https://reviews.birdeye.com/acv-auctions-164822889606828#review-1",
+      "author": "Anthony E.",
+      "review_date": "2026-04-11",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "ACV is a scam auction plain and simple. The condition report does not matter to them. over the last year we have bought 40 plus vehicles from them. Green light sales mean nothing to them. This last one was a nightmare. Bought a 2020 Altima on green light when we received the vehicle, we noticed both passenger wheels were worn unevenly and tilted inward at the top. upon further inspection it was determined through a certified mechanic that vehicle had suffered a severe collision on passenger side bending and breaking multiple... read more",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Third-Party Inspection Authorization & Scheduling",
+      "tier3": "Previewing/ Inspecting Vehicles",
+      "id": "rvw-000131"
     },
     {
       "id": "rvw-000001",
@@ -379,6 +393,21 @@
       "tier3": "App Login Troubleshooting"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.acvauctions.acvauctions)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.acvauctions.acvauctions&hl=en&gl=us",
+      "author": "Alex",
+      "review_date": "2025-12-31",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "after update cant bid says bid failed please fix!",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Auction Eligibility & Licensing",
+      "tier3": "Unable to Bid",
+      "id": "rvw-000132"
+    },
+    {
       "id": "rvw-000011",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.acvauctions.acvauctions)",
@@ -497,6 +526,21 @@
       "tier1": "Membership / Licensing / Fees & Bidding Policies",
       "tier2": "Bidding Process, Rules and Fees",
       "tier3": "Fees"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.acvauctions.acvauctions)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.acvauctions.acvauctions&hl=en&gl=us",
+      "author": "Jason Heil",
+      "review_date": "2025-10-25",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "absolutely the worst auction platform you want to do business with. arbitration mainly what a absolute joke.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-000133"
     },
     {
       "id": "rvw-000019",
@@ -698,6 +742,21 @@
       "source_label": "Birdeye (Birdeye)",
       "source_url": "https://reviews.birdeye.com/acv-auctions-164822889606828#review-4",
       "author": "Gustavo C.",
+      "review_date": "2025-07-06",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "BE VERY CAREFUL!!!!! Dis-honest auction. Bought green light, was sold car with odometer fraud (proven) and a bad motor. Loss of 6K. They did NOTHING to help[!!!!!!",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-000134"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Birdeye)",
+      "source_url": "https://reviews.birdeye.com/acv-auctions-164822889606828#review-4",
+      "author": "Gustavo C.",
       "review_date": "2025-06-30",
       "rating": null,
       "sentiment": "negative",
@@ -767,6 +826,21 @@
       "tier1": "Lot Condition, Listing Status and related",
       "tier2": "Third-Party Inspection Authorization & Scheduling",
       "tier3": "Previewing/ Inspecting Vehicles"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Birdeye)",
+      "source_url": "https://reviews.birdeye.com/acv-auctions-164822889606828#review-6",
+      "author": "Ben V.",
+      "review_date": "2025-06-06",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "I am working with ACV and especially with my account manager Dan Dickinson for last 2 years and i cant say enough good things about the support and help i have received from them. Dan has made my job a breeze. He is the one of the best at the ACV Auction , He is always on top of Everything. We appreciate ACV and Dan very much. They have been the cornerstone of our business.",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000135"
     },
     {
       "id": "rvw-000036",
@@ -842,6 +916,66 @@
       "tier2": "Delivery Coordination & Handoffs",
       "tier3": "Delivery Status and ETA",
       "id": "rvw-000121"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Birdeye)",
+      "source_url": "https://reviews.birdeye.com/acv-auctions-164822889606828#review-9",
+      "author": "Gary D.",
+      "review_date": "2025-05-02",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "customer service is outstanding. Travis Mueller could not be more helpful in assisting me with the purchase of 2 vehicles yesterday. Negotiations were smooth as silk.",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000136"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Birdeye)",
+      "source_url": "https://reviews.birdeye.com/acv-auctions-164822889606828?page=2#review-1",
+      "author": "Frank L.",
+      "review_date": "2025-05-02",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Absolutely Horrible, I have never left a negative review about anyone in my life but ACV finally pushed me to the point where I must. There was a Facebook group that had hundreds of bad reviews on this site but I chose to ignore it at now my own peril. They are unethical and I have been burned one to many times with this auction. They have zero ethics and my dealership is done doing business here.",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-000137"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Birdeye)",
+      "source_url": "https://reviews.birdeye.com/acv-auctions-164822889606828?page=2#review-2",
+      "author": "Alex Auto S.",
+      "review_date": "2025-05-02",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "ACV is a joke, crook and sell junk. When you do the arbitration they do NOT stand behind their vehicles. We have referred multiple friends to ACV and will contact them to no longer deal with ACV. I have a feeling ACV won't last much longer. Don't waste time and purchase anything from them ever.",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-000138"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Birdeye)",
+      "source_url": "https://reviews.birdeye.com/acv-auctions-164822889606828?page=2#review-3",
+      "author": "Tom",
+      "review_date": "2025-05-02",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "I have never been as pissed off from any auction like I am right now with ACV. It seems that eveyday they seem to get worse then then week before! I will lay out some issues that we have faced and hopefully this reaches someone that cares, because I have been asking for a higher up to pass along the issues, and so far nothing. We bought a car from them in Jan, and we sold it soon after. The new buyer found out it was reported stolen, we notified ACV. We obviously unwound the deal and notified ACV. 7 months have gone by ... read more",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-000139"
     },
     {
       "source_website": "birdeye.com",
@@ -1697,6 +1831,21 @@
       "tier1": "Lot Condition, Listing Status and related",
       "tier2": "Third-Party Inspection Authorization & Scheduling",
       "tier3": "Previewing/ Inspecting Vehicles"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Birdeye)",
+      "source_url": "https://reviews.birdeye.com/acv-auctions-164822889606828?page=2#review-4",
+      "author": "Tom B.",
+      "review_date": "2024-05-02",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Their condition report is a joke. They sell you a green light vehicle with a hidden issues and when you arbitrate it, you have to do your own diagnosis and provide them with the report which incur extra cost. At the end of the arbitration, they notify you that's it's not valid. Don't not trust their CRs, Beware!!!",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-000140"
     },
     {
       "id": "rvw-000088",

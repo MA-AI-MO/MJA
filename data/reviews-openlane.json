@@ -1,14 +1,14 @@
 {
   "meta": {
     "description": "Large-scale English-only OPENLANE textual review/problem dataset from public web sources (recency-first).",
-    "review_count": 367,
+    "review_count": 411,
     "source_counts": {
-      "play.google.com": 197,
-      "apps.apple.com": 111,
+      "play.google.com": 238,
+      "apps.apple.com": 113,
       "trustpilot.com": 38,
       "reddit.com": 5,
       "bbb.org": 13,
-      "birdeye.com": 3
+      "birdeye.com": 4
     },
     "source_audit": [
       {
@@ -18,12 +18,12 @@
       },
       {
         "source_website": "play.google.com",
-        "review_count": 197,
+        "review_count": 238,
         "present": true
       },
       {
         "source_website": "apps.apple.com",
-        "review_count": 111,
+        "review_count": 113,
         "present": true
       },
       {
@@ -43,18 +43,20 @@
       },
       {
         "source_website": "birdeye.com",
-        "review_count": 3,
+        "review_count": 4,
         "present": true
       }
     ],
     "sentiments": {
-      "positive": 43,
-      "negative": 324
+      "positive": 46,
+      "negative": 365
     },
     "source_urls": [
+      "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
+      "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=13995909544",
       "https://play.google.com/store/apps/details?id=com.backlotcars.backlotcars&hl=en&gl=us",
       "https://apps.apple.com/us/app/id6753570460?see-all=reviews&platform=iphone&reviewId=13989857472",
-      "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
+      "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=13986755298",
       "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
       "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=ru&gl=us",
       "https://www.trustpilot.com/reviews/69cab5f9745c84e1f851508c",
@@ -228,12 +230,12 @@
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=9619929878",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=9601714155"
     ],
-    "generated_at_utc": "2026-04-26T01:43:15.890909+00:00",
+    "generated_at_utc": "2026-05-02T10:26:04.300415+00:00",
     "since_date": "2023-01-01",
-    "until_date": "2026-04-25",
+    "until_date": "2026-04-30",
     "collector_failures": [],
-    "existing_review_count": 336,
-    "new_reviews_added": 31,
+    "existing_review_count": 367,
+    "new_reviews_added": 44,
     "youtube_excluded": true,
     "usa_only": true,
     "english_only": true,
@@ -252,13 +254,12 @@
       "bbb.org"
     ],
     "geo_validation_counts": {
-      "google_play_us_store": 13,
-      "mixed_source_ok": 5,
+      "google_play_us_store": 41,
       "birdeye_us_profile": 1,
-      "apple_us_store": 12
+      "apple_us_store": 2
     },
     "geo_excluded_counts": {
-      "reddit.com:mixed_source_non_us_marker": 19,
+      "reddit.com:mixed_source_non_us_marker": 6,
       "apps.apple.com:apple_non_us_store": 8
     },
     "geo_excluded_examples": [
@@ -288,22 +289,6 @@
       },
       {
         "source_website": "reddit.com",
-        "source_label": "Reddit r/askcarsales",
-        "source_url": "https://www.reddit.com/r/askcarsales/comments/18x4ck5/best_way_to_acquire_inventory/",
-        "review_date": "2024-01-02",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Best way to acquire inventory? Hi! I have a small lot with dealers license in Ontario, Canada. Basically I pay fk all beside the insurance &amp; looking for flip some cars, looking to start with 5 cars (10-15k value each) I signed up with a"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/Netherlands",
-        "source_url": "https://www.reddit.com/r/Netherlands/comments/18vwvvk/opening_an_account_on_adesa_openlane/",
-        "review_date": "2024-01-01",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Opening an account on Adesa / Openlane Hello everyone, &amp;#x200B; I am interested in opening an account on Openlane ( former Adesa ) as I would like to start a business in the Netherlands buying/selling cars. I was curious to see what kin"
-      },
-      {
-        "source_website": "reddit.com",
         "source_label": "Reddit r/NovaScotia",
         "source_url": "https://www.reddit.com/r/NovaScotia/comments/1hkgvt8/dealers_license_for_openlane/",
         "review_date": "2024-12-23",
@@ -327,100 +312,68 @@
         "review_text": "Best way to acquire inventory? Hi! I have a small lot with dealers license in Ontario, Canada. Basically I pay fk all beside the insurance &amp; looking for flip some cars, looking to start with 5 cars (10-15k value each) I signed up with a"
       },
       {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/askcarsales",
-        "source_url": "https://www.reddit.com/r/askcarsales/comments/1hid1em/bmw_lease_termination/",
-        "review_date": "2024-12-20",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "BMW Lease Termination Hi guys, I had a vehicle with BMW Canada, and due to reasons beyond me, I had a few missed payments (which I wasn't aware of) and they seized my vehicle without notice. Now I am working with them and the car is with Op"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/askcarsales",
-        "source_url": "https://www.reddit.com/r/askcarsales/comments/1f7iw1y/lexus_purchase_advice_appreciated/",
-        "review_date": "2024-09-02",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Lexus purchase - advice appreciated Keen on buying a Lexus UX 250H. Help please! Been on the look for a new car for quite some time, looking for a Lexus/Toyota. Finally, it seems like I’ve found my dream second hand car- I’ve found a Lexus "
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/askcarsales",
-        "source_url": "https://www.reddit.com/r/askcarsales/comments/1e4k7x7/anyone_willing_to_give_me_access_to_openlane/",
-        "review_date": "2024-07-16",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Anyone willing to give me access to OPENLANE Canada or send me screenshots? [removed]"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/askcarsales",
-        "source_url": "https://www.reddit.com/r/askcarsales/comments/1cu45tz/dealership_auction_tools_canada/",
-        "review_date": "2024-05-17",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Dealership Auction Tools - Canada Hi all, Interesting in the Canadian automotive industry and would love the opinion of those who have insight here. When comparing inventory sourcing tools/options it seems Openlane Canada (Adesa / Trade rev"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/askcarsales",
-        "source_url": "https://www.reddit.com/r/askcarsales/comments/1bz17n4/can_i_sign_up_on_auctionaccess_as_a_foreigner/",
-        "review_date": "2024-04-08",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Can I sign up on AuctionAccess as a foreigner? As a foreigner, I am a dealer in Romania, but I would like to sign up on AuctionAccess to be able to register on OpenLane. Is this possible? I don't see any rules for restricting the website to"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/askcarsales",
-        "source_url": "https://www.reddit.com/r/askcarsales/comments/18x4ck5/best_way_to_acquire_inventory/",
-        "review_date": "2024-01-02",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Best way to acquire inventory? Hi! I have a small lot with dealers license in Ontario, Canada. Basically I pay fk all beside the insurance & looking for flip some cars, looking to start with 5 cars (10-15k value each) I signed up with all t"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/askcarsales",
-        "source_url": "https://www.reddit.com/r/askcarsales/comments/1hid1em/bmw_lease_termination/",
-        "review_date": "2024-12-20",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "BMW Lease Termination Hi guys, I had a vehicle with BMW Canada, and due to reasons beyond me, I had a few missed payments (which I wasn't aware of) and they seized my vehicle without notice. Now I am working with them and the car is with Op"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/askcarsales",
-        "source_url": "https://www.reddit.com/r/askcarsales/comments/1f7iw1y/lexus_purchase_advice_appreciated/",
-        "review_date": "2024-09-02",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Lexus purchase - advice appreciated Keen on buying a Lexus UX 250H. Help please! Been on the look for a new car for quite some time, looking for a Lexus/Toyota. Finally, it seems like I’ve found my dream second hand car- I’ve found a Lexus "
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/askcarsales",
-        "source_url": "https://www.reddit.com/r/askcarsales/comments/1cu45tz/dealership_auction_tools_canada/",
-        "review_date": "2024-05-17",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Dealership Auction Tools - Canada Hi all, Interesting in the Canadian automotive industry and would love the opinion of those who have insight here. When comparing inventory sourcing tools/options it seems Openlane Canada (Adesa / Trade rev"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/askcarsales",
-        "source_url": "https://www.reddit.com/r/askcarsales/comments/18x4ck5/best_way_to_acquire_inventory/",
-        "review_date": "2024-01-02",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Best way to acquire inventory? Hi! I have a small lot with dealers license in Ontario, Canada. Basically I pay fk all beside the insurance & looking for flip some cars, looking to start with 5 cars (10-15k value each) I signed up with all t"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/askcarsales",
-        "source_url": "https://www.reddit.com/r/askcarsales/comments/1bz17n4/can_i_sign_up_on_auctionaccess_as_a_foreigner/",
-        "review_date": "2024-04-08",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Can I sign up on AuctionAccess as a foreigner? As a foreigner, I am a dealer in Romania, but I would like to sign up on AuctionAccess to be able to register on OpenLane. Is this possible? I don't see any rules for restricting the website to"
-      },
-      {
         "source_website": "apps.apple.com",
         "source_label": "Apple App Store (1566419386, ca)",
         "source_url": "https://itunes.apple.com/ca/review?id=1566419386&type=Purple%20Software&reviewId=13572954510",
         "review_date": "2025-12-30",
         "reason": "apple_non_us_store",
         "review_text": "This app sucks. The stupid app never submits the inspections and you have to do them four times before they submit, half the time I end up having to call the shipper and have them manually approve it because this app is so horribly designed"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1566419386, ca)",
+        "source_url": "https://itunes.apple.com/ca/review?id=1566419386&type=Purple%20Software&reviewId=13121509849",
+        "review_date": "2025-09-10",
+        "reason": "apple_non_us_store",
+        "review_text": "1 star. Takes more time to fill out this app then load the vehicles"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1566419386, ca)",
+        "source_url": "https://itunes.apple.com/ca/review?id=1566419386&type=Purple%20Software&reviewId=13010291542",
+        "review_date": "2025-08-13",
+        "reason": "apple_non_us_store",
+        "review_text": "Terrible. Out of all the apps I deal with I don’t like this one at all! not good at all slow very slow , have to put the same information in about 15 times before it loads up into it system literally takes forever and is time consuming . Co"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1566419386, ca)",
+        "source_url": "https://itunes.apple.com/ca/review?id=1566419386&type=Purple%20Software&reviewId=12820183789",
+        "review_date": "2025-06-26",
+        "reason": "apple_non_us_store",
+        "review_text": "Waste. It’s just a total waste of time and has no use adds to much to time to the job at hand"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1566419386, ca)",
+        "source_url": "https://apps.apple.com/ca/app/id1566419386?see-all=reviews&platform=iphone&reviewId=13572954510",
+        "review_date": "2025-12-30",
+        "reason": "apple_non_us_store",
+        "review_text": "This app sucks. The stupid app never submits the inspections and you have to do them four times before they submit, half the time I end up having to call the shipper and have them manually approve it because this app is so horribly designed"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1566419386, ca)",
+        "source_url": "https://apps.apple.com/ca/app/id1566419386?see-all=reviews&platform=iphone&reviewId=13121509849",
+        "review_date": "2025-09-10",
+        "reason": "apple_non_us_store",
+        "review_text": "1 star. Takes more time to fill out this app then load the vehicles"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1566419386, ca)",
+        "source_url": "https://apps.apple.com/ca/app/id1566419386?see-all=reviews&platform=iphone&reviewId=13010291542",
+        "review_date": "2025-08-13",
+        "reason": "apple_non_us_store",
+        "review_text": "Terrible. Out of all the apps I deal with I don’t like this one at all! not good at all slow very slow , have to put the same information in about 15 times before it loads up into it system literally takes forever and is time consuming . Co"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1566419386, ca)",
+        "source_url": "https://apps.apple.com/ca/app/id1566419386?see-all=reviews&platform=iphone&reviewId=12820183789",
+        "review_date": "2025-06-26",
+        "reason": "apple_non_us_store",
+        "review_text": "Waste. It’s just a total waste of time and has no use adds to much to time to the job at hand"
       }
     ],
     "active_collectors": [
@@ -436,6 +389,51 @@
     ]
   },
   "reviews": [
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.nthgensoftware.traderev.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
+      "author": "Nin Bilg",
+      "review_date": "2026-04-27",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "The absolute worst app. Horrible to use...logging in is a pain...keeps sending you in loops. \"Remember Me\" function doesn't do anything. The search function is terrible and inaccurate...you can't even find cars that you know are there without playing tricks with the app. We have went from regular buying and selling to none at all because of how terrible this app is. Whoever designed this should be fired and never let near a computer again.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000368"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.nthgensoftware.traderev.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
+      "author": "Sahab",
+      "review_date": "2026-04-26",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "every time new update comes and gives more problems. its getting worse and worse. I don't know what they're doing with this app day by day",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000369"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (1566419386, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=13995909544",
+      "author": "Srjhgffdch",
+      "review_date": "2026-04-25",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Bad. It ask for password all the time it is annoying",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000370"
+    },
     {
       "source_website": "play.google.com",
       "source_label": "Google Play (com.backlotcars.backlotcars)",
@@ -465,6 +463,21 @@
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting",
       "id": "rvw-000338"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (1566419386, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=13986755298",
+      "author": "Keep improving 12",
+      "review_date": "2026-04-22",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Getting better. Getting worse. Freeze’s and crashes on every use. Glad I don’t have to call for BOL’s now. But Would like to know if it’s a repo without calling ahead first or accepting load first. Also because some repo companies only open certain days. Had one that only lets you pickup one day a week.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000371"
     },
     {
       "source_website": "play.google.com",
@@ -546,6 +559,21 @@
       "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
       "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
       "author": "Roman C",
+      "review_date": "2026-04-09",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "App freezes all the time. Most times it will not load. please fix it",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000372"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "Roman C",
       "review_date": "2026-04-08",
       "rating": 1,
       "sentiment": "negative",
@@ -600,6 +628,21 @@
       "tier2": "Third-Party Inspection Authorization & Scheduling",
       "tier3": "Previewing/ Inspecting Vehicles",
       "id": "rvw-000347"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.nthgensoftware.traderev.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
+      "author": "Sergio Silva",
+      "review_date": "2026-04-04",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Update 2026-04-03: Keep pushing the users away! One more reason to use eblock. Another update/revamp, another feature gone. Can no longer share vehicle info with customers unless one pays another $699/month subscription. Update 2023-06-27: Perhaps not surprising, corporate greed strikes again. Market research, which was a great feature of the Traderev app, is now a $149/month \"service\" on top of the usual buy/sell fees. Way to go Adesa!",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-000373"
     },
     {
       "source_website": "play.google.com",
@@ -735,6 +778,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "Adam Ford",
+      "review_date": "2026-03-22",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "This app crashes and constantly logs you out...absolutely ridiculous",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000374"
     },
     {
       "id": "rvw-000007",
@@ -1457,6 +1515,21 @@
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "Airbud d",
+      "review_date": "2025-12-22",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "needs improvement. each time I use it I have to log out and back in every time for the app to work properly.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000375"
+    },
+    {
       "id": "rvw-000051",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
@@ -1515,6 +1588,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "Nick Napalm",
+      "review_date": "2025-12-13",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "Annoying app, freezes/slows at times (especially when trying to take photos). Also when scanning the Vin, it comes back as wrong vehicle when the Vin definitely matches",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000376"
     },
     {
       "id": "rvw-000054",
@@ -1727,6 +1815,21 @@
       "tier3": "Lot Damage"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.backlotcars.backlotcars)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.backlotcars.backlotcars&hl=en&gl=us",
+      "author": "Omar J",
+      "review_date": "2025-11-04",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "new issue, it says theres over 900 cars but shows only 15 ! Also the app was running perfectly fine for years, until someone decided to think and turned everything for the worse. So when browsing through the car list, if you enter a car’s details and then return to the list, it automatically brings you back to the top of the list instead of where you left off. For the development department or personal, please don't think again because your update is bad and the app is way slower than before.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Delivery Coordination & Handoffs",
+      "tier3": "Delivery Status and ETA",
+      "id": "rvw-000377"
+    },
+    {
       "id": "rvw-000067",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.backlotcars.backlotcars)",
@@ -1755,6 +1858,21 @@
       "tier1": "Lot Condition, Listing Status and related",
       "tier2": "Third-Party Inspection Authorization & Scheduling",
       "tier3": "Previewing/ Inspecting Vehicles"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.nthgensoftware.traderev.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
+      "author": "Jaff W",
+      "review_date": "2025-10-22",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Total scams, this is one of the worst app ever made. the slowest most sluggish up of all times. The team behind this app is ******. The auction itself has become a total scam. From high buy fees to limited arbitration and arbitration fee for invalid arbs, and they decide whether it is valid or invalid. You have to pay a monthly fee and then and then they scam you with mandatory transport, which is absolutely a scam. A buyer should have the option to choose how to transport their own purchase.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-000378"
     },
     {
       "id": "rvw-000069",
@@ -1845,6 +1963,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.nthgensoftware.traderev.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
+      "author": "Brett Leggat",
+      "review_date": "2025-10-08",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "It's amazing. it's like with every app update it gets worse. Check the history of reviews. Same complaints for YEARS and openlane doesn't do anything about it. fire the whole app team and hire people with knowledge. also help center absolutely useless.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-000379"
     },
     {
       "id": "rvw-000075",
@@ -2117,6 +2250,21 @@
       "tier3": "Lot Damage"
     },
     {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/openlane-166516131772584#review-5",
+      "author": "Tamer Helal",
+      "review_date": "2025-09-04",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "The best Auction I’ve ever used to buy cars. Super easy to use, the inspiration is accurate. Also my Rep. Favi Montes is so helpful and very easy to work with. So responsive and she calls sellers to negotiate with them to get me the best deal, I really recommend Openlane to any dealership.",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000380"
+    },
+    {
       "id": "rvw-000090",
       "source_website": "apps.apple.com",
       "source_label": "Apple App Store (1566419386, us)",
@@ -2162,6 +2310,21 @@
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "Shelly Williams",
+      "review_date": "2025-08-12",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "you have to do too many security checks when already in the app. there's no way to document damage on rvs and boats",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Document Upload & Verification",
+      "tier3": "Upload Troubleshooting",
+      "id": "rvw-000381"
+    },
+    {
       "id": "rvw-000093",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
@@ -2190,6 +2353,21 @@
       "tier1": "Customer Service & Communication",
       "tier2": "Communication Follow-up & Escalation",
       "tier3": "No Callback / Unresolved Case"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.backlotcars.backlotcars)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.backlotcars.backlotcars&hl=en&gl=us",
+      "author": "ronald Lam",
+      "review_date": "2025-08-05",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "Too many bugs now it doesn't show transport cost only when I check out!! sometimes screen goes blank when going back to previous page..",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-000382"
     },
     {
       "id": "rvw-000095",
@@ -3137,6 +3315,21 @@
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.nthgensoftware.traderev.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
+      "author": "Raad Al-Husban",
+      "review_date": "2024-11-30",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Searches don't work most of the time. Bidding button doesn't work on active auctions (trade rev)",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-000383"
+    },
+    {
       "id": "rvw-000157",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.nthgensoftware.traderev.android)",
@@ -3240,6 +3433,21 @@
       "tier1": "Customer Service & Communication",
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "Rigo Rangel",
+      "review_date": "2024-10-25",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "i delivered a vehicle, I did the inspection, customer signed. and now it shows not delivered. 1/5",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Third-Party Inspection Authorization & Scheduling",
+      "tier3": "Previewing/ Inspecting Vehicles",
+      "id": "rvw-000384"
     },
     {
       "id": "rvw-000164",
@@ -3452,6 +3660,21 @@
       "tier3": "No Callback / Unresolved Case"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.nthgensoftware.traderev.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
+      "author": "Dinal Gunasekara",
+      "review_date": "2024-09-22",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "New openlane update is garbage. Selecting a filter crashes the app. Cannot share a trade since it just loads the openlane website for some reason. Very slow and I cannot access my filter notifications. Also 'research' feature is somehow now $149/month when it used to be free. Ruined a good service. Update: the app continues to be useless, custom filters still have so many issues and cause crashes. I never get notifications. The mobile site is even trash.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000385"
+    },
+    {
       "id": "rvw-000176",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.nthgensoftware.traderev.android)",
@@ -3465,6 +3688,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "Silas Rimmer",
+      "review_date": "2024-09-20",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Great app!!! very easy to use.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000386"
     },
     {
       "id": "rvw-000177",
@@ -3540,6 +3778,21 @@
       "tier1": "Customer Service & Communication",
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.nthgensoftware.traderev.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
+      "author": "Ahmed and Salma",
+      "review_date": "2024-08-29",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "horrible app. you have to keep Refreshing the page while using trade rev or you won't be notified when over bid on android. also many other issues and it keeps on getting worse.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000387"
     },
     {
       "id": "rvw-000182",
@@ -3632,6 +3885,21 @@
       "tier3": "Lot Damage"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "Rick Salido",
+      "review_date": "2024-07-15",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "app is slow, and doesn't always work well. it takes quite a bit of time to do this entire process and get every load checked in. Cars Arrive also uses another nemesis to us all called RMIS that is the biggest P.O.S on the planet. warning do not bother trying to call in, and if you do be prepared for a whole day ordeal. Anytime that I have had to call in for anything I have spent at least 8 hrs on hold and at most 11hrs:37 min. I use the app because I have to. otherwise I would not even touch it.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000388"
+    },
+    {
       "id": "rvw-000188",
       "source_website": "apps.apple.com",
       "source_label": "Apple App Store (1566419386, us)",
@@ -3662,6 +3930,21 @@
       "tier3": "App Login Troubleshooting"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.nthgensoftware.traderev.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
+      "author": "Kyle",
+      "review_date": "2024-07-09",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Absolutly terrible, notification stopped coming through, open lane support is not supportive or helpfull in any way. Dont have time to deal with this junk app while running a business, E-Block WAY better.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-000389"
+    },
+    {
       "id": "rvw-000190",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.nthgensoftware.traderev.android)",
@@ -3690,6 +3973,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.backlotcars.backlotcars)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.backlotcars.backlotcars&hl=en&gl=us",
+      "author": "Bret",
+      "review_date": "2024-07-03",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Search function no longer works in app",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000390"
     },
     {
       "id": "rvw-000192",
@@ -3932,6 +4230,21 @@
       "tier3": "App Login Troubleshooting"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "Jon Defelice",
+      "review_date": "2024-03-23",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "was working just fine with the downloaded version, a week later app made me do an update now I can't complete the delivery of my 3 cars.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000391"
+    },
+    {
       "id": "rvw-000207",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
@@ -4172,6 +4485,21 @@
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.nthgensoftware.traderev.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
+      "author": "IsBoR",
+      "review_date": "2024-01-16",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "keeps crashing when loading...",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000392"
+    },
+    {
       "id": "rvw-000223",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.nthgensoftware.traderev.android)",
@@ -4200,6 +4528,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.backlotcars.backlotcars)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.backlotcars.backlotcars&hl=en&gl=us",
+      "author": "David John",
+      "review_date": "2024-01-06",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "These people are only but crooks. Shipping takes months on hand and they do not give honesty in their service and feedback. It is incredibly hard to discuss and get your money back when you have trouble with anything regarding the website and people. Don't install or trust these people. They are not here to help you, but to give you a hard time and cheat your money.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-000393"
     },
     {
       "id": "rvw-000225",
@@ -4247,6 +4590,21 @@
       "tier3": "App Login Troubleshooting"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.nthgensoftware.traderev.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
+      "author": "Steve Kennedy",
+      "review_date": "2023-12-16",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Keeps crashing on Android",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000394"
+    },
+    {
       "id": "rvw-000228",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.nthgensoftware.traderev.android)",
@@ -4290,6 +4648,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "a h",
+      "review_date": "2023-12-12",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "great app love using it",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000395"
     },
     {
       "id": "rvw-000231",
@@ -4395,6 +4768,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.nthgensoftware.traderev.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
+      "author": "Farhan Ah",
+      "review_date": "2023-11-03",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Keeps crashing on android",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000396"
     },
     {
       "id": "rvw-000238",
@@ -4592,6 +4980,21 @@
       "tier3": "Long Hold Time / Hard to Reach Support"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.backlotcars.backlotcars)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.backlotcars.backlotcars&hl=en&gl=us",
+      "author": "Bret Dalton",
+      "review_date": "2023-09-19",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "App makes it very difficult to look at cars. Every time I click on a car and then try to go back to the search, it scrolls all the way to the top of the list and I have to find where I was again.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000397"
+    },
+    {
       "id": "rvw-000250",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.backlotcars.backlotcars)",
@@ -4622,6 +5025,21 @@
       "tier3": "App Login Troubleshooting"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "jackie perez",
+      "review_date": "2023-09-08",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "having issues submitting paperwork, too many steps and app always freezes",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000398"
+    },
+    {
       "id": "rvw-000252",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
@@ -4635,6 +5053,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.nthgensoftware.traderev.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
+      "author": "Paul Buhler",
+      "review_date": "2023-08-27",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Terrible app, I thought the traderev app was bad but this is a new level. Pretty hard to do business with the app when nothing works. Hire a new developer and get this thing sorted out.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000399"
     },
     {
       "id": "rvw-000253",
@@ -4710,6 +5143,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.backlotcars.backlotcars)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.backlotcars.backlotcars&hl=en&gl=us",
+      "author": "Jay Hohlfeld",
+      "review_date": "2023-08-11",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "Watch out for police changes that you have to agree to immediately or can not continue to the app. The company is looking for new ways to get buyers to pay more money. Back button always wants you to sign out that is annoying also.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000400"
     },
     {
       "id": "rvw-000258",
@@ -4802,6 +5250,21 @@
       "tier3": "App Login Troubleshooting"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.backlotcars.backlotcars)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.backlotcars.backlotcars&hl=en&gl=us",
+      "author": "Brian",
+      "review_date": "2023-07-25",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Doesn't get past the \"splash\" screen for a couple of months already. That makes it hard for me to bid on cars, not a good thing for an auction.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-000401"
+    },
+    {
       "id": "rvw-000264",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.backlotcars.backlotcars)",
@@ -4830,6 +5293,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.nthgensoftware.traderev.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
+      "author": "Auto District",
+      "review_date": "2023-07-24",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Absolutely disaster. So many bugs and glitches that more than 90% of the time it fails to deliver what it is meant for. They ruined all the traderev experience. In this AI world, they need to ramp up the game big big time. Absolutely JOKE !!",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000402"
     },
     {
       "id": "rvw-000266",
@@ -4875,6 +5353,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.backlotcars.backlotcars)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.backlotcars.backlotcars&hl=en&gl=us",
+      "author": "bryan chapman",
+      "review_date": "2023-07-18",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Keeps crashing. First time downloaded.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000403"
     },
     {
       "id": "rvw-000269",
@@ -4950,6 +5443,21 @@
       "tier1": "Lot Condition, Listing Status and related",
       "tier2": "Third-Party Inspection Authorization & Scheduling",
       "tier3": "Previewing/ Inspecting Vehicles"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.nthgensoftware.traderev.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
+      "author": "jack shilatos",
+      "review_date": "2023-07-11",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Absolutely no customer care, no aribitration, all their staff hiding and not helping you. Worse online auction, now that machine has bought it they literally ran it to ground, the app doesn't even work.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-000404"
     },
     {
       "id": "rvw-000274",
@@ -5145,6 +5653,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "Towing Services",
+      "review_date": "2023-06-26",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "horrible app. hard to find jobs by city or zip code. Online portal works better.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000405"
     },
     {
       "id": "rvw-000287",
@@ -5402,6 +5925,21 @@
       "tier3": "Previewing/ Inspecting Vehicles"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "Harvey Adkison",
+      "review_date": "2023-05-24",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "the damages that are documented on the pre trip seem to not save three out of five times. and to me all the extra BS that you have to put in on both inspections just waste time they should be auto filled",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Third-Party Inspection Authorization & Scheduling",
+      "tier3": "Previewing/ Inspecting Vehicles",
+      "id": "rvw-000406"
+    },
+    {
       "id": "rvw-000302",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
@@ -5460,6 +5998,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=pt&gl=us",
+      "author": "Roisson Silva",
+      "review_date": "2023-05-10",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "bad app, lives without connection",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000407"
     },
     {
       "id": "rvw-000306",
@@ -5640,6 +6193,36 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "D A",
+      "review_date": "2023-04-11",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "the new plus app is the worst app someone needs to go and ask super dispatch how have they been able to get it right for the last 8 years.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000408"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "Steven Anderson",
+      "review_date": "2023-04-11",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "it sucks and they force you to use it vs using super dispatch app that is great.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000409"
     },
     {
       "id": "rvw-000318",
@@ -5852,6 +6435,21 @@
       "id": "rvw-000367"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.nthgensoftware.traderev.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
+      "author": "Alaaden ismail",
+      "review_date": "2023-02-08",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "This app is not android friendly. Constantly crashing and not showing current bids instantly. You need to keep refreshing for the bid to update which sucks in the last 30 seconds. Very slow and glitchy. Also the dates of past sold vehicles in the research bar has disappeared for like 3 months now. It doesn't show the day a car was sold in the research however on iphone it works fine and shows the date. Please fix all the glitches on android!",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000410"
+    },
+    {
       "id": "rvw-000331",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.nthgensoftware.traderev.android)",
@@ -5925,6 +6523,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "obsfst obs",
+      "review_date": "2023-01-05",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Absolutely terrible. Constantly loses connection. Doesn't scan GM vins and most ford vins. Description buttons don't work properly. The app overrides the camera so night pictures are utterly useless. Takes forever to load if it loads. 2 out of 4 vehicles I have do over at pickup and delivery. Most of the the time it will not keep all your photos and you need to take them over again but you don't find that out until you are ready to submit the order. Worst car app ever.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000411"
     },
     {
       "id": "rvw-000336",

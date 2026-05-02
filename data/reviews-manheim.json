@@ -1,24 +1,24 @@
 {
   "meta": {
     "description": "Large-scale English-only Manheim textual review/problem dataset from public web sources (recency-first).",
-    "review_count": 449,
+    "review_count": 473,
     "source_counts": {
-      "play.google.com": 46,
-      "birdeye.com": 28,
+      "reddit.com": 141,
+      "play.google.com": 57,
+      "birdeye.com": 39,
       "apps.apple.com": 86,
       "bbb.org": 144,
-      "reddit.com": 139,
       "trustpilot.com": 6
     },
     "source_audit": [
       {
         "source_website": "reddit.com",
-        "review_count": 139,
+        "review_count": 141,
         "present": true
       },
       {
         "source_website": "play.google.com",
-        "review_count": 46,
+        "review_count": 57,
         "present": true
       },
       {
@@ -43,24 +43,27 @@
       },
       {
         "source_website": "birdeye.com",
-        "review_count": 28,
+        "review_count": 39,
         "present": true
       }
     ],
     "sentiments": {
-      "positive": 126,
-      "negative": 323
+      "positive": 137,
+      "negative": 336
     },
     "source_urls": [
+      "https://www.reddit.com/r/carflipping/comments/1szocvk/my_old_car_is_up_for_auction_at_a_manheim_socal/",
+      "https://www.reddit.com/r/askcarsales/comments/1sxvpa7/are_pickles_auctions_alright_for_electric_cars/",
       "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
       "https://reviews.birdeye.com/manheim-indianapolis-167758900611879#review-1",
       "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=13919512848",
-      "https://reviews.birdeye.com/manheim-fredericksburg-167784557350491#review-1",
       "https://reviews.birdeye.com/manheim-fredericksburg-167784557350491#review-2",
+      "https://reviews.birdeye.com/manheim-fredericksburg-167784557350491#review-3",
+      "https://reviews.birdeye.com/manheim-indianapolis-167758900611879#review-4",
+      "https://reviews.birdeye.com/manheim-fredericksburg-167784557350491#review-1",
       "https://reviews.birdeye.com/manheim-fredericksburg-167784557350491?page=2#review-1",
       "https://reviews.birdeye.com/manheim-fredericksburg-167784557350491?page=2#review-2",
       "https://reviews.birdeye.com/manheim-dallas-fort-worth-166658799426873#review-5",
-      "https://reviews.birdeye.com/manheim-indianapolis-167758900611879#review-4",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_24681952",
       "https://www.reddit.com/r/askcarsales/comments/1s0wmrl/why_are_dealers_over_bidding_at_dealer_auctions/",
       "https://reviews.birdeye.com/manheim-dallas-fort-worth-166658799426873#review-3",
@@ -82,6 +85,7 @@
       "https://www.reddit.com/r/carflipping/comments/1qz9nyo/auction_access_dealers_license_copart_iaaicar/",
       "https://www.reddit.com/r/askcarsales/comments/1qyo0p3/manheim_auction_green_light/",
       "https://www.reddit.com/r/askcarsales/comments/1qxjb4g/manheim_title_issues/",
+      "https://reviews.birdeye.com/manheim-pittsburgh-166598588464399#review-3",
       "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=13691150454",
       "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=13690737817",
       "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=13686705120",
@@ -94,15 +98,14 @@
       "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=13681632796",
       "https://apps.apple.com/us/app/id6744660081?see-all=reviews&platform=iphone&reviewId=13681677006",
       "https://apps.apple.com/us/app/id6744660081?see-all=reviews&platform=iphone&reviewId=13681680845",
-      "https://reviews.birdeye.com/manheim-pittsburgh-166598588464399#review-3",
       "https://www.trustpilot.com/reviews/69752c23775d9f8c5b42a3b7",
       "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=13666657499",
       "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=13663674036",
       "https://www.reddit.com/r/askcarsales/comments/1qgepli/what_am_i_doing_wrong/",
       "https://reviews.birdeye.com/manheim-pittsburgh-166598588464399?page=2#review-3",
       "https://www.reddit.com/r/askcarsales/comments/1qdzbr5/manheim_houston_rant/",
-      "https://www.reddit.com/r/askcarsales/comments/1px1jti/can_you_access_old_manheim_adesa_acv_condition/",
       "https://reviews.birdeye.com/manheim-pittsburgh-166598588464399#review-5",
+      "https://www.reddit.com/r/askcarsales/comments/1px1jti/can_you_access_old_manheim_adesa_acv_condition/",
       "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=13557362146",
       "https://www.trustpilot.com/reviews/694ac90e896dcc9c49596f5b",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_24299237",
@@ -348,17 +351,14 @@
       "https://itunes.apple.com/us/review?id=1480842917&type=Purple%20Software&reviewId=11078351187",
       "https://www.reddit.com/r/askcarsales/comments/1bfybr0/can_being_near_a_manheim_auto_auction_place_help/",
       "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=9#0443_6001743_21433159",
-      "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=9#0443_6001743_21403394",
-      "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=9#0443_6001743_21398710",
-      "https://www.reddit.com/r/truthpuke/comments/1b3rfbh/watch_first_cybertruck_sells_at_manheim_for_244000/",
-      "https://www.reddit.com/r/u_Truth_Puke/comments/1b3rf6w/watch_first_cybertruck_sells_at_manheim_for_244000/"
+      "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=9#0443_6001743_21403394"
     ],
-    "generated_at_utc": "2026-04-26T01:39:36.440639+00:00",
+    "generated_at_utc": "2026-05-02T10:18:56.090929+00:00",
     "since_date": "2023-01-01",
-    "until_date": "2026-04-25",
+    "until_date": "2026-04-30",
     "collector_failures": [],
-    "existing_review_count": 293,
-    "new_reviews_added": 156,
+    "existing_review_count": 449,
+    "new_reviews_added": 24,
     "youtube_excluded": true,
     "usa_only": true,
     "english_only": true,
@@ -377,14 +377,13 @@
       "bbb.org"
     ],
     "geo_validation_counts": {
-      "google_play_us_store": 2,
-      "mixed_source_ok": 139,
-      "birdeye_us_profile": 10,
-      "apple_us_store": 5
+      "google_play_us_store": 11,
+      "mixed_source_ok": 2,
+      "birdeye_us_profile": 11
     },
     "geo_excluded_counts": {
       "play.google.com:google_play_us_store_non_us_marker": 1,
-      "reddit.com:mixed_source_non_us_marker": 17,
+      "reddit.com:mixed_source_non_us_marker": 4,
       "apps.apple.com:apple_non_us_store": 2
     },
     "geo_excluded_examples": [
@@ -411,110 +410,6 @@
         "review_date": "2025-04-17",
         "reason": "mixed_source_non_us_marker",
         "review_text": "New to group Hi all i’m new to this group and i’m looking for a few shows if anyone can help next to normal west end audio (jack wolfe) little shop of horrors broadway video (milo manheim) annie uk tour 2023 audio (only looking for the song"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/CarTalkUK",
-        "source_url": "https://www.reddit.com/r/CarTalkUK/comments/1iuurtw/manheim_lease_return_alloy_cost/",
-        "review_date": "2025-02-21",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Manheim Lease Return - Alloy Cost I've got a Mazda going back to Santander with Manheim doing the inspection. There's an alloy with has scuffs along the hub / spoke and a dent out of one of the corners. I'm getting a quote to get it repaire"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/SuperStonkHertz",
-        "source_url": "https://www.reddit.com/r/SuperStonkHertz/comments/1hlh0ld/tariffs/",
-        "review_date": "2024-12-24",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Tariffs If tariffs are imposed on good from China, Canada, and Mexico, this will have a significant impact on auto prices. &gt;Putting tariffs on components could add $600 to $2,500 per vehicle on parts from Mexico, Canada and China, accord"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/Husqvarna",
-        "source_url": "https://www.reddit.com/r/Husqvarna/comments/1eo1nya/enquiry_about_fixing/",
-        "review_date": "2024-08-09",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Enquiry about fixing Hi everyone here is a repairable Husqvarna Svartipilen 701 which was stolen before, the dash and headlight were gone, and I love this bike deeply, I wonder is it hard to fixing these, I found the parts are hard to get i"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/ManheimPA",
-        "source_url": "https://www.reddit.com/r/ManheimPA/comments/18nsjaf/erasmus_in_manheim/",
-        "review_date": "2023-12-21",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Erasmus in Manheim Hi! I'm an international student and I'm considering going to Manheim for Erasmus next year. My main priority there is to improve my German 😅 But aside from that, I don't know much about the college nor the city. How is i"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/GMAT",
-        "source_url": "https://www.reddit.com/r/GMAT/comments/17xkq0y/640_gmat_score_targeting_decent_mba_colleges_in/",
-        "review_date": "2023-11-17",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "640 gmat score, targeting decent mba colleges in europe I have scored 640 in my gmat, and mostly won’t be re taking the exam. I am targeting decent mba colleges in europe like manheim, TUM, frankfurt school of business, esmt berlin, emlyon "
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/Cardiff",
-        "source_url": "https://www.reddit.com/r/Cardiff/comments/17j9aqk/where_to_buy_a_used_car/",
-        "review_date": "2023-10-29",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Where to buy a used car? Evening Cardiff! I'm looking to buy a used car, not sure of the budget, maybe 3k to 5k, maybe more. OK not going to buy alot but can anyone recommend a good used car dealership in Cardiff / South Wales? Also thinkin"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/CarTalkUK",
-        "source_url": "https://www.reddit.com/r/CarTalkUK/comments/16jap27/i_cant_taxdrive_my_new_car_either_v62/",
-        "review_date": "2023-09-15",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "I can't tax/drive my new car either v62 So, bought a car, didn't come with logbook (I know big red flag but got bill of sale from manheim and did all thr relevant checks), the previous owner still taxed it for the next 4 months , tried to t"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/Bastille",
-        "source_url": "https://www.reddit.com/r/Bastille/comments/15he0xc/manheim_schwetzingen/",
-        "review_date": "2023-08-03",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Manheim / Schwetzingen Does any body in the show near Manheim in Germany tomorrow?? I would love to go and to avoid hotel I am looking to go clubbing"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/Cardiff",
-        "source_url": "https://www.reddit.com/r/Cardiff/comments/17j9aqk/where_to_buy_a_used_car/",
-        "review_date": "2023-10-29",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Where to buy a used car? Evening Cardiff! I'm looking to buy a used car, not sure of the budget, maybe 3k to 5k, maybe more. OK not going to buy alot but can anyone recommend a good used car dealership in Cardiff / South Wales? Also thinkin"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/askcarsales",
-        "source_url": "https://www.reddit.com/r/askcarsales/comments/1m7p6y4/anyway_to_get_access_to_dealer_only_auctions/",
-        "review_date": "2025-07-23",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Anyway to get access to dealer only auctions without dealer license? I’m in Ontario Canada and want to access manheim and other dealer only auctions so I can wholesale cars to Nigeria. Issue is in Ontario it’s pretty hard to get a dealer li"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/askcarsales",
-        "source_url": "https://www.reddit.com/r/askcarsales/comments/1kroky0/wanting_to_learn_from_us_based_car_dealers/",
-        "review_date": "2025-05-21",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Wanting to Learn from US Based Car Dealers - US$250/hr for your time. Hi all — I’m an independent researcher based in Australia, currently working on a project to better understand the U.S. used car wholesale market. I’m especially interest"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/askcarsales",
-        "source_url": "https://www.reddit.com/r/askcarsales/comments/1m7p6y4/anyway_to_get_access_to_dealer_only_auctions/",
-        "review_date": "2025-07-23",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Anyway to get access to dealer only auctions without dealer license? I’m in Ontario Canada and want to access manheim and other dealer only auctions so I can wholesale cars to Nigeria. Issue is in Ontario it’s pretty hard to get a dealer li"
-      },
-      {
-        "source_website": "reddit.com",
-        "source_label": "Reddit r/askcarsales",
-        "source_url": "https://www.reddit.com/r/askcarsales/comments/1kroky0/wanting_to_learn_from_us_based_car_dealers/",
-        "review_date": "2025-05-21",
-        "reason": "mixed_source_non_us_marker",
-        "review_text": "Wanting to Learn from US Based Car Dealers - US$250/hr for your time. Hi all — I’m an independent researcher based in Australia, currently working on a project to better understand the U.S. used car wholesale market. I’m especially interest"
       },
       {
         "source_website": "reddit.com",
@@ -563,6 +458,36 @@
   },
   "reviews": [
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/carflipping",
+      "source_url": "https://www.reddit.com/r/carflipping/comments/1szocvk/my_old_car_is_up_for_auction_at_a_manheim_socal/",
+      "author": "gregmichael",
+      "review_date": "2026-04-30",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "My old car is up for auction at a Manheim (SoCal)... would love some help getting it back?",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)",
+      "id": "rvw-000450"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1sxvpa7/are_pickles_auctions_alright_for_electric_cars/",
+      "author": "CarGawd",
+      "review_date": "2026-04-28",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "are Pickles Auctions alright for Electric Cars? im looking at [https://www.pickles.com.au/used/details/cars/2023-polestar-2/62261407](https://www.pickles.com.au/used/details/cars/2023-polestar-2/62261407) and it looks alright with the battery certificate and all, but never bought from pickles before. bought from manheim but had a terrible experience with them",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Delivery Coordination & Handoffs",
+      "tier3": "Delivery Status and ETA",
+      "id": "rvw-000451"
+    },
+    {
       "source_website": "play.google.com",
       "source_label": "Google Play (com.manheim.mktplace)",
       "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
@@ -593,6 +518,21 @@
       "id": "rvw-000295"
     },
     {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/manheim-indianapolis-167758900611879#review-1",
+      "author": "Tyra Bostic",
+      "review_date": "2026-04-18",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "My car was repo there and I regret it was even sent there for auction. They steal out your car, the representative and workers there are unprofessional, thieves and rude. The manager there (TJ or Lynn Jackson) does not go above and beyond on handling situations or issues regarding the professionalism of his team…he’ll smirk at you instead. Worst place ever to do business with. Do not recommend.",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-000452"
+    },
+    {
       "source_website": "play.google.com",
       "source_label": "Google Play (com.manheim.mktplace)",
       "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
@@ -621,6 +561,51 @@
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting",
       "id": "rvw-000297"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/manheim-fredericksburg-167784557350491#review-2",
+      "author": "chris_ Ward",
+      "review_date": "2026-04-02",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Smooth delivery experience upon arrival the young lady who works out front was very sweet and quickly pointed me in the right direction on the vehicle. I will be taking 10 out of 10 if possible.",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Scheduled Pickup Status",
+      "tier3": "Schedule/ Reschedule Pickup",
+      "id": "rvw-000453"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/manheim-fredericksburg-167784557350491#review-3",
+      "author": "Brian Perez",
+      "review_date": "2026-04-02",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Nikki Ward was exceptional. She helped me getting my vehicle registered in a timely manner and kept me informed with everything. I'm going to keep sending my vehicles for Manheim Fredericksburg, they are very professional.",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Case Resolution Quality",
+      "tier3": "Issue Resolved",
+      "id": "rvw-000454"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/manheim-indianapolis-167758900611879#review-4",
+      "author": "Linda Linda",
+      "review_date": "2026-04-02",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "If you want to remove negative reviews from your Google Business, contact me via my profile; my contact details are listed there. After work you can pay..",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000455"
     },
     {
       "id": "rvw-000001",
@@ -908,6 +893,21 @@
       "id": "rvw-000304"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.manheim.mobile.refresh)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mobile.refresh&hl=en&gl=us",
+      "author": "T. Brad",
+      "review_date": "2026-02-23",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "App constantly crashes if you leave. For example, if you get a phone call, 9/10 times the app will have closed when you try to go back, meaning you have to re-enter ALL of your search filters again. Like another review mentioned, there's no way the app should be this bad w/all the fees you charge. Spend the money to make it right. Consult w/copart, theirs is decent & always improving",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-000456"
+    },
+    {
       "id": "rvw-000013",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.manheim.mobile.refresh)",
@@ -951,6 +951,21 @@
       "tier2": "Third-Party Inspection Authorization & Scheduling",
       "tier3": "Previewing/ Inspecting Vehicles",
       "id": "rvw-000305"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.manheim.mobile.refresh)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mobile.refresh&hl=en&gl=us",
+      "author": "Mima Mims",
+      "review_date": "2026-02-13",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "omg, this app feels like its been made in 2015 . Come on , with all the money we pay in fees you guys can't fix this with a better version???🤬",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-000457"
     },
     {
       "source_website": "reddit.com",
@@ -1041,6 +1056,21 @@
       "tier2": "Title Delivery & Status",
       "tier3": "Title Not Received",
       "id": "rvw-000309"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/manheim-pittsburgh-166598588464399#review-3",
+      "author": "bryan truxell",
+      "review_date": "2026-02-01",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "In and out for pickup was smooth and fast.",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Scheduled Pickup Status",
+      "tier3": "Schedule/ Reschedule Pickup",
+      "id": "rvw-000458"
     },
     {
       "id": "rvw-000017",
@@ -1388,6 +1418,21 @@
       "id": "rvw-000314"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.manheim.mobile.refresh)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mobile.refresh&hl=en&gl=us",
+      "author": "Joshua Killough",
+      "review_date": "2026-01-15",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Latest update is TERRIBLE on Samsung devices. The search function is almost unusable because the thumbnail photos for the vehicles are extremely small unnecessarily and are almost completely covered by the MMR value - which now won't even fit inside the ridiculously small thumbnails. PLEASE fix this issue!",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000459"
+    },
+    {
       "id": "rvw-000035",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.manheim.mobile.refresh)",
@@ -1401,6 +1446,21 @@
       "tier1": "Account / Access / Login",
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/manheim-pittsburgh-166598588464399#review-5",
+      "author": "Rambo’s Garage",
+      "review_date": "2026-01-02",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Terrible Manheim Location !!!! The integrity of the auction is totally lost because if you are bidding online the auctioneers at this location will give the buddies on the floor special treatment and make sure they get the car !!! What a joke and a waste of time !! Car doesn’t get sold to the highest bidder !!! Just whoever the auctioneers buddy is absolutely unbelievable for an auction like Manheim that is supposed to be the leader in auctions such a shame !!!!",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-000460"
     },
     {
       "source_website": "reddit.com",
@@ -1551,6 +1611,36 @@
       "tier2": "Bidding Process, Rules and Fees",
       "tier3": "Fees",
       "id": "rvw-000317"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.manheim.mobile.refresh)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mobile.refresh&hl=en&gl=us",
+      "author": "Douglas Rodriguez",
+      "review_date": "2025-12-03",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Please address the issues introduced in your latest update. The app is consistently crashing on Samsung devices. Additionally, the Run List section in Live Auction still does not display correctly on Samsung Fold models—the full width has been improperly rendered for years. I expect a higher level of quality and attention to detail from cox. Please have your development team utilize modern tools, including AI, to resolve these ongoing issues. Thank you.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-000461"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/manheim-st-louis-166697023560226#review-1",
+      "author": "Orhan",
+      "review_date": "2025-12-03",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Be careful with their process! We’ve been in business for over 2 years and bought 100+ cars, all green light and scored over 4. Still had to wait 3–4 days to pick them up even after payment was taken. They falsely claimed a late payment but can’t prove it. By the time cars were released, they were out of arbitration and most were in bad condition — 3 even had engine problems. Watch out and inspect your cars carefully!",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Third-Party Inspection Authorization & Scheduling",
+      "tier3": "Previewing/ Inspecting Vehicles",
+      "id": "rvw-000462"
     },
     {
       "id": "rvw-000043",
@@ -2181,6 +2271,21 @@
       "tier1": "Vehicle Pickup, Delivery and Scheduling",
       "tier2": "Pickup Order Management",
       "tier3": "Gate Pass Assistance"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.manheim.mobile.refresh)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mobile.refresh&hl=en&gl=us",
+      "author": "Mike Courtney",
+      "review_date": "2025-08-22",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "I have checked my online credentials and I can log into the website with no issues. I use the same log in info on the app and it does not recognize me. So terrible that I can't use it at all! If I could give zero stars, I would.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000463"
     },
     {
       "id": "rvw-000074",
@@ -3878,6 +3983,21 @@
       "id": "rvw-000372"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.manheim.mobile.refresh)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mobile.refresh&hl=en&gl=us",
+      "author": "george slyman",
+      "review_date": "2024-10-28",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "What a joke we are in the 21st century. I was told by there it dumpartment there is no app for Android what a joke",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000464"
+    },
+    {
       "id": "rvw-000143",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
@@ -4251,6 +4371,21 @@
       "tier1": "Customer Service & Communication",
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.manheim.mobile.refresh)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mobile.refresh&hl=en&gl=us",
+      "author": "jose grimaldo",
+      "review_date": "2024-08-27",
+      "rating": 4,
+      "sentiment": "positive",
+      "review_text": "Its good but it crashes sometimes",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000465"
     },
     {
       "id": "rvw-000158",
@@ -6158,6 +6293,21 @@
       "tier3": "Lot Damage"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.manheim.mobile.refresh)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mobile.refresh&hl=en&gl=us",
+      "author": "mulletjocks",
+      "review_date": "2023-11-08",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Total junk app. Refuses to even attempt to work on Android.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000466"
+    },
+    {
       "id": "rvw-000240",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
@@ -6488,6 +6638,21 @@
       "tier3": "Rude/Unhelpful Support"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.manheim.mobile.refresh)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mobile.refresh&hl=en&gl=us",
+      "author": "David Whitehead",
+      "review_date": "2023-08-14",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Can't log in. App doesn't work at all.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000467"
+    },
+    {
       "id": "rvw-000259",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.manheim.mobile.refresh)",
@@ -6683,6 +6848,21 @@
       "id": "rvw-000433"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.manheim.mobile.refresh)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mobile.refresh&hl=en&gl=us",
+      "author": "A. Henley",
+      "review_date": "2023-07-04",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "This app has single-handedly made me Rich. 🏆",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000468"
+    },
+    {
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/14p5rwy/looking_to_connect/",
@@ -6848,6 +7028,21 @@
       "tier3": "Rude/Unhelpful Support"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.manheim.mobile.refresh)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mobile.refresh&hl=en&gl=us",
+      "author": "Sam Lewis",
+      "review_date": "2023-05-24",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "User name or password is unrecognised, apparently. Even though I can login in on laptop!",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000469"
+    },
+    {
       "id": "rvw-000277",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.manheim.mobile.refresh)",
@@ -6921,6 +7116,66 @@
       "tier1": "Membership / Licensing / Fees & Bidding Policies",
       "tier2": "Bidding Process, Rules and Fees",
       "tier3": "Fees"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Insider Pages)",
+      "source_url": "https://reviews.birdeye.com/manheim-statesville-166651026035079#review-1",
+      "author": "dovie",
+      "review_date": "2023-05-03",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Mississippi Auto Auction Incorporated you have to know adealer to attend but the prices here are far better than on a car lot. this place is opened every thursday. the location is good and the staff is very friendly. i often go with a friend to see all the nice cars and trucks they have to offer.",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000470"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Insider Pages)",
+      "source_url": "https://reviews.birdeye.com/manheim-statesville-166651026035079#review-3",
+      "author": "Linda",
+      "review_date": "2023-05-03",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Low key auction house! This auction house accept a variety of things to sell, but does deal in alot of antiques or specialized items. It is a good auction house for general merchandise..and alot of good things can be had.. but it varies like most auction houses. PROS: Good for general merchandise CONS: No high end items",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)",
+      "id": "rvw-000471"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Insider Pages)",
+      "source_url": "https://reviews.birdeye.com/manheim-statesville-166651026035079#review-4",
+      "author": "Barbara",
+      "review_date": "2023-05-03",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Auto Auctions Statesville Auto Auction has every kind of car, truck and van known to mankind. Acres and acres of cars are for sale at their on-site auctions. Licensed buyers can purchase at an auction-type setting for resale later. PROS: uncoutable numbers of vehicles for sale CONS: huge, non-personalized service",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)",
+      "id": "rvw-000472"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Insider Pages)",
+      "source_url": "https://reviews.birdeye.com/manheim-statesville-166651026035079#review-5",
+      "author": "BEN",
+      "review_date": "2023-05-03",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "CAR HAULER / OWNER HELLO WE ARE LOOKING TO PURCHASE A CARHAULER EZ LOADER BY NAME 3-4 CAR CAPACITY A WEDGE WOULD BE SECOND TO LAST CHOICE IN YOUR FINE LINE PLEASE CONTACT US TO ASSURE THE PROPER CONTACT MANNER IF NOT WE APOLOGIZE THANKS FOR YOUR CO OPERATION",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000473"
     },
     {
       "id": "rvw-000281",
