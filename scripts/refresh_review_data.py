@@ -76,6 +76,7 @@ def audit_dataset(relative_path: str, label: str) -> None:
             "stale_or_no_recent_candidates",
             "parsed_no_new_rows",
             "retained_after_failed_refresh",
+            "partial_profile_retention",
         }
     ]
 
