@@ -36,7 +36,11 @@ def validate_google_business(label: str, business: dict, payload: dict) -> list[
     if not registry:
         errors.append(f"{label}: Google Business Profile registry is empty")
     audit_status = audit.get("status")
-    if audit_status not in {"ok", "retained_after_failed_refresh"}:
+    if audit_status not in {
+        "ok",
+        "retained_after_failed_refresh",
+        "partial_profile_retention",
+    }:
         errors.append(f"{label}: Google Business Profile source audit status is {audit.get('status') or 'missing'}")
     if audit_status == "ok" and int(audit.get("candidate_reviews_seen") or 0) <= 0:
         errors.append(f"{label}: Google Business Profile source audit has no candidate count")
@@ -47,6 +51,18 @@ def validate_google_business(label: str, business: dict, payload: dict) -> list[
             errors.append(f"{label}: retained Google status has no recorded refresh error")
         if not audit.get("last_successful_refresh_until"):
             errors.append(f"{label}: retained Google status has no last successful refresh checkpoint")
+    if audit_status == "partial_profile_retention":
+        if int(audit.get("review_count") or 0) < int(audit.get("existing_review_count") or 0):
+            errors.append(f"{label}: profile-level Google refresh dropped existing verified rows")
+        if int(audit.get("profiles_completed") or 0) <= 0:
+            errors.append(f"{label}: profile-level Google refresh completed no profiles")
+        if (
+            int(audit.get("profiles_failed") or 0) <= 0
+            and int(audit.get("profiles_skipped_after_circuit_breaker") or 0) <= 0
+        ):
+            errors.append(f"{label}: profile-level Google retention has no failed or skipped profiles")
+        if not audit.get("errors"):
+            errors.append(f"{label}: profile-level Google retention has no recorded refresh error")
 
     seen_content = set()
     for row in reviews:

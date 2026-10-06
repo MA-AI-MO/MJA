@@ -211,6 +211,45 @@ class GoogleRefreshResilienceTests(unittest.TestCase):
         errors = audit_review_datasets.validate_google_business("Test", business, payload)
         self.assertTrue(any("dropped below" in error for error in errors))
 
+    def test_profile_level_retention_accepts_successful_profiles_without_data_loss(self):
+        collector = self.make_collector()
+        new_row = {
+            **google_row(),
+            "id": "rvw-000002",
+            "author": "September User",
+            "review_date": "2026-09-15",
+            "review_text": "Pickup was quick and the location team explained each step.",
+        }
+        collector.records.append(new_row)
+        collector.source_health["google.com"] = {
+            "source_website": "google.com",
+            "attempted": True,
+            "candidate_reviews_seen": 20,
+            "new_reviews_added": 1,
+            "profile_retention_used": True,
+            "profiles_completed": 9,
+            "profiles_failed": 1,
+            "profiles_skipped_after_circuit_breaker": 0,
+            "errors": ["One profile did not load"],
+            "notes": [],
+        }
+        audit = collector.build_source_health_audit(
+            Counter(row["source_website"] for row in collector.records),
+            collector.records,
+        )
+        google_audit = next(row for row in audit if row["source_website"] == "google.com")
+        self.assertEqual(google_audit["status"], "partial_profile_retention")
+        self.assertEqual(google_audit["review_count"], 2)
+
+        payload = baseline_payload()
+        payload["reviews"].append(new_row)
+        payload["meta"]["source_audit"] = [google_audit]
+        business = {"google_business_search_names": ["Test Auction"]}
+        self.assertEqual(
+            audit_review_datasets.validate_google_business("Test", business, payload),
+            [],
+        )
+
 
 class CoverageMergeTests(unittest.TestCase):
     def test_merge_carries_source_audit_into_coverage_note(self):

@@ -107,6 +107,7 @@
             "partial",
             "stale_or_no_recent_candidates",
             "retained_after_failed_refresh",
+            "partial_profile_retention",
           ].includes(row.status)
         )
         .map((row) => `${company.display_name || company.key}: ${row.source_website} ${row.status}`)

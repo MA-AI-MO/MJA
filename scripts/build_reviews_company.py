@@ -747,6 +747,8 @@ class Collector:
 
             if entry.get("retained_after_failed_refresh"):
                 status = "retained_after_failed_refresh"
+            elif entry.get("profile_retention_used"):
+                status = "partial_profile_retention"
             elif entry.get("blocked") and not entry.get("fallback_used"):
                 status = "blocked"
             elif not entry.get("attempted"):
@@ -1739,6 +1741,8 @@ class Collector:
             checkpoint_date = datetime.strptime(checkpoint, "%Y-%m-%d").date()
         except (TypeError, ValueError):
             return self.since
+        if not place.get("last_successful_scan_date"):
+            place["last_successful_scan_date"] = checkpoint_date.isoformat()
         return max(
             self.since_date_obj,
             checkpoint_date - timedelta(days=overlap_days),
@@ -2162,6 +2166,8 @@ class Collector:
         latest_candidate_date = None
         failed_profiles = []
         completed_profiles = 0
+        consecutive_failures = 0
+        skipped_profiles = 0
         existing_author_text = {
             hashlib.sha1(
                 f"{self.normalize_text(row.get('author')).lower()}|{self.normalize_text(row.get('review_text')).lower()}".encode("utf-8")
@@ -2207,8 +2213,13 @@ class Collector:
                     )
                 if not completed:
                     failed_profiles.append(f"{place['name']} [{place['feature_id']}]: {error}")
-                    break
+                    consecutive_failures += 1
+                    if consecutive_failures >= 5:
+                        skipped_profiles = len(places) - index
+                        break
+                    continue
                 completed_profiles += 1
+                consecutive_failures = 0
                 place["last_successful_scan_date"] = (
                     self.until or datetime.now(timezone.utc).date().isoformat()
                 )
@@ -2254,10 +2265,16 @@ class Collector:
         if failed_profiles:
             for error in failed_profiles[:20]:
                 self.note_source_attempt("google.com", error=error)
-            raise RuntimeError(
-                f"Google Business Profile coverage incomplete: {len(failed_profiles)}/{len(places)} "
-                f"profiles failed pagination; first failure: {failed_profiles[0]}"
-            )
+            if completed_profiles <= 0 or "google.com" in self.replace_source_websites:
+                raise RuntimeError(
+                    f"Google Business Profile coverage incomplete: {len(failed_profiles)}/{len(places)} "
+                    f"profiles failed pagination; first failure: {failed_profiles[0]}"
+                )
+            health = self._source_health_entry("google.com")
+            health["profile_retention_used"] = True
+            health["profiles_completed"] = completed_profiles
+            health["profiles_failed"] = len(failed_profiles)
+            health["profiles_skipped_after_circuit_breaker"] = skipped_profiles
 
         self.source_run_finish(
             "google.com",
@@ -2265,13 +2282,25 @@ class Collector:
             candidates=candidates_seen,
             latest_date=latest_candidate_date,
             note=(
-                f"Validated {completed_profiles} US Google Business Profiles; paginated newest-first "
-                f"with exact RPC timestamps through per-profile incremental overlap boundaries."
+                f"Validated {completed_profiles} US Google Business Profiles; "
+                f"{len(failed_profiles)} failed and {skipped_profiles} were skipped after the "
+                f"circuit breaker. Successful profiles were paginated newest-first through "
+                f"per-profile incremental overlap boundaries."
             ),
         )
-        self._source_health_entry("google.com")["last_successful_refresh_until"] = (
-            self.until or datetime.now(timezone.utc).date().isoformat()
-        )
+        health = self._source_health_entry("google.com")
+        if failed_profiles:
+            prior_google_audit = self.existing_source_audit.get("google.com") or {}
+            prior_complete_until = str(
+                prior_google_audit.get("last_successful_refresh_until") or ""
+            ).strip()
+            if not prior_complete_until and prior_google_audit.get("status") == "ok":
+                prior_complete_until = str(self.existing_meta.get("until_date") or "").strip()
+            health["last_successful_refresh_until"] = prior_complete_until
+        else:
+            health["last_successful_refresh_until"] = (
+                self.until or datetime.now(timezone.utc).date().isoformat()
+            )
         print(f"  - Added {len(self.records) - start_count} Google Business Profile reviews")
 
     def collect_google_play(self):
