@@ -25,6 +25,7 @@ def dataset_summary(business: dict) -> dict:
         "since_date": meta.get("since_date"),
         "review_count": int(meta.get("review_count") or 0),
         "source_counts": meta.get("source_counts") or {},
+        "source_audit": meta.get("source_audit") or [],
     }
 
 

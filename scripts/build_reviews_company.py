@@ -1,5 +1,6 @@
 ﻿import argparse
 import csv
+from copy import deepcopy
 import hashlib
 from html import unescape
 import json
@@ -371,6 +372,8 @@ class Collector:
         self.existing_meta = {}
         self.existing_source_audit = {}
         self.google_business_profiles = []
+        self.existing_google_profile_cids = set()
+        self.google_latest_by_cid = {}
         self.source_health = {}
         self.reddit_verified = False
         self.reddit_verification_attempted = False
@@ -446,10 +449,11 @@ class Collector:
 
             if source_website_lower == "google.com":
                 source_url = str(clean_row.get("source_url") or "")
-                match = re.search(r"!1s0x0:0x([0-9a-f]+)", source_url, re.I)
-                if match:
-                    suffix = match.group(1).lower()
-                    cid = str(int(suffix, 16))
+                cid, suffix = self._google_cid_from_source_url(source_url)
+                if cid:
+                    current_latest = self.google_latest_by_cid.get(cid)
+                    if not current_latest or review_date > current_latest:
+                        self.google_latest_by_cid[cid] = review_date
                     label = str(clean_row.get("source_label") or "")
                     name_match = re.fullmatch(r"Google Business Profile \((.+)\)", label)
                     if cid not in profile_registry and name_match:
@@ -467,6 +471,22 @@ class Collector:
         self.records.extend(existing_rows)
         self.existing_review_count = len(existing_rows)
         self.google_business_profiles = list(profile_registry.values())
+        self.existing_google_profile_cids = set(profile_registry)
+
+    @staticmethod
+    def _google_cid_from_source_url(source_url: str) -> tuple[str, str]:
+        text = str(source_url or "")
+        match = re.search(r"!1s0x0:0x([0-9a-f]+)", text, re.I)
+        if match:
+            suffix = match.group(1).lower()
+            return str(int(suffix, 16)), suffix
+        try:
+            cid = str(parse_qs(urlparse(text).query).get("cid", [""])[0]).strip()
+            if cid.isdigit():
+                return cid, format(int(cid), "x")
+        except Exception:
+            pass
+        return "", ""
 
     def _source_health_entry(self, source_website: str) -> dict:
         source = str(source_website or "").strip()
@@ -725,7 +745,9 @@ class Collector:
                 "existing_latest_date": self.existing_latest_by_source.get(source),
             })
 
-            if entry.get("blocked") and not entry.get("fallback_used"):
+            if entry.get("retained_after_failed_refresh"):
+                status = "retained_after_failed_refresh"
+            elif entry.get("blocked") and not entry.get("fallback_used"):
                 status = "blocked"
             elif not entry.get("attempted"):
                 status = "not_attempted"
@@ -1649,7 +1671,8 @@ class Collector:
             else:
                 failed_queries.append(query)
             for row in rows:
-                discovered[str(row["cid"])] = row
+                cid = str(row["cid"])
+                discovered[cid] = {**discovered.get(cid, {}), **row}
 
             # The search endpoint returns at most about 20 profiles. Refine a
             # saturated state query so large state networks are not truncated.
@@ -1698,6 +1721,28 @@ class Collector:
             ),
         )
         return places
+
+    def _google_profile_floor_date(self, place: dict, overlap_days: int = 14) -> str:
+        cid = str(place.get("cid") or "")
+        checkpoint = str(place.get("last_successful_scan_date") or "").strip()
+        prior_google_audit = self.existing_source_audit.get("google.com") or {}
+        if not checkpoint and cid in self.existing_google_profile_cids:
+            if prior_google_audit.get("status") == "ok":
+                checkpoint = str(self.existing_meta.get("until_date") or "").strip()
+            elif prior_google_audit.get("status") == "retained_after_failed_refresh":
+                checkpoint = str(
+                    prior_google_audit.get("last_successful_refresh_until") or ""
+                ).strip()
+        if not checkpoint:
+            checkpoint = str(self.google_latest_by_cid.get(cid) or "").strip()
+        try:
+            checkpoint_date = datetime.strptime(checkpoint, "%Y-%m-%d").date()
+        except (TypeError, ValueError):
+            return self.since
+        return max(
+            self.since_date_obj,
+            checkpoint_date - timedelta(days=overlap_days),
+        ).isoformat()
 
     @staticmethod
     def _parse_google_rpc_request(post_data: str) -> dict:
@@ -1819,8 +1864,11 @@ class Collector:
                 continue
         return False
 
-    def _scrape_google_business_place(self, page, place: dict) -> tuple[list[dict], bool, str]:
+    def _scrape_google_business_place(
+        self, page, place: dict, stop_before_date: str | None = None
+    ) -> tuple[list[dict], bool, str]:
         feature_id = place["feature_id"]
+        history_boundary = stop_before_date or self.since
         state = {"feature_id": feature_id, "newest": [], "relevant": [], "errors": []}
 
         def handle_response(response):
@@ -1941,7 +1989,7 @@ class Collector:
                     review["sort_date"] for review in batch["reviews"]
                     if review["sort_date"] != "1970-01-01"
                 ]
-                if sort_dates and max(sort_dates) < self.since:
+                if sort_dates and max(sort_dates) < history_boundary:
                     stop_by_date = True
                     break
                 if not batch["continuation"] or len(batch["reviews"]) < 10:
@@ -2011,7 +2059,7 @@ class Collector:
                         review["sort_date"] for review in parsed
                         if review["sort_date"] != "1970-01-01"
                     ]
-                    if sort_dates and max(sort_dates) < self.since:
+                    if sort_dates and max(sort_dates) < history_boundary:
                         stop_by_date = True
                         break
                     if not next_continuation or len(parsed) < 10:
@@ -2076,7 +2124,7 @@ class Collector:
                         review["sort_date"] for review in batch["reviews"]
                         if review["sort_date"] != "1970-01-01"
                     ]
-                    if sort_dates and max(sort_dates) < self.since:
+                    if sort_dates and max(sort_dates) < history_boundary:
                         stop_by_date = True
                         break
                     if not batch["continuation"] or len(batch["reviews"]) < 10:
@@ -2086,7 +2134,7 @@ class Collector:
             completed = stop_by_date or terminal_page or (advertised and len(unique_reviews) >= advertised)
             if not completed:
                 failure_reason = (
-                    f"pagination stopped before the 2023 boundary/terminal page "
+                    f"pagination stopped before the {history_boundary} boundary/terminal page "
                     f"({len(unique_reviews)} RPC reviews; advertised={advertised or 'unknown'})"
                 )
             return list(unique_reviews.values()), bool(completed), failure_reason
@@ -2127,27 +2175,43 @@ class Collector:
                 headless=True,
                 args=["--disable-blink-features=AutomationControlled", "--lang=en-US"],
             )
-            context = browser.new_context(
-                user_agent=GOOGLE_MAPS_USER_AGENT,
-                viewport={"width": 1200, "height": 1800},
-                locale="en-US",
-                timezone_id="America/Chicago",
-            )
-            page = context.new_page()
-            bootstrap = quote(f"{GOOGLE_BUSINESS_SEARCH_NAMES[0]} United States", safe="")
-            page.goto(
-                f"https://www.google.com/maps/search/{bootstrap}?hl=en&gl=us",
-                wait_until="domcontentloaded",
-                timeout=60000,
-            )
-            page.wait_for_timeout(3000)
+            def new_google_page():
+                new_context = browser.new_context(
+                    user_agent=GOOGLE_MAPS_USER_AGENT,
+                    viewport={"width": 1200, "height": 1800},
+                    locale="en-US",
+                    timezone_id="America/Chicago",
+                )
+                new_page = new_context.new_page()
+                bootstrap = quote(f"{GOOGLE_BUSINESS_SEARCH_NAMES[0]} United States", safe="")
+                new_page.goto(
+                    f"https://www.google.com/maps/search/{bootstrap}?hl=en&gl=us",
+                    wait_until="domcontentloaded",
+                    timeout=60000,
+                )
+                new_page.wait_for_timeout(3000)
+                return new_context, new_page
+
+            context, page = new_google_page()
 
             for index, place in enumerate(places, start=1):
-                reviews, completed, error = self._scrape_google_business_place(page, place)
+                floor_date = self._google_profile_floor_date(place)
+                reviews, completed, error = self._scrape_google_business_place(
+                    page, place, floor_date
+                )
+                if not completed:
+                    context.close()
+                    context, page = new_google_page()
+                    reviews, completed, error = self._scrape_google_business_place(
+                        page, place, floor_date
+                    )
                 if not completed:
                     failed_profiles.append(f"{place['name']} [{place['feature_id']}]: {error}")
-                    continue
+                    break
                 completed_profiles += 1
+                place["last_successful_scan_date"] = (
+                    self.until or datetime.now(timezone.utc).date().isoformat()
+                )
                 candidates_seen += len(reviews)
                 for review in reviews:
                     if review.get("original_language") not in {"", "en"}:
@@ -2183,6 +2247,7 @@ class Collector:
                         f"RPC candidates {candidates_seen}; added {len(self.records) - start_count}"
                     )
 
+            self.google_business_profiles = [dict(row) for row in places]
             context.close()
             browser.close()
 
@@ -2201,8 +2266,11 @@ class Collector:
             latest_date=latest_candidate_date,
             note=(
                 f"Validated {completed_profiles} US Google Business Profiles; paginated newest-first "
-                f"with exact RPC timestamps through the 2023 boundary."
+                f"with exact RPC timestamps through per-profile incremental overlap boundaries."
             ),
+        )
+        self._source_health_entry("google.com")["last_successful_refresh_until"] = (
+            self.until or datetime.now(timezone.utc).date().isoformat()
         )
         print(f"  - Added {len(self.records) - start_count} Google Business Profile reviews")
 
@@ -4424,6 +4492,17 @@ class Collector:
         for name, fn in collectors:
             health_source = wrapper_health_sources.get(name)
             wrapper_start = len(self.records)
+            google_snapshot = None
+            if name == "google_business":
+                google_snapshot = {
+                    "records": deepcopy(self.records),
+                    "seen": set(self._seen),
+                    "profiles": deepcopy(self.google_business_profiles),
+                    "source_health": deepcopy(self.source_health),
+                    "geo_validation_counts": self.geo_validation_counts.copy(),
+                    "geo_excluded_counts": self.geo_excluded_counts.copy(),
+                    "geo_excluded_examples": deepcopy(self.geo_excluded_examples),
+                }
             if health_source:
                 self.note_source_attempt(
                     health_source,
@@ -4437,14 +4516,54 @@ class Collector:
                         added=max(0, len(self.records) - wrapper_start),
                     )
             except Exception as exc:
-                self.collector_failures.append({"collector": name, "error": str(exc)})
+                failure = {"collector": name, "error": str(exc)}
+                if name == "google_business" and google_snapshot is not None:
+                    failed_health = deepcopy(self.source_health.get("google.com") or {})
+                    can_retain = (
+                        int(self.existing_counts_by_source.get("google.com", 0)) > 0
+                        and "google.com" not in self.replace_source_websites
+                    )
+                    if not can_retain:
+                        self.collector_failures.append(failure)
+                        print(f"[warn] collector failed: {name}: {exc}")
+                        raise
+
+                    self.records = google_snapshot["records"]
+                    self._seen = google_snapshot["seen"]
+                    self.google_business_profiles = google_snapshot["profiles"]
+                    self.source_health = google_snapshot["source_health"]
+                    self.geo_validation_counts = google_snapshot["geo_validation_counts"]
+                    self.geo_excluded_counts = google_snapshot["geo_excluded_counts"]
+                    self.geo_excluded_examples = google_snapshot["geo_excluded_examples"]
+                    failed_health["source_website"] = "google.com"
+                    failed_health["attempted"] = True
+                    failed_health["retained_after_failed_refresh"] = True
+                    failed_health["new_reviews_added"] = 0
+                    prior_google_audit = self.existing_source_audit.get("google.com") or {}
+                    last_successful_until = str(
+                        prior_google_audit.get("last_successful_refresh_until") or ""
+                    ).strip()
+                    if not last_successful_until and prior_google_audit.get("status") == "ok":
+                        last_successful_until = str(
+                            self.existing_meta.get("until_date") or ""
+                        ).strip()
+                    failed_health["last_successful_refresh_until"] = last_successful_until
+                    errors = failed_health.setdefault("errors", [])
+                    if str(exc) not in errors:
+                        errors.append(str(exc)[:300])
+                    notes = failed_health.setdefault("notes", [])
+                    retention_note = (
+                        "Google refresh failed atomically; the last verified Google rows "
+                        "and profile registry were retained."
+                    )
+                    if retention_note not in notes:
+                        notes.append(retention_note)
+                    self.source_health["google.com"] = failed_health
+                    failure["retained_previous_data"] = True
+                self.collector_failures.append(failure)
                 if health_source:
                     self.note_source_attempt(health_source, error=str(exc))
                 print(f"[warn] collector failed: {name}: {exc}")
-                if name == "google_business":
-                    # A Google schema/blocking failure must preserve the last good
-                    # company artifact rather than publish a silently partial refresh.
-                    raise
 
 
 def main():

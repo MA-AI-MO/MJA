@@ -35,10 +35,18 @@ def validate_google_business(label: str, business: dict, payload: dict) -> list[
         errors.append(f"{label}: Google Business Profile source has no accepted reviews")
     if not registry:
         errors.append(f"{label}: Google Business Profile registry is empty")
-    if audit.get("status") != "ok":
+    audit_status = audit.get("status")
+    if audit_status not in {"ok", "retained_after_failed_refresh"}:
         errors.append(f"{label}: Google Business Profile source audit status is {audit.get('status') or 'missing'}")
-    if int(audit.get("candidate_reviews_seen") or 0) <= 0:
+    if audit_status == "ok" and int(audit.get("candidate_reviews_seen") or 0) <= 0:
         errors.append(f"{label}: Google Business Profile source audit has no candidate count")
+    if audit_status == "retained_after_failed_refresh":
+        if int(audit.get("review_count") or 0) < int(audit.get("existing_review_count") or 0):
+            errors.append(f"{label}: retained Google rows dropped below the existing verified count")
+        if not audit.get("errors"):
+            errors.append(f"{label}: retained Google status has no recorded refresh error")
+        if not audit.get("last_successful_refresh_until"):
+            errors.append(f"{label}: retained Google status has no last successful refresh checkpoint")
 
     seen_content = set()
     for row in reviews:

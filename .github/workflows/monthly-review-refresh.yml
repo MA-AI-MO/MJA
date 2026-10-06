@@ -58,6 +58,7 @@ jobs:
     timeout-minutes: 240
     strategy:
       fail-fast: false
+      max-parallel: 2
       matrix:
         include:
           - company: copart
@@ -119,7 +120,7 @@ jobs:
           PYTHONUNBUFFERED: "1"
         run: |
           set +e
-          timeout 150m python "${{ matrix.builder }}" \
+          timeout 180m python "${{ matrix.builder }}" \
             --since "${{ needs.resolve-window.outputs.since }}" \
             --until "${{ needs.resolve-window.outputs.until }}" \
             --target 0 \

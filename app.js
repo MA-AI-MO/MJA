@@ -100,7 +100,14 @@
     const sourceWarnings = refreshed.flatMap((company) =>
       (company.source_audit || [])
         .filter((row) =>
-          ["blocked", "missing", "not_attempted", "partial", "stale_or_no_recent_candidates"].includes(row.status)
+          [
+            "blocked",
+            "missing",
+            "not_attempted",
+            "partial",
+            "stale_or_no_recent_candidates",
+            "retained_after_failed_refresh",
+          ].includes(row.status)
         )
         .map((row) => `${company.display_name || company.key}: ${row.source_website} ${row.status}`)
     );

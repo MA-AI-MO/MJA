@@ -40,8 +40,12 @@ def audit_dataset(relative_path: str, label: str) -> None:
     required_sources = meta.get("required_source_websites") or []
     collector_failures = meta.get("collector_failures") or []
 
-    if collector_failures:
-        raise RuntimeError(f"{label}: collector failures present: {collector_failures}")
+    fatal_collector_failures = [
+        row for row in collector_failures
+        if not row.get("retained_previous_data")
+    ]
+    if fatal_collector_failures:
+        raise RuntimeError(f"{label}: collector failures present: {fatal_collector_failures}")
 
     missing_required = [source for source in required_sources if int(source_counts.get(source, 0)) <= 0]
     if missing_required:
@@ -67,7 +71,12 @@ def audit_dataset(relative_path: str, label: str) -> None:
             "notes": row.get("notes", []),
         }
         for row in source_audit
-        if row.get("status") in {"partial", "stale_or_no_recent_candidates", "parsed_no_new_rows"}
+        if row.get("status") in {
+            "partial",
+            "stale_or_no_recent_candidates",
+            "parsed_no_new_rows",
+            "retained_after_failed_refresh",
+        }
     ]
 
     print(f"{label} source audit present: {present_sources}")
