@@ -1,13 +1,13 @@
 {
   "meta": {
     "description": "Large-scale English-only OPENLANE textual review/problem dataset from public web sources (recency-first).",
-    "review_count": 776,
+    "review_count": 806,
     "source_counts": {
-      "google.com": 243,
-      "birdeye.com": 13,
-      "trustpilot.com": 83,
-      "apps.apple.com": 143,
-      "play.google.com": 256,
+      "google.com": 249,
+      "play.google.com": 266,
+      "trustpilot.com": 84,
+      "apps.apple.com": 153,
+      "birdeye.com": 16,
       "bbb.org": 33,
       "reddit.com": 5
     },
@@ -44,17 +44,17 @@
         "direct_statuses": {},
         "blocked": false,
         "fallback_used": false,
-        "candidate_reviews_seen": 575,
-        "new_reviews_added": 3,
+        "candidate_reviews_seen": 597,
+        "new_reviews_added": 10,
         "advertised_total": null,
-        "latest_candidate_date": "2026-08-22",
+        "latest_candidate_date": "2026-10-05",
         "notes": [],
         "errors": [],
-        "review_count": 256,
-        "existing_review_count": 253,
+        "review_count": 266,
+        "existing_review_count": 256,
         "present": true,
-        "latest_review_date": "2026-08-09",
-        "existing_latest_date": "2026-07-29",
+        "latest_review_date": "2026-09-27",
+        "existing_latest_date": "2026-08-09",
         "status": "ok"
       },
       {
@@ -65,75 +65,75 @@
         "direct_statuses": {},
         "blocked": false,
         "fallback_used": false,
-        "candidate_reviews_seen": 172,
-        "new_reviews_added": 8,
+        "candidate_reviews_seen": 181,
+        "new_reviews_added": 10,
         "advertised_total": null,
-        "latest_candidate_date": "2026-08-12",
+        "latest_candidate_date": "2026-09-22",
         "notes": [
           "Apple RSS can be sparse for some app IDs; HTML supplement captures visible App Store review cards only."
         ],
         "errors": [],
-        "review_count": 143,
-        "existing_review_count": 135,
+        "review_count": 153,
+        "existing_review_count": 143,
         "present": true,
-        "latest_review_date": "2026-08-12",
-        "existing_latest_date": "2026-07-25",
+        "latest_review_date": "2026-09-15",
+        "existing_latest_date": "2026-08-12",
         "status": "ok"
       },
       {
         "source_website": "bbb.org",
         "attempted": true,
-        "direct_pages": 3,
+        "direct_pages": 2,
         "fallback_pages": 2,
         "direct_statuses": {
-          "403": 3,
+          "403": 2,
           "200": 2
         },
         "blocked": true,
         "fallback_used": true,
-        "candidate_reviews_seen": 16,
-        "new_reviews_added": 3,
+        "candidate_reviews_seen": 0,
+        "new_reviews_added": 0,
         "advertised_total": null,
-        "latest_candidate_date": "2026-07-25",
+        "latest_candidate_date": null,
         "notes": [
           "direct BBB customer reviews blocked for https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496",
-          "direct BBB complaints blocked for https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496"
+          "reader challenge for https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/customer-reviews",
+          "direct BBB complaints blocked for https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496",
+          "reader challenge for https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/complaints"
         ],
-        "errors": [
-          "reader error for https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/customer-reviews: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=60)"
-        ],
+        "errors": [],
         "review_count": 33,
-        "existing_review_count": 30,
+        "existing_review_count": 33,
         "present": true,
         "latest_review_date": "2026-07-25",
-        "existing_latest_date": "2026-07-15",
-        "status": "ok"
+        "existing_latest_date": "2026-07-25",
+        "status": "stale_or_no_recent_candidates"
       },
       {
         "source_website": "trustpilot.com",
         "attempted": true,
         "direct_pages": 1,
-        "fallback_pages": 5,
+        "fallback_pages": 2,
         "direct_statuses": {
           "403": 1,
-          "200": 5
+          "200": 2
         },
         "blocked": true,
         "fallback_used": true,
-        "candidate_reviews_seen": 68,
-        "new_reviews_added": 3,
+        "candidate_reviews_seen": 17,
+        "new_reviews_added": 1,
         "advertised_total": null,
-        "latest_candidate_date": "2026-08-13",
+        "latest_candidate_date": "2026-10-06",
         "notes": [
           "direct Trustpilot blocked for openlane.com",
-          "reader challenge for https://www.trustpilot.com/review/openlane.com?page=5"
+          "reader challenge for https://www.trustpilot.com/review/openlane.com?page=2"
         ],
         "errors": [],
-        "review_count": 83,
-        "existing_review_count": 80,
+        "review_count": 84,
+        "existing_review_count": 83,
         "present": true,
-        "latest_review_date": "2026-08-13",
-        "existing_latest_date": "2026-07-22",
+        "latest_review_date": "2026-09-22",
+        "existing_latest_date": "2026-08-13",
         "status": "ok"
       },
       {
@@ -172,55 +172,76 @@
         "candidate_reviews_seen": 10,
         "new_reviews_added": 3,
         "advertised_total": 66,
-        "latest_candidate_date": "2026-08-19",
+        "latest_candidate_date": "2026-09-07",
         "notes": [
           "Birdeye advertised totals may include syndicated Google/Birdeye network reviews; accepted rows are visible textual review cards that pass filters.",
-          "Advertised total 66 is much larger than accepted rows 13; source is likely partially covered after filters/pagination."
+          "Advertised total 66 is much larger than accepted rows 16; source is likely partially covered after filters/pagination."
         ],
         "errors": [],
-        "review_count": 13,
-        "existing_review_count": 10,
+        "review_count": 16,
+        "existing_review_count": 13,
         "present": true,
-        "latest_review_date": "2026-08-19",
-        "existing_latest_date": "2026-07-03",
+        "latest_review_date": "2026-09-07",
+        "existing_latest_date": "2026-08-19",
         "status": "partial"
       },
       {
         "source_website": "google.com",
         "attempted": true,
-        "direct_pages": 264,
+        "direct_pages": 221,
         "fallback_pages": 0,
         "direct_statuses": {
-          "200": 264
+          "200": 221
         },
         "blocked": false,
         "fallback_used": false,
-        "candidate_reviews_seen": 500,
-        "new_reviews_added": 10,
+        "candidate_reviews_seen": 30,
+        "new_reviews_added": 6,
         "advertised_total": null,
-        "latest_candidate_date": "2026-08-31",
+        "latest_candidate_date": "2026-09-30",
         "notes": [
           "Google Business Profile discovery completed: 106/106 queries succeeded and 2 unique validated US profiles were selected.",
-          "Validated 2 US Google Business Profiles; paginated newest-first with exact RPC timestamps through the 2023 boundary."
+          "Validated 1 US Google Business Profiles; 1 failed and 0 were skipped after the circuit breaker. Successful profiles were paginated newest-first through per-profile incremental overlap boundaries."
         ],
-        "errors": [],
-        "review_count": 243,
-        "existing_review_count": 233,
+        "errors": [
+          "OPENLANE [0x87c0f036384b643f:0x7af4135fd6c841d8]: newest review RPC did not load"
+        ],
+        "profile_retention_used": true,
+        "profiles_completed": 1,
+        "profiles_failed": 1,
+        "profiles_skipped_after_circuit_breaker": 0,
+        "last_successful_refresh_until": "2026-08-31",
+        "review_count": 249,
+        "existing_review_count": 243,
         "present": true,
-        "latest_review_date": "2026-08-27",
-        "existing_latest_date": "2026-07-29",
-        "status": "ok"
+        "latest_review_date": "2026-09-30",
+        "existing_latest_date": "2026-08-27",
+        "status": "partial_profile_retention"
       }
     ],
     "sentiments": {
-      "positive": 210,
-      "negative": 566
+      "positive": 218,
+      "negative": 588
     },
     "source_urls": [
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w5S09ISldXbkJqUzBkWU1HaDJXVlJuT1ZwQmEwRRAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOl9KOHJWWnBjS0dYMGh2WVRnOVpBa0E%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pKMFkySjRWbVp6VlZZd2RXcHRjSE5ZTnpKR1prRRAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOjJ0Y2J4VmZzVVYwdWptcHNYNzJGZkE%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25Wek1HcFRSMVI0Y1ZGdlpFNW9WbTFKVGxWdlJFRRAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOnVzMGpTR1R4cVFvZE5oVm1JTlVvREE%7C%7C?hl=en",
+      "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "https://www.trustpilot.com/reviews/6ab54ef4ab5d9ede5bcf9a0d",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2sweWNGTlJUWEpmVmt4eWRHMVFiMlZTTjBKMVNHYxAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOk0ycFNRTXJfVkxydG1Qb2VSN0J1SGc%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xaTmNtMXlWMGRWUkZKRGVtRkJNMVp4V2xFelVVRRAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOlZNcm1yV0dVRFJDemFBM1ZxWlEzUUE%7C%7C?hl=en",
+      "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14554862818",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xFNFZWZHNTakp6TFZoRmJYaHVkVjlrVm5BM09YYxAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOlE4VVdsSjJzLVhFbXhudV9kVnA3OXc%7C%7C?hl=en",
+      "https://reviews.birdeye.com/openlane-166516131772584#review-1",
+      "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14507327908",
+      "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14502675000",
+      "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14501677930",
+      "https://itunes.apple.com/us/review?id=1175036411&type=Purple%20Software&reviewId=14498997760",
+      "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14495262345",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21aUWEwTnVORTVWT1hKUkxYcG1Sa1p4V0hFeFMyYxAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOmZQa0NuNE5VOXJRLXpmRkZxWHExS2c%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tOVVptMURORUprYzNCbU5uWkpZbmROWmt4MWVIYxAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOkNUZm1DNEJkc3BmNnZJYndNZkx1eHc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT214a1gwVnJVemhYU1dOR01WRlljSEJZYkU4eGFGRRAB!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CAIQACodChtycF9oOmxkX0VrUzhXSWNGMVFYcHBYbE8xaFE%7C%7C?hl=en",
-      "https://reviews.birdeye.com/openlane-166516131772584#review-1",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wTmRFTkNUa2hFVmtKTWJIVnNOVGt6Y1dadlRWRRAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOmpNdENCTkhEVkJMbHVsNTkzcWZvTVE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20xcGNVVjFibWd4VkZwSFVEbFhORTVqYjJSWVgwRRAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOm1pcUV1bmgxVFpHUDlXNE5jb2RYX0E%7C%7C?hl=en",
       "https://www.trustpilot.com/reviews/6a7e3982c1d3bf36f8d1d7d4",
@@ -229,7 +250,6 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xScWMyeHhjM0Z2UW1nM1ExcE1SWEJhTkZCTlRVRRAB!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CAIQACodChtycF9oOlRqc2xxc3FvQmg3Q1pMRXBaNFBNTUE%7C%7C?hl=en",
       "https://www.trustpilot.com/reviews/6a81d9c53b4a34e35d7322b2",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t4YWVWWnlNMUppT0ZReFQwYzViM1JSUWs1VE5tYxAB!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CAIQACodChtycF9oOkxaeVZyM1JiOFQxT0c5b3RRQk5TNmc%7C%7C?hl=en",
-      "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
       "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25weU1VNTVlWHAyVVRKbVUzY3dVVkpPVjJ4elMzYxAB!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CAIQACodChtycF9oOnpyMU55eXp2UTJmU3cwUVJOV2xzS3c%7C%7C?hl=en",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14386826679",
@@ -249,9 +269,9 @@
       "https://www.trustpilot.com/reviews/6a5132537a2ba2f795242c5d",
       "https://www.trustpilot.com/reviews/6a4fb4414467999cc1271926",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tsUWEyeHNkekZWY2xsV05FeHRSbkJYZGpkUFNWRRAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOklQa2xsdzFVcllWNExtRnBXdjdPSVE%7C%7C?hl=en",
+      "https://reviews.birdeye.com/openlane-166516131772584#review-3",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14282411977",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14279210408",
-      "https://reviews.birdeye.com/openlane-166516131772584#review-3",
       "https://reviews.birdeye.com/openlane-166516131772584#review-2",
       "https://www.trustpilot.com/reviews/6a57ca0914e9551264767096",
       "http://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/complaints#0382_90024496_24998087",
@@ -261,10 +281,10 @@
       "http://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/complaints#0382_90024496_24975266",
       "http://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/complaints#0382_90024496_24949670",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCYU1HVnVhRVozWVU5NWFsbE9TVzluWkc1dGIxRRAB!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CAIQACodChtycF9oOjBaMGVuaEZ3YU95allOSW9nZG5tb1E%7C%7C?hl=en",
+      "https://reviews.birdeye.com/openlane-166516131772584#review-4",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14162802186",
       "https://play.google.com/store/apps/details?id=com.backlotcars.backlotcars&hl=en&gl=us",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14159569903",
-      "https://reviews.birdeye.com/openlane-166516131772584#review-4",
       "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14140355961",
       "https://apps.apple.com/us/app/id1566419386?see-all=reviews&platform=iphone&reviewId=14140355961",
       "https://www.trustpilot.com/reviews/6a1f3921974048e99b3a1b2b",
@@ -503,26 +523,13 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURfMGZ5NHpBRRAB!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CIHM0ogKEICAgID_0fy4zAE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURfNGFtN1V3EAE!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CIHM0ogKEICAgID_4am7Uw%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURfbG9Ialp3EAE!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CIHM0ogKEICAgID_loHjZw%7C%7C?hl=en",
-      "https://www.trustpilot.com/reviews/67917cefc6be2b27ae2c6313",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURfcHV6T2hBRRAB!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CIHM0ogKEICAgID_puzOhAE%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURfeHREOHdBRRAB!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CIHM0ogKEICAgID_xtD8wAE%7C%7C?hl=en",
-      "https://itunes.apple.com/us/review?id=1175036411&type=Purple%20Software&reviewId=12199031988",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNfd1lLdlZBEAE!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CIHM0ogKEICAgIC_wYKvVA%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNfd3FyeVpnEAE!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CIHM0ogKEICAgIC_wqryZg%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNfNUk2OXlnRRAB!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CIHM0ogKEICAgIC_5I69ygE%7C%7C?hl=en",
-      "https://www.trustpilot.com/reviews/677d98eb96afb9673604d1df",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURmbU5mb1ZnEAE!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CIHM0ogKEICAgIDfmNfoVg%7C%7C?hl=en",
-      "https://itunes.apple.com/us/review?id=1175036411&type=Purple%20Software&reviewId=12113196103",
-      "https://apps.apple.com/us/app/id1175036411?see-all=reviews&platform=iphone&reviewId=12113196103",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2cnZMX1l3EAE!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CIHM0ogKEICAgIDvrvL_Yw%7C%7C?hl=en",
-      "https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/complaints#0382_90024496_22712003",
-      "http://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/complaints#0382_90024496_22712003"
+      "https://www.trustpilot.com/reviews/67917cefc6be2b27ae2c6313"
     ],
-    "generated_at_utc": "2026-09-02T13:58:27.964462+00:00",
+    "generated_at_utc": "2026-10-07T02:24:05.131129+00:00",
     "since_date": "2023-01-01",
-    "until_date": "2026-08-31",
+    "until_date": "2026-09-30",
     "collector_failures": [],
-    "existing_review_count": 746,
+    "existing_review_count": 776,
     "new_reviews_added": 30,
     "youtube_excluded": true,
     "usa_only": true,
@@ -543,25 +550,48 @@
       "bbb.org"
     ],
     "geo_validation_counts": {
-      "google_play_us_store": 3,
-      "google_business_us_profile": 10,
-      "trustpilot_us_slug": 3,
-      "bbb_us_business": 3,
+      "google_play_us_store": 10,
+      "google_business_us_profile": 6,
+      "trustpilot_us_slug": 1,
       "birdeye_us_profile": 3,
-      "apple_us_store": 8
+      "apple_us_store": 10
     },
     "geo_excluded_counts": {
-      "trustpilot.com:trustpilot_us_slug_non_us_marker": 1,
-      "apps.apple.com:apple_non_us_store": 7
+      "reddit.com:mixed_source_non_us_marker": 2,
+      "apps.apple.com:apple_non_us_store": 13
     },
     "geo_excluded_examples": [
       {
-        "source_website": "trustpilot.com",
-        "source_label": "Trustpilot (openlane.com)",
-        "source_url": "https://www.trustpilot.com/reviews/687f8f0a95c626e61fc3677d",
-        "review_date": "2025-06-26",
-        "reason": "trustpilot_us_slug_non_us_marker",
-        "review_text": "Openlane code of ethics for dealers…. Openlane code of ethics for dealers stipulates that all known problems with a vehicle must be disclaimed even if it's minor. Purchased a truck and upon leaving the compound it wouldn't shift out of firs"
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/askcarsales",
+        "source_url": "https://www.reddit.com/r/askcarsales/comments/1w70ny6/can_new_bc_independent_dealer_great_cars_no_buyers/",
+        "review_date": "2026-09-04",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "[CAN] New BC Independent Dealer: Great cars, no buyers. Hey everyone, I recently got my independent dealer license here in Vancouver, BC. Because I want to keep overhead low at the moment, I'm just renting a desk at a local dealership. I wa"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/askcarsales",
+        "source_url": "https://www.reddit.com/r/askcarsales/comments/1tf5wd9/lease_turnincondition_report_issues/",
+        "review_date": "2026-05-16",
+        "reason": "mixed_source_non_us_marker",
+        "review_text": "Lease Turn-in/Condition Report Issues Hello, I am helping my elderly aunt on a fixed income deal with a situation with Nissan Canada. Hoping somebody working in the industry could tell me if this process passes their smell test and what gro"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1566419386, ca)",
+        "source_url": "https://itunes.apple.com/ca/review?id=1566419386&type=Purple%20Software&reviewId=14579724000",
+        "review_date": "2026-09-22",
+        "reason": "apple_non_us_store",
+        "review_text": "Review. Very hard to use too many mistakes very bad version Also transportation fees very low on this version. Software calculates kms as a miles so as an example 167km it says 100km and paying less"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1566419386, ca)",
+        "source_url": "https://itunes.apple.com/ca/review?id=1566419386&type=Purple%20Software&reviewId=14310655922",
+        "review_date": "2026-07-16",
+        "reason": "apple_non_us_store",
+        "review_text": "Waste. It’s just a total waste of time and has no use adds to much to time to the job at hand shouldn’t have to get a new code every time you log in"
       },
       {
         "source_website": "apps.apple.com",
@@ -590,10 +620,34 @@
       {
         "source_website": "apps.apple.com",
         "source_label": "Apple App Store (1566419386, ca)",
+        "source_url": "https://apps.apple.com/ca/app/id1566419386?see-all=reviews&platform=iphone&reviewId=14608816223",
+        "review_date": "2026-09-29",
+        "reason": "apple_non_us_store",
+        "review_text": "Northern Castle. Such a stupid, glitchy complicated APP EVER. How Openlane and Adesa decided to switch from SuperDispatch. Ugly and poor design, but the most frustrating thing is those SMS, verifications, glitchy camera pics. AI will make b"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1566419386, ca)",
+        "source_url": "https://apps.apple.com/ca/app/id1566419386?see-all=reviews&platform=iphone&reviewId=14579724000",
+        "review_date": "2026-09-22",
+        "reason": "apple_non_us_store",
+        "review_text": "Review. Very hard to use too many mistakes very bad version Also transportation fees very low on this version. Software calculates kms as a miles so as an example 167km it says 100km and paying less"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1566419386, ca)",
         "source_url": "https://apps.apple.com/ca/app/id1566419386?see-all=reviews&platform=iphone&reviewId=14310655922",
         "review_date": "2026-07-16",
         "reason": "apple_non_us_store",
-        "review_text": "Waste. It’s just a total waste of time and has no use adds to much to time to the job at hand shouldn’t have to get a new code every time you log in"
+        "review_text": "Waste. We're sorry to hear about the issues you've encountered. We would like to hear more about the problems that you are ensuing. Please email us at carrierservices@openlane.com and someone will reach out to you"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1566419386, ca)",
+        "source_url": "https://apps.apple.com/ca/app/id1566419386?see-all=reviews&platform=iphone&reviewId=13682385933",
+        "review_date": "2026-01-27",
+        "reason": "apple_non_us_store",
+        "review_text": "Hot Garbage. We're really sorry you had such a frustrating experience. That's definitely not the experience we want anyone to have. If you are open to sharing more details about what went wrong, we'd genuinely appreciate the chance to make "
       },
       {
         "source_website": "apps.apple.com",
@@ -601,7 +655,7 @@
         "source_url": "https://apps.apple.com/ca/app/id1566419386?see-all=reviews&platform=iphone&reviewId=13572954510",
         "review_date": "2025-12-30",
         "reason": "apple_non_us_store",
-        "review_text": "This app sucks. The stupid app never submits the inspections and you have to do them four times before they submit, half the time I end up having to call the shipper and have them manually approve it because this app is so horribly designed"
+        "review_text": "This app sucks. We apologize for any frustrations you are experiencing with the CarsArrive+ App. We will forward your feedback to our development team to assess"
       },
       {
         "source_website": "apps.apple.com",
@@ -609,7 +663,7 @@
         "source_url": "https://apps.apple.com/ca/app/id1566419386?see-all=reviews&platform=iphone&reviewId=13121509849",
         "review_date": "2025-09-10",
         "reason": "apple_non_us_store",
-        "review_text": "1 star. Takes more time to fill out this app then load the vehicles"
+        "review_text": "1 star. Thank you for taking time to send a review. We appreciate the work you do for CarsArrive and we apologize for any frustrations you are experiencing with the CarsArrive+ App. We would like to hear more about the problems that you are"
       },
       {
         "source_website": "apps.apple.com",
@@ -617,7 +671,15 @@
         "source_url": "https://apps.apple.com/ca/app/id1566419386?see-all=reviews&platform=iphone&reviewId=13010291542",
         "review_date": "2025-08-13",
         "reason": "apple_non_us_store",
-        "review_text": "Terrible. Out of all the apps I deal with I don’t like this one at all! not good at all slow very slow , have to put the same information in about 15 times before it loads up into it system literally takes forever and is time consuming . Co"
+        "review_text": "Terrible. We apologize for any frustrations you are experiencing with the CarsArrive+ App. We will forward your feedback to our development team to assess"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1566419386, ca)",
+        "source_url": "https://apps.apple.com/ca/app/id1566419386?see-all=reviews&platform=iphone&reviewId=12958948133",
+        "review_date": "2025-07-31",
+        "reason": "apple_non_us_store",
+        "review_text": "Bug. We're sorry to hear about the issues you've encountered. We would like to hear more about the problems that you are ensuing. Please email us at carrierservices@openlane.com and someone will reach out to you"
       }
     ],
     "active_collectors": [
@@ -641,7 +703,8 @@
         "address": "1100 Main St #1500, Kansas City, MO 64105",
         "website": "http://www.openlane.com/",
         "rating": 3.5,
-        "review_count": 967
+        "review_count": 971,
+        "last_successful_scan_date": "2026-08-31"
       },
       {
         "feature_id": "0x8814ac6c5df00dff:0x82ddb1a9ae334e23",
@@ -650,12 +713,358 @@
         "name": "OPENLANE",
         "address": "11299 Illinois St, Carmel, IN 46032",
         "website": "https://www.openlane.com/",
-        "rating": 3.1,
-        "review_count": 76
+        "rating": 3.3,
+        "review_count": 85,
+        "last_successful_scan_date": "2026-09-30"
       }
     ]
   },
   "reviews": [
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (OPENLANE)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w5S09ISldXbkJqUzBkWU1HaDJXVlJuT1ZwQmEwRRAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOl9KOHJWWnBjS0dYMGh2WVRnOVpBa0E%7C%7C?hl=en",
+      "author": "Vanessa Johnson",
+      "review_date": "2026-09-30",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "I have been buying for the last 4 years from OPENLANE and would highly recommend them, they have the best customer service , low buyer fees & are always willing to help when needed! I would like to give a special shout out to Bill Jordan my rep as he’s gone above & beyond for me these last 4 years and has done nothing but help in any circumstance he can, I wouldn’t want him replaced ! I also would like to give a shout out to James Pechar Director Arb and Adam Lanane Independent as they both went above & beyond to help me during a difficult situation. OPENLANE’S customer service is wonderful & answers promptly. Just this year I have purchased 150 vehicles I would highly recommend this auction !",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000777"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (OPENLANE)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pKMFkySjRWbVp6VlZZd2RXcHRjSE5ZTnpKR1prRRAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOjJ0Y2J4VmZzVVYwdWptcHNYNzJGZkE%7C%7C?hl=en",
+      "author": "Chris Harty",
+      "review_date": "2026-09-30",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Openlane offers a large selection of vehicles along with accurate, up-to-date information. Representatives at every level engage with both buyers and sellers professionally and are always looking for ways to improve. The individual representatives I’ve worked with, including my direct contact, Dave Malo, and his manager, Mike Smith, are always just a text away whenever I have a question or problem. They routinely reach out to see if I need anything and actively help me find the vehicles I’m looking for. They’re true car people—not just auctioneers. They understand the business from both the buyer’s and seller’s perspectives, and they genuinely believe that a win for me is a win for them. That commitment comes through every day. I’m not sure whether I was simply lucky to have some of the greatest people on the other side as teammates or whether everyone at OPENLANE is this dedicated. Either way, OPENLANE is a process-driven company with clear expectations that makes doing business both profitable and concise.",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000778"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (OPENLANE)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25Wek1HcFRSMVI0Y1ZGdlpFNW9WbTFKVGxWdlJFRRAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOnVzMGpTR1R4cVFvZE5oVm1JTlVvREE%7C%7C?hl=en",
+      "author": "Jim Doherty",
+      "review_date": "2026-09-29",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "2017 Ram Deceptive pics angled to not show damages, missing emissions system when listed as it having it, broken windshield not noted, many body flaws not noted, broken panels with no pics or notes",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage",
+      "id": "rvw-000779"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "chris routh",
+      "review_date": "2026-09-27",
+      "rating": 3,
+      "sentiment": "positive",
+      "review_text": "at least it works to complete your loads but the search does not work at all and never really has!",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000780"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "Reggie Schultz",
+      "review_date": "2026-09-27",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "Update doesn't work well as far as searching. Wasn't great to began with, but now I can't get it to search at all.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000781"
+    },
+    {
+      "source_website": "trustpilot.com",
+      "source_label": "Trustpilot (openlane.com)",
+      "source_url": "https://www.trustpilot.com/reviews/6ab54ef4ab5d9ede5bcf9a0d",
+      "author": "Trustpilot user",
+      "review_date": "2026-09-22",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Scam, Scam and More Scam. This company is a total scam. Lucid uses them to inspect their vehicles at the end of leases. The inspector literallyu doctored up pictures to make it look as though there were massive scratches on the car that DO NOT EXIST! And when I called them to speak to someone about their fraudulent report, they told me I had to take it up with the leasing company. The leasing company, however, just sends you back to OpenLane. I tried reaching the inspector, but of course, she refused to communicate also. They falsely report on the condition of the car and then refuse to give you the information you need to have repairs done before the car must be turned in. This company is clearly nothing more than a shill to create additional unearned revenue for the leasing company. Lucid is a horrible company to begin with. The fact that they have this company report fake damage on your vehicle is just the icing on the cake.",
+      "geo_validation": "trustpilot_us_slug",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-000782"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "Veritas justus",
+      "review_date": "2026-09-22",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Takimg picturrs is standard industry biz.....but this app takes forever and wqstes time Let us take all the pictures, then upload them all at once. Let us select from our files the entire pocture list rather than take 2 minutes for every picture, also, the app filters the pictures with its own filter.. ..which is a lawsuit pending.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Document Upload & Verification",
+      "tier3": "Upload Troubleshooting",
+      "id": "rvw-000783"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "Said Takpara",
+      "review_date": "2026-09-18",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "app takes too long to fetch loads",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000784"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (OPENLANE)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2sweWNGTlJUWEpmVmt4eWRHMVFiMlZTTjBKMVNHYxAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOk0ycFNRTXJfVkxydG1Qb2VSN0J1SGc%7C%7C?hl=en",
+      "author": "Khristopher Carlton",
+      "review_date": "2026-09-18",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Love it! Source almost all of our inventory here!",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Listing Status",
+      "tier3": "Selling/ Relisting vehicle or Parts purchase",
+      "id": "rvw-000785"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (OPENLANE)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xaTmNtMXlWMGRWUkZKRGVtRkJNMVp4V2xFelVVRRAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOlZNcm1yV0dVRFJDemFBM1ZxWlEzUUE%7C%7C?hl=en",
+      "author": "Олександр Пільстрем",
+      "review_date": "2026-09-17",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Great online auction with exellent support. Overthe past six mounths,id sayabout 15% of all my purchases have been though OpenLane",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000786"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "Elias Garcia",
+      "review_date": "2026-09-15",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "the new update doesn't always put your local loads.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000787"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (1566419386, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14554862818",
+      "author": "Terrible updates67",
+      "review_date": "2026-09-15",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Poor updates. Why does every update make this app worse, like now I literally have to wait 30 min for the loads to load on the search bar. Nobody has time for that. Why not stick with what was working already",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000788"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "JAIFER TRANSPORTATION",
+      "review_date": "2026-09-10",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "New update sucks!! Won't load loads",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000789"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (OPENLANE)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xFNFZWZHNTakp6TFZoRmJYaHVkVjlrVm5BM09YYxAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOlE4VVdsSjJzLVhFbXhudV9kVnA3OXc%7C%7C?hl=en",
+      "author": "Richard Miller",
+      "review_date": "2026-09-10",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "The Best Of The Dealer Auction Platforms!",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)",
+      "id": "rvw-000790"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "Denruss",
+      "review_date": "2026-09-07",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Please don’t put notes in the address fields. It causes the app to show the wrong location. Please fix this issue as soon as possible. This is directly affecting my ability to know whether I’ll be available to pick up a load or not. I need this resolved urgently so I can properly plan my schedule and avoid missing loads.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Scheduled Pickup Status",
+      "tier3": "Pickup Hours and Cutoff",
+      "id": "rvw-000791"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/openlane-166516131772584#review-1",
+      "author": "Dayvon Hicks",
+      "review_date": "2026-09-07",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "I had a great experience working with Tyler VanSickle at OPENLANE. I was dealing with a stressful situation involving payments and vehicle titles, and Tyler handled everything with professionalism, patience, and clear communication from beginning to end. What I appreciated most was that he took the time to explain what was going on, kept communication open, and worked with everyone involved toward a resolution instead of making an already stressful situation more difficult. He was respectful, straightforward, and followed th... read more",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000792"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "Michael Barnett",
+      "review_date": "2026-09-06",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Horrible app. Search feature takes forever to load vehicles. Vehicles release is never available, and have to call in and sit on hold at each dealership when trying to pick up cars. Worst app of any company I deal with!",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000793"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (1566419386, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14507327908",
+      "author": "MMS reports",
+      "review_date": "2026-09-03",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "User interface isn’t great. As a user. The loads and docs need to be fully updated for example gate pass is the key to get cars if you guys don’t have gate pass in your system don’t release the car on the system. It’s really important to us get everything done before. Safe travels and time Thank you for understanding",
+      "geo_validation": "apple_us_store",
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Pickup Order Management",
+      "tier3": "Gate Pass Assistance",
+      "id": "rvw-000794"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+      "author": "John Plewa",
+      "review_date": "2026-09-02",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "What are you guys doing? Now the drivers can't look at available loads only the dispatcher? I've run hundreds of loads for you guys but thats going to be coming to end if I cant see loads on a driver account.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000795"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (1566419386, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14502675000",
+      "author": "Sana-PAL",
+      "review_date": "2026-09-02",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "The worst app. We keep completing the loads on the app then the inspection disappear, this app sucks",
+      "geo_validation": "apple_us_store",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Third-Party Inspection Authorization & Scheduling",
+      "tier3": "Previewing/ Inspecting Vehicles",
+      "id": "rvw-000796"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (1566419386, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14501677930",
+      "author": "XxjohngxX",
+      "review_date": "2026-09-02",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Junk. Spend more time trying to login or the app shutting down are freezing then you can do your job cars arrive should pay us to have their app for so much time that we waste",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000797"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (1175036411, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=1175036411&type=Purple%20Software&reviewId=14498997760",
+      "author": "Rocky-max",
+      "review_date": "2026-09-01",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Owner. I am a longtime dealer who has purchased more than 400 vehicles through OPENLANE, so my expectations are based on significant experience with their platform and arbitration process. Unfortunately, my recent experience with the arbitration department was extremely disappointing. The biggest concern was not simply the outcome of the arbitration, but the lack of communication and accountability during the process. I was not given a reasonable opportunity to speak with a manager or supervisor to discuss my concerns or have the situation properly reviewed. As a dealer who has spent considerable time and money doing business with OPENLANE, I expect a higher level of customer service, professionalism, and transparency. When an arbitration issue arises, dealers should have access to appropriate management when they believe their concerns have not been properly addressed. I understand that not every arbitration decision will go in my favor, and I can accept a fair decision. However, I expect to be treated with respect and to have a reasonable escalation process available. Being unable to speak with a manager after purchasing more than 400 vehicles through the company is very disappointing. I hope OPENLANE takes dealer concerns seriously and improves communication, transparency, and management accessibility within its arbitration department. Long-term customers deserve to feel that their concerns are heard and properly reviewed.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Case Resolution Quality",
+      "tier3": "Escalation Required",
+      "id": "rvw-000798"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (1566419386, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14495262345",
+      "author": "Userid taken",
+      "review_date": "2026-08-31",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Transport user. Has anyone from corporate actually tried to use the app? The latest update makes it very painful to take photos/upload and now search for loads using the app. It loads a couple before the wheel start spinning to refresh to load two more.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Document Upload & Verification",
+      "tier3": "Upload Troubleshooting",
+      "id": "rvw-000799"
+    },
     {
       "source_website": "google.com",
       "source_label": "Google Business Profile (OPENLANE)",
@@ -1182,6 +1591,21 @@
       "id": "rvw-000517"
     },
     {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/openlane-166516131772584#review-3",
+      "author": "Khoshhal Ahadi",
+      "review_date": "2026-07-09",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Heavily slanted toward sellers; zero protection for independent buyers This platform is completely seller-oriented and offers zero accountability or protection for buyers. I purchased a vehicle, paid the full asking price immediately, and arranged for my transporter to pick it up. When my transport driver arrived, we discovered the seller had completely reneged on the deal and sold the car to someone else—likely for a few hundred dollars more. To make matters worse, OPENLANE has yet to issue my refund or provide any sort of ... read more",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Payment Refunds, Transaction Issues and Deposits",
+      "tier2": "Refunds & Membership Billing",
+      "tier3": "Deposit Refund Status",
+      "id": "rvw-000800"
+    },
+    {
       "source_website": "apps.apple.com",
       "source_label": "Apple App Store (1566419386, us)",
       "source_url": "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14282411977",
@@ -1422,6 +1846,21 @@
       "id": "rvw-000519"
     },
     {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/openlane-166516131772584#review-4",
+      "author": "Pam Baumgardner",
+      "review_date": "2026-06-09",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Max Balley was absolutely patient and helpful in getting my husband Don on the site to bid for cars. He so knowledgeable and willing to make Dons buying experience successful. Truly an asset to Open Lane",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000801"
+    },
+    {
       "source_website": "apps.apple.com",
       "source_label": "Apple App Store (1566419386, us)",
       "source_url": "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14162802186",
@@ -1525,6 +1964,21 @@
       "tier2": "Third-Party Inspection Authorization & Scheduling",
       "tier3": "Previewing/ Inspecting Vehicles",
       "id": "rvw-000511"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (1566419386, us)",
+      "source_url": "https://apps.apple.com/us/app/id1566419386?see-all=reviews&platform=iphone&reviewId=14140355961",
+      "author": "systempolicy",
+      "review_date": "2026-06-03",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "CarsArrive Plus is a Garbage App. We apologize for any frustrations you are experiencing with the CarsArrive+ App. We will forward your feedback to our development team to assess",
+      "geo_validation": "apple_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-000802"
     },
     {
       "source_website": "trustpilot.com",
@@ -2995,6 +3449,21 @@
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support",
       "id": "rvw-000351"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (1566419386, us)",
+      "source_url": "https://apps.apple.com/us/app/id1566419386?see-all=reviews&platform=iphone&reviewId=13864324880",
+      "author": "Fastronaught",
+      "review_date": "2026-03-19",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Unfriendly. We apologize for any frustrations you are experiencing with the CarsArrive+ App. We will forward your feedback to our development team to assess",
+      "geo_validation": "apple_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-000803"
     },
     {
       "id": "rvw-000015",
@@ -7077,6 +7546,21 @@
       "tier3": "Rude/Unhelpful Support"
     },
     {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.nthgensoftware.traderev.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
+      "author": "Irfan Farooqi",
+      "review_date": "2025-01-12",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "No push notifications work with my android, spoke to customer support, they have no clue what to do. Filters do not work consistently. delay in bidding have lost cars due to lag on app. if your going to charge us all these fees at least make the app work. Transport fees are getting out of hand.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-000804"
+    },
+    {
       "id": "rvw-000150",
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (openlane.com)",
@@ -8877,6 +9361,21 @@
       "id": "rvw-000773"
     },
     {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (1566419386, us)",
+      "source_url": "https://apps.apple.com/us/app/id1566419386?see-all=reviews&platform=iphone&reviewId=10934481605",
+      "author": "adenoq",
+      "review_date": "2024-02-13",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Poor customer service!. We're sorry to hear about the issues you've encountered. We would like to hear more about the problems that you are ensuing. Please email us at carrierservices@openlane.com and someone will reach out to you. We have also passed along the email functionality to our technology department to look into",
+      "geo_validation": "apple_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-000805"
+    },
+    {
       "source_website": "google.com",
       "source_label": "Google Business Profile (OPENLANE)",
       "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR0c196VGJBEAE!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CIHM0ogKEICAgIDts_zTbA%7C%7C?hl=en",
@@ -9595,6 +10094,21 @@
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting",
       "id": "rvw-000774"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (1566419386, us)",
+      "source_url": "https://apps.apple.com/us/app/id1566419386?see-all=reviews&platform=iphone&reviewId=10497922983",
+      "author": "Fif go oh D j FC b G D",
+      "review_date": "2023-10-21",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Hot garbage. Thank you for taking time to send a review. We appreciate the work you do for CarsArrive and we apologize for any frustrations you are experiencing with the CarsArrive+ App. We would like to hear more about the problems that you are ensuing. Please email us at carrierservices@openlane.com and someone will reach out to you. We will also forward your feedback to our development team to assess.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-000806"
     },
     {
       "id": "rvw-000240",

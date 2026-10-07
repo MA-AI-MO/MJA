@@ -1,15 +1,15 @@
 {
   "meta": {
     "description": "Large-scale English-only Manheim textual review/problem dataset from public web sources (recency-first).",
-    "review_count": 2134,
+    "review_count": 2202,
     "source_counts": {
-      "play.google.com": 67,
-      "google.com": 1445,
-      "birdeye.com": 71,
-      "apps.apple.com": 107,
-      "reddit.com": 152,
-      "bbb.org": 282,
-      "trustpilot.com": 10
+      "play.google.com": 74,
+      "google.com": 1480,
+      "apps.apple.com": 119,
+      "birdeye.com": 77,
+      "trustpilot.com": 11,
+      "bbb.org": 289,
+      "reddit.com": 152
     },
     "source_audit": [
       {
@@ -21,7 +21,7 @@
         "blocked": false,
         "fallback_used": false,
         "candidate_reviews_seen": 0,
-        "new_reviews_added": 2,
+        "new_reviews_added": 0,
         "advertised_total": null,
         "latest_candidate_date": null,
         "notes": [
@@ -30,10 +30,10 @@
         ],
         "errors": [],
         "review_count": 152,
-        "existing_review_count": 150,
+        "existing_review_count": 152,
         "present": true,
         "latest_review_date": "2026-08-25",
-        "existing_latest_date": "2026-07-24",
+        "existing_latest_date": "2026-08-25",
         "status": "ok"
       },
       {
@@ -44,17 +44,17 @@
         "direct_statuses": {},
         "blocked": false,
         "fallback_used": false,
-        "candidate_reviews_seen": 261,
-        "new_reviews_added": 5,
+        "candidate_reviews_seen": 300,
+        "new_reviews_added": 7,
         "advertised_total": null,
-        "latest_candidate_date": "2026-08-31",
+        "latest_candidate_date": "2026-10-05",
         "notes": [],
         "errors": [],
-        "review_count": 67,
-        "existing_review_count": 62,
+        "review_count": 74,
+        "existing_review_count": 67,
         "present": true,
-        "latest_review_date": "2026-08-31",
-        "existing_latest_date": "2026-07-27",
+        "latest_review_date": "2026-09-30",
+        "existing_latest_date": "2026-08-31",
         "status": "ok"
       },
       {
@@ -65,36 +65,36 @@
         "direct_statuses": {},
         "blocked": false,
         "fallback_used": false,
-        "candidate_reviews_seen": 134,
-        "new_reviews_added": 11,
+        "candidate_reviews_seen": 50,
+        "new_reviews_added": 12,
         "advertised_total": null,
-        "latest_candidate_date": "2026-08-27",
+        "latest_candidate_date": "2026-10-04",
         "notes": [
           "Apple RSS can be sparse for some app IDs; HTML supplement captures visible App Store review cards only."
         ],
         "errors": [],
-        "review_count": 107,
-        "existing_review_count": 96,
+        "review_count": 119,
+        "existing_review_count": 107,
         "present": true,
-        "latest_review_date": "2026-08-27",
-        "existing_latest_date": "2026-07-21",
+        "latest_review_date": "2026-09-30",
+        "existing_latest_date": "2026-08-27",
         "status": "ok"
       },
       {
         "source_website": "bbb.org",
         "attempted": true,
-        "direct_pages": 28,
-        "fallback_pages": 28,
+        "direct_pages": 20,
+        "fallback_pages": 19,
         "direct_statuses": {
-          "403": 28,
-          "200": 28
+          "403": 20,
+          "200": 19
         },
         "blocked": true,
         "fallback_used": true,
-        "candidate_reviews_seen": 151,
-        "new_reviews_added": 13,
+        "candidate_reviews_seen": 66,
+        "new_reviews_added": 7,
         "advertised_total": null,
-        "latest_candidate_date": "2026-08-25",
+        "latest_candidate_date": "2026-09-18",
         "notes": [
           "direct BBB customer reviews blocked for https://www.bbb.org/us/az/tolleson/profile/auto-auction/manheim-phoenix-1126-15000273",
           "direct BBB customer reviews blocked for https://www.bbb.org/us/ca/anaheim/profile/auto-auction/manheim-auctions-1126-1000068323",
@@ -106,17 +106,21 @@
           "direct BBB complaints blocked for https://www.bbb.org/us/az/tolleson/profile/auto-auction/manheim-phoenix-1126-15000273",
           "direct BBB complaints blocked for https://www.bbb.org/us/ca/anaheim/profile/auto-auction/manheim-auctions-1126-1000068323",
           "direct BBB complaints blocked for https://www.bbb.org/us/fl/tampa/profile/auto-auction/manheim-auctions-0653-90021503",
+          "reader challenge for https://www.bbb.org/us/fl/tampa/profile/auto-auction/manheim-auctions-0653-90021503/complaints",
           "direct BBB complaints blocked for https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743",
+          "reader challenge for https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=4",
           "direct BBB complaints blocked for https://www.bbb.org/us/in/indianapolis/profile/auto-auction/manheim-indianapolis-auto-auction-0382-90005341",
           "direct BBB complaints blocked for https://www.bbb.org/us/mi/carleton/profile/auto-auction/manheims-detroit-auto-auction-0422-6001794",
           "direct BBB complaints blocked for https://www.bbb.org/us/pa/manheim/profile/auctioneer/manheim-pennsylvania-auto-auction-0241-184056004"
         ],
-        "errors": [],
-        "review_count": 282,
-        "existing_review_count": 269,
+        "errors": [
+          "reader error for https://www.bbb.org/us/az/tolleson/profile/auto-auction/manheim-phoenix-1126-15000273/customer-reviews: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=60)"
+        ],
+        "review_count": 289,
+        "existing_review_count": 282,
         "present": true,
-        "latest_review_date": "2026-08-25",
-        "existing_latest_date": "2026-07-16",
+        "latest_review_date": "2026-08-26",
+        "existing_latest_date": "2026-08-25",
         "status": "ok"
       },
       {
@@ -130,18 +134,18 @@
         },
         "blocked": true,
         "fallback_used": true,
-        "candidate_reviews_seen": 11,
-        "new_reviews_added": 4,
+        "candidate_reviews_seen": 12,
+        "new_reviews_added": 1,
         "advertised_total": null,
-        "latest_candidate_date": "2026-08-13",
+        "latest_candidate_date": "2026-09-21",
         "notes": [
           "direct Trustpilot blocked for manheim.com"
         ],
         "errors": [],
-        "review_count": 10,
-        "existing_review_count": 6,
+        "review_count": 11,
+        "existing_review_count": 10,
         "present": true,
-        "latest_review_date": "2026-02-11",
+        "latest_review_date": "2026-09-21",
         "existing_latest_date": "2026-02-11",
         "status": "ok"
       },
@@ -171,62 +175,123 @@
       {
         "source_website": "birdeye.com",
         "attempted": true,
-        "direct_pages": 20,
+        "direct_pages": 19,
         "fallback_pages": 0,
         "direct_statuses": {
-          "200": 20
+          "200": 19
         },
         "blocked": false,
         "fallback_used": false,
-        "candidate_reviews_seen": 39,
-        "new_reviews_added": 5,
+        "candidate_reviews_seen": 37,
+        "new_reviews_added": 6,
         "advertised_total": 1439,
-        "latest_candidate_date": "2026-08-29",
+        "latest_candidate_date": "2026-09-30",
         "notes": [
           "Birdeye advertised totals may include syndicated Google/Birdeye network reviews; accepted rows are visible textual review cards that pass filters.",
-          "Advertised total 1439 is much larger than accepted rows 71; source is likely partially covered after filters/pagination."
+          "Advertised total 1439 is much larger than accepted rows 77; source is likely partially covered after filters/pagination."
         ],
         "errors": [],
-        "review_count": 71,
-        "existing_review_count": 66,
+        "review_count": 77,
+        "existing_review_count": 71,
         "present": true,
-        "latest_review_date": "2026-08-29",
-        "existing_latest_date": "2026-07-03",
+        "latest_review_date": "2026-09-23",
+        "existing_latest_date": "2026-08-29",
         "status": "partial"
       },
       {
         "source_website": "google.com",
         "attempted": true,
-        "direct_pages": 1144,
+        "direct_pages": 502,
         "fallback_pages": 0,
         "direct_statuses": {
-          "200": 1144
+          "200": 502
         },
         "blocked": false,
         "fallback_used": false,
-        "candidate_reviews_seen": 9128,
-        "new_reviews_added": 87,
+        "candidate_reviews_seen": 1553,
+        "new_reviews_added": 35,
         "advertised_total": null,
-        "latest_candidate_date": "2026-09-01",
+        "latest_candidate_date": "2026-10-07",
         "notes": [
-          "Google Business Profile discovery completed: 58/58 queries succeeded and 108 unique validated US profiles were selected.",
-          "Validated 108 US Google Business Profiles; paginated newest-first with exact RPC timestamps through the 2023 boundary."
+          "Google Business Profile discovery completed: 58/58 queries succeeded and 112 unique validated US profiles were selected.",
+          "Validated 99 US Google Business Profiles; 13 failed and 0 were skipped after the circuit breaker. Successful profiles were paginated newest-first through per-profile incremental overlap boundaries."
         ],
-        "errors": [],
-        "review_count": 1445,
-        "existing_review_count": 1358,
+        "errors": [
+          "Maheim Central Florida [0x88e77db086f2d4e5:0xf6e042105c509d3e]: Response.body: Protocol error (Network.getResponseBody): No data found for resource with given identifier\nResponse body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.",
+          "Manheim Atlanta Reconditioning Services [0x88f502f2aa726a77:0xe448884c5d8e6815]: newest review RPC did not load",
+          "Manheim Cincinnati [0x88404fb5c79b2d13:0xc9eaa7efb5a3902a]: newest review RPC did not load",
+          "Manheim Detroit [0x883b43af7916110f:0x8ef6684842169f21]: newest review RPC did not load",
+          "Manheim El Paso [0x86ddf8df168c560b:0xa7e1e15a29b296f]: newest review RPC did not load",
+          "Manheim Flint [0x882378f8dc8fad5f:0xde89b27b2ae81d2f]: newest review RPC did not load",
+          "Manheim Houston [0x8640d11d8c81e40b:0x75fb9928386817c8]: Response.body: Protocol error (Network.getResponseBody): No data found for resource with given identifier\nResponse body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.",
+          "Manheim Nevada [0x80c8e73b5ae6bd15:0x6c142e9685c06c75]: newest review RPC did not load",
+          "Manheim New England [0x89e4f5a0c5ddb507:0x30f7f5be3a3f876]: newest review RPC did not load",
+          "Manheim Orlando Transporter Gate (Rear Gate) [0x88e78345fbf4bab3:0xb77d643ecc135f2c]: pagination stopped before the 2026-08-17 boundary/terminal page (10 RPC reviews; advertised=57)",
+          "Manheim Philadelphia [0x89c6a0e28c5a27c3:0xe7523e8b6c53dc70]: pagination stopped before the 2026-08-17 boundary/terminal page (10 RPC reviews; advertised=291)",
+          "MVD, Third Party Manheim, Phoenix Titles Only [0x872b15871353a133:0xb454413c18e93de5]: newest review RPC did not load",
+          "Rome Auto Auction powered by Manheim [0x888ab3dbc0471b53:0xffe21dd0f1df0fe5]: pagination stopped before the 2026-08-17 boundary/terminal page (10 RPC reviews; advertised=58)"
+        ],
+        "profile_retention_used": true,
+        "profiles_completed": 99,
+        "profiles_failed": 13,
+        "profiles_skipped_after_circuit_breaker": 0,
+        "last_successful_refresh_until": "2026-08-31",
+        "review_count": 1480,
+        "existing_review_count": 1445,
         "present": true,
-        "latest_review_date": "2026-08-31",
-        "existing_latest_date": "2026-07-30",
-        "status": "ok"
+        "latest_review_date": "2026-09-30",
+        "existing_latest_date": "2026-08-31",
+        "status": "partial_profile_retention"
       }
     ],
     "sentiments": {
-      "positive": 758,
-      "negative": 1376
+      "positive": 774,
+      "negative": 1428
     },
     "source_urls": [
       "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t0dGJGQlFRa2hqWWpkYVUwbE5WRzExUkV0WFZIYxAB!2m1!1s0x0:0x3211a88496efd651!3m1!1s2@1:CAIQACodChtycF9oOkttbFBQQkhjYjdaU0lNVG11REtXVHc%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2poMFMzQXpSMWgyT1djelJHOUxhV1pDTFdSaWRWRRAB!2m1!1s0x0:0xdb18b095aee54321!3m1!1s2@1:CAIQACodChtycF9oOjh0S3AzR1h2OWczRG9LaWZCLWRidVE%7C%7C?hl=en",
+      "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14613768624",
+      "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14613596149",
+      "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14613310875",
+      "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14613255057",
+      "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14612849376",
+      "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14612732609",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25VMmJUUjNiV2w2ZVZGTmJIbEpNMUkwY25kTlUzYxAB!2m1!1s0x0:0x92788e8c0e7120c0!3m1!1s2@1:CAIQACodChtycF9oOnU2bTR3bWl6eVFNbHlJM1I0cndNU3c%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21kNmVtdHNVbU0zV1VWYVNqVk5jbWx2YW1sdWVuYxAB!2m1!1s0x0:0x38c009277d77bd2f!3m1!1s2@1:CAIQACodChtycF9oOmd6emtsUmM3WUVaSjVNcmlvamluenc%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KdFFXVTBYM1JqZUdNd1VFMWhPVU5XYld4SWFrRRAB!2m1!1s0x0:0x164e882f4b93230c!3m1!1s2@1:CAIQACodChtycF9oOnJtQWU0X3RjeGMwUE1hOUNWbWxIakE%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2twSFZURjFOVVJxYkVSNFdrWmZTR3h6VlVWTWNrRRAB!2m1!1s0x0:0xb9fba5d772cd137e!3m1!1s2@1:CAIQACodChtycF9oOkpHVTF1NURqbER4WkZfSGxzVUVMckE%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkUlIzTXdheTF3TkhGbU0xazNSV3MxYUdkbGFHYxAB!2m1!1s0x0:0xce3375d85b297645!3m1!1s2@1:CAIQACodChtycF9oOkdRR3Mway1wNHFmM1k3RWs1aGdlaGc%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGck5qRXhVMGt5YzFVdE1sQTBZMnM1VjJkalIyYxAB!2m1!1s0x0:0x6aae6b4acb725e96!3m1!1s2@1:CAIQACodChtycF9oOjFrNjExU0kyc1UtMlA0Y2s5V2djR2c%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25aWVprMUxUM2xKVjNsbVozcE1jR1ZOVlhKRVVIYxAB!2m1!1s0x0:0x35b5cb04774293df!3m1!1s2@1:CAIQACodChtycF9oOnZYZk1LT3lJV3lmZ3pMcGVNVXJEUHc%7C%7C?hl=en",
+      "https://reviews.birdeye.com/manheim-dallas-fort-worth-166658799426873#review-1",
+      "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14584146930",
+      "http://www.trustpilot.com/reviews/6ab1232d29ebd7c7ae3b0eb1",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tSSVZUTTNUMFJmWDFwT01HYzVOelUwUjBwTlRsRRAB!2m1!1s0x0:0xaad5beec10f89472!3m1!1s2@1:CAIQACodChtycF9oOkRIVTM3T0RfX1pOMGc5NzU0R0pNTlE%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pWbVV5MUlSRkJRWmsxeVEycHJkblpLV0VobldrRRAB!2m1!1s0x0:0x41ced18cd9202dd!3m1!1s2@1:CAIQACodChtycF9oOjVmUy1IRFBQZk1yQ2prdnZKWEhnWkE%7C%7C?hl=en",
+      "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14571216698",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21SeVdYVlNaV0p1YVV0ZlZGZzRSa2RxV0hsblpHYxAB!2m1!1s0x0:0xab7aa52c44aa38cd!3m1!1s2@1:CAIQACodChtycF9oOmRyWXVSZWJuaUtfVFg4RkdqWHlnZGc%7C%7C?hl=en",
+      "https://apps.apple.com/us/app/id6744660081?see-all=reviews&platform=iphone&reviewId=14565367404",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGSVpEVlJRbWx3YlZORVRrOXlNVFZLVVhOaFNtYxAB!2m1!1s0x0:0x750f6df8409829b8!3m1!1s2@1:CAIQACodChtycF9oOjFIZDVRQmlwbVNETk9yMTVKUXNhSmc%7C%7C?hl=en",
+      "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14555809426",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkcFYxaDNMVUV6UkdFek1scDJSRGRJT1dOaFlYYxAB!2m1!1s0x0:0xc448649038168654!3m1!1s2@1:CAIQACodChtycF9oOkdpV1h3LUEzRGEzMlp2RDdIOWNhYXc%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20weVNVNU9lVUZ0VjA1SmJVRkRjRk51TVRaS1VHYxAB!2m1!1s0x0:0xcd68e369ee246c6b!3m1!1s2@1:CAIQACodChtycF9oOm0ySU5OeUFtV05JbUFDcFNuMTZKUGc%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xkVVNHOXFjVTh4YzJoRVZ6VjFabFJYYTJOVVQxRRAB!2m1!1s0x0:0x41ced18cd9202dd!3m1!1s2@1:CAIQACodChtycF9oOldUSG9qcU8xc2hEVzV1ZlRXa2NUT1E%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kbmIxQkZWRXBtVHpSeFozTlhkRWxwYWtVNFkwRRAB!2m1!1s0x0:0xa091b063078d88df!3m1!1s2@1:CAIQACodChtycF9oOndnb1BFVEpmTzRxZ3NXdElpakU4Y0E%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tNMGIxWldVMlJPY3pBM2RtWk5OM2htTFZVNVlVRRAB!2m1!1s0x0:0xc448649038168654!3m1!1s2@1:CAIQACodChtycF9oOkM0b1ZWU2ROczA3dmZNN3hmLVU5YUE%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xadGEyNVRUbVY1Y0V0MWNrOXlVM0JhWWxSTmVVRRAB!2m1!1s0x0:0xdb18b095aee54321!3m1!1s2@1:CAIQACodChtycF9oOlZta25TTmV5cEt1ck9yU3BaYlRNeUE%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xSclIwcDRObVI1TkVoVWRUTk5jMmhPTm5KblozYxAB!2m1!1s0x0:0x750f6df8409829b8!3m1!1s2@1:CAIQACodChtycF9oOlRrR0p4NmR5NEhUdTNNc2hONnJnZ3c%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21KSGQzWmlWbXhuYmtKUVVrRlZaR2xtWnpSaU0yYxAB!2m1!1s0x0:0x468583aed34b56ae!3m1!1s2@1:CAIQACodChtycF9oOmJHd3ZiVmxnbkJQUkFVZGlmZzRiM2c%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21sT1IyaElPWGRpY1UxMFRFUlBWbGhZYjE5TFkxRRAB!2m1!1s0x0:0xe751c77d5aaeec17!3m1!1s2@1:CAIQACodChtycF9oOmlOR2hIOXdicU10TERPVlhYb19LY1E%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCWlNsVnBSV3g0TVVacVJHOURZV0ZpVFY5TlpuYxAB!2m1!1s0x0:0x6f8c02cb5e70d4f9!3m1!1s2@1:CAIQACodChtycF9oOlBZSlVpRWx4MUZqRG9DYWFiTV9NZnc%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21ab1ZFWTVVVlZRU0hCNmNUQmlURmh6TjBKUFowRRAB!2m1!1s0x0:0xe751c77d5aaeec17!3m1!1s2@1:CAIQACodChtycF9oOmZoVEY5UVVQSHB6cTBiTFhzN0JPZ0E%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20xcVVuUndjV0ZwVlY5dFVFbFFRM1J0TFdaNFQzYxAB!2m1!1s0x0:0x510e3608cbd9ba1e!3m1!1s2@1:CAIQACodChtycF9oOm1qUnRwcWFpVV9tUElQQ3RtLWZ4T3c%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pJM2EyWTVieTFYT0hGSWJUSjNiVTlJVUVGNU5HYxAB!2m1!1s0x0:0x35b5cb04774293df!3m1!1s2@1:CAIQACodChtycF9oOjI3a2Y5by1XOHFIbTJ3bU9IUEF5NGc%7C%7C?hl=en",
+      "https://reviews.birdeye.com/manheim-fredericksburg-167784557350491#review-4",
+      "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14522761145",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25sd1VuTlBhRFJTVG1sUlltNVdTR1JzYTJrM2NWRRAB!2m1!1s0x0:0xc448649038168654!3m1!1s2@1:CAIQACodChtycF9oOnlwUnNPaDRSTmlRYm5WSGRsa2k3cVE%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tVMVYxUnNPRmRmWkU1UmFHRlJSbXRNWDBZNFlWRRAB!2m1!1s0x0:0xa8d12293acf86f1a!3m1!1s2@1:CAIQACodChtycF9oOkU1V1RsOFdfZE5RaGFRRmtMX0Y4YVE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21GVFdqbEVPRzF2VjFGNlpUVjZhMHgzUXkxdFdGRRAB!2m1!1s0x0:0x35b5cb04774293df!3m1!1s2@1:CAIQACodChtycF9oOmFTWjlEOG1vV1F6ZTV6a0x3Qy1tWFE%7C%7C?hl=en",
       "https://reviews.birdeye.com/manheim-fredericksburg-167784557350491#review-2",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pRMlUzZHhha1JRYXpsTlpWRkhkVmd5UkhsdU5HYxAB!2m1!1s0x0:0xf7c0baafbc81ae96!3m1!1s2@1:CAIQACodChtycF9oOjQ2U3dxakRQazlNZVFHdVgyRHluNGc%7C%7C?hl=en",
@@ -236,9 +301,11 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2twQ1RsWktNUzFXTmpaQ01GcEJTak5PZFMxSU1tYxAB!2m1!1s0x0:0x468583aed34b56ae!3m1!1s2@1:CAIQACodChtycF9oOkpCTlZKMS1WNjZCMFpBSjNOdS1IMmc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201SU9VTjZZbEl3YTFGck5sTmhRbVpaTWtWdFdrRRAB!2m1!1s0x0:0xc212994811ed4d98!3m1!1s2@1:CAIQACodChtycF9oOm5IOUN6YlIwa1FrNlNhQmZZMkVtWkE%7C%7C?hl=en",
       "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14480051530",
+      "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14480186735",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkcFJ6VndaaTFXVm05M1NWVmtjbGhrZFhJdFRYYxAB!2m1!1s0x0:0xaa0ac5cbcc382fd5!3m1!1s2@1:CAIQACodChtycF9oOkdpRzVwZi1WVm93SVVkclhkdXItTXc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2toZmVqUTFkV2d5ZEdWaWIwWTJjbFZEYkVGcWJrRRAB!2m1!1s0x0:0xf93a43290f3c5c75!3m1!1s2@1:CAIQACodChtycF9oOkhfejQ1dWgydGVib0Y2clVDbEFqbkE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25ob2EyUk5ORWx2WDFScFQweGxPVnBQTldRM1dtYxAB!2m1!1s0x0:0x164e882f4b93230c!3m1!1s2@1:CAIQACodChtycF9oOnhoa2RNNElvX1RpT0xlOVpPNWQ3Wmc%7C%7C?hl=en",
+      "http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_25206333",
       "https://www.reddit.com/r/carflipping/comments/1vye95w/how_are_you_guys_paying_for_cars_at_auction/",
       "https://play.google.com/store/apps/details?id=com.manheim.mobile.refresh&hl=en&gl=us",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSaVlYUkNNMHMzVEhKdWFsRTNRVTlmUVdRdE1FRRAB!2m1!1s0x0:0x41ced18cd9202dd!3m1!1s2@1:CAIQACodChtycF9oOjRiYXRCM0s3THJualE3QU9fQWQtMEE%7C%7C?hl=en",
@@ -269,6 +336,7 @@
       "http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_25162833",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xGS2JubFpkMDVETmpOS2NqWkhkMjFWYW1WbWFIYxAB!2m1!1s0x0:0xdca57c77c7da38da!3m1!1s2@1:CAIQACodChtycF9oOlFKbnlZd05DNjNKcjZHd21VamVmaHc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25OUFUzVk9OQzFzYURnMU0xaHVZbGRDVW5CamJVRRAB!2m1!1s0x0:0x31cb64fd6fc9e063!3m1!1s2@1:CAIQACodChtycF9oOnNPU3VONC1saDg1M1huYldCUnBjbUE%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w5RmRrTm5lbFZTUVV0WFMwWmpXa1IxYWtodGNHYxAB!2m1!1s0x0:0x468583aed34b56ae!3m1!1s2@1:CAIQACodChtycF9oOl9FdkNnelVSQUtXS0ZjWkR1akhtcGc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tzMFZsUm9NbEZmZEdkNGVuazVUblZRTm1aSVkwRRAB!2m1!1s0x0:0xef1776f19dc440c8!3m1!1s2@1:CAIQACodChtycF9oOks0VlRoMlFfdGd4enk5TnVQNmZIY0E%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2toWVFXeHBWVEYzVVdGMGRsUjBSVlk0TjJkblZHYxAB!2m1!1s0x0:0x468583aed34b56ae!3m1!1s2@1:CAIQACodChtycF9oOkhYQWxpVTF3UWF0dlR0RVY4N2dnVGc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxVFRFVTBaVUZVZDBsR2Jrb3pVMEo2U25Sc1VFRRAB!2m1!1s0x0:0xf93a43290f3c5c75!3m1!1s2@1:CAIQACodChtycF9oOi1TTEU0ZUFUd0lGbkozU0J6SnRsUEE%7C%7C?hl=en",
@@ -373,6 +441,7 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xscFdqZG9SMDFZTkdkMWJtTnpMVFZ5ZDJSRk1tYxAB!2m1!1s0x0:0xaad5beec10f89472!3m1!1s2@1:CAIQACodChtycF9oOllpWjdoR01YNGd1bmNzLTVyd2RFMmc%7C%7C?hl=en",
       "http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_24904513",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25NMWQyUnRTRFpSZGtWdFNqTkliV0k0VlY5NGRrRRAB!2m1!1s0x0:0x131a074ce10eccb3!3m1!1s2@1:CAIQACodChtycF9oOnM1d2RtSDZRdkVtSjNIbWI4VV94dkE%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2twTU0yaGlaVkYxVjE5blRGTlVOM05zU1ZscmMyYxAB!2m1!1s0x0:0x164e882f4b93230c!3m1!1s2@1:CAIQACodChtycF9oOkpMM2hiZVF1V19nTFNUN3NsSVlrc2c%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGTE5XTkxPVXhzYm5Gd1FrMURaRFpJY1VoU0xVRRAB!2m1!1s0x0:0xda9573fc19944dc6!3m1!1s2@1:CAIQACodChtycF9oOjFLNWNLOUxsbnFwQk1DZDZIcUhSLUE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxbE1FcHlRMGhaWlhvM1dGQm1ZMlJWWjNGZmExRRAB!2m1!1s0x0:0x38c009277d77bd2f!3m1!1s2@1:CAIQACodChtycF9oOi1lMEpyQ0hZZXo3WFBmY2RVZ3Ffa1E%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pKWlVFcFRkMlJwYjJkUWNsSnFSVk0wZW5KNVVXYxAB!2m1!1s0x0:0xc448649038168654!3m1!1s2@1:CAIQACodChtycF9oOjJZUEpTd2Rpb2dQclJqRVM0enJ5UWc%7C%7C?hl=en",
@@ -479,60 +548,14 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21aZk1ERmljek5SV1hsd1pHWnVUMHB5VlRFM2QxRRAB!2m1!1s0x0:0xfffe440c8728fa18!3m1!1s2@1:CAIQACodChtycF9oOmZfMDFiczNRWXlwZGZuT0pyVTE3d1E%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCSWFVNDJWRjlxWlhkRVVYSmFMVTlqWHpCU1pVRRAB!2m1!1s0x0:0x8ef6684842169f21!3m1!1s2@1:CAIQACodChtycF9oOlBIaU42VF9qZXdEUXJaLU9jXzBSZUE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20wek9WaGxaM2cyVEU1V1dXZFBTSGgzT0VrME5GRRAB!2m1!1s0x0:0x92788e8c0e7120c0!3m1!1s2@1:CAIQACodChtycF9oOm0zOVhlZ3g2TE5WWWdPSHh3OEk0NFE%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCUFYxWjRaV1Z0YTFkRU9HTkVTVUZVU2s4M2MyYxAB!2m1!1s0x0:0xdb18b095aee54321!3m1!1s2@1:CAIQACodChtycF9oOjBPV1Z4ZWVta1dEOGNESUFUSk83c2c%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2psNFRVbDBXRmhDWlRWaE0wOVhlWGt5TlZCSVlWRRAB!2m1!1s0x0:0xc212994811ed4d98!3m1!1s2@1:CAIQACodChtycF9oOjl4TUl0WFhCZTVhM09XeXkyNVBIYVE%7C%7C?hl=en",
-      "https://www.reddit.com/r/askcarsales/comments/1s0wmrl/why_are_dealers_over_bidding_at_dealer_auctions/",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pab2FURm5OSEF3YTBsM01EWkdhVEpXUmt0TmNrRRAB!2m1!1s0x0:0x35b5cb04774293df!3m1!1s2@1:CAIQACodChtycF9oOjZoaTFnNHAwa0l3MDZGaTJWRktNckE%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21kR1ZGSTVPRTUwVVMxV1oydGZOazVEYVU1d2NVRRAB!2m1!1s0x0:0x30f7f5be3a3f876!3m1!1s2@1:CAIQACodChtycF9oOmdGVFI5OE50US1WZ2tfNk5DaU5wcUE%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1Q2NFVkpaalkxVFd0SVFVMUJUV1J5VDI1elVtYxAB!2m1!1s0x0:0x1343b59c00e1b255!3m1!1s2@1:CAIQACodChtycF9oOk5CcEVJZjY1TWtIQU1BTWRyT25zUmc%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21KYVREWkpTVUpSVlRSSGFqTXpWbk5OVldSVWIxRRAB!2m1!1s0x0:0x29d4a7f8b704b4b7!3m1!1s2@1:CAIQACodChtycF9oOmJaTDZJSUJRVTRHajMzVnNNVWRUb1E%7C%7C?hl=en",
-      "https://reviews.birdeye.com/manheim-dallas-fort-worth-166658799426873#review-3",
-      "https://reviews.birdeye.com/manheim-dallas-fort-worth-166658799426873?page=2#review-3",
-      "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_24664622",
-      "http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_24664622",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21oRk9WRlJUVTlhVkcxNFkwRTVhemxqZDJaVk5tYxAB!2m1!1s0x0:0x413c933ec3a0dda2!3m1!1s2@1:CAIQACodChtycF9oOmhFOVFRTU9aVG14Y0E5azljd2ZVNmc%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2psT2JrcFFNRzExTFhaWGIwTlZiR1JmYlZGVVMwRRAB!2m1!1s0x0:0xef1776f19dc440c8!3m1!1s2@1:CAIQACodChtycF9oOjlObkpQMG11LXZXb0NVbGRfbVFUS0E%7C%7C?hl=en",
-      "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=13866344691",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t0eFVFeHJWV0pxWjFkSVVIQXdaa1ZvYW1veFFXYxAB!2m1!1s0x0:0x40bd584df86443ba!3m1!1s2@1:CAIQACodChtycF9oOktxUExrVWJqZ1dIUHAwZkVoamoxQWc%7C%7C?hl=en",
-      "https://reviews.birdeye.com/manheim-indianapolis-167758900611879#review-3",
-      "https://reviews.birdeye.com/manheim-indianapolis-167758900611879?page=2#review-3",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xsdlNsWm9OMWN6WlMweFFVNXNlbmc1UTIwNGJrRRAB!2m1!1s0x0:0xb719f29fa9cc0710!3m1!1s2@1:CAIQACodChtycF9oOllvSlZoN1czZS0xQU5seng5Q204bkE%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2sxNVkybE5jM0ptYmw5b2QyeHJOSFp6TlU5eFZXYxAB!2m1!1s0x0:0xe910bb27a1d8f3e6!3m1!1s2@1:CAIQACodChtycF9oOk15Y2lNc3Jmbl9od2xrNHZzNU9xVWc%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xWTFpuSXRka1JOUkhwdWVIWklTVEEwVTJWVmFIYxAB!2m1!1s0x0:0xfffe440c8728fa18!3m1!1s2@1:CAIQACodChtycF9oOlVLZnItdkRNRHpueHZISTA0U2VVaHc%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25STFJsWmpWa3RLTkRoV1ZYcENabkJxWm5oSmIwRRAB!2m1!1s0x0:0xf8348b4229fc5610!3m1!1s2@1:CAIQACodChtycF9oOnRLRlZjVktKNDhWVXpCZnBqZnhJb0E%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2toS1RrRlJNbDg0WW1sU1YyaHRiRGwzTVRGaVJYYxAB!2m1!1s0x0:0xcafdbd5463ebf386!3m1!1s2@1:CAIQACodChtycF9oOkhKTkFRMl84YmlSV2htbDl3MTFiRXc%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wamJsRkNYekZ6ZUdkR1ZXRjJWMTkzTFVGT2FXYxAB!2m1!1s0x0:0x1343b59c00e1b255!3m1!1s2@1:CAIQACodChtycF9oOmpjblFCXzFzeGdGVWF2V193LUFOaWc%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xrMWVtWjVlVjg1WTI1NmFEUklTSFZoUVc5SlpVRRAB!2m1!1s0x0:0xaff28210ad69c2ef!3m1!1s2@1:CAIQACodChtycF9oOlk1emZ5eV85Y256aDRISHVhQW9JZUE%7C%7C?hl=en",
-      "https://www.reddit.com/r/askcarsales/comments/1rqoizk/broker_arizona/",
-      "https://www.reddit.com/r/askcarsales/comments/1rqoim9/broker/",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21adU9WcFpjV0pXT1RBNFUwRTJObmxhT0djNU9YYxAB!2m1!1s0x0:0x8bec23c4707ea34a!3m1!1s2@1:CAIQACodChtycF9oOmZuOVpZcWJWOTA4U0E2NnlaOGc5OXc%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tKUGFrNVlkbFZKV0Y5SFNVVmxkbTluVEhnMFpVRRAB!2m1!1s0x0:0xd1c8901ade20c490!3m1!1s2@1:CAIQACodChtycF9oOkJPak5YdlVJWF9HSUVldm9nTHg0ZUE%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pKWFgwVnJRVzFRZDE4dGQxWjRSamQ2V21WVGVWRRAB!2m1!1s0x0:0x92788e8c0e7120c0!3m1!1s2@1:CAIQACodChtycF9oOjJXX0VrQW1Qd18td1Z4Rjd6WmVTeVE%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21GNFZGSnJjRmxFVFRob04wZHRWVjkxUmpSamVXYxAB!2m1!1s0x0:0x92788e8c0e7120c0!3m1!1s2@1:CAIQACodChtycF9oOmF4VFJrcFlETThoN0dtVV91RjRjeWc%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT204ek9GOXlOR1pXYmpoSFozVXphbkZRVXpnek1FRRAB!2m1!1s0x0:0x75fb9928386817c8!3m1!1s2@1:CAIQACodChtycF9oOm8zOF9yNGZWbjhHZ3UzanFQUzgzMEE%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2taWE1VVjVURk5ZYkZWM1RrODRlRXBWYlRWd2MyYxAB!2m1!1s0x0:0xa8d12293acf86f1a!3m1!1s2@1:CAIQACodChtycF9oOkZXMUV5TFNYbFV3Tk84eEpVbTVwc2c%7C%7C?hl=en",
-      "https://www.reddit.com/r/askcarsales/comments/1rm0r45/how_can_i_get_access_to_adesa_or_manheim_i_want/",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCclgzVnlNRTFZTldKWU1HUXdTSEpMZUdZNVpVRRAB!2m1!1s0x0:0x35b5cb04774293df!3m1!1s2@1:CAIQACodChtycF9oOjBrX3VyME1YNWJYMGQwSHJLeGY5ZUE%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21aM2J6SlRkREozVmpCdWFFc3hRM2h6V2xWNExWRRAB!2m1!1s0x0:0x4d6d8ea3ae42f9a2!3m1!1s2@1:CAIQACodChtycF9oOmZ3bzJTdDJ3VjBuaEsxQ3hzWlV4LVE%7C%7C?hl=en",
-      "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_24601863",
-      "http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_24601863",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xac1dYaDZUMHhxUlUweFUxZFVMVlZDU1ZGM00zYxAB!2m1!1s0x0:0xf93a43290f3c5c75!3m1!1s2@1:CAIQACodChtycF9oOlZsWXh6T0xqRU0xU1dULVVCSVF3M3c%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xwSFIySjJTVTlSVW5OWExXNUdOamxvTXpKM1NWRRAB!2m1!1s0x0:0x8ef6684842169f21!3m1!1s2@1:CAIQACodChtycF9oOlpHR2J2SU9RUnNXLW5GNjloMzJ3SVE%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1WWJsSnpOVEptY1RreFdpMURRMGd3VjAwMWNFRRAB!2m1!1s0x0:0x862b40508ec88707!3m1!1s2@1:CAIQACodChtycF9oOk5YblJzNTJmcTkxWi1DQ0gwV001cEE%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t0Zk5USXpNMXBzVjBVeGNtNTZhMVpZTFZoSWIxRRAB!2m1!1s0x0:0x413c933ec3a0dda2!3m1!1s2@1:CAIQACodChtycF9oOktfNTIzM1psV0Uxcm56a1ZYLVhIb1E%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kNVdsVXdUVWhIY0RrNFdETTBORWRtZVVkbWFVRRAB!2m1!1s0x0:0xf8348b4229fc5610!3m1!1s2@1:CAIQACodChtycF9oOnd5WlUwTUhHcDk4WDM0NEdmeUdmaUE%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201aVYwSTRjR3B4VW1neVJsbFpZVXRuVGpCaE1VRRAB!2m1!1s0x0:0x1f063eb122c257ee!3m1!1s2@1:CAIQACodChtycF9oOm5iV0I4cGpxUmgyRllZYUtnTjBhMUE%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21GeFZWUkdiMHg2VTNCT1RYb3pZVFpOY0VaWFVGRRAB!2m1!1s0x0:0x42b6ea419e9cb3ea!3m1!1s2@1:CAIQACodChtycF9oOmFxVVRGb0x6U3BOTXozYTZNcEZXUFE%7C%7C?hl=en",
-      "https://www.reddit.com/r/carflipping/comments/1re3co4/thoughts_on_idea/",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tWb1l6TlBhVkY2Y0Y5elRGVlVaR296TTJZdE5IYxAB!2m1!1s0x0:0x42b6ea419e9cb3ea!3m1!1s2@1:CAIQACodChtycF9oOkVoYzNPaVF6cF9zTFVUZGozM2YtNHc%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25ocVZrZGFSRlZ0UTBkZlh6QjViM2N5TTBWdWNYYxAB!2m1!1s0x0:0x2419d7814ac4b8df!3m1!1s2@1:CAIQACodChtycF9oOnhqVkdaRFVtQ0dfXzB5b3cyM0VucXc%7C%7C?hl=en"
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCUFYxWjRaV1Z0YTFkRU9HTkVTVUZVU2s4M2MyYxAB!2m1!1s0x0:0xdb18b095aee54321!3m1!1s2@1:CAIQACodChtycF9oOjBPV1Z4ZWVta1dEOGNESUFUSk83c2c%7C%7C?hl=en"
     ],
-    "generated_at_utc": "2026-09-02T14:20:45.513158+00:00",
+    "generated_at_utc": "2026-10-07T02:02:24.992326+00:00",
     "since_date": "2023-01-01",
-    "until_date": "2026-08-31",
+    "until_date": "2026-09-30",
     "collector_failures": [],
-    "existing_review_count": 2007,
-    "new_reviews_added": 127,
+    "existing_review_count": 2134,
+    "new_reviews_added": 68,
     "youtube_excluded": true,
     "usa_only": true,
     "english_only": true,
@@ -552,17 +575,17 @@
       "bbb.org"
     ],
     "geo_validation_counts": {
-      "google_play_us_store": 5,
-      "google_business_us_profile": 87,
-      "trustpilot_us_slug": 4,
-      "mixed_source_ok": 2,
-      "bbb_us_business": 13,
-      "birdeye_us_profile": 5,
-      "apple_us_store": 11
+      "google_play_us_store": 7,
+      "google_business_us_profile": 35,
+      "trustpilot_us_slug": 1,
+      "bbb_us_business": 7,
+      "birdeye_us_profile": 6,
+      "apple_us_store": 12
     },
     "geo_excluded_counts": {
       "play.google.com:google_play_us_store_non_us_marker": 1,
       "trustpilot.com:trustpilot_us_slug_non_us_marker": 1,
+      "apps.apple.com:apple_us_store_non_us_marker": 1,
       "apps.apple.com:apple_non_us_store": 2
     },
     "geo_excluded_examples": [
@@ -584,19 +607,27 @@
       },
       {
         "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (6744660081, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14565367404",
+        "review_date": "2026-09-18",
+        "reason": "apple_us_store_non_us_marker",
+        "review_text": "Manheim is siding with the seller, does not protect the buyer. Your customers are the buyers!!!. ** Very disappointing app update, the screwing of the buyers continues. And Manheim will also loose the USA market to other auction platforms a"
+      },
+      {
+        "source_website": "apps.apple.com",
         "source_label": "Apple App Store (6744660081, gb)",
-        "source_url": "https://apps.apple.com/gb/app/id6744660081?see-all=reviews&platform=iphone&reviewId=13789018899",
+        "source_url": "https://itunes.apple.com/gb/review?id=6744660081&type=Purple%20Software&reviewId=13789018899",
         "review_date": "2026-02-25",
         "reason": "apple_non_us_store",
         "review_text": "login issues. can’t login, log into website no problem but on this app same pw/user details don’t work"
       },
       {
         "source_website": "apps.apple.com",
-        "source_label": "Apple App Store (1480842917, gb)",
-        "source_url": "https://apps.apple.com/gb/app/id1480842917?see-all=reviews&platform=iphone&reviewId=11685057363",
-        "review_date": "2024-09-03",
+        "source_label": "Apple App Store (6744660081, gb)",
+        "source_url": "https://apps.apple.com/gb/app/id6744660081?see-all=reviews&platform=iphone&reviewId=13789018899",
+        "review_date": "2026-02-25",
         "reason": "apple_non_us_store",
-        "review_text": "Defaults goes to US login. Which means you can’t login.. only after that fails twice does it go be you an option to select an international login at which point you can select you country and then you can login.. very poor UX design and pro"
+        "review_text": "login issues. can’t login, log into website no problem but on this app same pw/user details don’t work"
       }
     ],
     "active_collectors": [
@@ -620,7 +651,8 @@
         "address": "1050 Four Star Drive, Valley, AL 36854",
         "website": "https://www.manheim.com/",
         "rating": 4.3,
-        "review_count": null
+        "review_count": 7,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88e77db086f2d4e5:0xf6e042105c509d3e",
@@ -630,7 +662,8 @@
         "address": "1453 W Landstreet Rd, Orlando, FL 32824",
         "website": "",
         "rating": 4.3,
-        "review_count": 51
+        "review_count": 51,
+        "last_successful_scan_date": "2026-08-31"
       },
       {
         "feature_id": "0x88e783036b2fd9ef:0x1e13d3698319c281",
@@ -639,8 +672,9 @@
         "name": "Manheim",
         "address": "11801 W Colonial Dr, Ocoee, FL 34761",
         "website": "https://www.manheim.com/",
-        "rating": 4.1,
-        "review_count": 12
+        "rating": 4.2,
+        "review_count": 13,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88e77d81c99d5285:0x41bfb395696e185",
@@ -650,7 +684,8 @@
         "address": "1250 W Landstreet Rd, Orlando, FL 32824",
         "website": "https://www.manheim.com/",
         "rating": 4.3,
-        "review_count": 12
+        "review_count": 12,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88f50952666779c7:0x1cc56387cc906fb3",
@@ -660,7 +695,8 @@
         "address": "6325 Peachtree Dunwoody Rd NE, Atlanta, GA 30328",
         "website": "http://www.manheim.com/",
         "rating": 2.6,
-        "review_count": 51
+        "review_count": 51,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x884aa32c763dcb03:0xcf7adbb50b86a632",
@@ -670,7 +706,8 @@
         "address": "Rowlesburg, WV 26425",
         "website": "",
         "rating": null,
-        "review_count": null
+        "review_count": null,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x89de141aaae9cfb3:0xeb5b6efd7a533372",
@@ -680,7 +717,8 @@
         "address": "459 NY-146, Clifton Park, NY 12065",
         "website": "http://www.manheim.com/locations/NWE/events",
         "rating": 4.1,
-        "review_count": 194
+        "review_count": 194,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x872b0f1ee68b351b:0x321762f77b17cf1c",
@@ -690,7 +728,8 @@
         "address": "3420 S 48th St, Phoenix, AZ 85040",
         "website": "https://www.manheim.com/locations/LPHX/events",
         "rating": 3.8,
-        "review_count": 84
+        "review_count": 84,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88f502f2aa726a77:0xaa0ac5cbcc382fd5",
@@ -700,7 +739,8 @@
         "address": "4900 Buffington Rd, Atlanta, GA 30349",
         "website": "http://www.manheim.com/locations/AAA/events",
         "rating": 3.8,
-        "review_count": 1247
+        "review_count": 1251,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88f502f2aa726a77:0xe448884c5d8e6815",
@@ -710,7 +750,8 @@
         "address": "2244 Metropolitan Pkwy SW, Atlanta, GA 30315",
         "website": "https://www.manheim.com/",
         "rating": 4.1,
-        "review_count": 124
+        "review_count": 125,
+        "last_successful_scan_date": "2026-08-31"
       },
       {
         "feature_id": "0x80dcb1fdaabe2c11:0x6c4d0ec28830eeb6",
@@ -720,7 +761,8 @@
         "address": "Dales St, Riverside, CA 92504",
         "website": "https://site.manheim.com/en/locations/us-locations/manheim-riverside.html",
         "rating": 3.8,
-        "review_count": 44
+        "review_count": 45,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x864e9aaef3f012a7:0xd1c8901ade20c490",
@@ -730,7 +772,8 @@
         "address": "2427-2563 S Walton Walker Blvd, Dallas, TX 75236",
         "website": "https://site.manheim.com/en/locations/us-locations/manheim-dallas.html",
         "rating": 3.9,
-        "review_count": 291
+        "review_count": 292,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x87c0feb5ccf25d17:0xa602305491d8cfec",
@@ -740,7 +783,8 @@
         "address": "8751 NE Parvin Rd, Kansas City, MO 64161",
         "website": "",
         "rating": 4.2,
-        "review_count": 60
+        "review_count": 60,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x89c621a25371b06b:0x1a13f81ffa85d0eb",
@@ -750,7 +794,19 @@
         "address": "Unnamed Road, Manheim, PA 17545",
         "website": "https://site.manheim.com/",
         "rating": 4.4,
-        "review_count": 103
+        "review_count": 103,
+        "last_successful_scan_date": "2026-09-30"
+      },
+      {
+        "feature_id": "0x89c301f6cdd51bd5:0x6aae6b4acb725e96",
+        "cid": "7687199582953037462",
+        "place_id": "ChIJ1RvVzfYBw4kRll5yy0prrmo",
+        "name": "Manheim Auto Auction",
+        "address": "100 US-46, Fairfield, NJ 07004",
+        "website": "https://site.manheim.com/",
+        "rating": 3.6,
+        "review_count": 20,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x80c34bdd54283271:0xb147e014ac19a031",
@@ -760,7 +816,8 @@
         "address": "10750 Hemlock Ave, Fontana, CA 92337",
         "website": "https://site.manheim.com/en/locations/us-locations/manheim-southern-california.html",
         "rating": 5,
-        "review_count": 1
+        "review_count": 1,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x876c638c29f4d2a9:0xd2c654661e9177e3",
@@ -770,7 +827,8 @@
         "address": "17600-, 17690 E 30th Ave, Aurora, CO 80011",
         "website": "https://site.manheim.com/",
         "rating": 3.9,
-        "review_count": 39
+        "review_count": 39,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x89c62118ec6fa8f7:0x65eaf9646380b653",
@@ -780,7 +838,8 @@
         "address": "Unnamed Road, Manheim, PA 17545",
         "website": "https://www.manheim.com/",
         "rating": 5,
-        "review_count": 6
+        "review_count": 6,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x89b7e10cf23d5ba1:0xdca57c77c7da38da",
@@ -790,7 +849,8 @@
         "address": "7120 Dorsey Run Rd, Elkridge, MD 21075",
         "website": "https://publish.manheim.com/en/locations/us-locations/manheim-baltimore-washington.html",
         "rating": 3.5,
-        "review_count": 476
+        "review_count": 485,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x8889106288a80e6f:0xda9573fc19944dc6",
@@ -800,7 +860,8 @@
         "address": "301 Fleming Rd, Birmingham, AL 35217",
         "website": "http://www.manheim.com/locations/SONB/events",
         "rating": 3.9,
-        "review_count": null
+        "review_count": 145,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x80dcd6b0a39e6bf3:0xaad5beec10f89472",
@@ -809,8 +870,9 @@
         "name": "Manheim California",
         "address": "1320 N Tustin Ave, Anaheim, CA 92807",
         "website": "http://www.manheim.com/locations/CADE/events",
-        "rating": 3.8,
-        "review_count": 498
+        "rating": 3.9,
+        "review_count": 500,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88e77da296037f3b:0x4d6d8ea3ae42f9a2",
@@ -820,7 +882,8 @@
         "address": "9800 Bachman Rd, Orlando, FL 32824",
         "website": "http://www.manheim.com/locations/GOAA/events",
         "rating": 4.1,
-        "review_count": 900
+        "review_count": 905,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88e77d28f9c1d6c9:0x27a6147bc8d91638",
@@ -830,7 +893,8 @@
         "address": "9800 Bachman Rd, Orlando, FL 32824",
         "website": "https://site.manheim.com/en/locations/us-locations/manheim-central-florida.html",
         "rating": 4.4,
-        "review_count": 77
+        "review_count": 77,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88540fbdffa2a7d5:0x19afd9caf5b56cf5",
@@ -840,7 +904,8 @@
         "address": "287 Concord Pkwy N B, Concord, NC 28027",
         "website": "http://www.manheim.com/locations/CHAR/events",
         "rating": 4.3,
-        "review_count": 158
+        "review_count": 158,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x880e16a69e759c8b:0xf93a43290f3c5c75",
@@ -850,7 +915,8 @@
         "address": "20401 Cox Ave, Matteson, IL 60443",
         "website": "http://www.manheim.com/locations/GCAA/events",
         "rating": 3.5,
-        "review_count": 791
+        "review_count": 793,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88404fb5c79b2d13:0xc9eaa7efb5a3902a",
@@ -860,7 +926,8 @@
         "address": "4969 Muhlhauser Rd, Hamilton, OH 45011",
         "website": "http://www.manheim.com/locations/CINA/events",
         "rating": 3.9,
-        "review_count": 300
+        "review_count": 301,
+        "last_successful_scan_date": "2026-08-31"
       },
       {
         "feature_id": "0x0:0xfd46011e8d099233",
@@ -870,7 +937,8 @@
         "address": "Previously validated U.S. Google Business Profile",
         "website": "",
         "rating": null,
-        "review_count": 8
+        "review_count": 8,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x864e9aa82aa9069b:0xc448649038168654",
@@ -880,7 +948,8 @@
         "address": "5333 W Kiest Blvd, Dallas, TX 75236",
         "website": "http://www.manheim.com/locations/DALA/events",
         "rating": 3.7,
-        "review_count": 1368
+        "review_count": 1382,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x864e7e3b74147703:0x750f6df8409829b8",
@@ -890,7 +959,8 @@
         "address": "12101 Trinity Blvd, Euless, TX 76040",
         "website": "http://www.manheim.com/locations/DFWA/events",
         "rating": 3.9,
-        "review_count": 769
+        "review_count": 774,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x864e7f003e883765:0xb6833abe598ee9a0",
@@ -899,8 +969,9 @@
         "name": "Manheim Dallas - Fort Worth Transport Lot",
         "address": "12101 Trinity Blvd, Euless, TX 76040",
         "website": "",
-        "rating": 3.5,
-        "review_count": 20
+        "rating": 3.4,
+        "review_count": 21,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88556fb93e6ee2f3:0x3211a88496efd651",
@@ -910,7 +981,8 @@
         "address": "1111 Harry Byrd Hwy, Darlington, SC 29532",
         "website": "http://www.manheim.com/locations/CAAI/events",
         "rating": 4.1,
-        "review_count": 272
+        "review_count": 277,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88e6df9366bbd035:0x1172d53b79db3059",
@@ -920,7 +992,8 @@
         "address": "1305 Indian Lake Rd, Daytona Beach, FL 32124",
         "website": "http://www.manheim.com/locations/DADE/events",
         "rating": 4.5,
-        "review_count": 226
+        "review_count": 228,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x876c638f48a42511:0xc9c265782eec3164",
@@ -930,7 +1003,8 @@
         "address": "17500 E 32nd Ave, Aurora, CO 80011",
         "website": "http://www.manheim.com/locations/DAA/events",
         "rating": 4,
-        "review_count": 668
+        "review_count": 674,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x883b43af7916110f:0x8ef6684842169f21",
@@ -940,7 +1014,8 @@
         "address": "600 Will Carleton Rd, Carleton, MI 48117",
         "website": "http://www.manheim.com/locations/DETA/events",
         "rating": 3.8,
-        "review_count": 686
+        "review_count": 691,
+        "last_successful_scan_date": "2026-08-31"
       },
       {
         "feature_id": "0x86ddf8df168c560b:0xa7e1e15a29b296f",
@@ -950,17 +1025,19 @@
         "address": "485 Coates Dr, El Paso, TX 79932",
         "website": "http://www.manheim.com/locations/DAAE/events",
         "rating": 4,
-        "review_count": 207
+        "review_count": 206,
+        "last_successful_scan_date": "2026-08-31"
       },
       {
         "feature_id": "0x882378f8dc8fad5f:0xde89b27b2ae81d2f",
         "cid": "16035544190299938095",
         "place_id": "ChIJX62P3Ph4I4gRLx3oKnuyid4",
         "name": "Manheim Flint",
-        "address": "7180 N Dort Hwy, Mt Morris, MI 48458",
+        "address": "7180 North Dort Highway, Mount Morris, MI 48458",
         "website": "http://www.manheim.com/locations/PTAF/events",
         "rating": 4,
-        "review_count": 126
+        "review_count": 127,
+        "last_successful_scan_date": "2026-08-31"
       },
       {
         "feature_id": "0x88d9a9bd95f30293:0x131a074ce10eccb3",
@@ -970,7 +1047,8 @@
         "address": "5353 S State Rd 7, Davie, FL 33314",
         "website": "http://www.manheim.com/locations/LMAA/events",
         "rating": 4,
-        "review_count": 874
+        "review_count": 877,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88db6a30e04f38af:0xb719f29fa9cc0710",
@@ -980,7 +1058,8 @@
         "address": "2100 Rockfill Rd, Fort Myers, FL 33916",
         "website": "http://www.manheim.com/locations/SWFL/events",
         "rating": 4.1,
-        "review_count": 221
+        "review_count": 221,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x89b6ea36cd0735d1:0xf7c0baafbc81ae96",
@@ -990,7 +1069,8 @@
         "address": "120 Auction Dr, Fredericksburg, VA 22406",
         "website": "http://www.manheim.com/locations/FAA/events",
         "rating": 3.8,
-        "review_count": 311
+        "review_count": 313,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x809466d34b81e85d:0xc59dff2f9e4c9ff5",
@@ -1000,7 +1080,8 @@
         "address": "278 N Marks Ave, Fresno, CA 93706",
         "website": "http://www.manheim.com/locations/FADA/events",
         "rating": 3.9,
-        "review_count": 181
+        "review_count": 182,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88f520125b2ab8bd:0x255cba6ae2327b69",
@@ -1010,7 +1091,8 @@
         "address": "7205 Campbellton Rd SW, Atlanta, GA 30331",
         "website": "http://www.manheim.com/locations/AAAW/events",
         "rating": 3.9,
-        "review_count": 744
+        "review_count": 746,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x885780bebf4cfcbb:0xfe22653b7d9ad519",
@@ -1020,7 +1102,8 @@
         "address": "101 Tungsten Blvd, Greer, SC 29651",
         "website": "http://www.manheim.com/locations/MGRE/services",
         "rating": 3.9,
-        "review_count": 41
+        "review_count": 41,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x89b493bfa36ca9ad:0xf30bf1060f53e2ae",
@@ -1030,7 +1113,8 @@
         "address": "3560 Early Rd, Harrisonburg, VA 22801",
         "website": "http://www.manheim.com/locations/HAA/events",
         "rating": 4.1,
-        "review_count": 125
+        "review_count": 125,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x8640d11d8c81e40b:0x75fb9928386817c8",
@@ -1040,7 +1124,8 @@
         "address": "14450 West Rd, Houston, TX 77041",
         "website": "http://www.manheim.com/locations/BIGH/events",
         "rating": 4,
-        "review_count": 467
+        "review_count": 468,
+        "last_successful_scan_date": "2026-08-31"
       },
       {
         "feature_id": "0x886b467428c6065d:0x9b19591778f5908a",
@@ -1050,7 +1135,8 @@
         "address": "3110 S Post Rd, Indianapolis, IN 46239",
         "website": "http://www.manheim.com/locations/INDY/events",
         "rating": 4.2,
-        "review_count": 315
+        "review_count": 315,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88e5bb409252e301:0xe910bb27a1d8f3e6",
@@ -1060,7 +1146,8 @@
         "address": "10817 New Kings Rd, Jacksonville, FL 32219",
         "website": "http://www.manheim.com/locations/JAX/events",
         "rating": 4,
-        "review_count": 238
+        "review_count": 240,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x87c0f94cf5549053:0xc2108ea7cb2301e8",
@@ -1070,7 +1157,8 @@
         "address": "3901 N Skiles Ave, Kansas City, MO 64161",
         "website": "http://www.manheim.com/locations/KCAA/events",
         "rating": 4,
-        "review_count": 350
+        "review_count": 352,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x86249929341395f7:0x6f8196d65546ed27",
@@ -1080,7 +1168,8 @@
         "address": "1611 St Mary St, Scott, LA 70583",
         "website": "http://www.manheim.com/locations/SAPL/events",
         "rating": 4.4,
-        "review_count": 60
+        "review_count": 59,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88dd41f126b4710f:0x5549b966575fa3f6",
@@ -1090,7 +1179,8 @@
         "address": "8025 State Rd 33 N, Lakeland, FL 33809",
         "website": "http://www.manheim.com/locations/LAA/events",
         "rating": 4.2,
-        "review_count": 484
+        "review_count": 489,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x876b7df06a4e991d:0xba83105c68e159a",
@@ -1100,7 +1190,8 @@
         "address": "8300 Blakeland Dr, Littleton, CO 80125",
         "website": "https://www.manheim.com/locations/KLOD/events",
         "rating": 4,
-        "review_count": 10
+        "review_count": 10,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x886971eb8d1e3e19:0xaff28210ad69c2ef",
@@ -1110,7 +1201,8 @@
         "address": "5425 US-31, Clarksville, IN 47129",
         "website": "http://www.manheim.com/locations/LOUA/events",
         "rating": 4.2,
-        "review_count": 283
+        "review_count": 283,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x89c7dde193bf8b89:0x862b40508ec88707",
@@ -1120,7 +1212,8 @@
         "address": "4805 Philadelphia Rd, Belcamp, MD 21017",
         "website": "https://site.manheim.com/en/locations/us-locations/manheim-maryland.html",
         "rating": 3.7,
-        "review_count": 403
+        "review_count": 406,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x883b409dfafec955:0xf8348b4229fc5610",
@@ -1130,7 +1223,8 @@
         "address": "29500 Gateway Blvd, Flat Rock, MI 48134",
         "website": "http://www.autoauctiondetroit.com/",
         "rating": 3.9,
-        "review_count": 187
+        "review_count": 187,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88056cc7c7cd7a1f:0x378980213b28838d",
@@ -1140,7 +1234,8 @@
         "address": "561 27th St, Caledonia, WI 53108",
         "website": "http://www.manheim.com/locations/MMAA/events",
         "rating": 4,
-        "review_count": 565
+        "review_count": 567,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88056c425f09e07d:0xee8ae68f4fe5f98a",
@@ -1150,7 +1245,8 @@
         "address": "2833 S 27th St, Franksville, WI 53126",
         "website": "https://publish.manheim.com/en/locations/us-locations/manheim-milwaukee.html",
         "rating": 4.2,
-        "review_count": 37
+        "review_count": 37,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x52b33829b7a488cd:0x41ced18cd9202dd",
@@ -1160,7 +1256,8 @@
         "address": "8001 Jefferson Hwy, Maple Grove, MN 55369",
         "website": "http://www.manheim.com/locations/MAAI/events",
         "rating": 4,
-        "review_count": 327
+        "review_count": 331,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x80c8e73b5ae6bd15:0x6c142e9685c06c75",
@@ -1170,7 +1267,8 @@
         "address": "6600 Auction Ln, Las Vegas, NV 89165",
         "website": "https://www.manheim.com/",
         "rating": 4,
-        "review_count": 527
+        "review_count": 530,
+        "last_successful_scan_date": "2026-08-31"
       },
       {
         "feature_id": "0x89e4f5a0c5ddb507:0x30f7f5be3a3f876",
@@ -1180,7 +1278,8 @@
         "address": "123 Williams St, North Dighton, MA 02764",
         "website": "https://publish.manheim.com/en/locations/us-locations/manheim-new-england.html#hours",
         "rating": 4.1,
-        "review_count": 427
+        "review_count": 428,
+        "last_successful_scan_date": "2026-08-31"
       },
       {
         "feature_id": "0x89e299c1d4741f81:0x82e63503fb156a8e",
@@ -1190,7 +1289,8 @@
         "address": "221 NH-108, Somersworth, NH 03878",
         "website": "https://site.manheim.com/en/states/new-hampshire",
         "rating": 5,
-        "review_count": 2
+        "review_count": 2,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x89c15b46ba218ba9:0x92788e8c0e7120c0",
@@ -1200,7 +1300,8 @@
         "address": "730 NJ-68, Bordentown, NJ 08505",
         "website": "http://www.manheim.com/locations/NADE/events",
         "rating": 3.6,
-        "review_count": 704
+        "review_count": 710,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x87220c6c882f0c51:0xca42e36fad37e776",
@@ -1210,7 +1311,8 @@
         "address": "3411 Broadway Blvd SE, Albuquerque, NM 87105",
         "website": "http://www.manheim.com/locations/ALBA/events",
         "rating": 3.8,
-        "review_count": 239
+        "review_count": 239,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x889de5dc23dde9d9:0xe988b73d27abc7e0",
@@ -1220,7 +1322,8 @@
         "address": "61077 St Tammany Ave, Slidell, LA 70460",
         "website": "http://www.manheim.com/locations/NOAA/events",
         "rating": 4.2,
-        "review_count": 227
+        "review_count": 227,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x89dd2c27542b21df:0xbe3ab43d25cdd6dd",
@@ -1230,7 +1333,8 @@
         "address": "2000 Dealer Dr, Newburgh, NY 12550",
         "website": "http://www.manheim.com/locations/NAA/events",
         "rating": 4.1,
-        "review_count": 330
+        "review_count": 331,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x89ac113d4a37b251:0xab7aa52c44aa38cd",
@@ -1240,7 +1344,8 @@
         "address": "318 Bagley Rd, Kenly, NC 27542",
         "website": "http://www.manheim.com/locations/AYCA/events",
         "rating": 4,
-        "review_count": 363
+        "review_count": 367,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x87f61780da3f4383:0x1343b59c00e1b255",
@@ -1249,8 +1354,9 @@
         "name": "Manheim Northstar Minnesota",
         "address": "4908 Valley Industrial Blvd N, Shakopee, MN 55379",
         "website": "https://publish.manheim.com/en/locations/us-locations/manheim-northstar-minnesota.html",
-        "rating": 4.2,
-        "review_count": 240
+        "rating": 4.3,
+        "review_count": 243,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x89c300ceea94ff0b:0xa8d12293acf86f1a",
@@ -1259,8 +1365,9 @@
         "name": "Manheim NY Metro Skyline",
         "address": "100 US-46, Fairfield, NJ 07004",
         "website": "https://site.manheim.com/en/locations/us-locations/manheim-ny-metro-skyline.html#/",
-        "rating": 3.6,
-        "review_count": 530
+        "rating": 3.5,
+        "review_count": 532,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x80dc708cb22d038f:0xeb631168e11fd5b",
@@ -1270,7 +1377,8 @@
         "address": "4691 Calle Joven, Oceanside, CA 92057",
         "website": "http://www.manheim.com/locations/SDAA/events",
         "rating": 4,
-        "review_count": 226
+        "review_count": 225,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x8838845cf17376a7:0xcd68e369ee246c6b",
@@ -1280,7 +1388,8 @@
         "address": "3905 Jackson Pike, Grove City, OH 43123",
         "website": "http://www.manheim.com/locations/OAA/events",
         "rating": 3.9,
-        "review_count": 715
+        "review_count": 718,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x8793f43777e82635:0x413c933ec3a0dda2",
@@ -1290,7 +1399,8 @@
         "address": "9201 S 144th St, Omaha, NE 68138",
         "website": "http://www.manheim.com/locations/OMAA/events",
         "rating": 4.2,
-        "review_count": 183
+        "review_count": 183,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88e782fbe1c3e6d5:0x35b5cb04774293df",
@@ -1300,7 +1410,8 @@
         "address": "11801 W Colonial Dr, Ocoee, FL 34761",
         "website": "http://www.manheim.com/locations/FAAO/events",
         "rating": 4.2,
-        "review_count": 924
+        "review_count": 929,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88e783cd199e8a7f:0x2727500b4f47beab",
@@ -1310,7 +1421,8 @@
         "address": "1275 E Story Rd, Winter Garden, FL 34787",
         "website": "https://publish.manheim.com/en/locations/us-locations/manheim-orlando.html",
         "rating": 3.8,
-        "review_count": 4
+        "review_count": 4,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88e7836766302fb5:0x40727a7fcd91b4b1",
@@ -1320,7 +1432,8 @@
         "address": "1100 Marshall Farms Rd, Ocoee, FL 34761",
         "website": "https://publish.manheim.com/en/locations/us-locations/manheim-orlando.html",
         "rating": 4.1,
-        "review_count": 14
+        "review_count": 14,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88e78345fbf4bab3:0xb77d643ecc135f2c",
@@ -1330,7 +1443,8 @@
         "address": "1100 Marshall Farms Rd, Ocoee, FL 34761",
         "website": "https://site.manheim.com/en/locations/us-locations/manheim-orlando.html",
         "rating": 4.2,
-        "review_count": 55
+        "review_count": 57,
+        "last_successful_scan_date": "2026-08-31"
       },
       {
         "feature_id": "0x88d928d464946877:0xef1776f19dc440c8",
@@ -1340,7 +1454,8 @@
         "address": "600 Sansburys Way, West Palm Beach, FL 33411",
         "website": "http://www.manheim.com/locations/WPBA/events",
         "rating": 4.2,
-        "review_count": 542
+        "review_count": 542,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x89c621e9bc0819a7:0x38c009277d77bd2f",
@@ -1350,7 +1465,8 @@
         "address": "1190 Lancaster Rd, Manheim, PA 17545",
         "website": "http://www.manheim.com/locations/MAA/events",
         "rating": 4.1,
-        "review_count": 726
+        "review_count": 730,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x8890bfca5931672f:0xfffe440c8728fa18",
@@ -1360,7 +1476,8 @@
         "address": "6359 North W Street, Pensacola, FL 32505",
         "website": "http://www.manheim.com/locations/PCAA/events",
         "rating": 4.4,
-        "review_count": 239
+        "review_count": 240,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x89c6a0e28c5a27c3:0xe7523e8b6c53dc70",
@@ -1369,8 +1486,9 @@
         "name": "Manheim Philadelphia",
         "address": "2280 Bethlehem Pike, Hatfield, PA 19440",
         "website": "http://www.manheim.com/locations/HATA/events",
-        "rating": 4.1,
-        "review_count": 289
+        "rating": 4.2,
+        "review_count": 291,
+        "last_successful_scan_date": "2026-08-31"
       },
       {
         "feature_id": "0x872b1587542d8f77:0xb9fba5d772cd137e",
@@ -1379,28 +1497,53 @@
         "name": "Manheim Phoenix",
         "address": "201 N 83rd Ave, Tolleson, AZ 85353",
         "website": "https://site.manheim.com/en/locations/us-locations/manheim-phoenix.html#/",
-        "rating": 4,
-        "review_count": 690
+        "rating": 4.1,
+        "review_count": 696,
+        "last_successful_scan_date": "2026-09-30"
+      },
+      {
+        "feature_id": "0x872b17007050465d:0x8e687d2f6b822419",
+        "cid": "10261589393584301081",
+        "place_id": "ChIJXUZQcAAXK4cRGSSCay99aI4",
+        "name": "manheim Phoenix",
+        "address": "4955 W Miami St, Phoenix, AZ 85009",
+        "website": "",
+        "rating": 5,
+        "review_count": 1,
+        "last_successful_scan_date": "2026-09-30"
+      },
+      {
+        "feature_id": "0x872b150029f3127f:0x203ed0cfd97254ca",
+        "cid": "2323524048894710986",
+        "place_id": "ChIJfxLzKQAVK4cRylRy2c_QPiA",
+        "name": "Manheim phonex",
+        "address": "95 N 79th Ave, Tolleson, AZ 85353",
+        "website": "",
+        "rating": 1,
+        "review_count": 1,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88347d9d4477e15f:0xa091b063078d88df",
         "cid": "11570222857066481887",
         "place_id": "ChIJX-F3RJ19NIgR34iNB2OwkaA",
         "name": "Manheim Pittsburgh",
-        "address": "21095 Rte 19, Cranberry Twp, PA 16066",
+        "address": "21095 Rte 19, Cranberry Township, PA 16066",
         "website": "http://www.manheim.com/locations/BAA/events",
         "rating": 4.2,
-        "review_count": 344
+        "review_count": 346,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88347d96ced9048b:0x86967d6ba8e66862",
         "cid": "9698076748937586786",
         "place_id": "ChIJiwTZzpZ9NIgRYmjmqGt9loY",
         "name": "Manheim Pittsburgh Auto Auction",
-        "address": "22054 Perry Hwy, Cranberry Twp, PA 16066",
+        "address": "22054 Perry Hwy, Cranberry Township, PA 16066",
         "website": "http://www.manheim.com/",
         "rating": 4.6,
-        "review_count": 77
+        "review_count": 77,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88347dc27d7e9fe9:0x50e416f5423bc98c",
@@ -1410,7 +1553,8 @@
         "address": "Lindsay Rd, Zelienople, PA 16063",
         "website": "https://site.manheim.com/en/locations/us-locations/manheim-pittsburgh.html",
         "rating": 4.1,
-        "review_count": 33
+        "review_count": 33,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x5495a89a9c6d934f:0x3e58d65e54d100f7",
@@ -1420,7 +1564,8 @@
         "address": "3000 N Hayden Island Dr, Portland, OR 97217",
         "website": "http://www.manheim.com/locations/PAA/events",
         "rating": 4.2,
-        "review_count": 264
+        "review_count": 267,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88e7836ac11e8553:0xce3375d85b297645",
@@ -1429,8 +1574,9 @@
         "name": "Manheim Recon Orlando",
         "address": "1275 E Story Rd, Winter Garden, FL 34787",
         "website": "",
-        "rating": 4.5,
-        "review_count": 60
+        "rating": 4.4,
+        "review_count": 61,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x89c621c41a59a639:0xe72ebaa28d328b76",
@@ -1440,7 +1586,8 @@
         "address": "1052-1100 Power Rd, Manheim, PA 17545",
         "website": "https://publish.manheim.com/en/locations/us-locations/manheim-pennsylvania.html",
         "rating": 4.4,
-        "review_count": 252
+        "review_count": 252,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x80dcb142f8f245f1:0x7412127d15e91e29",
@@ -1450,7 +1597,8 @@
         "address": "6051 Industrial Ave, Riverside, CA 92504",
         "website": "https://site.manheim.com/en/locations/us-locations/manheim-riverside.html",
         "rating": 3.2,
-        "review_count": 17
+        "review_count": 17,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x80dcb138cba3c943:0x468583aed34b56ae",
@@ -1460,7 +1608,8 @@
         "address": "6446 Fremont St, Riverside, CA 92504",
         "website": "http://www.manheim.com/locations/RAA/events",
         "rating": 3.8,
-        "review_count": 489
+        "review_count": 491,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x80dcb147b647733d:0x6f8c02cb5e70d4f9",
@@ -1470,7 +1619,8 @@
         "address": "6900 Jurupa Ave, Riverside, CA 92504",
         "website": "https://site.manheim.com/en/locations/us-locations/manheim-riverside.html",
         "rating": 3.9,
-        "review_count": 323
+        "review_count": 324,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x865cf3e91f87b703:0x40bd584df86443ba",
@@ -1480,7 +1630,8 @@
         "address": "2042 Ackerman Rd, San Antonio, TX 78219",
         "website": "http://www.manheim.com/locations/SAAA/events",
         "rating": 3.8,
-        "review_count": 685
+        "review_count": 686,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x808f94347ff18049:0xdb18b095aee54321",
@@ -1490,7 +1641,8 @@
         "address": "29900 Auction Way, Hayward, CA 94544",
         "website": "https://publish.manheim.com/en/locations/us-locations/manheim-san-francisco-bay.html",
         "rating": 3.7,
-        "review_count": 446
+        "review_count": 449,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x54905cf579558a27:0x164e882f4b93230c",
@@ -1500,7 +1652,8 @@
         "address": "19711 77th Ave S, Kent, WA 98032",
         "website": "http://www.manheim.com/locations/SSAA/events",
         "rating": 4,
-        "review_count": 350
+        "review_count": 357,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x80c34b526ff1d4f3:0x8bec23c4707ea34a",
@@ -1510,7 +1663,8 @@
         "address": "10873 Elm Ave, Fontana, CA 92337",
         "website": "https://site.manheim.com/en/locations/us-locations/manheim-southern-california.html",
         "rating": 4.1,
-        "review_count": 21
+        "review_count": 22,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x878939002c90aeff:0x5303b7fe6d263480",
@@ -1520,7 +1674,8 @@
         "address": "24609 Klein Ave, Dell Rapids, SD 57022",
         "website": "https://site.manheim.com/en/locations/us-locations/manheim-south-dakota.html",
         "rating": null,
-        "review_count": null
+        "review_count": null,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x80c34b4936187e27:0xe751c77d5aaeec17",
@@ -1530,7 +1685,8 @@
         "address": "10700 Beech Ave, Fontana, CA 92337",
         "website": "http://www.manheim.com/locations/SCAA/events",
         "rating": 3.8,
-        "review_count": 803
+        "review_count": 808,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x87df2fd4493498a3:0x67a05d44913c4418",
@@ -1540,7 +1696,8 @@
         "address": "13813 St Charles Rock Rd, Bridgeton, MO 63044",
         "website": "http://www.manheim.com/locations/SLAA/events",
         "rating": 4.2,
-        "review_count": 443
+        "review_count": 446,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88c2e5709bf336d7:0xc212994811ed4d98",
@@ -1550,7 +1707,8 @@
         "address": "14950 Roosevelt Blvd, Clearwater, FL 33762",
         "website": "http://www.manheim.com/locations/SPAA/events",
         "rating": 4,
-        "review_count": 348
+        "review_count": 348,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88c2e5005855a5a7:0x905d6459192b7794",
@@ -1560,7 +1718,8 @@
         "address": "14850 Roosevelt Blvd, Clearwater, FL 33762",
         "website": "https://site.manheim.com/en/locations/us-locations/manheim-st-pete.html",
         "rating": 4.3,
-        "review_count": 3
+        "review_count": 3,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88515edfd5f0ec15:0x31cb64fd6fc9e063",
@@ -1570,7 +1729,8 @@
         "address": "145 Auction Ln, Statesville, NC 28625",
         "website": "http://www.manheim.com/locations/SVAA/events",
         "rating": 4.2,
-        "review_count": 590
+        "review_count": 594,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88ec8a9706b6ff63:0x1f063eb122c257ee",
@@ -1580,7 +1740,8 @@
         "address": "5249 Capital Cir SW, Tallahassee, FL 32305",
         "website": "https://site.manheim.com/en/locations/us-locations/manheim-tallahassee.html?fbclid=IwRlRTSAQFVXRleHRuA2FlbQIxMABzcnRjBmFwcF9pZAo2NjI4NTY4Mzc5AAEe0XBQ_AN_Hq2i_lZxyOvQSxjulEdWOtlzOL_oHBgEu-5ILWe_zxX7efDvjs4_aem_g6zaDEG9mSZg5XH1vIG2EA",
         "rating": 4.3,
-        "review_count": 115
+        "review_count": 119,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88c2c577cc2b02ef:0x510e3608cbd9ba1e",
@@ -1589,8 +1750,9 @@
         "name": "Manheim Tampa",
         "address": "401 S 50th St, Tampa, FL 33605",
         "website": "http://www.manheim.com/locations/TBAA/events",
-        "rating": 4.3,
-        "review_count": 555
+        "rating": 4.2,
+        "review_count": 559,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88c2c5d6c8563167:0x869d7300fe7b6f13",
@@ -1600,7 +1762,8 @@
         "address": "Tampa, FL 33610",
         "website": "https://site.manheim.com/",
         "rating": 4.9,
-        "review_count": 9
+        "review_count": 9,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x86409670b69d9b9f:0x2419d7814ac4b8df",
@@ -1610,7 +1773,8 @@
         "address": "8215 Kopman Dr, Houston, TX 77061",
         "website": "http://www.manheim.com/locations/THAA/events",
         "rating": 3.9,
-        "review_count": 938
+        "review_count": 947,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x8640968768ffc17f:0xd498a1724b17a7a9",
@@ -1620,7 +1784,8 @@
         "address": "800 Brisbane St, Houston, TX 77061",
         "website": "https://site.manheim.com/en/locations/us-locations/manheim-texas-hobby.html",
         "rating": 4,
-        "review_count": 72
+        "review_count": 72,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x86d6649665f44fc5:0x96d3a560daf3d49d",
@@ -1630,7 +1795,8 @@
         "address": "7090 S Craycroft Rd, Tucson, AZ 85756",
         "website": "http://www.manheim.com/locations/TCAA/events",
         "rating": 4.1,
-        "review_count": 188
+        "review_count": 188,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x0:0x29d4a7f8b704b4b7",
@@ -1640,7 +1806,8 @@
         "address": "Previously validated U.S. Google Business Profile",
         "website": "",
         "rating": null,
-        "review_count": 9
+        "review_count": 9,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x8752f9de6955fdf9:0xcafdbd5463ebf386",
@@ -1650,7 +1817,8 @@
         "address": "1650 W 500 S, Woods Cross, UT 84087",
         "website": "http://www.manheim.com/locations/UAA/events",
         "rating": 4,
-        "review_count": 335
+        "review_count": 336,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x87bafb5c72b9248d:0x12203f82db15bad3",
@@ -1660,7 +1828,8 @@
         "address": "9707 E Orme St #2517, Wichita, KS 67207",
         "website": "https://site.manheim.com/",
         "rating": 4.4,
-        "review_count": 7
+        "review_count": 7,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x89a9f51f8cc7acbf:0x42b6ea419e9cb3ea",
@@ -1670,7 +1839,8 @@
         "address": "169 Auction Dr, Rocky Point, NC 28457",
         "website": "https://site.manheim.com/",
         "rating": 4.4,
-        "review_count": 63
+        "review_count": 64,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88db6a371dccd545:0x5f6f1056e604542e",
@@ -1680,7 +1850,18 @@
         "address": "2252 Rockfill Rd, Fort Myers, FL 33916",
         "website": "",
         "rating": 3.4,
-        "review_count": 5
+        "review_count": 5,
+        "last_successful_scan_date": "2026-09-30"
+      },
+      {
+        "feature_id": "0x872b15871353a133:0xb454413c18e93de5",
+        "cid": "12994082551242505701",
+        "place_id": "ChIJM6FTE4cVK4cR5T3pGDxBVLQ",
+        "name": "MVD, Third Party Manheim, Phoenix Titles Only",
+        "address": "201 N 83rd Ave, Tolleson, AZ 85353",
+        "website": "http://www.manheim.com/",
+        "rating": 4,
+        "review_count": 42
       },
       {
         "feature_id": "0x888ab3dbc0471b53:0xffe21dd0f1df0fe5",
@@ -1690,11 +1871,747 @@
         "address": "3824 US-411, Kingston, GA 30145",
         "website": "http://www.manheim.com/",
         "rating": 4.3,
-        "review_count": 56
+        "review_count": 58,
+        "last_successful_scan_date": "2026-08-31"
       }
     ]
   },
   "reviews": [
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.manheim.mktplace)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+      "author": "Andy Koval",
+      "review_date": "2026-09-30",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "leave the old app",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-002135"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Darlington)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t0dGJGQlFRa2hqWWpkYVUwbE5WRzExUkV0WFZIYxAB!2m1!1s0x0:0x3211a88496efd651!3m1!1s2@1:CAIQACodChtycF9oOkttbFBQQkhjYjdaU0lNVG11REtXVHc%7C%7C?hl=en",
+      "author": "John Carvalho",
+      "review_date": "2026-09-30",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "The forklift driver is an arrogant, rude guy who works half-heartedly and complains about everything; I don't know how Maheim works with someone like that.",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-002136"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim San Francisco Bay)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2poMFMzQXpSMWgyT1djelJHOUxhV1pDTFdSaWRWRRAB!2m1!1s0x0:0xdb18b095aee54321!3m1!1s2@1:CAIQACodChtycF9oOjh0S3AzR1h2OWczRG9LaWZCLWRidVE%7C%7C?hl=en",
+      "author": "AH",
+      "review_date": "2026-09-30",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "General manager try to control dealers prices.They didn't accept my order to get condition report for sale because they think my price is so high.General manager so rude.Never buy from that place.",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-002137"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (6744660081, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14613768624",
+      "author": "el es 1 manuel",
+      "review_date": "2026-09-30",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Muy mal. This app it’s the worst Manheim app",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-002138"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (6744660081, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14613596149",
+      "author": "Dakeusten",
+      "review_date": "2026-09-30",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Bring back old app. This new app sucks , lags and gives error",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-002139"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (6744660081, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14613310875",
+      "author": "Jd5448654",
+      "review_date": "2026-09-30",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Can’t login. Forced to upgrade but the new app is useless. Whenever I try to login, I do not receive the code, even though my phone number is correct. I hope this gets fixed immediately.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-002140"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (6744660081, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14613255057",
+      "author": "пролджжг",
+      "review_date": "2026-09-30",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Old app better. Bring back the old app; the new one is completely inconvenient. It’s absolute rubbish.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-002141"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (6744660081, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14612849376",
+      "author": "Daierez",
+      "review_date": "2026-09-30",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "New app. Still can’t look at purchases, payments or any of the features legacy had on app. Makes me leave the app entirely to the browser. Horrible compared to legacy",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-002142"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (6744660081, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14612732609",
+      "author": "Keve675",
+      "review_date": "2026-09-30",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Why can’t I pay for cars without having to login again wth. Why can’t I pay for cars without having to login again wth that makes no sense",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-002143"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim New Jersey)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25VMmJUUjNiV2w2ZVZGTmJIbEpNMUkwY25kTlUzYxAB!2m1!1s0x0:0x92788e8c0e7120c0!3m1!1s2@1:CAIQACodChtycF9oOnU2bTR3bWl6eVFNbHlJM1I0cndNU3c%7C%7C?hl=en",
+      "author": "Silvia Xerfan Pascoal",
+      "review_date": "2026-09-28",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Manheim, From top to bottom extremely unprofessional people with no exception to every single person. They do not abide by their own rules. They are dishonest and rude people. From my 25 years of business this company is the worst I have ever dealt with. The manager is very rude and disrespectful, she has zero customer service skills. Do not trust them don't sign anything unless you are 100% sure that everything they are saying, doing and offering is written and you agree and they abide by. Be aware -",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-002144"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Pennsylvania Auto Auction)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21kNmVtdHNVbU0zV1VWYVNqVk5jbWx2YW1sdWVuYxAB!2m1!1s0x0:0x38c009277d77bd2f!3m1!1s2@1:CAIQACodChtycF9oOmd6emtsUmM3WUVaSjVNcmlvamluenc%7C%7C?hl=en",
+      "author": "Khalid Altarifi",
+      "review_date": "2026-09-28",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Complaint Regarding Vehicle Pickup and Loading Assistance at Manheim Pennsylvania Dear Manheim Pennsylvania Manager, I sent a truck driver to your location to pick up a vehicle that was not running. Before making the trip, the driver called and specifically asked whether a forklift would be available to help load it onto his truck. He was told that one was available. When the driver arrived, however, he was told the forklift was not working. Tow truck operators outside the lot then offered to move the vehicle from inside the lot for $250. This left my driver unable to load the vehicle as planned and facing an unexpected charge. I am concerned by the difference between what the driver was told before arriving and what happened at pickup. The nearby towing offer also raises a concern that I would appreciate your investigating. I am not claiming to know whether anyone coordinated this arrangement, but I would like a clear explanation. Please confirm why the forklift was unavailable, what loading assistance Manheim can provide for this vehicle, and how you will resolve the situation without imposing an unexpected $250 charge. I would appreciate a prompt response so I can arrange pickup. Sincerely,",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Support Access & Response Time",
+      "tier3": "Quick Support Response",
+      "id": "rvw-002145"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.manheim.mktplace)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+      "author": "Chris Garrett",
+      "review_date": "2026-09-27",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Initial reaction, too tough and time consuming to find who the seller is. Should be on main page so you can see who it is while scrolling. Instead it is burried halfway in the listing.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Listing Status",
+      "tier3": "Selling/ Relisting vehicle or Parts purchase",
+      "id": "rvw-002146"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Seattle Auto Auction)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KdFFXVTBYM1JqZUdNd1VFMWhPVU5XYld4SWFrRRAB!2m1!1s0x0:0x164e882f4b93230c!3m1!1s2@1:CAIQACodChtycF9oOnJtQWU0X3RjeGMwUE1hOUNWbWxIakE%7C%7C?hl=en",
+      "author": "Тарас Зборівський",
+      "review_date": "2026-09-26",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "I don't have a dealer license; can you recommend someone through whom I could buy a car at your auction?",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Auction Eligibility & Licensing",
+      "tier3": "Unable to Bid",
+      "id": "rvw-002147"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Phoenix)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2twSFZURjFOVVJxYkVSNFdrWmZTR3h6VlVWTWNrRRAB!2m1!1s0x0:0xb9fba5d772cd137e!3m1!1s2@1:CAIQACodChtycF9oOkpHVTF1NURqbER4WkZfSGxzVUVMckE%7C%7C?hl=en",
+      "author": "Vlad Tepes",
+      "review_date": "2026-09-25",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "I don't know what's going on lately, but there's not enough loading area. Too many cars are blocking truck access. There needs to be more organization. And put some fuel in this cars. Don't drive them until empty.",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-002148"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Recon Orlando)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkUlIzTXdheTF3TkhGbU0xazNSV3MxYUdkbGFHYxAB!2m1!1s0x0:0xce3375d85b297645!3m1!1s2@1:CAIQACodChtycF9oOkdRR3Mway1wNHFmM1k3RWs1aGdlaGc%7C%7C?hl=en",
+      "author": "Danny D",
+      "review_date": "2026-09-24",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "they don’t have a printer at the gate you have to go to main gate to print a gate pass. How come???",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Pickup Order Management",
+      "tier3": "Gate Pass Assistance",
+      "id": "rvw-002149"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Auto Auction)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGck5qRXhVMGt5YzFVdE1sQTBZMnM1VjJkalIyYxAB!2m1!1s0x0:0x6aae6b4acb725e96!3m1!1s2@1:CAIQACodChtycF9oOjFrNjExU0kyc1UtMlA0Y2s5V2djR2c%7C%7C?hl=en",
+      "author": "Dustin Weinstein",
+      "review_date": "2026-09-23",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "I worked with Andres from Manheim and was truly amazed with his knowledge and expertise. He couldn't have been nicer and performed probably one of the most thorough inspections I've ever seen. Manheim has some great folks working with them, and I hope other recognize that too.",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Third-Party Inspection Authorization & Scheduling",
+      "tier3": "Previewing/ Inspecting Vehicles",
+      "id": "rvw-002150"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Orlando)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25aWVprMUxUM2xKVjNsbVozcE1jR1ZOVlhKRVVIYxAB!2m1!1s0x0:0x35b5cb04774293df!3m1!1s2@1:CAIQACodChtycF9oOnZYZk1LT3lJV3lmZ3pMcGVNVXJEUHc%7C%7C?hl=en",
+      "author": "Jesus Cruz",
+      "review_date": "2026-09-23",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "This auction for the truckers they don’t care about the parking is crazy the shuttle don’t take to the car is getting worse every day",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-002151"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/manheim-dallas-fort-worth-166658799426873#review-1",
+      "author": "Lisa Salvant",
+      "review_date": "2026-09-23",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "I cannot thank Leticia Garcia enough for her help this morning. I had been working on a Title problem for 2 months with Manheim San Antonio and TitleSSC@coxautoinc.com and have had no luck. This morning I went into Manheim DFW and Leticia Garcia was so amazing and helped me immediately. She had me in and out in minutes with everything I needed. Thank you Leticia Garcia, what a great way to start my day.",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Title, Ownership, POA and Documentation",
+      "tier2": "Power of Attorney (POA) Handling",
+      "tier3": "POA Requirements Clarification",
+      "id": "rvw-002152"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (6744660081, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14584146930",
+      "author": "Manheim Lafayette",
+      "review_date": "2026-09-23",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "HORRIBLE. Whoever made this app musta had a brother in law deal going, someone’s pockets got padded,, reminds me of all the fake high CRs people are gettin paid to do",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-002153"
+    },
+    {
+      "source_website": "trustpilot.com",
+      "source_label": "Trustpilot (manheim.com)",
+      "source_url": "http://www.trustpilot.com/reviews/6ab1232d29ebd7c7ae3b0eb1",
+      "author": "Trustpilot user",
+      "review_date": "2026-09-21",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Great service, friendly, professional. Gave useful advise, on time, can't fault the gentleman who came for me, Derrick.",
+      "geo_validation": "trustpilot_us_slug",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-002154"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim California)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tSSVZUTTNUMFJmWDFwT01HYzVOelUwUjBwTlRsRRAB!2m1!1s0x0:0xaad5beec10f89472!3m1!1s2@1:CAIQACodChtycF9oOkRIVTM3T0RfX1pOMGc5NzU0R0pNTlE%7C%7C?hl=en",
+      "author": "Amir Kokabi",
+      "review_date": "2026-09-21",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "I’ve had the pleasure of working with Lucy, and I can honestly say her customer service is exceptional. She has gone above and beyond to make sure my needs are taken care of and has always made me feel like my business truly matters to her. Lucy is responsive, professional, helpful, and genuinely cares about finding solutions. She doesn’t just treat you like another customer—she takes the time to listen, follow through, and make sure everything is handled correctly. It’s rare to receive this level of personal attention and care. Lucy has made my experience so much easier and has given me confidence knowing that I have someone who genuinely cares about my business and wants to see me succeed. I truly appreciate everything she has done and would highly recommend working with Lucy. Her dedication and customer service are a real asset.",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-002155"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Minneapolis)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pWbVV5MUlSRkJRWmsxeVEycHJkblpLV0VobldrRRAB!2m1!1s0x0:0x41ced18cd9202dd!3m1!1s2@1:CAIQACodChtycF9oOjVmUy1IRFBQZk1yQ2prdnZKWEhnWkE%7C%7C?hl=en",
+      "author": "Abdullahi Mohamud",
+      "review_date": "2026-09-20",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "This Auction, I like it is my life last 28 years?",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)",
+      "id": "rvw-002156"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (6744660081, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14571216698",
+      "author": "Vespan23",
+      "review_date": "2026-09-19",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Multiple sign ins. Why do I have to sign in again to run a AutoCheck report… please integrate both carfax and AutoCheck into the app so we don’t have to keep logging in",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-002157"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim North Carolina)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21SeVdYVlNaV0p1YVV0ZlZGZzRSa2RxV0hsblpHYxAB!2m1!1s0x0:0xab7aa52c44aa38cd!3m1!1s2@1:CAIQACodChtycF9oOmRyWXVSZWJuaUtfVFg4RkdqWHlnZGc%7C%7C?hl=en",
+      "author": "Chris Moore",
+      "review_date": "2026-09-18",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "They really gone down thru the years the fre for everything but manheim has more auctions than anyone. Hopefully they will come back laid off a lot of great people that worked there. Now its just to big",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-002158"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (6744660081, us)",
+      "source_url": "https://apps.apple.com/us/app/id6744660081?see-all=reviews&platform=iphone&reviewId=14565367404",
+      "author": "The guy the engineer",
+      "review_date": "2026-09-18",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Manheim is siding with the seller, does not protect the buyer. Your customers are the buyers!!!. Hi The guy the engineer, Thank you for the detailed feedback! To clarify: neither MSRP nor Photo grouping was intentionally removed. Both are features we're actively working to bring to the new app. MSRP data and categorized photo groupings (interior, damage, etc.) are on our roadmap and we know how important both are for making quick decisions. We hear your broader frustrations and take them seriously. The feedback goes directly to our team. If you're running into anything else in the meantime, reach out at ManheimMobileAppSupport@coxautoinc.com and we'll help. - Manheim Mobile App Team",
+      "geo_validation": "apple_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-002159"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Dallas - Fort Worth)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGSVpEVlJRbWx3YlZORVRrOXlNVFZLVVhOaFNtYxAB!2m1!1s0x0:0x750f6df8409829b8!3m1!1s2@1:CAIQACodChtycF9oOjFIZDVRQmlwbVNETk9yMTVKUXNhSmc%7C%7C?hl=en",
+      "author": "Lisa Salvant",
+      "review_date": "2026-09-17",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "I cannot thank Leticia Garcia enough for her help this morning. I had been working on a Title problem for 2 months with Manheim San Antonio and TitleSSC@coxautoinc.com and have had no luck. This morning I went into Manheim DFW and Leticia Garcia was so amazing and helped me immediately. She had me in and out in minutes with everything I needed. Thank you Leticia Garcia, what a great way to start my day.",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Title, Ownership, POA and Documentation",
+      "tier2": "Power of Attorney (POA) Handling",
+      "tier3": "POA Requirements Clarification",
+      "id": "rvw-002160"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (6744660081, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14555809426",
+      "author": "DesertSky007",
+      "review_date": "2026-09-16",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Trash App.. Trash app. SO limited compared to the previous one. The previous one allowed you to do in the app almost anything you could do on a desktop. This new app is an absolute joke and functions more like a grocery store app. Poorly laid out, extremely limited information, just awful.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-002161"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.manheim.mktplace)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+      "author": "T. Brad",
+      "review_date": "2026-09-15",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Constant crashing & \"network\" issues that prevent loading. Always have to refresh or completely close out & start over. You need the developers of the Copart app",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-002162"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Dallas)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkcFYxaDNMVUV6UkdFek1scDJSRGRJT1dOaFlYYxAB!2m1!1s0x0:0xc448649038168654!3m1!1s2@1:CAIQACodChtycF9oOkdpV1h3LUEzRGEzMlp2RDdIOWNhYXc%7C%7C?hl=en",
+      "author": "Admin",
+      "review_date": "2026-09-15",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "I purchased a vehicle from them with completely shot piston rings that was visibly blowing smoke. After sending over photos and video proof, they asked me to ship the vehicle back so their shop could inspect it. Once they had it, their mechanic claimed the vehicle was \"fine\" and they immediately closed the case. This isn't the first vehicle with a bad CR's that they refuse to take back. They aren't honoring anything in arbitration. Stay away and save yourself the headache!",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Third-Party Inspection Authorization & Scheduling",
+      "tier3": "Previewing/ Inspecting Vehicles",
+      "id": "rvw-002163"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Ohio)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20weVNVNU9lVUZ0VjA1SmJVRkRjRk51TVRaS1VHYxAB!2m1!1s0x0:0xcd68e369ee246c6b!3m1!1s2@1:CAIQACodChtycF9oOm0ySU5OeUFtV05JbUFDcFNuMTZKUGc%7C%7C?hl=en",
+      "author": "Joshua Manning",
+      "review_date": "2026-09-15",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "No gas for a car that runs out of gas & They say wait till tomorrow. Top 3 worst auctions Manhiem has. Pulling cars takes 25 minutes a car. Then when the line gets long they take a guard away from the outbound side. This line is to pull a car out of the auction.",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-002164"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Minneapolis)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xkVVNHOXFjVTh4YzJoRVZ6VjFabFJYYTJOVVQxRRAB!2m1!1s0x0:0x41ced18cd9202dd!3m1!1s2@1:CAIQACodChtycF9oOldUSG9qcU8xc2hEVzV1ZlRXa2NUT1E%7C%7C?hl=en",
+      "author": "Samsung S10",
+      "review_date": "2026-09-14",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "This place sold me a vehicle that was rolled back 100,000 miles and then when I went to the front desk to complain, the staff there told me to F off",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-002165"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Pittsburgh)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kbmIxQkZWRXBtVHpSeFozTlhkRWxwYWtVNFkwRRAB!2m1!1s0x0:0xa091b063078d88df!3m1!1s2@1:CAIQACodChtycF9oOndnb1BFVEpmTzRxZ3NXdElpakU4Y0E%7C%7C?hl=en",
+      "author": "LM MOTORS LLC",
+      "review_date": "2026-09-13",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "One of the best and very professional Auction around Pittsburgh. staffs are very welcoming always go extra miles to help out my needs. Been going there since 2011 and doing the business with them since 2020 and I’m very happy with everything. They deserve seven stars.",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-002166"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Dallas)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tNMGIxWldVMlJPY3pBM2RtWk5OM2htTFZVNVlVRRAB!2m1!1s0x0:0xc448649038168654!3m1!1s2@1:CAIQACodChtycF9oOkM0b1ZWU2ROczA3dmZNN3hmLVU5YUE%7C%7C?hl=en",
+      "author": "Olive Branch",
+      "review_date": "2026-09-12",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "The condition reports at this Manheim location are completely unreliable, especially for wholesale vehicles from Maredian Remarketing. I bought a 2022 Toyota Sienna that was listed as having \"no prior paint.\" When the van arrived, it had clear body repairs, repainted panels, and a broken mechanical door.When I contacted Dealer Services, they agreed I had a valid claim and promised a callback, which never happened. I then filed a formal case with the arbitration department, but the process is a joke—they actively try to shut down your claim before it even starts. Buying from this location has become a guessing game. I will be avoiding this facility entirely until management changes these dishonest business practices.",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Communication Follow-up & Escalation",
+      "tier3": "No Callback / Unresolved Case",
+      "id": "rvw-002167"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim San Francisco Bay)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xadGEyNVRUbVY1Y0V0MWNrOXlVM0JhWWxSTmVVRRAB!2m1!1s0x0:0xdb18b095aee54321!3m1!1s2@1:CAIQACodChtycF9oOlZta25TTmV5cEt1ck9yU3BaYlRNeUE%7C%7C?hl=en",
+      "author": "Amber Nt",
+      "review_date": "2026-09-12",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "I was sadly harassed by the staff",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-002168"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Dallas - Fort Worth)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xSclIwcDRObVI1TkVoVWRUTk5jMmhPTm5KblozYxAB!2m1!1s0x0:0x750f6df8409829b8!3m1!1s2@1:CAIQACodChtycF9oOlRrR0p4NmR5NEhUdTNNc2hONnJnZ3c%7C%7C?hl=en",
+      "author": "Alex Thabata",
+      "review_date": "2026-09-11",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "My experience at Mannheim Fort Worth was extremely disappointing. The way I was treated by security and several employees at the yard was unacceptable. The attitude, disrespect, and lack of basic manners made the entire experience very frustrating. Employees should understand that the people coming to the yard are customers and business professionals and deserve to be treated with basic respect and courtesy. Instead, I experienced rude behavior, an unprofessional attitude, and the feeling that customers were being treated as if they were a problem. I strongly believe management at Mannheim Fort Worth needs to pay much closer attention to how employees, especially security and yard personnel, are treating customers. Management should address these attitudes and hold employees accountable for their behavior. I hope management takes this feedback seriously and works on improving the customer experience. Customers should never leave a business feeling disrespected or poorly treated.",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-002169"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Riverside)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21KSGQzWmlWbXhuYmtKUVVrRlZaR2xtWnpSaU0yYxAB!2m1!1s0x0:0x468583aed34b56ae!3m1!1s2@1:CAIQACodChtycF9oOmJHd3ZiVmxnbkJQUkFVZGlmZzRiM2c%7C%7C?hl=en",
+      "author": "xXT3R4CK L4H33K3RXx",
+      "review_date": "2026-09-11",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Stole my car, then broke it. Came to pick it up and the battery was drained. Also the pickup lady was being so fake professional, you could tell she had no care for herself, her job, or the customers. Also the place in general is legal theft. Businesses like this should be irradicated",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-002170"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Southern California)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21sT1IyaElPWGRpY1UxMFRFUlBWbGhZYjE5TFkxRRAB!2m1!1s0x0:0xe751c77d5aaeec17!3m1!1s2@1:CAIQACodChtycF9oOmlOR2hIOXdicU10TERPVlhYb19LY1E%7C%7C?hl=en",
+      "author": "alen rita",
+      "review_date": "2026-09-11",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "The worst place. Never come here. You can’t even find your car when you come to pick it up and no one‘s helpful.",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-002171"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.manheim.mktplace)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+      "author": "gregory whitney",
+      "review_date": "2026-09-09",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "obviously this app was built with absolutely NO FEEDBACK from any dealers that use this app regularly. It's especially unfriendly to an android phone. It just sucks in plain english.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-002172"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Riverside)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCWlNsVnBSV3g0TVVacVJHOURZV0ZpVFY5TlpuYxAB!2m1!1s0x0:0x6f8c02cb5e70d4f9!3m1!1s2@1:CAIQACodChtycF9oOlBZSlVpRWx4MUZqRG9DYWFiTV9NZnc%7C%7C?hl=en",
+      "author": "yauheni hudzeleu",
+      "review_date": "2026-09-09",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Very disappointing experience with Manheim Riverside and its management. I purchased a Hyundai Accent that was listed and sold as a Green Light vehicle. The condition report did not disclose any major mechanical problems. However, when I picked up the vehicle, the Check Engine light was on with a camshaft-related fault indicating a potentially expensive engine repair, and the electric power steering was not working. I filed an arbitration claim because these serious issues were not disclosed. Instead of taking responsibility for a vehicle that was clearly not represented accurately, Manheim denied the claim. Joshua Elrod, the Regional Manager, is ultimately responsible for how situations like this are handled. Dealers rely on Manheim’s condition reports and Green Light status when purchasing vehicles. If major problems can simply be left out of the description and arbitration refuses to address them, then those representations have very little value. Extremely poor experience and a serious loss of trust in Manheim Riverside.",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-002173"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Southern California)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21ab1ZFWTVVVlZRU0hCNmNUQmlURmh6TjBKUFowRRAB!2m1!1s0x0:0xe751c77d5aaeec17!3m1!1s2@1:CAIQACodChtycF9oOmZoVEY5UVVQSHB6cTBiTFhzN0JPZ0E%7C%7C?hl=en",
+      "author": "Julie Serna",
+      "review_date": "2026-09-09",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "They suck , paid for my car to get out on the 4th . They told me papers can take up to 24 hours to process and it’s been past that and it’s still under review and I still don’t have my car . Customer service is also terrible .",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-002174"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Tampa)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20xcVVuUndjV0ZwVlY5dFVFbFFRM1J0TFdaNFQzYxAB!2m1!1s0x0:0x510e3608cbd9ba1e!3m1!1s2@1:CAIQACodChtycF9oOm1qUnRwcWFpVV9tUElQQ3RtLWZ4T3c%7C%7C?hl=en",
+      "author": "Sara M Sanjurjo",
+      "review_date": "2026-09-09",
+      "rating": 4,
+      "sentiment": "positive",
+      "review_text": "This is one of my favorite locations. The process is usually pretty fast, and the employees are very helpful. There is one young woman in particular who is Puerto Rican and does an excellent job. She knows what she is doing, finds the vehicles quickly, and is always willing to help the drivers. However, there is something I really think management needs to pay attention to. There are a lot of people coming here to pick up vehicles who appear to be operating without proper identification or authorization. I have personally seen situations where people do not even have identification and are told they cannot enter. My concern is: how are people supposed to be legally operating commercial vehicles and transporting cars if they cannot even provide proper identification to pick up a vehicle? I don’t understand why ICE is not paying more attention to situations like this. If someone is undocumented and is operating commercially without the proper documentation or authorization, that is a serious issue that should be investigated. There are always police officers around this location, but I don’t know if anyone is actually paying attention to these issues or checking whether the people picking up vehicles are properly licensed, identified, and authorized to be doing this type of work. As professional car haulers, we are negatively affected by people who operate without proper authorization. These are the types of situations that can create accidents, insurance problems, and other serious issues for everyone in this industry. Those who are operating illegally or without the required documentation should be taken off the road. The rest of us work hard to comply with the rules, and we should not be put at risk or penalized because others choose not to follow them. Other than that concern, I really like this location and the staff has generally been great. I just believe management needs to take security, identification, and proper authorization much more seriously.",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-002175"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.manheim.mktplace)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+      "author": "Craig Preston",
+      "review_date": "2026-09-08",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "Issues with new version - Sept 2026. Downloaded the new required version. The old legacy app worked fine. Have been a user for years. In the new version, when using MMR, I cannot type or speak the VIN into the search box. it will only work if I paste the VIN into the search box. For example such as cut & paste from a text. Very frustrating as I use the MMR VIN lookup feature daily. Please fix and give us an update.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-002176"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.manheim.mktplace)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+      "author": "Robbie Sabiston",
+      "review_date": "2026-09-07",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "typical update. screwup a perfectly good easy to use app with some idea from a person who thinks they know what we need",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-002177"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Orlando)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pJM2EyWTVieTFYT0hGSWJUSjNiVTlJVUVGNU5HYxAB!2m1!1s0x0:0x35b5cb04774293df!3m1!1s2@1:CAIQACodChtycF9oOjI3a2Y5by1XOHFIbTJ3bU9IUEF5NGc%7C%7C?hl=en",
+      "author": "Tom Coss",
+      "review_date": "2026-09-07",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Manheim is a great auction provider- they are focused on customer service, safety and efficiency.",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-002178"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/manheim-fredericksburg-167784557350491#review-4",
+      "author": "United States Hauling",
+      "review_date": "2026-09-07",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "★★★★★ We recently picked up a 2024 Nissan Rogue SV from Manheim Fredericksburg in Virginia for transport to one of our dealership accounts in Charlotte, NC. The pickup process was smooth and efficient. The vehicle was accessible and ready for our carrier, allowing our driver to complete the inspection, loading, and pickup without unnecessary delays. As a vehicle transport company, an organized auction pickup makes a significant difference in keeping our drivers on schedule and getting vehicles delivered to our customers on t... read more",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Third-Party Inspection Authorization & Scheduling",
+      "tier3": "Previewing/ Inspecting Vehicles",
+      "id": "rvw-002179"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (6744660081, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14522761145",
+      "author": "Ivan_7777",
+      "review_date": "2026-09-07",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Useless App!!. Fire de development department. The old app worked better, this one keeps dropping and asking to try again message… Shame.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-002180"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.manheim.mktplace)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+      "author": "Art Lew",
+      "review_date": "2026-09-05",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "new app not as good as the last one",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-002181"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Dallas)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25sd1VuTlBhRFJTVG1sUlltNVdTR1JzYTJrM2NWRRAB!2m1!1s0x0:0xc448649038168654!3m1!1s2@1:CAIQACodChtycF9oOnlwUnNPaDRSTmlRYm5WSGRsa2k3cVE%7C%7C?hl=en",
+      "author": "David Rodriguez",
+      "review_date": "2026-09-03",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Careful with this location they sale cars in live auction as a under CR shows as Runs and drive ! Ones you won the car or truck you find out they change the CR (condition Report ) to no operable! They are not transparent about the condition of the cars",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage",
+      "id": "rvw-002182"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim NY Metro Skyline)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tVMVYxUnNPRmRmWkU1UmFHRlJSbXRNWDBZNFlWRRAB!2m1!1s0x0:0xa8d12293acf86f1a!3m1!1s2@1:CAIQACodChtycF9oOkU1V1RsOFdfZE5RaGFRRmtMX0Y4YVE%7C%7C?hl=en",
+      "author": "Danny A",
+      "review_date": "2026-09-02",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "I purchase 100+ cars from Manheim a month and this location by far is the absolute worst! They are sketchy! They will advertise a vehicle as a run and drive lot, but when we send a transporter it’s an INOP! They don’t care to help you either it’s unbelievable. It’s happened a lot. Corporate should investigate this business practice going on there!!!",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage",
+      "id": "rvw-002183"
+    },
     {
       "source_website": "play.google.com",
       "source_label": "Google Play (com.manheim.mktplace)",
@@ -1846,6 +2763,21 @@
       "id": "rvw-002017"
     },
     {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (6744660081, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14480186735",
+      "author": "comitysucks",
+      "review_date": "2026-08-27",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "Mmr. I just don’t know how you can design an app that doesn’t allow you to use MMR correctly ???",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-002184"
+    },
+    {
       "source_website": "google.com",
       "source_label": "Google Business Profile (Manheim Atlanta)",
       "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkcFJ6VndaaTFXVm05M1NWVmtjbGhrZFhJdFRYYxAB!2m1!1s0x0:0xaa0ac5cbcc382fd5!3m1!1s2@1:CAIQACodChtycF9oOkdpRzVwZi1WVm93SVVkclhkdXItTXc%7C%7C?hl=en",
@@ -1889,6 +2821,21 @@
       "tier2": "Support Access & Response Time",
       "tier3": "Long Hold Time / Hard to Reach Support",
       "id": "rvw-002020"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Complaints",
+      "source_url": "http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_25206333",
+      "author": "BBB complainant",
+      "review_date": "2026-08-26",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Service or Repair Issues complaint (Unanswered). my dealer bought 2024 REMOVED Escape Platinum Hard Top REMOVED from Manheim REMOVED on 6/10/2026, but the car has unannounced damage on right headlight and radiator support. I open arbitration but arbitrator denied my claim without even inspect the car. I demand unwinding the deal.",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-002185"
     },
     {
       "source_website": "reddit.com",
@@ -2354,6 +3301,21 @@
       "tier2": "Bidding Process, Rules and Fees",
       "tier3": "Fees",
       "id": "rvw-002051"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Riverside)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w5RmRrTm5lbFZTUVV0WFMwWmpXa1IxYWtodGNHYxAB!2m1!1s0x0:0x468583aed34b56ae!3m1!1s2@1:CAIQACodChtycF9oOl9FdkNnelVSQUtXS0ZjWkR1akhtcGc%7C%7C?hl=en",
+      "author": "Jodi Holguin",
+      "review_date": "2026-08-13",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Good auction lots of really nice cars. Great prices.",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)",
+      "id": "rvw-002186"
     },
     {
       "source_website": "google.com",
@@ -3826,6 +4788,21 @@
       "id": "rvw-000709"
     },
     {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/manheim-indianapolis-167758900611879#review-4",
+      "author": "armando cardona",
+      "review_date": "2026-06-09",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "We were notified that we were the winning bidder for the 2017 Isuzu NQR at the June 3 Manheim Indianapolis auction with a bid of $7,000. We are very concerned to now be told that we are no longer the winning bidder and that we must pay $9,500 if we want the truck. Based on the auction results, we immediately arranged transportation from Indiana to North Carolina and currently have a driver en route, resulting in approximately $1,500 in expenses.",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Scheduled Pickup Status",
+      "tier3": "Schedule/ Reschedule Pickup",
+      "id": "rvw-002187"
+    },
+    {
       "source_website": "google.com",
       "source_label": "Google Business Profile (Manheim Dallas)",
       "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1VWNUSlVjRXhKUVMxNFdVTTJVWHBSWTBsMldXYxAB!2m1!1s0x0:0xc448649038168654!3m1!1s2@1:CAIQACodChtycF9oOk5UcTJUcExJQS14WUM2UXpRY0l2WWc%7C%7C?hl=en",
@@ -3989,6 +4966,21 @@
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Helpful Support Experience",
       "id": "rvw-000718"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Seattle Auto Auction)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2twTU0yaGlaVkYxVjE5blRGTlVOM05zU1ZscmMyYxAB!2m1!1s0x0:0x164e882f4b93230c!3m1!1s2@1:CAIQACodChtycF9oOkpMM2hiZVF1V19nTFNUN3NsSVlrc2c%7C%7C?hl=en",
+      "author": "Tanya Allenbach",
+      "review_date": "2026-05-31",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "What kind of a place let's a super abusive homeless man live on thier property with his suppressed deprived family AND everyone keeps turning a blind eye even to the abused mother that cries all the time. Update: Still nobody trying to help out, still isolated suppressed abused and depressed SHAME ON THIS CRAPPY COMPANY for allowing it to happen without trying to help. 🤦",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-002188"
     },
     {
       "source_website": "google.com",
@@ -5519,6 +6511,21 @@
       "tier2": "Support Access & Response Time",
       "tier3": "Delayed Email/Phone Response",
       "id": "rvw-000792"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Louisville)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21WSWFIRmlUSEpyVUhSRlprSnFjRmRtZERsblgyYxAB!2m1!1s0x0:0xaff28210ad69c2ef!3m1!1s2@1:CAIQACodChtycF9oOmVIaHFiTHJrUHRFZkJqcFdmdDlnX2c%7C%7C?hl=en",
+      "author": "Kelley Mercer",
+      "review_date": "2026-03-27",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Walked in the facility, stood there and waited for around 5 minutes I wanted to make sure that I was in the correct location, I was directly in front of four employees sitting down, with no response or acknowledgment of anything, so I just left. Defintly will do business elsewhere that is more alert of customers",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Support Access & Response Time",
+      "tier3": "Delayed Email/Phone Response",
+      "id": "rvw-002189"
     },
     {
       "id": "rvw-000001",
@@ -9449,6 +10456,21 @@
       "tier2": "Lot Condition Reporting",
       "tier3": "Lot Damage",
       "id": "rvw-000502"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/manheim-st-louis-166697023560226#review-1",
+      "author": "Orhan",
+      "review_date": "2025-11-11",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Be careful with their process! We’ve been in business for over 2 years and bought 100+ cars, all green light and scored over 4. Still had to wait 3–4 days to pick them up even after payment was taken. They falsely claimed a late payment but can’t prove it. By the time cars were released, they were out of arbitration and most were in bad condition — 3 even had engine problems. Watch out and inspect your cars carefully!",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Third-Party Inspection Authorization & Scheduling",
+      "tier3": "Previewing/ Inspecting Vehicles",
+      "id": "rvw-002190"
     },
     {
       "id": "rvw-000050",
@@ -13621,6 +14643,21 @@
       "id": "rvw-000523"
     },
     {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews#review-10",
+      "author": "Eric T",
+      "review_date": "2025-06-09",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "They do not honor their own business practices, they fail to follow up when concerns are shared. In my experiences, they do not support buyers in the way that other auctions do, like American Auto Auction or Carmax Auctions. * [Page 1](http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=1) * [Page 2](http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=2) * ... * [Page 4](http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=4) [Next](http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=2)[Last](http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=4) ## Manheim Auctions is NOT a BBB Accredited Business. To become accredited, a business must agree to[BBB Standards for Trust](https://www.bbb.org/all/standards-for-trust)and pass BBB's vetting process. [Why choose a BBB Accredited Business?](https://www.bbb.org/all/why-choose-a-bbb-accredited-business) BBB Business Profiles are provided solely to assist you in exercising your own best judgment. BBB does not verify the accuracy of information provided by third parties, and does not guarantee the accuracy of any information in Business Profiles. As a matter of policy, BBB does not endorse any product, service, or business. Businesses are under no obligation to seek BBB accreditation, and some businesses are not accredited because they have not sought BBB accreditation. When considering complaint information, please consider the company's size and volume of transactions. Note that the nature of complaints and a company’s responses to them are often more important than the number of complaints. BBB Business Profiles generally cover a three-year reporting period. [![Image 17: BBB](https://m.bbb.org/brand/logos/BBB_PrimaryLogo_White_RGB.svg)](https://www.bbb.org/)TM ## For Consumers * [Get a Quote](http://www.bbb.org/get-a-quote) * [Start a Review](http://www.bbb.org/leave-a-review) * [File a Complaint](http://www.bbb.org/file-a-complaint) ## For Businesses * [Get Your Business Listed](http://www.bbb.org/get-listed) * [BBB Accreditation](http://www.bbb.org/get-accredited) * [Apply for BBB Accreditation](http://www.bbb.org/apply) * [Newsroom and Resources](http://www.bbb.org/us/news) ## Affiliated Programs * [BBB Institute for Marketplace Trust](https://www.bbbmarketplacetrust.org/) * [BBB Wise Giving Alliance (Give.org)](https://give.org/) * [BBB National Programs](https://bbbprograms.org/) * [our Twitter (opens in a new tab)](https://x.com/bbb_us) * [our LinkedIn (opens in a new tab)](https://www.linkedin.com/company/better-business-bureau/) * [our Facebook (opens in a new tab)](https://www.facebook.com/BetterBusinessBureau) * [our Instagram (opens in a new tab)](https://www.instagram.com/betterbusinessbureau_/) * [About BBB®](http://www.bbb.org/about) * [Terms of Use](http://www.bbb.org/terms-of-use) * [Privacy Policy](http://www.bbb.org/all/privacy-policy) * [Contact Us](http://www.bbb.org/about/find-your-local-bbb) © 2026 International Association of Better Business Bureaus, Inc. (IABBB). All rights reserved. All trademarks are property of IABBB.",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Communication Follow-up & Escalation",
+      "tier3": "No Callback / Unresolved Case",
+      "id": "rvw-002191"
+    },
+    {
       "source_website": "google.com",
       "source_label": "Google Business Profile (Manheim Orlando Transporter Gate (Rear Gate))",
       "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s5WVEyVjNhRUp0VkVWUVl6RXpSVlkxWkdWWVdXYxAB!2m1!1s0x0:0xb77d643ecc135f2c!3m1!1s2@1:CAIQACodChtycF9oOk9YQ2V3aEJtVEVQYzEzRVY1ZGVYWWc%7C%7C?hl=en",
@@ -15524,6 +16561,21 @@
       "tier2": "Bidding Process, Rules and Fees",
       "tier3": "How to Bid (First Time)",
       "id": "rvw-001231"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Auto Auction)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUR3NllDT2RnEAE!2m1!1s0x0:0x6aae6b4acb725e96!3m1!1s2@1:CIHM0ogKEICAgMDw6YCOdg%7C%7C?hl=en",
+      "author": "yvonne aguirre",
+      "review_date": "2025-03-26",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Towing drivers park anywhere. They do not have employees to help to find the cars. The printer print the gate pass with some lines and they rejected the pass and we are not able to pickup the cars. Worse Services ever.",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Pickup Order Management",
+      "tier3": "Gate Pass Assistance",
+      "id": "rvw-002192"
     },
     {
       "id": "rvw-000113",
@@ -19696,6 +20748,21 @@
       "id": "rvw-002097"
     },
     {
+      "source_website": "bbb.org",
+      "source_label": "BBB Complaints",
+      "source_url": "http://www.bbb.org/us/az/tolleson/profile/auto-auction/manheim-phoenix-1126-15000273/complaints#1126_15000273_22391936",
+      "author": "BBB complainant",
+      "review_date": "2024-10-07",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Service or Repair Issues complaint (Unanswered). My vehicle was transported to Manheim Auto Auction (REMOVED) on or about 07/08/2024-07/12/2024 due to a repo of a 17 day late payment to the bank. At the time of delivery, my vehicle was in good condition with several valuable personal items inside. Upon retrieving the vehicle on 07/23/2024, I was shocked to find that not only had my personal belongings, including my car audio system, dash camera, license plate, other valuable personal articles, been stolen, but my vehicle had also sustained noticeable damage to the factory Radio, amplifier, and navigation system. I immediately reported this to the staff on-site, but despite assurances, no meaningful actions have been taken to rectify the situation. After weeks of frustration and distress, an initial payment was made after weeks of back an forth and told originally they were not liable. I demanded a payment of no less than $7500, thinking that would be the end of this based on the quote I received with out a full diagnosis. Once the payment was issued my vehicle went to a shop for repairs. An additional $12,500 of damage was found by the stereo shop which at that point new equipment from the REMOVED dealership was needed. I reached out to Manheim to explain the situation. A diagnosis from the shop that was then provided and denied by Manheim. Then a request from the REMOVED dealership it self was provided. It was supplied to Manheim, they then stated they would participate in paying for the work done if it was done by REMOVED. REMOVED quoted me over $13,500,(paid in full first) but even then there was no guarantees since there was custom work and aftermarket parts that were previously installed.. I tried to settle this in house before moving forward with other costly legal proceedings were taken. The response is they will not pay anything further unless REMOVED does the work. So now I'm stuck with an invoice of $12,533.39- (their partial initial payment of $7,719)=$9,759.39. Class action lawsuit is next due to the process. ## Manheim Phoenix is NOT a BBB Accredited Business. To become accredited, a business must agree to[BBB Standards for Trust](https://www.bbb.org/all/standards-for-trust)and pass BBB's vetting process. [Why choose a BBB Accredited Business?](https://www.bbb.org/all/why-choose-a-bbb-accredited-business) BBB Business Profiles are provided solely to assist you in exercising your own best judgment. BBB does not verify the accuracy of information provided by third parties, and does not guarantee the accuracy of any information in Business Profiles. As a matter of policy, BBB does not endorse any product, service, or business. Businesses are under no obligation to seek BBB accreditation, and some businesses are not accredited because they have not sought BBB accreditation. When considering complaint information, please consider the company's size and volume of transactions. Note that the nature of complaints and a company’s responses to them are often more important than the number of complaints. BBB Business Profiles generally cover a three-year reporting period. [![Image 9: BBB](https://m.bbb.org/brand/logos/BBB_PrimaryLogo_White_RGB.svg)](https://www.bbb.org/)TM ## For Consumers * [Get a Quote](http://www.bbb.org/get-a-quote) * [Start a Review](http://www.bbb.org/leave-a-review) * [File a Complaint](http://www.bbb.org/file-a-complaint) ## For Businesses * [Get Your Business Listed](http://www.bbb.org/get-listed) * [BBB Accreditation](http://www.bbb.org/get-accredited) * [Apply for BBB Accreditation](http://www.bbb.org/apply) * [Newsroom and Resources](http://www.bbb.org/us/news) ## Affiliated Programs * [BBB Institute for Marketplace Trust](https://www.bbbmarketplacetrust.org/) * [BBB Wise Giving Alliance (Give.org)](https://give.org/) * [BBB National Programs](https://bbbprograms.org/) * [our Twitter (opens in a new tab)](https://x.com/bbb_us) * [our LinkedIn (opens in a new tab)](https://www.linkedin.com/company/better-business-bureau/) * [our Facebook (opens in a new tab)](https://www.facebook.com/BetterBusinessBureau) * [our Instagram (opens in a new tab)](https://www.instagram.com/betterbusinessbureau_/) * [About BBB®](http://www.bbb.org/about) * [Terms of Use](http://www.bbb.org/terms-of-use) * [Privacy Policy](http://www.bbb.org/all/privacy-policy) * [Contact Us](http://www.bbb.org/about/find-your-local-bbb) © 2026 International Association of Better Business Bureaus, Inc. (IABBB). All rights reserved. All trademarks are property of IABBB.",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-002193"
+    },
+    {
       "source_website": "google.com",
       "source_label": "Google Business Profile (Manheim Central Florida)",
       "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURuN0wza0FnEAE!2m1!1s0x0:0x4d6d8ea3ae42f9a2!3m1!1s2@1:CIHM0ogKEICAgIDn7L3kAg%7C%7C?hl=en",
@@ -19981,6 +21048,21 @@
       "tier3": "Fees"
     },
     {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=2#review-10",
+      "author": "Gina S",
+      "review_date": "2024-09-23",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Car was stored there for non payment and before the deadline my son paid to get it out and now there's a few issues with it. My son was told Battery is going dead. Motor mount is broken or needs to be replaced. His headlight not working and they shredded his license plates. My sons car was only suppose to be stored their by the 20th before its auctioned off and he reinstate with payment on the 19th. How do we sue this company?? How do I file a lawsuit? I want to sue the s REMOVED out of Manheim. [First](http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=1)[Prev.](http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=1) * [Page 1](http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=1) * [Page 2](http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=2) * [Page 3](http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=3) * [Page 4](http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=4) [Next](http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=3)[Last](http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=4) ## Manheim Auctions is NOT a BBB Accredited Business. To become accredited, a business must agree to [BBB Standards for Trust](https://www.bbb.org/all/standards-for-trust) and pass BBB's vetting process. [Why choose a BBB Accredited Business?](https://www.bbb.org/all/why-choose-a-bbb-accredited-business) BBB Business Profiles are provided solely to assist you in exercising your own best judgment. BBB does not verify the accuracy of information provided by third parties, and does not guarantee the accuracy of any information in Business Profiles. As a matter of policy, BBB does not endorse any product, service, or business. Businesses are under no obligation to seek BBB accreditation, and some businesses are not accredited because they have not sought BBB accreditation. When considering complaint information, please consider the company's size and volume of transactions. Note that the nature of complaints and a company’s responses to them are often more important than the number of complaints. BBB Business Profiles generally cover a three-year reporting period. [![Image 17: BBB](https://m.bbb.org/brand/logos/BBB_PrimaryLogo_White_RGB.svg)](https://www.bbb.org/)TM ## For Consumers * [Get a Quote](http://www.bbb.org/get-a-quote) * [Start a Review](http://www.bbb.org/leave-a-review) * [File a Complaint](http://www.bbb.org/file-a-complaint) ## For Businesses * [Get Your Business Listed](http://www.bbb.org/get-listed) * [BBB Accreditation](http://www.bbb.org/get-accredited) * [Apply for BBB Accreditation](http://www.bbb.org/apply) * [Newsroom and Resources](http://www.bbb.org/us/news) ## Affiliated Programs * [BBB Institute for Marketplace Trust](https://www.bbbmarketplacetrust.org/) * [BBB Wise Giving Alliance (Give.org)](https://give.org/) * [BBB National Programs](https://bbbprograms.org/) * [our Twitter (opens in a new tab)](https://x.com/bbb_us) * [our LinkedIn (opens in a new tab)](https://www.linkedin.com/company/better-business-bureau/) * [our Facebook (opens in a new tab)](https://www.facebook.com/BetterBusinessBureau) * [our Instagram (opens in a new tab)](https://www.instagram.com/betterbusinessbureau_/) * [About BBB®](http://www.bbb.org/about) * [Terms of Use](http://www.bbb.org/terms-of-use) * [Privacy Policy](http://www.bbb.org/all/privacy-policy) * [Contact Us](http://www.bbb.org/about/find-your-local-bbb) © 2026 International Association of Better Business Bureaus, Inc. (IABBB). All rights reserved. All trademarks are property of IABBB.",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-002194"
+    },
+    {
       "source_website": "google.com",
       "source_label": "Google Business Profile (Rome Auto Auction powered by Manheim)",
       "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNuMk1YR2JREAE!2m1!1s0x0:0xffe21dd0f1df0fe5!3m1!1s2@1:CIHM0ogKEICAgICn2MXGbQ%7C%7C?hl=en",
@@ -20234,6 +21316,21 @@
       "tier2": "Bidding Process, Rules and Fees",
       "tier3": "Fees",
       "id": "rvw-001432"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Auto Auction)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNIdC1yS1pBEAE!2m1!1s0x0:0x6aae6b4acb725e96!3m1!1s2@1:CIHM0ogKEICAgICHt-rKZA%7C%7C?hl=en",
+      "author": "pajera3000",
+      "review_date": "2024-09-10",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "First time in this location, came while they r closed, the security r extremely rude, screaming and yelling, could be the night shift idiots, i don’t know",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-002195"
     },
     {
       "source_website": "google.com",
@@ -24871,6 +25968,21 @@
       "id": "rvw-002110"
     },
     {
+      "source_website": "bbb.org",
+      "source_label": "BBB Complaints",
+      "source_url": "http://www.bbb.org/us/mi/carleton/profile/auto-auction/manheims-detroit-auto-auction-0422-6001794/complaints#0422_6001794_21357955",
+      "author": "BBB complainant",
+      "review_date": "2024-02-28",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Customer Service Issues complaint (Unanswered). On 12-26-23 my Ally leased vehicle was turned in to Feldman Livonia in perfect condition (re: no broken windshield and no dents or scratches. At some point in time the vehicle was turned over to Manheim. On 2-13-24 I received an inspection report from Ally. What was done to my vehicle was criminal. 9 various scratches, a broken windshield extensive damage charges to the tune of $1000. Between Feldman Livonia and Manhein Detroit nobody is owning up to the damages that were caused to my vehicle while in their possession and I am being told it is my problem with the leasing company. As well as my vehicle had 287 additional miles on it from the date I turned it in. Its obvious someone had the vehicle and abused it and now the leasing company is charging me for the damage. Whoever is responsible for this should be fired from their job. ## Manheim's Detroit Auto Auction is NOT a BBB Accredited Business. To become accredited, a business must agree to[BBB Standards for Trust](https://www.bbb.org/all/standards-for-trust)and pass BBB's vetting process. [Why choose a BBB Accredited Business?](https://www.bbb.org/all/why-choose-a-bbb-accredited-business) BBB Business Profiles are provided solely to assist you in exercising your own best judgment. BBB does not verify the accuracy of information provided by third parties, and does not guarantee the accuracy of any information in Business Profiles. As a matter of policy, BBB does not endorse any product, service, or business. Businesses are under no obligation to seek BBB accreditation, and some businesses are not accredited because they have not sought BBB accreditation. When considering complaint information, please consider the company's size and volume of transactions. Note that the nature of complaints and a company’s responses to them are often more important than the number of complaints. BBB Business Profiles generally cover a three-year reporting period. [![Image 9: BBB](https://m.bbb.org/brand/logos/BBB_PrimaryLogo_White_RGB.svg)](https://www.bbb.org/)TM ## For Consumers * [Get a Quote](http://www.bbb.org/get-a-quote) * [Start a Review](http://www.bbb.org/leave-a-review) * [File a Complaint](http://www.bbb.org/file-a-complaint) ## For Businesses * [Get Your Business Listed](http://www.bbb.org/get-listed) * [BBB Accreditation](http://www.bbb.org/get-accredited) * [Apply for BBB Accreditation](http://www.bbb.org/apply) * [Newsroom and Resources](http://www.bbb.org/us/news) ## Affiliated Programs * [BBB Institute for Marketplace Trust](https://www.bbbmarketplacetrust.org/) * [BBB Wise Giving Alliance (Give.org)](https://give.org/) * [BBB National Programs](https://bbbprograms.org/) * [our Twitter (opens in a new tab)](https://x.com/bbb_us) * [our LinkedIn (opens in a new tab)](https://www.linkedin.com/company/better-business-bureau/) * [our Facebook (opens in a new tab)](https://www.facebook.com/BetterBusinessBureau) * [our Instagram (opens in a new tab)](https://www.instagram.com/betterbusinessbureau_/) * [About BBB®](http://www.bbb.org/about) * [Terms of Use](http://www.bbb.org/terms-of-use) * [Privacy Policy](http://www.bbb.org/all/privacy-policy) * [Contact Us](http://www.bbb.org/about/find-your-local-bbb) © 2026 International Association of Better Business Bureaus, Inc. (IABBB). All rights reserved. All trademarks are property of IABBB.",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-002196"
+    },
+    {
       "id": "rvw-000211",
       "source_website": "apps.apple.com",
       "source_label": "Apple App Store (1480842917, us)",
@@ -26566,6 +27678,21 @@
       "tier3": "Fees"
     },
     {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=3#review-10",
+      "author": "Joey G",
+      "review_date": "2023-12-14",
+      "rating": 2,
+      "sentiment": "negative",
+      "review_text": "Buyers fees are outrageous .......no appreciation for dealers with these buyers fees !!Returned a vehicle due to no title and took 2 weeks to get money reimbursed .....should have paid my tow fee to return vehicle but fees only apply to customers not Manheim. They have a lot of wasted expenditures but don't seem to care because company pass those on to dealers ! [First](http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=1)[Prev.](http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=2) * [Page 1](http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=1) * [Page 2](http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=2) * [Page 3](http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=3) * [Page 4](http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=4) [Next](http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=4)[Last](http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=4) ## Manheim Auctions is NOT a BBB Accredited Business. To become accredited, a business must agree to[BBB Standards for Trust](https://www.bbb.org/all/standards-for-trust)and pass BBB's vetting process. [Why choose a BBB Accredited Business?](https://www.bbb.org/all/why-choose-a-bbb-accredited-business) BBB Business Profiles are provided solely to assist you in exercising your own best judgment. BBB does not verify the accuracy of information provided by third parties, and does not guarantee the accuracy of any information in Business Profiles. As a matter of policy, BBB does not endorse any product, service, or business. Businesses are under no obligation to seek BBB accreditation, and some businesses are not accredited because they have not sought BBB accreditation. When considering complaint information, please consider the company's size and volume of transactions. Note that the nature of complaints and a company’s responses to them are often more important than the number of complaints. BBB Business Profiles generally cover a three-year reporting period. [![Image 17: BBB](https://m.bbb.org/brand/logos/BBB_PrimaryLogo_White_RGB.svg)](https://www.bbb.org/)TM ## For Consumers * [Get a Quote](http://www.bbb.org/get-a-quote) * [Start a Review](http://www.bbb.org/leave-a-review) * [File a Complaint](http://www.bbb.org/file-a-complaint) ## For Businesses * [Get Your Business Listed](http://www.bbb.org/get-listed) * [BBB Accreditation](http://www.bbb.org/get-accredited) * [Apply for BBB Accreditation](http://www.bbb.org/apply) * [Newsroom and Resources](http://www.bbb.org/us/news) ## Affiliated Programs * [BBB Institute for Marketplace Trust](https://www.bbbmarketplacetrust.org/) * [BBB Wise Giving Alliance (Give.org)](https://give.org/) * [BBB National Programs](https://bbbprograms.org/) * [our Twitter (opens in a new tab)](https://x.com/bbb_us) * [our LinkedIn (opens in a new tab)](https://www.linkedin.com/company/better-business-bureau/) * [our Facebook (opens in a new tab)](https://www.facebook.com/BetterBusinessBureau) * [our Instagram (opens in a new tab)](https://www.instagram.com/betterbusinessbureau_/) * [About BBB®](http://www.bbb.org/about) * [Terms of Use](http://www.bbb.org/terms-of-use) * [Privacy Policy](http://www.bbb.org/all/privacy-policy) * [Contact Us](http://www.bbb.org/about/find-your-local-bbb) © 2026 International Association of Better Business Bureaus, Inc. (IABBB). All rights reserved. All trademarks are property of IABBB.",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-002197"
+    },
+    {
       "source_website": "google.com",
       "source_label": "Google Business Profile (Manheim Detroit)",
       "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURWanNpYlNBEAE!2m1!1s0x0:0x8ef6684842169f21!3m1!1s2@1:CIHM0ogKEICAgIDVjsibSA%7C%7C?hl=en",
@@ -27149,6 +28276,21 @@
       "tier2": "Support Access & Response Time",
       "tier3": "Long Hold Time / Hard to Reach Support",
       "id": "rvw-002119"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Auto Auction)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNsMXY3M09BEAE!2m1!1s0x0:0x6aae6b4acb725e96!3m1!1s2@1:CIHM0ogKEICAgICl1v73OA%7C%7C?hl=en",
+      "author": "Khaled Sakr",
+      "review_date": "2023-11-17",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Be careful when dealing with this auction. Most cars are junk cars 👎🏻",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-002198"
     },
     {
       "source_website": "google.com",
@@ -27886,6 +29028,21 @@
       "tier3": "Rude/Unhelpful Support"
     },
     {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=4#review-3",
+      "author": "kb k",
+      "review_date": "2023-10-10",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Manheim REMOVED and REMOVED arbitration team do not adhere to their own policies and guidelines. Manheim REMOVED management is incoherent and condescending. [First](http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=1)[Prev.](http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=3) * [Page 1](http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=1) * ... * [Page 3](http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=3) * [Page 4](http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=4) ## Manheim Auctions is NOT a BBB Accredited Business. To become accredited, a business must agree to[BBB Standards for Trust](https://www.bbb.org/all/standards-for-trust)and pass BBB's vetting process. [Why choose a BBB Accredited Business?](https://www.bbb.org/all/why-choose-a-bbb-accredited-business) BBB Business Profiles are provided solely to assist you in exercising your own best judgment. BBB does not verify the accuracy of information provided by third parties, and does not guarantee the accuracy of any information in Business Profiles. As a matter of policy, BBB does not endorse any product, service, or business. Businesses are under no obligation to seek BBB accreditation, and some businesses are not accredited because they have not sought BBB accreditation. When considering complaint information, please consider the company's size and volume of transactions. Note that the nature of complaints and a company’s responses to them are often more important than the number of complaints. BBB Business Profiles generally cover a three-year reporting period. [![Image 17: BBB](https://m.bbb.org/brand/logos/BBB_PrimaryLogo_White_RGB.svg)](https://www.bbb.org/)TM ## For Consumers * [Get a Quote](http://www.bbb.org/get-a-quote) * [Start a Review](http://www.bbb.org/leave-a-review) * [File a Complaint](http://www.bbb.org/file-a-complaint) ## For Businesses * [Get Your Business Listed](http://www.bbb.org/get-listed) * [BBB Accreditation](http://www.bbb.org/get-accredited) * [Apply for BBB Accreditation](http://www.bbb.org/apply) * [Newsroom and Resources](http://www.bbb.org/us/news) ## Affiliated Programs * [BBB Institute for Marketplace Trust](https://www.bbbmarketplacetrust.org/) * [BBB Wise Giving Alliance (Give.org)](https://give.org/) * [BBB National Programs](https://bbbprograms.org/) * [our Twitter (opens in a new tab)](https://x.com/bbb_us) * [our LinkedIn (opens in a new tab)](https://www.linkedin.com/company/better-business-bureau/) * [our Facebook (opens in a new tab)](https://www.facebook.com/BetterBusinessBureau) * [our Instagram (opens in a new tab)](https://www.instagram.com/betterbusinessbureau_/) * [About BBB®](http://www.bbb.org/about) * [Terms of Use](http://www.bbb.org/terms-of-use) * [Privacy Policy](http://www.bbb.org/all/privacy-policy) * [Contact Us](http://www.bbb.org/about/find-your-local-bbb) © 2026 International Association of Better Business Bureaus, Inc. (IABBB). All rights reserved. All trademarks are property of IABBB.",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-002199"
+    },
+    {
       "source_website": "google.com",
       "source_label": "Google Business Profile (Manheim New Jersey)",
       "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURaOTlpb0dREAE!2m1!1s0x0:0x92788e8c0e7120c0!3m1!1s2@1:CIHM0ogKEICAgIDZ99ioGQ%7C%7C?hl=en",
@@ -27899,6 +29056,36 @@
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Helpful Support Experience",
       "id": "rvw-001731"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Insider Pages)",
+      "source_url": "https://reviews.birdeye.com/manheim-statesville-166651026035079#review-1",
+      "author": "Barbara",
+      "review_date": "2023-10-08",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Auto Auctions Statesville Auto Auction has every kind of car, truck and van known to mankind. Acres and acres of cars are for sale at their on-site auctions. Licensed buyers can purchase at an auction-type setting for resale later. PROS: uncoutable numbers of vehicles for sale CONS: huge, non-personalized service",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)",
+      "id": "rvw-002200"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Insider Pages)",
+      "source_url": "https://reviews.birdeye.com/manheim-statesville-166651026035079#review-2",
+      "author": "BEN",
+      "review_date": "2023-10-08",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "CAR HAULER / OWNER HELLO WE ARE LOOKING TO PURCHASE A CARHAULER EZ LOADER BY NAME 3-4 CAR CAPACITY A WEDGE WOULD BE SECOND TO LAST CHOICE IN YOUR FINE LINE PLEASE CONTACT US TO ASSURE THE PROPER CONTACT MANNER IF NOT WE APOLOGIZE THANKS FOR YOUR CO OPERATION",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-002201"
     },
     {
       "source_website": "google.com",
@@ -28304,6 +29491,21 @@
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Helpful Support Experience",
       "id": "rvw-001754"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (Manheim Auto Auction)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNaMjdybm5nRRAB!2m1!1s0x0:0x6aae6b4acb725e96!3m1!1s2@1:CIHM0ogKEICAgICZ27rnngE%7C%7C?hl=en",
+      "author": "Jose A Ramirez",
+      "review_date": "2023-09-18",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Easy access to pick up. You just have to show your license and gate pass to the security before go inside. If it’s only one car. Just one person it’s allowed!! Pick up time it’s Monday to Friday 7am to 8pm Saturday and Sunday it’s open 7am 6pm.",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Pickup Order Management",
+      "tier3": "Gate Pass Assistance",
+      "id": "rvw-002202"
     },
     {
       "id": "rvw-000250",

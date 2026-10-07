@@ -1,14 +1,14 @@
 {
   "meta": {
     "description": "Large-scale English-only ADESA textual review/problem dataset from public web sources (recency-first).",
-    "review_count": 877,
+    "review_count": 903,
     "source_counts": {
-      "google.com": 591,
-      "birdeye.com": 95,
+      "google.com": 601,
+      "birdeye.com": 103,
+      "apps.apple.com": 124,
+      "bbb.org": 9,
+      "reddit.com": 26,
       "trustpilot.com": 18,
-      "apps.apple.com": 119,
-      "reddit.com": 25,
-      "bbb.org": 7,
       "play.google.com": 22
     },
     "source_audit": [
@@ -21,7 +21,7 @@
         "blocked": false,
         "fallback_used": false,
         "candidate_reviews_seen": 0,
-        "new_reviews_added": 0,
+        "new_reviews_added": 1,
         "advertised_total": null,
         "latest_candidate_date": null,
         "notes": [
@@ -29,10 +29,10 @@
           "reddit_arctic_shift ran; candidate count is not separately tracked for this collector."
         ],
         "errors": [],
-        "review_count": 25,
+        "review_count": 26,
         "existing_review_count": 25,
         "present": true,
-        "latest_review_date": "2026-04-05",
+        "latest_review_date": "2026-08-14",
         "existing_latest_date": "2026-04-05",
         "status": "ok"
       },
@@ -65,18 +65,18 @@
         "direct_statuses": {},
         "blocked": false,
         "fallback_used": false,
-        "candidate_reviews_seen": 203,
-        "new_reviews_added": 2,
+        "candidate_reviews_seen": 206,
+        "new_reviews_added": 5,
         "advertised_total": null,
-        "latest_candidate_date": "2026-07-22",
+        "latest_candidate_date": "2026-09-16",
         "notes": [
           "Apple RSS can be sparse for some app IDs; HTML supplement captures visible App Store review cards only."
         ],
         "errors": [],
-        "review_count": 119,
-        "existing_review_count": 117,
+        "review_count": 124,
+        "existing_review_count": 119,
         "present": true,
-        "latest_review_date": "2026-07-31",
+        "latest_review_date": "2026-09-16",
         "existing_latest_date": "2026-07-31",
         "status": "ok"
       },
@@ -84,36 +84,41 @@
         "source_website": "bbb.org",
         "attempted": true,
         "direct_pages": 12,
-        "fallback_pages": 12,
+        "fallback_pages": 11,
         "direct_statuses": {
           "403": 12,
-          "200": 12
+          "200": 11
         },
         "blocked": true,
         "fallback_used": true,
-        "candidate_reviews_seen": 3,
-        "new_reviews_added": 1,
+        "candidate_reviews_seen": 4,
+        "new_reviews_added": 2,
         "advertised_total": null,
-        "latest_candidate_date": "2026-03-02",
+        "latest_candidate_date": "2026-09-15",
         "notes": [
           "direct BBB customer reviews blocked for https://www.bbb.org/us/ca/sacramento/profile/auto-auction/adesa-sacramento-1156-33008688",
           "direct BBB customer reviews blocked for https://www.bbb.org/us/ca/san-diego/profile/auto-auction/adesa-san-diego-1126-23000806",
+          "reader challenge for https://www.bbb.org/us/ca/san-diego/profile/auto-auction/adesa-san-diego-1126-23000806/customer-reviews",
           "direct BBB customer reviews blocked for https://www.bbb.org/us/fl/tampa/profile/auto-auction/adesa-tampa-0653-24838",
           "direct BBB customer reviews blocked for https://www.bbb.org/us/mn/maple-grove/profile/auto-auction/adesa-minnesota-llc-0704-96174765",
           "direct BBB customer reviews blocked for https://www.bbb.org/us/nv/north-las-vegas/profile/auto-auction/adesa-las-vegas-1086-90040145",
           "direct BBB customer reviews blocked for https://www.bbb.org/us/tn/memphis/profile/auto-auction/adesa-auctions-memphis-0543-44000064",
           "direct BBB complaints blocked for https://www.bbb.org/us/ca/sacramento/profile/auto-auction/adesa-sacramento-1156-33008688",
+          "reader challenge for https://www.bbb.org/us/ca/sacramento/profile/auto-auction/adesa-sacramento-1156-33008688/complaints",
           "direct BBB complaints blocked for https://www.bbb.org/us/ca/san-diego/profile/auto-auction/adesa-san-diego-1126-23000806",
           "direct BBB complaints blocked for https://www.bbb.org/us/fl/tampa/profile/auto-auction/adesa-tampa-0653-24838",
           "direct BBB complaints blocked for https://www.bbb.org/us/mn/maple-grove/profile/auto-auction/adesa-minnesota-llc-0704-96174765",
+          "reader challenge for https://www.bbb.org/us/mn/maple-grove/profile/auto-auction/adesa-minnesota-llc-0704-96174765/complaints",
           "direct BBB complaints blocked for https://www.bbb.org/us/nv/north-las-vegas/profile/auto-auction/adesa-las-vegas-1086-90040145",
           "direct BBB complaints blocked for https://www.bbb.org/us/tn/memphis/profile/auto-auction/adesa-auctions-memphis-0543-44000064"
         ],
-        "errors": [],
-        "review_count": 7,
-        "existing_review_count": 6,
+        "errors": [
+          "reader error for https://www.bbb.org/us/ca/sacramento/profile/auto-auction/adesa-sacramento-1156-33008688/customer-reviews: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=60)"
+        ],
+        "review_count": 9,
+        "existing_review_count": 7,
         "present": true,
-        "latest_review_date": "2026-03-02",
+        "latest_review_date": "2026-09-15",
         "existing_latest_date": "2026-03-02",
         "status": "ok"
       },
@@ -129,7 +134,7 @@
         "blocked": true,
         "fallback_used": true,
         "candidate_reviews_seen": 11,
-        "new_reviews_added": 1,
+        "new_reviews_added": 0,
         "advertised_total": null,
         "latest_candidate_date": "2026-08-10",
         "notes": [
@@ -138,10 +143,10 @@
         ],
         "errors": [],
         "review_count": 18,
-        "existing_review_count": 17,
+        "existing_review_count": 18,
         "present": true,
         "latest_review_date": "2026-08-10",
-        "existing_latest_date": "2026-06-08",
+        "existing_latest_date": "2026-08-10",
         "status": "ok"
       },
       {
@@ -193,66 +198,92 @@
       {
         "source_website": "birdeye.com",
         "attempted": true,
-        "direct_pages": 20,
+        "direct_pages": 19,
         "fallback_pages": 0,
         "direct_statuses": {
-          "200": 20
+          "200": 19
         },
         "blocked": false,
         "fallback_used": false,
-        "candidate_reviews_seen": 70,
-        "new_reviews_added": 12,
-        "advertised_total": 649,
-        "latest_candidate_date": "2026-08-28",
+        "candidate_reviews_seen": 59,
+        "new_reviews_added": 8,
+        "advertised_total": 654,
+        "latest_candidate_date": "2026-09-30",
         "notes": [
           "Birdeye advertised totals may include syndicated Google/Birdeye network reviews; accepted rows are visible textual review cards that pass filters.",
-          "Advertised total 649 is much larger than accepted rows 95; source is likely partially covered after filters/pagination."
+          "Advertised total 654 is much larger than accepted rows 103; source is likely partially covered after filters/pagination."
         ],
         "errors": [],
-        "review_count": 95,
-        "existing_review_count": 83,
+        "review_count": 103,
+        "existing_review_count": 95,
         "present": true,
-        "latest_review_date": "2026-08-28",
-        "existing_latest_date": "2026-07-26",
+        "latest_review_date": "2026-09-23",
+        "existing_latest_date": "2026-08-28",
         "status": "partial"
       },
       {
         "source_website": "google.com",
         "attempted": true,
-        "direct_pages": 544,
+        "direct_pages": 311,
         "fallback_pages": 0,
         "direct_statuses": {
-          "200": 544
+          "200": 311
         },
         "blocked": false,
         "fallback_used": false,
-        "candidate_reviews_seen": 3764,
-        "new_reviews_added": 68,
+        "candidate_reviews_seen": 913,
+        "new_reviews_added": 10,
         "advertised_total": null,
-        "latest_candidate_date": "2026-09-01",
+        "latest_candidate_date": "2026-10-06",
         "notes": [
           "Google Business Profile discovery completed: 53/53 queries succeeded and 61 unique validated US profiles were selected.",
-          "Validated 61 US Google Business Profiles; paginated newest-first with exact RPC timestamps through the 2023 boundary."
+          "Validated 56 US Google Business Profiles; 5 failed and 0 were skipped after the circuit breaker. Successful profiles were paginated newest-first through per-profile incremental overlap boundaries."
         ],
-        "errors": [],
-        "review_count": 591,
-        "existing_review_count": 523,
+        "errors": [
+          "ADESA Atlanta [0x88f4e6f6bcae32c3:0x8ca5797c8ce4da57]: newest review RPC did not load",
+          "ADESA Austin [0x8644c9a7d5710d89:0xc700487a78e37d52]: newest review RPC did not load",
+          "ADESA Cincinnati/Dayton [0x8840603757c062c5:0x35280de626a14dbf]: pagination stopped before the 2026-08-17 boundary/terminal page (10 RPC reviews; advertised=368)",
+          "Adesa Galena [0x80dcb45637c01251:0x1c6495832abb00c9]: pagination stopped before the 2026-08-17 boundary/terminal page (10 RPC reviews; advertised=35)",
+          "ADESA Pittsburgh [0x8834d923083ce5ed:0x50aee71ecf3394d9]: pagination stopped before the 2026-08-17 boundary/terminal page (10 RPC reviews; advertised=198)"
+        ],
+        "profile_retention_used": true,
+        "profiles_completed": 56,
+        "profiles_failed": 5,
+        "profiles_skipped_after_circuit_breaker": 0,
+        "last_successful_refresh_until": "2026-08-31",
+        "review_count": 601,
+        "existing_review_count": 591,
         "present": true,
-        "latest_review_date": "2026-08-28",
-        "existing_latest_date": "2026-07-30",
-        "status": "ok"
+        "latest_review_date": "2026-09-29",
+        "existing_latest_date": "2026-08-28",
+        "status": "partial_profile_retention"
       }
     ],
     "sentiments": {
-      "positive": 375,
-      "negative": 502
+      "positive": 386,
+      "negative": 517
     },
     "source_urls": [
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25scGVqQk5NMDlSTkRWemFIUnVjVzQxV0hsbVVFRRAB!2m1!1s0x0:0x29cf546c41c2f6ff!3m1!1s2@1:CAIQACodChtycF9oOnlpejBNM09RNDVzaHRucW41WHlmUEE%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xkSVYyMUhUVkpaYlRSdmJYa3hWMUpDVTFKWU1HYxAB!2m1!1s0x0:0x2b5dc383485f1e3b!3m1!1s2@1:CAIQACodChtycF9oOldIV21HTVJZbTRvbXkxV1JCU1JYMGc%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2taRlJYaGtTMmhyZGxKa1NIUnhVRk5YU21kcGExRRAB!2m1!1s0x0:0x4f1eae3fc675601b!3m1!1s2@1:CAIQACodChtycF9oOkZFRXhkS2hrdlJkSHRxUFNXSmdpa1E%7C%7C?hl=en",
+      "https://reviews.birdeye.com/adesa-phoenix-166641883198682#review-1",
+      "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=14555818858",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1S1IySkZXbGhTTkdoYUxVbHFkMGhGWDNKUGRtYxAB!2m1!1s0x0:0xd66dd4b29022f5b8!3m1!1s2@1:CAIQACodChtycF9oOk5KR2JFWlhSNGhaLUlqd0hFX3JPdmc%7C%7C?hl=en",
+      "http://www.bbb.org/us/ca/san-diego/profile/auto-auction/adesa-san-diego-1126-23000806/complaints#1126_23000806_25278218",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pOQ00xcExRME00YW1SV1JUSkxjVmhaVDFkTWNHYxAB!2m1!1s0x0:0x5e1b863ca8625930!3m1!1s2@1:CAIQACodChtycF9oOjNCM1pLQ0M4amRWRTJLcVhZT1dMcGc%7C%7C?hl=en",
+      "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=14541403169",
+      "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=14531105826",
+      "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=14530980560",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25ScGEyOVlYekpzVTJOWGFYZ3RVRFpqYjJ4YVNIYxAB!2m1!1s0x0:0x1314b726513d9a91!3m1!1s2@1:CAIQACodChtycF9oOnRpa29YXzJsU2NXaXgtUDZjb2xaSHc%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tGd1NreFRkekZJUjFKME1qWlNVRVp5VkRadE9IYxAB!2m1!1s0x0:0xbe432126bb6ab401!3m1!1s2@1:CAIQACodChtycF9oOkFwSkxTdzFIR1J0MjZSUEZyVDZtOHc%7C%7C?hl=en",
+      "https://reviews.birdeye.com/adesa-phoenix-166641883198682#review-2",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2poS1lVczVPR0ZsY0ZwRVJEbHJiWG81TFZOdlJGRRAB!2m1!1s0x0:0x159ea0564a37c95b!3m1!1s2@1:CAIQACodChtycF9oOjhKYUs5OGFlcFpERDlrbXo5LVNvRFE%7C%7C?hl=en",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25sME9GcFlhRzFvY21KcmRrTjJabGt6TlRWb2RHYxAB!2m1!1s0x0:0xe62c0bc75de04bd1!3m1!1s2@1:CAIQACodChtycF9oOnl0OFpYaG1ocmJrdkN2ZlkzNTVodGc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25aVVIybHVUMjU1ZGpGNk5WUTJUVEptWmtWSlRYYxAB!2m1!1s0x0:0x6694235793d530dc!3m1!1s2@1:CAIQACodChtycF9oOnZUR2luT255djF6NVQ2TTJmZkVJTXc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kM1ptNVFNalZoT1dRd1NqbE5RMHROY0RCclprRRAB!2m1!1s0x0:0x65b0cf8a3592e7e!3m1!1s2@1:CAIQACodChtycF9oOnd3Zm5QMjVhOWQwSjlNQ0tNcDBrZkE%7C%7C?hl=en",
       "https://reviews.birdeye.com/adesa-los-angeles-167825716184717#review-1",
       "https://reviews.birdeye.com/adesa-los-angeles-167825716184717#review-3",
-      "https://reviews.birdeye.com/adesa-phoenix-166641883198682#review-1",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21SZlpraGhYMWQ1TlhoRGEySkJZemgwWlRCdmFrRRAB!2m1!1s0x0:0xf16f6e5c92888c0f!3m1!1s2@1:CAIQACodChtycF9oOmRfZkhhX1d5NXhDa2JBYzh0ZTBvakE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25JeU5VRnBiV05zUWpCT1NHOHdaV3d4UTB4blpWRRAB!2m1!1s0x0:0x5e1b863ca8625930!3m1!1s2@1:CAIQACodChtycF9oOnIyNUFpbWNsQjBOSG8wZWwxQ0xnZVE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSaFlVVnpUek5YTkU1UGNXMWZhVlo2VnpRNFYwRRAB!2m1!1s0x0:0x159ea0564a37c95b!3m1!1s2@1:CAIQACodChtycF9oOjRhYUVzTzNXNE5PcW1faVZ6VzQ4V0E%7C%7C?hl=en",
@@ -262,6 +293,7 @@
       "https://reviews.birdeye.com/adesa-los-angeles-167825716184717#review-5",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xkTmIzbzVSM2RvUW1aa1EwdDJhM0I1Y2treFRHYxAB!2m1!1s0x0:0x65b0cf8a3592e7e!3m1!1s2@1:CAIQACodChtycF9oOldNb3o5R3doQmZkQ0t2a3B5ckkxTGc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21GVVFuazNkVkYzVFVGSU1uTTRkMlpaWkMxTFUxRRAB!2m1!1s0x0:0xd01acd06305ff6fb!3m1!1s2@1:CAIQACodChtycF9oOmFUQnk3dVF3TUFIMnM4d2ZZZC1LU1E%7C%7C?hl=en",
+      "https://www.reddit.com/r/carflipping/comments/1vogot8/finding_inventory/",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2paek1ISmZWbXBHUlMxd2IyMVBOSE13TjNCV1JFRRAB!2m1!1s0x0:0x159ea0564a37c95b!3m1!1s2@1:CAIQACodChtycF9oOjZzMHJfVmpGRS1wb21PNHMwN3BWREE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT214MWFsRm5OVEpQTFdoV04wbGZUSFpmTmtSaWNtYxAB!2m1!1s0x0:0x657d5707422ca21!3m1!1s2@1:CAIQACodChtycF9oOmx1alFnNTJPLWhWN0lfTHZfNkRicmc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25wc1kzaEVlbTFOTlZkTlJXWlFabTV5U1Y5MlVHYxAB!2m1!1s0x0:0x75945523880f8c83!3m1!1s2@1:CAIQACodChtycF9oOnpsY3hEem1NNVdNRWZQZm5ySV92UGc%7C%7C?hl=en",
@@ -271,14 +303,15 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25vd1ZVOWZYMnBxTjE5amJHNUdSVVJhTjI1bFNIYxAB!2m1!1s0x0:0x65b0cf8a3592e7e!3m1!1s2@1:CAIQACodChtycF9oOnowVU9fX2pqN19jbG5GRURaN25lSHc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21rd1FXd3lUR3h5TVdSUVdVZFRkR1J3VkhobFFuYxAB!2m1!1s0x0:0x2b5dc383485f1e3b!3m1!1s2@1:CAIQACodChtycF9oOmkwQWwyTGxyMWRQWUdTdGRwVHhlQnc%7C%7C?hl=en",
       "https://www.trustpilot.com/reviews/6a7dc2b926a630689fea4381",
+      "https://reviews.birdeye.com/adesa-memphis-166562763449834#review-2",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s0d1NXUm5WMEZ2TlcwNFlXZE1ZamhVUVhGYU4zYxAB!2m1!1s0x0:0x6a47ae2265c7925d!3m1!1s2@1:CAIQACodChtycF9oOk4wSWRnV0FvNW04YWdMYjhUQXFaN3c%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w5eVlWTnZSazB5V0dSRE9GRkthVFZtV2sxeVIyYxAB!2m1!1s0x0:0xca83be42a09d5522!3m1!1s2@1:CAIQACodChtycF9oOl9yYVNvRk0yWGRDOFFKaTVmWk1yR2c%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tsck9HOW5Ra0l3TW01SU5tbHBRbHBxT1RoR2JHYxAB!2m1!1s0x0:0xca83be42a09d5522!3m1!1s2@1:CAIQACodChtycF9oOklrOG9nQkIwMm5INmlpQlpqOThGbGc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xWT2JIQkVkaTFKZGpBdE1ITkJSekozWmxWelVuYxAB!2m1!1s0x0:0x65b0cf8a3592e7e!3m1!1s2@1:CAIQACodChtycF9oOlVObHBEdi1JdjAtMHNBRzJ3ZlVzUnc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t4SlRGZFpWa3hPWTA5M1pqWndkVU41WlhOa1JGRRAB!2m1!1s0x0:0x65b0cf8a3592e7e!3m1!1s2@1:CAIQACodChtycF9oOkxJTFdZVkxOY093ZjZwdUN5ZXNkRFE%7C%7C?hl=en",
-      "https://reviews.birdeye.com/adesa-memphis-166562763449834#review-2",
       "https://apps.apple.com/us/app/id1660253652?see-all=reviews&platform=iphone&reviewId=14369258486",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21oV1FrMDBaVXhRY3pCb1EzaDFSaTFmVjE5c2FtYxAB!2m1!1s0x0:0xd01acd06305ff6fb!3m1!1s2@1:CAIQACodChtycF9oOmhWQk00ZUxQczBoQ3h1Ri1fV19samc%7C%7C?hl=en",
+      "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=14369258486",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkbGMyTTJRVjlNV1RCa1NYZ3dRVzFrTm5OSWNtYxAB!2m1!1s0x0:0xd01acd06305ff6fb!3m1!1s2@1:CAIQACodChtycF9oOkdlc2M2QV9MWTBkSXgwQW1kNnNIcmc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s5WlJXbFVMVTR6UzBGNFgzTXhOWEZ3T1VOMlRVRRAB!2m1!1s0x0:0xd01acd06305ff6fb!3m1!1s2@1:CAIQACodChtycF9oOk9ZRWlULU4zS0F4X3MxNXFwOUN2TUE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tka1kyeFdZV0UxYlU1aGNucEhSSGMxV25OTE5sRRAB!2m1!1s0x0:0xf16f6e5c92888c0f!3m1!1s2@1:CAIQACodChtycF9oOkdkY2xWYWE1bU5hcnpHRHc1WnNLNlE%7C%7C?hl=en",
@@ -298,11 +331,11 @@
       "https://reviews.birdeye.com/adesa-memphis-166562763449834#review-1",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2trNUxXZHllVmRIZWpOUmVDMXRjMmx4WTNCdlFuYxAB!2m1!1s0x0:0x6faa40eb8e88ad45!3m1!1s2@1:CAIQACodChtycF9oOkk5LWdyeVdHejNReC1tc2lxY3BvQnc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT210SVdEQjRXV0paVkVoRWQyVktOV3BMVW0xd2JVRRAB!2m1!1s0x0:0x65b0cf8a3592e7e!3m1!1s2@1:CAIQACodChtycF9oOmtIWDB4WWJZVEhEd2VKNWpLUm1wbUE%7C%7C?hl=en",
+      "https://reviews.birdeye.com/adesa-portland-166735343287887#review-1",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCV2JFNVFOMjVwTkZSc1EySllWamMwT1ZOTFpVRRAB!2m1!1s0x0:0x7ff69944521dfa9c!3m1!1s2@1:CAIQACodChtycF9oOjBWbE5QN25pNFRsQ2JYVjc0OVNLZUE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pOcllVYzBhRXQwZGw5Q0xYZzNObko2TFdFeFkwRRAB!2m1!1s0x0:0xd01acd06305ff6fb!3m1!1s2@1:CAIQACodChtycF9oOjNrYUc0aEt0dl9CLXg3NnJ6LWExY0E%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1V1FsRTJXVkJOWlU1bFNXbDJaRjlhVW1oaUxXYxAB!2m1!1s0x0:0xd66dd4b29022f5b8!3m1!1s2@1:CAIQACodChtycF9oOk5WQlE2WVBNZU5lSWl2ZF9aUmhiLWc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tOQ1NFWmpZMlIxYldVMFkzaERXRUo2ZVZWV09YYxAB!2m1!1s0x0:0x6c9bb805581f5c8d!3m1!1s2@1:CAIQACodChtycF9oOkNCSEZjY2R1bWU0Y3hDWEJ6eVVWOXc%7C%7C?hl=en",
-      "https://reviews.birdeye.com/adesa-portland-166735343287887#review-1",
       "https://reviews.birdeye.com/adesa-las-vegas-164841342274985#review-5",
       "https://reviews.birdeye.com/adesa-las-vegas-164841342274985#review-4",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t4dmMyOW9VbFV5WTBNMWJubEpTV05oWmpRM1NYYxAB!2m1!1s0x0:0xdad802a3b6c7ae8a!3m1!1s2@1:CAIQACodChtycF9oOkxvc29oUlUyY0M1bnlJSWNhZjQ3SXc%7C%7C?hl=en",
@@ -320,11 +353,11 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25BM1QwaDNWSEpNWmpnME5XaGlUR0ZsUlhsZk9VRRAB!2m1!1s0x0:0x29cf546c41c2f6ff!3m1!1s2@1:CAIQACodChtycF9oOnA3T0h3VHJMZjg0NWhiTGFlRXlfOUE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xwQmVuSkxTRWxxV2paemQycDFiMHRZYUVGWFRVRRAB!2m1!1s0x0:0x65b0cf8a3592e7e!3m1!1s2@1:CAIQACodChtycF9oOlpBenJLSElqWjZzd2p1b0tYaEFXTUE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kV05FeDNZbGR6ZEU5RE5YSm5NRmRSUzJoaGVuYxAB!2m1!1s0x0:0xc700487a78e37d52!3m1!1s2@1:CAIQACodChtycF9oOndWNEx3YldzdE9DNXJnMFdRS2hhenc%7C%7C?hl=en",
+      "https://reviews.birdeye.com/adesa-portland-166735343287887#review-3",
       "https://www.trustpilot.com/reviews/6a26997ac47664f0cb6eed94",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25WWFYzQjJZVXAzYm1vMFgzQnpRalJaY1VoUk1HYxAB!2m1!1s0x0:0x1314b726513d9a91!3m1!1s2@1:CAIQACodChtycF9oOnVXV3B2YUp3bmo0X3BzQjRZcUhRMGc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xsSldXTnVjREI0UlZRelp6UndjM2Q0WnpaV1luYxAB!2m1!1s0x0:0xadbe9fd728415dfa!3m1!1s2@1:CAIQACodChtycF9oOllJWWNucDB4RVQzZzRwc3d4ZzZWYnc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21OdlNUWTNVV2RYZVZkdWNXSnZkekJrTjNGbVVFRRAB!2m1!1s0x0:0xd01acd06305ff6fb!3m1!1s2@1:CAIQACodChtycF9oOmNvSTY3UWdXeVducWJvdzBkN3FmUEE%7C%7C?hl=en",
-      "https://reviews.birdeye.com/adesa-portland-166735343287887#review-3",
       "https://reviews.birdeye.com/adesa-phoenix-166641883198682#review-5",
       "https://reviews.birdeye.com/adesa-portland-166735343287887#review-2",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25WaWNXTTJVSGhGUVVsM2VFaFJiMEZaVURSME0xRRAB!2m1!1s0x0:0xc0ff65b103a17103!3m1!1s2@1:CAIQACodChtycF9oOnVicWM2UHhFQUl3eEhRb0FZUDR0M1E%7C%7C?hl=en",
@@ -337,9 +370,9 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25VeFJWOXpUbkY2T1VkWWFXTjBVRGgzTFc5MVZtYxAB!2m1!1s0x0:0x2d3addad274be2eb!3m1!1s2@1:CAIQACodChtycF9oOnUxRV9zTnF6OUdYaWN0UDh3LW91Vmc%7C%7C?hl=en",
       "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=14068121266",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25CcWVsSkpVRGRpVkZBd1JqbEdUSFZoWlV0RE1IYxAB!2m1!1s0x0:0x86866fec57f185eb!3m1!1s2@1:CAIQACodChtycF9oOnBqelJJUDdiVFAwRjlGTHVhZUtDMHc%7C%7C?hl=en",
+      "https://reviews.birdeye.com/adesa-charlotte-166631397236159#review-2",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21VM1ltRk5SR0pIVFdsQ04wTkVVbTV3WWtNMVRVRRAB!2m1!1s0x0:0x6694235793d530dc!3m1!1s2@1:CAIQACodChtycF9oOmU3YmFNRGJHTWlCN0NEUm5wYkM1TUE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xkTWVITm5XWGhVZUc5aWJtWnpSSEoxWkVkclRtYxAB!2m1!1s0x0:0xd01acd06305ff6fb!3m1!1s2@1:CAIQACodChtycF9oOldMeHNnWXhUeG9ibmZzRHJ1ZEdrTmc%7C%7C?hl=en",
-      "https://reviews.birdeye.com/adesa-charlotte-166631397236159#review-2",
       "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=14032877339",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pVd1JWSnpjVFpGY25sclgwVTRhSFpRUm14T1IwRRAB!2m1!1s0x0:0xc0ff65b103a17103!3m1!1s2@1:CAIQACodChtycF9oOjUwRVJzcTZFcnlrX0U4aHZQRmxOR0E%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25SamFtZG9jMWt5ZEcxVmNGSktVRTB6ZHpKMlpuYxAB!2m1!1s0x0:0xc0ff65b103a17103!3m1!1s2@1:CAIQACodChtycF9oOnRjamdoc1kydG1VcFJKUE0zdzJ2Znc%7C%7C?hl=en",
@@ -530,31 +563,14 @@
       "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=13062497001",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25GU01WTklhRmRWYmxkcFgwUnRZMkpyZFZoc1ltYxAB!2m1!1s0x0:0x65b0cf8a3592e7e!3m1!1s2@1:CAIQACodChtycF9oOnFSMVNIaFdVbldpX0RtY2JrdVhsYmc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wUU5tNVdZM2Q1Y3kweGFrSmlhbk55YWpJNWMzYxAB!2m1!1s0x0:0x347271a59a45105!3m1!1s2@1:CAIQACodChtycF9oOmpQNm5WY3d5cy0xakJianNyajI5c3c%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25ZdGNrcGFlR3Q1YjBsZlVGcFhTVEpoZVZwclNHYxAB!2m1!1s0x0:0xd23aeb9d1365f256!3m1!1s2@1:CAIQACodChtycF9oOnYtckpaeGt5b0lfUFpXSTJheVprSGc%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20xek1rNTFablpUVTFweFdqWXlNRFk1U2pkR1IxRRAB!2m1!1s0x0:0x3763243d9222434b!3m1!1s2@1:CAIQACodChtycF9oOm1zMk51ZnZTU1pxWjYyMDY5SjdGR1E%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT213d1IweHBjV3ByVTBzMU56SkZWemxxVDBobVdsRRAB!2m1!1s0x0:0x7cde5ccaa0c88aae!3m1!1s2@1:CAIQACodChtycF9oOmwwR0xpcWprU0s1NzJFVzlqT0hmWlE%7C%7C?hl=en",
-      "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=13039131151",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tSa09WaERWekpHU0Y5a1FtOHhTMnczTjFaUVluYxAB!2m1!1s0x0:0xd23aeb9d1365f256!3m1!1s2@1:CAIQACodChtycF9oOkRkOVhDVzJGSF9kQm8xS2w3N1ZQYnc%7C%7C?hl=en",
-      "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=13019046082",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2toTlltVnpiSHAxYVZCaVNXcHJhV0pNYVRSV1QxRRAB!2m1!1s0x0:0x5b6af31fc84fde80!3m1!1s2@1:CAIQACodChtycF9oOkhNYmVzbHp1aVBiSWpraWJMaTRWT1E%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pWVE1HWXlSWEI2TkhKU1ozRkhhbXgwVEhCNk1YYxAB!2m1!1s0x0:0xdad802a3b6c7ae8a!3m1!1s2@1:CAIQACodChtycF9oOjVTMGYyRXB6NHJSZ3FHamx0THB6MXc%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xGWmJXUkpZMWx3TWtOSFpXUm1NMHczZGxGT0xYYxAB!2m1!1s0x0:0xf2323fccb522e151!3m1!1s2@1:CAIQACodChtycF9oOlFZbWRJY1lwMkNHZWRmM0w3dlFOLXc%7C%7C?hl=en",
-      "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=13008202860",
-      "https://www.trustpilot.com/reviews/68991f62953162899705b837",
-      "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=13004758054",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KR05XeHZURnAxYVZkVVdGaG9aM2RFZUZobGRYYxAB!2m1!1s0x0:0xbe432126bb6ab401!3m1!1s2@1:CAIQACodChtycF9oOnJGNWxvTFp1aVdUWFhoZ3dEeFhldXc%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tzdFdWUTNkMjVYWDNsWVdWTllSa1Z6TFhWaFIwRRAB!2m1!1s0x0:0x65b0cf8a3592e7e!3m1!1s2@1:CAIQACodChtycF9oOkstWVQ3d25XX3lYWVNYRkVzLXVhR0E%7C%7C?hl=en",
-      "https://www.reddit.com/r/askcarsales/comments/1mka1qm/getting_repoed_car_back_from_adesa/",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xKeE9IVmtOV3RMUTI1QlRUbHBXWHAzY1Y5VlZVRRAB!2m1!1s0x0:0xca83be42a09d5522!3m1!1s2@1:CAIQACodChtycF9oOlJxOHVkNWtLQ25BTTlpWXp3cV9VVUE%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21WUFUzcHFablpaUVhCQlZrZDJUVzlhUTNSb0xVRRAB!2m1!1s0x0:0x4f1eae3fc675601b!3m1!1s2@1:CAIQACodChtycF9oOmVPU3pqZnZZQXBBVkd2TW9aQ3RoLUE%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25wbU9VUTVWMDltY0dWaWVURjBSVGt0TjI1UE9YYxAB!2m1!1s0x0:0x6694235793d530dc!3m1!1s2@1:CAIQACodChtycF9oOnpmOUQ5V09mcGVieTF0RTktN25POXc%7C%7C?hl=en"
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25ZdGNrcGFlR3Q1YjBsZlVGcFhTVEpoZVZwclNHYxAB!2m1!1s0x0:0xd23aeb9d1365f256!3m1!1s2@1:CAIQACodChtycF9oOnYtckpaeGt5b0lfUFpXSTJheVprSGc%7C%7C?hl=en"
     ],
-    "generated_at_utc": "2026-09-02T14:09:07.642827+00:00",
+    "generated_at_utc": "2026-10-07T02:12:22.184654+00:00",
     "since_date": "2023-01-01",
-    "until_date": "2026-08-31",
+    "until_date": "2026-09-30",
     "collector_failures": [],
-    "existing_review_count": 793,
-    "new_reviews_added": 84,
+    "existing_review_count": 877,
+    "new_reviews_added": 26,
     "youtube_excluded": true,
     "usa_only": true,
     "english_only": true,
@@ -575,11 +591,11 @@
       "bbb.org"
     ],
     "geo_validation_counts": {
-      "google_business_us_profile": 68,
-      "trustpilot_us_slug": 1,
-      "bbb_us_business": 1,
-      "birdeye_us_profile": 12,
-      "apple_us_store": 2
+      "google_business_us_profile": 10,
+      "mixed_source_ok": 1,
+      "bbb_us_business": 2,
+      "birdeye_us_profile": 8,
+      "apple_us_store": 5
     },
     "geo_excluded_counts": {
       "apps.apple.com:apple_non_us_store": 17
@@ -744,7 +760,8 @@
         "address": "78 Horseblock Road, Yaphank, NY 11980",
         "website": "https://www.adesa.com/auction_location/adesa-long-island/",
         "rating": 4.6,
-        "review_count": 18
+        "review_count": 18,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x87d2bf30dde6f789:0xd6d8ba729d83a8a0",
@@ -754,7 +771,8 @@
         "address": "McNeil Dr, North Little Rock, AR 72117",
         "website": "https://www.adesa.com/",
         "rating": null,
-        "review_count": null
+        "review_count": null,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88f4e6f6bcae32c3:0x8ca5797c8ce4da57",
@@ -764,7 +782,8 @@
         "address": "5055 Oakley Industrial Blvd, Fairburn, GA 30213",
         "website": "https://www.adesa.com/auction_location/adesa-atlanta/",
         "rating": 3.8,
-        "review_count": 493
+        "review_count": 495,
+        "last_successful_scan_date": "2026-08-31"
       },
       {
         "feature_id": "0x8644c9a7d5710d89:0xc700487a78e37d52",
@@ -774,7 +793,8 @@
         "address": "2108 Ferguson Ln, Austin, TX 78754",
         "website": "https://www.adesa.com/auction_location/adesa-austin/",
         "rating": 4.1,
-        "review_count": 184
+        "review_count": 184,
+        "last_successful_scan_date": "2026-08-31"
       },
       {
         "feature_id": "0x864ebfe78f765fc1:0xaa6eaa18c8f6c8b7",
@@ -784,7 +804,8 @@
         "address": "3800 Lancaster Hutchins Rd, Hutchins, TX 75141",
         "website": "https://www.adesa.com/",
         "rating": 4.3,
-        "review_count": 23
+        "review_count": 23,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x0:0xf16f6e5c92888c0f",
@@ -794,7 +815,8 @@
         "address": "Previously validated U.S. Google Business Profile",
         "website": "",
         "rating": null,
-        "review_count": 14
+        "review_count": 14,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x54aef62d121ae4d1:0x2b11e609fd0594ed",
@@ -804,7 +826,8 @@
         "address": "7355 S Eisenman Rd, Boise, ID 83716",
         "website": "https://www.adesa.com/auction_location/adesa-boise/",
         "rating": 4.2,
-        "review_count": 115
+        "review_count": 116,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x89e38826d439f8cd:0x159ea0564a37c95b",
@@ -814,7 +837,8 @@
         "address": "63 Western Ave, Framingham, MA 01702",
         "website": "https://www.adesa.com/auction_location/adesa-boston/",
         "rating": 3.9,
-        "review_count": 553
+        "review_count": 558,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x809b283744ebdf3f:0x465b81eaadc807dc",
@@ -824,7 +848,8 @@
         "address": "6233 Blacktop Rd, Rio Linda, CA 95673",
         "website": "https://www.adesa.com/auction_location/adesa-brashers/",
         "rating": 3.8,
-        "review_count": 131
+        "review_count": 131,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x89d39bc8c885ab9f:0x2a69f89a5a930aec",
@@ -834,7 +859,8 @@
         "address": "12200 Main St, Akron, NY 14001",
         "website": "https://www.adesa.com/auction_location/adesa-buffalo/",
         "rating": 3.8,
-        "review_count": 212
+        "review_count": 213,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88569a3cab583717:0xf2323fccb522e151",
@@ -844,7 +870,8 @@
         "address": "11600 Fruehauf Dr, Charlotte, NC 28273",
         "website": "https://www.adesa.com/auction_location/adesa-charlotte/",
         "rating": 3.8,
-        "review_count": 363
+        "review_count": 366,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x880f089edaf1a815:0x29cf546c41c2f6ff",
@@ -854,7 +881,8 @@
         "address": "2785 Beverly Rd, Hoffman Estates, IL 60169",
         "website": "https://www.adesa.com/auction_location/adesa-chicago/",
         "rating": 3.7,
-        "review_count": 323
+        "review_count": 323,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x8840603757c062c5:0x35280de626a14dbf",
@@ -864,7 +892,8 @@
         "address": "4400 William C Good Blvd, Franklin, OH 45005",
         "website": "http://www.adesa.com/CincinnatiDayton",
         "rating": 4.1,
-        "review_count": 367
+        "review_count": 368,
+        "last_successful_scan_date": "2026-08-31"
       },
       {
         "feature_id": "0x88312004707b3d7d:0x347271a59a45105",
@@ -874,7 +903,8 @@
         "address": "210 E Twinsburg Rd, Northfield, OH 44067",
         "website": "https://www.adesa.com/auction_location/adesa-cleveland/",
         "rating": 4,
-        "review_count": 178
+        "review_count": 181,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x871341dbd6ba23e7:0x3763243d9222434b",
@@ -884,7 +914,8 @@
         "address": "10680 Charter Oak Ranch Rd, Fountain, CO 80817",
         "website": "https://www.adesa.com/auction_location/adesa-colorado-springs/",
         "rating": 3.8,
-        "review_count": 137
+        "review_count": 137,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x89e390e08db7a317:0x657d5707422ca21",
@@ -894,7 +925,8 @@
         "address": "77 Hosmer St, Acton, MA 01720",
         "website": "https://www.adesa.com/auction_location/adesa-concord/",
         "rating": 3.7,
-        "review_count": 124
+        "review_count": 125,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x8814ac6933f7b82d:0x5b6af31fc84fde80",
@@ -904,7 +936,8 @@
         "address": "500 E 96th St Ste 200A Bldg 4, Indianapolis, IN 46240",
         "website": "http://www.adesa.com/",
         "rating": 2.6,
-        "review_count": 30
+        "review_count": 30,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x864ebe08d970b369:0x6a47ae2265c7925d",
@@ -914,7 +947,8 @@
         "address": "3501 Lancaster Hutchins Rd, Hutchins, TX 75141",
         "website": "https://www.adesa.com/auction_location/adesa-dallas/",
         "rating": 4,
-        "review_count": 699
+        "review_count": 702,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x87ec27b672e6958f:0xe62c0bc75de04bd1",
@@ -923,8 +957,9 @@
         "name": "ADESA Des Moines",
         "address": "1800 SE Gateway Dr, Grimes, IA 50111",
         "website": "https://www.adesa.com/auction_location/adesa-des-moines/",
-        "rating": 4,
-        "review_count": 125
+        "rating": 3.9,
+        "review_count": 126,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x885af5bf18738d8d:0x497c017a977f69e9",
@@ -934,7 +969,8 @@
         "address": "195 Joe R McCrary Rd, Fall Branch, TN 37656",
         "website": "https://www.adesa.com/event/adesa-east-tennessee/2022-10-20/",
         "rating": 4.6,
-        "review_count": 63
+        "review_count": 63,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88238112af586403:0xc67e3588b4be2a48",
@@ -944,7 +980,8 @@
         "address": "3711 Western Rd, Flint, MI 48506",
         "website": "https://www.adesa.com/auction_location/adesa-flint/",
         "rating": 3.8,
-        "review_count": 289
+        "review_count": 289,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x80dcb45637c01251:0x1c6495832abb00c9",
@@ -954,7 +991,8 @@
         "address": "9700 Galena St, Riverside, CA 92509",
         "website": "https://www.adesa.com/",
         "rating": 4.4,
-        "review_count": 34
+        "review_count": 35,
+        "last_successful_scan_date": "2026-08-31"
       },
       {
         "feature_id": "0x809021ffed32f3ef:0x1314b726513d9a91",
@@ -964,7 +1002,8 @@
         "address": "18501 Stanford Rd, Tracy, CA 95377",
         "website": "https://www.adesa.com/auction_location/adesa-golden-gate/",
         "rating": 3.9,
-        "review_count": 369
+        "review_count": 371,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x8640cebc4571a3bd:0x6694235793d530dc",
@@ -974,7 +1013,8 @@
         "address": "4526 North Sam Houston Pkwy W, Houston, TX 77086",
         "website": "https://www.adesa.com/auction_location/adesa-houston/",
         "rating": 4,
-        "review_count": 398
+        "review_count": 399,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x886ca5ccecbd382d:0xc49440319567678d",
@@ -984,7 +1024,8 @@
         "address": "2950 E Main St, Plainfield, IN 46168",
         "website": "https://www.adesa.com/",
         "rating": 4.1,
-        "review_count": 273
+        "review_count": 275,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88e5bb517751bacf:0x75945523880f8c83",
@@ -994,7 +1035,8 @@
         "address": "11700 New Kings Rd, Jacksonville, FL 32219",
         "website": "https://www.adesa.com/auction_location/adesa-jacksonville/",
         "rating": 4.3,
-        "review_count": 183
+        "review_count": 183,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x87c0dcee8003d007:0x7ff69944521dfa9c",
@@ -1004,7 +1046,8 @@
         "address": "15511 E 155th St, Belton, MO 64012",
         "website": "http://adesa.com/",
         "rating": 3.9,
-        "review_count": 373
+        "review_count": 375,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x885dd5219e786dd9:0xbe432126bb6ab401",
@@ -1014,7 +1057,8 @@
         "address": "1011 Adesa Blvd, Lenoir City, TN 37771",
         "website": "http://adesa.com/",
         "rating": 4,
-        "review_count": 184
+        "review_count": 186,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x8822bedfffd300a9:0x99195276345f7fef",
@@ -1024,7 +1068,8 @@
         "address": "6956 Lansing Rd, Dimondale, MI 48821",
         "website": "https://www.adesa.com/auction_location/adesa-lansing/",
         "rating": 4.1,
-        "review_count": 147
+        "review_count": 148,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x80c8c29a62ddb54b:0x7cde5ccaa0c88aae",
@@ -1034,7 +1079,8 @@
         "address": "1000 E Gowan Rd, North Las Vegas, NV 89030",
         "website": "https://www.adesa.com/auction_location/adesa-las-vegas/",
         "rating": 4.1,
-        "review_count": 234
+        "review_count": 233,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x8842511241e4d083:0x4fc12f9761b60e12",
@@ -1044,7 +1090,8 @@
         "address": "672 Blue Sky Pkwy, Lexington, KY 40509",
         "website": "https://www.adesa.com/auction_location/adesa-lexington/",
         "rating": 4.2,
-        "review_count": 250
+        "review_count": 253,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x87d2bf384365c7b3:0xcec0b47c0d486762",
@@ -1054,7 +1101,8 @@
         "address": "8700 US-70, North Little Rock, AR 72117",
         "website": "https://www.adesa.com/auction_location/adesa-little-rock/",
         "rating": 4,
-        "review_count": 209
+        "review_count": 210,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x89e8459e2421c027:0xca83be42a09d5522",
@@ -1064,7 +1112,8 @@
         "address": "425 Patchogue-Yaphank Rd, Yaphank, NY 11980",
         "website": "https://www.adesa.com/auction_location/adesa-long-island/",
         "rating": 3.8,
-        "review_count": 294
+        "review_count": 295,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x80dcb56ff67a74a3:0x65b0cf8a3592e7e",
@@ -1074,7 +1123,8 @@
         "address": "11625 Nino Way, Mira Loma, CA 91752",
         "website": "https://www.adesa.com/auction_location/adesa-los-angeles/",
         "rating": 3.6,
-        "review_count": 619
+        "review_count": 622,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x887f88d74b364471:0xf3173c4480f55004",
@@ -1084,7 +1134,8 @@
         "address": "5400 Getwell Rd, Memphis, TN 38118",
         "website": "https://www.adesa.com/auction_location/adesa-memphis/",
         "rating": 4.3,
-        "review_count": 186
+        "review_count": 186,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x8833a6ad127d4989:0x8ea38df8f0fd8db6",
@@ -1094,7 +1145,8 @@
         "address": "758 Franklin Rd, Mercer, PA 16137",
         "website": "https://www.adesa.com/auction_location/adesa-mercer/",
         "rating": 4.4,
-        "review_count": 126
+        "review_count": 126,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x886443dc45b6d1c3:0xd23aeb9d1365f256",
@@ -1104,7 +1156,8 @@
         "address": "631 Burnett Rd, Old Hickory, TN 37138",
         "website": "https://www.adesa.com/auction_location/adesa-nashville/",
         "rating": 4.3,
-        "review_count": 235
+        "review_count": 235,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x89c3c01957604aa5:0xd01acd06305ff6fb",
@@ -1114,7 +1167,8 @@
         "address": "200 N Main St, Manville, NJ 08835",
         "website": "https://www.adesa.com/auction_location/adesa-new-jersey/",
         "rating": 3.4,
-        "review_count": 513
+        "review_count": 513,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x54c102b36a93e255:0x86866fec57f185eb",
@@ -1124,7 +1178,8 @@
         "address": "90485 Auction Way, Eugene, OR 97402",
         "website": "https://www.adesa.com/auction_location/adesa-northwest/",
         "rating": 4.4,
-        "review_count": 189
+        "review_count": 190,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88e7d53173972019:0x8a095b6a3dae24d3",
@@ -1134,7 +1189,8 @@
         "address": "540 SW 38th Ave, Ocala, FL 34474",
         "website": "https://www.adesa.com/auction_location/adesa-ocala/",
         "rating": 4.4,
-        "review_count": 119
+        "review_count": 120,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88e712fc5d8f4c0f:0x2b5dc383485f1e3b",
@@ -1144,7 +1200,8 @@
         "address": "2851 St Johns Pkwy, Sanford, FL 32771",
         "website": "https://www.adesa.com/auction_location/adesa-orlando/",
         "rating": 4,
-        "review_count": 357
+        "review_count": 361,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x89c893b0bef0fbf7:0xadbe9fd728415dfa",
@@ -1154,7 +1211,8 @@
         "address": "30 Industrial Rd, York, PA 17406",
         "website": "https://www.adesa.com/auction_location/adesa-pa/",
         "rating": 4,
-        "review_count": 189
+        "review_count": 190,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x872b041c3f6e944f:0x5e1b863ca8625930",
@@ -1164,7 +1222,8 @@
         "address": "400 N Beck Ave, Chandler, AZ 85226",
         "website": "https://www.adesa.com/auction_location/adesa-phoenix/",
         "rating": 4,
-        "review_count": 458
+        "review_count": 459,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x8834d923083ce5ed:0x50aee71ecf3394d9",
@@ -1174,7 +1233,8 @@
         "address": "378 Hunker Waltz Mill Rd, New Stanton, PA 15672",
         "website": "https://www.adesa.com/auction_location/adesa-pittsburgh/",
         "rating": 4.2,
-        "review_count": 196
+        "review_count": 198,
+        "last_successful_scan_date": "2026-08-31"
       },
       {
         "feature_id": "0x89ac6e9515ddcb1b:0xd66dd4b29022f5b8",
@@ -1184,7 +1244,8 @@
         "address": "30 Sadisco Rd, Clayton, NC 27520",
         "website": "https://www.adesa.com/auction_location/adesa-raleigh/",
         "rating": 4.1,
-        "review_count": 149
+        "review_count": 152,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x80994ea906d2599d:0x31d7a969467cdd51",
@@ -1194,7 +1255,8 @@
         "address": "6000 Echo Ave, Reno, NV 89506",
         "website": "https://www.adesa.com/auction_location/adesa-reno/",
         "rating": 4.1,
-        "review_count": 73
+        "review_count": 73,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x809adb316818e3f3:0x6faa40eb8e88ad45",
@@ -1204,7 +1266,8 @@
         "address": "8649 Kiefer Blvd, Sacramento, CA 95826",
         "website": "https://www.adesa.com/Sacramento",
         "rating": 4.3,
-        "review_count": 167
+        "review_count": 166,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x8752f2679fbcf759:0x4f1eae3fc675601b",
@@ -1214,7 +1277,8 @@
         "address": "5789 West 700 S, Salt Lake City, UT 84104",
         "website": "https://www.adesa.com/auction_location/adesa-salt-lake/",
         "rating": 3.3,
-        "review_count": 120
+        "review_count": 124,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x865c5c6e826412a9:0xc0ff65b103a17103",
@@ -1224,7 +1288,8 @@
         "address": "200 S Callaghan Rd, San Antonio, TX 78227",
         "website": "https://www.adesa.com/auction_location/adesa-san-antonio/",
         "rating": 3.9,
-        "review_count": 243
+        "review_count": 244,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x80d9489d691e85df:0x6bb08db853473766",
@@ -1234,7 +1299,8 @@
         "address": "2175 Cactus Rd, San Diego, CA 92154",
         "website": "https://www.adesa.com/auction_location/adesa-san-diego/",
         "rating": 3.9,
-        "review_count": 225
+        "review_count": 225,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88c33e7193ab29d3:0x130e5c78c2260a73",
@@ -1244,7 +1310,8 @@
         "address": "6005 24th St E, Bradenton, FL 34203",
         "website": "https://www.adesa.com/auction_location/adesa-sarasota/",
         "rating": 4.1,
-        "review_count": 279
+        "review_count": 281,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x54905903a3a71e15:0xf4e30d6e013958b9",
@@ -1254,7 +1321,8 @@
         "address": "621 37th St NW, Auburn, WA 98001",
         "website": "https://www.adesa.com/auction_location/adesa-seattle/",
         "rating": 4.2,
-        "review_count": null
+        "review_count": 252,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x8636da9396affe73:0x9fbc8be5108290bc",
@@ -1264,7 +1332,8 @@
         "address": "7666 Greenwood Rd, Shreveport, LA 71119",
         "website": "https://www.adesa.com/auction_location/adesa-shreveport/",
         "rating": 3.9,
-        "review_count": 105
+        "review_count": 105,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x878ec8ce4e521d91:0xcd4f47594375ad1e",
@@ -1274,7 +1343,8 @@
         "address": "725 Gateway Ln, Tea, SD 57064",
         "website": "https://www.adesa.com/auction_location/adesa-sioux-falls/",
         "rating": 4.3,
-        "review_count": 62
+        "review_count": 62,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x87d8c27458bd09af:0x711708aed841f53",
@@ -1284,7 +1354,8 @@
         "address": "7858 US-61, Barnhart, MO 63012",
         "website": "https://www.adesa.com/auction_location/adesa-st-louis/",
         "rating": 4.4,
-        "review_count": 107
+        "review_count": 107,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x87d8c26c7f6f38eb:0xe889fcdfdd017381",
@@ -1294,7 +1365,8 @@
         "address": "Barnhart, MO 63012",
         "website": "https://www.adesa.com/auction_location/adesa-st-louis/",
         "rating": 3,
-        "review_count": 3
+        "review_count": 3,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x89d9eb66d55c3e33:0x1dbcb81ab39fdeec",
@@ -1304,7 +1376,8 @@
         "address": "5930 NY-31, Cicero, NY 13039",
         "website": "https://www.adesa.com/auction_location/adesa-syracuse/",
         "rating": 4.2,
-        "review_count": 174
+        "review_count": 174,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x88c2c5f2ca2a3f3d:0x2d3addad274be2eb",
@@ -1314,7 +1387,8 @@
         "address": "3225 N 50th St, Tampa, FL 33619",
         "website": "https://www.adesa.com/auction_location/adesa-tampa/",
         "rating": 3.8,
-        "review_count": 313
+        "review_count": 312,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x87b6f48bfb7bc955:0x6c9bb805581f5c8d",
@@ -1324,7 +1398,8 @@
         "address": "16015 E Admiral Pl, Tulsa, OK 74116",
         "website": "https://www.adesa.com/auction_location/adesa-tulsa/",
         "rating": 4.3,
-        "review_count": 197
+        "review_count": 198,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x89b640ec54a75fdb:0xdad802a3b6c7ae8a",
@@ -1334,7 +1409,8 @@
         "address": "43375 Old Ox Rd, Sterling, VA 20166",
         "website": "http://adesawashingtondc.com/",
         "rating": 3.7,
-        "review_count": 350
+        "review_count": 356,
+        "last_successful_scan_date": "2026-09-30"
       },
       {
         "feature_id": "0x5495a2b655cf74db:0xc781b435f48e0e60",
@@ -1344,11 +1420,252 @@
         "address": "23585 NE Sandy Blvd, Wood Village, OR 97060",
         "website": "https://www.adesa.com/auction_location/adesa-portland/",
         "rating": 4.2,
-        "review_count": 143
+        "review_count": 143,
+        "last_successful_scan_date": "2026-09-30"
       }
     ]
   },
   "reviews": [
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (ADESA Chicago)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25scGVqQk5NMDlSTkRWemFIUnVjVzQxV0hsbVVFRRAB!2m1!1s0x0:0x29cf546c41c2f6ff!3m1!1s2@1:CAIQACodChtycF9oOnlpejBNM09RNDVzaHRucW41WHlmUEE%7C%7C?hl=en",
+      "author": "marco uri",
+      "review_date": "2026-09-29",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Lots of great cars for auction.",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)",
+      "id": "rvw-000878"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (ADESA Orlando)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xkSVYyMUhUVkpaYlRSdmJYa3hWMUpDVTFKWU1HYxAB!2m1!1s0x0:0x2b5dc383485f1e3b!3m1!1s2@1:CAIQACodChtycF9oOldIV21HTVJZbTRvbXkxV1JCU1JYMGc%7C%7C?hl=en",
+      "author": "Mohammad",
+      "review_date": "2026-09-28",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "I HIGHLY HIGHLY SUGGEST TO ANYONE ATTENDING THIS AUCTION RECORD YOUR PROXY BIDS! THEY WILL FISH OUT YOUR PROXY AND BACK THE NUMBER BACK DOWN TO SELL IT TO YOU! THEY DO IT EVERY SINGLE WEEK! EXTREMELY UNETHICAL TEAM HERE! They also will FAVOR the Seller \"Tesla MOTORS\" and anytime you have any issue with a car they will force you to buy it. BEWARE OF THIS AUCTION. Told auctioneer that this proxy was incorrect BEFORE the car ran, and he continued to run up the bid. BUYERS BEWARE",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-000879"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (ADESA Salt Lake)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2taRlJYaGtTMmhyZGxKa1NIUnhVRk5YU21kcGExRRAB!2m1!1s0x0:0x4f1eae3fc675601b!3m1!1s2@1:CAIQACodChtycF9oOkZFRXhkS2hrdlJkSHRxUFNXSmdpa1E%7C%7C?hl=en",
+      "author": "Sadie Cook",
+      "review_date": "2026-09-28",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Sarah (Or Sara), who answered the phone multiple times while I was trying to figure out retrieving my vehicle, had horrible phone manners. She was short, entirely unhelpful, and just plain rude. I was genuinely just asking for help, not sure why my documents weren’t received, and she acted as if it were my fault. I felt very unhelped, so I told her that she must be having a bad day and that I would just call back tomorrow, and she almost immediately hung up the phone. Horrible experience. I guess I didn’t choose this company to work through, so this is more so a warning for people who will have to deal with retrieving their vehicles in the future that you may have to deal with crappy phone etiquette. Anywho, Sarah, I hope your life treats you better so that you can treat others better ❣️ This was already an extremely stressful situation for me, and you definitely made it worse! Don’t put other people through that.",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Communication Follow-up & Escalation",
+      "tier3": "No Callback / Unresolved Case",
+      "id": "rvw-000880"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/adesa-phoenix-166641883198682#review-1",
+      "author": "Tin Al",
+      "review_date": "2026-09-23",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "This location is epic. Not accounting friendly, do not wire for purchases, first they block you, then they use your $ for 2 weeks, and god bless you get your $ back, managment never calls you back. Auto Hunters.",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Payment Refunds, Transaction Issues and Deposits",
+      "tier2": "Wire Transfer Payments",
+      "tier3": "Wire Pending/Posting Delay",
+      "id": "rvw-000881"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (1660253652, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=14555818858",
+      "author": "DesertSky007",
+      "review_date": "2026-09-16",
+      "rating": 4,
+      "sentiment": "positive",
+      "review_text": "Not bad. Best dealer auction app.. Not bad. Beat dealer auction app, but that’s not saying a lot. It’s worlds better than Manheim and Carmax Auctions.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000882"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (ADESA Raleigh)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1S1IySkZXbGhTTkdoYUxVbHFkMGhGWDNKUGRtYxAB!2m1!1s0x0:0xd66dd4b29022f5b8!3m1!1s2@1:CAIQACodChtycF9oOk5KR2JFWlhSNGhaLUlqd0hFX3JPdmc%7C%7C?hl=en",
+      "author": "Jorge Buaiz",
+      "review_date": "2026-09-15",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Very disappointing experience with ADESA Raleigh. On September 4, I purchased a 2018 Hyundai Tucson through ADESA as a Green Light vehicle. The vehicle was presented without warning lights or disclosed mechanical problems, with only minor cosmetic issues. Unfortunately, after the purchase, a serious engine problem was discovered. I reported the issue and provided documentation, including a mechanic’s report and a written statement explaining the situation. On September 10, I personally spoke with a manager who told me that they would review the case and consider whether ADESA could provide a reimbursement or some form of financial compensation. I also provided my email address so they could contact me. Days later, I still have not received an email, an update, or even a simple acknowledgment regarding the status of my case. My complaint is not only about whether ADESA ultimately decides to compensate me. What I find unacceptable is the lack of communication and customer consideration. When a dealer purchases a Green Light vehicle and subsequently discovers a serious mechanical problem, the very least a customer should expect is a timely and professional response. I have purchased vehicles from ADESA in consecutive weeks, and this experience has seriously affected my confidence in doing business with this location. I hope ADESA Raleigh management reviews this situation and provides a proper response.",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-000883"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Complaints",
+      "source_url": "http://www.bbb.org/us/ca/san-diego/profile/auto-auction/adesa-san-diego-1126-23000806/complaints#1126_23000806_25278218",
+      "author": "BBB complainant",
+      "review_date": "2026-09-15",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Service or Repair Issues complaint (Resolved). i bought a car from ADESA San Diego and from the pictures in the listing the gear shifter is clearly in the picture and on the car and when the dealer transport picked up the car it was missing someone stole it took it reused it i do not know i have contacted the business and they tell me pretty much i am out of the money. ADESA has a 10 day policy about filing it with them and i filed it on the 10 day after someone within ADESA San Diego told me it was within the period to file. There is fraud or something not right about this how they can sale cars to dealers and steal parts from it before it leaves there location i didn't buy a car with missing parts i bought one with all the parts according to there pictures and listing ## Adesa San Diego is NOT a BBB Accredited Business. To become accredited, a business must agree to[BBB Standards for Trust](https://www.bbb.org/all/standards-for-trust)and pass BBB's vetting process. [Why choose a BBB Accredited Business?](https://www.bbb.org/all/why-choose-a-bbb-accredited-business) BBB Business Profiles are provided solely to assist you in exercising your own best judgment. BBB does not verify the accuracy of information provided by third parties, and does not guarantee the accuracy of any information in Business Profiles. As a matter of policy, BBB does not endorse any product, service, or business. Businesses are under no obligation to seek BBB accreditation, and some businesses are not accredited because they have not sought BBB accreditation. When considering complaint information, please consider the company's size and volume of transactions. Note that the nature of complaints and a company’s responses to them are often more important than the number of complaints. BBB Business Profiles generally cover a three-year reporting period. [![Image 9: BBB](https://m.bbb.org/brand/logos/BBB_PrimaryLogo_White_RGB.svg)](https://www.bbb.org/)TM ## For Consumers * [Get a Quote](http://www.bbb.org/get-a-quote) * [Start a Review](http://www.bbb.org/leave-a-review) * [File a Complaint](http://www.bbb.org/file-a-complaint) ## For Businesses * [Get Your Business Listed](http://www.bbb.org/get-listed) * [BBB Accreditation](http://www.bbb.org/get-accredited) * [Apply for BBB Accreditation](http://www.bbb.org/apply) * [Newsroom and Resources](http://www.bbb.org/us/news) ## Affiliated Programs * [BBB Institute for Marketplace Trust](https://www.bbbmarketplacetrust.org/) * [BBB Wise Giving Alliance (Give.org)](https://give.org/) * [BBB National Programs](https://bbbprograms.org/) * [our Twitter (opens in a new tab)](https://x.com/bbb_us) * [our LinkedIn (opens in a new tab)](https://www.linkedin.com/company/better-business-bureau/) * [our Facebook (opens in a new tab)](https://www.facebook.com/BetterBusinessBureau) * [our Instagram (opens in a new tab)](https://www.instagram.com/betterbusinessbureau_/) * [About BBB®](http://www.bbb.org/about) * [Terms of Use](http://www.bbb.org/terms-of-use) * [Privacy Policy](http://www.bbb.org/all/privacy-policy) * [Contact Us](http://www.bbb.org/about/find-your-local-bbb) © 2026 International Association of Better Business Bureaus, Inc. (IABBB). All rights reserved. All trademarks are property of IABBB.",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-000884"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (ADESA Phoenix)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pOQ00xcExRME00YW1SV1JUSkxjVmhaVDFkTWNHYxAB!2m1!1s0x0:0x5e1b863ca8625930!3m1!1s2@1:CAIQACodChtycF9oOjNCM1pLQ0M4amRWRTJLcVhZT1dMcGc%7C%7C?hl=en",
+      "author": "Tin Al",
+      "review_date": "2026-09-14",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "This location is epic. Not accounting friendly, do not wire for purchases, first they block you, then they use your $ for 2 weeks, and god bless you get your $ back, managment never calls you back. Auto Hunters.",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Payment Refunds, Transaction Issues and Deposits",
+      "tier2": "Wire Transfer Payments",
+      "tier3": "Wire Pending/Posting Delay",
+      "id": "rvw-000885"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (1660253652, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=14541403169",
+      "author": "neeszy",
+      "review_date": "2026-09-12",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "The worst interface. For being such a large corporation, this app, as well as their online website, has to be the worst interface. There is no way to view any if bids that are awaiting an answer. There is also no way to see any vehicles that we have run through the sale. If you don’t call in to ADESA, you’re left with nothing but questions. Any other auction platform has everything listed clearly and efficiently. You can see pending bids on your inventory as well as the purchases that are made. Step up ADESA. Meet the current needs of your customers. Stop pushing an app that is only geared toward ADESA Clear.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Tow and Storage Charges",
+      "tier3": "Tow and Storage Fees",
+      "id": "rvw-000886"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (1660253652, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=14531105826",
+      "author": "kikelmonster",
+      "review_date": "2026-09-09",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Sell screen. Buy fees are as high as 40% on cheap cars total rip off Covid is over stop taking advantage of us",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-000887"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (1660253652, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=14530980560",
+      "author": "passanger 230",
+      "review_date": "2026-09-09",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "A. Worst app in my life",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-000888"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (ADESA Golden Gate)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25ScGEyOVlYekpzVTJOWGFYZ3RVRFpqYjJ4YVNIYxAB!2m1!1s0x0:0x1314b726513d9a91!3m1!1s2@1:CAIQACodChtycF9oOnRpa29YXzJsU2NXaXgtUDZjb2xaSHc%7C%7C?hl=en",
+      "author": "Fatima Moimoi",
+      "review_date": "2026-09-08",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "As far as repo redemption goes the communication is completely off amongst the staff. I was picking up a repo redemption on my uncles behalf. When I first contacted them to ensure I came with everything I needed. I spoke to Regina, she stated I needed a cashiers check, a repossession fee receipt from the police station, and my ID. When picking up the vehicle, I provided everything that Regina stated I needed. Then at the end of the day my uncle receives a voicemail stating that the cashiers check was not needed. I contacted the office spoke to Deana arranged for the check to be picked up. When my husband arrived to pick up the check they provided a receipt and the check stub. The cashiers check was not attached. When contacting the office again I spoke to Deana while on the phone she’s asking another staff member about the check not being attached, it was almost as they were insinuating that my husband teared the check himself. Then Deanna stated she was going to speak to accounting and give me a call back. I never got a call back. This pick up could have been smooth but due to the lack of communication the experience turned out to be completely frustrating.",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Communication Follow-up & Escalation",
+      "tier3": "No Callback / Unresolved Case",
+      "id": "rvw-000889"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (ADESA Knoxville)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tGd1NreFRkekZJUjFKME1qWlNVRVp5VkRadE9IYxAB!2m1!1s0x0:0xbe432126bb6ab401!3m1!1s2@1:CAIQACodChtycF9oOkFwSkxTdzFIR1J0MjZSUEZyVDZtOHc%7C%7C?hl=en",
+      "author": "Chrissy Wilson",
+      "review_date": "2026-09-08",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Rudest people ever. Went to pick up my car, completely drained of gas. When my tag was removed, they took the tag bolts. Just pay ya car note so you don’t have to deal with them. 🤣",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-000890"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/adesa-phoenix-166641883198682#review-2",
+      "author": "Mike Mccabe",
+      "review_date": "2026-09-07",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "out of all the auctions in the valley Adesa has always been my favorite one to goto. Great selection of cars and the people that make it function so well are the greatest and so friendly and helpful. I have a long history of over 25+ years using them as my goto auction which was my dad's favorite auto auction before me.. if you have you dealers liscense this is the place to go for great inventory cars",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000891"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (ADESA Boston)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2poS1lVczVPR0ZsY0ZwRVJEbHJiWG81TFZOdlJGRRAB!2m1!1s0x0:0x159ea0564a37c95b!3m1!1s2@1:CAIQACodChtycF9oOjhKYUs5OGFlcFpERDlrbXo5LVNvRFE%7C%7C?hl=en",
+      "author": "Alan",
+      "review_date": "2026-09-05",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Hours says pickup hours M-F 6am-11pm Got there at 9pm and got turned away. Says they close at 8pm. Hours also says not open Saturday , but he said they are open at 7am. Wasted 3hrs of driving.",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Scheduled Pickup Status",
+      "tier3": "Pickup Hours and Cutoff",
+      "id": "rvw-000892"
+    },
+    {
+      "source_website": "google.com",
+      "source_label": "Google Business Profile (ADESA Des Moines)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25sME9GcFlhRzFvY21KcmRrTjJabGt6TlRWb2RHYxAB!2m1!1s0x0:0xe62c0bc75de04bd1!3m1!1s2@1:CAIQACodChtycF9oOnl0OFpYaG1ocmJrdkN2ZlkzNTVodGc%7C%7C?hl=en",
+      "author": "Iridisent",
+      "review_date": "2026-09-02",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "These guys are insane level of incompetence, they will tell you that they call you back and never do that, they will send you wrong title and don’t care about that. Arbitration department “accidentally” do not respond",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Communication Follow-up & Escalation",
+      "tier3": "No Callback / Unresolved Case",
+      "id": "rvw-000893"
+    },
     {
       "source_website": "google.com",
       "source_label": "Google Business Profile (ADESA Houston)",
@@ -1560,6 +1877,21 @@
       "id": "rvw-000807"
     },
     {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/carflipping",
+      "source_url": "https://www.reddit.com/r/carflipping/comments/1vogot8/finding_inventory/",
+      "author": "Professional-You4708",
+      "review_date": "2026-08-14",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Finding Inventory Where are you guys finding deals without having a dealer license. I usually look on facebook marketplace and craigslist daily but some days i don’t find any good deals sometimes takes weeks to land on a solid buy to flip. I know copart and iaa are options but not really looking to rebuild cars. I really want to make this full time but struggling to consistent deals. or should i just open a location and get the license to get access to dealers auctions like adesa,manhiem,etc. thanks btw im in boston location",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Auction Eligibility & Licensing",
+      "tier3": "Unable to Bid",
+      "id": "rvw-000894"
+    },
+    {
       "source_website": "google.com",
       "source_label": "Google Business Profile (ADESA Boston)",
       "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2paek1ISmZWbXBHUlMxd2IyMVBOSE13TjNCV1JFRRAB!2m1!1s0x0:0x159ea0564a37c95b!3m1!1s2@1:CAIQACodChtycF9oOjZzMHJfVmpGRS1wb21PNHMwN3BWREE%7C%7C?hl=en",
@@ -1695,6 +2027,21 @@
       "id": "rvw-000816"
     },
     {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/adesa-memphis-166562763449834#review-2",
+      "author": "Da Don",
+      "review_date": "2026-08-08",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "This auction is one of the best to do it!!! Test drive and buy no hassles",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)",
+      "id": "rvw-000895"
+    },
+    {
       "source_website": "google.com",
       "source_label": "Google Business Profile (ADESA Dallas)",
       "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s0d1NXUm5WMEZ2TlcwNFlXZE1ZamhVUVhGYU4zYxAB!2m1!1s0x0:0x6a47ae2265c7925d!3m1!1s2@1:CAIQACodChtycF9oOk4wSWRnV0FvNW04YWdMYjhUQXFaN3c%7C%7C?hl=en",
@@ -1813,6 +2160,21 @@
       "tier2": "Communication Follow-up & Escalation",
       "tier3": "No Callback / Unresolved Case",
       "id": "rvw-000271"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (1660253652, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=14369258486",
+      "author": "Jeremy426",
+      "review_date": "2026-07-30",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Best Auction App. If you are comparing this to other big auctions this by far has the best UI. The app gets constantly updated to fix bugs and the programming team is actually competent when it comes to identifying issues. The filter menus are straightforward. Anyone who dislikes it is probably over the age of 40 and prefers an old school layout. I appreciate how the simulcast is extremely responsive on mobile and desktop. I know it’s happened on other platforms where your bid is delayed and you end up overpaying but not on here.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000896"
     },
     {
       "source_website": "google.com",
@@ -2113,6 +2475,21 @@
       "tier2": "Bidding Process, Rules and Fees",
       "tier3": "Fees",
       "id": "rvw-000288"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/adesa-portland-166735343287887#review-1",
+      "author": "Joseph Trachuk",
+      "review_date": "2026-07-09",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "was sold an as is car that they knew had structural damage but did not disclose - and specifically announced no arbitration for structural - when i brought this all up - the claim was rejected and this complaint went ignored (i requested for it to go to jordan who had the ability to make a different call and it was still rejected, also asked for jordan to call me 3 times and no call) - just a deceptive way to do business - now we are stuck with a totaled subaru that the entire main frame is bent on (not repairable)",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage",
+      "id": "rvw-000897"
     },
     {
       "source_website": "google.com",
@@ -2490,6 +2867,21 @@
       "id": "rvw-000305"
     },
     {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/adesa-portland-166735343287887#review-3",
+      "author": "lucky sidhu",
+      "review_date": "2026-06-09",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "nice staff ( Jaimi shaffer",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000898"
+    },
+    {
       "source_website": "trustpilot.com",
       "source_label": "Trustpilot (adesa.com)",
       "source_url": "https://www.trustpilot.com/reviews/6a26997ac47664f0cb6eed94",
@@ -2833,6 +3225,21 @@
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Helpful Support Experience",
       "id": "rvw-000313"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/adesa-charlotte-166631397236159#review-2",
+      "author": "Amjed Rasheed",
+      "review_date": "2026-05-10",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Left multiple messages and still no response from this location. Calls go unanswered and no one follows up. Pretty frustrating experience, especially since every other ADESA location I’ve dealt with has been responsive and easy to work with. Huge difference in service here compared to the rest.",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Support Access & Response Time",
+      "tier3": "Delayed Email/Phone Response",
+      "id": "rvw-000899"
     },
     {
       "source_website": "google.com",
@@ -5164,6 +5571,21 @@
       "source_label": "Birdeye (Google)",
       "source_url": "https://reviews.birdeye.com/adesa-seattle-166635448334315#review-3",
       "author": "Incredible California",
+      "review_date": "2025-11-11",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "They charging $25 a day for storage fee!! That’s not fair, what options do we have if you don’t have forklift!!! At least provide one so we can get a transportation or take it easy on storage fee! I called today to try to get my fee waived but useless and the accountant was mean “WE CHARGE $25 a day” Wake up!! You are not a two yard You need to make it easy for your customers not make it harder I’m done you are no different from copart",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-000900"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/adesa-seattle-166635448334315#review-3",
+      "author": "Incredible California",
       "review_date": "2025-11-06",
       "rating": null,
       "sentiment": "positive",
@@ -5638,6 +6060,21 @@
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support",
       "id": "rvw-000416"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/adesa-seattle-166635448334315#review-5",
+      "author": "Abdullah Ali",
+      "review_date": "2025-10-07",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Worst auction in WA state , horrible customer service. Majority of their vehicles junk and they’re deceptive",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-000901"
     },
     {
       "source_website": "birdeye.com",
@@ -11566,6 +12003,21 @@
     },
     {
       "source_website": "google.com",
+      "source_label": "Google Business Profile (ADESA Reno)",
+      "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ5Z3ZteDdRRRAB!2m1!1s0x0:0x31d7a969467cdd51!3m1!1s2@1:CIHM0ogKEICAgID9gvmx7QE%7C%7C?hl=en",
+      "author": "Keri Corley",
+      "review_date": "2024-03-14",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "The best spot for dealer auction. And the ladies in the front office are nice and easy to deal with. Definitely would recommend this place to dealers and they have ok.priving",
+      "geo_validation": "google_business_us_profile",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "How to Bid (First Time)",
+      "id": "rvw-000902"
+    },
+    {
+      "source_website": "google.com",
       "source_label": "Google Business Profile (ADESA Flint)",
       "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM5NzktbUhnEAE!2m1!1s0x0:0xc67e3588b4be2a48!3m1!1s2@1:CIHM0ogKEICAgIC979-mHg%7C%7C?hl=en",
       "author": "Alaa Khazaleh",
@@ -12133,6 +12585,21 @@
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support",
       "id": "rvw-000868"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Complaints",
+      "source_url": "http://www.bbb.org/us/tn/memphis/profile/auto-auction/adesa-auctions-memphis-0543-44000064/complaints#0543_44000064_20960543",
+      "author": "BBB complainant",
+      "review_date": "2023-12-05",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Product Issues complaint (Unanswered). Attention Adesa Memphis Auto Auction/ REMOVED Invoice #REMOVED(Vin last six #'s: REMOVED) Thank you for your prompt attention to this matter. I submitted an 'IF' REMOVED. The business contacted me and states the seller wanted $4,000 more than my original offer. I declined. This action closes the REMOVED out entirely and the buyer is no longer contacted in regards to this sale. Adesa's office manager, REMOVED later contacted me stating the seller had accepted my offer which should have been previously closed on our last contact. I then received an invoice for $1400.00 on a sale i declined. Please address this immediately. Please note: I have contacted this business by email and phone, i gave the business 30 days to review and provide any response to my concerns, the business failed to contact me by email or by phone. The only method of contact from the business has been by mailed invoice. (Attached) REMOVED Desired resolution: Remove the negative connotation from WFL Investments account & close the incorrect $1400.00 REMOVED entirely. I hope to continue my good standing/membership with your auction. REMOVED ## Adesa Auctions - Memphis is NOT a BBB Accredited Business. To become accredited, a business must agree to[BBB Standards for Trust](https://www.bbb.org/all/standards-for-trust)and pass BBB's vetting process. [Why choose a BBB Accredited Business?](https://www.bbb.org/all/why-choose-a-bbb-accredited-business) BBB Business Profiles are provided solely to assist you in exercising your own best judgment. BBB does not verify the accuracy of information provided by third parties, and does not guarantee the accuracy of any information in Business Profiles. As a matter of policy, BBB does not endorse any product, service, or business. Businesses are under no obligation to seek BBB accreditation, and some businesses are not accredited because they have not sought BBB accreditation. When considering complaint information, please consider the company's size and volume of transactions. Note that the nature of complaints and a company’s responses to them are often more important than the number of complaints. BBB Business Profiles generally cover a three-year reporting period. [![Image 14: BBB](https://m.bbb.org/brand/logos/BBB_PrimaryLogo_White_RGB.svg)](https://www.bbb.org/)TM ## For Consumers * [Get a Quote](http://www.bbb.org/get-a-quote) * [Start a Review](http://www.bbb.org/leave-a-review) * [File a Complaint](http://www.bbb.org/file-a-complaint) ## For Businesses * [Get Your Business Listed](http://www.bbb.org/get-listed) * [BBB Accreditation](http://www.bbb.org/get-accredited) * [Apply for BBB Accreditation](http://www.bbb.org/apply) * [Newsroom and Resources](http://www.bbb.org/us/news) ## Affiliated Programs * [BBB Institute for Marketplace Trust](https://www.bbbmarketplacetrust.org/) * [BBB Wise Giving Alliance (Give.org)](https://give.org/) * [BBB National Programs](https://bbbprograms.org/) * [our Twitter (opens in a new tab)](https://x.com/bbb_us) * [our LinkedIn (opens in a new tab)](https://www.linkedin.com/company/better-business-bureau/) * [our Facebook (opens in a new tab)](https://www.facebook.com/BetterBusinessBureau) * [our Instagram (opens in a new tab)](https://www.instagram.com/betterbusinessbureau_/) * [About BBB®](http://www.bbb.org/about) * [Terms of Use](http://www.bbb.org/terms-of-use) * [Privacy Policy](http://www.bbb.org/all/privacy-policy) * [Contact Us](http://www.bbb.org/about/find-your-local-bbb) © 2026 International Association of Better Business Bureaus, Inc. (IABBB). All rights reserved. All trademarks are property of IABBB.",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-000903"
     },
     {
       "source_website": "google.com",
