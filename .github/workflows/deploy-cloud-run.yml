@@ -18,6 +18,7 @@ on:
       - Dockerfile
       - nginx.conf
       - docker-entrypoint.sh
+      - .github/workflows/deploy-cloud-run.yml
 
 concurrency:
   group: cloud-run-deploy
