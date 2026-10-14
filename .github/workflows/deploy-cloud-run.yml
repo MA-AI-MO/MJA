@@ -1,3 +1,4 @@
+# Trigger run for secrets verification
 name: Deploy to Cloud Run
 
 on:
