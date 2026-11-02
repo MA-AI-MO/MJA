@@ -2,13 +2,13 @@ window.REVIEW_DATASETS = {
   "copart": {
     "meta": {
       "description": "Large-scale English-only Copart textual review/problem dataset from public web sources (recency-first).",
-      "review_count": 13355,
+      "review_count": 13510,
       "source_counts": {
-        "reddit.com": 6742,
-        "play.google.com": 676,
+        "reddit.com": 6871,
+        "play.google.com": 690,
+        "apps.apple.com": 276,
+        "trustpilot.com": 268,
         "google.com": 4224,
-        "apps.apple.com": 269,
-        "trustpilot.com": 263,
         "bbb.org": 941,
         "reviews.io": 225,
         "complaintsboard.com": 15
@@ -23,7 +23,7 @@ window.REVIEW_DATASETS = {
           "blocked": false,
           "fallback_used": false,
           "candidate_reviews_seen": 0,
-          "new_reviews_added": 138,
+          "new_reviews_added": 129,
           "advertised_total": null,
           "latest_candidate_date": null,
           "notes": [
@@ -31,11 +31,11 @@ window.REVIEW_DATASETS = {
             "reddit_arctic_shift ran; candidate count is not separately tracked for this collector."
           ],
           "errors": [],
-          "review_count": 6742,
-          "existing_review_count": 6604,
+          "review_count": 6871,
+          "existing_review_count": 6742,
           "present": true,
-          "latest_review_date": "2026-09-30",
-          "existing_latest_date": "2026-08-31",
+          "latest_review_date": "2026-10-31",
+          "existing_latest_date": "2026-09-30",
           "status": "ok"
         },
         {
@@ -46,17 +46,17 @@ window.REVIEW_DATASETS = {
           "direct_statuses": {},
           "blocked": false,
           "fallback_used": false,
-          "candidate_reviews_seen": 4137,
-          "new_reviews_added": 10,
+          "candidate_reviews_seen": 4140,
+          "new_reviews_added": 14,
           "advertised_total": null,
-          "latest_candidate_date": "2026-10-05",
+          "latest_candidate_date": "2026-11-01",
           "notes": [],
           "errors": [],
-          "review_count": 676,
-          "existing_review_count": 666,
+          "review_count": 690,
+          "existing_review_count": 676,
           "present": true,
-          "latest_review_date": "2026-09-30",
-          "existing_latest_date": "2026-08-29",
+          "latest_review_date": "2026-10-30",
+          "existing_latest_date": "2026-09-30",
           "status": "ok"
         },
         {
@@ -67,68 +67,69 @@ window.REVIEW_DATASETS = {
           "direct_statuses": {},
           "blocked": false,
           "fallback_used": false,
-          "candidate_reviews_seen": 716,
-          "new_reviews_added": 12,
+          "candidate_reviews_seen": 717,
+          "new_reviews_added": 7,
           "advertised_total": null,
-          "latest_candidate_date": "2026-10-01",
+          "latest_candidate_date": "2026-10-28",
           "notes": [
             "Apple RSS can be sparse for some app IDs; HTML supplement captures visible App Store review cards only."
           ],
           "errors": [],
-          "review_count": 269,
-          "existing_review_count": 257,
+          "review_count": 276,
+          "existing_review_count": 269,
           "present": true,
-          "latest_review_date": "2026-09-30",
-          "existing_latest_date": "2026-08-18",
+          "latest_review_date": "2026-10-26",
+          "existing_latest_date": "2026-09-30",
           "status": "ok"
         },
         {
           "source_website": "bbb.org",
           "attempted": true,
-          "direct_pages": 5,
-          "fallback_pages": 5,
+          "direct_pages": 2,
+          "fallback_pages": 1,
           "direct_statuses": {
-            "403": 5,
-            "200": 5
+            "403": 2,
+            "200": 1
           },
           "blocked": true,
           "fallback_used": true,
-          "candidate_reviews_seen": 30,
-          "new_reviews_added": 4,
+          "candidate_reviews_seen": 0,
+          "new_reviews_added": 0,
           "advertised_total": null,
-          "latest_candidate_date": "2026-09-23",
+          "latest_candidate_date": null,
           "notes": [
             "direct BBB customer reviews blocked for https://www.bbb.org/us/tx/dallas/profile/online-car-dealers/copart-inc-0875-90403032",
-            "reader challenge for https://www.bbb.org/us/tx/dallas/profile/online-car-dealers/copart-inc-0875-90403032/customer-reviews?page=4",
             "direct BBB complaints blocked for https://www.bbb.org/us/tx/dallas/profile/online-car-dealers/copart-inc-0875-90403032",
             "reader challenge for https://www.bbb.org/us/tx/dallas/profile/online-car-dealers/copart-inc-0875-90403032/complaints"
           ],
-          "errors": [],
+          "errors": [
+            "reader error for https://www.bbb.org/us/tx/dallas/profile/online-car-dealers/copart-inc-0875-90403032/customer-reviews: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=60)"
+          ],
           "review_count": 941,
-          "existing_review_count": 937,
+          "existing_review_count": 941,
           "present": true,
           "latest_review_date": "2026-09-23",
-          "existing_latest_date": "2026-08-18",
-          "status": "ok"
+          "existing_latest_date": "2026-09-23",
+          "status": "stale_or_no_recent_candidates"
         },
         {
           "source_website": "trustpilot.com",
           "attempted": true,
           "direct_pages": 9,
-          "fallback_pages": 23,
+          "fallback_pages": 31,
           "direct_statuses": {
             "403": 9,
-            "200": 23
+            "200": 31
           },
           "blocked": true,
           "fallback_used": true,
-          "candidate_reviews_seen": 269,
-          "new_reviews_added": 22,
+          "candidate_reviews_seen": 421,
+          "new_reviews_added": 5,
           "advertised_total": null,
-          "latest_candidate_date": "2026-10-06",
+          "latest_candidate_date": "2026-11-02",
           "notes": [
             "direct Trustpilot blocked for copart.co.uk",
-            "reader challenge for https://www.trustpilot.com/review/copart.co.uk?page=3",
+            "reader challenge for https://www.trustpilot.com/review/copart.co.uk?page=11",
             "direct Trustpilot blocked for copart.com",
             "reader challenge for https://www.trustpilot.com/review/copart.com?page=11",
             "direct Trustpilot blocked for copart.de",
@@ -142,14 +143,15 @@ window.REVIEW_DATASETS = {
             "reader challenge for https://www.trustpilot.com/review/copart.nl",
             "direct Trustpilot blocked for copart.it",
             "reader challenge for https://www.trustpilot.com/review/copart.it",
-            "direct Trustpilot blocked for copart.ca"
+            "direct Trustpilot blocked for copart.ca",
+            "reader challenge for https://www.trustpilot.com/review/copart.ca"
           ],
           "errors": [],
-          "review_count": 263,
-          "existing_review_count": 241,
+          "review_count": 268,
+          "existing_review_count": 263,
           "present": true,
-          "latest_review_date": "2026-09-25",
-          "existing_latest_date": "2026-07-20",
+          "latest_review_date": "2026-10-14",
+          "existing_latest_date": "2026-09-25",
           "status": "ok"
         },
         {
@@ -247,43 +249,194 @@ window.REVIEW_DATASETS = {
         {
           "source_website": "google.com",
           "attempted": true,
-          "direct_pages": 873,
+          "direct_pages": 170,
           "fallback_pages": 0,
           "direct_statuses": {
-            "200": 873
+            "200": 170
           },
           "blocked": false,
           "fallback_used": false,
-          "candidate_reviews_seen": 3620,
-          "new_reviews_added": 113,
+          "candidate_reviews_seen": 18,
+          "new_reviews_added": 0,
           "advertised_total": null,
-          "latest_candidate_date": "2026-10-06",
+          "latest_candidate_date": "2026-08-19",
           "notes": [
-            "Google Business Profile discovery completed: 72/72 queries succeeded and 216 unique validated US profiles were selected.",
-            "Validated 214 US Google Business Profiles; 2 failed and 0 were skipped after the circuit breaker. Successful profiles were paginated newest-first through per-profile incremental overlap boundaries."
+            "Google Business Profile discovery completed: 67/67 queries succeeded and 216 unique validated US profiles were selected.",
+            "Validated 5 US Google Business Profiles; 11 failed and 200 were skipped after the circuit breaker. Successful profiles were paginated newest-first through per-profile incremental overlap boundaries."
           ],
           "errors": [
             "[CLOSED] Copart - Jacksonville East [0x88e5ba1f49465365:0xc436311ceac59ef7]: newest review RPC did not load",
-            "Copart [0x80c25341a6543b5f:0xf29e32dc4dcf394a]: newest review RPC did not load"
+            "[CLOSED] Copart - Punta Gorda [0x88dca771d7def04b:0xee95a25a94e7c802]: Response.body: Protocol error (Network.getResponseBody): No data found for resource with given identifier\nResponse body is not available for a response that was navigated away from. Read response.body() before triggering any navi",
+            "[CLOSED] Copart - Salt Lake City North [0x8752f6e2e313caa9:0xab631f805c05d36f]: newest review RPC did not load",
+            "Copart [0x88626986bd637fd5:0x330ba218453c6021]: newest review RPC did not load",
+            "Copart [0x52b33121975753cf:0x22834afe7b18657e]: newest review RPC did not load",
+            "Copart [0x80c25341a6543b5f:0xf29e32dc4dcf394a]: newest review RPC did not load",
+            "Copart - Abilene [0x8656855e69478b1b:0xd9b0d6e36022a489]: newest review RPC did not load",
+            "Copart - Adelanto [0x80c36fd137accac5:0xff177c73ccf09e13]: newest review RPC did not load",
+            "Copart - Akron [0x8830d3c9f287f237:0x8765346cae4762f3]: newest review RPC did not load",
+            "Copart - Albany [0x89de7347839bfbd7:0x2f00025f0c2262a0]: newest review RPC did not load",
+            "Copart - Albuquerque [0x87220ee934b2ba93:0x6edfdefbd5fe27c]: newest review RPC did not load"
           ],
           "profile_retention_used": true,
-          "profiles_completed": 214,
-          "profiles_failed": 2,
-          "profiles_skipped_after_circuit_breaker": 0,
+          "profiles_completed": 5,
+          "profiles_failed": 11,
+          "profiles_skipped_after_circuit_breaker": 200,
           "last_successful_refresh_until": "2026-08-31",
           "review_count": 4224,
-          "existing_review_count": 4111,
+          "existing_review_count": 4224,
           "present": true,
           "latest_review_date": "2026-09-30",
-          "existing_latest_date": "2026-08-31",
+          "existing_latest_date": "2026-09-30",
           "status": "partial_profile_retention"
         }
       ],
       "sentiments": {
-        "positive": 4128,
-        "negative": 9227
+        "positive": 4185,
+        "negative": 9325
       },
       "source_urls": [
+        "https://www.reddit.com/r/Copartonline/comments/1xjt85c/has_anyone_else_noticed_fewer_car_listings_having/19rwulmknhm82/",
+        "https://www.reddit.com/r/Copartonline/comments/1xjt85c/has_anyone_else_noticed_fewer_car_listings_having/19rwpsys6aoqp/",
+        "https://www.reddit.com/r/Copartonline/comments/1xjt85c/has_anyone_else_noticed_fewer_car_listings_having/",
+        "https://www.reddit.com/r/Copartonline/comments/1xjpxia/should_i_try_it/19rwfzbdlwkcg/",
+        "https://www.reddit.com/r/Copartonline/comments/1xjpxia/should_i_try_it/19rwfv65trimc/",
+        "https://www.reddit.com/r/Copartonline/comments/1xjb8us/record_relists_yv1lz56d1y2655112/19rvt4w7nwqdc/",
+        "https://www.reddit.com/r/Copartonline/comments/1xjb8us/record_relists_yv1lz56d1y2655112/19rvskaefpll0/",
+        "https://www.reddit.com/r/Copartonline/comments/1xjb8us/record_relists_yv1lz56d1y2655112/19rvmzj6bvog2/",
+        "https://www.reddit.com/r/Copartonline/comments/1xif6ab/psa_run_and_drive_waterflood_lemons/19ruv6j6m6pl1/",
+        "https://play.google.com/store/apps/details?id=com.copart.membermobile&hl=en&gl=us",
+        "https://www.reddit.com/r/Copartonline/comments/1xif6ab/psa_run_and_drive_waterflood_lemons/",
+        "https://www.reddit.com/r/Copartonline/comments/1xif6ab/psa_run_and_drive_waterflood_lemons/19rtvu28p0xz4/",
+        "https://www.reddit.com/r/Copartonline/comments/1xif6ab/psa_run_and_drive_waterflood_lemons/19rtvnyg2f474/",
+        "https://www.reddit.com/r/Copartonline/comments/1xh3bzg/reach_out_to_seller/",
+        "https://www.reddit.com/r/Copartonline/comments/1xge4zr/new_buyer_help_understanding_on_approval_auction/",
+        "https://www.reddit.com/r/Copartonline/comments/1xgdje5/copart_job/",
+        "https://www.reddit.com/r/Copartonline/comments/1xgdje5/copart_job/19rqt0uajyuci/",
+        "https://www.reddit.com/r/Copartonline/comments/1xgdje5/copart_job/19rpo65vj7lsx/",
+        "https://www.reddit.com/r/Copartonline/comments/1xge4zr/new_buyer_help_understanding_on_approval_auction/19rphue8462yq/",
+        "https://www.reddit.com/r/Copartonline/comments/1xg77f7/anyone_found_a_cheaper_carfax_alternative_that/",
+        "https://www.reddit.com/r/Copartonline/comments/1xfmtpb/uhaul_self_transport/",
+        "https://www.reddit.com/r/Copartonline/comments/1xe8sny/2017_buick_cascada_advice_on_how_to_find_reduced/19ropniy6m7ac/",
+        "https://www.reddit.com/r/Copartonline/comments/1xfmtpb/uhaul_self_transport/19roi1myt957p/",
+        "https://itunes.apple.com/us/review?id=414275302&type=Purple%20Software&reviewId=14715540312",
+        "https://www.reddit.com/r/Copartonline/comments/1xd0zbs/is_copart_good/19rnelkcf0sdf/",
+        "https://www.reddit.com/r/Copartonline/comments/1xdt5eb/washington_state_salvage_title_for_an_out_of/19rketafp1czl/",
+        "https://www.reddit.com/r/Copartonline/comments/1x9froa/auction_access_in_tennessee/19rk8pwhmh5gi/",
+        "https://www.reddit.com/r/Copartonline/comments/1xdt5eb/washington_state_salvage_title_for_an_out_of/",
+        "https://www.reddit.com/r/Copartonline/comments/1xdjyz7/c5_sold_at_auction/",
+        "https://www.reddit.com/r/Copartonline/comments/1xd0zbs/is_copart_good/",
+        "https://www.reddit.com/r/Copartonline/comments/1xdt5eb/washington_state_salvage_title_for_an_out_of/19rk1c8kbmebl/",
+        "https://www.reddit.com/r/Copartonline/comments/1xdknrr/need_advice_whether_to_buy_a_car_on_copart/19rjxasc6y6jp/",
+        "https://www.reddit.com/r/askcarsales/comments/1xd49px/got_into_a_fender_bender_with_the_lease_question/",
+        "https://itunes.apple.com/us/review?id=414275302&type=Purple%20Software&reviewId=14704159238",
+        "https://itunes.apple.com/us/review?id=1410332198&type=Purple%20Software&reviewId=14702124537",
+        "https://www.reddit.com/r/Copartonline/comments/1xcsrur/airbag_deployment_investigation_72299636/",
+        "https://www.reddit.com/r/Copartonline/comments/1xcek5n/looking_for_the_previous_owner_of_this_alfa_romeo/19rhduyvouri8/",
+        "https://www.reddit.com/r/Copartonline/comments/1s9x24e/copart_delivery/19rflmaptnr8l/",
+        "https://www.reddit.com/r/Copartonline/comments/1x46w4q/are_all_trucks_on_copart_held_together_by_hopes/phwpazw/",
+        "https://www.reddit.com/r/Copartonline/comments/1xaob16/looking_to_buy_this_with_no_experience/phwlzwf/",
+        "https://www.reddit.com/r/Copartonline/comments/1xaob16/looking_to_buy_this_with_no_experience/phwayj6/",
+        "https://www.reddit.com/r/Copartonline/comments/1xaob16/looking_to_buy_this_with_no_experience/phw5l9h/",
+        "https://www.reddit.com/r/Copartonline/comments/1xaob16/looking_to_buy_this_with_no_experience/phvkklo/",
+        "https://www.reddit.com/r/Copartonline/comments/1xaob16/looking_to_buy_this_with_no_experience/phv6ppp/",
+        "https://itunes.apple.com/us/review?id=414275302&type=Purple%20Software&reviewId=14684053586",
+        "https://www.reddit.com/r/Copartonline/comments/1x749a7/is_this_a_biohazard_sticker/phci7ha/",
+        "https://www.reddit.com/r/Copartonline/comments/1x73goc/won_my_first_salvage_auction_shipping_advice/phchb18/",
+        "https://www.reddit.com/r/Copartonline/comments/1x73goc/won_my_first_salvage_auction_shipping_advice/ph9miaz/",
+        "https://www.reddit.com/r/Copartonline/comments/1x6vy1m/bought_a_run_drive_vehicle_from_copart_canada/ph9m9ey/",
+        "https://www.reddit.com/r/Copartonline/comments/1x6vy1m/bought_a_run_drive_vehicle_from_copart_canada/ph45uu0/",
+        "https://www.reddit.com/r/Copartonline/comments/1x6vy1m/bought_a_run_drive_vehicle_from_copart_canada/ph447ce/",
+        "https://www.reddit.com/r/Copartonline/comments/1x749a7/is_this_a_biohazard_sticker/ph3ly0c/",
+        "https://www.reddit.com/r/Copartonline/comments/1x6vy1m/bought_a_run_drive_vehicle_from_copart_canada/ph2ooi4/",
+        "https://www.reddit.com/r/Copartonline/comments/1x73goc/won_my_first_salvage_auction_shipping_advice/ph2621d/",
+        "https://www.reddit.com/r/Copartonline/comments/1x6vy1m/bought_a_run_drive_vehicle_from_copart_canada/ph1rw42/",
+        "https://www.reddit.com/r/Copartonline/comments/1x73goc/won_my_first_salvage_auction_shipping_advice/ph1ks4e/",
+        "https://www.reddit.com/r/Copartonline/comments/1x6bs6e/buying_a_car_for_the_motor_what_to_do_with_the/",
+        "https://www.reddit.com/r/Copartonline/comments/1x6vy1m/bought_a_run_drive_vehicle_from_copart_canada/pgzqtz0/",
+        "https://www.reddit.com/r/Copartonline/comments/1x6743r/at_what_price_would_you_walk_away_from_this/pgxcxou/",
+        "https://www.reddit.com/r/Copartonline/comments/1x6db8o/whats_up_with_this/pgx2g11/",
+        "https://www.reddit.com/r/Copartonline/comments/1x6bs6e/buying_a_car_for_the_motor_what_to_do_with_the/pgwsixa/",
+        "https://www.reddit.com/r/Copartonline/comments/1x6db8o/whats_up_with_this/pgwjze3/",
+        "https://www.reddit.com/r/Copartonline/comments/1x6bs6e/buying_a_car_for_the_motor_what_to_do_with_the/pguj9va/",
+        "https://www.reddit.com/r/Copartonline/comments/1x6743r/at_what_price_would_you_walk_away_from_this/pgtxntz/",
+        "https://www.reddit.com/r/Copartonline/comments/1x6743r/at_what_price_would_you_walk_away_from_this/pgsw1m0/",
+        "https://www.reddit.com/r/Copartonline/comments/1x6743r/at_what_price_would_you_walk_away_from_this/pgssroq/",
+        "https://itunes.apple.com/us/review?id=414275302&type=Purple%20Software&reviewId=14671502649",
+        "https://www.trustpilot.com/reviews/6acff8999ef8da728d0d50d9",
+        "https://www.reddit.com/r/Copartonline/comments/1x46w4q/are_all_trucks_on_copart_held_together_by_hopes/pgf24p1/",
+        "https://www.reddit.com/r/Copartonline/comments/1x47mpg/any_good_experiances_with_flipping_atvs_and_sbs/pgew768/",
+        "https://www.reddit.com/r/Copartonline/comments/1x46w4q/are_all_trucks_on_copart_held_together_by_hopes/",
+        "https://www.reddit.com/r/Copartonline/comments/1x47mpg/any_good_experiances_with_flipping_atvs_and_sbs/pgda44p/",
+        "https://www.reddit.com/r/Copartonline/comments/1x46w4q/are_all_trucks_on_copart_held_together_by_hopes/pfiwp5x/",
+        "https://www.reddit.com/r/Copartonline/comments/1x46w4q/are_all_trucks_on_copart_held_together_by_hopes/pfif9ui/",
+        "https://www.reddit.com/r/Copartonline/comments/1x46w4q/are_all_trucks_on_copart_held_together_by_hopes/pfhbk9t/",
+        "https://www.reddit.com/r/Copartonline/comments/1x46w4q/are_all_trucks_on_copart_held_together_by_hopes/pfh9rtv/",
+        "https://www.trustpilot.com/reviews/6acebf2f5aa07c721b3bc221",
+        "https://www.reddit.com/r/Copartonline/comments/1x2s1sy/why_does_hail_make_cars_a_total_loss/",
+        "https://www.reddit.com/r/Copartonline/comments/1x2hk9y/my_dads_experience_with_copart/",
+        "https://www.reddit.com/r/Copartonline/comments/1wzeju5/success_stories/pf5aapc/",
+        "https://www.reddit.com/r/Copartonline/comments/1x2hk9y/my_dads_experience_with_copart/pf4160a/",
+        "https://www.reddit.com/r/Copartonline/comments/1x2hk9y/my_dads_experience_with_copart/pf2h6cw/",
+        "https://www.reddit.com/r/Copartonline/comments/1x1yr38/found_a_car_on_copart_that_im_considering_buying/pez0cvl/",
+        "https://www.reddit.com/r/Copartonline/comments/1x1yr38/found_a_car_on_copart_that_im_considering_buying/peylnob/",
+        "https://www.reddit.com/r/Copartonline/comments/1x1yr38/found_a_car_on_copart_that_im_considering_buying/peyejay/",
+        "https://www.reddit.com/r/Copartonline/comments/1x1yr38/found_a_car_on_copart_that_im_considering_buying/",
+        "https://www.reddit.com/r/Copartonline/comments/1x1yr38/found_a_car_on_copart_that_im_considering_buying/peyaz82/",
+        "https://www.reddit.com/r/Copartonline/comments/1x1yr38/found_a_car_on_copart_that_im_considering_buying/pey2cm2/",
+        "https://www.reddit.com/r/Copartonline/comments/1x0qujw/cheapest_place_to_pull_carfax/pet3bna/",
+        "https://play.google.com/store/apps/details?id=com.copart.transportation&hl=en&gl=us",
+        "https://www.reddit.com/r/Copartonline/comments/1x0c2a8/salvage_repair_experts_cost_of_air_bags/pemjpsu/",
+        "https://www.reddit.com/r/Copartonline/comments/1wziqo1/help/pem3c6h/",
+        "https://www.reddit.com/r/Copartonline/comments/1x0c2a8/salvage_repair_experts_cost_of_air_bags/pelcmpn/",
+        "https://www.reddit.com/r/Copartonline/comments/1wzwgk8/first_time_buying_from_copart_uk_can_i_collect/pegn3b6/",
+        "https://www.reddit.com/r/Copartonline/comments/1wzffbl/uship_how_do_you_like_them_for_towing_needs/peddgiw/",
+        "https://www.reddit.com/r/Copartonline/comments/1ww1y67/why_is_this_car_not_selling_i_want_it_so_bad/pec46cw/",
+        "https://www.reddit.com/r/Copartonline/comments/1wui7qn/wish_me_luck_first_copart_purchase_odd_details/pec3sv1/",
+        "https://www.reddit.com/r/Copartonline/comments/1wzeju5/success_stories/",
+        "https://www.reddit.com/r/Copartonline/comments/1wzefnr/success_story/",
+        "https://www.reddit.com/r/Copartonline/comments/1wzeju5/success_stories/pebg46p/",
+        "https://www.reddit.com/r/Copartonline/comments/1wzeju5/success_stories/pebaspp/",
+        "https://www.reddit.com/r/Copartonline/comments/1wwpwlt/any_brokers_in_texas/peak8iy/",
+        "https://www.trustpilot.com/reviews/6ad85e183cac8813bc1e4d8d",
+        "https://www.reddit.com/r/Copartonline/comments/1wybknm/bill_of_sale_registration_at_dmv/",
+        "https://www.reddit.com/r/Copartonline/comments/1wxu66p/same_car_but_different_tail_lights/pe39184/",
+        "https://www.reddit.com/r/Copartonline/comments/1wjbolq/humblemechanics_bad_experience_with_copart/pe2b0cz/",
+        "https://www.reddit.com/r/Copartonline/comments/1wxu66p/same_car_but_different_tail_lights/pe1aemt/",
+        "https://www.reddit.com/r/Copartonline/comments/1wui7qn/wish_me_luck_first_copart_purchase_odd_details/pe04kgf/",
+        "https://play.google.com/store/apps/details?id=com.copart.membermobile&hl=es&gl=us",
+        "https://www.reddit.com/r/Copartonline/comments/1wxff8d/help_tracing_history_of_an_imported_2018_tundra/",
+        "https://www.reddit.com/r/Copartonline/comments/1wx1o4s/shipping_companies/pdsmdam/",
+        "https://www.reddit.com/r/Copartonline/comments/1wwpwlt/any_brokers_in_texas/pdq7adm/",
+        "https://www.reddit.com/r/Copartonline/comments/1wjbolq/humblemechanics_bad_experience_with_copart/pdpvrbh/",
+        "https://www.reddit.com/r/Copartonline/comments/1wwpwlt/any_brokers_in_texas/pdpmkze/",
+        "https://www.reddit.com/r/Copartonline/comments/1wwsurb/i_had_the_unfortunate_event_of_being_hit_by_an/",
+        "https://www.reddit.com/r/Copartonline/comments/1wwpwlt/any_brokers_in_texas/",
+        "https://www.reddit.com/r/Copartonline/comments/1wwqxr6/possible_to_obtain_duplicate_title_for_older_lot/pdneq6i/",
+        "https://www.reddit.com/r/Copartonline/comments/1iowsot/what_brokers_let_you_pick_the_car_up_in_person/pdjpfyn/",
+        "https://www.reddit.com/r/Copartonline/comments/1wvz5z0/what_are_thoughts_on_this_vehicle/",
+        "https://www.reddit.com/r/Copartonline/comments/1wvh5iw/did_i_pay_too_much_vin_5j8yd4h82ll029206/",
+        "https://www.reddit.com/r/Copartonline/comments/1iowsot/what_brokers_let_you_pick_the_car_up_in_person/pdgxnam/",
+        "https://www.reddit.com/r/Copartonline/comments/1wvz5z0/what_are_thoughts_on_this_vehicle/pdgbwck/",
+        "https://www.reddit.com/r/Copartonline/comments/1wuq6st/anyone_gotten_a_copart_car/pdd9it6/",
+        "https://www.reddit.com/r/Copartonline/comments/1wvh5iw/did_i_pay_too_much_vin_5j8yd4h82ll029206/pdcyo2f/",
+        "https://www.reddit.com/r/Copartonline/comments/1wvh5iw/did_i_pay_too_much_vin_5j8yd4h82ll029206/pdcvv03/",
+        "https://www.trustpilot.com/reviews/6acdc897a9be78bca161789f",
+        "https://www.reddit.com/r/Copartonline/comments/1wv8xtu/copdar_a_noaccount_vehiclelabeling_tool_looking/",
+        "https://www.reddit.com/r/Copartonline/comments/1wv1lbi/finally_pulled_the_trigger_on_my_first_salvage_car/",
+        "https://www.reddit.com/r/Copartonline/comments/1wv04h1/insurance_cars/pdalga4/",
+        "https://www.reddit.com/r/Copartonline/comments/1wv04h1/insurance_cars/pda14p0/",
+        "https://www.reddit.com/r/Copartonline/comments/1wv1lbi/finally_pulled_the_trigger_on_my_first_salvage_car/pd9jq6l/",
+        "https://www.reddit.com/r/Copartonline/comments/1wubvd6/in_need_of_a_good_broker_that_plays_from_al/pd8x4qv/",
+        "https://www.reddit.com/r/Copartonline/comments/1wubvd6/in_need_of_a_good_broker_that_plays_from_al/pd8wi8v/",
+        "https://www.reddit.com/r/Copartonline/comments/1wui7qn/wish_me_luck_first_copart_purchase_odd_details/pd8805b/",
+        "https://www.reddit.com/r/Copartonline/comments/1wuq6st/anyone_gotten_a_copart_car/pd5rkf9/",
+        "https://www.reddit.com/r/Copartonline/comments/1wuq6st/anyone_gotten_a_copart_car/pd5i6i5/",
+        "https://www.reddit.com/r/Copartonline/comments/1wubvd6/in_need_of_a_good_broker_that_plays_from_al/pd5gqr1/",
+        "https://www.reddit.com/r/Copartonline/comments/1wui7qn/wish_me_luck_first_copart_purchase_odd_details/pd4l1l9/",
+        "https://www.reddit.com/r/Copartonline/comments/1wqqwg5/estimated_priced_for_2020_toyota_highlander_on/pd4ji3w/",
+        "https://www.reddit.com/r/Copartonline/comments/1wujdpp/buyers_remorse_take_the_600_hit_or_just_keep_it/pd4gica/",
+        "https://www.reddit.com/r/Copartonline/comments/1wui7qn/wish_me_luck_first_copart_purchase_odd_details/pd42d19/",
+        "https://play.google.com/store/apps/details?id=com.copart.membermobile&hl=ru&gl=us",
         "https://www.reddit.com/r/Copartonline/comments/1wujdpp/buyers_remorse_take_the_600_hit_or_just_keep_it/",
         "https://www.reddit.com/r/Copartonline/comments/1wui7qn/wish_me_luck_first_copart_purchase_odd_details/",
         "https://www.reddit.com/r/Copartonline/comments/1wujdpp/buyers_remorse_take_the_600_hit_or_just_keep_it/pd3tkk2/",
@@ -292,7 +445,6 @@ window.REVIEW_DATASETS = {
         "https://www.reddit.com/r/Copartonline/comments/1wubvd6/in_need_of_a_good_broker_that_plays_from_al/pd38p1c/",
         "https://www.reddit.com/r/Copartonline/comments/1wubvd6/in_need_of_a_good_broker_that_plays_from_al/pd2z50r/",
         "https://www.reddit.com/r/Copartonline/comments/1wquf44/but_it_now_price/pcxliji/",
-        "https://play.google.com/store/apps/details?id=com.copart.membermobile&hl=en&gl=us",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21OZk9YQjNkbU4xYzBKaFNFWlhkakpPUWtRMlJGRRAB!2m1!1s0x0:0x280b94bad049a657!3m1!1s2@1:CAIQACodChtycF9oOmNfOXB3dmN1c0JhSEZXdjJOQkQ2RFE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCbGJtUjNlWGswTkd0amJGWllOV2hHVWt4ZmRXYxAB!2m1!1s0x0:0xe920fb728e850860!3m1!1s2@1:CAIQACodChtycF9oOjBlbmR3eXk0NGtjbFZYNWhGUkxfdWc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w5Q05sRmZVakpHWmt0c1pWUXdkR2REU1RoMFJsRRAB!2m1!1s0x0:0xe920fb728e850860!3m1!1s2@1:CAIQACodChtycF9oOl9CNlFfUjJGZktsZVQwdGdDSTh0RlE%7C%7C?hl=en",
@@ -301,6 +453,7 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pndGRtOVhlV2hDZWt0WmNsOWpRV2RGVDFKWGIyYxAB!2m1!1s0x0:0x4be710e6f7a91ba8!3m1!1s2@1:CAIQACodChtycF9oOjgtdm9XeWhCektZcl9jQWdFT1JXb2c%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25WdFExRmpTbTlWYkZWYWJWcFdYM05GY3kxWVExRRAB!2m1!1s0x0:0x38d7840c47237c60!3m1!1s2@1:CAIQACodChtycF9oOnVtQ1FjSm9VbFVabVpWX3NFcy1YQ1E%7C%7C?hl=en",
         "https://apps.apple.com/us/app/id414275302?see-all=reviews&platform=iphone&reviewId=14610199680",
+        "https://itunes.apple.com/us/review?id=414275302&type=Purple%20Software&reviewId=14611922191",
         "https://www.reddit.com/r/Copartonline/comments/1wq0q5k/copart_success_stories/pcqbadc/",
         "https://play.google.com/store/apps/details?id=com.copart.quikauction&hl=en&gl=us",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xobFRVdzNOazUxZW1oM1IyaEZVQzA0U1VOM2JGRRAB!2m1!1s0x0:0x8cd7a3c12956220f!3m1!1s2@1:CAIQACodChtycF9oOlhlTUw3Nk51emh3R2hFUC04SUN3bFE%7C%7C?hl=en",
@@ -418,7 +571,6 @@ window.REVIEW_DATASETS = {
         "https://www.reddit.com/r/Copartonline/comments/1wjbolq/humblemechanics_bad_experience_with_copart/pajzya2/",
         "https://www.reddit.com/r/Copartonline/comments/1wjbolq/humblemechanics_bad_experience_with_copart/pajxx1p/",
         "https://www.reddit.com/r/Copartonline/comments/1wjbolq/humblemechanics_bad_experience_with_copart/pahk23s/",
-        "https://play.google.com/store/apps/details?id=com.copart.transportation&hl=en&gl=us",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT210d05YaEVZbEZPV2xWSlFuQk1SRzFmVjNweE4yYxAB!2m1!1s0x0:0x884dfdcb2ae4c7d!3m1!1s2@1:CAIQACodChtycF9oOmtwNXhEYlFOWlVJQnBMRG1fV3pxN2c%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KWlRXVldSall5YUV3NVF6bFFaMVpSZEZoMlVGRRAB!2m1!1s0x0:0x8cd7a3c12956220f!3m1!1s2@1:CAIQACodChtycF9oOnJZTWVWRjYyaEw5QzlQZ1ZRdFh2UFE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20xRmJGQjZSek5SZG5WTVgyVXpWVWxZUzNkRVIyYxAB!2m1!1s0x0:0x5fbb1e17c80425ad!3m1!1s2@1:CAIQACodChtycF9oOm1FbFB6RzNRdnVMX2UzVUlYS3dER2c%7C%7C?hl=en",
@@ -442,155 +594,14 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xSTmRFZG5VVmRVV2pKR1VtOWZVSEYxWVhwdE4yYxAB!2m1!1s0x0:0x666f0cdff4852705!3m1!1s2@1:CAIQACodChtycF9oOlRNdEdnUVdUWjJGUm9fUHF1YXptN2c%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25CemVqazBkRXRrUjJ4WU5uQkZaVlp0YXpWcWFFRRAB!2m1!1s0x0:0xdff3d00f69721772!3m1!1s2@1:CAIQACodChtycF9oOnBzejk0dEtkR2xYNnBFZVZtazVqaEE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCclNVWmplamMzZDFWbUxVZHJNa0owZFVrek5XYxAB!2m1!1s0x0:0xb3d4a29cf974e604!3m1!1s2@1:CAIQACodChtycF9oOjBrSUZjejc3d1VmLUdrMkJ0dUkzNWc%7C%7C?hl=en",
-        "https://www.trustpilot.com/reviews/6aaa5708d6fadda51348a69f",
-        "https://www.reddit.com/r/Copartonline/comments/1widceo/how_i_stopped_worrying_about_outofstate/",
-        "https://www.reddit.com/r/Copartonline/comments/1wi2cmp/stated_bids_on_copart_and_ridesafely_will_go/",
-        "https://www.reddit.com/r/Copartonline/comments/1wdwxqx/a_better_bid_scam/pa8x549/",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w4NVZUZHNjRWxaWDB3emVYVkpTa3c1Um1aeU1VRRAB!2m1!1s0x0:0xd0a1164bc1f147aa!3m1!1s2@1:CAIQACodChtycF9oOl85VTdscElZX0wzeXVJSkw5RmZyMUE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xaUk9WSjVURmhKTkROdFNrVm5PRFpzVVV0bmFuYxAB!2m1!1s0x0:0xcaee4a92d2a3caa7!3m1!1s2@1:CAIQACodChtycF9oOlZROVJ5TFhJNDNtSkVnODZsUUtnanc%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21WRlFuQkJlRWhDTWkxMFRrbFJhWFZ4ZUhRNU1YYxAB!2m1!1s0x0:0xc7874da800af1c04!3m1!1s2@1:CAIQACodChtycF9oOmVFQnBBeEhCMi10TklRaXVxeHQ5MXc%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkMlZYaHFhVnA1TlRjMlpVSjFVblpsYjFJeVdtYxAB!2m1!1s0x0:0x964fb152e105b03b!3m1!1s2@1:CAIQACodChtycF9oOkd2VXhqaVp5NTc2ZUJ1UnZlb1IyWmc%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2twRlZVMDRhV3RzV1dsa1lWZHBObWh3Y0RaWFVrRRAB!2m1!1s0x0:0xa2d754eaf842b06d!3m1!1s2@1:CAIQACodChtycF9oOkpFVU04aWtsWWlkYVdpNmhwcDZXUkE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21KbGVGaFVSVzFEU25SWlRHbFNkazR4Tms4eFNYYxAB!2m1!1s0x0:0xee98173de0375e53!3m1!1s2@1:CAIQACodChtycF9oOmJleFhURW1DSnRZTGlSdk4xNk8xSXc%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25SR2QwUjJWbVJQWmxBMldXd3hla3RhV2xVeVZGRRAB!2m1!1s0x0:0xe27853c94cdbe0a4!3m1!1s2@1:CAIQACodChtycF9oOnRGd0R2VmRPZlA2WWwxektaWlUyVFE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20xTFZVOHhhM05hYkVsRWFqSnZZM2hqZEdVNE4yYxAB!2m1!1s0x0:0xe81b2c275ee712d4!3m1!1s2@1:CAIQACodChtycF9oOm1LVU8xa3NabElEajJvY3hjdGU4N2c%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21SNU1FZGlUazkwZUhGSldIRTRiVXBMYW05SVJHYxAB!2m1!1s0x0:0x38d7840c47237c60!3m1!1s2@1:CAIQACodChtycF9oOmR5MEdiTk90eHFJWHE4bUpLam9IRGc%7C%7C?hl=en",
-        "https://www.trustpilot.com/reviews/6ab6587bf68fd740e829c733",
-        "https://www.reddit.com/r/Copartonline/comments/1wgnkrl/as_a_dealer_has_anyone_called_copart_to_find_out/p9yoelb/",
-        "https://www.reddit.com/r/Copartonline/comments/1if5s4k/titles_thru_broker/p9xkzg5/",
-        "https://www.reddit.com/r/Copartonline/comments/1wftuha/help_a_small_time_spender_get_started/p9wgq42/",
-        "https://www.reddit.com/r/Copartonline/comments/1wgnkrl/as_a_dealer_has_anyone_called_copart_to_find_out/p9w45ua/",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xSM2EwcE9XWFpDVEZSTlRVZEJiRTVKZEMxSE0wRRAB!2m1!1s0x0:0x2e81baafba79d0d8!3m1!1s2@1:CAIQACodChtycF9oOlR3a0pOWXZCTFRNTUdBbE5JdC1HM0E%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21NMFptWm9SSEo0WWtsM2MxSlhPRTlDYmpoUWVGRRAB!2m1!1s0x0:0x3f191933e82732a6!3m1!1s2@1:CAIQACodChtycF9oOmM0ZmZoRHJ4Ykl3c1JXOE9CbjhQeFE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tWWmJ6RjRMVWxzWm1WV2FEUldMVmRVZFVwZk0xRRAB!2m1!1s0x0:0x2917fb070357b514!3m1!1s2@1:CAIQACodChtycF9oOkVZbzF4LUlsZmVWaDRWLVdUdUpfM1E%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT210NFpubzVhMEl3YmxaWVQwZHZTWEZvVlZSVVgxRRAB!2m1!1s0x0:0x832b2cf2d3635958!3m1!1s2@1:CAIQACodChtycF9oOmt4Zno5a0IwblZYT0dvSXFoVVRUX1E%7C%7C?hl=en",
-        "https://www.reddit.com/r/Copartonline/comments/1wftuha/help_a_small_time_spender_get_started/",
-        "https://www.reddit.com/r/Copartonline/comments/1wfqr19/inspection_help/",
-        "https://www.reddit.com/r/Copartonline/comments/1wftuha/help_a_small_time_spender_get_started/p9rdvuc/",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t0V1RIRm9lVVJZT1cxVVFqRkJTRTFPYzFZNFQyYxAB!2m1!1s0x0:0x3597f9feb8aa4d0a!3m1!1s2@1:CAIQACodChtycF9oOktWTHFoeURYOW1UQjFBSE1Oc1Y4T2c%7C%7C?hl=en",
-        "https://www.reddit.com/r/Copartonline/comments/1wdwxqx/a_better_bid_scam/p9ch7en/",
-        "https://www.reddit.com/r/Copartonline/comments/1we0lu5/car_title_and_registration/p9cffzn/",
-        "https://www.reddit.com/r/Copartonline/comments/1we0lu5/car_title_and_registration/p9ap7nk/",
-        "https://www.reddit.com/r/Copartonline/comments/1wdwxqx/a_better_bid_scam/p9a3jfk/",
-        "https://www.reddit.com/r/Copartonline/comments/1wdwxqx/a_better_bid_scam/p99imxd/",
-        "https://www.reddit.com/r/Copartonline/comments/1wdwxqx/a_better_bid_scam/",
-        "https://www.reddit.com/r/Copartonline/comments/1vuc5am/what_brokers_do_yall_use_to_buy_from_copart_for/p96dmw7/",
-        "https://www.reddit.com/r/Copartonline/comments/1vuc5am/what_brokers_do_yall_use_to_buy_from_copart_for/p93604t/",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGaFMwUlBha28xZWtod05sbDRjRk5hUjNwamRYYxAB!2m1!1s0x0:0x280b94bad049a657!3m1!1s2@1:CAIQACodChtycF9oOjFhS0RPako1ekhwNll4cFNaR3pjdXc%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21aZllUbE5WMjV5YW5CUlYxUnRNRkpyWTA1aGMyYxAB!2m1!1s0x0:0xa5fcc0b6c515453b!3m1!1s2@1:CAIQACodChtycF9oOmZfYTlNV25yanBRV1RtMFJrY05hc2c%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkclkwMU1XbWhvU2pGWGNYVkVWVFZNUkZSMllrRRAB!2m1!1s0x0:0xefe3711df87acdcc!3m1!1s2@1:CAIQACodChtycF9oOkdrY01MWmhoSjFXcXVEVTVMRFR2YkE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCUVMxRjJWVGwyVTJnd2FXSkdibmN3VnpRNVZrRRAB!2m1!1s0x0:0x8b436052a9c6338a!3m1!1s2@1:CAIQACodChtycF9oOjBQS1F2VTl2U2gwaWJGbncwVzQ5VkE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pFNFRFTk9ZVmhRWjA5SU5YZDJNRTVVU1UxWVNrRRAB!2m1!1s0x0:0x7c393ccb1ec07629!3m1!1s2@1:CAIQACodChtycF9oOjE4TENOYVhQZ09INXd2ME5USU1YSkE%7C%7C?hl=en",
-        "https://www.reddit.com/r/Copartonline/comments/1wclpab/terrible_experience_with_cashforcarscom/",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21ObWFEVjNObWRoTWpWUGRHOHdWRU4yWDJjMlVGRRAB!2m1!1s0x0:0xee253735fbc32f2f!3m1!1s2@1:CAIQACodChtycF9oOmNmaDV3NmdhMjVPdG8wVEN2X2c2UFE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tOVU5UUmFjR0l3TUc5SU1VeGFSelU1YjNWU1kxRRAB!2m1!1s0x0:0x7c6d354ec8466edc!3m1!1s2@1:CAIQACodChtycF9oOkNUNTRacGIwMG9IMUxaRzU5b3VSY1E%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t4bFFtUndjVnAyVW5oQlZFZFpUMWxaYVZkVVptYxAB!2m1!1s0x0:0xc78d263fdcefb466!3m1!1s2@1:CAIQACodChtycF9oOkxlQmRwcVp2UnhBVEdZT1lZaVdUZmc%7C%7C?hl=en",
-        "https://itunes.apple.com/us/review?id=414275302&type=Purple%20Software&reviewId=14534332652",
-        "https://www.reddit.com/r/Copartonline/comments/1w7chmr/flood_damaged_car_reported_as_hail_damage_help/p8nskse/",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25aalpHdERTVU5uVVZjM09VeEZUVWRVU1hNelltYxAB!2m1!1s0x0:0xcaee4a92d2a3caa7!3m1!1s2@1:CAIQACodChtycF9oOnZjZGtDSUNnUVc3OUxFTUdUSXMzYmc%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tacFNXdExiRFZGUzJ4RFEwMVFOM000UWtKRlIxRRAB!2m1!1s0x0:0xd7e5083d459b7720!3m1!1s2@1:CAIQACodChtycF9oOkZpSWtLbDVFS2xDQ01QN3M4QkJFR1E%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21kc05WSm9UelJtV1hwb2RYZHZkMVphVXkwd1ZWRRAB!2m1!1s0x0:0x3597f9feb8aa4d0a!3m1!1s2@1:CAIQACodChtycF9oOmdsNVJoTzRmWXpodXdvd1ZaUy0wVVE%7C%7C?hl=en",
-        "https://www.reddit.com/r/Copartonline/comments/1wat8ku/has_anyone_else_been_charged_copart_storage_fees/",
-        "https://www.reddit.com/r/Copartonline/comments/1wat8ku/has_anyone_else_been_charged_copart_storage_fees/p8llhtu/",
-        "https://www.reddit.com/r/Copartonline/comments/1wat8ku/has_anyone_else_been_charged_copart_storage_fees/p8kr5ug/",
-        "https://www.reddit.com/r/Copartonline/comments/1wat8ku/has_anyone_else_been_charged_copart_storage_fees/p8kqn95/",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21ObWRHNHdlVkZRVldRelFXdFVWWEZ4VFdkSFozYxAB!2m1!1s0x0:0x38dbad6460b79791!3m1!1s2@1:CAIQACodChtycF9oOmNmdG4weVFQVWQzQWtUVXFxTWdHZ3c%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201NGR6QjJNSE56WW1GcU1tWlpUM2xrUkZSdU9VRRAB!2m1!1s0x0:0x280b94bad049a657!3m1!1s2@1:CAIQACodChtycF9oOm54dzB2MHNzYmFqMmZZT3lkRFRuOUE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s5d2J6WnFTSEowWTNsRlNWSndNMW96VDFSeFIxRRAB!2m1!1s0x0:0xc7874da800af1c04!3m1!1s2@1:CAIQACodChtycF9oOk9wbzZqSHJ0Y3lFSVJwM1ozT1RxR1E%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w5WFUyWnZlRFZqVWxaa1pHUkZNV1JFUm5oM2QwRRAB!2m1!1s0x0:0xdcab6535bf8b6d62!3m1!1s2@1:CAIQACodChtycF9oOl9XU2ZveDVjUlZkZGRFMWRERnh3d0E%7C%7C?hl=en",
-        "https://www.reddit.com/r/Copartonline/comments/1w9ljjh/am_i_tripping/p8c9p55/",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21oNFNWRmpPVlYyWjI1WGRXMVBPRUpYYTNCR01VRRAB!2m1!1s0x0:0x2421c9a01f19b1d5!3m1!1s2@1:CAIQACodChtycF9oOmh4SVFjOVV2Z25XdW1POEJXa3BGMUE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xwV1VUQlJSMWRoVmpSRFpYSnNUbE41TFRReGJsRRAB!2m1!1s0x0:0xe27853c94cdbe0a4!3m1!1s2@1:CAIQACodChtycF9oOlpWUTBRR1dhVjRDZXJsTlN5LTQxblE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGNlRGTXRVV2RhZDFodVNEUlRVR3RWYTBkWmRXYxAB!2m1!1s0x0:0x39b9a9d2e418a1d1!3m1!1s2@1:CAIQACodChtycF9oOjF6TFMtUWdad1huSDRTUGtVa0dZdWc%7C%7C?hl=en",
-        "https://www.reddit.com/r/Copartonline/comments/1w8de3i/need_help/",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t0VlEwdG9hMFIzY1U1b1FXSnRabkJIT0RoZmJIYxAB!2m1!1s0x0:0xc7874da800af1c04!3m1!1s2@1:CAIQACodChtycF9oOktVQ0toa0R3cU5oQWJtZnBHODhfbHc%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT214SU1rVkZUMnBXUTJ3eU1rcGZZbkJZZUZJNGVuYxAB!2m1!1s0x0:0x452f3520f07c1c09!3m1!1s2@1:CAIQACodChtycF9oOmxIMkVFT2pWQ2wyMkpfYnBYeFI4enc%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21sdFduSlZWM1F4ZUVWNGEwZGhNMkZzUTJkeFpFRRAB!2m1!1s0x0:0x2917fb070357b514!3m1!1s2@1:CAIQACodChtycF9oOmltWnJVV3QxeEV4a0dhM2FsQ2dxZEE%7C%7C?hl=en",
-        "https://www.reddit.com/r/Copartonline/comments/1w7chmr/flood_damaged_car_reported_as_hail_damage_help/",
-        "https://www.reddit.com/r/Copartonline/comments/1w6ywhv/sharing_my_copart_experience/",
-        "https://www.reddit.com/r/Copartonline/comments/1w7chmr/flood_damaged_car_reported_as_hail_damage_help/p7vppt8/",
-        "https://www.reddit.com/r/Copartonline/comments/1w7chmr/flood_damaged_car_reported_as_hail_damage_help/p7u0c95/",
-        "https://www.reddit.com/r/Copartonline/comments/1w6ywhv/sharing_my_copart_experience/p7tqbhg/",
-        "https://www.reddit.com/r/Copartonline/comments/1w6ywhv/sharing_my_copart_experience/p7sigfi/",
-        "https://www.reddit.com/r/Copartonline/comments/1w6z9nz/is_there_a_website_to_look_up_past_salefinal/p7sc50w/",
-        "https://www.reddit.com/r/Copartonline/comments/1w6ywhv/sharing_my_copart_experience/p7s5o8e/",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pKQ2VuUjVVbXcyV2psR2JubGFSbVZUY1ZWQ2JWRRAB!2m1!1s0x0:0xf7b424537713a66f!3m1!1s2@1:CAIQACodChtycF9oOjJCenR5Umw2WjlGbnlaRmVTcVVCbVE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tGak1UUjNNV3BtTFRWb1MwUk5ZMFZLT0dVeFExRRAB!2m1!1s0x0:0xc7874da800af1c04!3m1!1s2@1:CAIQACodChtycF9oOkFjMTR3MWpmLTVoS0RNY0VKOGUxQ1E%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25FeWF6a3hNVGhLYTFGSGVFZHlVSFpmVkROVlNsRRAB!2m1!1s0x0:0x56dbf0e1d7c3bbdd!3m1!1s2@1:CAIQACodChtycF9oOnEyazkxMThKa1FHeEdyUHZfVDNVSlE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21sR1dqVXlXa1I2T1RkNGFEWjFjR1ZFU1VOalZYYxAB!2m1!1s0x0:0xd7e5083d459b7720!3m1!1s2@1:CAIQACodChtycF9oOmlGWjUyWkR6OTd4aDZ1cGVESUNjVXc%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20xWFMzVmphSEpTWlV3eVVFSlJWemd4WVVWQmMyYxAB!2m1!1s0x0:0xeadaf5f68d7cf4af!3m1!1s2@1:CAIQACodChtycF9oOm1XS3VjaHJSZUwyUEJRVzgxYUVBc2c%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tGSVVuUnFUek0yTFhKeGVVc3RZbW8xWkROS1EwRRAB!2m1!1s0x0:0x5fbb1e17c80425ad!3m1!1s2@1:CAIQACodChtycF9oOkFIUnRqTzM2LXJxeUstYmo1ZDNKQ0E%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkUU1VUm1ZVEJPWm5ab1VEUTBhRGRHYXpGWlVVRRAB!2m1!1s0x0:0xe920fb728e850860!3m1!1s2@1:CAIQACodChtycF9oOkdQMURmYTBOZnZoUDQ0aDdGazFZUUE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25GcVgwNUZkRVZVZEd0UGIxSmhiRGRPUnpaaVVtYxAB!2m1!1s0x0:0x79cdadd440416eff!3m1!1s2@1:CAIQACodChtycF9oOnFqX05FdEVUdGtPb1JhbDdORzZiUmc%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xGTlVXRjBOSEZmYVdwRGExQmlWSGRYYmtSM2JsRRAB!2m1!1s0x0:0x4beded06b2f776f3!3m1!1s2@1:CAIQACodChtycF9oOlFNUWF0NHFfaWpDa1BiVHdXbkR3blE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tsRloyMXViMHRCTjBjd1dXMXVPRzgyUW1kSWFuYxAB!2m1!1s0x0:0xfe5af63e0009d529!3m1!1s2@1:CAIQACodChtycF9oOklFZ21ub0tBN0cwWW1uOG82QmdIanc%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1SGVVa3ljREpUWVZGeE5HRXdZWGR3T0VaWlkyYxAB!2m1!1s0x0:0xac2ac842c8f69351!3m1!1s2@1:CAIQACodChtycF9oOk5HeUkycDJTYVFxNGEwYXdwOEZZY2c%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pOdlJEZzRabmRCU0hKMVpXOXJZMDl2TjFKSVJrRRAB!2m1!1s0x0:0x4be710e6f7a91ba8!3m1!1s2@1:CAIQACodChtycF9oOjNvRDg4ZndBSHJ1ZW9rY09vN1JIRkE%7C%7C?hl=en",
-        "https://www.trustpilot.com/reviews/6aa0386a3a9042fe53b5eaf6",
-        "https://www.reddit.com/r/Copartonline/comments/1w3sgel/sandwich_copart_uk/p7d5vv1/",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2paZlFXbFpNMlF6Tm0xR05VaDZiR1J6YmxkUmNsRRAB!2m1!1s0x0:0xe27853c94cdbe0a4!3m1!1s2@1:CAIQACodChtycF9oOjZfQWlZM2QzNm1GNUh6bGRzbldRclE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT205eGRucDJjRjlJU0VsRlRXcFRSakZqZEZoUFYzYxAB!2m1!1s0x0:0x1d7afa5ae37fdbeb!3m1!1s2@1:CAIQACodChtycF9oOm9xdnp2cF9ISElFTWpTRjFjdFhPV3c%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2psTFJsOXViV0pCVVZKaExWODRjSHBaYVU5NmFIYxAB!2m1!1s0x0:0xe0a350f095466eb4!3m1!1s2@1:CAIQACodChtycF9oOjlLRl9ubWJBUVJhLV84cHpZaU96aHc%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pObVJWRm9kRzF2Y0VSRVZsaEVNMkZIU1ZOd1kzYxAB!2m1!1s0x0:0xfe3f5daf2b29c8b5!3m1!1s2@1:CAIQACodChtycF9oOjNmRVFodG1vcEREVlhEM2FHSVNwY3c%7C%7C?hl=en",
-        "https://www.trustpilot.com/reviews/6a9951c6dac01cb958ffe90f",
-        "https://www.reddit.com/r/Copartonline/comments/1iowsot/what_brokers_let_you_pick_the_car_up_in_person/p79tcgn/",
-        "https://www.reddit.com/r/Copartonline/comments/1ncxn7h/copart_shipping_help/p740mzz/",
-        "https://www.reddit.com/r/askcarsales/comments/1w4etwx/copart_vehicle_not_able_to_get_a_title/",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pVMFZsUjNObWhaU2xSMFNsYzJhSFIyYjFKVU4yYxAB!2m1!1s0x0:0x6edfdefbd5fe27c!3m1!1s2@1:CAIQACodChtycF9oOjU0VlR3NmhZSlR0Slc2aHR2b1JUN2c%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xSMVJFMXZNRXQxYWw5RVlYSjJla05KYW1Oa2FGRRAB!2m1!1s0x0:0x963205a8cc723ea0!3m1!1s2@1:CAIQACodChtycF9oOlR1RE1vMEt1al9EYXJ2ekNJamNkaFE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2sxSFltaEVkbFZRVm5GblJIWk1OblE1WTNKU1JXYxAB!2m1!1s0x0:0xac2ac842c8f69351!3m1!1s2@1:CAIQACodChtycF9oOk1HYmhEdlVQVnFnRHZMNnQ5Y3JSRWc%7C%7C?hl=en",
-        "https://www.reddit.com/r/Copartonline/comments/1w3mimw/remote_structural_inspection/",
-        "https://www.reddit.com/r/Copartonline/comments/1w2xphr/toyota_hybrid_system_malfunction/",
-        "https://www.reddit.com/r/Copartonline/comments/1w0qf1x/copart_prices/p6x7fy2/",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2todGNtTnNSWGxLWjA1MldqTmhWbXhITlV4Q1ZXYxAB!2m1!1s0x0:0xda69631b867f6858!3m1!1s2@1:CAIQACodChtycF9oOkhtcmNsRXlKZ052WjNhVmxHNUxCVWc%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2twaVpsYzJVRWhGYTFjd2RGWlFVblpvUkhoaVRVRRAB!2m1!1s0x0:0x1d3b237e60ecc84c!3m1!1s2@1:CAIQACodChtycF9oOkpiZlc2UEhFa1cwdFZQUnZoRHhiTUE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tKVlJtbElkRkJQYkRVNGQxQjFjVVJWYVVSUmJuYxAB!2m1!1s0x0:0x120d65820b375202!3m1!1s2@1:CAIQACodChtycF9oOkJVRmlIdFBPbDU4d1B1cURVaURRbnc%7C%7C?hl=en",
-        "https://www.reddit.com/r/Copartonline/comments/1w0qf1x/copart_prices/p6uehe8/",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21ac1ZVSlJka05SYzJSU2QwNTRRek4zU0dsc09IYxAB!2m1!1s0x0:0x5fbb1e17c80425ad!3m1!1s2@1:CAIQACodChtycF9oOmZsVUJRdkNRc2RSd054QzN3SGlsOHc%7C%7C?hl=en",
-        "https://www.reddit.com/r/Copartonline/comments/1w18uhv/does_your_location_allow_you_to_use_a_dolly_to/",
-        "https://www.reddit.com/r/Copartonline/comments/1w0qf1x/copart_prices/p6lpzpd/",
-        "https://www.reddit.com/r/Copartonline/comments/1w0rfha/opinion_of_flood_car/",
-        "https://www.reddit.com/r/Copartonline/comments/1w0qf1x/copart_prices/p6icr5i/",
-        "https://www.reddit.com/r/Copartonline/comments/1w0qf1x/copart_prices/p6fv7k4/",
-        "https://www.reddit.com/r/Copartonline/comments/1vz3nq4/did_i_mess_up/p6fei5j/",
-        "https://www.reddit.com/r/Copartonline/comments/1w0qf1x/copart_prices/p6f30sa/",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT205eFkwdGZWM0JLV0d0SVdGcDNTVFExY2xFMlVYYxAB!2m1!1s0x0:0x280b94bad049a657!3m1!1s2@1:CAIQACodChtycF9oOm9xY0tfV3BKWGtIWFp3STQ1clE2UXc%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25WalZsTktWamxCYWtWa0xXSnBNVFpZZEhCSlNuYxAB!2m1!1s0x0:0xe36b0efe1e1e88db!3m1!1s2@1:CAIQACodChtycF9oOnVjVlNKVjlBakVkLWJpMTZYdHBJSnc%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCV09VOTFURlUwUm0xVVUwSlFZVm95T1hKMmFtYxAB!2m1!1s0x0:0x3597f9feb8aa4d0a!3m1!1s2@1:CAIQACodChtycF9oOjBWOU91TFU0Rm1UU0JQYVoyOXJ2amc%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20xNlF6QnRUbDl5YUZkUVFWZG9TbXc0YW5JNE5YYxAB!2m1!1s0x0:0x4458b5171a1b038e!3m1!1s2@1:CAIQACodChtycF9oOm16QzBtTl9yaFdQQVdoSmw4anI4NXc%7C%7C?hl=en",
-        "https://www.trustpilot.com/reviews/6aa2c6a9a570d26786c3e089",
-        "https://www.trustpilot.com/reviews/6a912272f9dc23076badc065",
-        "https://www.reddit.com/r/Copartonline/comments/1w089m4/hail_damaged_car_without_hail_marks/",
-        "https://www.reddit.com/r/Copartonline/comments/1vzsb9m/online_auction_slowness_issues_over_the_last/",
-        "https://www.reddit.com/r/Copartonline/comments/1vz3nq4/did_i_mess_up/p67ozl7/",
-        "https://www.reddit.com/r/Copartonline/comments/1vz3nq4/did_i_mess_up/p67n1m0/",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21OeFRXUXpUMGhMT1Vnd2JFZzJOMXBsVlV0clRWRRAB!2m1!1s0x0:0x963205a8cc723ea0!3m1!1s2@1:CAIQACodChtycF9oOmNxTWQzT0hLOUgwbEg2N1plVUtrTVE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tWMlh6bDJiRGc0VFZWZlVIaFVNMWwzUlU5M1kyYxAB!2m1!1s0x0:0xd77e1791a90432aa!3m1!1s2@1:CAIQACodChtycF9oOkV2Xzl2bDg4TVVfUHhUM1l3RU93Y2c%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21OWWJqZElRbU5RU3pVNFdXSm1SbXBuVUVwcE5YYxAB!2m1!1s0x0:0xba1981a87d5754d7!3m1!1s2@1:CAIQACodChtycF9oOmNYbjdIQmNQSzU4WWJmRmpnUEppNXc%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21KQldtTk1SRE4zY2xodFVscEJUWHBCVmpoelRFRRAB!2m1!1s0x0:0xba1981a87d5754d7!3m1!1s2@1:CAIQACodChtycF9oOmJBWmNMRDN3clhtUlpBTXpBVjhzTEE%7C%7C?hl=en",
-        "https://www.reddit.com/r/Copartonline/comments/1vz3nq4/did_i_mess_up/",
-        "https://www.reddit.com/r/Copartonline/comments/1vt05h1/iaai_vs_copart_experience/p5xdhn0/",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tzMFV6SnRabXhRV0c4NFZpMURaRkpCVUZGWldVRRAB!2m1!1s0x0:0x567fa9a899ac603b!3m1!1s2@1:CAIQACodChtycF9oOks0UzJtZmxQWG84Vi1DZFJBUFFZWUE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkWmVHWTFOekE1U0VRMVgyZE9lREZ3TjNKemRsRRAB!2m1!1s0x0:0x563ebd49298265b2!3m1!1s2@1:CAIQACodChtycF9oOkdZeGY1NzA5SEQ1X2dOeDFwN3JzdlE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2twM1kxUnNjek51WDNKT01ERkpTV3Q0VFZwbU5IYxAB!2m1!1s0x0:0x7e43c266fbbda170!3m1!1s2@1:CAIQACodChtycF9oOkp3Y1RsczNuX3JOMDFJSWt4TVpmNHc%7C%7C?hl=en",
-        "https://www.reddit.com/r/Copartonline/comments/1vyfwcx/volkswagen_tiguan_s_2013/",
-        "https://www.reddit.com/r/Copartonline/comments/1vy295g/33_rounds_for_this/p5tub4x/",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pKNVNqTXdkRXRaWTNSdlZqQktkV3hMWVVGQlVrRRAB!2m1!1s0x0:0x22834afe7b18657e!3m1!1s2@1:CAIQACodChtycF9oOjJ5SjMwdEtZY3RvVjBKdWxLYUFBUkE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21GS1dEaDVlRXBHV0hOUFFrTjBaamhHWmxkMldFRRAB!2m1!1s0x0:0xa4fb058ae3b39422!3m1!1s2@1:CAIQACodChtycF9oOmFKWDh5eEpGWHNPQkN0ZjhGZld2WEE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xOTlNVcDRNekkwUkRkd1VFRnpTR2QxZEV4b00zYxAB!2m1!1s0x0:0x217483d8add676b!3m1!1s2@1:CAIQACodChtycF9oOlNNSUp4MzI0RDdwUEFzSGd1dExoM3c%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxaVQyZGpZMlJrWVZSb2RUTkRhWEpmUmxacGQxRRAB!2m1!1s0x0:0x69246e082f08b11e!3m1!1s2@1:CAIQACodChtycF9oOi1iT2djY2RkYVRodTNDaXJfRlZpd1E%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21KMWVUVkNUbFZ1UlhOSVJEbHdWRTlPTlVOSVlWRRAB!2m1!1s0x0:0xa8b539d12b805df3!3m1!1s2@1:CAIQACodChtycF9oOmJ1eTVCTlVuRXNIRDlwVE9ONUNIYVE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201Wk1HbHZOVE5sVFc5UFNraEVVMGN3VDAxZmFIYxAB!2m1!1s0x0:0x34eb047578eee4e9!3m1!1s2@1:CAIQACodChtycF9oOm5ZMGlvNTNlTW9PSkhEU0cwT01faHc%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t4VWEwcFlOM0J4VVdkR1VFWmZTVWhWVG05MVYxRRAB!2m1!1s0x0:0x120d65820b375202!3m1!1s2@1:CAIQACodChtycF9oOkxUa0pYN3BxUWdGUEZfSUhVTm91V1E%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xaaVowVTJjMmxDTWtsVFVGWk1kWEZwZDJJNFQyYxAB!2m1!1s0x0:0xe81b2c275ee712d4!3m1!1s2@1:CAIQACodChtycF9oOlZiZ0U2c2lCMklTUFZMdXFpd2I4T2c%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21OWU4xWnZSbmwwTURONFFVMHhTVGxZVmtkT1MzYxAB!2m1!1s0x0:0xfd3ea24cea8b4d52!3m1!1s2@1:CAIQACodChtycF9oOmNYN1ZvRnl0MDN4QU0xSTlYVkdOS3c%7C%7C?hl=en"
+        "https://www.trustpilot.com/reviews/6aaa5708d6fadda51348a69f"
       ],
-      "generated_at_utc": "2026-10-07T00:55:53.888808+00:00",
+      "generated_at_utc": "2026-11-02T20:08:59.089444+00:00",
       "since_date": "2023-01-01",
-      "until_date": "2026-09-30",
+      "until_date": "2026-10-31",
       "collector_failures": [],
-      "existing_review_count": 13056,
-      "new_reviews_added": 299,
+      "existing_review_count": 13355,
+      "new_reviews_added": 155,
       "youtube_excluded": true,
       "usa_only": true,
       "english_only": true,
@@ -612,21 +623,19 @@ window.REVIEW_DATASETS = {
         "bbb.org"
       ],
       "geo_validation_counts": {
-        "google_play_us_store": 10,
-        "google_business_us_profile": 113,
-        "trustpilot_us_slug": 22,
-        "mixed_source_ok": 138,
-        "bbb_us_business": 4,
-        "apple_us_store": 12
+        "google_play_us_store": 14,
+        "trustpilot_us_slug": 5,
+        "mixed_source_ok": 129,
+        "apple_us_store": 7
       },
       "geo_excluded_counts": {
         "play.google.com:google_play_us_store_non_us_marker": 17,
-        "trustpilot.com:trustpilot_non_us_slug": 64,
-        "trustpilot.com:trustpilot_us_slug_non_us_marker": 25,
-        "reddit.com:mixed_source_non_us_marker": 14,
+        "trustpilot.com:trustpilot_non_us_slug": 196,
+        "trustpilot.com:trustpilot_us_slug_non_us_marker": 23,
+        "reddit.com:mixed_source_non_us_marker": 20,
         "complaintsboard.com:complaintsboard_us_profile_non_us_marker": 10,
         "apps.apple.com:apple_us_store_non_us_marker": 1,
-        "apps.apple.com:apple_non_us_store": 115
+        "apps.apple.com:apple_non_us_store": 118
       },
       "geo_excluded_examples": [
         {
@@ -768,26 +777,26 @@ window.REVIEW_DATASETS = {
         {
           "source_website": "trustpilot.com",
           "source_label": "Trustpilot (copart.co.uk)",
-          "source_url": "https://www.trustpilot.com/reviews/6abf9087811819d2f047f7d8",
-          "review_date": "2026-06-10",
-          "reason": "trustpilot_non_us_slug",
-          "review_text": "I had my focus st hit by a driver it…. I had my focus st hit by a driver it was minimal damage bumper and wing I got a body shop to look at it and they said it would be cheap to fx and explained what was damaged. My insurance company sad co"
-        },
-        {
-          "source_website": "trustpilot.com",
-          "source_label": "Trustpilot (copart.co.uk)",
-          "source_url": "https://www.trustpilot.com/reviews/6abd2a4321383526bc4e03b1",
-          "review_date": "2026-09-30",
-          "reason": "trustpilot_non_us_slug",
-          "review_text": "Kayleigh was very clear and helpful…. Kayleigh was very clear and helpful best person we have spoken to since the accident"
-        },
-        {
-          "source_website": "trustpilot.com",
-          "source_label": "Trustpilot (copart.co.uk)",
-          "source_url": "https://www.trustpilot.com/reviews/6abbd4606aa46422b960d8b8",
+          "source_url": "https://www.trustpilot.com/reviews/6ae6435876014116ebbd6eef",
           "review_date": "2026-09-29",
           "reason": "trustpilot_non_us_slug",
-          "review_text": "They requested my information twice…. They requested my information twice which I have sent them on both occasions. They just ignore you and therefore I will encourage everyone to avoid this company at all costs wherever possible. They have"
+          "review_text": "Swiftcover cover are an awesome…. Swiftcover cover are an awesome company, until your car gets damaged by a 3rd party. They then offload all the work to co part. Despite receiving minor damage to the front bumper and offside wing. They insi"
+        },
+        {
+          "source_website": "trustpilot.com",
+          "source_label": "Trustpilot (copart.co.uk)",
+          "source_url": "https://www.trustpilot.com/reviews/6ae36c24c2ad3851a9eb49b6",
+          "review_date": "2026-10-05",
+          "reason": "trustpilot_non_us_slug",
+          "review_text": "Can't even pay on time. Useless.. The company offered me a decent enough fee for my car as scrap. They promised the amount on a specific date. I was relying on those funds, because when someone says \"same day payment\", you'd automatically a"
+        },
+        {
+          "source_website": "trustpilot.com",
+          "source_label": "Trustpilot (copart.co.uk)",
+          "source_url": "https://www.trustpilot.com/reviews/6ae32409e92392080316d37f",
+          "review_date": "2026-10-13",
+          "reason": "trustpilot_non_us_slug",
+          "review_text": "worst company ever. very poor service selling my car recieved my car back with bumper broken and grill as well complained but to no avail probably the worst company i have ever dealt with complaint reference 98733"
         }
       ],
       "active_collectors": [
@@ -823,8 +832,8 @@ window.REVIEW_DATASETS = {
           "name": "[CLOSED] Copart - Punta Gorda",
           "address": "5017 Duncan Rd Bldg 1, Punta Gorda, FL 33982",
           "website": "https://www.copart.com/locations/punta-gorda-fl-137?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 3.9,
-          "review_count": 126,
+          "rating": 4,
+          "review_count": 124,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -835,7 +844,7 @@ window.REVIEW_DATASETS = {
           "address": "170 W Center St Bldg 1, North Salt Lake, UT 84054",
           "website": "https://www.copart.com/locations/salt-lake-city-ut-49?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.3,
-          "review_count": 193,
+          "review_count": 190,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -847,7 +856,7 @@ window.REVIEW_DATASETS = {
           "website": "https://www.copart.com/",
           "rating": null,
           "review_count": null,
-          "last_successful_scan_date": "2026-09-30"
+          "last_successful_scan_date": "2026-10-31"
         },
         {
           "feature_id": "0x88626986bd637fd5:0x330ba218453c6021",
@@ -857,7 +866,7 @@ window.REVIEW_DATASETS = {
           "address": "295 NW Dan Tibbs Rd, Huntsville, AL 35806",
           "website": "",
           "rating": 4.5,
-          "review_count": null,
+          "review_count": 11,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -869,7 +878,7 @@ window.REVIEW_DATASETS = {
           "website": "http://copart.com/",
           "rating": 4,
           "review_count": 4,
-          "last_successful_scan_date": "2026-09-30"
+          "last_successful_scan_date": "2026-10-31"
         },
         {
           "feature_id": "0x52b33121975753cf:0x22834afe7b18657e",
@@ -902,7 +911,7 @@ window.REVIEW_DATASETS = {
           "website": "https://www.copart.com/",
           "rating": 2,
           "review_count": 4,
-          "last_successful_scan_date": "2026-09-30"
+          "last_successful_scan_date": "2026-10-31"
         },
         {
           "feature_id": "0x88690e47444cc141:0xfff672d06ad65243",
@@ -913,7 +922,7 @@ window.REVIEW_DATASETS = {
           "website": "https://www.copart.com/",
           "rating": 3,
           "review_count": 7,
-          "last_successful_scan_date": "2026-09-30"
+          "last_successful_scan_date": "2026-10-31"
         },
         {
           "feature_id": "0x88dd23005f2d2ce9:0x5c25c1b450070a36",
@@ -924,7 +933,7 @@ window.REVIEW_DATASETS = {
           "website": "",
           "rating": 4.2,
           "review_count": 5,
-          "last_successful_scan_date": "2026-09-30"
+          "last_successful_scan_date": "2026-10-31"
         },
         {
           "feature_id": "0x8656855e69478b1b:0xd9b0d6e36022a489",
@@ -934,7 +943,7 @@ window.REVIEW_DATASETS = {
           "address": "2630 FM3034 Suite 1, Abilene, TX 79601",
           "website": "https://www.copart.com/locations/abilene-tx-73?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 4.1,
-          "review_count": 57,
+          "review_count": 56,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -956,7 +965,7 @@ window.REVIEW_DATASETS = {
           "address": "745 Norton Ave Bldg 1, Barberton, OH 44203",
           "website": "https://www.copart.com/locations/ox-oh-376?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.4,
-          "review_count": 35,
+          "review_count": 36,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -977,8 +986,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Albuquerque",
           "address": "7705 Broadway Blvd SE Bldg 1, Albuquerque, NM 87105",
           "website": "https://www.copart.com/locations/albuquerque-nm-75?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 2.6,
-          "review_count": 233,
+          "rating": 2.7,
+          "review_count": 232,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -989,7 +998,7 @@ window.REVIEW_DATASETS = {
           "address": "4007 Admiral Peary Hwy Bldg 1, Ebensburg, PA 15931",
           "website": "https://www.copart.com/locations/altoona-pa-129?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.9,
-          "review_count": 80,
+          "review_count": 81,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1011,7 +1020,7 @@ window.REVIEW_DATASETS = {
           "address": "1975 SW 860 Bldg 1, Andrews, TX 79714",
           "website": "https://www.copart.com/locations/andrews-tx-185?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.7,
-          "review_count": 112,
+          "review_count": 113,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1022,7 +1031,7 @@ window.REVIEW_DATASETS = {
           "address": "8650 Antelope North Rd Bldg 1, Antelope, CA 95843",
           "website": "https://www.copart.com/locations/antelope-ca-151?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 2.6,
-          "review_count": 209,
+          "review_count": 207,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1032,8 +1041,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Appleton",
           "address": "2500 American Dr Bldg 1, Appleton, WI 54914",
           "website": "https://www.copart.com/locations/appleton-wi-191?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 2.6,
-          "review_count": 64,
+          "rating": 2.7,
+          "review_count": 63,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1044,7 +1053,7 @@ window.REVIEW_DATASETS = {
           "address": "6089 GA-20 Bldg 1, Loganville, GA 30052",
           "website": "https://www.copart.com/locations/atlanta-east-ga-107?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.3,
-          "review_count": 390,
+          "review_count": 391,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1066,7 +1075,7 @@ window.REVIEW_DATASETS = {
           "address": "761 Clark Dr bldg 1, Ellenwood, GA 30294",
           "website": "https://www.copart.com/locations/atlanta-south-ga-146?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.4,
-          "review_count": 349,
+          "review_count": 351,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1077,7 +1086,7 @@ window.REVIEW_DATASETS = {
           "address": "2568 Old Alabama Rd Bldg 1, Austell, GA 30168",
           "website": "https://www.copart.com/locations/atlanta-west-ga-15?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.1,
-          "review_count": 406,
+          "review_count": 404,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1087,8 +1096,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Auction Lane Sublot",
           "address": "6600 Auction Ln, Las Vegas, NV 89115",
           "website": "https://www.copart.com/locations/las-vegas-west-nv-133",
-          "rating": 3.7,
-          "review_count": 9,
+          "rating": 4,
+          "review_count": 8,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1110,7 +1119,7 @@ window.REVIEW_DATASETS = {
           "address": "8725 I-35 Bldg 1, New Braunfels, TX 78130",
           "website": "https://www.copart.com/locations/austin-tx-62?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.3,
-          "review_count": 224,
+          "review_count": 219,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1121,7 +1130,7 @@ window.REVIEW_DATASETS = {
           "address": "2216 Coy Ln Bldg 1, Bakersfield, CA 93307",
           "website": "https://www.copart.com/locations/bakersfield-ca-5?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.4,
-          "review_count": 131,
+          "review_count": 130,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1132,7 +1141,7 @@ window.REVIEW_DATASETS = {
           "address": "2251 Old Westminster Pike Bldg 1, Finksburg, MD 21048",
           "website": "https://www.copart.com/locations/baltimore-md-102?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.1,
-          "review_count": 196,
+          "review_count": 195,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1143,7 +1152,7 @@ window.REVIEW_DATASETS = {
           "address": "601 W Patapsco Ave Bldg 1, Baltimore, MD 21225",
           "website": "https://www.copart.com/locations/baltimore-east-md-342?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 2.7,
-          "review_count": 170,
+          "review_count": 166,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1154,7 +1163,7 @@ window.REVIEW_DATASETS = {
           "address": "21595 Greenwell Springs Rd Bldg 1, Greenwell Springs, LA 70739",
           "website": "https://www.copart.com/locations/baton-rouge-la-50?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.2,
-          "review_count": 271,
+          "review_count": 269,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1175,8 +1184,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Birmingham",
           "address": "3101 Davey Allison Blvd Bldg 1, Hueytown, AL 35023",
           "website": "https://www.copart.com/locations/birmingham-al-136?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 3.1,
-          "review_count": null,
+          "rating": 3.2,
+          "review_count": 254,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1198,7 +1207,7 @@ window.REVIEW_DATASETS = {
           "address": "2600 Salt Creek Hwy, Casper, WY 82601",
           "website": "https://www.copart.com/locations/casper-wy-328?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.4,
-          "review_count": 51,
+          "review_count": 52,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1231,7 +1240,7 @@ window.REVIEW_DATASETS = {
           "address": "1475 Bluff City Blvd Bldg 1, Elgin, IL 60120",
           "website": "https://www.copart.com/locations/chicago-north-il-36?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 2.4,
-          "review_count": 576,
+          "review_count": 575,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1242,7 +1251,7 @@ window.REVIEW_DATASETS = {
           "address": "1081 Recovery Rd #1, China Grove, NC 28023",
           "website": "https://www.copart.com/locations/china-grove-nc-41?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 4,
-          "review_count": 375,
+          "review_count": 376,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1264,7 +1273,7 @@ window.REVIEW_DATASETS = {
           "address": "286 E Twinsburg Rd Bldg 1, Northfield, OH 44067",
           "website": "https://www.copart.com/locations/cleveland-east-oh-111?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3,
-          "review_count": 121,
+          "review_count": 122,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1274,8 +1283,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Cleveland West",
           "address": "34417 Royalton Rd Bldg 1, Columbia Station, OH 44028",
           "website": "https://www.copart.com/locations/cleveland-west-oh-112?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 4,
-          "review_count": 180,
+          "rating": 4.1,
+          "review_count": 178,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1285,8 +1294,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Clewiston",
           "address": "4545 Co Rd 835, Clewiston, FL 33440",
           "website": "https://www.copart.com/locations/clewiston-fl-366",
-          "rating": 3.5,
-          "review_count": 72,
+          "rating": 3.6,
+          "review_count": 73,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1297,7 +1306,7 @@ window.REVIEW_DATASETS = {
           "address": "640 Winters Dr Bldg 1, Colorado Springs, CO 80907",
           "website": "https://www.copart.com/locations/colorado-springs-co-118",
           "rating": 2.8,
-          "review_count": 266,
+          "review_count": 263,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1308,7 +1317,7 @@ window.REVIEW_DATASETS = {
           "address": "8485 E Richland Rd Bldg 1, Columbia, MO 65201",
           "website": "https://www.copart.com/locations/columbia-mo-125?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.6,
-          "review_count": 114,
+          "review_count": 113,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1319,7 +1328,7 @@ window.REVIEW_DATASETS = {
           "address": "1680 Williams Rd Bldg 1, Columbus, OH 43207",
           "website": "https://www.copart.com/locations/columbus-oh-29?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.3,
-          "review_count": 379,
+          "review_count": 375,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1329,7 +1338,7 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Concord",
           "address": "7940 US-601 S, Bldg 1, Concord, NC 28025",
           "website": "https://www.copart.com/locations/concord-nc-356?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 4.4,
+          "rating": 4.5,
           "review_count": 52,
           "last_successful_scan_date": "2026-09-30"
         },
@@ -1341,7 +1350,7 @@ window.REVIEW_DATASETS = {
           "address": "3200 Agnes St Bldg 1, Corpus Christi, TX 78405",
           "website": "https://www.copart.com/locations/corpus-christi-tx-96?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.8,
-          "review_count": 93,
+          "review_count": 94,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1351,8 +1360,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Dallas",
           "address": "505 Idlewild Rd Bldg 1, Grand Prairie, TX 75051",
           "website": "https://www.copart.com/locations/dallas-tx-12?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 2.9,
-          "review_count": 796,
+          "rating": 3,
+          "review_count": 791,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1363,7 +1372,7 @@ window.REVIEW_DATASETS = {
           "address": "1701 E Belt Line Rd Bldg 1, Wilmer, TX 75172",
           "website": "https://www.copart.com/locations/dallas-south-tx-181?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 2.7,
-          "review_count": 403,
+          "review_count": 405,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1374,7 +1383,7 @@ window.REVIEW_DATASETS = {
           "address": "12360 US-29 Bldg 1, Chatham, VA 24531",
           "website": "https://www.copart.com/locations/danville-va-82?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 4.1,
-          "review_count": 91,
+          "review_count": 92,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1385,7 +1394,7 @@ window.REVIEW_DATASETS = {
           "address": "3601 S 1st St Bldg 1, Eldridge, IA 52748",
           "website": "https://www.copart.com/locations/davenport-ia-169?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 4,
-          "review_count": 133,
+          "review_count": 132,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1395,8 +1404,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Dayton",
           "address": "4691 N Springboro Pike, Moraine, OH 45439",
           "website": "https://www.copart.com/locations/dayton-oh-166?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 3,
-          "review_count": 313,
+          "rating": 3.1,
+          "review_count": 308,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1417,8 +1426,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Denver Central",
           "address": "6464 N Downing St Bldg 1, Denver, CO 80229",
           "website": "https://www.copart.com/locations/denver-central-co-120?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 2.5,
-          "review_count": 331,
+          "rating": 2.6,
+          "review_count": 326,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1450,8 +1459,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Detroit",
           "address": "21000 Hayden Dr Bldg 1, Woodhaven, MI 48183",
           "website": "https://www.copart.com/locations/detroit-mi-61?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 3.2,
-          "review_count": 450,
+          "rating": 3.3,
+          "review_count": 446,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1462,7 +1471,7 @@ window.REVIEW_DATASETS = {
           "address": "10428 US-84 Bldg 1, Newton, AL 36352",
           "website": "https://www.copart.com/locations/dothan-al-341?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.7,
-          "review_count": null,
+          "review_count": 32,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1472,8 +1481,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Dyer IN",
           "address": "641 Joliet St Bldg 1, Dyer, IN 46311",
           "website": "https://www.copart.com/locations/dyer-in-370?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 3.3,
-          "review_count": 36,
+          "rating": 3.5,
+          "review_count": 34,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1483,8 +1492,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Earlington",
           "address": "700 Sandcut Rd Bldg 1, Earlington, KY 42410",
           "website": "https://www.copart.com/locations/earlington-ky-345?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 4.1,
-          "review_count": 60,
+          "rating": 4,
+          "review_count": 61,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1495,7 +1504,7 @@ window.REVIEW_DATASETS = {
           "address": "501 Valley Chili Rd Bldg 1, Anthony, TX 79821",
           "website": "https://www.copart.com/locations/el-paso-tx-45?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.7,
-          "review_count": 324,
+          "review_count": 323,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1539,7 +1548,7 @@ window.REVIEW_DATASETS = {
           "address": "5000 N State Rd Bldg 1, Davison, MI 48423",
           "website": "https://www.copart.com/locations/flint-mi-159?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.4,
-          "review_count": 191,
+          "review_count": 192,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1550,7 +1559,7 @@ window.REVIEW_DATASETS = {
           "address": "3600 E Washington Blvd Bldg 1, Fort Wayne, IN 46803",
           "website": "https://www.copart.com/locations/fort-wayne-in-360?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3,
-          "review_count": 83,
+          "review_count": 82,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1561,7 +1570,7 @@ window.REVIEW_DATASETS = {
           "address": "950 Blue Mound Rd W Bldg 1, Haslet, TX 76052",
           "website": "https://www.copart.com/locations/ft.-worth-tx-98?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.2,
-          "review_count": 395,
+          "review_count": 394,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1571,8 +1580,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Franklin WI",
           "address": "10020 S 124th St Bldg 1, Franklin, WI 53132",
           "website": "https://www.copart.com/locations/milwaukee-south-wi-371?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 2.9,
-          "review_count": 44,
+          "rating": 3,
+          "review_count": 42,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1593,8 +1602,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Freetown",
           "address": "170 S Main St Bldg 1, Assonet, MA 02702",
           "website": "https://www.copart.com/locations/freetown-ma-361?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 3,
-          "review_count": 14,
+          "rating": 3.1,
+          "review_count": 15,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1605,7 +1614,7 @@ window.REVIEW_DATASETS = {
           "address": "1255 E Central Ave Bldg 1, Fresno, CA 93725",
           "website": "https://www.copart.com/locations/fresno-ca-4?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.6,
-          "review_count": 165,
+          "review_count": 169,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1626,7 +1635,7 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Gastonia",
           "address": "3060 Fairview Dr Bldg 1, Gastonia, NC 28052",
           "website": "https://www.copart.com/locations/gastonia-nc-340?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 3.3,
+          "rating": 3.4,
           "review_count": 75,
           "last_successful_scan_date": "2026-09-30"
         },
@@ -1638,7 +1647,7 @@ window.REVIEW_DATASETS = {
           "address": "200 Grove St Bldg 1, Glassboro, NJ 08028",
           "website": "https://www.copart.com/locations/glassboro-east-nj-31?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.3,
-          "review_count": 228,
+          "review_count": 226,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1648,8 +1657,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Glassboro West",
           "address": "781 Jacob Harris Ln Bldg 1, Glassboro, NJ 08028",
           "website": "https://www.copart.com/locations/glassboro-west-nj-69?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 3.5,
-          "review_count": 44,
+          "rating": 3.6,
+          "review_count": 45,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1682,7 +1691,7 @@ window.REVIEW_DATASETS = {
           "address": "16 Nettles Ln Bldg 1, Hampton, VA 23666",
           "website": "https://www.copart.com/locations/hampton-va-162?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 2.2,
-          "review_count": 311,
+          "review_count": 306,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1693,7 +1702,7 @@ window.REVIEW_DATASETS = {
           "address": "8 Park Dr Bldg 1, Grantville, PA 17028",
           "website": "https://www.copart.com/locations/harrisburg-pa-76?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.6,
-          "review_count": 172,
+          "review_count": 171,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1715,7 +1724,7 @@ window.REVIEW_DATASETS = {
           "address": "49 Russell Rd, East Granby, CT 06026",
           "website": "https://www.copart.com/locations/hartford-springfield-ct-350",
           "rating": 4.3,
-          "review_count": 173,
+          "review_count": 172,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1726,7 +1735,7 @@ window.REVIEW_DATASETS = {
           "address": "1964 Sabre St Bldg 1, Hayward, CA 94545",
           "website": "https://www.copart.com/locations/hayward-ca-3?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.3,
-          "review_count": 174,
+          "review_count": 172,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1737,7 +1746,7 @@ window.REVIEW_DATASETS = {
           "address": "3333 Bozeman Ave Bldg 1, Helena, MT 59601",
           "website": "https://www.copart.com/locations/helena-mt-106?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.9,
-          "review_count": 83,
+          "review_count": 84,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1748,7 +1757,7 @@ window.REVIEW_DATASETS = {
           "address": "1655 Rankin Rd Bldg 1, Houston, TX 77073",
           "website": "https://www.copart.com/locations/houston-tx-11?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 2.9,
-          "review_count": 1124,
+          "review_count": 1121,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1759,7 +1768,7 @@ window.REVIEW_DATASETS = {
           "address": "15706 Beaumont Hwy Bldg 1, Houston, TX 77049",
           "website": "https://www.copart.com/locations/houston-east-tx-357?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 2.9,
-          "review_count": 236,
+          "review_count": 240,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1770,7 +1779,7 @@ window.REVIEW_DATASETS = {
           "address": "4040 Office Plaza Blvd Bldg 1, Indianapolis, IN 46254",
           "website": "https://www.copart.com/locations/indianapolis-in-44?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.3,
-          "review_count": 363,
+          "review_count": 359,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1780,8 +1789,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Ionia",
           "address": "8460 S State Rd Bldg 1, Portland, MI 48875",
           "website": "https://www.copart.com/locations/ionia-mi-160?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 2.9,
-          "review_count": 252,
+          "rating": 3,
+          "review_count": 251,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1800,10 +1809,10 @@ window.REVIEW_DATASETS = {
           "cid": "12405948312710452049",
           "place_id": "ChIJ9wYBJ5Ox5YgRUZP2yELIKqw",
           "name": "Copart - Jacksonville North",
-          "address": "10200 Alton Box Rd Bldg 1, Jacksonville, FL 32218",
+          "address": "10200 Alton Box Rd W Bldg 1, Jacksonville, FL 32218",
           "website": "https://www.copart.com/locations/jacksonville-north-fl-163?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 3.2,
-          "review_count": 85,
+          "rating": 3.4,
+          "review_count": 82,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1813,8 +1822,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Kansas City",
           "address": "8440 Gibbs Rd Bldg 1, Kansas City, KS 66111",
           "website": "https://www.copart.com/locations/kansas-city-ks-369?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 2.5,
-          "review_count": 104,
+          "rating": 2.6,
+          "review_count": 106,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1825,7 +1834,7 @@ window.REVIEW_DATASETS = {
           "address": "6211 Kansas Ave Bldg 1, Kansas City, KS 66111",
           "website": "https://www.copart.com/locations/kansas-city-east-ks-17?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.4,
-          "review_count": 252,
+          "review_count": 253,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1846,8 +1855,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Knoxville",
           "address": "6355 US-411 Bldg 1, Madisonville, TN 37354",
           "website": "https://www.copart.com/locations/knoxville-tn-114?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 3.2,
-          "review_count": 271,
+          "rating": 3.3,
+          "review_count": 270,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1857,8 +1866,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - LaGrange",
           "address": "7100 US-70, La Grange, NC 28551",
           "website": "https://www.copart.com/locations/lagrange-nc-373",
-          "rating": 1.7,
-          "review_count": 6,
+          "rating": 2.3,
+          "review_count": 9,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1891,7 +1900,7 @@ window.REVIEW_DATASETS = {
           "address": "3441 Clayton St, North Las Vegas, NV 89032",
           "website": "https://www.copart.com/locations/las-vegas-west-nv-133?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.5,
-          "review_count": 74,
+          "review_count": 76,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1902,7 +1911,7 @@ window.REVIEW_DATASETS = {
           "address": "5921 Athens Boonesboro Rd Bldg 1, Lexington, KY 40509",
           "website": "https://www.copart.com/locations/lexington-east-ky-115?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.9,
-          "review_count": 136,
+          "review_count": 134,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1912,8 +1921,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Lexington West",
           "address": "1051 Industry Rd Bldg 1, Lawrenceburg, KY 40342",
           "website": "https://www.copart.com/locations/lexington-west-ky-83?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 3.8,
-          "review_count": 89,
+          "rating": 3.9,
+          "review_count": 87,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1924,7 +1933,7 @@ window.REVIEW_DATASETS = {
           "address": "703 Main St Bldg 1, Conway, AR 72032",
           "website": "https://www.copart.com/locations/little-rock-ar-21?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.6,
-          "review_count": 195,
+          "review_count": 199,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1946,7 +1955,7 @@ window.REVIEW_DATASETS = {
           "address": "1983 Montauk Hwy Bldg 1, Brookhaven, NY 11719",
           "website": "https://www.copart.com/locations/long-island-ny-30?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 2.9,
-          "review_count": 308,
+          "review_count": 309,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1957,7 +1966,7 @@ window.REVIEW_DATASETS = {
           "address": "3046 TX-322 Bldg 1, Longview, TX 75603",
           "website": "https://www.copart.com/locations/longview-tx-14?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 4.1,
-          "review_count": 101,
+          "review_count": 100,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1968,7 +1977,7 @@ window.REVIEW_DATASETS = {
           "address": "8423 S Alameda St Bldg 1, Los Angeles, CA 90001",
           "website": "https://www.copart.com/locations/los-angeles-ca-10?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.4,
-          "review_count": 305,
+          "review_count": 306,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -1979,7 +1988,7 @@ window.REVIEW_DATASETS = {
           "address": "3100 Pond Station Rd Bldg 1, Louisville, KY 40272",
           "website": "https://www.copart.com/locations/louisville-ky-143?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 2.4,
-          "review_count": 505,
+          "review_count": 493,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2001,7 +2010,7 @@ window.REVIEW_DATASETS = {
           "address": "4019 North Carolina Hwy 72 Bldg 1, Lumberton, NC 28360",
           "website": "https://www.copart.com/locations/lumberton-nc-338?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.8,
-          "review_count": 102,
+          "review_count": 101,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2012,7 +2021,7 @@ window.REVIEW_DATASETS = {
           "address": "136 Kennebunk Pond Rd Bldg 1, Lyman, ME 04002",
           "website": "https://www.copart.com/locations/lyman-me-90?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 4.2,
-          "review_count": 51,
+          "review_count": 50,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2034,7 +2043,7 @@ window.REVIEW_DATASETS = {
           "address": "3100 US-12 Bldg 1, Cottage Grove, WI 53527",
           "website": "https://www.copart.com/locations/madison-south-wi-308?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.8,
-          "review_count": 25,
+          "review_count": 26,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2045,7 +2054,7 @@ window.REVIEW_DATASETS = {
           "address": "2701 Waterfront Rd Bldg 1, Martinez, CA 94553",
           "website": "https://www.copart.com/locations/martinez-ca-78?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3,
-          "review_count": 232,
+          "review_count": 227,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2056,7 +2065,7 @@ window.REVIEW_DATASETS = {
           "address": "301 Mile 1 E Bldg 1, Mercedes, TX 78570",
           "website": "https://www.copart.com/locations/mcallen-tx-65?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.8,
-          "review_count": 285,
+          "review_count": 286,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2067,7 +2076,7 @@ window.REVIEW_DATASETS = {
           "address": "1870 US-70 Bldg 1, Mebane, NC 27302",
           "website": "https://www.copart.com/locations/mebane-nc-154?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.7,
-          "review_count": 169,
+          "review_count": 168,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2078,7 +2087,7 @@ window.REVIEW_DATASETS = {
           "address": "5545 Swinnea Rd Bldg 1, Memphis, TN 38118",
           "website": "https://www.copart.com/locations/memphis-tn-22?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.2,
-          "review_count": 319,
+          "review_count": 317,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2099,8 +2108,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Miami Central",
           "address": "11858 NW 36th Ave Bldg 1, Miami, FL 33167",
           "website": "https://www.copart.com/locations/miami-central-fl-105?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 3.7,
-          "review_count": 212,
+          "rating": 3.8,
+          "review_count": 211,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2111,7 +2120,7 @@ window.REVIEW_DATASETS = {
           "address": "12850 NW 27th Ave Bldg 1, Opa-locka, FL 33054",
           "website": "https://www.copart.com/locations/miami-north-fl-33?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.1,
-          "review_count": 262,
+          "review_count": 263,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2121,8 +2130,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Miami North, Tampa South, Miami Central, Punta Gorda Sublot",
           "address": "3800 NW 16th Blvd, Okeechobee, FL 34972",
           "website": "https://www.copart.com/locations/state/usa/fl",
-          "rating": 3.5,
-          "review_count": 8,
+          "rating": 3.9,
+          "review_count": 7,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2132,8 +2141,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Miami South",
           "address": "24301 SW 137th Ave Bldg 1, Homestead, FL 33032",
           "website": "https://www.copart.com/locations/miami-south-fl-148?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 3.5,
-          "review_count": 176,
+          "rating": 3.6,
+          "review_count": 177,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2166,7 +2175,7 @@ window.REVIEW_DATASETS = {
           "address": "10588 Central Ave NE Bldg 1, Blaine, MN 55434",
           "website": "https://www.copart.com/locations/minneapolis-mn-37?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.4,
-          "review_count": 280,
+          "review_count": 278,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2176,8 +2185,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Minneapolis North",
           "address": "1526 Bunker Lake Blvd NE Bldg 1, Ham Lake, MN 55304",
           "website": "https://www.copart.com/locations/minneapolis-north-mn-80?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 3.4,
-          "review_count": 307,
+          "rating": 3.5,
+          "review_count": 305,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2188,7 +2197,7 @@ window.REVIEW_DATASETS = {
           "address": "4763 Lott Rd Bldg 1, Eight Mile, AL 36613",
           "website": "https://www.copart.com/locations/mobile-al-58?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.8,
-          "review_count": 152,
+          "review_count": 150,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2198,8 +2207,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Mobile South",
           "address": "9401 Old Pascagoula Rd Bldg 1, Theodore, AL 36582",
           "website": "https://www.copart.com/locations/mobile-al-184?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 3.5,
-          "review_count": null,
+          "rating": 3.8,
+          "review_count": 23,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2210,7 +2219,7 @@ window.REVIEW_DATASETS = {
           "address": "2668 U.S. Hwy 601 S, Mocksville, NC 27028",
           "website": "https://www.copart.com/locations/mocksville-nc-196?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.9,
-          "review_count": 66,
+          "review_count": 67,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2220,8 +2229,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Montgomery",
           "address": "6044 Troy Hwy Bldg 1, Montgomery, AL 36116",
           "website": "https://www.copart.com/locations/montgomery-al-145?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 3.2,
-          "review_count": null,
+          "rating": 3.3,
+          "review_count": 160,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2231,8 +2240,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Napa",
           "address": "1660 Green Island Rd, American Canyon, CA 94503",
           "website": "https://www.copart.com/locations/napa-ca-190?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 3.4,
-          "review_count": 26,
+          "rating": 3.3,
+          "review_count": 27,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2243,7 +2252,7 @@ window.REVIEW_DATASETS = {
           "address": "865 Stumpy Ln Bldg 1, Lebanon, TN 37090",
           "website": "https://www.copart.com/locations/nashville-tn-63?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.1,
-          "review_count": 413,
+          "review_count": 414,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2254,7 +2263,7 @@ window.REVIEW_DATASETS = {
           "address": "14600 Old Gentilly Rd Bldg 1, New Orleans, LA 70129",
           "website": "https://www.copart.com/locations/new-orleans-la-79?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 2.8,
-          "review_count": 268,
+          "review_count": 270,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2264,8 +2273,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Newburgh",
           "address": "25 Riverview Dr Bldg 1, Marlboro, NY 12542",
           "website": "https://www.copart.com/locations/newburgh-ny-24?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 3.1,
-          "review_count": 294,
+          "rating": 3.2,
+          "review_count": 289,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2276,7 +2285,7 @@ window.REVIEW_DATASETS = {
           "address": "18 NY-17K, Newburgh, NY 12550",
           "website": "https://www.copart.com/locations/newburgh-ny-24/?cid=gmb:copart:newburgh-ny-24",
           "rating": 2.9,
-          "review_count": 143,
+          "review_count": 142,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2286,8 +2295,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - North Austin",
           "address": "22225 US-79, Taylor, TX 76574",
           "website": "https://www.copart.com/locations/north-austin-tx-394?_gl=1*mkds9h*_up*MQ..&gclid=CjwKCAjwvvmzBhA2EiwAtHVrb7gWH3sEwfPbR4hoz1Kegd_Nedq1E-uNdkEkYgwCHepbw68Mo94XXxoCnFMQAvD_BwE",
-          "rating": 2.9,
-          "review_count": 44,
+          "rating": 2.8,
+          "review_count": 45,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2298,7 +2307,7 @@ window.REVIEW_DATASETS = {
           "address": "55R High St Bldg 1, North Billerica, MA 01862",
           "website": "https://www.copart.com/locations/north-boston-ma-53?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.2,
-          "review_count": 276,
+          "review_count": 280,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2309,7 +2318,7 @@ window.REVIEW_DATASETS = {
           "address": "16701 51st Ave NE Bldg 1, Arlington, WA 98223",
           "website": "https://www.copart.com/locations/north-seattle-wa-48?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.1,
-          "review_count": 238,
+          "review_count": 236,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2331,7 +2340,7 @@ window.REVIEW_DATASETS = {
           "address": "3586 N 2000 W Bldg 1, Farr West, UT 84404",
           "website": "https://www.copart.com/locations/ogden-ut-188?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.6,
-          "review_count": 119,
+          "review_count": 117,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2342,7 +2351,7 @@ window.REVIEW_DATASETS = {
           "address": "3352 W Orange Blossom Trail Bldg 1, Apopka, FL 32712",
           "website": "https://www.copart.com/locations/orlando-north-fl-153?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.2,
-          "review_count": 140,
+          "review_count": 138,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2352,8 +2361,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Orlando South",
           "address": "307 E Landstreet Rd Bldg 1, Orlando, FL 32824",
           "website": "https://www.copart.com/locations/orlando-south-fl-55?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 3.7,
-          "review_count": 249,
+          "rating": 3.8,
+          "review_count": 248,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2374,8 +2383,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Pasco",
           "address": "3333 N Railroad Ave Bldg 1, Pasco, WA 99301",
           "website": "https://www.copart.com/locations/pasco-wa-71?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 4.3,
-          "review_count": 75,
+          "rating": 4.2,
+          "review_count": 76,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2386,7 +2395,7 @@ window.REVIEW_DATASETS = {
           "address": "2704 Geryville Pike Bldg 1, Pennsburg, PA 18073",
           "website": "https://www.copart.com/locations/philadelphia-pa-26?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 2.7,
-          "review_count": 542,
+          "review_count": 540,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2397,7 +2406,7 @@ window.REVIEW_DATASETS = {
           "address": "77 Bristol Rd Bldg 1, Chalfont, PA 18914",
           "website": "https://www.copart.com/locations/philadelphia-east-pa-164?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.3,
-          "review_count": 198,
+          "review_count": 200,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2408,7 +2417,7 @@ window.REVIEW_DATASETS = {
           "address": "615 51st Ave, Phoenix, AZ 85043",
           "website": "https://www.copart.com/locations/phoenix-az-47?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 2.9,
-          "review_count": 1014,
+          "review_count": 1009,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2419,7 +2428,7 @@ window.REVIEW_DATASETS = {
           "address": "24125 N 7th Ave Bldg 1, Phoenix, AZ 85085",
           "website": "https://www.copart.com/locations/phoenix-north-az-362?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.8,
-          "review_count": 86,
+          "review_count": 88,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2463,7 +2472,7 @@ window.REVIEW_DATASETS = {
           "address": "1451 Lebanon School Rd Bldg 1, West Mifflin, PA 15122",
           "website": "https://www.copart.com/locations/pittsburgh-west-pa-174?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.5,
-          "review_count": 105,
+          "review_count": 106,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2474,7 +2483,7 @@ window.REVIEW_DATASETS = {
           "address": "6900 NE Cornfoot Rd Bldg 1, Portland, OR 97218",
           "website": "https://www.copart.com/locations/portland-north-or-9?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 2.9,
-          "review_count": 375,
+          "review_count": 372,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2507,7 +2516,7 @@ window.REVIEW_DATASETS = {
           "address": "310 Copart Ln Bldg 1, Dunn, NC 28334",
           "website": "https://www.copart.com/locations/raleigh-nc-54?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.4,
-          "review_count": 466,
+          "review_count": 465,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2518,7 +2527,7 @@ window.REVIEW_DATASETS = {
           "address": "1900 Old Crews Rd Bldg 1, Knightdale, NC 27545",
           "website": "https://www.copart.com/locations/raleigh-north-nc-368?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 2.6,
-          "review_count": 105,
+          "review_count": 106,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2529,7 +2538,7 @@ window.REVIEW_DATASETS = {
           "address": "12167 Arrow Route Bldg 1, Rancho Cucamonga, CA 91739",
           "website": "https://www.copart.com/locations/rancho-cucamonga-ca-97?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.3,
-          "review_count": 307,
+          "review_count": 308,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2562,7 +2571,7 @@ window.REVIEW_DATASETS = {
           "address": "5701 Whiteside Rd Bldg 1, Sandston, VA 23150",
           "website": "https://www.copart.com/locations/richmond-va-139?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 4.1,
-          "review_count": 112,
+          "review_count": 113,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2584,7 +2593,7 @@ window.REVIEW_DATASETS = {
           "address": "8600 Morrison Creek Dr Bldg 1, Sacramento, CA 95828",
           "website": "https://www.copart.com/locations/sacramento-ca-2?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3,
-          "review_count": 260,
+          "review_count": 255,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2595,7 +2604,7 @@ window.REVIEW_DATASETS = {
           "address": "7320 2100 S Bldg 1, Magna, UT 84044",
           "website": "https://www.copart.com/locations/salt-lake-city-ut-336?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 1.8,
-          "review_count": 277,
+          "review_count": 273,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2606,7 +2615,7 @@ window.REVIEW_DATASETS = {
           "address": "11130 Applewhite Rd Bldg 1, San Antonio, TX 78224",
           "website": "https://www.copart.com/locations/san-antonio-tx-74?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3,
-          "review_count": 291,
+          "review_count": 293,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2617,7 +2626,7 @@ window.REVIEW_DATASETS = {
           "address": "1203 S Rancho Ave Bldg 1, Colton, CA 92324",
           "website": "https://www.copart.com/locations/san-bernardino-ca-7?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.3,
-          "review_count": 225,
+          "review_count": 227,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2639,7 +2648,7 @@ window.REVIEW_DATASETS = {
           "address": "13895 Llagas Ave Bldg 1, San Martin, CA 95046",
           "website": "https://www.copart.com/locations/san-jose-ca-6?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.1,
-          "review_count": 113,
+          "review_count": 114,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2650,7 +2659,7 @@ window.REVIEW_DATASETS = {
           "address": "5510 Silk Hope Rd Bldg 1, Savannah, GA 31405",
           "website": "https://www.copart.com/locations/savannah-ga-87?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.6,
-          "review_count": 221,
+          "review_count": 223,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2660,8 +2669,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Scranton",
           "address": "210 McAlpine St Bldg 1, Duryea, PA 18642",
           "website": "https://www.copart.com/locations/scranton-pa-142?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 3.9,
-          "review_count": 140,
+          "rating": 4,
+          "review_count": 143,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2683,7 +2692,7 @@ window.REVIEW_DATASETS = {
           "address": "5235 Greenwood Rd Bldg 1, Shreveport, LA 71109",
           "website": "https://www.copart.com/locations/shreveport-la-84?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.6,
-          "review_count": 115,
+          "review_count": 116,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2694,7 +2703,7 @@ window.REVIEW_DATASETS = {
           "address": "687 E Outer Rd Bldg 1, Sikeston, MO 63801",
           "website": "https://www.copart.com/locations/sikeston-mo-141?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 4,
-          "review_count": 100,
+          "review_count": 101,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2705,7 +2714,7 @@ window.REVIEW_DATASETS = {
           "address": "2124 W Camplain Rd Bldg 1, Hillsborough Township, NJ 08844",
           "website": "https://www.copart.com/locations/somerville-nj-91?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3,
-          "review_count": 308,
+          "review_count": 306,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2715,8 +2724,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - South Boston",
           "address": "82 Cape Rd Bldg 1, Mendon, MA 01756",
           "website": "https://www.copart.com/locations/south-boston-ma-27?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 4.2,
-          "review_count": 120,
+          "rating": 4.1,
+          "review_count": 122,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2749,7 +2758,7 @@ window.REVIEW_DATASETS = {
           "address": "1922 Nazareth Church Rd Bldg 1, Spartanburg, SC 29301",
           "website": "https://www.copart.com/locations/spartanburg-sc-144?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.4,
-          "review_count": 263,
+          "review_count": 259,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2759,8 +2768,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Spokane",
           "address": "11019 W McFarlane Rd Bldg 1, Airway Heights, WA 99001",
           "website": "https://www.copart.com/locations/spokane-wa-116?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 3.6,
-          "review_count": 125,
+          "rating": 3.7,
+          "review_count": 126,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2771,7 +2780,7 @@ window.REVIEW_DATASETS = {
           "address": "2889 US-60 Bldg 1, Rogersville, MO 65742",
           "website": "https://www.copart.com/locations/springfield-mo-92?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.1,
-          "review_count": 176,
+          "review_count": 175,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2792,8 +2801,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - St. Louis",
           "address": "13033 Taussig Ave Bldg 1, Bridgeton, MO 63044",
           "website": "https://www.copart.com/locations/st.-louis-mo-20?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 2.9,
-          "review_count": 403,
+          "rating": 3,
+          "review_count": 397,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2826,7 +2835,7 @@ window.REVIEW_DATASETS = {
           "address": "1825 Commerce Blvd Bldg 1, Midway, FL 32343",
           "website": "https://www.copart.com/locations/tallahassee-fl-117?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.5,
-          "review_count": 69,
+          "review_count": 70,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2836,8 +2845,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Tampa North",
           "address": "12511 US-301, Thonotosassa, FL 33592",
           "website": "https://www.copart.com/locations/tampa-north-fl-335",
-          "rating": 3.8,
-          "review_count": 25,
+          "rating": 3.9,
+          "review_count": 27,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2848,7 +2857,7 @@ window.REVIEW_DATASETS = {
           "address": "12020 US-301 Bldg 1, Riverview, FL 33578",
           "website": "https://www.copart.com/locations/tampa-south-fl-34?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.2,
-          "review_count": 435,
+          "review_count": 432,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2858,8 +2867,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Tanner",
           "address": "20760 Sandy Rd Bldg 1, Tanner, AL 35671",
           "website": "https://www.copart.com/locations/tanner-al-66?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 3.9,
-          "review_count": null,
+          "rating": 4,
+          "review_count": 156,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2869,8 +2878,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Tifton",
           "address": "399 Oakridge Church Rd Bldg 1, Tifton, GA 31794",
           "website": "https://www.copart.com/locations/tifton-ga-88?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 3.9,
-          "review_count": 100,
+          "rating": 4,
+          "review_count": 98,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2881,7 +2890,7 @@ window.REVIEW_DATASETS = {
           "address": "108 N Main St, East Windsor, NJ 08520",
           "website": "https://www.copart.com/locations/trenton-nj-135?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 2.7,
-          "review_count": 378,
+          "review_count": 374,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2892,7 +2901,7 @@ window.REVIEW_DATASETS = {
           "address": "5600 S Arcadia Ave Bldg 1, Tucson, AZ 85706",
           "website": "https://www.copart.com/locations/tucson-az-93?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.8,
-          "review_count": 218,
+          "review_count": 214,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2903,7 +2912,7 @@ window.REVIEW_DATASETS = {
           "address": "282 5th St Bldg 1, Vallejo, CA 94590",
           "website": "https://www.copart.com/locations/vallejo-ca-1?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.2,
-          "review_count": 138,
+          "review_count": 137,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2914,7 +2923,7 @@ window.REVIEW_DATASETS = {
           "address": "7519 Woodman Ave Bldg 1, Van Nuys, CA 91405",
           "website": "https://www.copart.com/locations/van-nuys-ca-43?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 2.6,
-          "review_count": 391,
+          "review_count": 389,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2924,8 +2933,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Waco",
           "address": "7201 N General Bruce Dr Bldg 1, Temple, TX 76501",
           "website": "https://www.copart.com/locations/waco-tx-182?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 3.3,
-          "review_count": 202,
+          "rating": 3.4,
+          "review_count": 199,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2935,8 +2944,8 @@ window.REVIEW_DATASETS = {
           "name": "Copart - Walton",
           "address": "13273 Dixie Hwy Bldg 1, Walton, KY 41094",
           "website": "https://www.copart.com/locations/walton-ky-138?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
-          "rating": 3,
-          "review_count": 86,
+          "rating": 2.9,
+          "review_count": 87,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2958,7 +2967,7 @@ window.REVIEW_DATASETS = {
           "address": "1261 142nd Ave Suite A, Wayland, MI 49348",
           "website": "https://www.copart.com/locations/wayland-mi-385?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 2.5,
-          "review_count": 132,
+          "review_count": 135,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2969,7 +2978,7 @@ window.REVIEW_DATASETS = {
           "address": "7876 Belvedere Rd Bldg 1, West Palm Beach, FL 33411",
           "website": "https://www.copart.com/locations/west-palm-beach-fl-70?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.5,
-          "review_count": 162,
+          "review_count": 164,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -2980,7 +2989,7 @@ window.REVIEW_DATASETS = {
           "address": "600 Old West Warren Rd Bldg 1, West Warren, MA 01092",
           "website": "https://www.copart.com/locations/west-warren-ma-149?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.7,
-          "review_count": 128,
+          "review_count": 127,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -3002,7 +3011,7 @@ window.REVIEW_DATASETS = {
           "address": "4510 S Madison Ave Bldg 1, Wichita, KS 67216",
           "website": "https://www.copart.com/locations/wichita-ks-67?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 3.1,
-          "review_count": 188,
+          "review_count": 187,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -3024,7 +3033,7 @@ window.REVIEW_DATASETS = {
           "address": "795 Sipe Rd Bldg 1, York Haven, PA 17370",
           "website": "https://www.copart.com/locations/york-haven-pa-127",
           "rating": 3.4,
-          "review_count": 238,
+          "review_count": 237,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -3035,7 +3044,7 @@ window.REVIEW_DATASETS = {
           "address": "11715 Pulaski Hwy, White Marsh, MD 21162",
           "website": "https://www.copart.com/content/us/en/member-news/qcsa-direct-joins-copart_5-31-13",
           "rating": 2.8,
-          "review_count": 40,
+          "review_count": 41,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -3079,7 +3088,7 @@ window.REVIEW_DATASETS = {
           "address": "304 NJ-68, Columbus, NJ 08022",
           "website": "https://www.copart.com/",
           "rating": 2.5,
-          "review_count": 28,
+          "review_count": 27,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -3123,7 +3132,7 @@ window.REVIEW_DATASETS = {
           "address": "7320 2100 S, Magna, UT 84044",
           "website": "https://www.copart.com/content/us/en/member-news/sublot-offsite",
           "rating": 3.2,
-          "review_count": 35,
+          "review_count": 36,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -3156,7 +3165,7 @@ window.REVIEW_DATASETS = {
           "address": "14185 Dallas Pkwy #400, Dallas, TX 75254",
           "website": "http://www.copart.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb&utm_content=link-website",
           "rating": 2.8,
-          "review_count": 236,
+          "review_count": 233,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -3184,6 +3193,2256 @@ window.REVIEW_DATASETS = {
       ]
     },
     "reviews": [
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xjt85c/has_anyone_else_noticed_fewer_car_listings_having/19rwulmknhm82/",
+        "author": "NewGuyOnTheBLock007",
+        "review_date": "2026-10-31",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "I’ve seen an influx of “minimum bid” cars. Im not sure what happen but there probably is alot of cars being totalled",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "How to Bid (First Time)",
+        "id": "rvw-013369"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xjt85c/has_anyone_else_noticed_fewer_car_listings_having/19rwpsys6aoqp/",
+        "author": "NewGuyOnTheBLock007",
+        "review_date": "2026-10-31",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "I’m assuming they’re rushing them to get cars out. I have noticed this too. It’s very annoying. I don’t bid on them because recently I decided to go see the cars on my watch list without a video. 4-hour drive. The engine sounded like a big hollow drum. I promised myself i would never gamble on a non-video as long as i live. Keep in mind a rod knock doesn’t display a check engine light. Im not buying from copart to gamble. Im here to refurbish a car economically. Testing my luck is gambling",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "How to Bid (First Time)",
+        "id": "rvw-013370"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xjt85c/has_anyone_else_noticed_fewer_car_listings_having/",
+        "author": "Significant_Froyo486",
+        "review_date": "2026-10-30",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "Has anyone else noticed fewer car listings having audio of the engines running? I’ve bought two cars for family use through CoPart and we’ve been pretty happy with my purchases! But I’m in need of a new vehicle and honestly 90% of my saved cars have a snap shot of the engine and zero audio of it running which basically removes any desire to put in a bid. I’m within a few hours drive of multiple locations and I’m noticing it’s *all* of them! What’s up with this Copart?",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "How to Bid (First Time)",
+        "id": "rvw-013371"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xjpxia/should_i_try_it/19rwfzbdlwkcg/",
+        "author": "Common_Employ9705",
+        "review_date": "2026-10-30",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "i got u actually im buying for drive 2 months and than flipped im already offered to dealer 3800$ for that with everything its gonna cost 5500$ i mean with taxes and delivery so car like that costs on market 9000$ so why not im only 18 i want to try german car specially bmw i know about german car thing but still 58000 miles its should be good",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013372"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xjpxia/should_i_try_it/19rwfv65trimc/",
+        "author": "claymatthewsband",
+        "review_date": "2026-10-30",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "I mean are you just buying it to flip it? If so, go for it, as long as the pricing makes sense (try to be less than 50% of retail after adding auction fees and repair costs). But I would never, ever in a million years own a 4 cylinder BMW or Mercedes-Benz.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013373"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xjb8us/record_relists_yv1lz56d1y2655112/19rvt4w7nwqdc/",
+        "author": "PartyNextFlo0r",
+        "review_date": "2026-10-30",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "I'm not sure with copart,but a car auction local to me had a $60 insertion fee, applied each time car runs through their bi weekly auction. So if you keep the car on their low and want a higher bid, it adds up.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013374"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xjb8us/record_relists_yv1lz56d1y2655112/19rvskaefpll0/",
+        "author": "Moynia",
+        "review_date": "2026-10-30",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "I am a Volvo guy and these early V70 XCs man they are not worth any money. You could probably pick one up on marketplace for less than a minimum bid + fees, and youd still be stuck with a car with a ton of discontinued AWD components",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013375"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xjb8us/record_relists_yv1lz56d1y2655112/19rvmzj6bvog2/",
+        "author": "PartyNextFlo0r",
+        "review_date": "2026-10-30",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Copart must be picking their chops with all those fee's",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013376"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xif6ab/psa_run_and_drive_waterflood_lemons/19ruv6j6m6pl1/",
+        "author": "Ham-Berg",
+        "review_date": "2026-10-30",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "This is why regular people shouldn’t buy from an auction. I do my research and inspect in person, but still About 1 in 10 cars are duds. But I have connections..If I have a bad motor I get it replaced on the cheap, break even and move on to the next one. Bad tranny, swap it out and sell it and move on. It’s not a big deal. If you’re buying and selling in high volume you’ll still be profitable, having a dud now and then is just the cost of doing business. And I don’t ever buy flood damaged cars.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013377"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.copart.membermobile)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.copart.membermobile&hl=en&gl=us",
+        "author": "Jacob Sanders",
+        "review_date": "2026-10-30",
+        "rating": 2,
+        "sentiment": "negative",
+        "review_text": "I like co part but I dont like the fact I have to pay 100 dollars to bid like broskido what if I want to bid and not pay 100 dollars upfront? so now I just scroll",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013378"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xif6ab/psa_run_and_drive_waterflood_lemons/",
+        "author": "jorik_bordiur",
+        "review_date": "2026-10-29",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "PSA: Run and Drive water/flood lemons Greetings everyone! Just a short PSA for anyone buying water/flood vehicles with Run and Drive status. An acquaintance bought this NX 350h Luxury: [https://www.copart.com/lot/62159216/salvage-2026-lexus-nx-350h-luxury-la-shreveport](https://www.copart.com/lot/62159216/salvage-2026-lexus-nx-350h-luxury-la-shreveport) ; the pictures are this car's engine insides! While the guy was there at the shop with his NX, the owner of the shop showed him another engine taken off another NX, similar specs, 2025, 350h, Luxury, only difference was the millage on the second one. I will post the video of that second one in the comment section! PSA guys: be very careful when buying \"Run and Drive\" flooded vehicles off Copart! ESPECIALLY hybrids! Especially if you're going to be shipping them across the ocean! It seems that the way they bend the rule is that when they get the car, it's battery still has some juice in it so they put it in gear and they are able to \"fullfil\" their own rules as to \"drives under it's own power\" back and forth a couple of yards and then gets listed! I want to mention, and i'm sure it can be long debated, the guy ordered a \"third party inspection\"! Do you think the third party inspection of a flooded vehicle would AT LEAST demand opening the hood of the car and checking what's on the dipstick? Well, apparently not to that \"inspector\"! They didn't do that, just pictures of the interior/exterior. Of course the end of the dipstick was covered in good ol' \"milk\"! So be wary of that too! Have a good one and be careful when buying especially overseas, most of the times the casino will win! Shoot your questions.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Third-Party Inspection Authorization & Scheduling",
+        "tier3": "Previewing/ Inspecting Vehicles",
+        "id": "rvw-013379"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xif6ab/psa_run_and_drive_waterflood_lemons/19rtvu28p0xz4/",
+        "author": "Live_Angle_8118",
+        "review_date": "2026-10-29",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Hey guys. I took a giant risk buying a flooded hybrid and it didn’t work out well. -OP If you read the description of runs and drives, it simply says the vehicle starts, goes into gear, and moves under its own power. That’s it. They aren’t stress testing them. It’s an auction.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013380"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xif6ab/psa_run_and_drive_waterflood_lemons/19rtvnyg2f474/",
+        "author": "Proof_Bathroom_3902",
+        "review_date": "2026-10-29",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "A flood damaged vehicle sold as a total loss at auction by an insurance company had hidden mechanical damage? I'm shocked. ![gif](giphy|AaQYP9zh24UFi)",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013381"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xh3bzg/reach_out_to_seller/",
+        "author": "SnootyGoose",
+        "review_date": "2026-10-27",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "Reach out to seller? I won an auction, but it was on approval and the seller ended up re-listing the vehicle. Is there any way to reach out to them? I believe it was through Crashed Toys, and when I look them up it looks like a subsidiary of Copart and their contact info seems the same.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Helpful Support Experience",
+        "id": "rvw-013382"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xge4zr/new_buyer_help_understanding_on_approval_auction/",
+        "author": "SnootyGoose",
+        "review_date": "2026-10-27",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "New buyer, help understanding on approval auction I was bidding on a car that was on approval through autobidmaster. It seemed very straight forward, you may be high bidder but the seller doesn’t have to accept the price. I was high bidder on the car earlier this afternoon. A while later a bid came in for 3x the amount, me at $10k and they came in at $30k. I thought it was over for me, but I was still listed as high bidder and technically winning the auction. The auction goes to the live auction lot and I end up on top in the end, but I’m still under that $30k that showed up from out of no where. Help me understand how there is this large amount of a bid but I’m still high bidder. Was this an offer that was sent to the seller? I’m really confused, and I didn’t have much luck with google.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "How to Bid (First Time)",
+        "id": "rvw-013383"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xgdje5/copart_job/",
+        "author": "shuckoRed",
+        "review_date": "2026-10-27",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Copart job Had a job offer with Copart and just trying to get a feel of what I may be getting into. The job title is Elite Force Inventory Specialist. Job details has me flying on short notice to support with tons of travel involved. Anyone here work this position? Any help would be appreciated. The Indeed reviews were great.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-013384"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xgdje5/copart_job/19rqt0uajyuci/",
+        "author": "No_Relationship9094",
+        "review_date": "2026-10-27",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "They did this a few years ago instead of giving us our annual pittance. They just changed a bunch of practical titles into the \"rockstar\" shit like how parts stores have Parts Professionals and Delivery Specialists",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Helpful Support Experience",
+        "id": "rvw-013385"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xgdje5/copart_job/19rpo65vj7lsx/",
+        "author": "Upset_Pop4341",
+        "review_date": "2026-10-27",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "I’m in that team and honestly it’s kinda eehhh right now it’s very dependent on how bad the weather is and how many people they need in the region your going to get sent to, while your not traveling your staying at the home yard which is the closest Copart near you. You can expect 80hrs in a pay period for sure which is 2 weeks pay. While deployed you can expect anywhere from 100hrs to over 150hrs, also per diem 45$ a day extra and bonuses while deployed.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-013386"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xge4zr/new_buyer_help_understanding_on_approval_auction/19rphue8462yq/",
+        "author": "SnootyGoose",
+        "review_date": "2026-10-27",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "If I pull up the listing it says $30k - pending approval. If I then click on view details it says my $20k+ amount is under contract until so and so time tomorrow. The way they display the info makes it a bit confusing.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Vehicle Pickup, Delivery and Scheduling",
+        "tier2": "Delivery Coordination & Handoffs",
+        "tier3": "Delivery Status and ETA",
+        "id": "rvw-013387"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xg77f7/anyone_found_a_cheaper_carfax_alternative_that/",
+        "author": "Appropriate_Set133",
+        "review_date": "2026-10-26",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "Anyone found a cheaper Carfax alternative that actually works? I've been helping my younger sister find her first car for the past couple of weeks, and it's turning into a bigger headache than I expected. We went to check out a 2017 Civic last weekend. Looked pretty decent in person, but the seller didn't have a Carfax report, so we ended up paying for one ourselves. Didn't end up buying the car. Yesterday, she sent me another listing for a 2018 Corolla, and now we're back to square one with another VIN to check. I don't mind spending money to make sure she gets a decent car, but paying around $45 every time we find something promising is starting to get annoying. Has anyone actually used a cheaper alternative to Carfax and found it reliable? Not looking for anything fancy, just something that gives us useful history information without spending another $40–$50 on every car.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Listing Status",
+        "tier3": "Selling/ Relisting vehicle or Parts purchase",
+        "id": "rvw-013388"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xfmtpb/uhaul_self_transport/",
+        "author": "Joshua9williams",
+        "review_date": "2026-10-26",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "U-Haul self transport. Looking at buying a badly front damaged car for parts. Steering damaged etc just need rear section I’ve usually ever transported via 3rd party or Copart. But wondering if they’ll let me show up with a U-Haul car hauler and pick up even if it’s bad damage to where I’ll need dollys to get it off.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013389"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xe8sny/2017_buick_cascada_advice_on_how_to_find_reduced/19ropniy6m7ac/",
+        "author": "Illustrious-Spell468",
+        "review_date": "2026-10-26",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Get it posted with a few brokers at once and go open carrier with a flexible pickup window, like a week instead of one fixed day. Drivers fill spots on routes they're already running, so flexibility is what brings the price down. Make sure it rolls and steers too, non runners cost more to ship. And line up the carrier before you win, Copart storage fees kick in pretty fast once the pickup deadline passes.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013390"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xfmtpb/uhaul_self_transport/19roi1myt957p/",
+        "author": "Live_Angle_8118",
+        "review_date": "2026-10-26",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "Save the headache and just have someone else ship it. I live 45 minutes from Copart and they charged me $64 to deliver a vehicle to my house. My laziness of hooking up my trailer to the duramax, driving 90 minutes round trip, and getting fuel made their offer seem dummy proof.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013391"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (414275302, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=414275302&type=Purple%20Software&reviewId=14715540312",
+        "author": "Jenede Greenleaf",
+        "review_date": "2026-10-26",
+        "rating": 5,
+        "sentiment": "positive",
+        "review_text": "I think you should upload more pictures. Ram",
+        "geo_validation": "apple_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Document Upload & Verification",
+        "tier3": "Upload Troubleshooting",
+        "id": "rvw-013392"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xd0zbs/is_copart_good/19rnelkcf0sdf/",
+        "author": "Working_Doughnut_577",
+        "review_date": "2026-10-25",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "Copart is a legitimate auction company, but you need to understand how the bidding works. A lot of buyers wait until the live auction before placing serious bids, so seeing only $250 right now doesn’t necessarily mean anything is wrong. Also, “normal wear” doesn’t guarantee the vehicle is mechanically sound. Check the title, photos, condition report, and vehicle history before bidding. The biggest thing new buyers overlook is the total cost. Your winning bid is just the beginning. You also have auction fees, transportation, and potentially repairs to consider. A 1994 Supra could attract plenty of attention once the auction goes live. Just do your homework before bidding.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013393"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xdt5eb/washington_state_salvage_title_for_an_out_of/19rketafp1czl/",
+        "author": "limoncello21",
+        "review_date": "2026-10-24",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "They called the supervisor, and they said they didn't even know that WA doesn't issue salvage titles. They went back and forth, and they said they can't give me a title only with the bill of sale; they also offered a bonded title, which I'm not sure if I should get or just put the car on a trailer and take it to Washington.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Title, Ownership, POA and Documentation",
+        "tier2": "Title Delivery & Status",
+        "tier3": "Title Not Received",
+        "id": "rvw-013394"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x9froa/auction_access_in_tennessee/19rk8pwhmh5gi/",
+        "author": "isthis4realormemorex",
+        "review_date": "2026-10-24",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Bad economic times to think about flipping salvage cars and if you have never done it as your question implies, your gonna have a rough go at it. Your better off going to FB Marketplace and try it out, at least no membership fee's, buyer fee's, broker fee's, etc etc, you'll be out $1000 each car with fee's and then shipping.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Payment Refunds, Transaction Issues and Deposits",
+        "tier2": "Fees & Charges Disputes",
+        "tier3": "Buyer Fees Explanation",
+        "id": "rvw-013395"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xdt5eb/washington_state_salvage_title_for_an_out_of/",
+        "author": "limoncello21",
+        "review_date": "2026-10-23",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "Washington State Salvage Title for an Out of State Buyer LOT 66738535 Hey guys, I could really use some help with this situation. I purchased a vehicle through Copart in Washington State. The vehicle is salvage, but Copart only provided me with a bill of sale because Washington State does not issue salvage titles. The problem is that I live in Nevada, and the DMV here will not accept the bill of sale as proof of ownership. Has anyone dealt with a similar situation? If so, how did you resolve it? I’m stuck because I can’t drive the vehicle to Washington for an inspection while it’s still salvage, and I can’t even get insurance for it under these circumstances. Any advice or guidance would be greatly appreciated. Thanks in advance!",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Third-Party Inspection Authorization & Scheduling",
+        "tier3": "Previewing/ Inspecting Vehicles",
+        "id": "rvw-013396"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xdjyz7/c5_sold_at_auction/",
+        "author": "AdFragrant6717",
+        "review_date": "2026-10-23",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "C5 sold at auction Hey there everyone looking to get in contact with the new owner of this car. My 2001 c5 just got sold at auction from copart in north tampa Florida. Got totaled out a few weeks ago. The build sheet is pretty extensive, built it with my own hands and my dad’s help in the garage. First car I bought in cash with all my own money and did 100% of the work on myself. If someone could help me find who bought it I would love to talk with them!",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Helpful Support Experience",
+        "id": "rvw-013397"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xd0zbs/is_copart_good/",
+        "author": "MarCowboy0917",
+        "review_date": "2026-10-23",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Is copart good? I found this 1994 Toyota supra and it says it has \"normal wear damage\" yet only 1 person has bet on it and they bet 250$ is this a common thing or is something a scam?",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013398"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xdt5eb/washington_state_salvage_title_for_an_out_of/19rk1c8kbmebl/",
+        "author": "West_Swimmer1325",
+        "review_date": "2026-10-23",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "You need to have the car inspected by state patrol in WA. This is the only option. There is no work around. I’m in Oregon, and we used to be able to take WA bill of sale to the DMV, they’d accept it, not anymore. One option might be to get an affidavit in lieu of title, just depends if your DMV will accept it. This is how I used to get rid of shells at the scrap yard when I’d part them out. You should be able to get a trip permit and insurance. I don’t see why it would be an issue with your paperwork. State patrol is an easy inspection. They basically want to make sure you have no stolen parts on your car. Anything major that’s been replaced you need to have legit documentation/receipt, otherwise they’ll give you temp registration for 3 years. You can basically register the car, but they won’t issue the title under 3 years has passed",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Third-Party Inspection Authorization & Scheduling",
+        "tier3": "Previewing/ Inspecting Vehicles",
+        "id": "rvw-013399"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xdknrr/need_advice_whether_to_buy_a_car_on_copart/19rjxasc6y6jp/",
+        "author": "NewGuyOnTheBLock007",
+        "review_date": "2026-10-23",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Everyone knows who has bought cars on copart only buy from auction sellers. Think about what kind of seller would action a car at a place where totalled cars are. They obviously dont want to disclose the known issue and want it sold AS-IS. Buy a wrecked one that was totalled by insurance",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013400"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/askcarsales",
+        "source_url": "https://www.reddit.com/r/askcarsales/comments/1xd49px/got_into_a_fender_bender_with_the_lease_question/",
+        "author": "Feisty-Journalist497",
+        "review_date": "2026-10-23",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Got into a fender bender with the lease! question about what happens when the lease ends motorcyclist dived infront of me; slammed the brakes and luckily he walked away; insruance exchange, and that will be dealth with. no airbags deployed, I do not anticipate this being totaled, but I have seen some really decent on on copart 'totalted\" with what looks to be minor damage. I negotiated a Silverado ev extended range down to 63K, with a residual of about 54. with taxes, my total payment was 580, and I one payed so the effective payment is 510. anyways, on to the actual question: I do not own this vehicle; I cannot sue for lost value or w.e. when the truck gets turned in 2028, lets say its worth 40K Instead of the projected 54K. to my understanding, I either get into a used loan at 54K or walk and GM eats that. Can I then turn around and buy it from the dealer at a reasonable amount? my thoughts are, dealer probably gets it wholesale for 35, so I pay 42K? what are your thoughts here? I can't be the first guy to think this up ( my plan is to go into another lease, just would like to know if this is an option )",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013401"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (414275302, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=414275302&type=Purple%20Software&reviewId=14704159238",
+        "author": "pohsli na her",
+        "review_date": "2026-10-23",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "It’s bad. Since the latest update, the app doesn't work—it simply won't open. Please revert it to how it was before.",
+        "geo_validation": "apple_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-013402"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1410332198, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=1410332198&type=Purple%20Software&reviewId=14702124537",
+        "author": "Falvy",
+        "review_date": "2026-10-23",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "App. Worst app ever it is not old person friendly",
+        "geo_validation": "apple_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-013403"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xcsrur/airbag_deployment_investigation_72299636/",
+        "author": "Present_Jicama_1219",
+        "review_date": "2026-10-22",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Airbag Deployment Investigation - #72299636 Looking for theories for why almost every air bag went off, including front and back seat belt restraints. No 'real' exterior damage shown or documented. [https://www.autobidmaster.com/en/search/lot/72299636/copart-2026-jeep-grand-cherokee-tificate-of-title-cleveland-west-oh/](https://www.autobidmaster.com/en/search/lot/72299636/copart-2026-jeep-grand-cherokee-tificate-of-title-cleveland-west-oh/)",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Account / Access / Login",
+        "tier2": "Document Upload & Verification",
+        "tier3": "Upload Troubleshooting",
+        "id": "rvw-013404"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xcek5n/looking_for_the_previous_owner_of_this_alfa_romeo/19rhduyvouri8/",
+        "author": "DawgCheck421",
+        "review_date": "2026-10-22",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Oh it is mine, wiped it out on a delivery goat on my way to get hookers and blow. Hoe stole the extra key, sorry.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Vehicle Pickup, Delivery and Scheduling",
+        "tier2": "Scheduled Pickup Status",
+        "tier3": "Missed/ Delayed Pickup and Dispatch Window",
+        "id": "rvw-013405"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1s9x24e/copart_delivery/19rflmaptnr8l/",
+        "author": "Interesting-Hall-428",
+        "review_date": "2026-10-21",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "HI u/Accomplished-Fill227 . Im also in the process of a getting a vehicle from copart. i was wonderinf if you can provide some details, about what happened. Did you finally get your car transported from copart. How long did it take. Was it delivered to your home - or copart office in your city. Really appreciate some info. Kind regards,",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Vehicle Pickup, Delivery and Scheduling",
+        "tier2": "Delivery Coordination & Handoffs",
+        "tier3": "Delivery Status and ETA",
+        "id": "rvw-013406"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x46w4q/are_all_trucks_on_copart_held_together_by_hopes/phwpazw/",
+        "author": "AmbassadorIBX",
+        "review_date": "2026-10-20",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Dude, Copart is a SALVAGE auction. Of course the trucks have damage,",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013407"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xaob16/looking_to_buy_this_with_no_experience/phwlzwf/",
+        "author": "Lucky_Boy13",
+        "review_date": "2026-10-20",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "It looks like it has already been picked over. I would be very surprised if other items under the hood and exhaust aren't missing. Do they just say it runs? because all that means is the car turns on and goes into gear, doesn't mean its really drive able. I absolutely would not bid without inspecting in person first",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Third-Party Inspection Authorization & Scheduling",
+        "tier3": "Previewing/ Inspecting Vehicles",
+        "id": "rvw-013408"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xaob16/looking_to_buy_this_with_no_experience/phwayj6/",
+        "author": "Illustrious-Spell468",
+        "review_date": "2026-10-20",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Clean title on Copart usually means a dealer or fleet consignment, so regular buyers will be on it too. Since you're going through a broker, ask what they charge per car before you bid. That stacks on top of Copart's buyer and internet fees plus transport, and all of it comes out of your 7500. Work backward from what it's worth fixed, minus repairs and all those fees, and don't chase past that number.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013409"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xaob16/looking_to_buy_this_with_no_experience/phw5l9h/",
+        "author": "Ham-Berg",
+        "review_date": "2026-10-20",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Since you didn’t give us any important information, I’m going to assume it’s a V6, You’ll get it for around $4k. Plus $1500 fees. Then you’ll put at least $2500 into it plus paint. So you’ll be in it for over $8k and it’s worth $5k",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013410"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xaob16/looking_to_buy_this_with_no_experience/phvkklo/",
+        "author": "z333ds",
+        "review_date": "2026-10-20",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "If it has a clean title, the seller cant be an insurance right?",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Title, Ownership, POA and Documentation",
+        "tier2": "Title Delivery & Status",
+        "tier3": "Title Not Received",
+        "id": "rvw-013411"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1xaob16/looking_to_buy_this_with_no_experience/phv6ppp/",
+        "author": "AutoRooster",
+        "review_date": "2026-10-20",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Look up 3 things. The market value of this car (how much used, in good condition, for sale rn), the seller, and car’s history. If the seller isn’t an insurance or major dealership then move on as a first buyer. If the car has a history of flood or whatever and it has been repaired in the past, then move on as a first buyer. If passes both checks, then make a list of all the used parts for this car and find out how much. Add the estimated fees, and then $1000 on top. That should give you the price to get it working. Then (market value) - (repair/fees/surprises) = your bid. Keep in, that’s so you run even with a market value car. Others may outbid you, they either export or use it for parts. You cannot compete. Leave it.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013412"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (414275302, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=414275302&type=Purple%20Software&reviewId=14684053586",
+        "author": "Mmsssupe44",
+        "review_date": "2026-10-18",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Old. Awful app. Feels like an app that was made in 2010",
+        "geo_validation": "apple_us_store",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013413"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x749a7/is_this_a_biohazard_sticker/phci7ha/",
+        "author": "BrokenPipes2",
+        "review_date": "2026-10-17",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "My point for asking the question was, does it have to be disclosed in the auction listing. Because it wasn’t! But thanks for replying with your experience and rudeness. That’s all I was looking for!",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Communication Follow-up & Escalation",
+        "tier3": "No Callback / Unresolved Case",
+        "id": "rvw-013414"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x73goc/won_my_first_salvage_auction_shipping_advice/phchb18/",
+        "author": "BrokenPipes2",
+        "review_date": "2026-10-17",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Thanks man, I appreciate your input. I did end up going with their towing and delivery. It just got to the point where it was too difficult to arrange my own transport and when they knocked the hundred bucks off, it made it more than worth it. Now it’s just the waiting game to see how much hidden damage there actually is. I build jeeps for a hobby and this will be stripped to the bare minimum and built from the ground up. Thanks again",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013415"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x73goc/won_my_first_salvage_auction_shipping_advice/ph9miaz/",
+        "author": "QueenAng429",
+        "review_date": "2026-10-17",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "This is the copart subreddit, not the abetterbid subreddit. No professional or even an experienced buyer is using junk like abetterbid, just a few people who shouldn't be buying on copart in the first place, so basically no one here is going to already know and be able to accurately tell you if they are one of the brokers that forces high delivery provided by them, you would need to ask them that.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Helpful Support Experience",
+        "id": "rvw-013416"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x6vy1m/bought_a_run_drive_vehicle_from_copart_canada/ph9m9ey/",
+        "author": "QueenAng429",
+        "review_date": "2026-10-17",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "There is a set standard of the photos, and it's basically always followed. Nothing is stopping the employee from fucking them up on that car, like I said they occasionally take a picture of the hood instead of the engine bay e.t.c. but generally it's the same idea of photos and isn't specifically hiding anything. Copart banks off the idiots here and on YouTube buying shit they know nothing about, which is not what copart was designed for. Especially with their now even more absurd fees it works out for them and becomes even less worth it for professionals, but if you know what you are doing it's still possible.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Helpful Support Experience",
+        "id": "rvw-013417"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x6vy1m/bought_a_run_drive_vehicle_from_copart_canada/ph45uu0/",
+        "author": "Illustrious-Spell468",
+        "review_date": "2026-10-16",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "ive seen milky gunk under the cap on plenty of yard cars that were just sitting outside through cold nights. condensation does that, especially when it only ever got started and moved a few feet. the dipstick being milky too is more worrying though. before you write it off get a block test done, the cheap blue fluid kind that checks the coolant for exhaust gas, and pressure test the cooling system. if both pass change the oil, drive it a bit and recheck. as for copart, run and drive just means it started and moved in gear that day so you are pretty much stuck with it. worst case you find out the real repair number and decide to fix it, part it or run it back through an auction.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013418"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x6vy1m/bought_a_run_drive_vehicle_from_copart_canada/ph447ce/",
+        "author": "Big_Nerve_6612",
+        "review_date": "2026-10-16",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": ">Photos are taken in the same standard set on everything regardless of its condition type, the only difference being some keep the hood closed for some reason, Except this isn't the case 100% of the time. I nearly bought a vehicle where the photos 100% intentionally hid substantial damage inside near the area of the dashboard below the gauge cluster, hid the deployed curtain airbag that was cut, and that the passenger side pillar was damaged from a seat airbag deployment. This was not a coincidence -- even the first time I clicked on the listing I wondered why the photos were taken from such an odd angle inside. The photographer purposely took photos of the interior from below his waist level and away from the ceiling unlike most listings. Managed to hide all signs of airbag deployment, which was the only way you could tell this specific car was already fake fixed up before being sent to auction. Nevermind the fact that the car was full of junk, including THE ORIGINAL STEERING WHEEL AIRBAG THAT WAS ALREADY REPLACED -- not shown in pics. As a car dealer, once I saw how inspections are done at legitimate auctions, it became extremely clear Copart's business model relies on buyer's inability to fully know what's wrong with the car. I understand their operation is based off of what they were doing 20+ years ago with crashed insurance cars going for nearly scrap pricing. But now that they love to profit off of quick flips and sellers intentionally washing their hands of the lowest of the low of cars, their incentive is clearly to F over the buyer and wait for another new guy to get screwed. That's not to say you can't find a deal or make money on the cars, but considering how much risk you are taking for very little profit, there are so many better things I'd rather do with my time and capital.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013419"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x749a7/is_this_a_biohazard_sticker/ph3ly0c/",
+        "author": "Romanharper2013",
+        "review_date": "2026-10-16",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "I work at Copart Bio can literally mean anything if it was a total loss from a flood or had any water damage no matter how small- bio, if it had drugs found inside like fentanyl or anything- bio, if there was even a trace of blood- bio.. I'm assuming since it had bullet holes that someone was shot inside, and no they don't have to list that on there, I am so surprised how many people come to this sub and don't read their membership agreement at all and then come complain and stuff and ask questions- it's literally ALL right there in the membership agreement but no one reads it. At least copy the membership agreement and the rules and put it into AI and have it explain everything to you in layman's terms. There is no discounts or getting out of anything, it's an auction and everything is AS IS.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013420"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x6vy1m/bought_a_run_drive_vehicle_from_copart_canada/ph2ooi4/",
+        "author": "QueenAng429",
+        "review_date": "2026-10-16",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "They list the seller on some, but far from all. Dealing with yards is always a bad experience, but this also heavily depends on the yard, some are far worse than others and some are alright. Photos are taken in the same standard set on everything regardless of its condition type, the only difference being some keep the hood closed for some reason, maybe a lazy employee or when it won't stay up on its own or something. As I said I've bought many sight unseen, generally a great experience. I just got another car in the other day listed as enhanced which basically means it probably doesn't work even though enhanced technically means for some stupid reason under their definition \"Ran at some point when in coparts possession\" but it's known to be the option used for not functional as there is no actual non running condition, and it runs and drives fine.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013421"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x73goc/won_my_first_salvage_auction_shipping_advice/ph2621d/",
+        "author": "Few_Living_5828",
+        "review_date": "2026-10-16",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "I use a betterbid all the time, many times they reduce the shipping fee. It's like a rough estimate. My last car was quoted at 450 and when they secured a broker it went to 380. You still got a good price and shipping is worth it. I used to go pickup all my cars and had so many issues I just get them delivered now. Once I rented a uhaul truck that died. You can get a flat on your trailer. Etc. also You have to realize there are massive wait.times at the copart yard as well. Just get it shipped to.your door. Make.sure you have a jump pack because the batter may be dead or buy a new batter and have on hand",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013422"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x6vy1m/bought_a_run_drive_vehicle_from_copart_canada/ph1rw42/",
+        "author": "Big_Nerve_6612",
+        "review_date": "2026-10-16",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Had I not gone in person and realized that not only did the seller do a very shady coverup of damages, but Copart photos purposely pointed the camera at odd angles to hide what would have been clearly visible damages, I would have been hit with at least a $10k loss on the first car I was going to purchase.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013423"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x73goc/won_my_first_salvage_auction_shipping_advice/ph1ks4e/",
+        "author": "West_Swimmer1325",
+        "review_date": "2026-10-16",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "They won’t let you drive it off. They used to be lax about it back in the day, not anymore. I usually wait for someone bringing cars in or out and offer them 50 bucks to tow it off the property. It’s easy money for them. Some of the yards will have transporters on file that specifically do this.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Vehicle Pickup, Delivery and Scheduling",
+        "tier2": "Tow and Storage Charges",
+        "tier3": "Tow and Storage Fees",
+        "id": "rvw-013424"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x6bs6e/buying_a_car_for_the_motor_what_to_do_with_the/",
+        "author": "I_am_Farts_McGee",
+        "review_date": "2026-10-15",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Buying a car for the motor; what to do with the rest of the car? Howdy all I’m thinking about doing a not so common motor swap (one motor family generation to another but same manufacture) and it would be greatly advantageous to have the entire donor vehicle sitting in my shop instead of my local U-pull-it yard nickle and dining me to death over charging me for a long block, Intake, exhaust manifolds, 8 injectors, 8 coils, 8 spark plugs, two fuel rails, a throttle body, all the belt drive accessories, motor mounts, a wiring harness, ect So I’m looking at donor vehicles that are rollovers or have been hit so hard in the side/rear they are off kilter on all 6 axis’ and shaped like a C I’m assuming no resellable parts to be scavenged. What do you do with the husk once you’ve plucked the motor (and maybe transmission) out? Haul it to the scrap yard for the weight in steel? Send it back through Copart? just to save you the typing; I know this is a terrible idea, I will be swamped by fees, and when o do pick it up from the yard the motor will have been stolen and replaced by a half eaten Big Mac",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013425"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x6vy1m/bought_a_run_drive_vehicle_from_copart_canada/pgzqtz0/",
+        "author": "magics10",
+        "review_date": "2026-10-15",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Sorry this happened to you OP. Option 1.) Run that muthafucka right back though the copart auction. Option 2.) Dispute the charge with the credit card 💳 (success unlikely). But worth a shot. Option 3.) Fix the blown head gasket or mechanical issue.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013426"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x6743r/at_what_price_would_you_walk_away_from_this/pgxcxou/",
+        "author": "Square1Digital",
+        "review_date": "2026-10-15",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Been out of the game since covid. If im all in @5-10k unde left book, Including purchase price, fees and repairs. Id pull the trigger. Something tells me that 17.500 guy is thinking the same thing🤣 #notapennymo'",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013427"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x6db8o/whats_up_with_this/pgx2g11/",
+        "author": "BrokenPipes2",
+        "review_date": "2026-10-15",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "I disagree. They should disclose all damages that the vehicle sustained in the accident that rendered it a salvage title. They are clearly hiding the major damage to get more money for the vehicle! It’s a scam!",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013428"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x6bs6e/buying_a_car_for_the_motor_what_to_do_with_the/pgwsixa/",
+        "author": "tthompson225",
+        "review_date": "2026-10-15",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "I say part it out and scrap it, depending on how many parts are good you may break even or even make a little money. I bought a Denali pickup for the 6.0 and 4l65e trans, parted out the rest and scrapped the truck. Ended up making $300 while keeping the motor, trans, wheels, and e fans.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Vehicle Pickup, Delivery and Scheduling",
+        "tier2": "Scheduled Pickup Status",
+        "tier3": "Schedule/ Reschedule Pickup",
+        "id": "rvw-013429"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x6db8o/whats_up_with_this/pgwjze3/",
+        "author": "DawgCheck421",
+        "review_date": "2026-10-15",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Scumbags buy clearly destroyed cars and rig them to look not that bad. They will spray paint body panels to look correct in pics, hide everything they can.....I have even seen a spindle broken in two that was rewelded together to hold the wheel on for the auction. The only upside is hopefully these end up with foreign 3rd world country bidders that run up the bids on everything",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013430"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x6bs6e/buying_a_car_for_the_motor_what_to_do_with_the/pguj9va/",
+        "author": "West_Swimmer1325",
+        "review_date": "2026-10-15",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Scrap it. You’ll make money off the metal. I used to have an eBay parts business. As long as you have paperwork from the auction, a scrap metal yard will pay you by the tonnage Someone above said you need to have the title transferred, not true. I boarder two states, one issues a salvage title, the other simply issues a bill of sale. Scrap yard will accept either, but for the bill of sale, you need to get an extra document from the department of motor vehicles ‘affidavit in lieu of title’ for them to accept it. If you don’t want to go through the process of getting the shell to the scrap yard, you can look on Craigslist or Facebook marketplace for ads of people picking up junk vehicles. They’ll usually come get it for free",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Account / Access / Login",
+        "tier2": "Document Upload & Verification",
+        "tier3": "Upload Troubleshooting",
+        "id": "rvw-013431"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x6743r/at_what_price_would_you_walk_away_from_this/pgtxntz/",
+        "author": "NewGuyOnTheBLock007",
+        "review_date": "2026-10-15",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "There is a reason a DEALER would put a clean title car on an as-is auction site. If the car is good though i would cap out at 17k",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Title, Ownership, POA and Documentation",
+        "tier2": "Power of Attorney (POA) Handling",
+        "tier3": "POA Requirements Clarification",
+        "id": "rvw-013432"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x6743r/at_what_price_would_you_walk_away_from_this/pgsw1m0/",
+        "author": "Lumpy-Shop-5321",
+        "review_date": "2026-10-15",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "There are very few people into them, are impractical and it has had major damage. There are a lot used. I am thinking. $12500 in my market.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013433"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x6743r/at_what_price_would_you_walk_away_from_this/pgssroq/",
+        "author": "justbroketrynaberich",
+        "review_date": "2026-10-15",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "You can buy these from a dealer with similar miles for 27k-30k all day, so you’re comparing to the wrong number I see clean title, so assuming nothings wrong with it if you come out below retail you’re good",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Vehicle Pickup, Delivery and Scheduling",
+        "tier2": "Delivery Coordination & Handoffs",
+        "tier3": "Delivery Status and ETA",
+        "id": "rvw-013434"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.copart.membermobile)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.copart.membermobile&hl=en&gl=us",
+        "author": "Oscar Castillo",
+        "review_date": "2026-10-15",
+        "rating": 5,
+        "sentiment": "positive",
+        "review_text": "Great app, so far I'm loving it. Easy to browse to find what you need.",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-013435"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (414275302, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=414275302&type=Purple%20Software&reviewId=14671502649",
+        "author": "Angry775",
+        "review_date": "2026-10-15",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "BS. I paid to be a member so that I could buy a car that has a buy it now price. Apparently I cannot “buy it now” because I do not have some kind of “license” seems pretty stupid to me - I just want to buy a car for cash ?",
+        "geo_validation": "apple_us_store",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013436"
+      },
+      {
+        "source_website": "trustpilot.com",
+        "source_label": "Trustpilot (copart.com)",
+        "source_url": "https://www.trustpilot.com/reviews/6acff8999ef8da728d0d50d9",
+        "author": "Trustpilot user",
+        "review_date": "2026-10-14",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Careless disregard for legal documents. Unresponsive and indifferent regarding lost official documents! Our car was totalled due to water damage. Our insurance company contracted with Copart for salvage. Copart required me to send our title to them via FedEx (overnight delivery). They provided the shipping label with tracking. My package was lost. Copart was wildly unresponsive. The first time I reached out to them, 2 days after the package should have been delivered, I was dismissed with \"Don't worry. This happens all the time. Wait a week.\" I did so. After a week, Copart then suggested that I go to the FedEx location myself to see if it could possibly be there. As if I would be allowed to peruse around a shipping store for a lost article. Instead, I opened a claim for delayed delivery with FedEx. After a week, the article was labeled as officially lost. FedEx advised me to open a claim for lost item to activate the insurance policy. As I did not pay for shipping myself, I was unable to open this claim. FedEx instructed me to reach out to Copart who could use their FedEx account number and open the claim on my behalf. Copart REFUSES to do so. I am responsible for the cost of a replacement title, paying for a notary (as a veteran I do not bank locally, but rather with USAA), and for lost wages with time off work to get the paper notarized. Copart is totally indifferent and unwilling to help. I'm still in limbo waiting for over $20k from my insurance company while awaiting a replacement title. They gave an option to get a power of attorney that they can execute on my behalf, but why would I trust them with something like that?!?!",
+        "geo_validation": "trustpilot_us_slug",
+        "tier1": "Account / Access / Login",
+        "tier2": "Document Upload & Verification",
+        "tier3": "Upload Troubleshooting",
+        "id": "rvw-013437"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x46w4q/are_all_trucks_on_copart_held_together_by_hopes/pgf24p1/",
+        "author": "QueenAng429",
+        "review_date": "2026-10-13",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Are you stupid? Copart is for damaged vehicles, it's not a dealer lot with mint cars. You should not be buying anything from copart, go down to a ram dealer or something.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013438"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x47mpg/any_good_experiances_with_flipping_atvs_and_sbs/pgew768/",
+        "author": "StelioKontossidekick",
+        "review_date": "2026-10-13",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "No money to be made. High fees, most are beat to hell. Alot of extra damage. Overall I dont recommend. You can do better buying from the public and fixing up/reselling.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013439"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x46w4q/are_all_trucks_on_copart_held_together_by_hopes/",
+        "author": "Icy_Palpitation9187",
+        "review_date": "2026-10-12",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Are all trucks on Copart held together by hopes and prayers? 😂 'm trying to bid on a truck on Copart, but every truck I look at seems to have some kind of damage. One has front-end damage, another has a smashed bed, and the next one looks like it lost a fight with a Walmart parking lot. I'm starting to think these trucks come with a free damage package. For those of you who regularly buy trucks on Copart, what should I be looking out for? Any hidden issues that aren't obvious from the pictures? Trying not to turn my first truck purchase into a very expensive lesson 💀 I'm a new dealer trying to figure out how to increase margins, feel free to dm me and if there is any discord group let me know or I am about to setup :) https://preview.redd.it/qeqkk4epe2vh1.png?width=2854&format=png&auto=webp&s=0bdf8de2b8d3f9e424e4f820ec9b8e1405e25697 https://preview.redd.it/lkyfubqte2vh1.png?width=2880&format=png&auto=webp&s=74cd83b80786b1b7e6916a2cb7cb24b720a23157",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013440"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x47mpg/any_good_experiances_with_flipping_atvs_and_sbs/pgda44p/",
+        "author": "natenese",
+        "review_date": "2026-10-12",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "I've bought/ sold a few units. I really lowball the initial bid though. Getting into a bidding war eats all the profits up. This year the side by side market has been really tight. Only sold one SXS this year, got full asking price but took 90 days to sell and the single inquiry I had purchased it. Thankfully everhting else went crazy prices at copart so I didn't get stuck with any other ones. I found better deals on CL/marketplace. The good ones move quick though.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "How to Bid (First Time)",
+        "id": "rvw-013441"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x46w4q/are_all_trucks_on_copart_held_together_by_hopes/pfiwp5x/",
+        "author": "Dustball_",
+        "review_date": "2026-10-12",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Since you don't seem to be aware that Copart primarily specializes in insurance vehicles, you should definitely look into all the fees so you don't come back here and complain about how Copart is a ripoff and you weren't expecting to pay so much in fees.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013442"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x46w4q/are_all_trucks_on_copart_held_together_by_hopes/pfif9ui/",
+        "author": "BenderRodriguezz",
+        "review_date": "2026-10-12",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "By definition, every listing on copart should’ve had an insurance company look at it and decide that it would cost more to repair than it would be worth after being fixed. At least with professional labor. The insurance companies are pretty good at that, generally. If you are looking for something to bring to a mechanic and have fixed for you and are hoping for a better deal, you’re in the wrong place. The target market is mostly people who are going to fix the cars themselves or at their business and resell them, or people looking to break them down and sell individual parts.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Case Resolution Quality",
+        "tier3": "Issue Resolved",
+        "id": "rvw-013443"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x46w4q/are_all_trucks_on_copart_held_together_by_hopes/pfhbk9t/",
+        "author": "Few_Living_5828",
+        "review_date": "2026-10-12",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "I'd also add, I've purchased two trucks, both insurance. Both I think had fraud claims. One was a low mileage theft Silverado gmt800. Seems like the owner lied to get a claim. Truck needed alot of minor things to get it going but I had it almost 5 years. My current truck a ram 1500 had side damage and was insurance but also needed brakes, tires and a whole slew of minor things the first year. It is my current daily though. You have to really watch out for people dumping cars that need to s of work or crashing them intentionally to get a claim. If they're not really cheap, you need to inspect them thoroughly before u bid. And check the frame!!",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013444"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x46w4q/are_all_trucks_on_copart_held_together_by_hopes/pfh9rtv/",
+        "author": "claymatthewsband",
+        "review_date": "2026-10-12",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Do you not understand that copart is a SALVAGE auction? Where insurance companies get rid of vehicles they now own because they paid out on them? Every vehicle on there SHOULD have some damage or issue. Yes, private parties can list vehicles on there, but why would you even consider those? Why would that seller not sell it on facebook marketplace or their dealership if the vehicles is good, where they can get much more money for it?",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013445"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.copart.membermobile)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.copart.membermobile&hl=en&gl=us",
+        "author": "Sulaiman Adamu",
+        "review_date": "2026-10-12",
+        "rating": 5,
+        "sentiment": "positive",
+        "review_text": "is very good application",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-013446"
+      },
+      {
+        "source_website": "trustpilot.com",
+        "source_label": "Trustpilot (copart.com)",
+        "source_url": "https://www.trustpilot.com/reviews/6acebf2f5aa07c721b3bc221",
+        "author": "Trustpilot user",
+        "review_date": "2026-10-10",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "I never completed my Copart membership but they charged me anyway!. I never completed my Copart.com membership application but they charged me a $99 membership fee anyway and now they tell me \"you don't have an account, so how could we charge you\"? Yes, I did enter my billing information but did not complete the entire membership form, but they charged me anyway. Now I am having a hard time getting them to refund the unapproved charge even though I gave them the reference number from their (unapproved) $99 charge. They are (very) less than honest and I doubt now that I would ever buy a car from them. Caveat emptor! JM",
+        "geo_validation": "trustpilot_us_slug",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013447"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x2s1sy/why_does_hail_make_cars_a_total_loss/",
+        "author": "East-Economics-833",
+        "review_date": "2026-10-10",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Why does hail make cars a total loss? Genuine question. I see a lot of cars for auction just for hail but will have one owner, no accidents and low mileage. I’m not car educated and have been considering buying a car that has hail damage because they don’t seem to have serious issues. Am I missing something?",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013448"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x2hk9y/my_dads_experience_with_copart/",
+        "author": "Xacan4r",
+        "review_date": "2026-10-10",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "My dads experience with copart! Hello. My dad has been buying cars from copart for 6 years now,and here’s his experience.First,in 2020 we bought a 2015 Volvo xc60 t5,it had front end damage,the bumper,fenders and the hood. It is still in our family for 5 long years. He was flipping cars for 4 years and then i started photographing them. In 2025 he bought 2014 Volvo Xc60 for a price of 750$ bucks or something like that. It turned out like that.Then after 15 days he bought a 2016 Volvo s80 from a guy who bought it and delivered to ukraine.Heres how it turned out.And in summer 2026 he bought my mom a 2022 polestar 2.And it had arrived today.Heres a Pic of it. It has front suspension damage.I personally think copart is much better than iaai.I love copart!",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013449"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wzeju5/success_stories/pf5aapc/",
+        "author": "Gold_District562",
+        "review_date": "2026-10-10",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "2021 express 150k miles $4100 no isses.. side swipe damage.... runs beautifully drove for 2months on t tags until I had to get it fixed 1k to get it fixed to convert salvage title to rebuilt and get permanent tags... other gems as well without issues 2013 Cadillac 2015 Mercedes... my first purchased burned me tho... 2013 passat with food title...thinking it was a insurance fraud because only one window was busted and no actual \"flood\" damage but timing chain went about 200 miles in",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013450"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x2hk9y/my_dads_experience_with_copart/pf4160a/",
+        "author": "Thetechfo",
+        "review_date": "2026-10-10",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Shipping my car Oakland to Rotterdam was about $2600 with customs fees. $2400 for second car Oakland to le Havre",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013451"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x2hk9y/my_dads_experience_with_copart/pf2h6cw/",
+        "author": "Ok_Raspberry181",
+        "review_date": "2026-10-10",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "All makes sense. Our costs are very different. Export is a big business, and you got a handful of ports where vehicles are transported to. Shipping companies operate only around ports. Car haulers provide different rates if they go Copart > shipping company, and they always have a steady demand. Container rates aren’t crazy. To put things into perspective, since you’ve mentioned WA, Seattle (assumed Copart) to LA is \\~700, and \\~1200 to ship it (assuming it’s an SUV or a sedan). Boom. 1900 dollars and your vehicle is overseas in Klaipeda, Lithuania.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013452"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x1yr38/found_a_car_on_copart_that_im_considering_buying/pez0cvl/",
+        "author": "Icy_Palpitation9187",
+        "review_date": "2026-10-10",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "60K retail is very good tho... do yall use copart a LOT?",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Vehicle Pickup, Delivery and Scheduling",
+        "tier2": "Delivery Coordination & Handoffs",
+        "tier3": "Delivery Status and ETA",
+        "id": "rvw-013453"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x1yr38/found_a_car_on_copart_that_im_considering_buying/peylnob/",
+        "author": "Ok_Raspberry181",
+        "review_date": "2026-10-10",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "I wouldn’t risk it if I were you. “Dents and scratches” means “mechanical issues” in Copart language. Private seller, meaning it didn’t sell anywhere, so it ended up on salvage auction https://preview.redd.it/ayonwflkfjuh1.jpeg?width=1320&format=pjpg&auto=webp&s=e201f14e8b5c35526504f0f58ce4ef20f5261e40",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Third-Party Inspection Authorization & Scheduling",
+        "tier3": "Previewing/ Inspecting Vehicles",
+        "id": "rvw-013454"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x1yr38/found_a_car_on_copart_that_im_considering_buying/peyejay/",
+        "author": "redditor_6715",
+        "review_date": "2026-10-10",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "In my experience, cars without obvious damage are the most troublesome. I bought 2 clean title cars listed as run and drive 2 keys normal wear and tear, and both of them had surprise issues. If it was hit then it can be at the least assumed that the car was in drivable condition before it started heading to auction. 3rd party inspection companies or viewing the car in person would've definitely helped me. A family member of mine flips cars as a sort of hobby and he usually goes for Japanese cars with low miles with light damage (fixable at home, no frame damage) and usually he seems to have good luck with the auction. Another thing is to use a Copart or IAAI fee calculator as the buyer fees will hit you like a truck. I'm talking like hundreds of dollars. One of the cars I got was won for $950 and became $1,365 after fees. Essentially, get it inspected, use a fee calc, obvious but light damage, something preferably without too many miles (unless you want to risk worn out suspension, ball joints, engine/trans etc)",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013455"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x1yr38/found_a_car_on_copart_that_im_considering_buying/",
+        "author": "Icy_Palpitation9187",
+        "review_date": "2026-10-09",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Found a car on Copart that I’m considering buying for my brother. How do I know if it’s worth fixing? I’ve been looking at cars on Copart because I’m trying to find something affordable for my brother. I want to help him get a decent car without putting myself in a hole financially, and honestly, I didn’t realize how hard it would be to figure out which cars are actually worth buying. I found one that looks promising, but I keep going back and forth. The price is tempting, and I’m trying to look past the obvious damage to understand what it would actually take to get the car back on the road. The problem is that I’m not a mechanic. I can spot a dent, a broken headlight, or a damaged bumper, but I have no idea what might be hiding behind those things. I don’t know when damage is just cosmetic and when it could mean frame problems, suspension damage, electrical issues, or thousands of dollars in repairs. I’m also worried about underestimating the little things. A few replacement parts here, some bodywork there, and suddenly what looked like a great deal isn’t a great deal anymore. How do you evaluate damage from the listing photos before bidding?",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013456"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x1yr38/found_a_car_on_copart_that_im_considering_buying/peyaz82/",
+        "author": "natenese",
+        "review_date": "2026-10-09",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "This is likely being sold by a used dealer becuase it has a ton of issues/headaches or burns a shit ton of oil or both. Clean texas title as indicated by the listing. My advice --- Never buy anything not being sold by insurance companies unless you know what you are getting into. Minor dents and scratches as damage or the lack of an ACV number (actual cash value) are major red flags. Those are both easy ways to tell. If you aren't confident in repairing vehicles it is best to stay away from copart unless you are eager to learn the hard way and potentially spend a lot more money than you initially anticipated. Best to start of on something from facebook/craigslist. Still plenty of deals to be had.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013457"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x1yr38/found_a_car_on_copart_that_im_considering_buying/pey2cm2/",
+        "author": "Ok_Composer386",
+        "review_date": "2026-10-09",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "Wouldn’t consider Facebook marketplace? You can find pretty sweet rides under 10k with clean title. I wouldn’t recommend you to jump head first into places like copart and iaai. You can easily be left with a pile of metal if you don’t know what you’re doing. When looking for a car you sould be asking yourself… why is this car here? Who is it sold by? How expensive will this be to fix? Scratches to the bumper are nothing compared to what you can uncover.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Vehicle Pickup, Delivery and Scheduling",
+        "tier2": "Delivery Coordination & Handoffs",
+        "tier3": "Delivery Status and ETA",
+        "id": "rvw-013458"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x0qujw/cheapest_place_to_pull_carfax/pet3bna/",
+        "author": "kuddle30",
+        "review_date": "2026-10-09",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "These guys take care of me https://vincheckfast.com/login",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-013459"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.copart.transportation)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.copart.transportation&hl=en&gl=us",
+        "author": "Rick King",
+        "review_date": "2026-10-09",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "lags too much due to useless AI nonsense, app lags and freezes after every useless update",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-013460"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x0c2a8/salvage_repair_experts_cost_of_air_bags/pemjpsu/",
+        "author": "The_Toid",
+        "review_date": "2026-10-08",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "Sir, I mean this respectfully... You are completely wrong on this topic. I speak from a place of expert knowledge on this particular topic. I design airbag inflators professionally. I've been doing this for over two decades working for a top three supplier of these devices. We produce something around 100 million inflators annually, globally. We also make the igniters and propellants. They are exactly as complex as I say they are. These are explosive devices with internal operating pressures in the thousands of PSI, required to deliver consistent output performance across a temperature range of -40°C to +90°C, and do so with a response time of 2ms. I am not exaggerating the complexity of these devices or the cost to bring a new technology to market. Our last new inflator product took over 5 years of development and validation before it was brought to production. The first assembly line for it (of which there will be many more) was a $20 million dollar investment. We have several factories globally, all representing hundreds of millions in investment. All to build only the inflators. Quadruple that spend or more for our airbag and seatbelt businesses. The part numbers on the inflators are the part numbers from the inflator suppliers (us) who provide the airbag modules to the OEM. We do not sell to the aftermarket. We do not allow for the remanufacturing of our parts. No one can purchase our inflators, airbags, it seatbelts in part or whole from us unless they are a vehicle OEM. This is industry wide. Joe Blow can't call us up and ask to buy an inflator based on a PN he read off a disassembled airbag module. He cannot source these things from a legal and safe source. A",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Helpful Support Experience",
+        "id": "rvw-013461"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wziqo1/help/pem3c6h/",
+        "author": "Verga_due",
+        "review_date": "2026-10-08",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Yep, 10% penalty to forfeit a won lot. How much is it worth, though? No point relisting if he overbid significantly. Not sure what the listing fees are for a seller, though. Might not make any sense at any value.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013462"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1x0c2a8/salvage_repair_experts_cost_of_air_bags/pelcmpn/",
+        "author": "Ok_Raspberry181",
+        "review_date": "2026-10-08",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "You’re underestimating the rebuilders. Everything has been studied and reverse engineered long time ago. You’re also exaggerating the complexity of the unit and its cost of engineering. I’ve cut into a few airbags myself to take out the charge to detonate it (for lulz) - nothing sophisticated- just an igniter capsule and a propellant charge (with manufacturer information and part numbers, because those are outsourced, therefore could be purchased directly from manufacturer or distributor). Nylon bag is a fancy part. Don’t get me wrong, I discourage people from buying rebuilt airbags. I’d never sit in a vehicle with rebuilt airbags or bypass resistors installed. I strongly discourage people with no electronics/embedded engineering/engineering skills and understanding of safety, to cut into their bags and attempt to rebuild them.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013463"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.copart.membermobile)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.copart.membermobile&hl=en&gl=us",
+        "author": "Lucky jazzbay",
+        "review_date": "2026-10-08",
+        "rating": 4,
+        "sentiment": "positive",
+        "review_text": "love the app but I feel non registered members should also be able to watch live biding from their own end",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013464"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wzwgk8/first_time_buying_from_copart_uk_can_i_collect/pegn3b6/",
+        "author": "CouldBeNapping",
+        "review_date": "2026-10-07",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "You can't drive away, has to be trailered away. You book your pickup in the app, all the information you need is there. Police occasionally hang out near Copart locations for a quick and easy insurance, tax etc check.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-013465"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wzffbl/uship_how_do_you_like_them_for_towing_needs/peddgiw/",
+        "author": "Corver547",
+        "review_date": "2026-10-07",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "I have used it twice. Zero issues. Priced well, took care of each vehicle and was easy to communicate with. Looking at doing another soon if all goes well. I highly recommend using them.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Helpful Support Experience",
+        "id": "rvw-013466"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1ww1y67/why_is_this_car_not_selling_i_want_it_so_bad/pec46cw/",
+        "author": "RussianTankr",
+        "review_date": "2026-10-07",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Ive found that sometimes they will delay the auction end if its not high enough. Got screwed out of a (no engine) 66 Cadillac because of that.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013467"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wui7qn/wish_me_luck_first_copart_purchase_odd_details/pec3sv1/",
+        "author": "AmbassadorIBX",
+        "review_date": "2026-10-07",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "The bid was $200, fees added another $300. I already own two German-specific scan tools. I drive the car daily.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013468"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wzeju5/success_stories/",
+        "author": "Abe-early",
+        "review_date": "2026-10-06",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "Success stories? Bought this 03 excursion BIN for 1400. Only work I've done to it is charge the battery. It runs/drives great, and looks presentable. Surprisingly everything works, even the AC. It's gotta little rust, a little hail, and a lotta miles. But seems like a solid driver so far. Anybody else get their daily driver's from copart?",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013469"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wzefnr/success_story/",
+        "author": "Abe-early",
+        "review_date": "2026-10-06",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "Success story! Bought this 03 excursion BIN for 1400. Only work I’ve done to it is charge the battery. It runs/drives great, and looks presentable. Surprisingly everything works, even the AC. It’s gotta little rust, a little hail, and a lotta miles. But seems like a solid driver so far. Anybody else get their daily driver’s from copart?",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013470"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wzeju5/success_stories/pebg46p/",
+        "author": "South_Strawberry7662",
+        "review_date": "2026-10-06",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Got a 2010 Forester premium with 129k miles for 1300. Had hit a deer about 3k in total from fees and parts and price including new timing belt and water pump. It's pretty decent. A few things I still need to fix but really happy.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013471"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wzeju5/success_stories/pebaspp/",
+        "author": "DawgCheck421",
+        "review_date": "2026-10-06",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "I bought a 2012 cr-v that had super light rear end damage in 2020ish. The main damage was the spare tire tub got smooshed, who cares. Fixed the rear bumper with 2 zip ties until a dumb bitch on her phone rear ended us and reallllllly totaled it. Allstate sucks by the way but I still made a grand plus on the car. Bought a non-running side-by-side that was wrecked. Fixed it myself except the non-run, it ended up going to the dealer for a new ECU @ $1000. Sold for about break-even after having fun with it. Bought an 06 mustang, sight unseen. Couldn't fire it until I got it home where it was blown up and evacuated oil and parts all over my driveway. I sued copart and won. Now I am looking at a freshwater flood car that is an older but desirable car. I feel like interior work is going to kill my back and knees and have always been told to run from flood cars but F it. Unless you are a dealer, the only day you can preview the car is the day BEFORE the auction and the closest one to me is 100m away. Copart makes it really hard to score a deal but it is possible.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013472"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wwpwlt/any_brokers_in_texas/peak8iy/",
+        "author": "Adam_Nestauto",
+        "review_date": "2026-10-06",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "If you’re still looking for reliable vehicle transportation, I’d be happy to help. We provide door-to-door vehicle transport across the U.S. with competitive, all-inclusive rates. You can reach me directly at **(972) 666-7675** for a quote or to discuss your shipment. Thanks!",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Vehicle Pickup, Delivery and Scheduling",
+        "tier2": "Scheduled Pickup Status",
+        "tier3": "Schedule/ Reschedule Pickup",
+        "id": "rvw-013473"
+      },
+      {
+        "source_website": "trustpilot.com",
+        "source_label": "Trustpilot (copart.com)",
+        "source_url": "https://www.trustpilot.com/reviews/6ad85e183cac8813bc1e4d8d",
+        "author": "Trustpilot user",
+        "review_date": "2026-10-05",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "⭐ 1 STAR. ⭐ 1 STAR – ABSOLUTELY UNACCEPTABLE MANAGEMENT AND CUSTOMER SERVICE! I am beyond frustrated and disgusted with the way Copart Bakersfield and General Manager Paola Ruedaflores have handled my situation. This has been one of the worst business experiences I have ever had. Copart advertised a Toyota Tundra with a clean title, while both CARFAX and AutoCheck showed that the vehicle had been declared a total loss by an insurance company. When I discovered this serious issue and requested a fair resolution, management refused to help. Instead of taking my concerns seriously, Copart relisted the vehicle and had the audacity to charge me approximately $2,800 in fees! What makes this situation even more infuriating is the way General Manager Paola Ruedaflores handled my complaint. I expected someone in her position to demonstrate professionalism, accountability, and basic respect for customers. Instead, I was left feeling completely ignored and dismissed. How can a company expect customers to trust its auction listings when legitimate concerns are handled this way? I am a vehicle dealer, and I have dealt with many auctions over the years, but this experience has been absolutely outrageous. I refuse to accept being financially penalized for raising a legitimate concern about a vehicle’s history. A general manager should be solving problems, not allowing them to escalate while customers are left paying thousands of dollars in disputed fees. SHAME ON COPART BAKERSFIELD FOR TREATING ITS CUSTOMERS THIS WAY! I strongly warn other dealers and buyers: DO NOT rely solely on Copart’s title descriptions. Check CARFAX, AutoCheck, and the vehicle’s history before bidding. Paola Ruedaflores and Copart corporate management need to take accountability. This is completely unacceptable, and I will continue pursuing this matter until it is properly addressed. If I could give ZERO STARS, I absolutely would.",
+        "geo_validation": "trustpilot_us_slug",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Case Resolution Quality",
+        "tier3": "Escalation Required",
+        "id": "rvw-013474"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wybknm/bill_of_sale_registration_at_dmv/",
+        "author": "Sure-Client-253",
+        "review_date": "2026-10-05",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Bill of sale Registration at DmV Anyone successfully register a Bill of sale title cars in the US? If yes what state and what was the process at the DmV I buy these types of titles for export without issues but exploring if possible to register within the US. For context I’m in Texas. Thanks all!",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Title, Ownership, POA and Documentation",
+        "tier2": "Title Delivery & Status",
+        "tier3": "Title Not Received",
+        "id": "rvw-013475"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wxu66p/same_car_but_different_tail_lights/pe39184/",
+        "author": "QueenAng429",
+        "review_date": "2026-10-05",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "No, it's can't. We aren't including theft here, anything can happen, but the employees are not stealing the tail lights. If it was 2 auctions then someone bought it took parts and relisted it, if it's one auction with updated photos then the owner came and got their stuff, and copart decided to take new photos which they don't always do.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Bid Cancellation & Relist Fees",
+        "id": "rvw-013476"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wjbolq/humblemechanics_bad_experience_with_copart/pe2b0cz/",
+        "author": "isthis4realormemorex",
+        "review_date": "2026-10-05",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "autobidmaster, abetterbid, [https://go2auctionsnow.com/](https://go2auctionsnow.com/) go2auctionsnow is the cheapest flat fee's but please call the broker you go with to verify they don't stamp the title parts only/export only. Broker fee's are $150 up $350 for the car, plus copart fee's, $99-$119mailing fee's, and you might need to buy a one year membership. Just call or chat with the brokers chatbot's to get all the info needed",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013477"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wxu66p/same_car_but_different_tail_lights/pe1aemt/",
+        "author": "-BoredInNC-",
+        "review_date": "2026-10-05",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Yep! Even seen cases where car is brought to copart and after lawsuit ends the previous owner retains the car so it gets taken back from copart yard. Since the insurance companies want the damaged car taken away from a tow yard ASAP so they aren’t incurring storage fees. Since their deal with copart, they aren’t charged storage fees.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013478"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wui7qn/wish_me_luck_first_copart_purchase_odd_details/pe04kgf/",
+        "author": "AmbassadorIBX",
+        "review_date": "2026-10-05",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "My most recent no run/no drive purchase is my 2011 Audi A5. $200 plus fees, used my ODB11 to scan, found starter mechanically locked code, replaced the starter and now drive it daily. Buying from Copart is not for the risk-adverse buyer. I’m a retired Coast Guard machinery technician, have the skills and the tools to fix things. I’m also not adverse to taking big risks. https://preview.redd.it/8mdu4abd8nth1.jpeg?width=2732&format=pjpg&auto=webp&s=dc6d831e98e47f78c4e2212f90e2dba12a0ca0f3",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013479"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.copart.membermobile)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.copart.membermobile&hl=en&gl=us",
+        "author": "Ed no",
+        "review_date": "2026-10-05",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "current update doesn't work well on both my devices.",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-013480"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.copart.membermobile)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.copart.membermobile&hl=en&gl=us",
+        "author": "Ngozi Nmelisim Nmelisim",
+        "review_date": "2026-10-05",
+        "rating": 5,
+        "sentiment": "positive",
+        "review_text": "It has been my best app in recommending cars for my friends over here in Nigeria.",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-013481"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.copart.membermobile)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.copart.membermobile&hl=es&gl=us",
+        "author": "Ivan Irigoyen Castro",
+        "review_date": "2026-10-05",
+        "rating": 5,
+        "sentiment": "positive",
+        "review_text": "best app for car auctions",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-013482"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wxff8d/help_tracing_history_of_an_imported_2018_tundra/",
+        "author": "IntelligentMatter359",
+        "review_date": "2026-10-04",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "Help tracing history of an imported 2018 Tundra 1794: no records anywhere. Where can I find real mileage and accident history? Hi all, I'm looking at buying a used 2018 Toyota Tundra 1794 Edition (CrewMax 4x4, 5.7L V8) that was imported from North America. Before I commit, I want to verify its real mileage and whether it's ever been in an accident. **VIN: 5TFAY5F17JX722777** The door-jamb label says it was built in Texas in January 2018. The label is also bilingual (TIRES/PNEUS) and has a maple leaf logo, so I'm not sure whether it was originally sold in the US or Canada. What I've checked so far: * **CARFAX Canada:** no report found. * **GoodCar (NMVTIS-based):** no title records, no mileage readings, no owners. Also no salvage, total loss or flood records. * **Free Copart/IAAI auction archives (BidFax etc.):** nothing. Having no US title records at all makes me think it may have been exported new without ever being registered, but I'm not sure. My questions: 1. Which paid report is most likely to have real data on this VIN: CARFAX US, AutoCheck, or something else? 2. Does the maple leaf logo on the label mean it was a Canadian-market truck, or do US trucks have it too? 3. Is there another way to trace a truck like this, for example through Toyota dealer service records or export records? I don't mind paying for a report, as long as there's a good chance it actually has data. Thanks in advance!",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Title, Ownership, POA and Documentation",
+        "tier2": "Title Delivery & Status",
+        "tier3": "Title Not Received",
+        "id": "rvw-013483"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wx1o4s/shipping_companies/pdsmdam/",
+        "author": "Corver547",
+        "review_date": "2026-10-04",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "Uship.com, it is a bidding site for the big and little companies to get your business to ship. They will bid against each other to get your business. But the choice is ultimately yours. If you put on ad up early enough before you purchase a vehicle (state that in your ad as that will help) it can get reasonable. It cost $600 from Minneapolis to Green Bay area. He held it for a couple of days before delivery but not a big deal. Easy and worth it for him to grab it from Copart. Also, had another one grab a bike I got on eBay for $700 from Idaho, but that was obviously less than a car for space.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013484"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wwpwlt/any_brokers_in_texas/pdq7adm/",
+        "author": "joeyjoeskullcracker",
+        "review_date": "2026-10-04",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "With the Copart fees, you can pretty much ad a grand to what you’re buying. More if it’s a high dollar purchase. I bought a $1500 car and after fees it was $2400.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013485"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wjbolq/humblemechanics_bad_experience_with_copart/pdpvrbh/",
+        "author": "isthis4realormemorex",
+        "review_date": "2026-10-04",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Utter nonsense, been in the industry for decades. If that was true then copart/iaai wouldn't hand out broker licenses and allow people to buy under them in certain states. People use a broker to gain access to insurance auctions, the fee's are chump change compared to the savings if you know what you are doing. All my owned vehicles were bought from copart. 4 salvage, 2 clean titles.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013486"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wwpwlt/any_brokers_in_texas/pdpmkze/",
+        "author": "DawgCheck421",
+        "review_date": "2026-10-04",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "I thought I had read that TX doesn't need a broker to buy clean or salvage. That said, if you are only buying one it still might be beneficial to use one. The fees at IAA are so high to sign up that you aren't much more money behind to just pay a broker.....and have no bidding restrictions anywhere. I am from Ohio looking to buy a southern car and maybe truck and have been checking into it.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013487"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.copart.membermobile)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.copart.membermobile&hl=en&gl=us",
+        "author": "Jacob Salsman",
+        "review_date": "2026-10-04",
+        "rating": 5,
+        "sentiment": "positive",
+        "review_text": "Not a fan of having to pay to bid. pay for a service that you use. other wise I'm just drooling and wishing. eventually I'll find some thing but not from you",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "How to Bid (First Time)",
+        "id": "rvw-013488"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wwsurb/i_had_the_unfortunate_event_of_being_hit_by_an/",
+        "author": "Rainbowed4pride",
+        "review_date": "2026-10-03",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "I had the unfortunate event of being hit by an OVI driver, my car was totaled. My mother gifted me this vehicle after it has been in my family for 15 years. She bought it brand new in 2011. My kids grew up in this car, we have memories in this car of going to look @ Christmas lights, moving from GA I had the unfortunate event of being hit by an OVI driver, my car was totaled. My mother gifted me this vehicle after it has been in my family for 15 years. She bought it brand new in 2011. My kids grew up in this car, we have memories in this car of going to look @ Christmas lights, moving from GA to OH, family vacations, my kids first Disney trips. My mother has cancer and is older & idk how long I'll have her but she gave me this car bc she knew I'd appreciate it & take care of it. In an instant all that was taken away by this driver. I thought I might be able to fix it because I have family in the mechanic & auto body industry. I had the insurance company pick it up from the shop and they sent it to copart, just to avoid storage fees. I was going to do a salvage title restoration but when my family looked at it after copart dropped it off at my house, we discovered the frame was bent therefore we decided as a family to let it go & I called the insurance company to tell them we decided to not fix it & they had copart come back to get it. The same driver that dropped it off came to pick it back up & they came a day late, they were supposed to pick it up Thursday or Friday; it's Saturday. I'm crying in the driveway watching 15 years of memories slip away; this tow driver tells my fiance he doesn't understand why he dropped it off just to come back to get it. Idk who the h\\*\\*l he thinks he is but either way he's getting paid to do the job at hand & shouldn't have been pissed about it. He was rude to me telling me to move out the way (I was standing on the side of the truck) watching my family memories disappear to be crushed in a compacter more than likely. He was rude & ignorant. The comments were unnecessary, hurtful & they were unprofessional all the way around, & the fact I can't send the title with the driver bc the driver might misplace it (verbatim from copart themselves) is absolutely ridiculous!!!! This experience has been horrible.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-013489"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wwpwlt/any_brokers_in_texas/",
+        "author": "sblu23",
+        "review_date": "2026-10-03",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Any brokers in Texas? Reasonable fees and good service?",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013490"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wwqxr6/possible_to_obtain_duplicate_title_for_older_lot/pdneq6i/",
+        "author": "Ok_Raspberry181",
+        "review_date": "2026-10-03",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "I could probably get you a salvage title if Copart can’t accommodate your request, but you need to do your due diligence on rebuilds in Romania. If you need with US and Romanian customs stamps, you’re probably screwed.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Title, Ownership, POA and Documentation",
+        "tier2": "Power of Attorney (POA) Handling",
+        "tier3": "POA Requirements Clarification",
+        "id": "rvw-013491"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1iowsot/what_brokers_let_you_pick_the_car_up_in_person/pdjpfyn/",
+        "author": "TheCompMann",
+        "review_date": "2026-10-03",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "I ended up getting the car today so shipping was same day from when wire payment confirmed. The copart lot isn't too far from me though, around 30 mins - 1 hour away, but im glad the shipping didn't take long. Although the guy towing it didnt seem too professional(thats copart delivery nothing to do with carproxy) im guessing thats why it was cheap, front/rear bumper got scratched a bit but overall good experience",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Helpful Support Experience",
+        "id": "rvw-013492"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.copart.membermobile)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.copart.membermobile&hl=en&gl=us",
+        "author": "John Doe",
+        "review_date": "2026-10-03",
+        "rating": 4,
+        "sentiment": "positive",
+        "review_text": "I like the company and their app",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-013493"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wvz5z0/what_are_thoughts_on_this_vehicle/",
+        "author": "BrokenPipes2",
+        "review_date": "2026-10-02",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "What are thoughts on this vehicle? It looks like only a rear bumper is damaged. But it is salvaged and repairs are estimated at $20k. What’s your thoughts?",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013494"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wvh5iw/did_i_pay_too_much_vin_5j8yd4h82ll029206/",
+        "author": "Gloomy_Pirate_9721",
+        "review_date": "2026-10-02",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Did I pay too much? Vin 5J8YD4H82LL029206 😬 I really wanted another mdx but people just want to much for them so I saw this pop up first thing in the morning and people were all over it. I’m nervous about the undercarriage. Not sure why am undercarriage damaged would cause the side curtain to deploy. After fees 15k",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013495"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1iowsot/what_brokers_let_you_pick_the_car_up_in_person/pdgxnam/",
+        "author": "TheCompMann",
+        "review_date": "2026-10-02",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "My experience personally, I won a lot last thursday, and wire went through next day Friday. They didn't confirm the payment until the next friday(today). They covered all of the copart storage fees and late fees, but it took a long time for wire payment to go through. At least I didn't pay anything extra. Now that the payment is finally made they said they confirmed shipping, but im unable to see tracking because my bidding account is limited. Not sure how long copart shipping will actually take but it took 8 days to confirm payment after winning the lot.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013496"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wvz5z0/what_are_thoughts_on_this_vehicle/pdgbwck/",
+        "author": "Dustball_",
+        "review_date": "2026-10-02",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "I'm thinking you're greatly underestimating how much it'll actually sell for once the live auction occurs.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "How to Bid (First Time)",
+        "id": "rvw-013497"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wuq6st/anyone_gotten_a_copart_car/pdd9it6/",
+        "author": "Appropriate-Ideal-31",
+        "review_date": "2026-10-02",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Buy only cars sold by insurance companies. Cars sold by non insurance sellers are there because the car has severe issues that can not be fixed within reasonable cost or are being flipped by people that are getting out of a bad buy or do cosmetic repairs. Even with cars sold by insurance companies not all the problems can be easily seen. I totalled a BMW when I tore the rear differential off the frame which was almost impossible to fix The car looked mint and it lot drove. The problems started once the car got over 25 mph. I watched it go through auction and the price it sold for was ridiculously too high.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013498"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wvh5iw/did_i_pay_too_much_vin_5j8yd4h82ll029206/pdcyo2f/",
+        "author": "Gloomy_Pirate_9721",
+        "review_date": "2026-10-02",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "I think functional damage means that it was damaged but not enough to totally disable the vehicle",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013499"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wvh5iw/did_i_pay_too_much_vin_5j8yd4h82ll029206/pdcvv03/",
+        "author": "techytobias",
+        "review_date": "2026-10-02",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "I was literally watching the auction live on this one. Cleveland east. I think you did ok; I’d be concerned about hidden damage though.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013500"
+      },
+      {
+        "source_website": "trustpilot.com",
+        "source_label": "Trustpilot (copart.com)",
+        "source_url": "https://www.trustpilot.com/reviews/6acdc897a9be78bca161789f",
+        "author": "Trustpilot user",
+        "review_date": "2026-10-01",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "Copart is the biggest rip off every way…. Copart is the biggest rip off every way possible they can charge you they will ! They purposely advertise your car as not actual km and enhanced just so you don’t get any good bids then they charge you for every rerun, I don’t understand how they are still in business, I won’t buy or sell anything ever again with them",
+        "geo_validation": "trustpilot_us_slug",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013501"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wv8xtu/copdar_a_noaccount_vehiclelabeling_tool_looking/",
+        "author": "Read1500",
+        "review_date": "2026-10-01",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Copdar - A no-account vehicle-labeling tool looking for feedback",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013502"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wv1lbi/finally_pulled_the_trigger_on_my_first_salvage_car/",
+        "author": "Bxrserk-",
+        "review_date": "2026-10-01",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Finally pulled the trigger on my first salvage car I have been eyeing S8’s for over a year now on Copart for the purposes of fixing it myself and using it for personal use but I always got cold feet (I know how Audis are, I own them). Well I guess now I find out if I got an S8 Plus for a banger of a price or if I’m about to learn an expensive lesson 🤧.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013503"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wv04h1/insurance_cars/pdalga4/",
+        "author": "claymatthewsband",
+        "review_date": "2026-10-01",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Copy, that's what I'm seeing as well. People bid too much, and the fees are insane, so lots of cars don't make sense.. I'm just looking for vehicles for myself that would be fun but still hoping to be able to get my money back for them once I decide to sell them. My first purchase was a 2006 NC Miata with 100k miles, manual, for $1,175 which was a good deal, very little damage. Do you notice a difference on the deals based on category? Like trucks vs sedans vs SUV vs sports cars vs Luxury?",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013504"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wv04h1/insurance_cars/pda14p0/",
+        "author": "West_Swimmer1325",
+        "review_date": "2026-10-01",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Nope. Too saturated. The mainstream has gotten involved, and whenever that happens, the market is smoked. Price to sell at auction has gone up, price to sell has gone down. Gap for profit has shrunk. That and the buyer fees have gone through the roof. If you’re buying a car for personal use, you can still find cars at a better price than retail. But buying to flip isn’t anywhere near what it used to be. I signed up for Copart and IAA right when I turned 18. My buyer number at IAA is 7051, meaning I was the 7051 member nationwide to sign up. I think they’re in the millions now. Way to many people have learned about it",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013505"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wv1lbi/finally_pulled_the_trigger_on_my_first_salvage_car/pd9jq6l/",
+        "author": "West_Swimmer1325",
+        "review_date": "2026-10-01",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "For anyone needing a broker. Call interstate auto wholesale in Portland, Oregon. He charges 225 plus a small percentage depending on sale price. The fee is fully refundable if you don’t win anything. He’s local to me, so I do everything in person, but I know he bids for out of state buyers. He’s a dealer, that also has a wrecking yard. I’ve never bought anything outside of him or using my own account, so I don’t know if the other brokers give you access to a buyer number and password, but with him, he doesn’t do that. You tell him your max bid amount, he’ll bid and if you win, you can pay for the car at your local yard and arrange all the transportation. The only up front fee from him is a deposit based on max bid and whatever the renig fee is on that max bid in case you don’t pay. If you win, he keeps 225+ whatever percentage and refunds the rest of the deposit. I have no affiliation, I don’t care if someone does or does use him, and I’m not making anything via referring anyone to him, just trying to help you guys save money.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013506"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wubvd6/in_need_of_a_good_broker_that_plays_from_al/pd8x4qv/",
+        "author": "DragonmuhBalls6T9",
+        "review_date": "2026-10-01",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "Geez yeah he is clutch. Well it was a smooth process I even increased my max bid 20 mins before auction and it kicked in but wasn't enough. Thank you",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "How to Bid (First Time)",
+        "id": "rvw-013507"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wubvd6/in_need_of_a_good_broker_that_plays_from_al/pd8wi8v/",
+        "author": "wellvrsd",
+        "review_date": "2026-10-01",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "No relationship beyond me being a customer. That Idaho dealer sounds like a good deal. Here in Michigan it takes two different inspections to get a rebuilt title, 100 each.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Third-Party Inspection Authorization & Scheduling",
+        "tier3": "Previewing/ Inspecting Vehicles",
+        "id": "rvw-013508"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wui7qn/wish_me_luck_first_copart_purchase_odd_details/pd8805b/",
+        "author": "486Junkie",
+        "review_date": "2026-10-01",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "My $1.7K purchase. 1994 K1500 Suburban that has side damage (doors need to be replaced and the side step needs to be bent back up, but doesn't crunch or anything), rust on the quarter panels, on the roof, but the undercarriage doesn't look bad at all. It also has no brakes, ABS sensor/wiring issues, some electrical gremlins (door actuator on the barn doors are shot, the driver rear needs a lubrication, power seats don't move forward/backwards, side mirrors are stuck, and some bulbs are dead or have issues), dashboard switches are loose and need to be replaced (I'll get a bezel that goes around it since some of the mounts are broken), missing ashtray and lighter, but the cigarette lighter port is intact, climate control repairs (full A/C rebuild, blower motor replacement, blend doors, etc), a tune-up, lifters need to be looked at and fixed, door locks need to be replaced (I have 3 of them and retumbled the one that'll work with one set of keys), but it runs and kind of drives. Even the tape deck works along with the radio. It's going to be a huge project and the reason I can't work on a lot of stuff is because the title hasn't arrived yet. The brakes/ABS will be done first, engine second, electical third, and everything else fourth. https://preview.redd.it/qsy1lrhpmvsh1.jpeg?width=1164&format=pjpg&auto=webp&s=0b82ab5a1f59be81b4cbce3abef45482349b06b0",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013509"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wuq6st/anyone_gotten_a_copart_car/pd5rkf9/",
+        "author": "Lumpy-Shop-5321",
+        "review_date": "2026-10-01",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "I've used the broker ridesafely (online), they give you a fees estimate and allow you to track vehicles. Copart auctions are way fake. Seriously phony. Hidden reserves, fake bids, altered cars, altered miles, canceled wins, relisting, undisclosed fees, lost documents, deposits and lot rules that are shady/not written. I noted a vehicle get listed for a live auction six times. Lost bids calls. So if you bid and it is to little someone will phone you asking you to pay a higher price. Buying cars from insurance companies is better and only buying from auctioned insurance companies is better.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013510"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wuq6st/anyone_gotten_a_copart_car/pd5i6i5/",
+        "author": "claymatthewsband",
+        "review_date": "2026-10-01",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "I'm not an expert, looking to buy my second car from salvage auction, but I try to stay away from normal wear and tear cars. If I see some light damage from a crash, or hail damage or whatever, I at least know the reason that vehicle is there. If there's nothing obvious, I assume the worst/mechanical damage",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013511"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wubvd6/in_need_of_a_good_broker_that_plays_from_al/pd5gqr1/",
+        "author": "DragonmuhBalls6T9",
+        "review_date": "2026-10-01",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "Just placed my max bid hopefully it will be as easy as it seems. I will be tracking the auction tomorrow how long have you been using them?",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "How to Bid (First Time)",
+        "id": "rvw-013512"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wui7qn/wish_me_luck_first_copart_purchase_odd_details/pd4l1l9/",
+        "author": "AmbassadorIBX",
+        "review_date": "2026-10-01",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "I’ve recently purchased two “mechanically totaled” Audis, one in Seattle which turned out to be a recovered theft that needed a thermostat hosing. I flew out to Seattle and drove it 3200 miles back to eastern NC. I still daily drive it. The second was in Vermont and turned out it needed a starter. I had the local Audi shop install an aftermarket starter, took Amtrak to Rutland and drove that one 700 miles back to the house. It’s my favorite because it was $200 plus fees, low miles (86K) and it’s a manual coupe. https://preview.redd.it/1m68km6oirsh1.jpeg?width=1280&format=pjpg&auto=webp&s=fcea41d2625e3d6c59d2b471cf384482ea762f26",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013513"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wqqwg5/estimated_priced_for_2020_toyota_highlander_on/pd4ji3w/",
+        "author": "Lumpy-Shop-5321",
+        "review_date": "2026-10-01",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Like 18,000 in my market - PNW. Under 110k above 45k miles w minor damage. There were a lot of them sold in market. So I would not call them rare.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013514"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wujdpp/buyers_remorse_take_the_600_hit_or_just_keep_it/pd4gica/",
+        "author": "lazy_wafffle",
+        "review_date": "2026-10-01",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Lot details in the comment below. I might as well just get it delivered. I guess I feel like it went too cheap so it must have a blown motor.. just paranoid. will know in a week when I get home.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Vehicle Pickup, Delivery and Scheduling",
+        "tier2": "Delivery Coordination & Handoffs",
+        "tier3": "Delivery Status and ETA",
+        "id": "rvw-013515"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/Copartonline",
+        "source_url": "https://www.reddit.com/r/Copartonline/comments/1wui7qn/wish_me_luck_first_copart_purchase_odd_details/pd42d19/",
+        "author": "DawgCheck421",
+        "review_date": "2026-10-01",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "A rollback is still a major deal on a title. But that truck seems clean as hell, super nice and having the two massive problems known to these trucks recently replaced - the cam/lifters and the transmission, I think this was a good gamble at that money. The dash display being out and a no-start has to be related to the odometer discrepancy I suspect too. Someone probably lost a display, replaced it (causing a mileage discrepancy) and it went out again. I am still confused why this was totaled though, all three accidents were listed as minor and something knocked the daylights out of it. Look for receipts, registration, etc from the previous owner and call them. Please keep us posted.....I would love to see how this turns out. Hell make a youtube video of it arriving and the initial look-see. That is a beautiful truck that was clearly cared for. While you gambled a shitload of money and skipped a LOT of important steps first.....the new engine/transmission alone outweighs the rest of the really bad carfax IMO. ALWAYS spend the money on the carfax first bud, it can tell you a lot. This much money I would have hired the third party inspector if I couldn't make it to preview",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Third-Party Inspection Authorization & Scheduling",
+        "tier3": "Previewing/ Inspecting Vehicles",
+        "id": "rvw-013516"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.copart.membermobile)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.copart.membermobile&hl=en&gl=us",
+        "author": "cogee99",
+        "review_date": "2026-10-01",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "if you win an auction as a private person, a company can outbid you and take your vehicle!",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013517"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.copart.membermobile)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.copart.membermobile&hl=ru&gl=us",
+        "author": "Александр Ministr",
+        "review_date": "2026-10-01",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "After the update, I can't see the lot details. The list of cars at auction is visible, but when I try to access the lot and view the details, the screen is black.",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Vehicle Pickup, Delivery and Scheduling",
+        "tier2": "Delivery Coordination & Handoffs",
+        "tier3": "Delivery Status and ETA",
+        "id": "rvw-013518"
+      },
       {
         "source_website": "reddit.com",
         "source_label": "Reddit r/Copartonline",
@@ -3453,6 +5712,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Agent Professionalism & Responsiveness",
         "tier3": "Rude/Unhelpful Support",
         "id": "rvw-013087"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (414275302, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=414275302&type=Purple%20Software&reviewId=14611922191",
+        "author": "Carter5612",
+        "review_date": "2026-09-30",
+        "rating": 5,
+        "sentiment": "positive",
+        "review_text": "Review. I love this app it helps me find my dream car",
+        "geo_validation": "apple_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-013519"
       },
       {
         "source_website": "reddit.com",
@@ -8118,6 +10392,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Bidding Process, Rules and Fees",
         "tier3": "Fees",
         "id": "rvw-012735"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.copart.membermobile)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.copart.membermobile&hl=en&gl=us",
+        "author": "Izaac",
+        "review_date": "2026-08-20",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "This App is for a bunch of scavengers and scrapers. Copart fees are ridiculous, in many cases charging more than the car is worth or is being sold for. Earn more money so you can buy a normal car and not from the trash yard 😂.",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-013520"
       },
       {
         "source_website": "google.com",
@@ -16008,6 +18297,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Support Access & Response Time",
         "tier3": "Long Hold Time / Hard to Reach Support",
         "id": "rvw-012957"
+      },
+      {
+        "source_website": "trustpilot.com",
+        "source_label": "Trustpilot (copart.com)",
+        "source_url": "https://www.trustpilot.com/reviews/6ada85bf8ec36d50b0aae3c3",
+        "author": "Trustpilot user",
+        "review_date": "2026-06-24",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Bought a Chevy pickup with 75,000 miles…. Bought a Chevy pickup with 75,000 miles scanner tool shows 268000 miles was represented as hail damage ended up having structural damage also.",
+        "geo_validation": "trustpilot_us_slug",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-013521"
       },
       {
         "source_website": "reddit.com",
@@ -129680,6 +131984,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-007561"
       },
       {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.copart.membermobile)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.copart.membermobile&hl=en&gl=us",
+        "author": "RVA MOTORS",
+        "review_date": "2024-05-02",
+        "rating": 5,
+        "sentiment": "positive",
+        "review_text": "like the app so far",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-013522"
+      },
+      {
         "source_website": "google.com",
         "source_label": "Google Business Profile (Copart - Birmingham)",
         "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURqNXVlSDBRRRAB!2m1!1s0x0:0xaceef763015f16a6!3m1!1s2@1:CIHM0ogKEICAgIDj5ueH0QE%7C%7C?hl=en",
@@ -182990,6 +185309,21 @@ window.REVIEW_DATASETS = {
         "tier3": "Tow and Storage Fees"
       },
       {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1410332198, us)",
+        "source_url": "https://apps.apple.com/us/app/id1410332198?see-all=reviews&platform=iphone&reviewId=10009787773",
+        "author": "AegisCruiser",
+        "review_date": "2023-06-07",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Simply Idiotic. CoPart added an additional step to something that didn’t need it. You have to register as a transport, even if your just a member. You have to schedule an appointment to get your vehicle, and if they don’t have a slot available within your 3-day period, you have to start paying storage fees. Also because of this new system, wait times are HUGE. Now transport and tow truck drivers are charging for waiting. So everything is more expensive with longer wait times and more steps. It makes no sense and whoever came up with this system is dim",
+        "geo_validation": "apple_us_store",
+        "tier1": "Vehicle Pickup, Delivery and Scheduling",
+        "tier2": "Tow and Storage Charges",
+        "tier3": "Tow and Storage Fees",
+        "id": "rvw-013523"
+      },
+      {
         "id": "rvw-006181",
         "source_website": "reddit.com",
         "source_label": "Reddit r/Hyundai",
@@ -203514,14 +205848,14 @@ window.REVIEW_DATASETS = {
   "iaa": {
     "meta": {
       "description": "Large-scale English-only IAA textual review/problem dataset from public web sources (recency-first).",
-      "review_count": 4636,
+      "review_count": 4696,
       "source_counts": {
+        "trustpilot.com": 94,
+        "play.google.com": 258,
+        "apps.apple.com": 156,
         "google.com": 2364,
-        "bbb.org": 770,
-        "apps.apple.com": 152,
-        "trustpilot.com": 92,
-        "play.google.com": 252,
-        "reddit.com": 1003,
+        "bbb.org": 817,
+        "reddit.com": 1004,
         "complaintsboard.com": 3
       },
       "source_audit": [
@@ -203534,7 +205868,7 @@ window.REVIEW_DATASETS = {
           "blocked": false,
           "fallback_used": false,
           "candidate_reviews_seen": 0,
-          "new_reviews_added": 0,
+          "new_reviews_added": 1,
           "advertised_total": null,
           "latest_candidate_date": null,
           "notes": [
@@ -203542,10 +205876,10 @@ window.REVIEW_DATASETS = {
             "reddit_arctic_shift ran; candidate count is not separately tracked for this collector."
           ],
           "errors": [],
-          "review_count": 1003,
+          "review_count": 1004,
           "existing_review_count": 1003,
           "present": true,
-          "latest_review_date": "2026-07-30",
+          "latest_review_date": "2026-09-16",
           "existing_latest_date": "2026-07-30",
           "status": "ok"
         },
@@ -203557,17 +205891,17 @@ window.REVIEW_DATASETS = {
           "direct_statuses": {},
           "blocked": false,
           "fallback_used": false,
-          "candidate_reviews_seen": 1362,
-          "new_reviews_added": 1,
+          "candidate_reviews_seen": 1363,
+          "new_reviews_added": 6,
           "advertised_total": null,
-          "latest_candidate_date": "2026-10-05",
+          "latest_candidate_date": "2026-10-30",
           "notes": [],
           "errors": [],
-          "review_count": 252,
-          "existing_review_count": 251,
+          "review_count": 258,
+          "existing_review_count": 252,
           "present": true,
-          "latest_review_date": "2026-09-02",
-          "existing_latest_date": "2026-08-31",
+          "latest_review_date": "2026-10-23",
+          "existing_latest_date": "2026-09-02",
           "status": "ok"
         },
         {
@@ -203579,93 +205913,91 @@ window.REVIEW_DATASETS = {
           "blocked": false,
           "fallback_used": false,
           "candidate_reviews_seen": 293,
-          "new_reviews_added": 7,
+          "new_reviews_added": 4,
           "advertised_total": null,
-          "latest_candidate_date": "2026-10-01",
+          "latest_candidate_date": "2026-10-23",
           "notes": [
             "Apple RSS can be sparse for some app IDs; HTML supplement captures visible App Store review cards only."
           ],
           "errors": [],
-          "review_count": 152,
-          "existing_review_count": 145,
+          "review_count": 156,
+          "existing_review_count": 152,
           "present": true,
-          "latest_review_date": "2026-09-16",
-          "existing_latest_date": "2026-08-27",
+          "latest_review_date": "2026-10-23",
+          "existing_latest_date": "2026-09-16",
           "status": "ok"
         },
         {
           "source_website": "bbb.org",
           "attempted": true,
-          "direct_pages": 16,
-          "fallback_pages": 16,
+          "direct_pages": 23,
+          "fallback_pages": 23,
           "direct_statuses": {
-            "403": 16,
-            "200": 16
+            "403": 23,
+            "200": 23
           },
           "blocked": true,
           "fallback_used": true,
-          "candidate_reviews_seen": 20,
-          "new_reviews_added": 13,
+          "candidate_reviews_seen": 60,
+          "new_reviews_added": 47,
           "advertised_total": null,
-          "latest_candidate_date": "2026-09-24",
+          "latest_candidate_date": "2026-10-06",
           "notes": [
+            "direct BBB customer reviews blocked for https://www.bbb.org/us/az/tucson/profile/auto-auction/iaa-tucson-1286-20009500",
+            "reader challenge for https://www.bbb.org/us/az/tucson/profile/auto-auction/iaa-tucson-1286-20009500/customer-reviews",
+            "direct BBB customer reviews blocked for https://www.bbb.org/us/fl/jacksonville/profile/auto-auction/iaa-0403-235995143",
+            "direct BBB customer reviews blocked for https://www.bbb.org/us/ga/rincon/profile/auto-auction/iaa-0403-235995144",
             "direct BBB customer reviews blocked for https://www.bbb.org/us/il/granite-city/profile/auto-auction/iaa-0734-310253272",
-            "reader challenge for https://www.bbb.org/us/il/granite-city/profile/auto-auction/iaa-0734-310253272/customer-reviews",
             "direct BBB customer reviews blocked for https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839",
-            "reader challenge for https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews",
+            "reader challenge for https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=6",
             "direct BBB customer reviews blocked for https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/details",
-            "direct BBB customer reviews blocked for https://www.bbb.org/us/mo/springfield/profile/auto-auction/iaa-0734-1000020438",
+            "direct BBB customer reviews blocked for https://www.bbb.org/us/ny/medford/profile/auto-auction/iaa-0121-143499",
             "direct BBB customer reviews blocked for https://www.bbb.org/us/sc/lexington/profile/auto-auction/iaa-0663-34111613",
-            "reader challenge for https://www.bbb.org/us/sc/lexington/profile/auto-auction/iaa-0663-34111613/customer-reviews",
             "direct BBB customer reviews blocked for https://www.bbb.org/us/sc/ravenel/profile/auto-auction/iaa-0663-34311514",
-            "direct BBB customer reviews blocked for https://www.bbb.org/us/tx/el-paso/profile/auto-auction/iaa-0895-99127620",
+            "direct BBB complaints blocked for https://www.bbb.org/us/az/tucson/profile/auto-auction/iaa-tucson-1286-20009500",
+            "direct BBB complaints blocked for https://www.bbb.org/us/fl/jacksonville/profile/auto-auction/iaa-0403-235995143",
+            "direct BBB complaints blocked for https://www.bbb.org/us/ga/rincon/profile/auto-auction/iaa-0403-235995144",
             "direct BBB complaints blocked for https://www.bbb.org/us/il/granite-city/profile/auto-auction/iaa-0734-310253272",
             "direct BBB complaints blocked for https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839",
-            "reader challenge for https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=3",
+            "reader challenge for https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=2",
             "direct BBB complaints blocked for https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/details",
             "reader challenge for https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/details/complaints",
-            "direct BBB complaints blocked for https://www.bbb.org/us/mo/springfield/profile/auto-auction/iaa-0734-1000020438",
-            "reader challenge for https://www.bbb.org/us/mo/springfield/profile/auto-auction/iaa-0734-1000020438/complaints",
-            "direct BBB complaints blocked for https://www.bbb.org/us/sc/lexington/profile/auto-auction/iaa-0663-34111613",
-            "direct BBB complaints blocked for https://www.bbb.org/us/sc/ravenel/profile/auto-auction/iaa-0663-34311514",
-            "direct BBB complaints blocked for https://www.bbb.org/us/tx/el-paso/profile/auto-auction/iaa-0895-99127620",
-            "reader challenge for https://www.bbb.org/us/tx/el-paso/profile/auto-auction/iaa-0895-99127620/complaints"
+            "direct BBB complaints blocked for https://www.bbb.org/us/ny/medford/profile/auto-auction/iaa-0121-143499",
+            "direct BBB complaints blocked for https://www.bbb.org/us/sc/ravenel/profile/auto-auction/iaa-0663-34311514"
           ],
           "errors": [],
-          "review_count": 770,
-          "existing_review_count": 757,
+          "review_count": 817,
+          "existing_review_count": 770,
           "present": true,
           "latest_review_date": "2026-09-24",
-          "existing_latest_date": "2026-08-12",
+          "existing_latest_date": "2026-09-24",
           "status": "ok"
         },
         {
           "source_website": "trustpilot.com",
           "attempted": true,
           "direct_pages": 1,
-          "fallback_pages": 3,
+          "fallback_pages": 2,
           "direct_statuses": {
             "403": 1,
-            "200": 2,
-            "503": 1
+            "200": 2
           },
           "blocked": true,
           "fallback_used": true,
-          "candidate_reviews_seen": 35,
-          "new_reviews_added": 1,
+          "candidate_reviews_seen": 16,
+          "new_reviews_added": 2,
           "advertised_total": null,
-          "latest_candidate_date": "2026-09-11",
+          "latest_candidate_date": "2026-10-26",
           "notes": [
-            "direct Trustpilot blocked for iaai.com"
+            "direct Trustpilot blocked for iaai.com",
+            "reader challenge for https://www.trustpilot.com/review/iaai.com?page=2"
           ],
-          "errors": [
-            "reader status 503 for https://www.trustpilot.com/review/iaai.com?page=3"
-          ],
-          "review_count": 92,
-          "existing_review_count": 91,
+          "errors": [],
+          "review_count": 94,
+          "existing_review_count": 92,
           "present": true,
-          "latest_review_date": "2026-09-11",
-          "existing_latest_date": "2026-07-31",
+          "latest_review_date": "2026-10-26",
+          "existing_latest_date": "2026-09-11",
           "status": "ok"
         },
         {
@@ -203740,50 +206072,55 @@ window.REVIEW_DATASETS = {
         {
           "source_website": "google.com",
           "attempted": true,
-          "direct_pages": 1041,
+          "direct_pages": 286,
           "fallback_pages": 0,
           "direct_statuses": {
-            "200": 1041
+            "200": 286
           },
           "blocked": false,
           "fallback_used": false,
-          "candidate_reviews_seen": 3754,
-          "new_reviews_added": 67,
+          "candidate_reviews_seen": 8,
+          "new_reviews_added": 0,
           "advertised_total": null,
-          "latest_candidate_date": "2026-10-06",
+          "latest_candidate_date": "2025-10-21",
           "notes": [
-            "Google Business Profile discovery completed: 121/121 queries succeeded and 306 unique validated US profiles were selected.",
-            "Validated 297 US Google Business Profiles; 9 failed and 0 were skipped after the circuit breaker. Successful profiles were paginated newest-first through per-profile incremental overlap boundaries."
+            "Google Business Profile discovery completed: 131/131 queries succeeded and 310 unique validated US profiles were selected.",
+            "Validated 2 US Google Business Profiles; 6 failed and 302 were skipped after the circuit breaker. Successful profiles were paginated newest-first through per-profile incremental overlap boundaries."
           ],
           "errors": [
-            "IAA Colorado Springs [0x871341385b24393b:0x1a3a083d05d0b7dc]: newest review RPC did not load",
-            "IAA Colton [0x80dcad89df16ccd5:0xd55c3f5a9c4e9800]: newest review RPC did not load",
-            "IAA Columbus [0x88388457fb02622b:0xbca32c67b12a39ef]: newest review RPC did not load",
-            "IAA Reno [0x80993d3e6fec0491:0xafde27a19a447c70]: newest review RPC did not load",
-            "IAA Vehicle Purchasing [0x89c6d179dc795415:0x5cbd2b95197dccf9]: newest review RPC did not load",
-            "IAA Vehicle Purchasing [0x8640c87a21c394fb:0xef477b41410bb390]: newest review RPC did not load",
-            "IAA Vehicle Purchasing [0x881131a51728f71f:0xe3cc5beaee1c71ef]: Response.body: Protocol error (Network.getResponseBody): No data found for resource with given identifier\nResponse body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.",
-            "IAA York Springs [0x89c8fb8f240f3b3d:0xa96265759c9445a3]: newest review RPC did not load",
-            "Insurance Auto Auctions [0x8626dd2eac57f63d:0xfa1537fbe6611010]: newest review RPC did not load"
+            "Auto Auction Insurance [0x8881c58137f61ecd:0xabecba8ed5a95f0c]: Response.body: Protocol error (Network.getResponseBody): No data found for resource with given identifier\nResponse body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.",
+            "IAA Abilene [0x8656859fd806721d:0x1c9eadd6f9b8fefa]: newest review RPC did not load",
+            "IAA Akron-Canton [0x8836fb149c514035:0x5fd3cb09819cb4cf]: newest review RPC did not load",
+            "IAA Albany [0x89de730ae2b661b3:0x9d58bae6b93a9718]: newest review RPC did not load",
+            "IAA Albuquerque [0x87220ea7338e1f9d:0x1e3799baac92c395]: newest review RPC did not load",
+            "IAA Altoona [0x89cbbcfa7c283bbd:0x82eef90752880501]: newest review RPC did not load"
           ],
           "profile_retention_used": true,
-          "profiles_completed": 297,
-          "profiles_failed": 9,
-          "profiles_skipped_after_circuit_breaker": 0,
+          "profiles_completed": 2,
+          "profiles_failed": 6,
+          "profiles_skipped_after_circuit_breaker": 302,
           "last_successful_refresh_until": "2026-08-31",
           "review_count": 2364,
-          "existing_review_count": 2297,
+          "existing_review_count": 2364,
           "present": true,
           "latest_review_date": "2026-09-30",
-          "existing_latest_date": "2026-08-31",
+          "existing_latest_date": "2026-09-30",
           "status": "partial_profile_retention"
         }
       ],
       "sentiments": {
-        "positive": 1258,
-        "negative": 3378
+        "positive": 1262,
+        "negative": 3434
       },
       "source_urls": [
+        "https://www.trustpilot.com/reviews/6adfead517bcdc3a8111d9e8",
+        "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
+        "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14701578942",
+        "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14694293076",
+        "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+        "https://www.trustpilot.com/reviews/6ada67a0bb8901999243d664",
+        "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14664102565",
+        "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14634381211",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT200NGIyc3dXbWMyT1MxalIxUk9aWGhvY0U0M1ZXYxAB!2m1!1s0x0:0x39aff743b6ab6474!3m1!1s2@1:CAIQACodChtycF9oOm44b2swWmc2OS1jR1ROZXhocE43VWc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pOSWNISk5NVTFHTVhNMFFsWldVMGhLZWxWUE5IYxAB!2m1!1s0x0:0xb8b3f34dab55ccfc!3m1!1s2@1:CAIQACodChtycF9oOjNIcHJNMU1GMXM0QlZWU0hKelVPNHc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tKb1RYRldhWE5UVW1ONVJIRTFObk5CWTJ0SVFXYxAB!2m1!1s0x0:0xb8c4fe5f5fcf919a!3m1!1s2@1:CAIQACodChtycF9oOkJoTXFWaXNTUmN5RHE1NnNBY2tIQWc%7C%7C?hl=en",
@@ -203801,7 +206138,10 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2poMlNITnJXamREVDBaeU5uUjJPRXRPY3kxdGRtYxAB!2m1!1s0x0:0xa3c33669c6a71f68!3m1!1s2@1:CAIQACodChtycF9oOjh2SHNrWjdDT0ZyNnR2OEtOcy1tdmc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2poSGNUZGlNVUpqTFRSWVVHUm1jVkpvUld0SlVIYxAB!2m1!1s0x0:0xbb829155aa6f38b!3m1!1s2@1:CAIQACodChtycF9oOjhHcTdiMUJjLTRYUGRmcVJoRWtJUHc%7C%7C?hl=en",
         "http://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25316665",
+        "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25316665",
+        "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25313214",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pORmNtVkpjMmRGVkRsMVIzSldSVWxXU2sxclZuYxAB!2m1!1s0x0:0x1b67af71683ad526!3m1!1s2@1:CAIQACodChtycF9oOjNFcmVJc2dFVDl1R3JWRUlWSk1rVnc%7C%7C?hl=en",
+        "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-1",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s5U2FqaE1XVVk0YjA5UFNucEJjRzgzU0hWWFVVRRAB!2m1!1s0x0:0x392318b8b52e205a!3m1!1s2@1:CAIQACodChtycF9oOk9SajhMWUY4b09PSnpBcG83SHVXUUE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xndGMwSkJPWEpZVURsSVUzbDFZV1YxTW5WVmNIYxAB!2m1!1s0x0:0xe796f989f764a33!3m1!1s2@1:CAIQACodChtycF9oOlgtc0JBOXJYUDlIU3l1YWV1MnVVcHc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21JeWVrdzVjR3BNVmxFMlVIaHRiMWxPWkRWZlYwRRAB!2m1!1s0x0:0x488a347a8332b2b4!3m1!1s2@1:CAIQACodChtycF9oOmIyekw5cGpMVlE2UHhtb1lOZDVfV0E%7C%7C?hl=en",
@@ -203811,6 +206151,7 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pkVE1tUTBSMUZ6VlhGa1RIbGlaM1pJYVRoc1NsRRAB!2m1!1s0x0:0xb5c38b17330efcec!3m1!1s2@1:CAIQACodChtycF9oOjdTMmQ0R1FzVXFkTHliZ3ZIaThsSlE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCS2FWcDBXVjh4UldKc2JVNTFZVTVFUTFocVVuYxAB!2m1!1s0x0:0x51981c72702f2dae!3m1!1s2@1:CAIQACodChtycF9oOjBKaVp0WV8xRWJsbU51YU5EQ1hqUnc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xSR1kzTnhiQzFDYTB0M2JYSlJSemsyY2tkNGVYYxAB!2m1!1s0x0:0xb01055d887bcc00a!3m1!1s2@1:CAIQACodChtycF9oOlRGY3NxbC1Ca0t3bXJRRzk2ckd4eXc%7C%7C?hl=en",
+        "https://www.reddit.com/r/askcarsales/comments/1whw4l1/seller_claims_2023_f150_is_clean_title_but_nmvtis/",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xKNGExbFNUM0p3VFZwWlprZEthems0T1VwU1QyYxAB!2m1!1s0x0:0x9c1ff93570651d1e!3m1!1s2@1:CAIQACodChtycF9oOlJ4a1lST3JwTVpZZkdKazk4OUpST2c%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21VM2NHMHRSa3MyYWt4cVFsWk9hVFF3TmxsdFdtYxAB!2m1!1s0x0:0xa81efc0b37367649!3m1!1s2@1:CAIQACodChtycF9oOmU3cG0tRks2akxqQlZOaTQwNlltWmc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tablNHdFhWV3R0YUZwVVgzSjZhVlJuYm1WalZsRRAB!2m1!1s0x0:0xfc9a09ed0161c0f3!3m1!1s2@1:CAIQACodChtycF9oOkZnSGtXVWttaFpUX3J6aVRnbmVjVlE%7C%7C?hl=en",
@@ -203821,7 +206162,9 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2toQlVIQlJaSGhyWmtVemRrMXdPRTlqT1RGaE4xRRAB!2m1!1s0x0:0xda1db98ee2488d9f!3m1!1s2@1:CAIQACodChtycF9oOkhBUHBRZHhrZkUzdk1wOE9jOTFhN1E%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21sTlFXTnZWR3BzYVRoVlVYSTFhazVrYzJwRk1IYxAB!2m1!1s0x0:0x2fe664df1444100c!3m1!1s2@1:CAIQACodChtycF9oOmlNQWNvVGpsaThVUXI1ak5kc2pFMHc%7C%7C?hl=en",
         "http://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25279510",
+        "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25279510",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25aM1ZFUkxWVkpQWW10elozRm1NelZCZWtOeE1rRRAB!2m1!1s0x0:0x7663bf049478e612!3m1!1s2@1:CAIQACodChtycF9oOnZ3VERLVVJPYmtzZ3FmMzVBekNxMkE%7C%7C?hl=en",
+        "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-2",
         "https://www.trustpilot.com/reviews/6aa8a6d2cfe292e2dcde1be1",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tSME1rWnBkVTVFZVZwYWFWZElXVWhvUmtRNVoyYxAB!2m1!1s0x0:0xfc9a09ed0161c0f3!3m1!1s2@1:CAIQACodChtycF9oOkR0MkZpdU5EeVpaaVdIWUhoRkQ5Z2c%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pocVZYbzRjM1ZmUkdSaWJrOXNMVzB3VTJOR1UyYxAB!2m1!1s0x0:0x33948ef3b7cc8649!3m1!1s2@1:CAIQACodChtycF9oOjhqVXo4c3VfRGRibk9sLW0wU2NGU2c%7C%7C?hl=en",
@@ -203832,6 +206175,7 @@ window.REVIEW_DATASETS = {
         "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14534956498",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201d2JuZHFjbEJZZEZsSVZXeDVVREkzTUZWcllYYxAB!2m1!1s0x0:0x205b296902026570!3m1!1s2@1:CAIQACodChtycF9oOm5wbndqclBYdFlIVWx5UDI3MFVrYXc%7C%7C?hl=en",
         "http://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25253668",
+        "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25253668",
         "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14525680329",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20xbmRYSXRkREZSTkRSTWRFOWpOV2xrWmxGVWFrRRAB!2m1!1s0x0:0x62628ad46f7b0c29!3m1!1s2@1:CAIQACodChtycF9oOm1ndXItdDFRNDRMdE9jNWlkZlFUakE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25Wb1MwbERSakkyZWtwNllYcE9SbkpDTWpoemQzYxAB!2m1!1s0x0:0xb5c38b17330efcec!3m1!1s2@1:CAIQACodChtycF9oOnVoS0lDRjI2ekp6YXpORnJCMjhzd3c%7C%7C?hl=en",
@@ -203841,18 +206185,20 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT205UVoyOTBiVE5hTkUxclowcG1jbXBrU1VkRWFGRRAB!2m1!1s0x0:0x837ee3387ce774c8!3m1!1s2@1:CAIQACodChtycF9oOm9QZ290bTNaNE1rZ0pmcmpkSUdEaFE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2psRWFFRnRNekpZZUd0MGQxbGhUMWxHWm14U2NrRRAB!2m1!1s0x0:0xa72a1695591cb5d1!3m1!1s2@1:CAIQACodChtycF9oOjlEaEFtMzJYeGt0d1lhT1lGZmxSckE%7C%7C?hl=en",
         "http://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25237555",
+        "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25237555",
         "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14506154633",
-        "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21oS2RYcE5XR2hNT1ZOYVJsTXhPWGxxZGpKeVlXYxAB!2m1!1s0x0:0xaa76b17581de6535!3m1!1s2@1:CAIQACodChtycF9oOmhKdXpNWGhMOVNaRlMxOXlqdjJyYWc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21OMmN6WkdiemRoTVRsbFNreFBiMFpOT0ZKdE1uYxAB!2m1!1s0x0:0x8bf3ad55fac88f40!3m1!1s2@1:CAIQACodChtycF9oOmN2czZGbzdhMTllSkxPb0ZNOFJtMnc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21acmNVUnVkbVpYWW5CdVkxYzNOVFJGTVY5clNVRRAB!2m1!1s0x0:0x3f3f38c767a5e20!3m1!1s2@1:CAIQACodChtycF9oOmZrcURudmZXYnBuY1c3NTRFMV9rSUE%7C%7C?hl=en",
         "http://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25231906",
+        "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25231906",
         "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14503875074",
         "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14502404513",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxc2VETlBaRlEwY25Wb1dFVnVOR2RHVlc1MFQyYxAB!2m1!1s0x0:0x1a095bfb12d35f3!3m1!1s2@1:CAIQACodChtycF9oOi1seDNPZFQ0cnVoWEVuNGdGVW50T2c%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25wa2RWYzBMVzVJZDNkdlIwcFlNMVZCVDBsVlptYxAB!2m1!1s0x0:0xaa76b17581de6535!3m1!1s2@1:CAIQACodChtycF9oOnpkdVc0LW5Id3dvR0pYM1VBT0lVZmc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w5RkxYTkdSbGxCUjI4M1oxRktkMkUyVjE5dmQyYxAB!2m1!1s0x0:0xf7cb04c70278006a!3m1!1s2@1:CAIQACodChtycF9oOl9FLXNGRllBR283Z1FKd2E2V19vd2c%7C%7C?hl=en",
         "http://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25222141",
+        "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25222141",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tOQk1YVkhUVlpYUTNSNloyMU1kVmRQUlU5d2JVRRAB!2m1!1s0x0:0xb26fd41cd92b561e!3m1!1s2@1:CAIQACodChtycF9oOkNBMXVHTVZXQ3R6Z21MdVdPRU9wbUE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xRNGNDMWtWa2wxWkRSU05tZ3pMVU42YUhoS1UyYxAB!2m1!1s0x0:0x3f3f38c767a5e20!3m1!1s2@1:CAIQACodChtycF9oOlQ4cC1kVkl1ZDRSNmgzLUN6aHhKU2c%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21GVlNqWm9aRlYwZVVvNVFYQXRYMDVFUlMxcVVHYxAB!2m1!1s0x0:0xda1db98ee2488d9f!3m1!1s2@1:CAIQACodChtycF9oOmFVSjZoZFV0eUo5QXAtX05ERS1qUGc%7C%7C?hl=en",
@@ -203882,14 +206228,13 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25WWk5VaFljMWRpWkZKT1pIVXhjMVpCVTBaRWRIYxAB!2m1!1s0x0:0x958b455418cae1cd!3m1!1s2@1:CAIQACodChtycF9oOnVZNUhYc1diZFJOZHUxc1ZBU0ZEdHc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pOcGVsTTNOV05TUWw5WGJ6aDZXWHBST1hGc2FGRRAB!2m1!1s0x0:0x1a3a083d05d0b7dc!3m1!1s2@1:CAIQACodChtycF9oOjNpelM3NWNSQl9Xbzh6WXpROXFsaFE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21KeFVuQk9SRFJQUXpWblRFWkxaRlZwUWtWMGVIYxAB!2m1!1s0x0:0xcafbe63b825c3f9f!3m1!1s2@1:CAIQACodChtycF9oOmJxUnBORDRPQzVnTEZLZFVpQkV0eHc%7C%7C?hl=en",
-        "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tWQ2VtUnhNR041ZWtOamRtdHZPSGwyTWxWVlRtYxAB!2m1!1s0x0:0xe89f33ad72bda19a!3m1!1s2@1:CAIQACodChtycF9oOkVCemRxMGN5ekNjdmtvOHl2MlVVTmc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21GaGNHZzBTbFF4TVdocVUyeFFVRGh3ZGxaV2VrRRAB!2m1!1s0x0:0xfebd1083e0cb9cc!3m1!1s2@1:CAIQACodChtycF9oOmFhcGg0SlQxMWhqU2xQUDhwdlZWekE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2psa1lVWm1VbVJoYWtOcVZscFFRa1ZhT1hGSGMwRRAB!2m1!1s0x0:0x958b455418cae1cd!3m1!1s2@1:CAIQACodChtycF9oOjlkYUZmUmRhakNqVlpQQkVaOXFHc0E%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21kSlZrVTNVRlJmT1VGTGJVaGxjalpFUlVWbFdWRRAB!2m1!1s0x0:0x9a141ff415b8b2e2!3m1!1s2@1:CAIQACodChtycF9oOmdJVkU3UFRfOUFLbUhlcjZERUVlWVE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21kWWVtNHlUa2d5TVVvd1JUTXdPRFptZERscGJYYxAB!2m1!1s0x0:0xdb9f7b8d5e8b4707!3m1!1s2@1:CAIQACodChtycF9oOmdYem4yTkgyMUowRTMwODZmdDlpbXc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t4bGJsTXlVMHhpV2xSTlgyTmxWV2t0YWtsT1QwRRAB!2m1!1s0x0:0x599797e633531527!3m1!1s2@1:CAIQACodChtycF9oOkxlblMyU0xiWlRNX2NlVWktaklOT0E%7C%7C?hl=en",
-        "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-1",
+        "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-3",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tWVmNrMUlhQzFNYkV0Q1UxSjFTRXBQVEZwelJYYxAB!2m1!1s0x0:0x9d58bae6b93a9718!3m1!1s2@1:CAIQACodChtycF9oOkVVck1IaC1MbEtCU1J1SEpPTFpzRXc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tKVlRTMUpTRmx2U2s1dmNuWjZOMkpGY1RSTWVrRRAB!2m1!1s0x0:0xab9261d86ba82dc4!3m1!1s2@1:CAIQACodChtycF9oOkJVTS1JSFlvSk5vcnZ6N2JFcTRMekE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xwbU5IQkpZazlzZURVNWNYbGtiMEZ2ZG1KbGRrRRAB!2m1!1s0x0:0x771752c764c96f5c!3m1!1s2@1:CAIQACodChtycF9oOlpmNHBJYk9seDU5cXlkb0FvdmJldkE%7C%7C?hl=en",
@@ -203902,7 +206247,7 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCeVlsVXRNSFI2YnpGSFlTMW1PVXR4V1MxbGNGRRAB!2m1!1s0x0:0x1b67af71683ad526!3m1!1s2@1:CAIQACodChtycF9oOlByYlUtMHR6bzFHYS1mOUtxWS1lcFE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xsUU1qTnNkbEIyUWxSNk0zRnpibXQ2TURONVgyYxAB!2m1!1s0x0:0x958b455418cae1cd!3m1!1s2@1:CAIQACodChtycF9oOllQMjNsdlB2QlR6M3Fzbmt6MDN5X2c%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSWk0yTk9aMVZvVGxWRmVEaFlVMjVzVVRsM1ZsRRAB!2m1!1s0x0:0x2fe664df1444100c!3m1!1s2@1:CAIQACodChtycF9oOjRZM2NOZ1VoTlVFeDhYU25sUTl3VlE%7C%7C?hl=en",
-        "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-2",
+        "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-4",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tScWFucGFNRXBCVjBzM2JUbDFkMEpGY1VNNVRrRRAB!2m1!1s0x0:0x800231f6ecf66307!3m1!1s2@1:CAIQACodChtycF9oOkRqanpaMEpBV0s3bTl1d0JFcUM5TkE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21oNVVHNXlhVGRZVGxVNVVVOTJaMkpDWDJOT04yYxAB!2m1!1s0x0:0xc2bbe2dc11a9cbbc!3m1!1s2@1:CAIQACodChtycF9oOmh5UG5yaTdYTlU5UU92Z2JCX2NON2c%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25wVVVVaHNORzFyZWsxRU0xbEVhWFZUVjE4MlUzYxAB!2m1!1s0x0:0xc2bbe2dc11a9cbbc!3m1!1s2@1:CAIQACodChtycF9oOnpUUUhsNG1rek1EM1lEaXVTV182U3c%7C%7C?hl=en",
@@ -203926,7 +206271,7 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wa1prcFJjV0Z1ZFVsa09FRnBiV1YyYzJSM2NuYxAB!2m1!1s0x0:0x7c5a9bad104537cb!3m1!1s2@1:CAIQACodChtycF9oOmpkZkpRcWFudUlkOEFpbWV2c2R3cnc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCRWVYUkNURkJIYjNJMExYbFFXbmhqTkVsSFltYxAB!2m1!1s0x0:0x4bcdf230036ec30d!3m1!1s2@1:CAIQACodChtycF9oOjBEeXRCTFBHb3I0LXlQWnhjNElHYmc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tab1dUazJlVGhPUzJSd2RTMTFSMjlWTnpWbVZuYxAB!2m1!1s0x0:0x80c0c0b24aa6bbd8!3m1!1s2@1:CAIQACodChtycF9oOkZoWTk2eThOS2RwdS11R29VNzVmVnc%7C%7C?hl=en",
-        "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-3",
+        "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-5",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25WWVYwNXJSV1F6YVdWTVRYcERRVTUxTlhoS1pWRRAB!2m1!1s0x0:0x66c9d2d9fe94352a!3m1!1s2@1:CAIQACodChtycF9oOnVYV05rRWQzaWVMTXpDQU51NXhKZVE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21Zek1reEVhVmQ2Um05S2JtNUtiamx0WjJKbGJGRRAB!2m1!1s0x0:0x5ffa596f1b75e166!3m1!1s2@1:CAIQACodChtycF9oOmYzMkxEaVd6Rm9Kbm5KbjltZ2JlbFE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kWGJHMDFUMWd3UjNOeVZFVkpPSEJFTjBwMFVGRRAB!2m1!1s0x0:0xfad68827101771bb!3m1!1s2@1:CAIQACodChtycF9oOndXbG01T1gwR3NyVEVJOHBEN0p0UFE%7C%7C?hl=en",
@@ -203947,7 +206292,7 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201TmJuWmFVMTgwT1RKUVdHTXdRblp6VlZRelJYYxAB!2m1!1s0x0:0x67cfbd53a57f5cd9!3m1!1s2@1:CAIQACodChtycF9oOm5NbnZaU180OTJQWGMwQnZzVVQzRXc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25aaFYyOURWREpyY0ZGWVJrTkNlRVZpTTE5Tk9XYxAB!2m1!1s0x0:0x342729a2d1c7161b!3m1!1s2@1:CAIQACodChtycF9oOnZhV29DVDJrcFFYRkNCeEViM19NOWc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tSVGRqaGFia2h1YUU5NVYwazVZazVNVDFCUmRHYxAB!2m1!1s0x0:0x342729a2d1c7161b!3m1!1s2@1:CAIQACodChtycF9oOkRTdjhabkhuaE95V0k5Yk5MT1BRdGc%7C%7C?hl=en",
-        "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-4",
+        "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-6",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25SdWVUQTJaalZCYlRseFRsRkpSSFpwUTJkd09IYxAB!2m1!1s0x0:0x13e18df5c46335be!3m1!1s2@1:CAIQACodChtycF9oOnRueTA2ZjVBbTlxTlFJRHZpQ2dwOHc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21SbFkzaHZUWGhwU0hndGIwVm1WV3R1WVhsRFEwRRAB!2m1!1s0x0:0xab9261d86ba82dc4!3m1!1s2@1:CAIQACodChtycF9oOmRlY3hvTXhpSHgtb0VmVWtuYXlDQ0E%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KV1JEVkhPVUpDZEc5Q1pVYzFiRmxqYVZORlpFRRAB!2m1!1s0x0:0x7b98fe795b0e5a23!3m1!1s2@1:CAIQACodChtycF9oOnJWRDVHOUJCdG9CZUc1bFljaVNFZEE%7C%7C?hl=en",
@@ -203971,7 +206316,7 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21Sd1kzSkxVMmxrYm5GU1RqZHNiVlZXTkVGUU9YYxAB!2m1!1s0x0:0x54120a0f8cb3c862!3m1!1s2@1:CAIQACodChtycF9oOmRwY3JLU2lkbnFSTjdsbVVWNEFQOXc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t4emRFRmhkMWhyVGpWa1ZUSm5kemxhYVRSNGFIYxAB!2m1!1s0x0:0xa9023afef87eccd7!3m1!1s2@1:CAIQACodChtycF9oOkxzdEFhd1hrTjVkVTJndzlaaTR4aHc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25aU1pHa3lUVU5PZERsS2VVRTFiRkZIWkU1Q1EyYxAB!2m1!1s0x0:0x78a12aad59b29e47!3m1!1s2@1:CAIQACodChtycF9oOnZSZGkyTUNOdDlKeUE1bFFHZE5CQ2c%7C%7C?hl=en",
-        "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-5",
+        "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-7",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tseU4zWjVYMEZMTUU5M2RuUnVaMXBrV25aUFJIYxAB!2m1!1s0x0:0x35381bbe27419722!3m1!1s2@1:CAIQACodChtycF9oOklyN3Z5X0FLME93dnRuZ1pkWnZPRHc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pKT2MzTnNkMnRyYkZWRU5sbG1ibDk0WVdNNGNsRRAB!2m1!1s0x0:0x1d82e9d933de0c0a!3m1!1s2@1:CAIQACodChtycF9oOjJOc3Nsd2trbFVENllmbl94YWM4clE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xWaGJEWjViRWxYTkZBNExWOU9OazVEVTBKdE9IYxAB!2m1!1s0x0:0x488a347a8332b2b4!3m1!1s2@1:CAIQACodChtycF9oOlVhbDZ5bElXNFA4LV9ONk5DU0JtOHc%7C%7C?hl=en",
@@ -204000,7 +206345,7 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xaZmNsUlhTR2gxZFc4d2JEQnNia0l5VDA5Q2RHYxAB!2m1!1s0x0:0xfc9a09ed0161c0f3!3m1!1s2@1:CAIQACodChtycF9oOlZfclRXSGh1dW8wbDBsbkIyT09CdGc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21SR1MwUmxiVkpSY0V3eGRXb3lRMjlJYUVGNU5YYxAB!2m1!1s0x0:0x1d82e9d933de0c0a!3m1!1s2@1:CAIQACodChtycF9oOmRGS0RlbVJRcEwxdWoyQ29IaEF5NXc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kwdFFWVndSbFpSWmtGR1JraDRiVkZKVGpaTlpsRRAB!2m1!1s0x0:0x488a347a8332b2b4!3m1!1s2@1:CAIQACodChtycF9oOi0tQVVwRlZRZkFGRkh4bVFJTjZNZlE%7C%7C?hl=en",
-        "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-6",
+        "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-8",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCeWR6UmtWV1ZtVkd4alkwUlFVVUpOWDNndFNGRRAB!2m1!1s0x0:0x5a0ffcf7187a7c64!3m1!1s2@1:CAIQACodChtycF9oOlBydzRkVWVmVGxjY0RQUUJNX3gtSFE%7C%7C?hl=en",
         "https://www.trustpilot.com/reviews/6a3e851d82e8bd0f700d6c7c",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tWWFVUZEJVMmhKYmtoWVFUaGFibkk0T1dKb2RYYxAB!2m1!1s0x0:0xab9261d86ba82dc4!3m1!1s2@1:CAIQACodChtycF9oOkVXUTdBU2hJbkhYQThabnI4OWJodXc%7C%7C?hl=en",
@@ -204067,30 +206412,14 @@ window.REVIEW_DATASETS = {
         "http://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=2#0654_88276839_24907481",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pjd1luZzVURmRFWldkRmRFbzRORlIwTWxsNlZVRRAB!2m1!1s0x0:0xf72ae4ea6bebc079!3m1!1s2@1:CAIQACodChtycF9oOjcwYng5TFdEZWdFdEo4NFR0Mll6VUE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kNFdWaExlbTV5Y1RCelJWb3dUV1kwV2pReFpYYxAB!2m1!1s0x0:0xa9023afef87eccd7!3m1!1s2@1:CAIQACodChtycF9oOnd4WVhLem5ycTBzRVowTWY0WjQxZXc%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KTk9VaEhMVzVoVXpVeFRtSmpkMlZxVTFkRE0xRRAB!2m1!1s0x0:0xd206ccc1faab34c2!3m1!1s2@1:CAIQACodChtycF9oOnJNOUhHLW5hUzUxTmJjd2VqU1dDM1E%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21KWGVUSTFPRmRCZWtGdGNqazNWRFZpYzBsRFZtYxAB!2m1!1s0x0:0xf319dd37c46d5d05!3m1!1s2@1:CAIQACodChtycF9oOmJXeTI1OFdBekFtcjk3VDVic0lDVmc%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pkbE9ITlBNR0ozTjNGZlFUUTFhVFI1VjJkalFuYxAB!2m1!1s0x0:0xf319dd37c46d5d05!3m1!1s2@1:CAIQACodChtycF9oOjdlOHNPMGJ3N3FfQTQ1aTR5V2djQnc%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KS1dYTktTVzlHYWtkTGJGbGtjRkp2ZFhKbk0wRRAB!2m1!1s0x0:0xe9e7b47c8d71b6b6!3m1!1s2@1:CAIQACodChtycF9oOnJKWXNKSW9GakdLbFlkcFJvdXJnM0E%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pkMVNIcGpOMjVWVkZaVFpFNTZZV2htVjFOMmIwRRAB!2m1!1s0x0:0x7a263376a9ba6f28!3m1!1s2@1:CAIQACodChtycF9oOjd1SHpjN25VVFZTZE56YWhmV1N2b0E%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tNMGQxYzFUMWRXYWpsQk0wMXdVa2xuZEdaRVJuYxAB!2m1!1s0x0:0xc9a30c2bad4f8282!3m1!1s2@1:CAIQACodChtycF9oOkM0d1c1T1dWajlBM01wUklndGZERnc%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2paVU5WRkNMVWR6ZFZJMFgwMWxkeTFmV1Y5UVZtYxAB!2m1!1s0x0:0x771752c764c96f5c!3m1!1s2@1:CAIQACodChtycF9oOjZUNVFCLUdzdVI0X01ldy1fWV9QVmc%7C%7C?hl=en",
-        "http://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_24900724",
-        "http://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=2#0654_88276839_24900724",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25aQ1kzWkZTbFJaU0c5a1VESnJhWEZYVHpaa05VRRAB!2m1!1s0x0:0x1643c908409b6d25!3m1!1s2@1:CAIQACodChtycF9oOnZCY3ZFSlRZSG9kUDJraXFXTzZkNUE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w4dFNHOVJTM2t0VWxCUGFHTlljQzB3VVVwc2NFRRAB!2m1!1s0x0:0xc9a30c2bad4f8282!3m1!1s2@1:CAIQACodChtycF9oOl8tSG9RS3ktUlBPaGNYcC0wUUpscEE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21odU5rNXRhMnB1WkRocFRXMU9VMEZtVG1FeGIxRRAB!2m1!1s0x0:0xfe971f774f85ceb9!3m1!1s2@1:CAIQACodChtycF9oOmhuNk5ta2puZDhpTW1OU0FmTmExb1E%7C%7C?hl=en",
-        "https://www.trustpilot.com/reviews/6a1876c5133821263e6809f5",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xBMlZVcHliREYzU0ZacU1sWTFNRGt3ZVVKTmMxRRAB!2m1!1s0x0:0x5d8666815a217707!3m1!1s2@1:CAIQACodChtycF9oOlA2VUpybDF3SFZqMlY1MDkweUJNc1E%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCTU5uVktVVVYyYVc5YVVXVkNiRnB4Y0ZoRk5GRRAB!2m1!1s0x0:0x1d82e9d933de0c0a!3m1!1s2@1:CAIQACodChtycF9oOjBMNnVKUUV2aW9aUWVCbFpxcFhFNFE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kQ1RFSnFZbEpDYVZGQ09GOXhOMXBMWTJSclUyYxAB!2m1!1s0x0:0xa9023afef87eccd7!3m1!1s2@1:CAIQACodChtycF9oOndCTEJqYlJCaVFCOF9xN1pLY2RrU2c%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pWZlpqbG1ibXhYYmtRNVRVbGFVMlp1TTJnM1UxRRAB!2m1!1s0x0:0x342729a2d1c7161b!3m1!1s2@1:CAIQACodChtycF9oOjVfZjlmbmxXbkQ5TUlaU2ZuM2g3U1E%7C%7C?hl=en"
+        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KTk9VaEhMVzVoVXpVeFRtSmpkMlZxVTFkRE0xRRAB!2m1!1s0x0:0xd206ccc1faab34c2!3m1!1s2@1:CAIQACodChtycF9oOnJNOUhHLW5hUzUxTmJjd2VqU1dDM1E%7C%7C?hl=en"
       ],
-      "generated_at_utc": "2026-10-07T01:31:10.437334+00:00",
+      "generated_at_utc": "2026-11-02T19:58:05.519668+00:00",
       "since_date": "2023-01-01",
-      "until_date": "2026-09-30",
+      "until_date": "2026-10-31",
       "collector_failures": [],
-      "existing_review_count": 4547,
-      "new_reviews_added": 89,
+      "existing_review_count": 4636,
+      "new_reviews_added": 60,
       "youtube_excluded": true,
       "usa_only": true,
       "english_only": true,
@@ -204111,15 +206440,15 @@ window.REVIEW_DATASETS = {
         "bbb.org"
       ],
       "geo_validation_counts": {
-        "google_play_us_store": 1,
-        "google_business_us_profile": 67,
-        "trustpilot_us_slug": 1,
-        "bbb_us_business": 13,
-        "apple_us_store": 7
+        "google_play_us_store": 6,
+        "trustpilot_us_slug": 2,
+        "mixed_source_ok": 1,
+        "bbb_us_business": 47,
+        "apple_us_store": 4
       },
       "geo_excluded_counts": {
         "play.google.com:google_play_us_store_non_us_marker": 7,
-        "trustpilot.com:trustpilot_us_slug_non_us_marker": 3,
+        "trustpilot.com:trustpilot_us_slug_non_us_marker": 1,
         "complaintsboard.com:complaintsboard_us_profile_non_us_marker": 1,
         "apps.apple.com:apple_non_us_store": 14
       },
@@ -204187,22 +206516,6 @@ window.REVIEW_DATASETS = {
           "review_date": "2026-09-08",
           "reason": "trustpilot_us_slug_non_us_marker",
           "review_text": "scamer. this is actual scam company. listed car mentioned the damaged in one area , but in purpose hiding the substantial damaged in other area. photos not clear. miss leading , did not disclosed true information. this company can't get awa"
-        },
-        {
-          "source_website": "trustpilot.com",
-          "source_label": "Trustpilot (iaai.com)",
-          "source_url": "https://www.trustpilot.com/reviews/68f2ada067bc62568782c085",
-          "review_date": "2024-10-17",
-          "reason": "trustpilot_us_slug_non_us_marker",
-          "review_text": "Bought a car from Charlottes Salvage on…. Bought a car from Charlottes Salvage on Synetiq auctions a few years ago. Bidded 3 hours before at £1430 and was the highest bidder at £720 until 10 minutes before the auction started. Then at 10 mi"
-        },
-        {
-          "source_website": "trustpilot.com",
-          "source_label": "Trustpilot (iaai.com)",
-          "source_url": "https://www.trustpilot.com/reviews/68c83be8172e8eb29d664b3b",
-          "review_date": "2025-09-15",
-          "reason": "trustpilot_us_slug_non_us_marker",
-          "review_text": "I bought a car from IAA UK in…. I bought a car from IAA UK in [month/year]. The auction listing and VIN data showed the engine code as CUNA (GTD spec, 184PS), but when I collected the vehicle it was fitted with CRBC (150PS). When I raised t"
         },
         {
           "source_website": "complaintsboard.com",
@@ -204283,6 +206596,22 @@ window.REVIEW_DATASETS = {
           "review_date": "2025-09-23",
           "reason": "apple_non_us_store",
           "review_text": "Absolute garbage. They charge high fees , okay.. can you just provide a basic working app????"
+        },
+        {
+          "source_website": "apps.apple.com",
+          "source_label": "Apple App Store (468532534, ca)",
+          "source_url": "https://apps.apple.com/ca/app/id468532534?see-all=reviews&platform=iphone&reviewId=12950398341",
+          "review_date": "2025-07-29",
+          "reason": "apple_non_us_store",
+          "review_text": "STILL DOESN’T WORK IN CANADA. And their website for mobile brings me back to the top everytime I tap on a vehicle. Fire these people who don’t know how to make a website"
+        },
+        {
+          "source_website": "apps.apple.com",
+          "source_label": "Apple App Store (468532534, ca)",
+          "source_url": "https://apps.apple.com/ca/app/id468532534?see-all=reviews&platform=iphone&reviewId=11277660542",
+          "review_date": "2024-05-17",
+          "reason": "apple_non_us_store",
+          "review_text": "Need access to Canada on this App. Stop restricting the app to USA only. Open it up to access Canada"
         }
       ],
       "active_collectors": [
@@ -204319,7 +206648,7 @@ window.REVIEW_DATASETS = {
           "website": "https://www.iaai.com/",
           "rating": 4.2,
           "review_count": 6,
-          "last_successful_scan_date": "2026-09-30"
+          "last_successful_scan_date": "2026-10-31"
         },
         {
           "feature_id": "0x8644b6bac575a881:0x5417b88cf109b559",
@@ -204330,7 +206659,7 @@ window.REVIEW_DATASETS = {
           "website": "https://www.iaai.com/",
           "rating": 3.7,
           "review_count": 3,
-          "last_successful_scan_date": "2026-09-30"
+          "last_successful_scan_date": "2026-10-31"
         },
         {
           "feature_id": "0x8656859fd806721d:0x1c9eadd6f9b8fefa",
@@ -204393,9 +206722,9 @@ window.REVIEW_DATASETS = {
           "place_id": "ChIJZ6eJm_lEAYcRm_7GKq8tccM",
           "name": "IAA Amarillo",
           "address": "11150 Farm to Market Rd 1541, Amarillo, TX 79118",
-          "website": "https://www.iaai.com/locations/437?utm_source=reputation",
+          "website": "https://www.iaai.com/locations/437?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 4.2,
-          "review_count": 43,
+          "review_count": 44,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204416,8 +206745,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Anchorage",
           "address": "1446 Mystery Ave, Wasilla, AK 99654",
           "website": "https://www.iaai.com/locations/372?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 4,
-          "review_count": 41,
+          "rating": 3.8,
+          "review_count": 44,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204428,7 +206757,7 @@ window.REVIEW_DATASETS = {
           "address": "2591 S Casaloma Dr, Appleton, WI 54914",
           "website": "https://www.iaai.com/locations/522?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 4.3,
-          "review_count": 66,
+          "review_count": 67,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204439,7 +206768,7 @@ window.REVIEW_DATASETS = {
           "address": "4900 Hendersonville Rd, Fletcher, NC 28732",
           "website": "https://www.iaai.com/locations/751?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.6,
-          "review_count": 86,
+          "review_count": 85,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204449,8 +206778,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Ashland",
           "address": "123 4 Wheel Dr, Ashland, KY 41102",
           "website": "https://www.iaai.com/locations/651?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.9,
-          "review_count": 32,
+          "rating": 3.8,
+          "review_count": 33,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204461,7 +206790,7 @@ window.REVIEW_DATASETS = {
           "address": "125 Old Hwy 138, Loganville, GA 30052",
           "website": "https://www.iaai.com/locations/710?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.8,
-          "review_count": 105,
+          "review_count": 106,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204471,8 +206800,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Atlanta East",
           "address": "1045 Atlanta Hwy SE, Winder, GA 30680",
           "website": "https://www.iaai.com/locations/707?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.8,
-          "review_count": 185,
+          "rating": 3.9,
+          "review_count": 186,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204494,7 +206823,7 @@ window.REVIEW_DATASETS = {
           "address": "1930 Rex Rd, Lake City, GA 30260",
           "website": "https://www.iaai.com/locations/705?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.2,
-          "review_count": 324,
+          "review_count": 320,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204505,7 +206834,7 @@ window.REVIEW_DATASETS = {
           "address": "1871 GA-101, Rockmart, GA 30153",
           "website": "",
           "rating": 5,
-          "review_count": 1,
+          "review_count": 2,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204526,8 +206855,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Austin",
           "address": "2191 TX-21, Dale, TX 78616",
           "website": "https://www.iaai.com/locations/418?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.7,
-          "review_count": 222,
+          "rating": 3.8,
+          "review_count": 220,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204559,8 +206888,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Avenel",
           "address": "87 Randolph Ave, Avenel, NJ 07001",
           "website": "https://www.iaai.com/locations/607?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.8,
-          "review_count": 174,
+          "rating": 3.9,
+          "review_count": 172,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204614,8 +206943,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Birmingham",
           "address": "1600 AL-150, Bessemer, AL 35022",
           "website": "https://www.iaai.com/locations/727?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.3,
-          "review_count": 86,
+          "rating": 3.5,
+          "review_count": 84,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204647,8 +206976,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Bowling Green",
           "address": "710 Woodford Ave, Bowling Green, KY 42101",
           "website": "https://www.iaai.com/locations/658?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.5,
-          "review_count": 63,
+          "rating": 3.4,
+          "review_count": 64,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204659,7 +206988,7 @@ window.REVIEW_DATASETS = {
           "address": "396 River Rd, Bridgeport, PA 19405",
           "website": "https://www.iaai.com/locations/647?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 4.1,
-          "review_count": 105,
+          "review_count": 106,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204681,7 +207010,7 @@ window.REVIEW_DATASETS = {
           "address": "366 Vulcan St, Buffalo, NY 14207",
           "website": "https://www.iaai.com/locations/624?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.4,
-          "review_count": 112,
+          "review_count": 111,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204702,8 +207031,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Casper",
           "address": "2305 Salt Creek Hwy Unit C, Casper, WY 82601",
           "website": "https://www.iaai.com/locations/376?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.6,
-          "review_count": 9,
+          "rating": 3.5,
+          "review_count": 10,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204713,8 +207042,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Central New Jersey",
           "address": "426 Texas Rd, Morganville, NJ 07751",
           "website": "https://www.iaai.com/locations/614?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.7,
-          "review_count": 104,
+          "rating": 3.8,
+          "review_count": 102,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204725,7 +207054,7 @@ window.REVIEW_DATASETS = {
           "address": "430 Tannenbaum Rd, Ravenel, SC 29470",
           "website": "https://www.iaai.com/locations/720?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.9,
-          "review_count": 58,
+          "review_count": 59,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204736,7 +207065,7 @@ window.REVIEW_DATASETS = {
           "address": "1710 Starita Rd, Charlotte, NC 28206",
           "website": "https://www.iaai.com/locations/714?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.9,
-          "review_count": 167,
+          "review_count": 169,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204758,7 +207087,7 @@ window.REVIEW_DATASETS = {
           "address": "605 Healy Rd, East Dundee, IL 60118",
           "website": "https://www.iaai.com/locations/514?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 4,
-          "review_count": 129,
+          "review_count": 130,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204769,7 +207098,7 @@ window.REVIEW_DATASETS = {
           "address": "16425 Crawford Ave, Markham, IL 60428",
           "website": "https://www.iaai.com/locations/515?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 2.9,
-          "review_count": 161,
+          "review_count": 160,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204791,7 +207120,7 @@ window.REVIEW_DATASETS = {
           "address": "10100 Windisch Rd, West Chester Township, OH 45069",
           "website": "https://www.iaai.com/locations/653?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.3,
-          "review_count": 74,
+          "review_count": 73,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204813,7 +207142,7 @@ window.REVIEW_DATASETS = {
           "address": "5152 126th Ave N, Clearwater, FL 33760",
           "website": "https://www.iaai.com/locations/745?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.9,
-          "review_count": 103,
+          "review_count": 102,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204824,7 +207153,7 @@ window.REVIEW_DATASETS = {
           "address": "7437 Deer Trail Ln, Lorain, OH 44053",
           "website": "https://www.iaai.com/locations/663?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.5,
-          "review_count": 163,
+          "review_count": 164,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204868,7 +207197,7 @@ window.REVIEW_DATASETS = {
           "address": "5100 Merle Rd, Concord, NC 28025",
           "website": "https://www.iaai.com/locations/746?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 4,
-          "review_count": 137,
+          "review_count": 136,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204877,9 +207206,9 @@ window.REVIEW_DATASETS = {
           "place_id": "ChIJzclvCrpLDogRb9Brx59OkUQ",
           "name": "IAA Corporate Headquarters",
           "address": "Two Westbrook Corporate Center 10th Floor, Westchester, IL 60154",
-          "website": "https://www.iaai.com/company?utm_source=reputation",
-          "rating": 2.3,
-          "review_count": 98,
+          "website": "https://www.iaai.com/company?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
+          "rating": 2.4,
+          "review_count": 94,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204901,7 +207230,7 @@ window.REVIEW_DATASETS = {
           "address": "15201 Review Rd, Culpeper, VA 22701",
           "website": "https://www.iaai.com/locations/726?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 4.1,
-          "review_count": 111,
+          "review_count": 112,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204912,7 +207241,7 @@ window.REVIEW_DATASETS = {
           "address": "204 Mars Rd, Wilmer, TX 75172",
           "website": "https://www.iaai.com/locations/441?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.5,
-          "review_count": 246,
+          "review_count": 244,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204923,7 +207252,7 @@ window.REVIEW_DATASETS = {
           "address": "4226 E Main St, Grand Prairie, TX 75050",
           "website": "https://www.iaai.com/locations/443?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 2.9,
-          "review_count": 601,
+          "review_count": 588,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204934,7 +207263,7 @@ window.REVIEW_DATASETS = {
           "address": "5403 Rockingham Rd, Davenport, IA 52802",
           "website": "https://www.iaai.com/locations/534?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 4,
-          "review_count": 90,
+          "review_count": 91,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204956,7 +207285,7 @@ window.REVIEW_DATASETS = {
           "address": "8510 Brighton Rd, Commerce City, CO 80022",
           "website": "https://www.iaai.com/locations/374?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.8,
-          "review_count": 157,
+          "review_count": 156,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -204966,8 +207295,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Des Moines",
           "address": "1000 Armstrong Dr, De Soto, IA 50069",
           "website": "https://www.iaai.com/locations/536?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.4,
-          "review_count": 103,
+          "rating": 3.5,
+          "review_count": 104,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205011,7 +207340,7 @@ window.REVIEW_DATASETS = {
           "address": "2780 Willow Pass Rd, Bay Point, CA 94565",
           "website": "https://www.iaai.com/locations/332?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.6,
-          "review_count": 163,
+          "review_count": 162,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205032,7 +207361,7 @@ window.REVIEW_DATASETS = {
           "name": "IAA Elkton",
           "address": "183 Zeitler Rd, Elkton, MD 21921",
           "website": "https://www.iaai.com/locations/786?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.8,
+          "rating": 3.7,
           "review_count": 26,
           "last_successful_scan_date": "2026-09-30"
         },
@@ -205077,7 +207406,7 @@ window.REVIEW_DATASETS = {
           "address": "4401 37th St N, Fargo, ND 58102",
           "website": "https://www.iaai.com/locations/363?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.9,
-          "review_count": 88,
+          "review_count": 89,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205088,7 +207417,7 @@ window.REVIEW_DATASETS = {
           "address": "2801 E Pridemore Dr, Lincoln, AR 72744",
           "website": "https://www.iaai.com/locations/435?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.3,
-          "review_count": 91,
+          "review_count": 90,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205098,8 +207427,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Flint",
           "address": "3088 S Dye Rd, Flint, MI 48507",
           "website": "https://www.iaai.com/locations/502?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.2,
-          "review_count": 94,
+          "rating": 3.3,
+          "review_count": 95,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205110,7 +207439,7 @@ window.REVIEW_DATASETS = {
           "address": "9951 Banana Ave, Fontana, CA 92335",
           "website": "https://www.iaai.com/locations/132?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.6,
-          "review_count": 69,
+          "review_count": 70,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205121,7 +207450,7 @@ window.REVIEW_DATASETS = {
           "address": "11950 FL-82, Fort Myers, FL 33913",
           "website": "https://www.iaai.com/locations/749?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.4,
-          "review_count": 47,
+          "review_count": 48,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205154,7 +207483,7 @@ window.REVIEW_DATASETS = {
           "address": "3748 Mcpherson Dr, Justin, TX 76247",
           "website": "https://www.iaai.com/locations/465?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.5,
-          "review_count": 227,
+          "review_count": 228,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205164,8 +207493,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Fremont",
           "address": "6700 Stevenson Blvd, Fremont, CA 94538",
           "website": "https://www.iaai.com/locations/334?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.3,
-          "review_count": 157,
+          "rating": 3.4,
+          "review_count": 158,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205176,7 +207505,7 @@ window.REVIEW_DATASETS = {
           "address": "1805 N Lafayette Ave, Fresno, CA 93705",
           "website": "https://www.iaai.com/locations/337?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.2,
-          "review_count": 103,
+          "review_count": 105,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205187,7 +207516,7 @@ window.REVIEW_DATASETS = {
           "address": "700 100th St SW, Byron Center, MI 49315",
           "website": "https://www.iaai.com/locations/518?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.6,
-          "review_count": 80,
+          "review_count": 81,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205198,7 +207527,7 @@ window.REVIEW_DATASETS = {
           "address": "171 Carden Rd, Graham, NC 27253",
           "website": "https://www.iaai.com/locations/715?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.6,
-          "review_count": 129,
+          "review_count": 128,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205209,7 +207538,7 @@ window.REVIEW_DATASETS = {
           "address": "422 Scuffletown Rd, Simpsonville, SC 29681",
           "website": "https://www.iaai.com/locations/761?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.7,
-          "review_count": 105,
+          "review_count": 106,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205230,8 +207559,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Gulf Coast",
           "address": "8209 Old Stage Rd, Moss Point, MS 39562",
           "website": "https://www.iaai.com/locations/427?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.9,
-          "review_count": 92,
+          "rating": 4,
+          "review_count": 90,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205241,8 +207570,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Hartford",
           "address": "47 Newberry Rd, East Windsor, CT 06088",
           "website": "https://www.iaai.com/locations/623?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 4.1,
-          "review_count": 66,
+          "rating": 4,
+          "review_count": 67,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205263,8 +207592,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA High Point",
           "address": "6695 Auction Rd, High Point, NC 27263",
           "website": "https://www.iaai.com/locations/790?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 4.3,
-          "review_count": 28,
+          "rating": 4.4,
+          "review_count": 29,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205286,7 +207615,7 @@ window.REVIEW_DATASETS = {
           "address": "2535 W Mt Houston Rd, Houston, TX 77038",
           "website": "https://www.iaai.com/locations/456?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3,
-          "review_count": 721,
+          "review_count": 717,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205296,8 +207625,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Houston North",
           "address": "16602 E Hardy Rd, Houston, TX 77032",
           "website": "https://www.iaai.com/locations/440?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.3,
-          "review_count": 297,
+          "rating": 3.4,
+          "review_count": 294,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205308,7 +207637,7 @@ window.REVIEW_DATASETS = {
           "address": "2839 FM 1462, Rosharon, TX 77583",
           "website": "https://www.iaai.com/locations/414?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.7,
-          "review_count": 137,
+          "review_count": 138,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205340,7 +207669,7 @@ window.REVIEW_DATASETS = {
           "name": "IAA Indianapolis",
           "address": "3302 S Harding St, Indianapolis, IN 46217",
           "website": "https://www.iaai.com/locations/541?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 2.8,
+          "rating": 2.9,
           "review_count": 103,
           "last_successful_scan_date": "2026-09-30"
         },
@@ -205352,7 +207681,7 @@ window.REVIEW_DATASETS = {
           "address": "1947 S County Road (SCR) 1240E, Crothersville, IN 47229",
           "website": "https://www.iaai.com/locations/548?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 4.6,
-          "review_count": 45,
+          "review_count": 46,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205373,8 +207702,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Jacksonville",
           "address": "186 Pecan Park Rd, Jacksonville, FL 32218",
           "website": "https://www.iaai.com/locations/712?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.7,
-          "review_count": 51,
+          "rating": 3.8,
+          "review_count": 50,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205385,7 +207714,7 @@ window.REVIEW_DATASETS = {
           "address": "2663 S 88th St, Kansas City, KS 66111",
           "website": "https://www.iaai.com/locations/527?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 2.7,
-          "review_count": 390,
+          "review_count": 382,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205406,8 +207735,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Knoxville",
           "address": "3634 E Governor John Sevier Hwy, Knoxville, TN 37914",
           "website": "https://www.iaai.com/locations/754?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.8,
-          "review_count": 103,
+          "rating": 3.7,
+          "review_count": 104,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205418,7 +207747,7 @@ window.REVIEW_DATASETS = {
           "address": "425 LA-93, Scott, LA 70583",
           "website": "https://www.iaai.com/locations/760?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.9,
-          "review_count": 65,
+          "review_count": 66,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205428,8 +207757,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Lake City",
           "address": "5670 N Pkwy, Lake City, GA 30260",
           "website": "https://www.iaai.com/Locations/702?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 4.3,
-          "review_count": 9,
+          "rating": 4,
+          "review_count": 10,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205461,8 +207790,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Lexington",
           "address": "424 Two Notch Rd, Lexington, SC 29073",
           "website": "https://www.iaai.com/locations/780?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 4,
-          "review_count": 96,
+          "rating": 4.1,
+          "review_count": 95,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205472,8 +207801,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Lincoln",
           "address": "301 Madigan Dr, Lincoln, IL 62656",
           "website": "https://www.iaai.com/locations/509?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.6,
-          "review_count": 34,
+          "rating": 3.7,
+          "review_count": 35,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205484,7 +207813,7 @@ window.REVIEW_DATASETS = {
           "address": "4900 S Kerr Rd, Scott, AR 72142",
           "website": "https://www.iaai.com/locations/423?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.6,
-          "review_count": 190,
+          "review_count": 189,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205494,8 +207823,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Long Island",
           "address": "66 Peconic Ave, Medford, NY 11763",
           "website": "https://www.iaai.com/locations/613?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3,
-          "review_count": 253,
+          "rating": 3.1,
+          "review_count": 251,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205505,8 +207834,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Longview",
           "address": "5577 US-80, Longview, TX 75605",
           "website": "https://www.iaai.com/locations/419?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 4,
-          "review_count": 110,
+          "rating": 4.1,
+          "review_count": 108,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205516,8 +207845,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Los Angeles",
           "address": "18300 S Vermont Ave, Gardena, CA 90248",
           "website": "https://www.iaai.com/locations/134?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.4,
-          "review_count": 151,
+          "rating": 3.5,
+          "review_count": 148,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205528,7 +207857,7 @@ window.REVIEW_DATASETS = {
           "address": "1903 N Blinn Ave, Wilmington, CA 90744",
           "website": "https://www.iaai.com/locations/130?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3,
-          "review_count": 41,
+          "review_count": 40,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205539,7 +207868,7 @@ window.REVIEW_DATASETS = {
           "address": "891 Ballardsville Rd, Eminence, KY 40019",
           "website": "https://www.iaai.com/locations/669?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 4,
-          "review_count": 88,
+          "review_count": 87,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205561,7 +207890,7 @@ window.REVIEW_DATASETS = {
           "address": "2200 Trade Dr, Macon, GA 31217",
           "website": "https://www.iaai.com/locations/734?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.6,
-          "review_count": 80,
+          "review_count": 79,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205572,7 +207901,7 @@ window.REVIEW_DATASETS = {
           "address": "75 Lowell Rd, Salem, NH 03079",
           "website": "https://www.iaai.com/locations/643?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.6,
-          "review_count": 54,
+          "review_count": 53,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205593,8 +207922,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Memphis",
           "address": "3033 Fite Rd, Millington, TN 38053",
           "website": "https://www.iaai.com/locations/738?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.8,
-          "review_count": 131,
+          "rating": 3.9,
+          "review_count": 129,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205604,8 +207933,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Metro DC",
           "address": "14149 Brandywine Rd, Brandywine, MD 20613",
           "website": "https://www.iaai.com/locations/721?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.5,
-          "review_count": 144,
+          "rating": 3.6,
+          "review_count": 147,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205616,7 +207945,7 @@ window.REVIEW_DATASETS = {
           "address": "20499 Stirling Rd, Southwest Ranches, FL 33332",
           "website": "https://www.iaai.com/locations/736?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 4,
-          "review_count": 270,
+          "review_count": 267,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205627,7 +207956,7 @@ window.REVIEW_DATASETS = {
           "address": "N70W25277 Indian Grass Ln, Sussex, WI 53089",
           "website": "https://www.iaai.com/locations/521?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 4,
-          "review_count": 95,
+          "review_count": 96,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205638,7 +207967,7 @@ window.REVIEW_DATASETS = {
           "address": "28261 Dressler Ct, Randolph, MN 55065",
           "website": "https://www.iaai.com/locations/528?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.2,
-          "review_count": 25,
+          "review_count": 24,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205670,8 +207999,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Mobile",
           "address": "3600 Desirrah Dr, Mobile, AL 36618",
           "website": "https://www.iaai.com/Locations/794?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 2.3,
-          "review_count": 6,
+          "rating": 2.7,
+          "review_count": 7,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205692,8 +208021,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Nashville",
           "address": "3896 Stewarts Ln, Nashville, TN 37218",
           "website": "https://www.iaai.com/locations/753?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.3,
-          "review_count": 187,
+          "rating": 3.4,
+          "review_count": 188,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205714,8 +208043,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA New Orleans East",
           "address": "6600 Almonaster Ave, New Orleans, LA 70126",
           "website": "https://www.iaai.com/locations/432?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.5,
-          "review_count": 118,
+          "rating": 3.6,
+          "review_count": 116,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205725,8 +208054,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Newburgh",
           "address": "39 Stone Castle Rd, Rock Tavern, NY 12575",
           "website": "https://www.iaai.com/locations/635?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.8,
-          "review_count": 83,
+          "rating": 3.9,
+          "review_count": 82,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205737,7 +208066,7 @@ window.REVIEW_DATASETS = {
           "address": "7245 Laurel Canyon Blvd, North Hollywood, CA 91605",
           "website": "https://www.iaai.com/locations/111?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.1,
-          "review_count": 273,
+          "review_count": 272,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205758,8 +208087,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Oklahoma City",
           "address": "7300 I-35, Oklahoma City, OK 73121",
           "website": "https://www.iaai.com/locations/421?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.1,
-          "review_count": 269,
+          "rating": 3.2,
+          "review_count": 267,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205769,7 +208098,7 @@ window.REVIEW_DATASETS = {
           "name": "IAA Omaha",
           "address": "14749 Meredythe Plaza, Springfield, NE 68059",
           "website": "https://www.iaai.com/locations/525?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.6,
+          "rating": 3.7,
           "review_count": 197,
           "last_successful_scan_date": "2026-09-30"
         },
@@ -205802,8 +208131,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Orlando North",
           "address": "2500 Adesa Dr, Sanford, FL 32773",
           "website": "https://www.iaai.com/locations/743?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.8,
-          "review_count": 96,
+          "rating": 3.9,
+          "review_count": 95,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205813,8 +208142,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Paducah",
           "address": "1701 Lane Rd, Paducah, KY 42003",
           "website": "https://www.iaai.com/locations/659?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 4.1,
-          "review_count": 35,
+          "rating": 4,
+          "review_count": 36,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205858,7 +208187,7 @@ window.REVIEW_DATASETS = {
           "address": "2299 W Broadway Rd, Phoenix, AZ 85041",
           "website": "https://www.iaai.com/locations/151?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.2,
-          "review_count": 492,
+          "review_count": 481,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205902,7 +208231,7 @@ window.REVIEW_DATASETS = {
           "address": "W10321 WI-16, Portage, WI 53901",
           "website": "https://www.iaai.com/locations/523?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 4.1,
-          "review_count": 39,
+          "review_count": 38,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205912,8 +208241,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Portland",
           "address": "4415 NE 158th Ave, Portland, OR 97230",
           "website": "https://www.iaai.com/locations/308?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.7,
-          "review_count": 228,
+          "rating": 3.8,
+          "review_count": 226,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205924,7 +208253,7 @@ window.REVIEW_DATASETS = {
           "address": "9 Moodys Dr, Gorham, ME 04038",
           "website": "https://www.iaai.com/locations/670?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.9,
-          "review_count": 29,
+          "review_count": 30,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205934,8 +208263,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Portland South",
           "address": "605 S Pacific Hwy, Woodburn, OR 97071",
           "website": "https://www.iaai.com/locations/315?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 4,
-          "review_count": 17,
+          "rating": 4.1,
+          "review_count": 18,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205945,7 +208274,7 @@ window.REVIEW_DATASETS = {
           "name": "IAA Portland West",
           "address": "10498 N Vancouver Way, Portland, OR 97217",
           "website": "https://www.iaai.com/locations/311?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.3,
+          "rating": 3.4,
           "review_count": 78,
           "last_successful_scan_date": "2026-09-30"
         },
@@ -205968,7 +208297,7 @@ window.REVIEW_DATASETS = {
           "address": "Moroni Feed Rd, Nephi, UT 84648",
           "website": "https://www.iaai.com/locations/343?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3,
-          "review_count": 8,
+          "review_count": 9,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205979,7 +208308,7 @@ window.REVIEW_DATASETS = {
           "address": "1250 E Main St, Pulaski, VA 24301",
           "website": "https://www.iaai.com/locations/724?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 4,
-          "review_count": 75,
+          "review_count": 76,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -205989,8 +208318,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Raleigh",
           "address": "60 Sadisco Rd, Clayton, NC 27520",
           "website": "https://www.iaai.com/locations/747?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.6,
-          "review_count": 239,
+          "rating": 3.7,
+          "review_count": 238,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206012,7 +208341,7 @@ window.REVIEW_DATASETS = {
           "address": "10390 Sadisco Dr, Ashland, VA 23005",
           "website": "https://www.iaai.com/locations/711?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.3,
-          "review_count": 95,
+          "review_count": 96,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206022,8 +208351,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Riverside",
           "address": "3600 Pyrite St, Jurupa Valley, CA 92509",
           "website": "https://www.iaai.com/",
-          "rating": 3.9,
-          "review_count": 79,
+          "rating": 4,
+          "review_count": 78,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206034,7 +208363,7 @@ window.REVIEW_DATASETS = {
           "address": "1576 Quarterwood Rd, Montvale, VA 24122",
           "website": "https://www.iaai.com/locations/782?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 4.4,
-          "review_count": 34,
+          "review_count": 35,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206056,7 +208385,7 @@ window.REVIEW_DATASETS = {
           "address": "11499 Douglas Rd, Rancho Cordova, CA 95742",
           "website": "https://www.iaai.com/locations/331?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.5,
-          "review_count": 153,
+          "review_count": 152,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206078,7 +208407,7 @@ window.REVIEW_DATASETS = {
           "address": "1800 S 1100 W, Ogden, UT 84401",
           "website": "https://www.iaai.com/locations/342?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.2,
-          "review_count": 162,
+          "review_count": 159,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206089,7 +208418,7 @@ window.REVIEW_DATASETS = {
           "address": "11275 S Zarzamora St, San Antonio, TX 78224",
           "website": "https://www.iaai.com/locations/442?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.6,
-          "review_count": 268,
+          "review_count": 267,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206110,8 +208439,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Santa Clarita",
           "address": "14320 Soledad Canyon Rd, Santa Clarita, CA 91387",
           "website": "https://www.iaai.com/locations/128?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 2.8,
-          "review_count": 33,
+          "rating": 2.7,
+          "review_count": 34,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206132,8 +208461,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Sayreville",
           "address": "580 Jernee Mill Rd, Sayreville, NJ 08872",
           "website": "https://www.iaai.com/locations/606?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.9,
-          "review_count": 58,
+          "rating": 4,
+          "review_count": 57,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206143,8 +208472,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Scranton",
           "address": "103 Thompson St, Pittston, PA 18640",
           "website": "https://www.iaai.com/locations/636?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 4.3,
-          "review_count": 70,
+          "rating": 4.4,
+          "review_count": 69,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206154,8 +208483,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Seattle",
           "address": "15801 110th Ave E, Puyallup, WA 98374",
           "website": "https://www.iaai.com/locations/327?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3,
-          "review_count": 454,
+          "rating": 3.1,
+          "review_count": 445,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206165,9 +208494,19 @@ window.REVIEW_DATASETS = {
           "name": "IAA Shady Spring",
           "address": "4163 Pluto Rd, Shady Spring, WV 25918",
           "website": "https://www.iaai.com/locations/679?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.8,
-          "review_count": 38,
+          "rating": 3.9,
+          "review_count": 39,
           "last_successful_scan_date": "2026-09-30"
+        },
+        {
+          "feature_id": "0x886ca745da98292f:0xc10f3440c7588bd1",
+          "cid": "13911395226797771729",
+          "place_id": "ChIJLymY2kWnbIgR0YtYx0A0D8E",
+          "name": "IAA shop",
+          "address": "2000 S Banner Ave, Indianapolis, IN 46241",
+          "website": "",
+          "rating": 5,
+          "review_count": 1
         },
         {
           "feature_id": "0x8636db6bfb1b137d:0x38100db5333881b7",
@@ -206199,7 +208538,7 @@ window.REVIEW_DATASETS = {
           "address": "25631 IN-2, South Bend, IN 46619",
           "website": "https://www.iaai.com/locations/542?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.6,
-          "review_count": 106,
+          "review_count": 105,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206209,8 +208548,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Southern New Jersey",
           "address": "250 Blackwood-Barnsboro Rd, Turnersville, NJ 08012",
           "website": "https://www.iaai.com/locations/612?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.4,
-          "review_count": 90,
+          "rating": 3.5,
+          "review_count": 91,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206231,8 +208570,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Spokane",
           "address": "3520 N Tschirley Rd, Spokane Valley, WA 99216",
           "website": "https://www.iaai.com/locations/322?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.3,
-          "review_count": 136,
+          "rating": 3.4,
+          "review_count": 133,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206242,8 +208581,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Springfield",
           "address": "1155 N Eldon Ave Bldg. B, Springfield, MO 65803",
           "website": "https://www.iaai.com/locations/531?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 4.3,
-          "review_count": 53,
+          "rating": 4.4,
+          "review_count": 55,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206265,7 +208604,7 @@ window.REVIEW_DATASETS = {
           "address": "2436 Old Country Inn Dr, Caseyville, IL 62232",
           "website": "https://www.iaai.com/locations/524?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 2.7,
-          "review_count": 90,
+          "review_count": 89,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206308,8 +208647,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Suffolk",
           "address": "1389 Portsmouth Blvd, Suffolk, VA 23434",
           "website": "https://www.iaai.com/locations/765?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.2,
-          "review_count": 89,
+          "rating": 3.3,
+          "review_count": 91,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206330,8 +208669,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Tampa",
           "address": "1208 17th St E, Palmetto, FL 34221",
           "website": "https://www.iaai.com/locations/713?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 4,
-          "review_count": 70,
+          "rating": 4.1,
+          "review_count": 69,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206341,8 +208680,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Tampa North",
           "address": "8838 Bolton Ave, Hudson, FL 34667",
           "website": "https://www.iaai.com/locations/778?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.5,
-          "review_count": 67,
+          "rating": 3.6,
+          "review_count": 66,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206353,7 +208692,7 @@ window.REVIEW_DATASETS = {
           "address": "580 Myricks St, East Taunton, MA 02718",
           "website": "https://www.iaai.com/locations/640?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.5,
-          "review_count": 116,
+          "review_count": 119,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206375,7 +208714,7 @@ window.REVIEW_DATASETS = {
           "address": "211 Production Dr, Yorktown, VA 23693",
           "website": "https://www.iaai.com/locations/725?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.6,
-          "review_count": 103,
+          "review_count": 102,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206397,7 +208736,7 @@ window.REVIEW_DATASETS = {
           "address": "4650 E Irvington Rd, Tucson, AZ 85714",
           "website": "https://www.iaai.com/locations/424?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.9,
-          "review_count": 175,
+          "review_count": 176,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206407,8 +208746,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Tulsa",
           "address": "5311 W 46th St, Tulsa, OK 74107",
           "website": "https://www.iaai.com/locations/436?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.3,
-          "review_count": 187,
+          "rating": 3.4,
+          "review_count": 184,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206518,7 +208857,7 @@ window.REVIEW_DATASETS = {
           "address": "1710 Starita Rd # C, Charlotte, NC 28206",
           "website": "",
           "rating": 3.9,
-          "review_count": 39,
+          "review_count": 40,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206553,6 +208892,16 @@ window.REVIEW_DATASETS = {
           "rating": 3.6,
           "review_count": 65,
           "last_successful_scan_date": "2026-09-30"
+        },
+        {
+          "feature_id": "0x881131a51728f71f:0xf9d28c9a6f4d8f31",
+          "cid": "18001605255473499953",
+          "place_id": "ChIJH_coF6UxEYgRMY9Nb5qM0vk",
+          "name": "IAA Vehicle Donation",
+          "address": "25631 IN-2, South Bend, IN 46619",
+          "website": "",
+          "rating": null,
+          "review_count": null
         },
         {
           "feature_id": "0x8836fb149c514035:0xe11fbb12ade3794d",
@@ -206682,8 +209031,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Vehicle Purchasing",
           "address": "10100 Windisch Rd, West Chester Township, OH 45069",
           "website": "http://cars.iaai.com/?utm_source=google&utm_medium=lf&utm_term=purschase&utm_campaign=Pages",
-          "rating": 3.6,
-          "review_count": 99,
+          "rating": 3.7,
+          "review_count": 97,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206737,8 +209086,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Vehicle Purchasing",
           "address": "11275 S Zarzamora St, San Antonio, TX 78224",
           "website": "http://cars.iaai.com/?utm_source=google&utm_medium=lf&utm_term=purschase&utm_campaign=Pages",
-          "rating": 3,
-          "review_count": 15,
+          "rating": 3.1,
+          "review_count": 14,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206753,14 +209102,24 @@ window.REVIEW_DATASETS = {
           "last_successful_scan_date": "2026-09-30"
         },
         {
+          "feature_id": "0x809ae822c2bbc8a1:0xf76162bd2d2e43f5",
+          "cid": "17825637364755481589",
+          "place_id": "ChIJoci7wiLomoAR9UMuLb1iYfc",
+          "name": "IAA Vehicle Purchasing",
+          "address": "11499 Douglas Rd Ste b, Rancho Cordova, CA 95742",
+          "website": "http://cars.iaai.com/?utm_source=google&utm_medium=lf&utm_term=purschase&utm_campaign=Pages",
+          "rating": 3.1,
+          "review_count": 13
+        },
+        {
           "feature_id": "0x87cf61bdece4f36d:0x7afba4ae430c12a0",
           "cid": "8861857760137712288",
           "place_id": "ChIJbfPk7L1hz4cRoBIMQ66k-3o",
           "name": "IAA Vehicle Purchasing",
           "address": "1155 N Eldon Ave Apt B, Springfield, MO 65803",
           "website": "http://cars.iaai.com/?utm_source=google&utm_medium=lf&utm_term=purschase&utm_campaign=Pages",
-          "rating": 3.9,
-          "review_count": 59,
+          "rating": 4,
+          "review_count": 60,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206880,8 +209239,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Vehicle Purchasing",
           "address": "1800 S 1100 W, Ogden, UT 84401",
           "website": "http://cars.iaai.com/?utm_source=google&utm_medium=lf&utm_term=purschase&utm_campaign=Pages",
-          "rating": 3.7,
-          "review_count": 23,
+          "rating": 3.9,
+          "review_count": 22,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206914,7 +209273,7 @@ window.REVIEW_DATASETS = {
           "address": "2299 W Broadway Rd Apt B, Phoenix, AZ 85041",
           "website": "http://cars.iaai.com/?utm_source=google&utm_medium=lf&utm_term=purschase&utm_campaign=Pages",
           "rating": 3.5,
-          "review_count": 110,
+          "review_count": 105,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206926,6 +209285,16 @@ window.REVIEW_DATASETS = {
           "website": "http://cars.iaai.com/?utm_source=google&utm_medium=lf&utm_term=purschase&utm_campaign=Pages",
           "rating": 3.8,
           "review_count": 13
+        },
+        {
+          "feature_id": "0x88e76ceaaaaaaaab:0xbbd9fcc3a1a4335d",
+          "cid": "13536128072199451485",
+          "place_id": "ChIJq6qqqups54gRXTOkocP82bs",
+          "name": "IAA Vehicle Purchasing",
+          "address": "2500 Adesa Dr # B, Sanford, FL 32773",
+          "website": "http://cars.iaai.com/?utm_source=google&utm_medium=lf&utm_term=purschase&utm_campaign=Pages",
+          "rating": 2.7,
+          "review_count": 3
         },
         {
           "feature_id": "0x8640c87a21c394fb:0xef477b41410bb390",
@@ -206956,8 +209325,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Vehicle Purchasing",
           "address": "280 E Sullivan Rd, Aurora, IL 60505",
           "website": "http://cars.iaai.com/?utm_source=google&utm_medium=lf&utm_term=purschase&utm_campaign=Pages",
-          "rating": 4.5,
-          "review_count": 2,
+          "rating": 4,
+          "review_count": 1,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -206989,8 +209358,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Vehicle Purchasing",
           "address": "301 Malapart Rd # C, Lafayette, LA 70507",
           "website": "http://cars.iaai.com/?utm_source=google&utm_medium=lf&utm_term=purschase&utm_campaign=Pages",
-          "rating": 4.3,
-          "review_count": 12,
+          "rating": 4.1,
+          "review_count": 10,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -207012,7 +209381,7 @@ window.REVIEW_DATASETS = {
           "address": "3302 S Harding St, Indianapolis, IN 46217",
           "website": "http://cars.iaai.com/?utm_source=google&utm_medium=lf&utm_term=purschase&utm_campaign=Pages",
           "rating": 3.7,
-          "review_count": 216,
+          "review_count": 214,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -207176,8 +209545,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Vehicle Purchasing",
           "address": "66 Peconic Ave, Medford, NY 11763",
           "website": "http://cars.iaai.com/?utm_source=google&utm_medium=lf&utm_term=purschase&utm_campaign=Pages",
-          "rating": 3.9,
-          "review_count": 14,
+          "rating": 4.3,
+          "review_count": 12,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -207276,7 +209645,7 @@ window.REVIEW_DATASETS = {
           "address": "6335 N Broadway Ave, Park City, KS 67219",
           "website": "https://www.iaai.com/locations/533?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
           "rating": 3.6,
-          "review_count": 128,
+          "review_count": 129,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -207286,8 +209655,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA Wilmington",
           "address": "415 Madeline Trask Dr, Castle Hayne, NC 28429",
           "website": "https://www.iaai.com/locations/733?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.6,
-          "review_count": 97,
+          "rating": 3.7,
+          "review_count": 96,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -207297,8 +209666,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA York Springs",
           "address": "10 Auction Dr, York Springs, PA 17372",
           "website": "https://www.iaai.com/locations/664?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3.7,
-          "review_count": 59,
+          "rating": 3.6,
+          "review_count": 57,
           "last_successful_scan_date": "2026-08-31"
         },
         {
@@ -207319,8 +209688,8 @@ window.REVIEW_DATASETS = {
           "name": "IAA-ACE Carson",
           "address": "16920 S Figueroa St, Gardena, CA 90248",
           "website": "https://www.iaai.com/locations/200?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-          "rating": 3,
-          "review_count": 12,
+          "rating": 3.2,
+          "review_count": 11,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -207396,8 +209765,8 @@ window.REVIEW_DATASETS = {
           "name": "Insurance auto auction",
           "address": "3225 S Hollywood Blvd, Las Vegas, NV 89122",
           "website": "https://www.iaai.com/locations/152",
-          "rating": 3.4,
-          "review_count": 16,
+          "rating": 3.2,
+          "review_count": 17,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -207544,6 +209913,17 @@ window.REVIEW_DATASETS = {
           "last_successful_scan_date": "2026-09-30"
         },
         {
+          "feature_id": "0x865c5098977c831b:0x4413613d6dc5ad98",
+          "cid": "4905371335599173016",
+          "place_id": "ChIJG4N8l5hQXIYRmK3FbT1hE0Q",
+          "name": "Insurance Auto Auctions Inc",
+          "address": "10475 Somerset Rd, San Antonio, TX 78211",
+          "website": "https://www.iaai.com/",
+          "rating": 3.2,
+          "review_count": 20,
+          "last_successful_scan_date": "2026-09-30"
+        },
+        {
           "feature_id": "0x87136bad5d27e661:0xeee23954f793b962",
           "cid": "17213383762857146722",
           "place_id": "ChIJYeYnXa1rE4cRYrmT91Q54u4",
@@ -207610,17 +209990,6 @@ window.REVIEW_DATASETS = {
           "last_successful_scan_date": "2026-09-30"
         },
         {
-          "feature_id": "0x0:0x4413613d6dc5ad98",
-          "cid": "4905371335599173016",
-          "place_id": "",
-          "name": "Insurance Auto Auctions Inc",
-          "address": "Previously validated U.S. Google Business Profile",
-          "website": "",
-          "rating": null,
-          "review_count": 2,
-          "last_successful_scan_date": "2026-09-30"
-        },
-        {
           "feature_id": "0x87f827956667b64f:0x6c9b188404afd11a",
           "cid": "7825875732779749658",
           "place_id": "ChIJT7ZnZpUn-IcRGtGvBIQYm2w",
@@ -207638,8 +210007,8 @@ window.REVIEW_DATASETS = {
           "name": "Insurance Auto Auctions, Inc",
           "address": "4460 IL-162, Granite City, IL 62040",
           "website": "http://www.iaai.com/",
-          "rating": 3.5,
-          "review_count": 76,
+          "rating": 3.6,
+          "review_count": 74,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -207667,6 +210036,186 @@ window.REVIEW_DATASETS = {
       ]
     },
     "reviews": [
+      {
+        "source_website": "trustpilot.com",
+        "source_label": "Trustpilot (iaai.com)",
+        "source_url": "https://www.trustpilot.com/reviews/6adfead517bcdc3a8111d9e8",
+        "author": "Trustpilot user",
+        "review_date": "2026-10-26",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "Very unprofessional and disappointing…. Very unprofessional and disappointing experience My experience with Impact Auto Insurance was extremely disappointing. Initially, I was told that I could enroll in their auto insurance coverage, so I trusted that information and proceeded to cancel my existing coverage with another insurance company. Only afterward was I told that they had made a mistake and that they could not insure me after all. This was incredibly frustrating and unprofessional. I relied on the information their representative provided, and as a result, I cancelled my previous insurance unnecessarily and wasted a significant amount of time trying to resolve an issue that should have been clarified from the beginning. I also find it very strange that they apparently accept customers on study visas but refuse to insure those on work permits. This is the first time I have encountered such a distinction with an insurance company, and I would have expected this eligibility requirement to be communicated clearly before telling a customer they could obtain coverage. Mistakes can happen, but a company should take responsibility for providing incorrect information, especially when it directly affects a customer’s insurance arrangements. The lack of clarity and professionalism in this experience has left me extremely dissatisfied. I would strongly recommend confirming your eligibility carefully before making any changes to your existing insurance based on what you are told by Impact Auto Insurance.",
+        "geo_validation": "trustpilot_us_slug",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Helpful Support Experience",
+        "id": "rvw-004641"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.iaa.mobile.IaaTow)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
+        "author": "William Eggleston",
+        "review_date": "2026-10-23",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Very Buggy, Fails often Could use multiple improvements such as Vin scan override, for vehicles such a GM That have qr code on Vin number placard. other issues are app crashes, ect.",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-004642"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (468532534, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14701578942",
+        "author": "jerrell18",
+        "review_date": "2026-10-23",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "The update is greed. The $5-6 for features that where once free will lose a lot of customers online",
+        "geo_validation": "apple_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-004643"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (468532534, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14694293076",
+        "author": "macos zammaripa",
+        "review_date": "2026-10-21",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Iaa is now very greedy charging for everything. Iaa is now charging to simply hear the engine and do a 360 of vehicle. Even to simply WATCH the live auctions. (Which they always have done for free) they already make enough money from customers that purchase THOUSANDS OF VEHICLES IN ONE DAY. Copart is now significantly alot better.",
+        "geo_validation": "apple_us_store",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-004644"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.iaai.android)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+        "author": "Roman",
+        "review_date": "2026-10-19",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "can't press the bid button in live auctions if you prebid which is completely ridiculous, and the new terms of service shows up as \"error connection timed out\", and the accept button doesn't work, so I can't actually get into the app, it just crashes 👎🚮",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-004645"
+      },
+      {
+        "source_website": "trustpilot.com",
+        "source_label": "Trustpilot (iaai.com)",
+        "source_url": "https://www.trustpilot.com/reviews/6ada67a0bb8901999243d664",
+        "author": "Trustpilot user",
+        "review_date": "2026-10-17",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "I called in and talked to the manager…. I called in and talked to the manager who was supposed to get back to me three days ago. Talk to them yesterday was gonna get a call back. I've haven't heard nothing. They lack poor customer service. They don't care about any customers and they will take you exactly for what you're gonna give them. I highly do not suggest them and I am reporting them to the Better Business Bureau as they have done nothing but screw people over including myself all it takes is one phone call and a communication and I couldn't even get that from the manager nor the other people that work there also. I will be definitely taking this up further. beware, many tow companies refuse to even work with them because they will not return calls answer phone calls, and leave you on hold for 34 minutes at a time. They come \"highly\"unrecommended by many local companies and the Boise Idaho area.",
+        "geo_validation": "trustpilot_us_slug",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Support Access & Response Time",
+        "tier3": "Long Hold Time / Hard to Reach Support",
+        "id": "rvw-004646"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.iaai.android)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+        "author": "Mila 1",
+        "review_date": "2026-10-14",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "To view a car, you people want to take charges, I'm just going to uninstall this app. Be misbehaving while the Chinese cars take over the markets.",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-004647"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (468532534, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14664102565",
+        "author": "alawy 67",
+        "review_date": "2026-10-13",
+        "rating": 3,
+        "sentiment": "negative",
+        "review_text": "Bad auction. Cars are so expensive here also the dispatch , unfortunately no competitive environment here !",
+        "geo_validation": "apple_us_store",
+        "tier1": "Vehicle Pickup, Delivery and Scheduling",
+        "tier2": "Scheduled Pickup Status",
+        "tier3": "Missed/ Delayed Pickup and Dispatch Window",
+        "id": "rvw-004648"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (468532534, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14634381211",
+        "author": "Aqiqullah",
+        "review_date": "2026-10-06",
+        "rating": 5,
+        "sentiment": "positive",
+        "review_text": "Atlas auto sales. Great app to buy vehicles",
+        "geo_validation": "apple_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-004649"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.iaai.android)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+        "author": "Ruben Hernandez",
+        "review_date": "2026-10-05",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "The new update sucks and now they want o nickle and dime you with fees to access previously free videos and photos.",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-004650"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.iaai.android)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+        "author": "Alex Atenci",
+        "review_date": "2026-10-02",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "I’m officially moving to Copart now that they’ve locked the features that made this app amazing—like the engine video and 360-degree view—behind a paywall; that’s exactly how you get people to hate your app.",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-004651"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.iaai.android)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+        "author": "Carlos Monteverde",
+        "review_date": "2026-10-02",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "horrible idea for the app update and guest fees. Ive gotten a few and would show potential clients cars on the app. then transfer them to my grandpa's to close the business and more as a favor to them because I didn't get anything out of it... but I guess youll lose my helping branch. see y'all later 🫡",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-004652"
+      },
       {
         "source_website": "google.com",
         "source_label": "Google Business Profile (IAA Los Angeles)",
@@ -207923,6 +210472,36 @@ window.REVIEW_DATASETS = {
         "id": "rvw-004568"
       },
       {
+        "source_website": "bbb.org",
+        "source_label": "BBB Complaints",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25316665",
+        "author": "BBB complainant",
+        "review_date": "2026-09-24",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Service or Repair Issues complaint (Answered). On 9/2/26 I purchased a vehicle from the IAA online auction. On 9/3/26 their transportation company picked up the vehicle to deliver it. On 9/4/26 their transportation company car was delivered, but I was told by the driver he couldnt get the key out, because the battery was dead. 9/4/26 i had my brother bring his jump box to start the car and get the key out. The car wouldnt hold a charge, so it could stay started so my brother took the key. Then I had him pull the battery and we put it on a charger. On 9/4/26 I contacted the buyer center and spoke with one REMOVED about the car not starting nor driving like they said it did. I then told her they said the primary damage was hail only. She asked if I knew about the start policy and I told her yes, but the they said it was hail damage and it runs and starts. I also said they couldnt have tested it, because it wouldnt start and when it does, it dies immediately. I was given the branch manger number and email to speak with him about the issue. On 9/4/26 I left a verbal message as well as an email for REMOVED the branch manger and explained my concerns. On 9/5/26 the battery was installed and the car still couldnt stay started/hold a charge. On 9/22/26 I sent the vehicle to Car-X, and they put a new battery to diagnose the vehicle for not starting/running. They installed the new battery and did some work on the exhaust, and they still couldnt get the car to run or hold a charge. On 9/23/26 I was told that the car needs a timing and thats why it wants to start nor run. I had to get the car towed back to my son's house on 9/23/26 after getting it towed to the shop on 9/22/26. ![Image 20](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-004653"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Complaints",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25313214",
+        "author": "BBB complainant",
+        "review_date": "2026-09-24",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Service or Repair Issues complaint (Answered). I am filing this complaint against Insurance Auto Auctions (IAAI) due to major technical issues with their online payment platform that are preventing international business buyers from completing account registration.I am trying to register my business (FULL BLAST AUTOS) as a licensed buyer on IAAI so we can begin bidding. To complete the setup, I am required to pay the $225 annual membership fee. I have tried using three completely different, valid bank cards, and every single attempt gets rejected by the IAAI payment system with a generic \"declined\" error.The main problem happened last night: REMOVED account was actually debited $225 for the registration fee, but the IAAI website still showed \"Payment Declined.\"When I reached out to IAAI Customer Support, I was told the payment was \"voided\" on their end and that my bank would eventually drop the pending charge. This is extremely frustrating. My money is tied up in pending charges, my business setup is completely stuck, and I still cannot bid on vehicles.This isn't just an issue on my bank's end; IAAIs payment portal clearly has a glitch when processing international card transactions. It takes the money or holds the funds on the buyer's card but fails to complete the transaction on the portal side. Many international buyers and dealers are likely facing this exact same wall when trying to pay their initial setup fee.I need IAAI to fix this issue so I can actually pay for and use the service I am trying to sign up for.Clear any pending holds or allow me an alternative way to finalize the $225 fee without my card being declined again and Fix the Portal by having your technical/billing team look into the international payment gateway so other dealers don't have their funds held up by system errors.The email linked to my account is REMOVED. ![Image 22](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-004654"
+      },
+      {
         "source_website": "google.com",
         "source_label": "Google Business Profile (IAA Fort Wayne)",
         "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pORmNtVkpjMmRGVkRsMVIzSldSVWxXU2sxclZuYxAB!2m1!1s0x0:0x1b67af71683ad526!3m1!1s2@1:CAIQACodChtycF9oOjNFcmVJc2dFVDl1R3JWRUlWSk1rVnc%7C%7C?hl=en",
@@ -207936,6 +210515,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Lot Condition Reporting",
         "tier3": "Lot Damage",
         "id": "rvw-004569"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-1",
+        "author": "keshiann s",
+        "review_date": "2026-09-23",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "I wish I could leave zero stars. these people are thriving my 2025 Hyundai Tucson was towed there. They deemed my car a total loss when I got to the car over $2000 of my belongings were missing from the car and they do not want to take responsibility for my missing items. They damaged the car more than it already was a brand-new car they walk on the seats with shoes thoroughly went through my things stole down to my air fresheners out of the car. ![Image 20](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-004655"
       },
       {
         "source_website": "google.com",
@@ -208071,6 +210665,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Agent Professionalism & Responsiveness",
         "tier3": "Rude/Unhelpful Support",
         "id": "rvw-004578"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/askcarsales",
+        "source_url": "https://www.reddit.com/r/askcarsales/comments/1whw4l1/seller_claims_2023_f150_is_clean_title_but_nmvtis/",
+        "author": "Afraid-Appointment31",
+        "review_date": "2026-09-16",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Seller claims 2023 F-150 is Clean Title, but NMVTIS shows Total Loss / IAA Salvage Auction I’m looking at a 2023 f150 with 24k miles. Carfax/bumper.com show it’s been stolen before and insurance totaled it out. Dealer won it on an auction it had minor damage just a few plastic pieces. He’s selling it as a clean title he has digital copy’s of an unbranded Georgia and Texas title. I’m in Georgia buying it. What’s the chance the title is actually clean and I won’t get screwed with a salvage when going to register it. It’s a really good deal so I’m willing to take the risk but I’m not trying to get screwed with a salvage. I’ve seen the truck in person it’s a great truck. Bumper.com does show salvage history but 0 title brands.. VIN-1ftfw1ed6pfc74448",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-004656"
       },
       {
         "source_website": "google.com",
@@ -208223,6 +210832,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-004588"
       },
       {
+        "source_website": "bbb.org",
+        "source_label": "BBB Complaints",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25279510",
+        "author": "BBB complainant",
+        "review_date": "2026-09-15",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Customer Service Issues complaint (Answered). On 08/27/2026 I bought a 2018 REMOVED malibu from Insurance Auto Auction REMOVED branch, the car was given a score ratings of 50/50 and having a primary damage of rear and secondary damage ad front end.I received the vehicle in my possession on 08/30/26 and was immediately shocked because the car has extensive hail damage which is obviously the primary damage on the car, I then reached out to the branch immediately informing them of the situation however the manager is out of office indefinitely so my email went to the office supervisor REMOVED who responded and said there's nothing he can do.On September 3rd I reached out to the corporate office asking to get assistance in dealing with the matter and getting a regional manager that supervise the branch to see that the person who writes the description and grades the vehicle when it enters the auction for sale made an error which influenced my decision to purchase the car because the primary damage on the car is hail and that was never disclosed.I sent the car to the Miami branch and immediately the person who checked the car in when it entered listed the primary damage on the car has hail damage even though it was later changed once I pointed that fact out to buyer services who told me a managing director would contact me within 72hrs and today I have never gotten a call or email from a managing director or supervisor to try and resolve the matter but instead because of my persistence a csr REMOVED closed the case because I insisted I wanted to speak to a supervisor. ![Image 25](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Communication Follow-up & Escalation",
+        "tier3": "No Callback / Unresolved Case",
+        "id": "rvw-004657"
+      },
+      {
         "source_website": "google.com",
         "source_label": "Google Business Profile (IAA Ashland)",
         "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25aM1ZFUkxWVkpQWW10elozRm1NelZCZWtOeE1rRRAB!2m1!1s0x0:0x7663bf049478e612!3m1!1s2@1:CAIQACodChtycF9oOnZ3VERLVVJPYmtzZ3FmMzVBekNxMkE%7C%7C?hl=en",
@@ -208236,6 +210860,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Third-Party Inspection Authorization & Scheduling",
         "tier3": "Previewing/ Inspecting Vehicles",
         "id": "rvw-004589"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-2",
+        "author": "Katherine G",
+        "review_date": "2026-09-14",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Would give negative rating if possible. Car was shown running on video with no codes there was also no front-end damage in pics of vehicle. Battery had been disconnected to clear all the 54 codes this car had. Drove 4 miles and had to have towed. They damaged the front spoiler by moving car on loader brining car out of lot. Car has blown engine that is going to cost over $1,000 to replace. This place is a scam and should not be allowed to operate. Had issues with customer service from the beginning and should have been my sign to run. Thanks for taking a young kid's money who desperately needs a car to get back and forth to work. Place is a scam definitely would not recommend. ![Image 21](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-004658"
       },
       {
         "source_website": "trustpilot.com",
@@ -208388,6 +211027,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-004599"
       },
       {
+        "source_website": "bbb.org",
+        "source_label": "BBB Complaints",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25253668",
+        "author": "BBB complainant",
+        "review_date": "2026-09-09",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Service or Repair Issues complaint (Answered). This company was contracted by Title Max. When my car was picked up from where I had it, it had all my work tools in the trunk. I valued them at REMOVED minimum. That was my livelihood and how I sustain myself. I went to recuperate my car and through all the duress Ive had to encounter they failed to advise me to look in my vehicle to see if anything was missing and I didnt look. Upon returning home I looked in the trunk of my car, and all my tools were missing!! I have tried to reach out to them and have gotten no response. I called their corporate office, and they said I would have to handle up with the office I was dealing with. Im exhausted and tired of waiting for them just to play the run around game. This is work being affected as well as my mental state. I need immediate action and I need it resolved in a timely manner. I cannot afford to pay for the consequences that they have thieves working for them and Im pretty sure they can trace back who came in contact with my car and take appropriate action. ![Image 26](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Support Access & Response Time",
+        "tier3": "Delayed Email/Phone Response",
+        "id": "rvw-004659"
+      },
+      {
         "source_website": "apps.apple.com",
         "source_label": "Apple App Store (468532534, us)",
         "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14525680329",
@@ -208523,6 +211177,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-004608"
       },
       {
+        "source_website": "bbb.org",
+        "source_label": "BBB Complaints",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25237555",
+        "author": "BBB complainant",
+        "review_date": "2026-09-03",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Customer Service Issues complaint (Answered). I purchased a vehicle on 09/02/2026 online pictures and information showing that its a black car with 8900 miles, on a 09/03/2026 was going to pick it up and pay for it and checked CARFAX to see if this mileage real, I found that its not a black vehicle, its a blue vehicle with 103k miles, I called several times to cancel the purchase but they said that they made a mistake and either pay for it and pick it up or pay $1000 and when I requested to talk to a manager they said that no one will help me out and there is no proof that I even called, this is a scam, why they post the wrong information in the first place, why do I pay for their mistake? ![Image 30](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-004660"
+      },
+      {
         "source_website": "apps.apple.com",
         "source_label": "Apple App Store (468532534, us)",
         "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14506154633",
@@ -208611,6 +211280,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Agent Professionalism & Responsiveness",
         "tier3": "Rude/Unhelpful Support",
         "id": "rvw-004614"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Complaints",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25231906",
+        "author": "BBB complainant",
+        "review_date": "2026-09-02",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Service or Repair Issues complaint (Answered). I am filing this complaint because I am trying to resolve a serious title/documentation issue involving a vehicle that was sold through your auction.I am the current owner of a 2011 Buick Lacrosse CXS that I purchased from the person who bought the vehicle from your auction. The vehicle came with a Tennessee rebuilt title, but there is an issue with the title/ownership paperwork that is preventing me from properly titling and registering the vehicle in REMOVED I have contacted the auction multiple times asking for documentation that would help establish the vehicles chain of ownership and resolve the title issue. Each time, I have been told that the auction will not provide me with any paperwork because I was not the person who originally purchased the vehicle from the auction.I understand that I was not the auctions direct buyer. However, I am the current owner of the vehicle, and I am attempting to legally resolve a title problem involving a vehicle that passed through the auction. I have made reasonable attempts to resolve this issue without involving the courts, but the auction is refusing to cooperate or provide any documentation that may be necessary to correct the title.I am not asking the auction for a refund or compensation. I am asking the auction to cooperate in resolving the title issue by providing any documentation that it is legally able to provide regarding the vehicles sale, ownership history, or title transfer, or by communicating with the appropriate parties to help correct the title.I am requesting that management review this matter and provide a reasonable resolution rather than simply refusing to assist because I was not the original auction buyer. ![Image 31](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-004661"
       },
       {
         "source_website": "apps.apple.com",
@@ -208716,6 +211400,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Lot Condition Reporting",
         "tier3": "Lot Damage",
         "id": "rvw-004618"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Complaints",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25222141",
+        "author": "BBB complainant",
+        "review_date": "2026-08-31",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Service or Repair Issues complaint (Answered). On August 11th I was involved in a hit and run accident that forced me to use my uninsured motorist insurance. Damage was done to my rear bumper and front bumper. My insurance company had my car towed to IAA for estimated repair costs on August 13th. When my car arrived at the REMOVED body shop on August 19th my bumper was even more damaged and completely removed from my vehicle. It is also not able to be reattached. IAA told my insurance company that I my front bumper was already in that condition. My insurance company sided with them and is refusing to repair my front bumper under the current uninsured motorist claim. ![Image 32](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-004662"
       },
       {
         "source_website": "play.google.com",
@@ -209318,6 +212017,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-004360"
       },
       {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-3",
+        "author": "lauren w",
+        "review_date": "2026-08-12",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Their drivers and yard works steal everything out of your vehicle!!!! Took over $700 worth of stuff out of truck and how the Nerve to act like they were concerned with my items. Went back a couple days later. Guess who was sitting in my chair that was stolen out of my car, the yard manager ![Image 22](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-004663"
+      },
+      {
         "source_website": "google.com",
         "source_label": "Google Business Profile (IAA Albany)",
         "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tWVmNrMUlhQzFNYkV0Q1UxSjFTRXBQVEZwelJYYxAB!2m1!1s0x0:0x9d58bae6b93a9718!3m1!1s2@1:CAIQACodChtycF9oOkVVck1IaC1MbEtCU1J1SEpPTFpzRXc%7C%7C?hl=en",
@@ -209511,6 +212225,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Agent Professionalism & Responsiveness",
         "tier3": "Rude/Unhelpful Support",
         "id": "rvw-004373"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-4",
+        "author": "Jeremy A",
+        "review_date": "2026-08-05",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "My car was accidently picked up from a tow yard by a 3rd party your company hired. Upon recurring my car back all of my possessions were in the trunk, besides everything from my glove box, center console and one floor mat. REMOVED from REMOVED, REMOVED is a horrible branch manager. His secretary's told me IAA hired the tow company and now REMOVED the horrible manager is saying they didn't. Regardless, you have liars working for your company. I wish I could leave zero stars. ![Image 23](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-004664"
       },
       {
         "source_website": "google.com",
@@ -209903,6 +212632,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-004386"
       },
       {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-5",
+        "author": "Ahmed R",
+        "review_date": "2026-07-29",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "This rubbish business does not even deserve a zero rating. Negative rating is the fair judgment for those liars. I purchased a car online through IAA. The car had a video showing the engine starts. The description said the car *Run and Drive\". When I went to pick the car from REMOVED/St. REMOVED, I was shocked by the rudeness behavior of agents there. The car had a dead battery, and I had to get a jump start. When i asked the agent REMOVED help. She even neglected me. The car had a very weird engine sound and rough transmission. The steering wheel severely shakes when driving at 30 mph and higher. I ended up selling the car as junk same day. No kidding. I wasted $1300 and faced a horrible time. DO NOT go for this garbage place unless you get the car inspected by an expert REMOVED have been warned. ![Image 24](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-004665"
+      },
+      {
         "source_website": "google.com",
         "source_label": "Google Business Profile (IAA Detroit)",
         "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25WWVYwNXJSV1F6YVdWTVRYcERRVTUxTlhoS1pWRRAB!2m1!1s0x0:0x66c9d2d9fe94352a!3m1!1s2@1:CAIQACodChtycF9oOnVYV05rRWQzaWVMTXpDQU51NXhKZVE%7C%7C?hl=en",
@@ -210276,6 +213020,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Agent Professionalism & Responsiveness",
         "tier3": "Rude/Unhelpful Support",
         "id": "rvw-004389"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-6",
+        "author": "Roberts J",
+        "review_date": "2026-07-20",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "REMOVED-REMOVED, this location is big scammer Branch manager full of himself Very rude. And buyers service is same If I could leave a review under 1 I would!!!!!! ![Image 25](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-004666"
       },
       {
         "source_website": "play.google.com",
@@ -210681,6 +213440,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Agent Professionalism & Responsiveness",
         "tier3": "Rude/Unhelpful Support",
         "id": "rvw-004391"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-7",
+        "author": "Demario R",
+        "review_date": "2026-07-09",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "REMOVED the manager of IAA insurance auction north 6242 black acre trl Acworth ga call the sheriff on me cause I'm Urban black n was misinformed about picking up my vehicle I felt so embarrassed cause I was misinformed in the sheriff office was call just so they can tell him isn't nothing they can do now I'm worried about my personal n my vehicle this how IAA treat paying customer n no I didn't show no aggressive I was only confused in the sheriff got call Wow REMOVED turn a male version of a REMOVED I wonder if a was white would the sheriff would have been CALL??? I wasn't aggressive just confused about my truck that a paid for Already... Sheriff told him they couldn't trespass me cause IAA still have my truck I'm doing the right steps somebody got to be held accountable for these actions I reach out RB Global for this Racist REMOVED nothing from my vehicle is missing or have my vehicle damaged b4 I get it back .... Stay tuned for update on this situation. ![Image 26](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-004667"
       },
       {
         "source_website": "google.com",
@@ -211161,6 +213935,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Communication Follow-up & Escalation",
         "tier3": "No Callback / Unresolved Case",
         "id": "rvw-004393"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-8",
+        "author": "Toni N",
+        "review_date": "2026-06-28",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "My REMOVED was towed to AAI Towing in REMOVED, REMOVED, after an accident, but the situation was already dire before that. Just one week earlier, my home had burned down, leaving me displaced and forcing me to store many of my remaining belongings in my car. When the responding officer told me to remove my personal items, I was overwhelmed and physically exhausted, able to carry only what I could manage on foot. I had no choice but to leave behind much of what I had left, knowing how much I had already lost. When I later went to REMOVED Towing to retrieve the rest of my belongings, I discovered that numerous valuable items were missing. During the accident, a container holding approximately $1,500 in coins broke open, scattering the contents throughout the vehicle. When I recovered my car, only the pennies remained. The rest of the coins were gone. The following items were also missing: * $150 iPhone backup power bank * $200 charging port * $300 Apple AirPods * Three charging cords * $700 limited-edition REMOVED sunglasses * Six gift cards The total value of the missing property is well over $4,000. After losing my home in a fire just days before, discovering that my belongings were missing from my vehicle made an already devastating situation even worse. While I cannot say who was responsible, my vehicle and its contents were in AAI Towing's custody when these items disappeared. Companies entrusted with customers vehicles should have procedures in place to protect personal property and hold employees accountable. Based on my experience, I cannot recommend REMOVED Towing. No one should have to worry about their belongings disappearing while their vehicle is being stored after an accident. ![Image 27](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Communication Follow-up & Escalation",
+        "tier3": "No Callback / Unresolved Case",
+        "id": "rvw-004668"
       },
       {
         "source_website": "google.com",
@@ -213533,6 +216322,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-004404"
       },
       {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-9",
+        "author": "Andrew B",
+        "review_date": "2026-05-04",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Sold a vehicle with \"Actual\" mileage to me. When I got the title, it said \"Not Actual Mileage.\" I understand they sell \"as-is,\" but the mileage is a \"brand\" that has to be disclosed at time of sale. Well, they don't care. The REMOVED didn't do anything, the Attorney General didn't do anything. I'm stuck with 8000 loss. NEVER DEALING WITH THIS COMPANY AGAIN. I bought cars from them for years. Some of which went REMOVED in the junk yard, because the condition was not as described. HOWEVER, this time, lying about the title brand, enough is enough. ![Image 28](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-004669"
+      },
+      {
         "source_website": "google.com",
         "source_label": "Google Business Profile (IAA Chicago South)",
         "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21Oa2VYQnVNVlkwTVRSVWRFUkxTVGhMTW5wQ2NsRRAB!2m1!1s0x0:0x443be6285395907e!3m1!1s2@1:CAIQACodChtycF9oOmNkeXBuMVY0MTRUdERLSThLMnpCclE%7C%7C?hl=en",
@@ -214251,6 +217055,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Bidding Process, Rules and Fees",
         "tier3": "Fees",
         "id": "rvw-004407"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-10",
+        "author": "Travis K",
+        "review_date": "2026-04-15",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "This is the worst company in the auction business they could care less about their customers. All they do is come up with more fees, and more fees and are constantly changing how they do business. Do not do business with them! Buy from REMOVED or any other company and save yourself the headache. Would give zero stars if I was allowed. ![Image 29](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-004670"
       },
       {
         "source_website": "google.com",
@@ -215303,6 +218122,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-004409"
       },
       {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#review-2",
+        "author": "Sandra C",
+        "review_date": "2026-03-23",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "The people working at this company are very unprofessional and extremely difficult to deal with. They will totally tear up your vehicle, lose the parts, lose the key, take all your belongings out of the vehicle, and not claim responsibility for it. Intake pictures are supposed to be available to view when a vehicle is placed in the lot. They do not take responsibility at all!! Evidently, they don't because they are unable to produce them. Hope and pray that you never have to deal with them!!! Wish I could l leave no star rating because they don't even deserve one star. ![Image 21](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-004671"
+      },
+      {
         "id": "rvw-000007",
         "source_website": "bbb.org",
         "source_label": "BBB Complaints",
@@ -216053,6 +218887,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-004412"
       },
       {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#review-3",
+        "author": "Sunil D",
+        "review_date": "2026-03-08",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Do not believe what they say, especially engine starting REMOVED& Drive. I bought a REMOVED. After deliver, I checked the oil, no oil in the engine. Oil leaking under, when I added oil. They have started the engine without oil. Broken engine. It was my first & last with IAAI auction. ![Image 22](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-004672"
+      },
+      {
         "source_website": "google.com",
         "source_label": "Google Business Profile (IAA Northern Virginia)",
         "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21sM1VHd3llRzh0TkU5MGJUaEtURTVVY214VmRWRRAB!2m1!1s0x0:0xb8c4fe5f5fcf919a!3m1!1s2@1:CAIQACodChtycF9oOml3UGwyeG8tNE90bThKTE5UcmxVdVE%7C%7C?hl=en",
@@ -216188,6 +219037,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-004413"
       },
       {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#review-4",
+        "author": "Sara B",
+        "review_date": "2026-03-06",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "If I could leave a review under 1 star, I would buy a car from them that started runs and drives. No issues it had on the listing, and I got there after buying it on their sit dead, I charged it the car wouldn't even shift into gear so got it towed just to find out hours later while motor and transmission is blown the car is worthless wasted my time with paying for it and a broker . Mother of 4 kid's you guys should be ashamed of yourself. Nothing but crooks!! DO NOT BUY A CAR FROM THEM AT ALL DO NOT RECOMMEND THEM WORST AUCTION IVE EVER BOUGHT FROM. ![Image 23](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-004673"
+      },
+      {
         "source_website": "google.com",
         "source_label": "Google Business Profile (IAA Honolulu)",
         "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t0RE9EZDJSRnBRUkY5SVNtWmlhMkZZWDBOWVdsRRAB!2m1!1s0x0:0xcded72ce75c6f598!3m1!1s2@1:CAIQACodChtycF9oOktDODd2RFpQRF9ISmZia2FYX0NYWlE%7C%7C?hl=en",
@@ -216276,6 +219140,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Bidding Process, Rules and Fees",
         "tier3": "Fees",
         "id": "rvw-004414"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#review-5",
+        "author": "Ari L",
+        "review_date": "2026-03-05",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "REMOVED app and website, when do you plan to fix it? They charge so much money for fees and have the slowest website always giving errors and freezing super annoying makes me want to quit buying here. ![Image 24](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-004674"
       },
       {
         "source_website": "google.com",
@@ -216921,6 +219800,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Communication Follow-up & Escalation",
         "tier3": "No Callback / Unresolved Case",
         "id": "rvw-004416"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#review-6",
+        "author": "Jasmine R",
+        "review_date": "2026-02-18",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "REMOVED. If I could leave a zero I would. Steer clear of these crooks. If an issue arises, good luck getting any help. The manager REMOVED is terrible- will NEVER respond to emails or calls. We purchased a vehicle that had airbags listed and when the car was delivered you can clearly see that the airbags were blown and glued. This company is pure evil- stay away!!! ![Image 25](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Communication Follow-up & Escalation",
+        "tier3": "No Callback / Unresolved Case",
+        "id": "rvw-004675"
       },
       {
         "source_website": "google.com",
@@ -218153,6 +221047,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-004421"
       },
       {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#review-7",
+        "author": "Meron T",
+        "review_date": "2026-01-22",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Sold me a car that wouldnt start nor run & drive. Totally opposite of what the car was listed as on the website. Will NEVER purchase a car from this location. Dishonesty and extortion is the name of the game here.IAA REMOVED ![Image 26](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Listing Status",
+        "tier3": "Selling/ Relisting vehicle or Parts purchase",
+        "id": "rvw-004676"
+      },
+      {
         "source_website": "reddit.com",
         "source_label": "Reddit r/carflipping",
         "source_url": "https://www.reddit.com/r/carflipping/comments/1qj86zb/how_i_preinspect_cars_before_bidding/",
@@ -218691,6 +221600,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Case Resolution Quality",
         "tier3": "Issue Not Resolved",
         "id": "rvw-004423"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#review-8",
+        "author": "Jose O",
+        "review_date": "2026-01-12",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Bought cars since Nov 2025 and didn't receive titles for them,still waiting for a response from branch manager for weeks now on resolving this issue and have not heard from him very unprofessional ![Image 27](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Case Resolution Quality",
+        "tier3": "Issue Not Resolved",
+        "id": "rvw-004677"
       },
       {
         "source_website": "google.com",
@@ -219248,6 +222172,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-004425"
       },
       {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#review-9",
+        "author": "Charlie W",
+        "review_date": "2025-12-30",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Worse Auc*ion in *he world,I have over 7 million spen* over 16 years wi*h iaa. Im finally done, I hi* my breaking poin*. ye* *hey have *he nerve *o *ry and respond *o *hese horrible reviews, how you guys even phan*om a response, you don * have 1 good review ou* of hundreds? Tha* says every*hing in i*self.fees are ou*rageous, bough* a car *ha* says run and drive and i* was missing *he compu*er, *ha*'s like saying your ice ska*ing on a pond when i*s 90 degrees ou*side, jus* s*raigh* lies.. And as far as offering people *o come see *he REMOVED, nor your french road REMOVED holding loca*ions, offer viewing. ![Image 28](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Communication Follow-up & Escalation",
+        "tier3": "No Callback / Unresolved Case",
+        "id": "rvw-004678"
+      },
+      {
         "source_website": "google.com",
         "source_label": "Google Business Profile (IAA Long Island)",
         "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s5U01GSmZURlJGVjBGb1dFbFBTa3hqU2xGTU5uYxAB!2m1!1s0x0:0x837ee3387ce774c8!3m1!1s2@1:CAIQACodChtycF9oOk9SMFJfTFRFV0FoWElPSkxjSlFMNnc%7C%7C?hl=en",
@@ -219606,6 +222545,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Lot Condition Reporting",
         "tier3": "Lot Damage",
         "id": "rvw-004427"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#review-10",
+        "author": "jimbo N",
+        "review_date": "2025-12-17",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "This business is NOT BBB accredited, so ask yourself why.Super suspicious.This company is 100% hiding pertinent information about the damaged cars they sell. They are hiding mileage numbers, and they are hiding running/damage information. its \"company policy\" and they will refuse to explain anything, just repeat boilerplate like robots.Smells REMOVED the past iaai may have been more honest than copart, but i treat them the same now. Be warned ![Image 29](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-004679"
       },
       {
         "id": "rvw-000044",
@@ -220776,6 +223730,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Bidding Process, Rules and Fees",
         "tier3": "Fees",
         "id": "rvw-004433"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=3#review-1",
+        "author": "Corl C",
+        "review_date": "2025-11-22",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Iaai no longer operates as a legitimate auction. Winning a vehicle only to have the sale immediately declined and transferred to Buy Now undermines the entire purpose of an auction process. This happens all the time. At this point, it functions no differently than a conventional car dealership especially in the case of Progressive. The situation has become quite frustrating. A total joke. ![Image 19](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-004680"
       },
       {
         "source_website": "google.com",
@@ -222171,6 +225140,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Agent Professionalism & Responsiveness",
         "tier3": "Rude/Unhelpful Support",
         "id": "rvw-004438"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=3#review-2",
+        "author": "Robert L",
+        "review_date": "2025-10-14",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Ive been using Iaa for 10 years and should of learned my REMOVED by now. I purchased a car today and THEY made it so i cannot pay for it. Ive used IPay for 10 yrs, now all the sudden its been suspended and i need to have a letter from my bank, ok, so i try a credit card which i had to add to my account. REMOVED charhed the card twice but yet i still cant usr the card to pay for it. Just spent over an hout to get nowhere. Between the fees that have gotten out of control, and terrible customer service im done with REMOVED. Ive went to the branch myself to look at a car, but when they delivered it afyer i bought it the convertors were cut off and battery was missing, both were there when i saw it AT THE BRANCH, they refused to do anything, i bought a car that showed up with no keys, bit was one pictured on the auction, did nothing again, i bought a car with a \"clear\" title that i couldnt even title because the title was \"junk\" in the system because it came from a junkyard, spent months trying to have them fix it, never did, ended up scrapping it, they did nothing, i had a car the loader driver smashed the drivers side in on accident, they did nothing again, i bought a motorcycle and the seat, windshield, exhaust and battery were all missing when i DROVE TO THE BRANCH to get it, yep, they did nothing again. REMOVED bought cars that were listed as run and drive, but when i got them the engine knocked like crazy, no way they didnt notice that, and yet oddly enough they didnt take a video of ot running???? Yea.....go figure.Ive got 10 yrs of bad experiences with them. REMOVED services is a complete joke, just a waste of time......everytime!!! I should of quit buying when they staryed charging you to pay for your cars, thats right, theres fees just to pay your bill. They always come up with another reason for another fee. Your cars price will double by the time they get done. It makes perfect sense they have a 1 star rating. If you could have a negative rating, they would. ![Image 20](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-004681"
       },
       {
         "source_website": "google.com",
@@ -224453,6 +227437,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-004445"
       },
       {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=3#review-4",
+        "author": "luis g",
+        "review_date": "2025-08-26",
+        "rating": 3,
+        "sentiment": "positive",
+        "review_text": "the action is doing great, but i have license for many years and i notice they are not trust in many cars, for example many cars that have not wheel is posted as run and drive, that is playing with the customers it is lie ![Image 22](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-004682"
+      },
+      {
         "id": "rvw-000088",
         "source_website": "apps.apple.com",
         "source_label": "Apple App Store (468532534, us)",
@@ -224586,6 +227585,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Agent Professionalism & Responsiveness",
         "tier3": "Rude/Unhelpful Support",
         "id": "rvw-004447"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=3#review-5",
+        "author": "Heather A",
+        "review_date": "2025-08-25",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "I got a buyer's account because I had plans to purchase a wrecked vehicle to rebuild. Had only bid on a couple in several month's time. My account was hacked and I figured it out immediately as it was tied to my REMOVED account. To the tune of just over $20,000. I immediately put a stop payment in with REMOVED. I had proof of the change in information on my IAA account. My ID on file did NOT match the information that was given at purchase. Long list of proof. It took being on hold for over an hour with IAA and they attempted to insist I needed to pay for the cars that I never bid on. Long story short their communication from customer service never returned follow REMOVED Over 2 months later they contacted me via email demanding a police report. Try explaining that to your local PD. A police report for items that were never taken, never in my possession, and money that never changed hands. Dealing with them was a complete nightmare. ![Image 23](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Support Access & Response Time",
+        "tier3": "Long Hold Time / Hard to Reach Support",
+        "id": "rvw-004683"
       },
       {
         "source_website": "google.com",
@@ -226388,6 +229402,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-004452"
       },
       {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=3#review-7",
+        "author": "JAMES C",
+        "review_date": "2025-07-22",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "their check bounced and cost me a lot of money, still trying to get my money from them, they got a car for free from me, this is a joke dont fall this scam ![Image 25](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-004684"
+      },
+      {
         "id": "rvw-000113",
         "source_website": "play.google.com",
         "source_label": "Google Play (com.iaai.android)",
@@ -226686,6 +229715,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Agent Professionalism & Responsiveness",
         "tier3": "Rude/Unhelpful Support",
         "id": "rvw-004454"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=3#review-8",
+        "author": "Et C",
+        "review_date": "2025-07-18",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Poor customer service in yard they need it manager long time wasted ![Image 26](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-004685"
       },
       {
         "id": "rvw-000116",
@@ -227361,6 +230405,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Listing Status",
         "tier3": "Selling/ Relisting vehicle or Parts purchase",
         "id": "rvw-004459"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=3#review-9",
+        "author": "Taylor S",
+        "review_date": "2025-07-11",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "My car was repossessed on July 9th. I paid to get my car out on July 9th and set and appointment to get my car out at 130 July 10th. Come to find out everything was already taken out and had writing all over my car. Beyond that being frustrating, the expect you to go over all your inventory in a small space and make sure you hurry up REMOVED sign that everything was accounted for. It wasn't until I got in my car when I realized my headphones were missing. I had a pair of beats ($290) in my center console at the time the vehicle was taken. On top of that, I had $45 in my change compartment in cash. I called the company 10 minutes after leaving the place, and the girls replied , well did you sign the paper ? I said yes, she said then there's nothing I can do for you. What a shady a REMOVED business you guys run. And from the looks of it, there's multiple people with the same theft issue. Clearly you guys aren't doing right by the community and by your customers. You guys should be held accountable for the amount of theft there has been. Its disgusting how badly you treat your customers. ![Image 27](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Listing Status",
+        "tier3": "Selling/ Relisting vehicle or Parts purchase",
+        "id": "rvw-004686"
       },
       {
         "source_website": "google.com",
@@ -229671,6 +232730,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Agent Professionalism & Responsiveness",
         "tier3": "Rude/Unhelpful Support",
         "id": "rvw-004474"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=3#review-10",
+        "author": "Daniel P",
+        "review_date": "2025-05-28",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Know that you are f REMOVED ked if IAA ends up handling your claim. I got rear-ended in a total loss collision nearly a month ago and my bank has still not received payment. Im unable to purchase a new vehicle until my car is paid off and now the insurance company wont pay for the rental anymore so I have to pay out-of-pocket because they took so long. Turns out you do still end up the loser in a read-end accident if IAA is handling the claim. REMOVED was unhelpful in getting more insight into why the claim was taking so long. It seems the department managing paperwork and reaching out to different entities is full of lazy, good for nothings.TLDR: IAA process claims so slow it will cost you. Dont expect their customer service to be of any assistance either. ![Image 28](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-004687"
       },
       {
         "source_website": "google.com",
@@ -236798,6 +239872,36 @@ window.REVIEW_DATASETS = {
         "id": "rvw-004498"
       },
       {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=4#review-4",
+        "author": "Dan N",
+        "review_date": "2025-02-12",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "I have used this service for a few years and lately the customer service has been very poor on a corporate level. In the last two auctions, i have been the high bidder (#REMOVED) at end of the bidding process, both before on the block auction and at the end of on the block auction. At both times, it was shown on the screen shot that car was sold for my high bid, yet after auction the car was not shown to be sold to me. I was also not notified that i was overbid and the car was not rescheduled for another auction.I talked to a representative at the branch level, and they couldn't figure out why i was not awarded the bid in both instances and referred me to the corporate office. I filed two different cases, which were closed without anyone talking to me. I tried calling and was put on hold for over an hour both times and finally give up. Finally, last Saturday, Feb. 8, i was able to talk to a representative who started another case #REMOVED. Today, Feb 12, i started a chat with a company representative about the case submitted. After waiting 40 minutes i was able to chat with a representative. After explaining the situation, the representative stated the seller can decide who buys the vehicle and i was probably overbid. When i mentioned the usual company policy of being notified that i was not the high bidder and then that the web site showed i was not overbid and in fact the web site showed i had lost by $0, the company representative closed the chat. When I tried logging on with the case number, it was shown that the case had been closed. I won't be paying for another year of being able to bid as it seems being high bidder on a vehicle is not always the case and the company can make excuses of why a car is not awarded to the highest bidder. Also, the customer service department is rude and nonexistent. ![Image 21](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Support Access & Response Time",
+        "tier3": "Long Hold Time / Hard to Reach Support",
+        "id": "rvw-004688"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=4#review-5",
+        "author": "Timothy C",
+        "review_date": "2025-02-12",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Towed my car and took the title and the tag back in 2/2021. The tag was never returned to REMOVED like the driver stated it would be. I am now getting tickets for tolls up and down i95. ![Image 22](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Vehicle Pickup, Delivery and Scheduling",
+        "tier2": "Tow and Storage Charges",
+        "tier3": "Tow and Storage Fees",
+        "id": "rvw-004689"
+      },
+      {
         "id": "rvw-000332",
         "source_website": "reddit.com",
         "source_label": "Reddit r/saskatoon",
@@ -237186,6 +240290,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Support Access & Response Time",
         "tier3": "Delayed Email/Phone Response",
         "id": "rvw-004501"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=4#review-6",
+        "author": "Paul L",
+        "review_date": "2025-02-08",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "They took my $200 and never gave me auction/bidding access. I attempted 5 times to contact them but no reply of anything other than an auto reply. This is a fraudulent company. Do not use them. ![Image 23](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Support Access & Response Time",
+        "tier3": "Delayed Email/Phone Response",
+        "id": "rvw-004690"
       },
       {
         "id": "rvw-000345",
@@ -239798,6 +242917,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-004507"
       },
       {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=4#review-7",
+        "author": "Charline H",
+        "review_date": "2024-12-29",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "I had an extremely frustrating experience with TitleMax after my vehicle was repossessed. It took TWO WEEKS just to get an appointment to retrieve my personal belongings. When I finally got there, I wasnt allowed to access the vehicle myself or even observe their employees as they removed my REMOVED make matters worse, some of my belongings were missing, including a brand-new pair of boots and a registered handgun. They also flat-out refused to let me retrieve my dashcam, which wasnt even wired into the dashboard; BUT THAT WAS THEIR EXCUSE TO NOT HAND IT OVER!This level of unprofessionalism and lack of accountability is unacceptable. People trust these companies to act responsibly with their property, but this experience has shown otherwise. My advice: avoid them at all costs if you can. THEY DO NOT VALUE YOUR PROPERTY OR YOUR RIGHTS! ![Image 24](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-004691"
+      },
+      {
         "id": "rvw-000431",
         "source_website": "apps.apple.com",
         "source_label": "Apple App Store (468532534, us)",
@@ -239976,6 +243110,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Bidding Process, Rules and Fees",
         "tier3": "Fees",
         "id": "rvw-004508"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=4#review-8",
+        "author": "Lawayne E",
+        "review_date": "2024-12-27",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "We dont buy much on here anymore. Their fees are exorbitant. ????We paid $2400 in fees for the last pickup we bought from IAA. Robbery! ![Image 25](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-004692"
       },
       {
         "id": "rvw-000436",
@@ -241673,6 +244822,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-004511"
       },
       {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=5#review-3",
+        "author": "James E",
+        "review_date": "2024-11-26",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "I highly recommend all customers to stay away from this company. They are running a \"REMOVED We agreed on the price to pick up my car. The driver showed up with no check. I called numerous times to determine the root cause for this substandard customer service. Their agents hung up on me three times after I waited 30 minutes each time. The dispatcher, REMOVED, was very unprofessional and incompetent. All stakeholders should be held accountable, the owners, the managers, and staff should not be allowed to run a \"REMOVED on their customers without accountability safeguards in place. \"STOP THE REMOVED ![Image 21](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-004693"
+      },
+      {
         "source_website": "google.com",
         "source_label": "Google Business Profile (IAA Birmingham)",
         "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNQaWRtV3VnRRAB!2m1!1s0x0:0x57cbc859949de793!3m1!1s2@1:CIHM0ogKEICAgICPidmWugE%7C%7C?hl=en",
@@ -242031,6 +245195,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Agent Professionalism & Responsiveness",
         "tier3": "Rude/Unhelpful Support",
         "id": "rvw-004512"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=5#review-4",
+        "author": "William B",
+        "review_date": "2024-11-22",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "If I could give no stars I would. My car was sent here after a accident. They stole a watch, some cologne and a bunch of change from my car. Damaged it in the process of delivering it by breaking and scraping the paint of my front bumper that had no damage. All they will do is pay for a front bumper no paint even though they damaged it. Very unprofessional and incompetent people that can't properly do their job. He acknowledged that they have a issue with people stealing but won't do anything to recover my stolen property. ![Image 22](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-004694"
       },
       {
         "id": "rvw-000490",
@@ -242646,6 +245825,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Bidding Process, Rules and Fees",
         "tier3": "Fees",
         "id": "rvw-004513"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=5#review-5",
+        "author": "Gary H",
+        "review_date": "2024-11-13",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Expensive fee led about fees and bidding process to they REMOVED they REMOVED ![Image 23](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-004695"
       },
       {
         "id": "rvw-000511",
@@ -243576,6 +246770,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Tow and Storage Charges",
         "tier3": "Tow and Storage Fees",
         "id": "rvw-004514"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=5#review-6",
+        "author": "Wesley M",
+        "review_date": "2024-10-28",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Hot garbage company we were forced to use with REMOVED. I will be complaining to statefarm as well to have them pick literally anyone REMOVED a call 15 minutes before pick up on the wrong day, the day we specifically said would not work. We had scheduled for a different day SPECIFICALLY. We finally got them to show up today instead. And they don't give ANY warning, despite being told we would get at least 15 mins of warning today (even though it was initially agreed we'd have an hour before having to complain to them they got the day wrong). Their tow guy INSISTED on parking in the bicycle lane which is a hazard to both us AND bicyclists rather than going in the alleyway where we had agreed to meet initially. Could have gone to one of the adjacent streets that had much less traffic, but dude insisted on parking like a inconsiderate jerk instead. ![Image 24](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Vehicle Pickup, Delivery and Scheduling",
+        "tier2": "Tow and Storage Charges",
+        "tier3": "Tow and Storage Fees",
+        "id": "rvw-004696"
       },
       {
         "id": "rvw-000537",
@@ -244523,6 +247732,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-004515"
       },
       {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=5#review-7",
+        "author": "Maryana R",
+        "review_date": "2024-10-12",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "IAAI sells salvage vehicles as clean titles . They did this to me on 2 different occasions with 2 different vehicles. In conjunction with partner SCA auctions, IAAI is misrepresenting salvage vehicle cars as clean. Coincidentally, the auction sale date is the same as the salvage/total loss date for both vehicles. DMV code enforcement will be notified immediately ![Image 25](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Title, Ownership, POA and Documentation",
+        "tier2": "Title Delivery & Status",
+        "tier3": "Title Not Received",
+        "id": "rvw-004697"
+      },
+      {
         "id": "rvw-000571",
         "source_website": "reddit.com",
         "source_label": "Reddit r/GR86",
@@ -245003,6 +248227,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-004516"
       },
       {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=5#review-8",
+        "author": "Logan H",
+        "review_date": "2024-10-08",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Very poor example of an iaa.This place needs some serious change.First off,I was greeted by a very rude lady, where I was then charged $20 extra for title processing(is this not what buyers fees are for?),and then I am asked for my DOT transporter # (Im a licensed vehicle dealer,I do not have a dot #)So after going around in circles for 10 minutes,she then brings the manager in on it.50 minutes later,we get everything sorted out inside,so I then go outside to load my vehicle up.While I am strapping this car down,I turn around to the new security guard standing behind REMOVED ask him what he was doing,and he then goes on to provoke a verbal fight with me.He then ask me where I am from,and then proceeds to tell me that he is from the REMOVED,and that he doesnt do things my way.He also told me that he was homies with pistol REMOVED trying to scare me.(I have all of this recorded,and this has been sent to the manager of this branch.) So after I finally get him away from me,he then tells me to use my gun if Im going to pull it on him.(I didnt even have a gun on me).So I finally got everything strapped in and ready to go,when he is standing in the parking lot at the front door flipping me off and calling me racial slurs. ![Image 26](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-004698"
+      },
+      {
         "id": "rvw-000586",
         "source_website": "reddit.com",
         "source_label": "Reddit r/CyberStuck",
@@ -245316,6 +248555,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Password Reset & Login Troubleshooting",
         "tier3": "App Login Troubleshooting",
         "id": "rvw-004517"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=5#review-9",
+        "author": "Gold S",
+        "review_date": "2024-09-28",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "We are a dealership we bought a car on 09-27-2024 2016 Chrysler 200 The car on the app said run & drive I get the car front of the office no power I went back to the office ask for jump box or jump cable the 3 girls on the office said one time We dont have jump box Someone coming pick up the car I asked him for jump 2nd problem the car out of gas I called my friend get me jump box and gas and waiting outside I saw someone bought a REMOVED Corolla she went to the office And then one of the 3 girls comes out with jump box I went to her gentle asked her why you guys telling me you dont have jump box she starting yelling at me Anyway we canceled our membership ![Image 27](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-004699"
       },
       {
         "id": "rvw-000593",
@@ -245991,6 +249245,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Support Access & Response Time",
         "tier3": "Long Hold Time / Hard to Reach Support",
         "id": "rvw-004518"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=5#review-10",
+        "author": "Darren W",
+        "review_date": "2024-09-16",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Someone stole my credit card information and used it to make around $18000 in purchases with IAA. I called IAA to try and find out the details of the purchases and have them shut down the account, but after over 20-minutes on hold, the IAA representative could give me no resolution, would not provide details on the sale that would assist in investigation, and would not provide details on the account created by the person who criminally used my credit card to make unapproved purchases. Not helpful. ![Image 28](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Support Access & Response Time",
+        "tier3": "Long Hold Time / Hard to Reach Support",
+        "id": "rvw-004700"
       },
       {
         "id": "rvw-000612",
@@ -277212,15 +280481,15 @@ window.REVIEW_DATASETS = {
   "manheim": {
     "meta": {
       "description": "Large-scale English-only Manheim textual review/problem dataset from public web sources (recency-first).",
-      "review_count": 2202,
+      "review_count": 2252,
       "source_counts": {
-        "play.google.com": 74,
+        "play.google.com": 96,
+        "bbb.org": 298,
+        "apps.apple.com": 131,
+        "reddit.com": 155,
+        "birdeye.com": 81,
         "google.com": 1480,
-        "apps.apple.com": 119,
-        "birdeye.com": 77,
-        "trustpilot.com": 11,
-        "bbb.org": 289,
-        "reddit.com": 152
+        "trustpilot.com": 11
       },
       "source_audit": [
         {
@@ -277232,7 +280501,7 @@ window.REVIEW_DATASETS = {
           "blocked": false,
           "fallback_used": false,
           "candidate_reviews_seen": 0,
-          "new_reviews_added": 0,
+          "new_reviews_added": 3,
           "advertised_total": null,
           "latest_candidate_date": null,
           "notes": [
@@ -277240,10 +280509,10 @@ window.REVIEW_DATASETS = {
             "reddit_arctic_shift ran; candidate count is not separately tracked for this collector."
           ],
           "errors": [],
-          "review_count": 152,
+          "review_count": 155,
           "existing_review_count": 152,
           "present": true,
-          "latest_review_date": "2026-08-25",
+          "latest_review_date": "2026-10-22",
           "existing_latest_date": "2026-08-25",
           "status": "ok"
         },
@@ -277255,17 +280524,17 @@ window.REVIEW_DATASETS = {
           "direct_statuses": {},
           "blocked": false,
           "fallback_used": false,
-          "candidate_reviews_seen": 300,
-          "new_reviews_added": 7,
+          "candidate_reviews_seen": 332,
+          "new_reviews_added": 22,
           "advertised_total": null,
-          "latest_candidate_date": "2026-10-05",
+          "latest_candidate_date": "2026-11-01",
           "notes": [],
           "errors": [],
-          "review_count": 74,
-          "existing_review_count": 67,
+          "review_count": 96,
+          "existing_review_count": 74,
           "present": true,
-          "latest_review_date": "2026-09-30",
-          "existing_latest_date": "2026-08-31",
+          "latest_review_date": "2026-10-29",
+          "existing_latest_date": "2026-09-30",
           "status": "ok"
         },
         {
@@ -277276,62 +280545,65 @@ window.REVIEW_DATASETS = {
           "direct_statuses": {},
           "blocked": false,
           "fallback_used": false,
-          "candidate_reviews_seen": 50,
+          "candidate_reviews_seen": 60,
           "new_reviews_added": 12,
           "advertised_total": null,
-          "latest_candidate_date": "2026-10-04",
+          "latest_candidate_date": "2026-10-23",
           "notes": [
             "Apple RSS can be sparse for some app IDs; HTML supplement captures visible App Store review cards only."
           ],
           "errors": [],
-          "review_count": 119,
-          "existing_review_count": 107,
+          "review_count": 131,
+          "existing_review_count": 119,
           "present": true,
-          "latest_review_date": "2026-09-30",
-          "existing_latest_date": "2026-08-27",
+          "latest_review_date": "2026-10-23",
+          "existing_latest_date": "2026-09-30",
           "status": "ok"
         },
         {
           "source_website": "bbb.org",
           "attempted": true,
-          "direct_pages": 20,
-          "fallback_pages": 19,
+          "direct_pages": 17,
+          "fallback_pages": 17,
           "direct_statuses": {
-            "403": 20,
-            "200": 19
+            "403": 17,
+            "200": 17
           },
           "blocked": true,
           "fallback_used": true,
-          "candidate_reviews_seen": 66,
-          "new_reviews_added": 7,
+          "candidate_reviews_seen": 31,
+          "new_reviews_added": 9,
           "advertised_total": null,
-          "latest_candidate_date": "2026-09-18",
+          "latest_candidate_date": "2026-10-23",
           "notes": [
             "direct BBB customer reviews blocked for https://www.bbb.org/us/az/tolleson/profile/auto-auction/manheim-phoenix-1126-15000273",
+            "reader challenge for https://www.bbb.org/us/az/tolleson/profile/auto-auction/manheim-phoenix-1126-15000273/customer-reviews",
             "direct BBB customer reviews blocked for https://www.bbb.org/us/ca/anaheim/profile/auto-auction/manheim-auctions-1126-1000068323",
             "direct BBB customer reviews blocked for https://www.bbb.org/us/fl/tampa/profile/auto-auction/manheim-auctions-0653-90021503",
+            "reader challenge for https://www.bbb.org/us/fl/tampa/profile/auto-auction/manheim-auctions-0653-90021503/customer-reviews",
             "direct BBB customer reviews blocked for https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743",
+            "reader challenge for https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=2",
             "direct BBB customer reviews blocked for https://www.bbb.org/us/in/indianapolis/profile/auto-auction/manheim-indianapolis-auto-auction-0382-90005341",
+            "reader challenge for https://www.bbb.org/us/in/indianapolis/profile/auto-auction/manheim-indianapolis-auto-auction-0382-90005341/customer-reviews",
             "direct BBB customer reviews blocked for https://www.bbb.org/us/mi/carleton/profile/auto-auction/manheims-detroit-auto-auction-0422-6001794",
             "direct BBB customer reviews blocked for https://www.bbb.org/us/pa/manheim/profile/auctioneer/manheim-pennsylvania-auto-auction-0241-184056004",
+            "reader challenge for https://www.bbb.org/us/pa/manheim/profile/auctioneer/manheim-pennsylvania-auto-auction-0241-184056004/customer-reviews",
             "direct BBB complaints blocked for https://www.bbb.org/us/az/tolleson/profile/auto-auction/manheim-phoenix-1126-15000273",
+            "reader challenge for https://www.bbb.org/us/az/tolleson/profile/auto-auction/manheim-phoenix-1126-15000273/complaints",
             "direct BBB complaints blocked for https://www.bbb.org/us/ca/anaheim/profile/auto-auction/manheim-auctions-1126-1000068323",
             "direct BBB complaints blocked for https://www.bbb.org/us/fl/tampa/profile/auto-auction/manheim-auctions-0653-90021503",
-            "reader challenge for https://www.bbb.org/us/fl/tampa/profile/auto-auction/manheim-auctions-0653-90021503/complaints",
             "direct BBB complaints blocked for https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743",
-            "reader challenge for https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=4",
+            "reader challenge for https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints?page=3",
             "direct BBB complaints blocked for https://www.bbb.org/us/in/indianapolis/profile/auto-auction/manheim-indianapolis-auto-auction-0382-90005341",
             "direct BBB complaints blocked for https://www.bbb.org/us/mi/carleton/profile/auto-auction/manheims-detroit-auto-auction-0422-6001794",
             "direct BBB complaints blocked for https://www.bbb.org/us/pa/manheim/profile/auctioneer/manheim-pennsylvania-auto-auction-0241-184056004"
           ],
-          "errors": [
-            "reader error for https://www.bbb.org/us/az/tolleson/profile/auto-auction/manheim-phoenix-1126-15000273/customer-reviews: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=60)"
-          ],
-          "review_count": 289,
-          "existing_review_count": 282,
+          "errors": [],
+          "review_count": 298,
+          "existing_review_count": 289,
           "present": true,
-          "latest_review_date": "2026-08-26",
-          "existing_latest_date": "2026-08-25",
+          "latest_review_date": "2026-10-23",
+          "existing_latest_date": "2026-08-26",
           "status": "ok"
         },
         {
@@ -277346,7 +280618,7 @@ window.REVIEW_DATASETS = {
           "blocked": true,
           "fallback_used": true,
           "candidate_reviews_seen": 12,
-          "new_reviews_added": 1,
+          "new_reviews_added": 0,
           "advertised_total": null,
           "latest_candidate_date": "2026-09-21",
           "notes": [
@@ -277354,10 +280626,10 @@ window.REVIEW_DATASETS = {
           ],
           "errors": [],
           "review_count": 11,
-          "existing_review_count": 10,
+          "existing_review_count": 11,
           "present": true,
           "latest_review_date": "2026-09-21",
-          "existing_latest_date": "2026-02-11",
+          "existing_latest_date": "2026-09-21",
           "status": "ok"
         },
         {
@@ -277386,81 +280658,99 @@ window.REVIEW_DATASETS = {
         {
           "source_website": "birdeye.com",
           "attempted": true,
-          "direct_pages": 19,
+          "direct_pages": 466,
           "fallback_pages": 0,
           "direct_statuses": {
-            "200": 19
+            "200": 466
           },
           "blocked": false,
           "fallback_used": false,
-          "candidate_reviews_seen": 37,
-          "new_reviews_added": 6,
+          "candidate_reviews_seen": 35,
+          "new_reviews_added": 4,
           "advertised_total": 1439,
-          "latest_candidate_date": "2026-09-30",
+          "latest_candidate_date": "2026-10-19",
           "notes": [
             "Birdeye advertised totals may include syndicated Google/Birdeye network reviews; accepted rows are visible textual review cards that pass filters.",
-            "Advertised total 1439 is much larger than accepted rows 77; source is likely partially covered after filters/pagination."
+            "Advertised total 1439 is much larger than accepted rows 81; source is likely partially covered after filters/pagination."
           ],
           "errors": [],
-          "review_count": 77,
-          "existing_review_count": 71,
+          "review_count": 81,
+          "existing_review_count": 77,
           "present": true,
-          "latest_review_date": "2026-09-23",
-          "existing_latest_date": "2026-08-29",
+          "latest_review_date": "2026-10-12",
+          "existing_latest_date": "2026-09-23",
           "status": "partial"
         },
         {
           "source_website": "google.com",
           "attempted": true,
-          "direct_pages": 502,
+          "direct_pages": 148,
           "fallback_pages": 0,
           "direct_statuses": {
-            "200": 502
+            "200": 148
           },
           "blocked": false,
           "fallback_used": false,
-          "candidate_reviews_seen": 1553,
-          "new_reviews_added": 35,
+          "candidate_reviews_seen": 5,
+          "new_reviews_added": 0,
           "advertised_total": null,
-          "latest_candidate_date": "2026-10-07",
+          "latest_candidate_date": "2026-07-12",
           "notes": [
-            "Google Business Profile discovery completed: 58/58 queries succeeded and 112 unique validated US profiles were selected.",
-            "Validated 99 US Google Business Profiles; 13 failed and 0 were skipped after the circuit breaker. Successful profiles were paginated newest-first through per-profile incremental overlap boundaries."
+            "Google Business Profile discovery completed: 58/58 queries succeeded and 114 unique validated US profiles were selected.",
+            "Validated 2 US Google Business Profiles; 9 failed and 103 were skipped after the circuit breaker. Successful profiles were paginated newest-first through per-profile incremental overlap boundaries."
           ],
           "errors": [
-            "Maheim Central Florida [0x88e77db086f2d4e5:0xf6e042105c509d3e]: Response.body: Protocol error (Network.getResponseBody): No data found for resource with given identifier\nResponse body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.",
+            "Maheim Central Florida [0x88e77db086f2d4e5:0xf6e042105c509d3e]: newest review RPC did not load",
+            "Manheim [0x88e783036b2fd9ef:0x1e13d3698319c281]: newest review RPC did not load",
+            "Manheim [0x88e77d81c99d5285:0x41bfb395696e185]: Response.body: Protocol error (Network.getResponseBody): No data found for resource with given identifier\nResponse body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.",
+            "Manheim [0x88f50952666779c7:0x1cc56387cc906fb3]: newest review RPC did not load",
+            "Manheim Albany [0x89de141aaae9cfb3:0xeb5b6efd7a533372]: newest review RPC did not load",
+            "Manheim Arizona [0x872b0f1ee68b351b:0x321762f77b17cf1c]: newest review RPC did not load",
+            "Manheim Atlanta [0x88f502f2aa726a77:0xaa0ac5cbcc382fd5]: newest review RPC did not load",
             "Manheim Atlanta Reconditioning Services [0x88f502f2aa726a77:0xe448884c5d8e6815]: newest review RPC did not load",
-            "Manheim Cincinnati [0x88404fb5c79b2d13:0xc9eaa7efb5a3902a]: newest review RPC did not load",
-            "Manheim Detroit [0x883b43af7916110f:0x8ef6684842169f21]: newest review RPC did not load",
-            "Manheim El Paso [0x86ddf8df168c560b:0xa7e1e15a29b296f]: newest review RPC did not load",
-            "Manheim Flint [0x882378f8dc8fad5f:0xde89b27b2ae81d2f]: newest review RPC did not load",
-            "Manheim Houston [0x8640d11d8c81e40b:0x75fb9928386817c8]: Response.body: Protocol error (Network.getResponseBody): No data found for resource with given identifier\nResponse body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.",
-            "Manheim Nevada [0x80c8e73b5ae6bd15:0x6c142e9685c06c75]: newest review RPC did not load",
-            "Manheim New England [0x89e4f5a0c5ddb507:0x30f7f5be3a3f876]: newest review RPC did not load",
-            "Manheim Orlando Transporter Gate (Rear Gate) [0x88e78345fbf4bab3:0xb77d643ecc135f2c]: pagination stopped before the 2026-08-17 boundary/terminal page (10 RPC reviews; advertised=57)",
-            "Manheim Philadelphia [0x89c6a0e28c5a27c3:0xe7523e8b6c53dc70]: pagination stopped before the 2026-08-17 boundary/terminal page (10 RPC reviews; advertised=291)",
-            "MVD, Third Party Manheim, Phoenix Titles Only [0x872b15871353a133:0xb454413c18e93de5]: newest review RPC did not load",
-            "Rome Auto Auction powered by Manheim [0x888ab3dbc0471b53:0xffe21dd0f1df0fe5]: pagination stopped before the 2026-08-17 boundary/terminal page (10 RPC reviews; advertised=58)"
+            "Manheim auction [0x80dcb1fdaabe2c11:0x6c4d0ec28830eeb6]: newest review RPC did not load"
           ],
           "profile_retention_used": true,
-          "profiles_completed": 99,
-          "profiles_failed": 13,
-          "profiles_skipped_after_circuit_breaker": 0,
+          "profiles_completed": 2,
+          "profiles_failed": 9,
+          "profiles_skipped_after_circuit_breaker": 103,
           "last_successful_refresh_until": "2026-08-31",
           "review_count": 1480,
-          "existing_review_count": 1445,
+          "existing_review_count": 1480,
           "present": true,
           "latest_review_date": "2026-09-30",
-          "existing_latest_date": "2026-08-31",
+          "existing_latest_date": "2026-09-30",
           "status": "partial_profile_retention"
         }
       ],
       "sentiments": {
-        "positive": 774,
-        "negative": 1428
+        "positive": 780,
+        "negative": 1472
       },
       "source_urls": [
         "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+        "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews#review-1",
+        "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14701755361",
+        "https://www.reddit.com/r/askcarsales/comments/1xcpp2z/can_anyone_provide_manheim_auction_results_for/",
+        "https://www.reddit.com/r/carflipping/comments/1xcs9dl/your_eyes_at_manheim_adesa_houston/",
+        "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14685317912",
+        "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14666818145",
+        "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14664025898",
+        "https://reviews.birdeye.com/manheim-dallas-fort-worth-166658799426873#review-4",
+        "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_25380043",
+        "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14651652752",
+        "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews#review-2",
+        "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_25359353",
+        "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14634995175",
+        "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=es&gl=us",
+        "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14631449494",
+        "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14628049758",
+        "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14627678981",
+        "https://reviews.birdeye.com/manheim-dallas-fort-worth-166658799426873#review-5",
+        "https://reviews.birdeye.com/manheim-pittsburgh-166598588464399#review-3",
+        "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14622698817",
+        "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14616774310",
+        "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14616137256",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t0dGJGQlFRa2hqWWpkYVUwbE5WRzExUkV0WFZIYxAB!2m1!1s0x0:0x3211a88496efd651!3m1!1s2@1:CAIQACodChtycF9oOkttbFBQQkhjYjdaU0lNVG11REtXVHc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2poMFMzQXpSMWgyT1djelJHOUxhV1pDTFdSaWRWRRAB!2m1!1s0x0:0xdb18b095aee54321!3m1!1s2@1:CAIQACodChtycF9oOjh0S3AzR1h2OWczRG9LaWZCLWRidVE%7C%7C?hl=en",
         "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14613768624",
@@ -277473,6 +280763,7 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21kNmVtdHNVbU0zV1VWYVNqVk5jbWx2YW1sdWVuYxAB!2m1!1s0x0:0x38c009277d77bd2f!3m1!1s2@1:CAIQACodChtycF9oOmd6emtsUmM3WUVaSjVNcmlvamluenc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KdFFXVTBYM1JqZUdNd1VFMWhPVU5XYld4SWFrRRAB!2m1!1s0x0:0x164e882f4b93230c!3m1!1s2@1:CAIQACodChtycF9oOnJtQWU0X3RjeGMwUE1hOUNWbWxIakE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2twSFZURjFOVVJxYkVSNFdrWmZTR3h6VlVWTWNrRRAB!2m1!1s0x0:0xb9fba5d772cd137e!3m1!1s2@1:CAIQACodChtycF9oOkpHVTF1NURqbER4WkZfSGxzVUVMckE%7C%7C?hl=en",
+        "https://www.reddit.com/r/carflipping/comments/1wpgpvy/access_to_auction_or_copart/",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkUlIzTXdheTF3TkhGbU0xazNSV3MxYUdkbGFHYxAB!2m1!1s0x0:0xce3375d85b297645!3m1!1s2@1:CAIQACodChtycF9oOkdRR3Mway1wNHFmM1k3RWs1aGdlaGc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGck5qRXhVMGt5YzFVdE1sQTBZMnM1VjJkalIyYxAB!2m1!1s0x0:0x6aae6b4acb725e96!3m1!1s2@1:CAIQACodChtycF9oOjFrNjExU0kyc1UtMlA0Y2s5V2djR2c%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25aWVprMUxUM2xKVjNsbVozcE1jR1ZOVlhKRVVIYxAB!2m1!1s0x0:0x35b5cb04774293df!3m1!1s2@1:CAIQACodChtycF9oOnZYZk1LT3lJV3lmZ3pMcGVNVXJEUHc%7C%7C?hl=en",
@@ -277481,6 +280772,7 @@ window.REVIEW_DATASETS = {
         "http://www.trustpilot.com/reviews/6ab1232d29ebd7c7ae3b0eb1",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tSSVZUTTNUMFJmWDFwT01HYzVOelUwUjBwTlRsRRAB!2m1!1s0x0:0xaad5beec10f89472!3m1!1s2@1:CAIQACodChtycF9oOkRIVTM3T0RfX1pOMGc5NzU0R0pNTlE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pWbVV5MUlSRkJRWmsxeVEycHJkblpLV0VobldrRRAB!2m1!1s0x0:0x41ced18cd9202dd!3m1!1s2@1:CAIQACodChtycF9oOjVmUy1IRFBQZk1yQ2prdnZKWEhnWkE%7C%7C?hl=en",
+        "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_25298220",
         "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14571216698",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21SeVdYVlNaV0p1YVV0ZlZGZzRSa2RxV0hsblpHYxAB!2m1!1s0x0:0xab7aa52c44aa38cd!3m1!1s2@1:CAIQACodChtycF9oOmRyWXVSZWJuaUtfVFg4RkdqWHlnZGc%7C%7C?hl=en",
         "https://apps.apple.com/us/app/id6744660081?see-all=reviews&platform=iphone&reviewId=14565367404",
@@ -277517,11 +280809,11 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2toZmVqUTFkV2d5ZEdWaWIwWTJjbFZEYkVGcWJrRRAB!2m1!1s0x0:0xf93a43290f3c5c75!3m1!1s2@1:CAIQACodChtycF9oOkhfejQ1dWgydGVib0Y2clVDbEFqbkE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25ob2EyUk5ORWx2WDFScFQweGxPVnBQTldRM1dtYxAB!2m1!1s0x0:0x164e882f4b93230c!3m1!1s2@1:CAIQACodChtycF9oOnhoa2RNNElvX1RpT0xlOVpPNWQ3Wmc%7C%7C?hl=en",
         "http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_25206333",
+        "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_25206333",
         "https://www.reddit.com/r/carflipping/comments/1vye95w/how_are_you_guys_paying_for_cars_at_auction/",
         "https://play.google.com/store/apps/details?id=com.manheim.mobile.refresh&hl=en&gl=us",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSaVlYUkNNMHMzVEhKdWFsRTNRVTlmUVdRdE1FRRAB!2m1!1s0x0:0x41ced18cd9202dd!3m1!1s2@1:CAIQACodChtycF9oOjRiYXRCM0s3THJualE3QU9fQWQtMEE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25SdFkxUmxiak15ZEVOSVdtdG9PV2xFU1RKM2RHYxAB!2m1!1s0x0:0x35b5cb04774293df!3m1!1s2@1:CAIQACodChtycF9oOnRtY1RlbjMydENIWmtoOWlESTJ3dGc%7C%7C?hl=en",
-        "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews#review-1",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xWYVVXbHFaVUZxTkVwUVkwRmZXbkZpZG1JNU5uYxAB!2m1!1s0x0:0xeb631168e11fd5b!3m1!1s2@1:CAIQACodChtycF9oOlVaUWlqZUFqNEpQY0FfWnFidmI5Nnc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20xWGJpMU5jek4wUmxkc1ZYRnZjRmxXVDFGSFRsRRAB!2m1!1s0x0:0xf93a43290f3c5c75!3m1!1s2@1:CAIQACodChtycF9oOm1Xbi1NczN0RldsVXFvcFlWT1FHTlE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21aQ1kzTkVjelp5YlZaR1JXMVBlVmxuVGpSNFEzYxAB!2m1!1s0x0:0xcd68e369ee246c6b!3m1!1s2@1:CAIQACodChtycF9oOmZCY3NEczZybVZGRW1PeVlnTjR4Q3c%7C%7C?hl=en",
@@ -277545,6 +280837,7 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSNGFuUllSbFpLWms1UlQwRmFRak5tUVdkQ1YwRRAB!2m1!1s0x0:0xfd46011e8d099233!3m1!1s2@1:CAIQACodChtycF9oOjR4anRYRlZKZk5RT0FaQjNmQWdCV0E%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT214dWFUWjRURkI1WjNSeVNYWmhWbEpPTlU1Mk4yYxAB!2m1!1s0x0:0xc9c265782eec3164!3m1!1s2@1:CAIQACodChtycF9oOmxuaTZ4TFB5Z3RySXZhVlJONU52N2c%7C%7C?hl=en",
         "http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_25162833",
+        "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_25162833",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xGS2JubFpkMDVETmpOS2NqWkhkMjFWYW1WbWFIYxAB!2m1!1s0x0:0xdca57c77c7da38da!3m1!1s2@1:CAIQACodChtycF9oOlFKbnlZd05DNjNKcjZHd21VamVmaHc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25OUFUzVk9OQzFzYURnMU0xaHVZbGRDVW5CamJVRRAB!2m1!1s0x0:0x31cb64fd6fc9e063!3m1!1s2@1:CAIQACodChtycF9oOnNPU3VONC1saDg1M1huYldCUnBjbUE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w5RmRrTm5lbFZTUVV0WFMwWmpXa1IxYWtodGNHYxAB!2m1!1s0x0:0x468583aed34b56ae!3m1!1s2@1:CAIQACodChtycF9oOl9FdkNnelVSQUtXS0ZjWkR1akhtcGc%7C%7C?hl=en",
@@ -277734,39 +281027,14 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pkaFRIazBURzlVTjBSWWREUldiMlpOUm5WblgyYxAB!2m1!1s0x0:0x29d4a7f8b704b4b7!3m1!1s2@1:CAIQACodChtycF9oOjdhTHk0TG9UN0RYdDRWb2ZNRnVnX2c%7C%7C?hl=en",
         "https://reviews.birdeye.com/manheim-fredericksburg-167784557350491#review-3",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25jd2VIZEJPRE56V1hSNGVEVlVOMVpEUWpVNVNsRRAB!2m1!1s0x0:0xcafdbd5463ebf386!3m1!1s2@1:CAIQACodChtycF9oOncweHdBODNzWXR4eDVUN1ZDQjU5SlE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pWa1Z6RTFSR1pYUzJabE1tUmhTV2RwYUZWWlVuYxAB!2m1!1s0x0:0x1a13f81ffa85d0eb!3m1!1s2@1:CAIQACodChtycF9oOjVkVzE1RGZXS2ZlMmRhSWdpaFVZUnc%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21ZMlducGtkV3RuVG1oWVEyMXVSMUo2VVc5WVEwRRAB!2m1!1s0x0:0x255cba6ae2327b69!3m1!1s2@1:CAIQACodChtycF9oOmY2WnpkdWtnTmhYQ21uR1J6UW9YQ0E%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21FdFkyZHJaR1p3Y0VoVE1qVjFNV2xFZG1KQ2VGRRAB!2m1!1s0x0:0x67a05d44913c4418!3m1!1s2@1:CAIQACodChtycF9oOmEtY2drZGZwcEhTMjV1MWlEdmJCeFE%7C%7C?hl=en",
-        "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews#review-2",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21jMlh6ZHlaMDVmWTFOZk5EZFpUWEJEV1U4d1lrRRAB!2m1!1s0x0:0xab7aa52c44aa38cd!3m1!1s2@1:CAIQACodChtycF9oOmc2XzdyZ05fY1NfNDdZTXBDWU8wYkE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tKWlJsbHViSE14VTJkQ2RuTmpTVlpLZFRSS1NsRRAB!2m1!1s0x0:0xef1776f19dc440c8!3m1!1s2@1:CAIQACodChtycF9oOkJZRllubHMxU2dCdnNjSVZKdTRKSlE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pNMFNHZGFRVFUzVEhsbmNVcGlXbnA1VEUxc0xXYxAB!2m1!1s0x0:0x255cba6ae2327b69!3m1!1s2@1:CAIQACodChtycF9oOjM0SGdaQTU3THlncUpiWnp5TE1sLWc%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25GNVFYaE5URFJEVUVoR1drWjZaalV5ZUZFeWNsRRAB!2m1!1s0x0:0xaa0ac5cbcc382fd5!3m1!1s2@1:CAIQACodChtycF9oOnF5QXhNTDRDUEhGWkZ6ZjUyeFEyclE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xoTVNWazBVVzVDWVVoSWVGZGFTRlJuY2pKV1JHYxAB!2m1!1s0x0:0x8ef6684842169f21!3m1!1s2@1:CAIQACodChtycF9oOlhMSVk0UW5CYUhIeFdaSFRncjJWRGc%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21WSWFIRmlUSEpyVUhSRlprSnFjRmRtZERsblgyYxAB!2m1!1s0x0:0xaff28210ad69c2ef!3m1!1s2@1:CAIQACodChtycF9oOmVIaHFiTHJrUHRFZkJqcFdmdDlnX2c%7C%7C?hl=en",
-        "https://reviews.birdeye.com/manheim-fredericksburg-167784557350491?page=2#review-1",
-        "https://reviews.birdeye.com/manheim-fredericksburg-167784557350491?page=2#review-2",
-        "https://reviews.birdeye.com/manheim-dallas-fort-worth-166658799426873#review-5",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25SV09YcHRhbW90WTBveE1FUk9jbWd5VlZsWE4yYxAB!2m1!1s0x0:0xef1776f19dc440c8!3m1!1s2@1:CAIQACodChtycF9oOnRWOXptamotY0oxMEROcmgyVVlXN2c%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xsWFRqZDVZbkowVmtGVlYzUnNRa3hEYTBObE5VRRAB!2m1!1s0x0:0xaad5beec10f89472!3m1!1s2@1:CAIQACodChtycF9oOllXTjd5YnJ0VkFVV3RsQkxDa0NlNUE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tadVMzTkJkekpmTjJkRmJUbHFSalJOZUd0ZlMzYxAB!2m1!1s0x0:0xaad5beec10f89472!3m1!1s2@1:CAIQACodChtycF9oOkZuS3NBdzJfN2dFbTlqRjRNeGtfS3c%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21JeE5FSmpNMVp5VERoTU9VeG1SbTR3YnkxS1UxRRAB!2m1!1s0x0:0xf93a43290f3c5c75!3m1!1s2@1:CAIQACodChtycF9oOmIxNEJjM1ZyTDhMOUxmRm4wby1KU1E%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT200elRsaGhMVXQ2TldwVE5VSkphRXBuYjNkMWJIYxAB!2m1!1s0x0:0xc448649038168654!3m1!1s2@1:CAIQACodChtycF9oOm4zTlhhLUt6NWpTNUJJaEpnb3d1bHc%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pKcmFIUXRNRzVVWlVaNlJUZ3pRV1pSZWxScloyYxAB!2m1!1s0x0:0x92788e8c0e7120c0!3m1!1s2@1:CAIQACodChtycF9oOjJraHQtMG5UZUZ6RTgzQWZRelRrZ2c%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25ONFNEbGlVM2hHYjNwWlNtTXlVbkkyZW1zelEzYxAB!2m1!1s0x0:0x2419d7814ac4b8df!3m1!1s2@1:CAIQACodChtycF9oOnN4SDliU3hGb3pZSmMyUnI2emszQ3c%7C%7C?hl=en",
-        "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_24681952",
-        "http://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_24681952",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21aZk1ERmljek5SV1hsd1pHWnVUMHB5VlRFM2QxRRAB!2m1!1s0x0:0xfffe440c8728fa18!3m1!1s2@1:CAIQACodChtycF9oOmZfMDFiczNRWXlwZGZuT0pyVTE3d1E%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCSWFVNDJWRjlxWlhkRVVYSmFMVTlqWHpCU1pVRRAB!2m1!1s0x0:0x8ef6684842169f21!3m1!1s2@1:CAIQACodChtycF9oOlBIaU42VF9qZXdEUXJaLU9jXzBSZUE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20wek9WaGxaM2cyVEU1V1dXZFBTSGgzT0VrME5GRRAB!2m1!1s0x0:0x92788e8c0e7120c0!3m1!1s2@1:CAIQACodChtycF9oOm0zOVhlZ3g2TE5WWWdPSHh3OEk0NFE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCUFYxWjRaV1Z0YTFkRU9HTkVTVUZVU2s4M2MyYxAB!2m1!1s0x0:0xdb18b095aee54321!3m1!1s2@1:CAIQACodChtycF9oOjBPV1Z4ZWVta1dEOGNESUFUSk83c2c%7C%7C?hl=en"
+        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pWa1Z6RTFSR1pYUzJabE1tUmhTV2RwYUZWWlVuYxAB!2m1!1s0x0:0x1a13f81ffa85d0eb!3m1!1s2@1:CAIQACodChtycF9oOjVkVzE1RGZXS2ZlMmRhSWdpaFVZUnc%7C%7C?hl=en"
       ],
-      "generated_at_utc": "2026-10-07T02:02:24.992326+00:00",
+      "generated_at_utc": "2026-11-02T20:42:07.462169+00:00",
       "since_date": "2023-01-01",
-      "until_date": "2026-09-30",
+      "until_date": "2026-10-31",
       "collector_failures": [],
-      "existing_review_count": 2134,
-      "new_reviews_added": 68,
+      "existing_review_count": 2202,
+      "new_reviews_added": 50,
       "youtube_excluded": true,
       "usa_only": true,
       "english_only": true,
@@ -277786,18 +281054,17 @@ window.REVIEW_DATASETS = {
         "bbb.org"
       ],
       "geo_validation_counts": {
-        "google_play_us_store": 7,
-        "google_business_us_profile": 35,
-        "trustpilot_us_slug": 1,
-        "bbb_us_business": 7,
-        "birdeye_us_profile": 6,
+        "google_play_us_store": 22,
+        "mixed_source_ok": 3,
+        "bbb_us_business": 9,
+        "birdeye_us_profile": 4,
         "apple_us_store": 12
       },
       "geo_excluded_counts": {
         "play.google.com:google_play_us_store_non_us_marker": 1,
         "trustpilot.com:trustpilot_us_slug_non_us_marker": 1,
         "apps.apple.com:apple_us_store_non_us_marker": 1,
-        "apps.apple.com:apple_non_us_store": 2
+        "apps.apple.com:apple_non_us_store": 5
       },
       "geo_excluded_examples": [
         {
@@ -277811,7 +281078,7 @@ window.REVIEW_DATASETS = {
         {
           "source_website": "trustpilot.com",
           "source_label": "Trustpilot (manheim.com)",
-          "source_url": "http://www.trustpilot.com/reviews/65d9f333df0d9e74da2004ff",
+          "source_url": "https://www.trustpilot.com/reviews/65d9f333df0d9e74da2004ff",
           "review_date": "2024-02-24",
           "reason": "trustpilot_us_slug_non_us_marker",
           "review_text": "Manheim is a scam. I tried to sell my car through Manheim. They had indicated a price of £9,100 and I had described in detail every little dent or scratch of the car. They came, took the car for a ride, took pictures and then said they coul"
@@ -277827,10 +281094,34 @@ window.REVIEW_DATASETS = {
         {
           "source_website": "apps.apple.com",
           "source_label": "Apple App Store (6744660081, gb)",
+          "source_url": "https://itunes.apple.com/gb/review?id=6744660081&type=Purple%20Software&reviewId=14620031101",
+          "review_date": "2026-10-02",
+          "reason": "apple_non_us_store",
+          "review_text": "Can’t log in. Can access on the web no problem but won’t let me log into the app at all"
+        },
+        {
+          "source_website": "apps.apple.com",
+          "source_label": "Apple App Store (6744660081, gb)",
           "source_url": "https://itunes.apple.com/gb/review?id=6744660081&type=Purple%20Software&reviewId=13789018899",
           "review_date": "2026-02-25",
           "reason": "apple_non_us_store",
           "review_text": "login issues. can’t login, log into website no problem but on this app same pw/user details don’t work"
+        },
+        {
+          "source_website": "apps.apple.com",
+          "source_label": "Apple App Store (6744660081, gb)",
+          "source_url": "https://apps.apple.com/gb/app/id6744660081?see-all=reviews&platform=iphone&reviewId=14620031101",
+          "review_date": "2026-10-02",
+          "reason": "apple_non_us_store",
+          "review_text": "Can’t log in. Can access on the web no problem but won’t let me log into the app at all"
+        },
+        {
+          "source_website": "apps.apple.com",
+          "source_label": "Apple App Store (6744660081, gb)",
+          "source_url": "https://apps.apple.com/gb/app/id6744660081?see-all=reviews&platform=iphone&reviewId=14711102946",
+          "review_date": "2026-10-25",
+          "reason": "apple_non_us_store",
+          "review_text": "Awful. Awful app - can’t log in. BCA can manage an app why can’t Manheim?"
         },
         {
           "source_website": "apps.apple.com",
@@ -277863,7 +281154,7 @@ window.REVIEW_DATASETS = {
           "website": "https://www.manheim.com/",
           "rating": 4.3,
           "review_count": 7,
-          "last_successful_scan_date": "2026-09-30"
+          "last_successful_scan_date": "2026-10-31"
         },
         {
           "feature_id": "0x88e77db086f2d4e5:0xf6e042105c509d3e",
@@ -277895,7 +281186,7 @@ window.REVIEW_DATASETS = {
           "address": "1250 W Landstreet Rd, Orlando, FL 32824",
           "website": "https://www.manheim.com/",
           "rating": 4.3,
-          "review_count": 12,
+          "review_count": 13,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -277918,7 +281209,7 @@ window.REVIEW_DATASETS = {
           "website": "",
           "rating": null,
           "review_count": null,
-          "last_successful_scan_date": "2026-09-30"
+          "last_successful_scan_date": "2026-10-31"
         },
         {
           "feature_id": "0x89de141aaae9cfb3:0xeb5b6efd7a533372",
@@ -277928,7 +281219,7 @@ window.REVIEW_DATASETS = {
           "address": "459 NY-146, Clifton Park, NY 12065",
           "website": "http://www.manheim.com/locations/NWE/events",
           "rating": 4.1,
-          "review_count": 194,
+          "review_count": 195,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -277939,7 +281230,7 @@ window.REVIEW_DATASETS = {
           "address": "3420 S 48th St, Phoenix, AZ 85040",
           "website": "https://www.manheim.com/locations/LPHX/events",
           "rating": 3.8,
-          "review_count": 84,
+          "review_count": 83,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -277950,7 +281241,7 @@ window.REVIEW_DATASETS = {
           "address": "4900 Buffington Rd, Atlanta, GA 30349",
           "website": "http://www.manheim.com/locations/AAA/events",
           "rating": 3.8,
-          "review_count": 1251,
+          "review_count": 1245,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -277960,8 +281251,8 @@ window.REVIEW_DATASETS = {
           "name": "Manheim Atlanta Reconditioning Services",
           "address": "2244 Metropolitan Pkwy SW, Atlanta, GA 30315",
           "website": "https://www.manheim.com/",
-          "rating": 4.1,
-          "review_count": 125,
+          "rating": 4.2,
+          "review_count": 124,
           "last_successful_scan_date": "2026-08-31"
         },
         {
@@ -277972,7 +281263,7 @@ window.REVIEW_DATASETS = {
           "address": "Dales St, Riverside, CA 92504",
           "website": "https://site.manheim.com/en/locations/us-locations/manheim-riverside.html",
           "rating": 3.8,
-          "review_count": 45,
+          "review_count": 46,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -277983,7 +281274,7 @@ window.REVIEW_DATASETS = {
           "address": "2427-2563 S Walton Walker Blvd, Dallas, TX 75236",
           "website": "https://site.manheim.com/en/locations/us-locations/manheim-dallas.html",
           "rating": 3.9,
-          "review_count": 292,
+          "review_count": 297,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278005,7 +281296,7 @@ window.REVIEW_DATASETS = {
           "address": "Unnamed Road, Manheim, PA 17545",
           "website": "https://site.manheim.com/",
           "rating": 4.4,
-          "review_count": 103,
+          "review_count": 106,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278060,8 +281351,18 @@ window.REVIEW_DATASETS = {
           "address": "7120 Dorsey Run Rd, Elkridge, MD 21075",
           "website": "https://publish.manheim.com/en/locations/us-locations/manheim-baltimore-washington.html",
           "rating": 3.5,
-          "review_count": 485,
+          "review_count": 481,
           "last_successful_scan_date": "2026-09-30"
+        },
+        {
+          "feature_id": "0x884ef2c8e6aa3a5b:0xade449fd9d423c49",
+          "cid": "12530221416865479753",
+          "place_id": "ChIJWzqq5sjyTogRSTxCnf1J5K0",
+          "name": "Manheim Beckley",
+          "address": "618 N Eisenhower Dr, Beckley, WV 25801",
+          "website": "https://www.manheim.com/sales_schedule?id[]=&max_records=25&sort=saledatetime&sort_order=asc&id[]=152&id[]=101921&WT.svl=m_svc_mobileauctions_ssp",
+          "rating": null,
+          "review_count": null
         },
         {
           "feature_id": "0x8889106288a80e6f:0xda9573fc19944dc6",
@@ -278082,7 +281383,7 @@ window.REVIEW_DATASETS = {
           "address": "1320 N Tustin Ave, Anaheim, CA 92807",
           "website": "http://www.manheim.com/locations/CADE/events",
           "rating": 3.9,
-          "review_count": 500,
+          "review_count": 497,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278093,7 +281394,7 @@ window.REVIEW_DATASETS = {
           "address": "9800 Bachman Rd, Orlando, FL 32824",
           "website": "http://www.manheim.com/locations/GOAA/events",
           "rating": 4.1,
-          "review_count": 905,
+          "review_count": 909,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278103,8 +281404,8 @@ window.REVIEW_DATASETS = {
           "name": "Manheim Central Transport Lot",
           "address": "9800 Bachman Rd, Orlando, FL 32824",
           "website": "https://site.manheim.com/en/locations/us-locations/manheim-central-florida.html",
-          "rating": 4.4,
-          "review_count": 77,
+          "rating": 4.3,
+          "review_count": 78,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278126,7 +281427,7 @@ window.REVIEW_DATASETS = {
           "address": "20401 Cox Ave, Matteson, IL 60443",
           "website": "http://www.manheim.com/locations/GCAA/events",
           "rating": 3.5,
-          "review_count": 793,
+          "review_count": 792,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278137,7 +281438,7 @@ window.REVIEW_DATASETS = {
           "address": "4969 Muhlhauser Rd, Hamilton, OH 45011",
           "website": "http://www.manheim.com/locations/CINA/events",
           "rating": 3.9,
-          "review_count": 301,
+          "review_count": 302,
           "last_successful_scan_date": "2026-08-31"
         },
         {
@@ -278159,7 +281460,7 @@ window.REVIEW_DATASETS = {
           "address": "5333 W Kiest Blvd, Dallas, TX 75236",
           "website": "http://www.manheim.com/locations/DALA/events",
           "rating": 3.7,
-          "review_count": 1382,
+          "review_count": 1378,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278170,7 +281471,7 @@ window.REVIEW_DATASETS = {
           "address": "12101 Trinity Blvd, Euless, TX 76040",
           "website": "http://www.manheim.com/locations/DFWA/events",
           "rating": 3.9,
-          "review_count": 774,
+          "review_count": 776,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278191,7 +281492,7 @@ window.REVIEW_DATASETS = {
           "name": "Manheim Darlington",
           "address": "1111 Harry Byrd Hwy, Darlington, SC 29532",
           "website": "http://www.manheim.com/locations/CAAI/events",
-          "rating": 4.1,
+          "rating": 4.2,
           "review_count": 277,
           "last_successful_scan_date": "2026-09-30"
         },
@@ -278203,7 +281504,7 @@ window.REVIEW_DATASETS = {
           "address": "1305 Indian Lake Rd, Daytona Beach, FL 32124",
           "website": "http://www.manheim.com/locations/DADE/events",
           "rating": 4.5,
-          "review_count": 228,
+          "review_count": 227,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278214,7 +281515,7 @@ window.REVIEW_DATASETS = {
           "address": "17500 E 32nd Ave, Aurora, CO 80011",
           "website": "http://www.manheim.com/locations/DAA/events",
           "rating": 4,
-          "review_count": 674,
+          "review_count": 673,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278225,7 +281526,7 @@ window.REVIEW_DATASETS = {
           "address": "600 Will Carleton Rd, Carleton, MI 48117",
           "website": "http://www.manheim.com/locations/DETA/events",
           "rating": 3.8,
-          "review_count": 691,
+          "review_count": 693,
           "last_successful_scan_date": "2026-08-31"
         },
         {
@@ -278236,7 +281537,7 @@ window.REVIEW_DATASETS = {
           "address": "485 Coates Dr, El Paso, TX 79932",
           "website": "http://www.manheim.com/locations/DAAE/events",
           "rating": 4,
-          "review_count": 206,
+          "review_count": 207,
           "last_successful_scan_date": "2026-08-31"
         },
         {
@@ -278247,7 +281548,7 @@ window.REVIEW_DATASETS = {
           "address": "7180 North Dort Highway, Mount Morris, MI 48458",
           "website": "http://www.manheim.com/locations/PTAF/events",
           "rating": 4,
-          "review_count": 127,
+          "review_count": 125,
           "last_successful_scan_date": "2026-08-31"
         },
         {
@@ -278258,7 +281559,7 @@ window.REVIEW_DATASETS = {
           "address": "5353 S State Rd 7, Davie, FL 33314",
           "website": "http://www.manheim.com/locations/LMAA/events",
           "rating": 4,
-          "review_count": 877,
+          "review_count": 876,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278279,8 +281580,8 @@ window.REVIEW_DATASETS = {
           "name": "Manheim Fredericksburg",
           "address": "120 Auction Dr, Fredericksburg, VA 22406",
           "website": "http://www.manheim.com/locations/FAA/events",
-          "rating": 3.8,
-          "review_count": 313,
+          "rating": 3.9,
+          "review_count": 314,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278291,7 +281592,7 @@ window.REVIEW_DATASETS = {
           "address": "278 N Marks Ave, Fresno, CA 93706",
           "website": "http://www.manheim.com/locations/FADA/events",
           "rating": 3.9,
-          "review_count": 182,
+          "review_count": 180,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278302,7 +281603,7 @@ window.REVIEW_DATASETS = {
           "address": "7205 Campbellton Rd SW, Atlanta, GA 30331",
           "website": "http://www.manheim.com/locations/AAAW/events",
           "rating": 3.9,
-          "review_count": 746,
+          "review_count": 743,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278324,7 +281625,7 @@ window.REVIEW_DATASETS = {
           "address": "3560 Early Rd, Harrisonburg, VA 22801",
           "website": "http://www.manheim.com/locations/HAA/events",
           "rating": 4.1,
-          "review_count": 125,
+          "review_count": 127,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278350,14 +281651,24 @@ window.REVIEW_DATASETS = {
           "last_successful_scan_date": "2026-09-30"
         },
         {
+          "feature_id": "0x87ec6173c60586cb:0xcd660f2515858714",
+          "cid": "14800533877348992788",
+          "place_id": "ChIJy4YFxnNh7IcRFIeFFSUPZs0",
+          "name": "Manheim Iowa",
+          "address": "723 SW 8th St, Stuart, IA 50250",
+          "website": "https://www.manheim.com/",
+          "rating": 4.5,
+          "review_count": 24
+        },
+        {
           "feature_id": "0x88e5bb409252e301:0xe910bb27a1d8f3e6",
           "cid": "16794128789358048230",
           "place_id": "ChIJAeNSkkC75YgR5vPYoSe7EOk",
           "name": "Manheim Jacksonville",
           "address": "10817 New Kings Rd, Jacksonville, FL 32219",
           "website": "http://www.manheim.com/locations/JAX/events",
-          "rating": 4,
-          "review_count": 240,
+          "rating": 4.1,
+          "review_count": 238,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278390,7 +281701,7 @@ window.REVIEW_DATASETS = {
           "address": "8025 State Rd 33 N, Lakeland, FL 33809",
           "website": "http://www.manheim.com/locations/LAA/events",
           "rating": 4.2,
-          "review_count": 489,
+          "review_count": 488,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278412,7 +281723,7 @@ window.REVIEW_DATASETS = {
           "address": "5425 US-31, Clarksville, IN 47129",
           "website": "http://www.manheim.com/locations/LOUA/events",
           "rating": 4.2,
-          "review_count": 283,
+          "review_count": 284,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278422,8 +281733,8 @@ window.REVIEW_DATASETS = {
           "name": "Manheim Maryland",
           "address": "4805 Philadelphia Rd, Belcamp, MD 21017",
           "website": "https://site.manheim.com/en/locations/us-locations/manheim-maryland.html",
-          "rating": 3.7,
-          "review_count": 406,
+          "rating": 3.8,
+          "review_count": 404,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278434,7 +281745,7 @@ window.REVIEW_DATASETS = {
           "address": "29500 Gateway Blvd, Flat Rock, MI 48134",
           "website": "http://www.autoauctiondetroit.com/",
           "rating": 3.9,
-          "review_count": 187,
+          "review_count": 186,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278467,7 +281778,7 @@ window.REVIEW_DATASETS = {
           "address": "8001 Jefferson Hwy, Maple Grove, MN 55369",
           "website": "http://www.manheim.com/locations/MAAI/events",
           "rating": 4,
-          "review_count": 331,
+          "review_count": 332,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278478,7 +281789,7 @@ window.REVIEW_DATASETS = {
           "address": "6600 Auction Ln, Las Vegas, NV 89165",
           "website": "https://www.manheim.com/",
           "rating": 4,
-          "review_count": 530,
+          "review_count": 529,
           "last_successful_scan_date": "2026-08-31"
         },
         {
@@ -278489,7 +281800,7 @@ window.REVIEW_DATASETS = {
           "address": "123 Williams St, North Dighton, MA 02764",
           "website": "https://publish.manheim.com/en/locations/us-locations/manheim-new-england.html#hours",
           "rating": 4.1,
-          "review_count": 428,
+          "review_count": 429,
           "last_successful_scan_date": "2026-08-31"
         },
         {
@@ -278521,8 +281832,8 @@ window.REVIEW_DATASETS = {
           "name": "Manheim New Mexico",
           "address": "3411 Broadway Blvd SE, Albuquerque, NM 87105",
           "website": "http://www.manheim.com/locations/ALBA/events",
-          "rating": 3.8,
-          "review_count": 239,
+          "rating": 3.9,
+          "review_count": 240,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278533,7 +281844,7 @@ window.REVIEW_DATASETS = {
           "address": "61077 St Tammany Ave, Slidell, LA 70460",
           "website": "http://www.manheim.com/locations/NOAA/events",
           "rating": 4.2,
-          "review_count": 227,
+          "review_count": 226,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278555,7 +281866,7 @@ window.REVIEW_DATASETS = {
           "address": "318 Bagley Rd, Kenly, NC 27542",
           "website": "http://www.manheim.com/locations/AYCA/events",
           "rating": 4,
-          "review_count": 367,
+          "review_count": 365,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278565,8 +281876,8 @@ window.REVIEW_DATASETS = {
           "name": "Manheim Northstar Minnesota",
           "address": "4908 Valley Industrial Blvd N, Shakopee, MN 55379",
           "website": "https://publish.manheim.com/en/locations/us-locations/manheim-northstar-minnesota.html",
-          "rating": 4.3,
-          "review_count": 243,
+          "rating": 4.2,
+          "review_count": 244,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278576,8 +281887,8 @@ window.REVIEW_DATASETS = {
           "name": "Manheim NY Metro Skyline",
           "address": "100 US-46, Fairfield, NJ 07004",
           "website": "https://site.manheim.com/en/locations/us-locations/manheim-ny-metro-skyline.html#/",
-          "rating": 3.5,
-          "review_count": 532,
+          "rating": 3.6,
+          "review_count": 529,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278588,7 +281899,7 @@ window.REVIEW_DATASETS = {
           "address": "4691 Calle Joven, Oceanside, CA 92057",
           "website": "http://www.manheim.com/locations/SDAA/events",
           "rating": 4,
-          "review_count": 225,
+          "review_count": 224,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278610,7 +281921,7 @@ window.REVIEW_DATASETS = {
           "address": "9201 S 144th St, Omaha, NE 68138",
           "website": "http://www.manheim.com/locations/OMAA/events",
           "rating": 4.2,
-          "review_count": 183,
+          "review_count": 185,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278621,7 +281932,7 @@ window.REVIEW_DATASETS = {
           "address": "11801 W Colonial Dr, Ocoee, FL 34761",
           "website": "http://www.manheim.com/locations/FAAO/events",
           "rating": 4.2,
-          "review_count": 929,
+          "review_count": 930,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278661,11 +281972,11 @@ window.REVIEW_DATASETS = {
           "feature_id": "0x88d928d464946877:0xef1776f19dc440c8",
           "cid": "17228369679635202248",
           "place_id": "ChIJd2iUZNQo2YgRyEDEnfF2F-8",
-          "name": "Manheim Palm Beach",
+          "name": "Manheim Palm Beach Auto Auction",
           "address": "600 Sansburys Way, West Palm Beach, FL 33411",
           "website": "http://www.manheim.com/locations/WPBA/events",
           "rating": 4.2,
-          "review_count": 542,
+          "review_count": 543,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278676,7 +281987,7 @@ window.REVIEW_DATASETS = {
           "address": "1190 Lancaster Rd, Manheim, PA 17545",
           "website": "http://www.manheim.com/locations/MAA/events",
           "rating": 4.1,
-          "review_count": 730,
+          "review_count": 728,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278687,7 +281998,7 @@ window.REVIEW_DATASETS = {
           "address": "6359 North W Street, Pensacola, FL 32505",
           "website": "http://www.manheim.com/locations/PCAA/events",
           "rating": 4.4,
-          "review_count": 240,
+          "review_count": 241,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278698,7 +282009,7 @@ window.REVIEW_DATASETS = {
           "address": "2280 Bethlehem Pike, Hatfield, PA 19440",
           "website": "http://www.manheim.com/locations/HATA/events",
           "rating": 4.2,
-          "review_count": 291,
+          "review_count": 292,
           "last_successful_scan_date": "2026-08-31"
         },
         {
@@ -278709,7 +282020,7 @@ window.REVIEW_DATASETS = {
           "address": "201 N 83rd Ave, Tolleson, AZ 85353",
           "website": "https://site.manheim.com/en/locations/us-locations/manheim-phoenix.html#/",
           "rating": 4.1,
-          "review_count": 696,
+          "review_count": 695,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278785,8 +282096,8 @@ window.REVIEW_DATASETS = {
           "name": "Manheim Recon Orlando",
           "address": "1275 E Story Rd, Winter Garden, FL 34787",
           "website": "",
-          "rating": 4.4,
-          "review_count": 61,
+          "rating": 4.5,
+          "review_count": 60,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278797,7 +282108,7 @@ window.REVIEW_DATASETS = {
           "address": "1052-1100 Power Rd, Manheim, PA 17545",
           "website": "https://publish.manheim.com/en/locations/us-locations/manheim-pennsylvania.html",
           "rating": 4.4,
-          "review_count": 252,
+          "review_count": 254,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278807,8 +282118,8 @@ window.REVIEW_DATASETS = {
           "name": "Manheim Riverside",
           "address": "6051 Industrial Ave, Riverside, CA 92504",
           "website": "https://site.manheim.com/en/locations/us-locations/manheim-riverside.html",
-          "rating": 3.2,
-          "review_count": 17,
+          "rating": 3.3,
+          "review_count": 18,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278819,7 +282130,7 @@ window.REVIEW_DATASETS = {
           "address": "6446 Fremont St, Riverside, CA 92504",
           "website": "http://www.manheim.com/locations/RAA/events",
           "rating": 3.8,
-          "review_count": 491,
+          "review_count": 493,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278830,7 +282141,7 @@ window.REVIEW_DATASETS = {
           "address": "6900 Jurupa Ave, Riverside, CA 92504",
           "website": "https://site.manheim.com/en/locations/us-locations/manheim-riverside.html",
           "rating": 3.9,
-          "review_count": 324,
+          "review_count": 326,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278841,7 +282152,7 @@ window.REVIEW_DATASETS = {
           "address": "2042 Ackerman Rd, San Antonio, TX 78219",
           "website": "http://www.manheim.com/locations/SAAA/events",
           "rating": 3.8,
-          "review_count": 686,
+          "review_count": 688,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278852,7 +282163,7 @@ window.REVIEW_DATASETS = {
           "address": "29900 Auction Way, Hayward, CA 94544",
           "website": "https://publish.manheim.com/en/locations/us-locations/manheim-san-francisco-bay.html",
           "rating": 3.7,
-          "review_count": 449,
+          "review_count": 445,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278863,7 +282174,7 @@ window.REVIEW_DATASETS = {
           "address": "19711 77th Ave S, Kent, WA 98032",
           "website": "http://www.manheim.com/locations/SSAA/events",
           "rating": 4,
-          "review_count": 357,
+          "review_count": 353,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278896,7 +282207,7 @@ window.REVIEW_DATASETS = {
           "address": "10700 Beech Ave, Fontana, CA 92337",
           "website": "http://www.manheim.com/locations/SCAA/events",
           "rating": 3.8,
-          "review_count": 808,
+          "review_count": 802,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278907,7 +282218,7 @@ window.REVIEW_DATASETS = {
           "address": "13813 St Charles Rock Rd, Bridgeton, MO 63044",
           "website": "http://www.manheim.com/locations/SLAA/events",
           "rating": 4.2,
-          "review_count": 446,
+          "review_count": 445,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278918,7 +282229,7 @@ window.REVIEW_DATASETS = {
           "address": "14950 Roosevelt Blvd, Clearwater, FL 33762",
           "website": "http://www.manheim.com/locations/SPAA/events",
           "rating": 4,
-          "review_count": 348,
+          "review_count": 346,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278940,7 +282251,7 @@ window.REVIEW_DATASETS = {
           "address": "145 Auction Ln, Statesville, NC 28625",
           "website": "http://www.manheim.com/locations/SVAA/events",
           "rating": 4.2,
-          "review_count": 594,
+          "review_count": 590,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278961,8 +282272,8 @@ window.REVIEW_DATASETS = {
           "name": "Manheim Tampa",
           "address": "401 S 50th St, Tampa, FL 33605",
           "website": "http://www.manheim.com/locations/TBAA/events",
-          "rating": 4.2,
-          "review_count": 559,
+          "rating": 4.3,
+          "review_count": 557,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278973,7 +282284,7 @@ window.REVIEW_DATASETS = {
           "address": "Tampa, FL 33610",
           "website": "https://site.manheim.com/",
           "rating": 4.9,
-          "review_count": 9,
+          "review_count": 10,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278983,8 +282294,8 @@ window.REVIEW_DATASETS = {
           "name": "Manheim Texas Hobby",
           "address": "8215 Kopman Dr, Houston, TX 77061",
           "website": "http://www.manheim.com/locations/THAA/events",
-          "rating": 3.9,
-          "review_count": 947,
+          "rating": 4,
+          "review_count": 943,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -278995,7 +282306,7 @@ window.REVIEW_DATASETS = {
           "address": "800 Brisbane St, Houston, TX 77061",
           "website": "https://site.manheim.com/en/locations/us-locations/manheim-texas-hobby.html",
           "rating": 4,
-          "review_count": 72,
+          "review_count": 73,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -279006,7 +282317,7 @@ window.REVIEW_DATASETS = {
           "address": "7090 S Craycroft Rd, Tucson, AZ 85756",
           "website": "http://www.manheim.com/locations/TCAA/events",
           "rating": 4.1,
-          "review_count": 188,
+          "review_count": 187,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -279050,7 +282361,7 @@ window.REVIEW_DATASETS = {
           "address": "169 Auction Dr, Rocky Point, NC 28457",
           "website": "https://site.manheim.com/",
           "rating": 4.4,
-          "review_count": 64,
+          "review_count": 66,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -279088,6 +282399,651 @@ window.REVIEW_DATASETS = {
       ]
     },
     "reviews": [
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.manheim.mktplace)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+        "author": "JOHN FLINT",
+        "review_date": "2026-10-29",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "not as Good as the previous app",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-002203"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.manheim.mktplace)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+        "author": "Michael Metcalf",
+        "review_date": "2026-10-26",
+        "rating": 5,
+        "sentiment": "positive",
+        "review_text": "Awesome and useful Tool! The only current data I trust at auction!",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "How to Bid (First Time)",
+        "id": "rvw-002204"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.manheim.mktplace)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+        "author": "Haroutioun Tashjian",
+        "review_date": "2026-10-24",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Old version much much better and always asks for download every time I open the app",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-002205"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.manheim.mktplace)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+        "author": "Kamal Naimzade",
+        "review_date": "2026-10-24",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "updated new app is terrible. previous version was fully usable and informative. go to previous or at least leave us option to use it. zero stars for this one. check reviews, most of them report that new version is terrible. your IT did a bad job. return to old one, or make this one similar to old one. it requests to move from to Web and asks login info every time, why? i wonder is the app it done for users? if yes then hear us and follow our requests not some it suggestions.",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-002206"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews#review-1",
+        "author": "Larry B",
+        "review_date": "2026-10-23",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "REMOVED is a franchised dealer that bought a GMC Yukon through the Manheim online auction on February 6, 2026. The Manheim condition report graded it a perfect 5.0 and disclosed no damage. The truck had an undisclosed airbag deployment and approximately $31,000 in prior damage. Manheim's own carrier, Ready Logistics, took 31 days to deliver it, and Manheim then denied our arbitration as untimely because of its own delay and closed the case. We sued in REMOVED and won a judgment of $12,225.25 on August 3, 2026 (Magisterial District Court 45-3-04, REMOVED, docket MJ-REMOVED-CV-REMOVED-2026). Manheim has never paid it. We have since filed complaints with the REMOVED, the REMOVED, the Georgia Attorney General, and the Pennsylvania vehicle licensing board. Dealers should know: the condition report did not protect us, the arbitration window did not protect us, and even a court judgment has not been paid.",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-002207"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (6744660081, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14701755361",
+        "author": "Alex277877",
+        "review_date": "2026-10-23",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Absolutely terrible. Terrible app, the old one was better. Why do we have to open up the browser to view post sale, arb etc.",
+        "geo_validation": "apple_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-002208"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/askcarsales",
+        "source_url": "https://www.reddit.com/r/askcarsales/comments/1xcpp2z/can_anyone_provide_manheim_auction_results_for/",
+        "author": "Viper2397",
+        "review_date": "2026-10-22",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "Can Anyone Provide Manheim Auction Results For Two Speciality Vehicles That Sold Last Week? Looking to obtain the sales price for two vehicles that were recently purchased at auction by dealers. Any help would be greatly appreciated. Vehicles are a 2021 Lotus Evora GT & 2019 Porsche Macan. DM me and I can provide VIN numbers. Thanking you in advance!!",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "How to Bid (First Time)",
+        "id": "rvw-002209"
+      },
+      {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/carflipping",
+        "source_url": "https://www.reddit.com/r/carflipping/comments/1xcs9dl/your_eyes_at_manheim_adesa_houston/",
+        "author": "CreamInevitable6279",
+        "review_date": "2026-10-22",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Your eyes at Manheim & Adesa Houston 🚗 Buying cars at Manheim or ADESA Houston but can’t inspect them in person? I offer on-site vehicle checks for out-of-town dealers and buyers who want a closer look before bidding. ✅ Exterior and interior photos and videos. ✅ Startup video with engine sound. ✅ Visual check for leaks, damage, and dashboard warning lights. ✅ Check of A/C operation and accessories. ✅ Test drive when permitted by the auction. I’ll share what I observe to help you make a more informed buying decision. 📍 Manheim Houston, Texas Hobby and ADESA Houston \\-. Pricing depends on the number of vehicles and the scope of the inspection. \\-.Message me with the VIN or unit number and the auction date. This is a basic vehicle check. It does not replace a professional mechanical inspection or guarantee that the vehicle is free of hidden issues.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-002210"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.manheim.mktplace)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+        "author": "john johnson",
+        "review_date": "2026-10-21",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "What a shame. instead of hiring the right people to develop this app, Cox went the cheap route.",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-002211"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.manheim.mktplace)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+        "author": "Mike g",
+        "review_date": "2026-10-20",
+        "rating": 3,
+        "sentiment": "positive",
+        "review_text": "new app needs refining. you now have to leave the app to look at purchases. it keeps saying to update even though I already did. it has great potential. I think it will be awesome when all the bugs get fixed.",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-002212"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (6744660081, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14685317912",
+        "author": "Jucadisa",
+        "review_date": "2026-10-19",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Error!. Many errors trying to get auction access",
+        "geo_validation": "apple_us_store",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-002213"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.manheim.mktplace)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+        "author": "Juanita Martinez",
+        "review_date": "2026-10-15",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Keeps freezing when trying to bid. What's the point of an upgrade if you can't use the app?",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-002214"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.manheim.mktplace)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+        "author": "Jim McNair",
+        "review_date": "2026-10-15",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "It's Terrible! As much money you all make on buyer & seller fees you can do better!",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-002215"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.manheim.mktplace)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+        "author": "AMRMAD",
+        "review_date": "2026-10-15",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "App browsing is horrible why did they upgrade actually (downgrade) compared to the legacy edition , app keeps freezing, also hard to navigate compared to the older Legacy version.",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-002216"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (6744660081, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14666818145",
+        "author": "J Rytel",
+        "review_date": "2026-10-14",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Dealer. People.. what in the world are you doing with this app? It’s bad to the point of silly. I’m not sure where to even begin. It’s borderline impossible to use. It’s an emergency situation. Shareholders need to be made aware.",
+        "geo_validation": "apple_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-002217"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.manheim.mktplace)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+        "author": "Moses Pirbazari",
+        "review_date": "2026-10-13",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "horrible, goes to a black Google login and then can't find the site and times out as soon as attempting to login",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-002218"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (6744660081, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14664025898",
+        "author": "BreadMaker2410",
+        "review_date": "2026-10-13",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Horrendous. This app is terrible. Longer to navigate through pictures. Sellers info is at the bottom of the listing. Just made the app look “prettier” but terrible for users.",
+        "geo_validation": "apple_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-002219"
+      },
+      {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Google)",
+        "source_url": "https://reviews.birdeye.com/manheim-dallas-fort-worth-166658799426873#review-4",
+        "author": "Serkan K.",
+        "review_date": "2026-10-12",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Scammer auction. I bought 2025 Mercedes sprinter 2500. 2600 miles. Element sold. They give 4.9 CR. Side door damage. Rear bumper damage. Roof damage. But they gave 4.9CR. Because of Element sold. Don’t trust this disgusting place. They are robbery. Disgusting manager",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-002220"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Complaints",
+        "source_url": "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_25380043",
+        "author": "BBB complainant",
+        "review_date": "2026-10-12",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Service or Repair Issues complaint (Resolved). I BOUGHT A VEHICLE FROM MANHIEM, THEY NEVER SENT ME A TITLE, THEY SOLD THE CAR MARKED AS A CLEAN TITLE, DMV SAID ITS A NON REPAIRABLE TITLE, NOW THEY DONT WANT TO PAY FOR WHAT WAS SPENT ON THE VEHICLE SINCE IT ARRIVED OR RETURN THE VEHICLE OR MY MONEY",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Title, Ownership, POA and Documentation",
+        "tier2": "Title Delivery & Status",
+        "tier3": "Title Not Received",
+        "id": "rvw-002221"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.manheim.mktplace)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+        "author": "Hemi Bai",
+        "review_date": "2026-10-11",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Garbage. Way Worse than old app",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-002222"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (6744660081, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14651652752",
+        "author": "ass_kicker32",
+        "review_date": "2026-10-10",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Terrible, crashes and clunky. They took a decent but flawed app and made it slow, gave it a clunky interface and made everything take two or three taps now. A quick search requires multiple menus and taps for what used to be one. Not to mention that it signs me out and most of the features run in an in-app browser now anyway. It’s easier now to just use native Chrome or Safari. Why even have an app anymore?",
+        "geo_validation": "apple_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-002223"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.manheim.mktplace)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+        "author": "Freddy Rodriguez",
+        "review_date": "2026-10-09",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Already messing up. Huge company very poor software developers. Do you all see how many millions of dollars Cox is losing because of this app? I haven't gotten notified not even once on any of my saved searches. Thank you. Y'all rock.",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-002224"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.manheim.mktplace)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+        "author": "steven furlan",
+        "review_date": "2026-10-06",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "do not like the app at all",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-002225"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.manheim.mktplace)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+        "author": "Daniel Nika",
+        "review_date": "2026-10-06",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "it just honestly sucks. the old app was working perfectly fine. no reason for the new app. new app keeps crashing and freezing. EVERY SINGLE TIME!! Super frustrating!!",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-002226"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.manheim.mktplace)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+        "author": "mayas auto2",
+        "review_date": "2026-10-06",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "this app absolutely sucks compsir to last version very difficult to use while bidding",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-002227"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.manheim.mktplace)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+        "author": "Chris Leon",
+        "review_date": "2026-10-06",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "app asks for download every time I open it and sends me back to play store. very annoying.",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-002228"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews#review-2",
+        "author": "Kay z.",
+        "review_date": "2026-10-06",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Manheim in REMOVED, REMOVED are scammers. Ive also been notified that they give special offers for 5 star reviews so dont believe all of those 5 star reviews you see on REMOVED, thats how I got fooled, they even offered me the same special if I left them 5 star reviews. I currently have contacted an attorney to file a lawsuit. This company needs to be shut down.",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-002229"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Complaints",
+        "source_url": "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_25359353",
+        "author": "BBB complainant",
+        "review_date": "2026-10-06",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Service or Repair Issues complaint (Answered). I sold 2022 REMOVED(REMOVED) at manheim several months ago, buyer arbitrate and return the car because of title issue, I have been charged $753 recondition fee to compensate buyer. But when I sold the car, the car doesn't have any issue with cr of 5.0. I am not sure why manheim ask me to compensate buyer for the repair. secondly, manheim policy don't compensate buyer any repair cost when the car is returned after arbitration. I am not sure why the arbitrator charge me $753 to compensate buyer's repair cost, which clearly violate manheim policy.",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-002230"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (6744660081, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14634995175",
+        "author": "Nick8563",
+        "review_date": "2026-10-06",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "This app sucks. The old app was 1000x better. This one redirects you to your browser EVERY time you try to pull up a Carfax or AutoCheck. And it also makes you sign into Carfax/AutoCheck every single time. No reason we needed this app at all",
+        "geo_validation": "apple_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-002231"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.manheim.mktplace)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=es&gl=us",
+        "author": "antonio rincon",
+        "review_date": "2026-10-05",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "The new application is useless.",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-002232"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (6744660081, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14631449494",
+        "author": "Steve French 28",
+        "review_date": "2026-10-05",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Made an already mediocre app worse. The new app takes you to the web when wanting to look at your purchases, looking at the run list takes extra steps and is not as user friendly as before.",
+        "geo_validation": "apple_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-002233"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.manheim.mktplace)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+        "author": "Anna Tsifra",
+        "review_date": "2026-10-04",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "confusing.....I loved the old app navigation. the new one is bad.",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-002234"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (6744660081, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14628049758",
+        "author": "Pochefis",
+        "review_date": "2026-10-04",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "inconvenient. The app is absolutely inconvenient compared to the old one.",
+        "geo_validation": "apple_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-002235"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (6744660081, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14627678981",
+        "author": "Atturn77",
+        "review_date": "2026-10-04",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "What a terrible app. The Legacy app was so superior in user friendliness and accessibility. The constant signing in and issues when doing so, the home page, navigation, auction search, etc. are a problem and this thing wasn’t ready for prime time. Whoever is in charge of design should reach out to dealers for advice and not force feed cumbersome changes.",
+        "geo_validation": "apple_us_store",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-002236"
+      },
+      {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Google)",
+        "source_url": "https://reviews.birdeye.com/manheim-dallas-fort-worth-166658799426873#review-5",
+        "author": "Lisa Salvant",
+        "review_date": "2026-10-03",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "I cannot thank Leticia Garcia enough for her help this morning. I had been working on a Title problem for 2 months with Manheim San Antonio and TitleSSC@coxautoinc.com and have had no luck. This morning I went into Manheim DFW and Leticia Garcia was so amazing and helped me immediately. She had me in and out in minutes with everything I needed. Thank you Leticia Garcia, what a great way to start my day.",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Title, Ownership, POA and Documentation",
+        "tier2": "Power of Attorney (POA) Handling",
+        "tier3": "POA Requirements Clarification",
+        "id": "rvw-002237"
+      },
+      {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Google)",
+        "source_url": "https://reviews.birdeye.com/manheim-pittsburgh-166598588464399#review-3",
+        "author": "LM MOTORS LLC",
+        "review_date": "2026-10-03",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "One of the best and very professional Auction around Pittsburgh. staffs are very welcoming always go extra miles to help out my needs. Been going there since 2011 and doing the business with them since 2020 and I’m very happy with everything. They deserve seven stars.",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Helpful Support Experience",
+        "id": "rvw-002238"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (6744660081, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14622698817",
+        "author": "GMSaul24",
+        "review_date": "2026-10-03",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Embarrassing. I don’t think I’ve ever updated an app that was a more a fall off than this. Every quality feature of the original Legacy app is gone. Search a company, then try to filter a certain car to see what they offer. Can’t even do that, resets it back to all Manheim inventory worldwide. Been using Manheim for a long time. This app is complete trash and for a multi billion dollar communications company. Please go back to the original.",
+        "geo_validation": "apple_us_store",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-002239"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.manheim.mktplace)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+        "author": "Bruno DiRico",
+        "review_date": "2026-10-01",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "old app was easier to read and navigate!",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-002240"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.manheim.mktplace)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+        "author": "American Wholesale Auto and Truck",
+        "review_date": "2026-10-01",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "no sound available. place bid only show first number and some ... ,run list no showing properly. old version was much easier to work with",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-002241"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.manheim.mktplace)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+        "author": "Henry Franke",
+        "review_date": "2026-10-01",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "The old app. actually worked and very easy to use,the new app is terrible it doesn't even deserve one star. please go back to the old format it actually works!!!",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-002242"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.manheim.mktplace)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.manheim.mktplace&hl=en&gl=us",
+        "author": "Shahram Masoumi",
+        "review_date": "2026-10-01",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "what is this stupid app",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-002243"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (6744660081, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14616774310",
+        "author": "Trololingo",
+        "review_date": "2026-10-01",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Worst app ever. It’s terrible,search not working well,always rebooting,can’t save criterias,terrible app,previous was much better,it’s not showing tra normally,it’s not showing sellers you need to scroll down to find",
+        "geo_validation": "apple_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-002244"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (6744660081, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=6744660081&type=Purple%20Software&reviewId=14616137256",
+        "author": "Sexylexybatman",
+        "review_date": "2026-10-01",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Needs massive update. As large as a company as Manheim is, every update to the app is almost a downslide to its predecessor. This app is confusing to navigate, not as descriptive which is importantly for both buyers and sellers, harder to navigate on both ends. An update is much needed.",
+        "geo_validation": "apple_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-002245"
+      },
       {
         "source_website": "play.google.com",
         "source_label": "Google Play (com.manheim.mktplace)",
@@ -279299,6 +283255,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-002148"
       },
       {
+        "source_website": "reddit.com",
+        "source_label": "Reddit r/carflipping",
+        "source_url": "https://www.reddit.com/r/carflipping/comments/1wpgpvy/access_to_auction_or_copart/",
+        "author": "Robdiesel773",
+        "review_date": "2026-09-24",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "Access to auction or Copart Recently relocated to Texas. I’ve been in car sales for a while. I like to flip cars on the side. Does anyone have access to the Manheim auction or Copart? Let me know. I’d be happy to work with you.",
+        "geo_validation": "mixed_source_ok",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "How to Bid (First Time)",
+        "id": "rvw-002246"
+      },
+      {
         "source_website": "google.com",
         "source_label": "Google Business Profile (Manheim Recon Orlando)",
         "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkUlIzTXdheTF3TkhGbU0xazNSV3MxYUdkbGFHYxAB!2m1!1s0x0:0xce3375d85b297645!3m1!1s2@1:CAIQACodChtycF9oOkdRR3Mway1wNHFmM1k3RWs1aGdlaGc%7C%7C?hl=en",
@@ -279417,6 +283388,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Bidding Process, Rules and Fees",
         "tier3": "How to Bid (First Time)",
         "id": "rvw-002156"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Complaints",
+        "source_url": "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_25298220",
+        "author": "BBB complainant",
+        "review_date": "2026-09-20",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Service or Repair Issues complaint (Answered). They sold a vehicle announcing it had a clearn autocheck report in which case it did not. They have refused to provide evidence if the frame and structure measurements they proformed to determine structrual damage",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-002247"
       },
       {
         "source_website": "apps.apple.com",
@@ -280049,6 +284035,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-002185"
       },
       {
+        "source_website": "bbb.org",
+        "source_label": "BBB Complaints",
+        "source_url": "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_25206333",
+        "author": "BBB complainant",
+        "review_date": "2026-08-26",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Service or Repair Issues complaint (Answered). my dealer bought 2024 REMOVED Escape Platinum Hard Top REMOVED from Manheim REMOVED on 6/10/2026, but the car has unannounced damage on right headlight and radiator support. I open arbitration but arbitrator denied my claim without even inspect the car. I demand unwinding the deal.",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-002248"
+      },
+      {
         "source_website": "reddit.com",
         "source_label": "Reddit r/carflipping",
         "source_url": "https://www.reddit.com/r/carflipping/comments/1vye95w/how_are_you_guys_paying_for_cars_at_auction/",
@@ -280482,6 +284483,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Scheduled Pickup Status",
         "tier3": "Missed/ Delayed Pickup and Dispatch Window",
         "id": "rvw-002049"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Complaints",
+        "source_url": "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/complaints#0443_6001743_25162833",
+        "author": "BBB complainant",
+        "review_date": "2026-08-14",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Service or Repair Issues complaint (Answered). We bought a vehicle on August REMOVED highlander 2007) from Manheim REMOVED. The vehicle was listed as Limited Guarantee. We searched through the photos and announcements and there weren't any photos of the undercarriage. We paid $2,500.00 for the vehicle. When we got the vehicle the whole undercariage is rusted out. As the transporter arrived with the vehicle the wheel started coming off. The car is inoperable and structurally it is a hazard for anyone to drive the vehicle. I am upset because they sold us the car under deceptive claims. The vehicle never said anything about it not running, never said anything about rust, never showed any pictures of the undercarriage. This car should have been ran under the inoperable vehicles sales, not consignment sale. It really hurts that they decieved us.",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Vehicle Pickup, Delivery and Scheduling",
+        "tier2": "Scheduled Pickup Status",
+        "tier3": "Missed/ Delayed Pickup and Dispatch Window",
+        "id": "rvw-002249"
       },
       {
         "source_website": "google.com",
@@ -286784,6 +290800,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-000920"
       },
       {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Google)",
+        "source_url": "https://reviews.birdeye.com/manheim-st-louis-166697023560226#review-1",
+        "author": "Orhan",
+        "review_date": "2025-12-07",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Be careful with their process! We’ve been in business for over 2 years and bought 100+ cars, all green light and scored over 4. Still had to wait 3–4 days to pick them up even after payment was taken. They falsely claimed a late payment but can’t prove it. By the time cars were released, they were out of arbitration and most were in bad condition — 3 even had engine problems. Watch out and inspect your cars carefully!",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Third-Party Inspection Authorization & Scheduling",
+        "tier3": "Previewing/ Inspecting Vehicles",
+        "id": "rvw-002250"
+      },
+      {
         "source_website": "google.com",
         "source_label": "Google Business Profile (Manheim North Carolina)",
         "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25FM2NsaEpWMFUzVFRodllXNWplSEZWUTJzMWMyYxAB!2m1!1s0x0:0xab7aa52c44aa38cd!3m1!1s2@1:CAIQACodChtycF9oOnE3clhJV0U3TThvYW5jeHFVQ2s1c2c%7C%7C?hl=en",
@@ -291042,6 +295073,21 @@ window.REVIEW_DATASETS = {
         "tier1": "Title, Ownership, POA and Documentation",
         "tier2": "Title Delivery & Status",
         "tier3": "Title Not Received"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews#review-10",
+        "author": "KAP F",
+        "review_date": "2025-07-09",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "We had a truck stolen ON there property while they had possession of our truck , had keys to our truck , had title to our truck . We called police and made a report , the cameras show this truck being stolen from there facility . And now they do not want to pay me the $19k plus for the truck * [Page 1](https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=1) * [Page 2](https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=2) * ... * [Page 4](https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=4) [Next](https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=2)[Last](https://www.bbb.org/us/ga/atlanta/profile/auctioneer/manheim-auctions-0443-6001743/customer-reviews?page=4) ## BBB Accreditation: None To become accredited, a business must agree to[BBB Standards for Trust](https://www.bbb.org/all/standards-for-trust)and pass BBB's vetting process. [Why choose a BBB Accredited Business?](https://www.bbb.org/all/why-choose-a-bbb-accredited-business) BBB Business Profiles are provided solely to assist you in exercising your own best judgment. BBB does not verify the accuracy of information provided by third parties, and does not guarantee the accuracy of any information in Business Profiles. As a matter of policy, BBB does not endorse any product, service, or business. Businesses are under no obligation to seek BBB accreditation, and some businesses are not accredited because they have not sought BBB accreditation. When considering complaint information, please consider the company's size and volume of transactions. Note that the nature of complaints and a company’s responses to them are often more important than the number of complaints. BBB Business Profiles generally cover a three-year reporting period. [![Image 17: BBB](https://m.bbb.org/brand/logos/BBB_PrimaryLogo_White_RGB.svg)](https://www.bbb.org/)TM ## For Consumers * [Get a Quote](https://www.bbb.org/get-a-quote) * [Start a Review](https://www.bbb.org/leave-a-review) * [File a Complaint](https://www.bbb.org/file-a-complaint) ## For Businesses * [Get Your Business Listed](https://www.bbb.org/get-listed) * [BBB Accreditation](https://www.bbb.org/get-accredited) * [Apply for BBB Accreditation](https://www.bbb.org/apply) * [Newsroom and Resources](https://www.bbb.org/us/news) ## Affiliated Programs * [BBB Institute for Marketplace Trust](https://www.bbbmarketplacetrust.org/) * [BBB Wise Giving Alliance (Give.org)](https://give.org/) * [BBB National Programs](https://bbbprograms.org/) * [our Twitter (opens in a new tab)](https://x.com/bbb_us) * [our LinkedIn (opens in a new tab)](https://www.linkedin.com/company/better-business-bureau/) * [our Facebook (opens in a new tab)](https://www.facebook.com/BetterBusinessBureau) * [our Instagram (opens in a new tab)](https://www.instagram.com/betterbusinessbureau_/) * [About BBB®](https://www.bbb.org/about) * [Terms of Use](https://www.bbb.org/terms-of-use) * [Privacy Policy](https://www.bbb.org/all/privacy-policy) * [Contact Us](https://www.bbb.org/about/find-your-local-bbb) © 2026 International Association of Better Business Bureaus, Inc. (IABBB). All rights reserved. All trademarks are property of IABBB.",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-002251"
       },
       {
         "source_website": "google.com",
@@ -303194,6 +307240,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-002196"
       },
       {
+        "source_website": "bbb.org",
+        "source_label": "BBB Complaints",
+        "source_url": "https://www.bbb.org/us/mi/carleton/profile/auto-auction/manheims-detroit-auto-auction-0422-6001794/complaints#0422_6001794_21357955",
+        "author": "BBB complainant",
+        "review_date": "2024-02-28",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Customer Service Issues complaint (Unanswered). On 12-26-23 my Ally leased vehicle was turned in to Feldman Livonia in perfect condition (re: no broken windshield and no dents or scratches. At some point in time the vehicle was turned over to Manheim. On 2-13-24 I received an inspection report from Ally. What was done to my vehicle was criminal. 9 various scratches, a broken windshield extensive damage charges to the tune of $1000. Between Feldman Livonia and Manhein Detroit nobody is owning up to the damages that were caused to my vehicle while in their possession and I am being told it is my problem with the leasing company. As well as my vehicle had 287 additional miles on it from the date I turned it in. Its obvious someone had the vehicle and abused it and now the leasing company is charging me for the damage. Whoever is responsible for this should be fired from their job. ## BBB Accreditation: None To become accredited, a business must agree to[BBB Standards for Trust](https://www.bbb.org/all/standards-for-trust)and pass BBB's vetting process. [Why choose a BBB Accredited Business?](https://www.bbb.org/all/why-choose-a-bbb-accredited-business) BBB Business Profiles are provided solely to assist you in exercising your own best judgment. BBB does not verify the accuracy of information provided by third parties, and does not guarantee the accuracy of any information in Business Profiles. As a matter of policy, BBB does not endorse any product, service, or business. Businesses are under no obligation to seek BBB accreditation, and some businesses are not accredited because they have not sought BBB accreditation. When considering complaint information, please consider the company's size and volume of transactions. Note that the nature of complaints and a company’s responses to them are often more important than the number of complaints. BBB Business Profiles generally cover a three-year reporting period. [![Image 9: BBB](https://m.bbb.org/brand/logos/BBB_PrimaryLogo_White_RGB.svg)](https://www.bbb.org/)TM ## For Consumers * [Get a Quote](https://www.bbb.org/get-a-quote) * [Start a Review](https://www.bbb.org/leave-a-review) * [File a Complaint](https://www.bbb.org/file-a-complaint) ## For Businesses * [Get Your Business Listed](https://www.bbb.org/get-listed) * [BBB Accreditation](https://www.bbb.org/get-accredited) * [Apply for BBB Accreditation](https://www.bbb.org/apply) * [Newsroom and Resources](https://www.bbb.org/us/news) ## Affiliated Programs * [BBB Institute for Marketplace Trust](https://www.bbbmarketplacetrust.org/) * [BBB Wise Giving Alliance (Give.org)](https://give.org/) * [BBB National Programs](https://bbbprograms.org/) * [our Twitter (opens in a new tab)](https://x.com/bbb_us) * [our LinkedIn (opens in a new tab)](https://www.linkedin.com/company/better-business-bureau/) * [our Facebook (opens in a new tab)](https://www.facebook.com/BetterBusinessBureau) * [our Instagram (opens in a new tab)](https://www.instagram.com/betterbusinessbureau_/) * [About BBB®](https://www.bbb.org/about) * [Terms of Use](https://www.bbb.org/terms-of-use) * [Privacy Policy](https://www.bbb.org/all/privacy-policy) * [Contact Us](https://www.bbb.org/about/find-your-local-bbb) © 2026 International Association of Better Business Bureaus, Inc. (IABBB). All rights reserved. All trademarks are property of IABBB.",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-002252"
+      },
+      {
         "id": "rvw-000211",
         "source_website": "apps.apple.com",
         "source_label": "Apple App Store (1480842917, us)",
@@ -312123,12 +316184,12 @@ window.REVIEW_DATASETS = {
   "adesa": {
     "meta": {
       "description": "Large-scale English-only ADESA textual review/problem dataset from public web sources (recency-first).",
-      "review_count": 903,
+      "review_count": 915,
       "source_counts": {
+        "birdeye.com": 111,
+        "apps.apple.com": 126,
         "google.com": 601,
-        "birdeye.com": 103,
-        "apps.apple.com": 124,
-        "bbb.org": 9,
+        "bbb.org": 11,
         "reddit.com": 26,
         "trustpilot.com": 18,
         "play.google.com": 22
@@ -312143,7 +316204,7 @@ window.REVIEW_DATASETS = {
           "blocked": false,
           "fallback_used": false,
           "candidate_reviews_seen": 0,
-          "new_reviews_added": 1,
+          "new_reviews_added": 0,
           "advertised_total": null,
           "latest_candidate_date": null,
           "notes": [
@@ -312152,10 +316213,10 @@ window.REVIEW_DATASETS = {
           ],
           "errors": [],
           "review_count": 26,
-          "existing_review_count": 25,
+          "existing_review_count": 26,
           "present": true,
           "latest_review_date": "2026-08-14",
-          "existing_latest_date": "2026-04-05",
+          "existing_latest_date": "2026-08-14",
           "status": "ok"
         },
         {
@@ -312188,18 +316249,18 @@ window.REVIEW_DATASETS = {
           "blocked": false,
           "fallback_used": false,
           "candidate_reviews_seen": 206,
-          "new_reviews_added": 5,
+          "new_reviews_added": 2,
           "advertised_total": null,
-          "latest_candidate_date": "2026-09-16",
+          "latest_candidate_date": "2026-09-30",
           "notes": [
             "Apple RSS can be sparse for some app IDs; HTML supplement captures visible App Store review cards only."
           ],
           "errors": [],
-          "review_count": 124,
-          "existing_review_count": 119,
+          "review_count": 126,
+          "existing_review_count": 124,
           "present": true,
-          "latest_review_date": "2026-09-16",
-          "existing_latest_date": "2026-07-31",
+          "latest_review_date": "2026-09-30",
+          "existing_latest_date": "2026-09-16",
           "status": "ok"
         },
         {
@@ -312220,28 +316281,25 @@ window.REVIEW_DATASETS = {
           "notes": [
             "direct BBB customer reviews blocked for https://www.bbb.org/us/ca/sacramento/profile/auto-auction/adesa-sacramento-1156-33008688",
             "direct BBB customer reviews blocked for https://www.bbb.org/us/ca/san-diego/profile/auto-auction/adesa-san-diego-1126-23000806",
-            "reader challenge for https://www.bbb.org/us/ca/san-diego/profile/auto-auction/adesa-san-diego-1126-23000806/customer-reviews",
             "direct BBB customer reviews blocked for https://www.bbb.org/us/fl/tampa/profile/auto-auction/adesa-tampa-0653-24838",
             "direct BBB customer reviews blocked for https://www.bbb.org/us/mn/maple-grove/profile/auto-auction/adesa-minnesota-llc-0704-96174765",
             "direct BBB customer reviews blocked for https://www.bbb.org/us/nv/north-las-vegas/profile/auto-auction/adesa-las-vegas-1086-90040145",
             "direct BBB customer reviews blocked for https://www.bbb.org/us/tn/memphis/profile/auto-auction/adesa-auctions-memphis-0543-44000064",
             "direct BBB complaints blocked for https://www.bbb.org/us/ca/sacramento/profile/auto-auction/adesa-sacramento-1156-33008688",
-            "reader challenge for https://www.bbb.org/us/ca/sacramento/profile/auto-auction/adesa-sacramento-1156-33008688/complaints",
             "direct BBB complaints blocked for https://www.bbb.org/us/ca/san-diego/profile/auto-auction/adesa-san-diego-1126-23000806",
             "direct BBB complaints blocked for https://www.bbb.org/us/fl/tampa/profile/auto-auction/adesa-tampa-0653-24838",
             "direct BBB complaints blocked for https://www.bbb.org/us/mn/maple-grove/profile/auto-auction/adesa-minnesota-llc-0704-96174765",
-            "reader challenge for https://www.bbb.org/us/mn/maple-grove/profile/auto-auction/adesa-minnesota-llc-0704-96174765/complaints",
             "direct BBB complaints blocked for https://www.bbb.org/us/nv/north-las-vegas/profile/auto-auction/adesa-las-vegas-1086-90040145",
             "direct BBB complaints blocked for https://www.bbb.org/us/tn/memphis/profile/auto-auction/adesa-auctions-memphis-0543-44000064"
           ],
           "errors": [
             "reader error for https://www.bbb.org/us/ca/sacramento/profile/auto-auction/adesa-sacramento-1156-33008688/customer-reviews: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=60)"
           ],
-          "review_count": 9,
-          "existing_review_count": 7,
+          "review_count": 11,
+          "existing_review_count": 9,
           "present": true,
           "latest_review_date": "2026-09-15",
-          "existing_latest_date": "2026-03-02",
+          "existing_latest_date": "2026-09-15",
           "status": "ok"
         },
         {
@@ -312327,74 +316385,78 @@ window.REVIEW_DATASETS = {
           },
           "blocked": false,
           "fallback_used": false,
-          "candidate_reviews_seen": 59,
+          "candidate_reviews_seen": 57,
           "new_reviews_added": 8,
-          "advertised_total": 654,
-          "latest_candidate_date": "2026-09-30",
+          "advertised_total": 663,
+          "latest_candidate_date": "2026-10-19",
           "notes": [
             "Birdeye advertised totals may include syndicated Google/Birdeye network reviews; accepted rows are visible textual review cards that pass filters.",
-            "Advertised total 654 is much larger than accepted rows 103; source is likely partially covered after filters/pagination."
+            "Advertised total 663 is much larger than accepted rows 111; source is likely partially covered after filters/pagination."
           ],
           "errors": [],
-          "review_count": 103,
-          "existing_review_count": 95,
+          "review_count": 111,
+          "existing_review_count": 103,
           "present": true,
-          "latest_review_date": "2026-09-23",
-          "existing_latest_date": "2026-08-28",
+          "latest_review_date": "2026-10-03",
+          "existing_latest_date": "2026-09-23",
           "status": "partial"
         },
         {
           "source_website": "google.com",
           "attempted": true,
-          "direct_pages": 311,
+          "direct_pages": 126,
           "fallback_pages": 0,
           "direct_statuses": {
-            "200": 311
+            "200": 126
           },
           "blocked": false,
           "fallback_used": false,
-          "candidate_reviews_seen": 913,
-          "new_reviews_added": 10,
+          "candidate_reviews_seen": 0,
+          "new_reviews_added": 0,
           "advertised_total": null,
-          "latest_candidate_date": "2026-10-06",
+          "latest_candidate_date": null,
           "notes": [
-            "Google Business Profile discovery completed: 53/53 queries succeeded and 61 unique validated US profiles were selected.",
-            "Validated 56 US Google Business Profiles; 5 failed and 0 were skipped after the circuit breaker. Successful profiles were paginated newest-first through per-profile incremental overlap boundaries."
+            "Google Business Profile discovery completed: 53/53 queries succeeded and 62 unique validated US profiles were selected.",
+            "Validated 1 US Google Business Profiles; 6 failed and 55 were skipped after the circuit breaker. Successful profiles were paginated newest-first through per-profile incremental overlap boundaries."
           ],
           "errors": [
+            "Adesa [0x89e8459c988e2b7f:0x7a149b2d115bd9b1]: newest review RPC did not load",
             "ADESA Atlanta [0x88f4e6f6bcae32c3:0x8ca5797c8ce4da57]: newest review RPC did not load",
             "ADESA Austin [0x8644c9a7d5710d89:0xc700487a78e37d52]: newest review RPC did not load",
-            "ADESA Cincinnati/Dayton [0x8840603757c062c5:0x35280de626a14dbf]: pagination stopped before the 2026-08-17 boundary/terminal page (10 RPC reviews; advertised=368)",
-            "Adesa Galena [0x80dcb45637c01251:0x1c6495832abb00c9]: pagination stopped before the 2026-08-17 boundary/terminal page (10 RPC reviews; advertised=35)",
-            "ADESA Pittsburgh [0x8834d923083ce5ed:0x50aee71ecf3394d9]: pagination stopped before the 2026-08-17 boundary/terminal page (10 RPC reviews; advertised=198)"
+            "Adesa auto auction [0x864ebfe78f765fc1:0xaa6eaa18c8f6c8b7]: newest review RPC did not load",
+            "ADESA Birmingham [0x0:0xf16f6e5c92888c0f]: newest review RPC did not load",
+            "ADESA Boise [0x54aef62d121ae4d1:0x2b11e609fd0594ed]: newest review RPC did not load"
           ],
           "profile_retention_used": true,
-          "profiles_completed": 56,
-          "profiles_failed": 5,
-          "profiles_skipped_after_circuit_breaker": 0,
+          "profiles_completed": 1,
+          "profiles_failed": 6,
+          "profiles_skipped_after_circuit_breaker": 55,
           "last_successful_refresh_until": "2026-08-31",
           "review_count": 601,
-          "existing_review_count": 591,
+          "existing_review_count": 601,
           "present": true,
           "latest_review_date": "2026-09-29",
-          "existing_latest_date": "2026-08-28",
+          "existing_latest_date": "2026-09-29",
           "status": "partial_profile_retention"
         }
       ],
       "sentiments": {
-        "positive": 386,
-        "negative": 517
+        "positive": 392,
+        "negative": 523
       },
       "source_urls": [
+        "https://reviews.birdeye.com/adesa-phoenix-166641883198682#review-1",
+        "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=14613341046",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25scGVqQk5NMDlSTkRWemFIUnVjVzQxV0hsbVVFRRAB!2m1!1s0x0:0x29cf546c41c2f6ff!3m1!1s2@1:CAIQACodChtycF9oOnlpejBNM09RNDVzaHRucW41WHlmUEE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xkSVYyMUhUVkpaYlRSdmJYa3hWMUpDVTFKWU1HYxAB!2m1!1s0x0:0x2b5dc383485f1e3b!3m1!1s2@1:CAIQACodChtycF9oOldIV21HTVJZbTRvbXkxV1JCU1JYMGc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2taRlJYaGtTMmhyZGxKa1NIUnhVRk5YU21kcGExRRAB!2m1!1s0x0:0x4f1eae3fc675601b!3m1!1s2@1:CAIQACodChtycF9oOkZFRXhkS2hrdlJkSHRxUFNXSmdpa1E%7C%7C?hl=en",
-        "https://reviews.birdeye.com/adesa-phoenix-166641883198682#review-1",
         "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=14555818858",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1S1IySkZXbGhTTkdoYUxVbHFkMGhGWDNKUGRtYxAB!2m1!1s0x0:0xd66dd4b29022f5b8!3m1!1s2@1:CAIQACodChtycF9oOk5KR2JFWlhSNGhaLUlqd0hFX3JPdmc%7C%7C?hl=en",
         "http://www.bbb.org/us/ca/san-diego/profile/auto-auction/adesa-san-diego-1126-23000806/complaints#1126_23000806_25278218",
+        "https://www.bbb.org/us/ca/san-diego/profile/auto-auction/adesa-san-diego-1126-23000806/complaints#1126_23000806_25278218",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pOQ00xcExRME00YW1SV1JUSkxjVmhaVDFkTWNHYxAB!2m1!1s0x0:0x5e1b863ca8625930!3m1!1s2@1:CAIQACodChtycF9oOjNCM1pLQ0M4amRWRTJLcVhZT1dMcGc%7C%7C?hl=en",
         "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=14541403169",
+        "https://apps.apple.com/us/app/id1660253652?see-all=reviews&platform=iphone&reviewId=14541403169",
         "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=14531105826",
         "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=14530980560",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25ScGEyOVlYekpzVTJOWGFYZ3RVRFpqYjJ4YVNIYxAB!2m1!1s0x0:0x1314b726513d9a91!3m1!1s2@1:CAIQACodChtycF9oOnRpa29YXzJsU2NXaXgtUDZjb2xaSHc%7C%7C?hl=en",
@@ -312629,6 +316691,7 @@ window.REVIEW_DATASETS = {
         "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=13357070511",
         "https://apps.apple.com/us/app/id1660253652?see-all=reviews&platform=iphone&reviewId=13357070511",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25WcFJGcEpjWFE1WVZvM1oyNWlRbWswYWtSQ1YyYxAB!2m1!1s0x0:0xd01acd06305ff6fb!3m1!1s2@1:CAIQACodChtycF9oOnVpRFpJcXQ5YVo3Z25iQmk0akRCV2c%7C%7C?hl=en",
+        "https://reviews.birdeye.com/adesa-seattle-166635448334315#review-5",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tsWmQyWlllVTVEWDBZdGJYSnBiakU0ZW1JMmMyYxAB!2m1!1s0x0:0xbe432126bb6ab401!3m1!1s2@1:CAIQACodChtycF9oOklZd2ZYeU5DX0YtbXJpbjE4emI2c2c%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21nM2NGb3lVVVJLZEdwcGJrTkxZek5qVHpGUFRtYxAB!2m1!1s0x0:0x2b5dc383485f1e3b!3m1!1s2@1:CAIQACodChtycF9oOmg3cFoyUURKdGppbkNLYzNjTzFPTmc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tjMU0wOHRkbkIyVWtzM1owZDZSMm8wUVdkaGNrRRAB!2m1!1s0x0:0x50aee71ecf3394d9!3m1!1s2@1:CAIQACodChtycF9oOkc1M08tdnB2Uks3Z0d6R2o0QWdhckE%7C%7C?hl=en",
@@ -312650,7 +316713,6 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25wYU5FNTVMVWh3T0ZwNGFXRk5jVmxUUlhBNVZIYxAB!2m1!1s0x0:0x75945523880f8c83!3m1!1s2@1:CAIQACodChtycF9oOnpaNE55LUhwOFp4aWFNcVlTRXA5VHc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pWVGJHZzVZelF3V205SGVsVlZOeTFsZUd4WWFuYxAB!2m1!1s0x0:0x75945523880f8c83!3m1!1s2@1:CAIQACodChtycF9oOjVTbGg5YzQwWm9HelVVNy1leGxYanc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xkaGVIZHdURlZEYVhFMk5FbzJRa3B3ZDNGVFUxRRAB!2m1!1s0x0:0xc0ff65b103a17103!3m1!1s2@1:CAIQACodChtycF9oOldheHdwTFVDaXE2NEo2Qkpwd3FTU1E%7C%7C?hl=en",
-        "https://reviews.birdeye.com/adesa-seattle-166635448334315#review-5",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT214eGFWQjBhRGhrZVVJeVpWWllSa1JXWXpCeWIwRRAB!2m1!1s0x0:0x1314b726513d9a91!3m1!1s2@1:CAIQACodChtycF9oOmxxaVB0aDhkeUIyZVZYRkRWYzByb0E%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2twSFlreFNPR0ZIU1VSWU9ETm1Ta3RZU0c1MFFrRRAB!2m1!1s0x0:0x2b5dc383485f1e3b!3m1!1s2@1:CAIQACodChtycF9oOkpHYkxSOGFHSURYODNmSktYSG50QkE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT210MmFtVnJTemRXY1VKWVIyaDZOMDV3V1UxcWQzYxAB!2m1!1s0x0:0xadbe9fd728415dfa!3m1!1s2@1:CAIQACodChtycF9oOmt2amVrSzdWcUJYR2h6N05wWU1qd3c%7C%7C?hl=en",
@@ -312682,17 +316744,14 @@ window.REVIEW_DATASETS = {
         "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=13068386930",
         "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=13067904668",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21GcFVGTTVUV2x3V0RSQlZYbE1NVlJGVUVka1RsRRAB!2m1!1s0x0:0x8ca5797c8ce4da57!3m1!1s2@1:CAIQACodChtycF9oOmFpUFM5TWlwWDRBVXlMMVRFUEdkTlE%7C%7C?hl=en",
-        "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=13062497001",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25GU01WTklhRmRWYmxkcFgwUnRZMkpyZFZoc1ltYxAB!2m1!1s0x0:0x65b0cf8a3592e7e!3m1!1s2@1:CAIQACodChtycF9oOnFSMVNIaFdVbldpX0RtY2JrdVhsYmc%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wUU5tNVdZM2Q1Y3kweGFrSmlhbk55YWpJNWMzYxAB!2m1!1s0x0:0x347271a59a45105!3m1!1s2@1:CAIQACodChtycF9oOmpQNm5WY3d5cy0xakJianNyajI5c3c%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25ZdGNrcGFlR3Q1YjBsZlVGcFhTVEpoZVZwclNHYxAB!2m1!1s0x0:0xd23aeb9d1365f256!3m1!1s2@1:CAIQACodChtycF9oOnYtckpaeGt5b0lfUFpXSTJheVprSGc%7C%7C?hl=en"
+        "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=13062497001"
       ],
-      "generated_at_utc": "2026-10-07T02:12:22.184654+00:00",
+      "generated_at_utc": "2026-11-02T20:38:53.338512+00:00",
       "since_date": "2023-01-01",
-      "until_date": "2026-09-30",
+      "until_date": "2026-10-31",
       "collector_failures": [],
-      "existing_review_count": 877,
-      "new_reviews_added": 26,
+      "existing_review_count": 903,
+      "new_reviews_added": 12,
       "youtube_excluded": true,
       "usa_only": true,
       "english_only": true,
@@ -312713,11 +316772,9 @@ window.REVIEW_DATASETS = {
         "bbb.org"
       ],
       "geo_validation_counts": {
-        "google_business_us_profile": 10,
-        "mixed_source_ok": 1,
         "bbb_us_business": 2,
         "birdeye_us_profile": 8,
-        "apple_us_store": 5
+        "apple_us_store": 2
       },
       "geo_excluded_counts": {
         "apps.apple.com:apple_non_us_store": 17
@@ -312894,7 +316951,7 @@ window.REVIEW_DATASETS = {
           "website": "https://www.adesa.com/",
           "rating": null,
           "review_count": null,
-          "last_successful_scan_date": "2026-09-30"
+          "last_successful_scan_date": "2026-10-31"
         },
         {
           "feature_id": "0x88f4e6f6bcae32c3:0x8ca5797c8ce4da57",
@@ -312904,7 +316961,7 @@ window.REVIEW_DATASETS = {
           "address": "5055 Oakley Industrial Blvd, Fairburn, GA 30213",
           "website": "https://www.adesa.com/auction_location/adesa-atlanta/",
           "rating": 3.8,
-          "review_count": 495,
+          "review_count": 492,
           "last_successful_scan_date": "2026-08-31"
         },
         {
@@ -312948,7 +317005,7 @@ window.REVIEW_DATASETS = {
           "address": "7355 S Eisenman Rd, Boise, ID 83716",
           "website": "https://www.adesa.com/auction_location/adesa-boise/",
           "rating": 4.2,
-          "review_count": 116,
+          "review_count": 117,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -312958,8 +317015,8 @@ window.REVIEW_DATASETS = {
           "name": "ADESA Boston",
           "address": "63 Western Ave, Framingham, MA 01702",
           "website": "https://www.adesa.com/auction_location/adesa-boston/",
-          "rating": 3.9,
-          "review_count": 558,
+          "rating": 4,
+          "review_count": 557,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -312970,7 +317027,7 @@ window.REVIEW_DATASETS = {
           "address": "6233 Blacktop Rd, Rio Linda, CA 95673",
           "website": "https://www.adesa.com/auction_location/adesa-brashers/",
           "rating": 3.8,
-          "review_count": 131,
+          "review_count": 133,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -312980,8 +317037,8 @@ window.REVIEW_DATASETS = {
           "name": "ADESA Buffalo",
           "address": "12200 Main St, Akron, NY 14001",
           "website": "https://www.adesa.com/auction_location/adesa-buffalo/",
-          "rating": 3.8,
-          "review_count": 213,
+          "rating": 3.9,
+          "review_count": 212,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -312992,7 +317049,7 @@ window.REVIEW_DATASETS = {
           "address": "11600 Fruehauf Dr, Charlotte, NC 28273",
           "website": "https://www.adesa.com/auction_location/adesa-charlotte/",
           "rating": 3.8,
-          "review_count": 366,
+          "review_count": 370,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -313014,7 +317071,7 @@ window.REVIEW_DATASETS = {
           "address": "4400 William C Good Blvd, Franklin, OH 45005",
           "website": "http://www.adesa.com/CincinnatiDayton",
           "rating": 4.1,
-          "review_count": 368,
+          "review_count": 366,
           "last_successful_scan_date": "2026-08-31"
         },
         {
@@ -313025,7 +317082,7 @@ window.REVIEW_DATASETS = {
           "address": "210 E Twinsburg Rd, Northfield, OH 44067",
           "website": "https://www.adesa.com/auction_location/adesa-cleveland/",
           "rating": 4,
-          "review_count": 181,
+          "review_count": 179,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -313058,7 +317115,7 @@ window.REVIEW_DATASETS = {
           "address": "500 E 96th St Ste 200A Bldg 4, Indianapolis, IN 46240",
           "website": "http://www.adesa.com/",
           "rating": 2.6,
-          "review_count": 30,
+          "review_count": 28,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -313069,7 +317126,7 @@ window.REVIEW_DATASETS = {
           "address": "3501 Lancaster Hutchins Rd, Hutchins, TX 75141",
           "website": "https://www.adesa.com/auction_location/adesa-dallas/",
           "rating": 4,
-          "review_count": 702,
+          "review_count": 700,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -313079,7 +317136,7 @@ window.REVIEW_DATASETS = {
           "name": "ADESA Des Moines",
           "address": "1800 SE Gateway Dr, Grimes, IA 50111",
           "website": "https://www.adesa.com/auction_location/adesa-des-moines/",
-          "rating": 3.9,
+          "rating": 4,
           "review_count": 126,
           "last_successful_scan_date": "2026-09-30"
         },
@@ -313095,6 +317152,16 @@ window.REVIEW_DATASETS = {
           "last_successful_scan_date": "2026-09-30"
         },
         {
+          "feature_id": "0x52c8cb3bb6983bd3:0x5ea9464799d3d0dd",
+          "cid": "6821060383966744797",
+          "place_id": "ChIJ0zuYtjvLyFIR3dDTmUdGqV4",
+          "name": "ADESA Fargo",
+          "address": "1650 Main Ave E, West Fargo, ND 58078",
+          "website": "https://www.adesa.com/auction_location/adesa-fargo/",
+          "rating": 4.3,
+          "review_count": 57
+        },
+        {
           "feature_id": "0x88238112af586403:0xc67e3588b4be2a48",
           "cid": "14302928327839459912",
           "place_id": "ChIJA2RYrxKBI4gRSCq-tIg1fsY",
@@ -313102,7 +317169,7 @@ window.REVIEW_DATASETS = {
           "address": "3711 Western Rd, Flint, MI 48506",
           "website": "https://www.adesa.com/auction_location/adesa-flint/",
           "rating": 3.8,
-          "review_count": 289,
+          "review_count": 287,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -313124,7 +317191,7 @@ window.REVIEW_DATASETS = {
           "address": "18501 Stanford Rd, Tracy, CA 95377",
           "website": "https://www.adesa.com/auction_location/adesa-golden-gate/",
           "rating": 3.9,
-          "review_count": 371,
+          "review_count": 374,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -313135,7 +317202,7 @@ window.REVIEW_DATASETS = {
           "address": "4526 North Sam Houston Pkwy W, Houston, TX 77086",
           "website": "https://www.adesa.com/auction_location/adesa-houston/",
           "rating": 4,
-          "review_count": 399,
+          "review_count": 401,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -313146,7 +317213,7 @@ window.REVIEW_DATASETS = {
           "address": "2950 E Main St, Plainfield, IN 46168",
           "website": "https://www.adesa.com/",
           "rating": 4.1,
-          "review_count": 275,
+          "review_count": 277,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -313168,7 +317235,7 @@ window.REVIEW_DATASETS = {
           "address": "15511 E 155th St, Belton, MO 64012",
           "website": "http://adesa.com/",
           "rating": 3.9,
-          "review_count": 375,
+          "review_count": 369,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -313201,7 +317268,7 @@ window.REVIEW_DATASETS = {
           "address": "1000 E Gowan Rd, North Las Vegas, NV 89030",
           "website": "https://www.adesa.com/auction_location/adesa-las-vegas/",
           "rating": 4.1,
-          "review_count": 233,
+          "review_count": 232,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -313234,7 +317301,7 @@ window.REVIEW_DATASETS = {
           "address": "425 Patchogue-Yaphank Rd, Yaphank, NY 11980",
           "website": "https://www.adesa.com/auction_location/adesa-long-island/",
           "rating": 3.8,
-          "review_count": 295,
+          "review_count": 294,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -313244,8 +317311,8 @@ window.REVIEW_DATASETS = {
           "name": "ADESA Los Angeles",
           "address": "11625 Nino Way, Mira Loma, CA 91752",
           "website": "https://www.adesa.com/auction_location/adesa-los-angeles/",
-          "rating": 3.6,
-          "review_count": 622,
+          "rating": 3.7,
+          "review_count": 627,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -313256,7 +317323,7 @@ window.REVIEW_DATASETS = {
           "address": "5400 Getwell Rd, Memphis, TN 38118",
           "website": "https://www.adesa.com/auction_location/adesa-memphis/",
           "rating": 4.3,
-          "review_count": 186,
+          "review_count": 184,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -313289,7 +317356,7 @@ window.REVIEW_DATASETS = {
           "address": "200 N Main St, Manville, NJ 08835",
           "website": "https://www.adesa.com/auction_location/adesa-new-jersey/",
           "rating": 3.4,
-          "review_count": 513,
+          "review_count": 512,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -313300,7 +317367,7 @@ window.REVIEW_DATASETS = {
           "address": "90485 Auction Way, Eugene, OR 97402",
           "website": "https://www.adesa.com/auction_location/adesa-northwest/",
           "rating": 4.4,
-          "review_count": 190,
+          "review_count": 189,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -313311,7 +317378,7 @@ window.REVIEW_DATASETS = {
           "address": "540 SW 38th Ave, Ocala, FL 34474",
           "website": "https://www.adesa.com/auction_location/adesa-ocala/",
           "rating": 4.4,
-          "review_count": 120,
+          "review_count": 122,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -313332,8 +317399,8 @@ window.REVIEW_DATASETS = {
           "name": "ADESA Pennsylvania",
           "address": "30 Industrial Rd, York, PA 17406",
           "website": "https://www.adesa.com/auction_location/adesa-pa/",
-          "rating": 4,
-          "review_count": 190,
+          "rating": 4.1,
+          "review_count": 189,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -313344,7 +317411,7 @@ window.REVIEW_DATASETS = {
           "address": "400 N Beck Ave, Chandler, AZ 85226",
           "website": "https://www.adesa.com/auction_location/adesa-phoenix/",
           "rating": 4,
-          "review_count": 459,
+          "review_count": 452,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -313366,7 +317433,7 @@ window.REVIEW_DATASETS = {
           "address": "30 Sadisco Rd, Clayton, NC 27520",
           "website": "https://www.adesa.com/auction_location/adesa-raleigh/",
           "rating": 4.1,
-          "review_count": 152,
+          "review_count": 153,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -313377,7 +317444,7 @@ window.REVIEW_DATASETS = {
           "address": "6000 Echo Ave, Reno, NV 89506",
           "website": "https://www.adesa.com/auction_location/adesa-reno/",
           "rating": 4.1,
-          "review_count": 73,
+          "review_count": 74,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -313410,7 +317477,7 @@ window.REVIEW_DATASETS = {
           "address": "200 S Callaghan Rd, San Antonio, TX 78227",
           "website": "https://www.adesa.com/auction_location/adesa-san-antonio/",
           "rating": 3.9,
-          "review_count": 244,
+          "review_count": 243,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -313421,7 +317488,7 @@ window.REVIEW_DATASETS = {
           "address": "2175 Cactus Rd, San Diego, CA 92154",
           "website": "https://www.adesa.com/auction_location/adesa-san-diego/",
           "rating": 3.9,
-          "review_count": 225,
+          "review_count": 227,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -313432,7 +317499,7 @@ window.REVIEW_DATASETS = {
           "address": "6005 24th St E, Bradenton, FL 34203",
           "website": "https://www.adesa.com/auction_location/adesa-sarasota/",
           "rating": 4.1,
-          "review_count": 281,
+          "review_count": 284,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -313443,7 +317510,7 @@ window.REVIEW_DATASETS = {
           "address": "621 37th St NW, Auburn, WA 98001",
           "website": "https://www.adesa.com/auction_location/adesa-seattle/",
           "rating": 4.2,
-          "review_count": 252,
+          "review_count": 253,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -313454,7 +317521,7 @@ window.REVIEW_DATASETS = {
           "address": "7666 Greenwood Rd, Shreveport, LA 71119",
           "website": "https://www.adesa.com/auction_location/adesa-shreveport/",
           "rating": 3.9,
-          "review_count": 105,
+          "review_count": 104,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -313498,7 +317565,7 @@ window.REVIEW_DATASETS = {
           "address": "5930 NY-31, Cicero, NY 13039",
           "website": "https://www.adesa.com/auction_location/adesa-syracuse/",
           "rating": 4.2,
-          "review_count": 174,
+          "review_count": 176,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -313520,7 +317587,7 @@ window.REVIEW_DATASETS = {
           "address": "16015 E Admiral Pl, Tulsa, OK 74116",
           "website": "https://www.adesa.com/auction_location/adesa-tulsa/",
           "rating": 4.3,
-          "review_count": 198,
+          "review_count": 199,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -313531,7 +317598,7 @@ window.REVIEW_DATASETS = {
           "address": "43375 Old Ox Rd, Sterling, VA 20166",
           "website": "http://adesawashingtondc.com/",
           "rating": 3.7,
-          "review_count": 356,
+          "review_count": 357,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -313542,12 +317609,42 @@ window.REVIEW_DATASETS = {
           "address": "23585 NE Sandy Blvd, Wood Village, OR 97060",
           "website": "https://www.adesa.com/auction_location/adesa-portland/",
           "rating": 4.2,
-          "review_count": 143,
+          "review_count": 142,
           "last_successful_scan_date": "2026-09-30"
         }
       ]
     },
     "reviews": [
+      {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Google)",
+        "source_url": "https://reviews.birdeye.com/adesa-phoenix-166641883198682#review-1",
+        "author": "Tin Al",
+        "review_date": "2026-10-03",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "This location is epic. Not accounting friendly, do not wire for purchases, first they block you, then they use your $ for 2 weeks, and god bless you get your $ back, managment never calls you back. Auto Hunters.",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Payment Refunds, Transaction Issues and Deposits",
+        "tier2": "Wire Transfer Payments",
+        "tier3": "Wire Pending/Posting Delay",
+        "id": "rvw-000904"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1660253652, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=1660253652&type=Purple%20Software&reviewId=14613341046",
+        "author": "Idontknowstuff",
+        "review_date": "2026-09-30",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "No help for in lane buyers. So now we’re posting retail price??? 15 Honda Civic 1.3 CR missing bumper, hail damage, every single light on, all the paint faded. $11,500 retail 🤣 Seriously the buyers are the ones making you money not the sellers. This app is to help buyers and in no way does it do this.",
+        "geo_validation": "apple_us_store",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-000905"
+      },
       {
         "source_website": "google.com",
         "source_label": "Google Business Profile (ADESA Chicago)",
@@ -313654,6 +317751,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-000884"
       },
       {
+        "source_website": "bbb.org",
+        "source_label": "BBB Complaints",
+        "source_url": "https://www.bbb.org/us/ca/san-diego/profile/auto-auction/adesa-san-diego-1126-23000806/complaints#1126_23000806_25278218",
+        "author": "BBB complainant",
+        "review_date": "2026-09-15",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Service or Repair Issues complaint (Resolved). i bought a car from ADESA San Diego and from the pictures in the listing the gear shifter is clearly in the picture and on the car and when the dealer transport picked up the car it was missing someone stole it took it reused it i do not know i have contacted the business and they tell me pretty much i am out of the money. ADESA has a 10 day policy about filing it with them and i filed it on the 10 day after someone within ADESA San Diego told me it was within the period to file. There is fraud or something not right about this how they can sale cars to dealers and steal parts from it before it leaves there location i didn't buy a car with missing parts i bought one with all the parts according to there pictures and listing ## BBB Accreditation: None To become accredited, a business must agree to[BBB Standards for Trust](https://www.bbb.org/all/standards-for-trust)and pass BBB's vetting process. [Why choose a BBB Accredited Business?](https://www.bbb.org/all/why-choose-a-bbb-accredited-business) BBB Business Profiles are provided solely to assist you in exercising your own best judgment. BBB does not verify the accuracy of information provided by third parties, and does not guarantee the accuracy of any information in Business Profiles. As a matter of policy, BBB does not endorse any product, service, or business. Businesses are under no obligation to seek BBB accreditation, and some businesses are not accredited because they have not sought BBB accreditation. When considering complaint information, please consider the company's size and volume of transactions. Note that the nature of complaints and a company’s responses to them are often more important than the number of complaints. BBB Business Profiles generally cover a three-year reporting period. [![Image 9: BBB](https://m.bbb.org/brand/logos/BBB_PrimaryLogo_White_RGB.svg)](https://www.bbb.org/)TM ## For Consumers * [Get a Quote](https://www.bbb.org/get-a-quote) * [Start a Review](https://www.bbb.org/leave-a-review) * [File a Complaint](https://www.bbb.org/file-a-complaint) ## For Businesses * [Get Your Business Listed](https://www.bbb.org/get-listed) * [BBB Accreditation](https://www.bbb.org/get-accredited) * [Apply for BBB Accreditation](https://www.bbb.org/apply) * [Newsroom and Resources](https://www.bbb.org/us/news) ## Affiliated Programs * [BBB Institute for Marketplace Trust](https://www.bbbmarketplacetrust.org/) * [BBB Wise Giving Alliance (Give.org)](https://give.org/) * [BBB National Programs](https://bbbprograms.org/) * [our Twitter (opens in a new tab)](https://x.com/bbb_us) * [our LinkedIn (opens in a new tab)](https://www.linkedin.com/company/better-business-bureau/) * [our Facebook (opens in a new tab)](https://www.facebook.com/BetterBusinessBureau) * [our Instagram (opens in a new tab)](https://www.instagram.com/betterbusinessbureau_/) * [About BBB®](https://www.bbb.org/about) * [Terms of Use](https://www.bbb.org/terms-of-use) * [Privacy Policy](https://www.bbb.org/all/privacy-policy) * [Contact Us](https://www.bbb.org/about/find-your-local-bbb) © 2026 International Association of Better Business Bureaus, Inc. (IABBB). All rights reserved. All trademarks are property of IABBB.",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-000906"
+      },
+      {
         "source_website": "google.com",
         "source_label": "Google Business Profile (ADESA Phoenix)",
         "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pOQ00xcExRME00YW1SV1JUSkxjVmhaVDFkTWNHYxAB!2m1!1s0x0:0x5e1b863ca8625930!3m1!1s2@1:CAIQACodChtycF9oOjNCM1pLQ0M4amRWRTJLcVhZT1dMcGc%7C%7C?hl=en",
@@ -313682,6 +317794,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Tow and Storage Charges",
         "tier3": "Tow and Storage Fees",
         "id": "rvw-000886"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1660253652, us)",
+        "source_url": "https://apps.apple.com/us/app/id1660253652?see-all=reviews&platform=iphone&reviewId=14541403169",
+        "author": "neeszy",
+        "review_date": "2026-09-12",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "The worst interface. For being such a large corporation, this app, as well as their online website, has to be the worst interface. There is no way to view any if bids that are awaiting an answer. There is also no way to see any vehicles that we have run through the sale. If you don’t call in to ADESA, you’re left with nothing but questions. Any other auction platform has everything listed clearly and efficiently. You can see pending bids on your inventory as well as the purchases that are made. Step up ADESA. Meet the current needs of your customers. Stop pushing an app that is only geared toward ADESA Clear",
+        "geo_validation": "apple_us_store",
+        "tier1": "Vehicle Pickup, Delivery and Scheduling",
+        "tier2": "Tow and Storage Charges",
+        "tier3": "Tow and Storage Fees",
+        "id": "rvw-000907"
       },
       {
         "source_website": "apps.apple.com",
@@ -313772,6 +317899,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Scheduled Pickup Status",
         "tier3": "Pickup Hours and Cutoff",
         "id": "rvw-000892"
+      },
+      {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Google)",
+        "source_url": "https://reviews.birdeye.com/adesa-phoenix-166641883198682#review-2",
+        "author": "Mike Mccabe",
+        "review_date": "2026-09-03",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "out of all the auctions in the valley Adesa has always been my favorite one to goto. Great selection of cars and the people that make it function so well are the greatest and so friendly and helpful. I have a long history of over 25+ years using them as my goto auction which was my dad's favorite auto auction before me.. if you have you dealers liscense this is the place to go for great inventory cars",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Helpful Support Experience",
+        "id": "rvw-000908"
       },
       {
         "source_website": "google.com",
@@ -314222,6 +318364,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Agent Professionalism & Responsiveness",
         "tier3": "Helpful Support Experience",
         "id": "rvw-000820"
+      },
+      {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Google)",
+        "source_url": "https://reviews.birdeye.com/adesa-memphis-166562763449834#review-2",
+        "author": "Da Don",
+        "review_date": "2026-08-04",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "This auction is one of the best to do it!!! Test drive and buy no hassles",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "How to Bid (First Time)",
+        "id": "rvw-000909"
       },
       {
         "source_website": "google.com",
@@ -314693,6 +318850,21 @@ window.REVIEW_DATASETS = {
         "source_label": "Birdeye (Google)",
         "source_url": "https://reviews.birdeye.com/adesa-portland-166735343287887#review-1",
         "author": "Joseph Trachuk",
+        "review_date": "2026-07-05",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "was sold an as is car that they knew had structural damage but did not disclose - and specifically announced no arbitration for structural - when i brought this all up - the claim was rejected and this complaint went ignored (i requested for it to go to jordan who had the ability to make a different call and it was still rejected, also asked for jordan to call me 3 times and no call) - just a deceptive way to do business - now we are stuck with a totaled subaru that the entire main frame is bent on (not repairable)",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Lot Condition Reporting",
+        "tier3": "Lot Damage",
+        "id": "rvw-000910"
+      },
+      {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Google)",
+        "source_url": "https://reviews.birdeye.com/adesa-portland-166735343287887#review-1",
+        "author": "Joseph Trachuk",
         "review_date": "2026-07-04",
         "rating": null,
         "sentiment": "negative",
@@ -315049,6 +319221,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-000307"
       },
       {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Google)",
+        "source_url": "https://reviews.birdeye.com/adesa-portland-166735343287887#review-3",
+        "author": "lucky sidhu",
+        "review_date": "2026-06-05",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "nice staff ( Jaimi shaffer",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Helpful Support Experience",
+        "id": "rvw-000911"
+      },
+      {
         "source_website": "google.com",
         "source_label": "Google Business Profile (ADESA New Jersey)",
         "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21OdlNUWTNVV2RYZVZkdWNXSnZkekJrTjNGbVVFRRAB!2m1!1s0x0:0xd01acd06305ff6fb!3m1!1s2@1:CAIQACodChtycF9oOmNvSTY3UWdXeVducWJvdzBkN3FmUEE%7C%7C?hl=en",
@@ -315377,6 +319564,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Bidding Process, Rules and Fees",
         "tier3": "Fees",
         "id": "rvw-000314"
+      },
+      {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Google)",
+        "source_url": "https://reviews.birdeye.com/adesa-charlotte-166631397236159#review-2",
+        "author": "Amjed Rasheed",
+        "review_date": "2026-05-06",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "Left multiple messages and still no response from this location. Calls go unanswered and no one follows up. Pretty frustrating experience, especially since every other ADESA location I’ve dealt with has been responsive and easy to work with. Huge difference in service here compared to the rest.",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Support Access & Response Time",
+        "tier3": "Delayed Email/Phone Response",
+        "id": "rvw-000912"
       },
       {
         "source_website": "google.com",
@@ -317822,6 +322024,36 @@ window.REVIEW_DATASETS = {
         "tier2": "Bidding Process, Rules and Fees",
         "tier3": "Fees",
         "id": "rvw-000198"
+      },
+      {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Google)",
+        "source_url": "https://reviews.birdeye.com/adesa-seattle-166635448334315#review-3",
+        "author": "Incredible California",
+        "review_date": "2025-11-02",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "They charging $25 a day for storage fee!! That’s not fair, what options do we have if you don’t have forklift!!! At least provide one so we can get a transportation or take it easy on storage fee! I called today to try to get my fee waived but useless and the accountant was mean “WE CHARGE $25 a day” Wake up!! You are not a two yard You need to make it easy for your customers not make it harder I’m done you are no different from copart",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-000913"
+      },
+      {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Google)",
+        "source_url": "https://reviews.birdeye.com/adesa-seattle-166635448334315#review-5",
+        "author": "Abdullah Ali",
+        "review_date": "2025-11-02",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Worst auction in WA state , horrible customer service. Majority of their vehicles junk and they’re deceptive",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-000914"
       },
       {
         "source_website": "google.com",
@@ -324724,6 +328956,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-000903"
       },
       {
+        "source_website": "bbb.org",
+        "source_label": "BBB Complaints",
+        "source_url": "https://www.bbb.org/us/tn/memphis/profile/auto-auction/adesa-auctions-memphis-0543-44000064/complaints#0543_44000064_20960543",
+        "author": "BBB complainant",
+        "review_date": "2023-12-05",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Product Issues complaint (Unanswered). Attention Adesa Memphis Auto Auction/ REMOVED Invoice #REMOVED(Vin last six #'s: REMOVED) Thank you for your prompt attention to this matter. I submitted an 'IF' REMOVED. The business contacted me and states the seller wanted $4,000 more than my original offer. I declined. This action closes the REMOVED out entirely and the buyer is no longer contacted in regards to this sale. Adesa's office manager, REMOVED later contacted me stating the seller had accepted my offer which should have been previously closed on our last contact. I then received an invoice for $1400.00 on a sale i declined. Please address this immediately. Please note: I have contacted this business by email and phone, i gave the business 30 days to review and provide any response to my concerns, the business failed to contact me by email or by phone. The only method of contact from the business has been by mailed invoice. (Attached) REMOVED Desired resolution: Remove the negative connotation from WFL Investments account & close the incorrect $1400.00 REMOVED entirely. I hope to continue my good standing/membership with your auction. REMOVED ## BBB Accreditation: None To become accredited, a business must agree to[BBB Standards for Trust](https://www.bbb.org/all/standards-for-trust)and pass BBB's vetting process. [Why choose a BBB Accredited Business?](https://www.bbb.org/all/why-choose-a-bbb-accredited-business) BBB Business Profiles are provided solely to assist you in exercising your own best judgment. BBB does not verify the accuracy of information provided by third parties, and does not guarantee the accuracy of any information in Business Profiles. As a matter of policy, BBB does not endorse any product, service, or business. Businesses are under no obligation to seek BBB accreditation, and some businesses are not accredited because they have not sought BBB accreditation. When considering complaint information, please consider the company's size and volume of transactions. Note that the nature of complaints and a company’s responses to them are often more important than the number of complaints. BBB Business Profiles generally cover a three-year reporting period. [![Image 14: BBB](https://m.bbb.org/brand/logos/BBB_PrimaryLogo_White_RGB.svg)](https://www.bbb.org/)TM ## For Consumers * [Get a Quote](https://www.bbb.org/get-a-quote) * [Start a Review](https://www.bbb.org/leave-a-review) * [File a Complaint](https://www.bbb.org/file-a-complaint) ## For Businesses * [Get Your Business Listed](https://www.bbb.org/get-listed) * [BBB Accreditation](https://www.bbb.org/get-accredited) * [Apply for BBB Accreditation](https://www.bbb.org/apply) * [Newsroom and Resources](https://www.bbb.org/us/news) ## Affiliated Programs * [BBB Institute for Marketplace Trust](https://www.bbbmarketplacetrust.org/) * [BBB Wise Giving Alliance (Give.org)](https://give.org/) * [BBB National Programs](https://bbbprograms.org/) * [our Twitter (opens in a new tab)](https://x.com/bbb_us) * [our LinkedIn (opens in a new tab)](https://www.linkedin.com/company/better-business-bureau/) * [our Facebook (opens in a new tab)](https://www.facebook.com/BetterBusinessBureau) * [our Instagram (opens in a new tab)](https://www.instagram.com/betterbusinessbureau_/) * [About BBB®](https://www.bbb.org/about) * [Terms of Use](https://www.bbb.org/terms-of-use) * [Privacy Policy](https://www.bbb.org/all/privacy-policy) * [Contact Us](https://www.bbb.org/about/find-your-local-bbb) © 2026 International Association of Better Business Bureaus, Inc. (IABBB). All rights reserved. All trademarks are property of IABBB.",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-000915"
+      },
+      {
         "source_website": "google.com",
         "source_label": "Google Business Profile (ADESA Northwest)",
         "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURsc05PSjF3RRAB!2m1!1s0x0:0x86866fec57f185eb!3m1!1s2@1:CIHM0ogKEICAgIDlsNOJ1wE%7C%7C?hl=en",
@@ -327098,14 +331345,14 @@ window.REVIEW_DATASETS = {
   "openlane": {
     "meta": {
       "description": "Large-scale English-only OPENLANE textual review/problem dataset from public web sources (recency-first).",
-      "review_count": 806,
+      "review_count": 841,
       "source_counts": {
+        "birdeye.com": 20,
+        "apps.apple.com": 162,
+        "trustpilot.com": 90,
+        "play.google.com": 276,
         "google.com": 249,
-        "play.google.com": 266,
-        "trustpilot.com": 84,
-        "apps.apple.com": 153,
-        "birdeye.com": 16,
-        "bbb.org": 33,
+        "bbb.org": 39,
         "reddit.com": 5
       },
       "source_audit": [
@@ -327141,17 +331388,17 @@ window.REVIEW_DATASETS = {
           "direct_statuses": {},
           "blocked": false,
           "fallback_used": false,
-          "candidate_reviews_seen": 597,
+          "candidate_reviews_seen": 602,
           "new_reviews_added": 10,
           "advertised_total": null,
-          "latest_candidate_date": "2026-10-05",
+          "latest_candidate_date": "2026-10-22",
           "notes": [],
           "errors": [],
-          "review_count": 266,
-          "existing_review_count": 256,
+          "review_count": 276,
+          "existing_review_count": 266,
           "present": true,
-          "latest_review_date": "2026-09-27",
-          "existing_latest_date": "2026-08-09",
+          "latest_review_date": "2026-10-21",
+          "existing_latest_date": "2026-09-27",
           "status": "ok"
         },
         {
@@ -327162,75 +331409,73 @@ window.REVIEW_DATASETS = {
           "direct_statuses": {},
           "blocked": false,
           "fallback_used": false,
-          "candidate_reviews_seen": 181,
-          "new_reviews_added": 10,
+          "candidate_reviews_seen": 188,
+          "new_reviews_added": 9,
           "advertised_total": null,
-          "latest_candidate_date": "2026-09-22",
+          "latest_candidate_date": "2026-10-23",
           "notes": [
             "Apple RSS can be sparse for some app IDs; HTML supplement captures visible App Store review cards only."
           ],
           "errors": [],
-          "review_count": 153,
-          "existing_review_count": 143,
+          "review_count": 162,
+          "existing_review_count": 153,
           "present": true,
-          "latest_review_date": "2026-09-15",
-          "existing_latest_date": "2026-08-12",
+          "latest_review_date": "2026-10-23",
+          "existing_latest_date": "2026-09-15",
           "status": "ok"
         },
         {
           "source_website": "bbb.org",
           "attempted": true,
-          "direct_pages": 2,
-          "fallback_pages": 2,
+          "direct_pages": 4,
+          "fallback_pages": 4,
           "direct_statuses": {
-            "403": 2,
-            "200": 2
+            "403": 4,
+            "200": 4
           },
           "blocked": true,
           "fallback_used": true,
-          "candidate_reviews_seen": 0,
-          "new_reviews_added": 0,
+          "candidate_reviews_seen": 19,
+          "new_reviews_added": 6,
           "advertised_total": null,
-          "latest_candidate_date": null,
+          "latest_candidate_date": "2026-09-24",
           "notes": [
             "direct BBB customer reviews blocked for https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496",
-            "reader challenge for https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/customer-reviews",
             "direct BBB complaints blocked for https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496",
-            "reader challenge for https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/complaints"
+            "reader challenge for https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/complaints?page=2"
           ],
           "errors": [],
-          "review_count": 33,
+          "review_count": 39,
           "existing_review_count": 33,
           "present": true,
-          "latest_review_date": "2026-07-25",
+          "latest_review_date": "2026-09-24",
           "existing_latest_date": "2026-07-25",
-          "status": "stale_or_no_recent_candidates"
+          "status": "ok"
         },
         {
           "source_website": "trustpilot.com",
           "attempted": true,
           "direct_pages": 1,
-          "fallback_pages": 2,
+          "fallback_pages": 5,
           "direct_statuses": {
             "403": 1,
-            "200": 2
+            "200": 5
           },
           "blocked": true,
           "fallback_used": true,
-          "candidate_reviews_seen": 17,
-          "new_reviews_added": 1,
+          "candidate_reviews_seen": 77,
+          "new_reviews_added": 6,
           "advertised_total": null,
-          "latest_candidate_date": "2026-10-06",
+          "latest_candidate_date": "2026-10-21",
           "notes": [
-            "direct Trustpilot blocked for openlane.com",
-            "reader challenge for https://www.trustpilot.com/review/openlane.com?page=2"
+            "direct Trustpilot blocked for openlane.com"
           ],
           "errors": [],
-          "review_count": 84,
-          "existing_review_count": 83,
+          "review_count": 90,
+          "existing_review_count": 84,
           "present": true,
-          "latest_review_date": "2026-09-22",
-          "existing_latest_date": "2026-08-13",
+          "latest_review_date": "2026-10-21",
+          "existing_latest_date": "2026-09-22",
           "status": "ok"
         },
         {
@@ -327267,77 +331512,99 @@ window.REVIEW_DATASETS = {
           "blocked": false,
           "fallback_used": false,
           "candidate_reviews_seen": 10,
-          "new_reviews_added": 3,
-          "advertised_total": 66,
-          "latest_candidate_date": "2026-09-07",
+          "new_reviews_added": 4,
+          "advertised_total": 68,
+          "latest_candidate_date": "2026-10-26",
           "notes": [
             "Birdeye advertised totals may include syndicated Google/Birdeye network reviews; accepted rows are visible textual review cards that pass filters.",
-            "Advertised total 66 is much larger than accepted rows 16; source is likely partially covered after filters/pagination."
+            "Advertised total 68 is much larger than accepted rows 20; source is likely partially covered after filters/pagination."
           ],
           "errors": [],
-          "review_count": 16,
-          "existing_review_count": 13,
+          "review_count": 20,
+          "existing_review_count": 16,
           "present": true,
-          "latest_review_date": "2026-09-07",
-          "existing_latest_date": "2026-08-19",
+          "latest_review_date": "2026-10-26",
+          "existing_latest_date": "2026-09-07",
           "status": "partial"
         },
         {
           "source_website": "google.com",
           "attempted": true,
-          "direct_pages": 221,
+          "direct_pages": 219,
           "fallback_pages": 0,
           "direct_statuses": {
-            "200": 221
+            "200": 219
           },
           "blocked": false,
           "fallback_used": false,
-          "candidate_reviews_seen": 30,
-          "new_reviews_added": 6,
+          "candidate_reviews_seen": 0,
+          "new_reviews_added": 0,
           "advertised_total": null,
-          "latest_candidate_date": "2026-09-30",
+          "latest_candidate_date": null,
           "notes": [
             "Google Business Profile discovery completed: 106/106 queries succeeded and 2 unique validated US profiles were selected.",
-            "Validated 1 US Google Business Profiles; 1 failed and 0 were skipped after the circuit breaker. Successful profiles were paginated newest-first through per-profile incremental overlap boundaries."
+            "Google refresh failed atomically; the last verified Google rows and profile registry were retained."
           ],
           "errors": [
-            "OPENLANE [0x87c0f036384b643f:0x7af4135fd6c841d8]: newest review RPC did not load"
+            "OPENLANE [0x87c0f036384b643f:0x7af4135fd6c841d8]: newest review RPC did not load",
+            "OPENLANE [0x8814ac6c5df00dff:0x82ddb1a9ae334e23]: newest review RPC did not load",
+            "Google Business Profile coverage incomplete: 2/2 profiles failed pagination; first failure: OPENLANE [0x87c0f036384b643f:0x7af4135fd6c841d8]: newest review RPC did not load"
           ],
-          "profile_retention_used": true,
-          "profiles_completed": 1,
-          "profiles_failed": 1,
-          "profiles_skipped_after_circuit_breaker": 0,
+          "retained_after_failed_refresh": true,
           "last_successful_refresh_until": "2026-08-31",
           "review_count": 249,
-          "existing_review_count": 243,
+          "existing_review_count": 249,
           "present": true,
           "latest_review_date": "2026-09-30",
-          "existing_latest_date": "2026-08-27",
-          "status": "partial_profile_retention"
+          "existing_latest_date": "2026-09-30",
+          "status": "retained_after_failed_refresh"
         }
       ],
       "sentiments": {
-        "positive": 218,
-        "negative": 588
+        "positive": 223,
+        "negative": 618
       },
       "source_urls": [
+        "https://reviews.birdeye.com/openlane-166516131772584#review-1",
+        "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14701920094",
+        "https://www.trustpilot.com/reviews/6ad90c10a2e1c70e3e302851",
+        "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+        "https://www.trustpilot.com/reviews/6ad8c4cef9e64e0e926676d6",
+        "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14680059926",
+        "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14675409172",
+        "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14673702658",
+        "https://apps.apple.com/us/app/id1175036411?see-all=reviews&platform=iphone&reviewId=14670404501",
+        "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14666452950",
+        "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
+        "https://reviews.birdeye.com/openlane-166516131772584#review-2",
+        "https://www.trustpilot.com/reviews/6ae23d1ef3fa4c37b9f46bef",
+        "https://www.trustpilot.com/reviews/6ac5037dbffa65c0f66bb012",
+        "https://itunes.apple.com/us/review?id=1175036411&type=Purple%20Software&reviewId=14626702546",
+        "https://www.trustpilot.com/reviews/6ac8f138c8c7189ee60b7c91",
+        "https://www.trustpilot.com/reviews/6acee26a0c7ebe5c4a1c9c25",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w5S09ISldXbkJqUzBkWU1HaDJXVlJuT1ZwQmEwRRAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOl9KOHJWWnBjS0dYMGh2WVRnOVpBa0E%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pKMFkySjRWbVp6VlZZd2RXcHRjSE5ZTnpKR1prRRAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOjJ0Y2J4VmZzVVYwdWptcHNYNzJGZkE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25Wek1HcFRSMVI0Y1ZGdlpFNW9WbTFKVGxWdlJFRRAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOnVzMGpTR1R4cVFvZE5oVm1JTlVvREE%7C%7C?hl=en",
-        "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+        "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14604538252",
+        "https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/complaints#0382_90024496_25314434",
         "https://www.trustpilot.com/reviews/6ab54ef4ab5d9ede5bcf9a0d",
+        "https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/complaints#0382_90024496_25300344",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2sweWNGTlJUWEpmVmt4eWRHMVFiMlZTTjBKMVNHYxAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOk0ycFNRTXJfVkxydG1Qb2VSN0J1SGc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xaTmNtMXlWMGRWUkZKRGVtRkJNMVp4V2xFelVVRRAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOlZNcm1yV0dVRFJDemFBM1ZxWlEzUUE%7C%7C?hl=en",
         "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14554862818",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xFNFZWZHNTakp6TFZoRmJYaHVkVjlrVm5BM09YYxAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOlE4VVdsSjJzLVhFbXhudV9kVnA3OXc%7C%7C?hl=en",
-        "https://reviews.birdeye.com/openlane-166516131772584#review-1",
+        "https://reviews.birdeye.com/openlane-166516131772584#review-3",
         "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14507327908",
         "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14502675000",
         "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14501677930",
         "https://itunes.apple.com/us/review?id=1175036411&type=Purple%20Software&reviewId=14498997760",
+        "https://apps.apple.com/us/app/id1175036411?see-all=reviews&platform=iphone&reviewId=14498997760",
         "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14495262345",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21aUWEwTnVORTVWT1hKUkxYcG1Sa1p4V0hFeFMyYxAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOmZQa0NuNE5VOXJRLXpmRkZxWHExS2c%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tOVVptMURORUprYzNCbU5uWkpZbmROWmt4MWVIYxAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOkNUZm1DNEJkc3BmNnZJYndNZkx1eHc%7C%7C?hl=en",
+        "https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/customer-reviews#review-1",
+        "https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/customer-reviews#review-2",
+        "https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/customer-reviews#review-3",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT214a1gwVnJVemhYU1dOR01WRlljSEJZYkU4eGFGRRAB!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CAIQACodChtycF9oOmxkX0VrUzhXSWNGMVFYcHBYbE8xaFE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wTmRFTkNUa2hFVmtKTWJIVnNOVGt6Y1dadlRWRRAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOmpNdENCTkhEVkJMbHVsNTkzcWZvTVE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20xcGNVVjFibWd4VkZwSFVEbFhORTVqYjJSWVgwRRAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOm1pcUV1bmgxVFpHUDlXNE5jb2RYX0E%7C%7C?hl=en",
@@ -327347,7 +331614,6 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xScWMyeHhjM0Z2UW1nM1ExcE1SWEJhTkZCTlRVRRAB!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CAIQACodChtycF9oOlRqc2xxc3FvQmg3Q1pMRXBaNFBNTUE%7C%7C?hl=en",
         "https://www.trustpilot.com/reviews/6a81d9c53b4a34e35d7322b2",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t4YWVWWnlNMUppT0ZReFQwYzViM1JSUWs1VE5tYxAB!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CAIQACodChtycF9oOkxaeVZyM1JiOFQxT0c5b3RRQk5TNmc%7C%7C?hl=en",
-        "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25weU1VNTVlWHAyVVRKbVUzY3dVVkpPVjJ4elMzYxAB!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CAIQACodChtycF9oOnpyMU55eXp2UTJmU3cwUVJOV2xzS3c%7C%7C?hl=en",
         "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14386826679",
         "https://www.trustpilot.com/reviews/6a8588b35a2cac1582a8a978",
@@ -327366,10 +331632,9 @@ window.REVIEW_DATASETS = {
         "https://www.trustpilot.com/reviews/6a5132537a2ba2f795242c5d",
         "https://www.trustpilot.com/reviews/6a4fb4414467999cc1271926",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tsUWEyeHNkekZWY2xsV05FeHRSbkJYZGpkUFNWRRAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOklQa2xsdzFVcllWNExtRnBXdjdPSVE%7C%7C?hl=en",
-        "https://reviews.birdeye.com/openlane-166516131772584#review-3",
         "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14282411977",
         "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14279210408",
-        "https://reviews.birdeye.com/openlane-166516131772584#review-2",
+        "https://reviews.birdeye.com/openlane-166516131772584#review-5",
         "https://www.trustpilot.com/reviews/6a57ca0914e9551264767096",
         "http://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/complaints#0382_90024496_24998087",
         "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14246256894",
@@ -327418,7 +331683,6 @@ window.REVIEW_DATASETS = {
         "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=13986755298",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSa2VuRXdOSGRsTkUxYWVHaEpkVFZIUkVjMGJGRRAB!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CAIQACodChtycF9oOjRkenEwNHdlNE1aeGhJdTVHREc0bFE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2poMGJsaGlaSEZsU21FNFNIUmtaMFJzZDFkb00zYxAB!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CAIQACodChtycF9oOjh0blhiZHFlSmE4SHRkZ0Rsd1doM3c%7C%7C?hl=en",
-        "https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/customer-reviews#review-1",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCQ2MwVjNhMVJaUm1SeVNEWnNXakpLUWxSemJtYxAB!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CAIQACodChtycF9oOjBCc0V3a1RZRmRySDZsWjJKQlRzbmc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xkaVYyZHNNMVZWUkZvNWRIQTJiamhNTlRoMFNsRRAB!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CAIQACodChtycF9oOldiV2dsM1VVRFo5dHA2bjhMNTh0SlE%7C%7C?hl=en",
         "https://itunes.apple.com/us/review?id=1175036411&type=Purple%20Software&reviewId=13973287476",
@@ -327526,7 +331790,6 @@ window.REVIEW_DATASETS = {
         "https://www.reddit.com/r/askcarsales/comments/1nwnk7t/openlane_acv_vs_inperson/",
         "https://itunes.apple.com/us/review?id=1186571028&type=Purple%20Software&reviewId=13215003125",
         "https://apps.apple.com/us/app/id1186571028?see-all=reviews&platform=iphone&reviewId=13215003125",
-        "https://reviews.birdeye.com/openlane-166516131772584#review-5",
         "https://itunes.apple.com/us/review?id=1186571028&type=Purple%20Software&reviewId=13197986339",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tGVFEycHJNemRTZEhkcGMxTTJTRGQyVGpBM05WRRAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOkFTQ2prMzdSdHdpc1M2SDd2TjA3NVE%7C%7C?hl=en",
         "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=13171180867",
@@ -327601,33 +331864,20 @@ window.REVIEW_DATASETS = {
         "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=12491422782",
         "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=12459020912",
         "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=12439615672",
-        "https://www.trustpilot.com/reviews/67d4414b791c8db8010c87f4",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNRdF9pNWxRRRAB!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CIHM0ogKEICAgMCQt_i5lQE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNRNlplM25BRRAB!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CIHM0ogKEICAgMCQ6Ze3nAE%7C%7C?hl=en",
-        "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=12380780795",
-        "https://itunes.apple.com/us/review?id=1175036411&type=Purple%20Software&reviewId=12370785699",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTURnOGM3MVl3EAE!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CIHM0ogKEICAgMDg8c71Yw%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNnMWRMSlZREAE!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CIHM0ogKEICAgMCg1dLJVQ%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNnaXBtUGFnEAE!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CIHM0ogKEICAgMCgipmPag%7C%7C?hl=en",
-        "https://www.trustpilot.com/reviews/67ae7e93c18b90aade6a478a",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTURBOTZITVJREAE!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CIHM0ogKEICAgMDA96HMRQ%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTURBOTVPWXdBRRAB!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CIHM0ogKEICAgMDA95OYwAE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTURBbS1YQUpnEAE!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CIHM0ogKEICAgMDAm-XAJg%7C%7C?hl=en",
-        "https://itunes.apple.com/us/review?id=1175036411&type=Purple%20Software&reviewId=12295455568",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTURBdU1YMGt3RRAB!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CIHM0ogKEICAgMDAuMX0kwE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNBaExQdnNRRRAB!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CIHM0ogKEICAgMCAhLPvsQE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURfeF9YZXJ3RRAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CIHM0ogKEICAgID_x_XerwE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURfMGZ5NHpBRRAB!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CIHM0ogKEICAgID_0fy4zAE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURfNGFtN1V3EAE!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CIHM0ogKEICAgID_4am7Uw%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURfbG9Ialp3EAE!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CIHM0ogKEICAgID_loHjZw%7C%7C?hl=en",
-        "https://www.trustpilot.com/reviews/67917cefc6be2b27ae2c6313"
+        "https://www.trustpilot.com/reviews/67d4414b791c8db8010c87f4"
       ],
-      "generated_at_utc": "2026-10-07T02:24:05.131129+00:00",
+      "generated_at_utc": "2026-11-02T21:01:32.809717+00:00",
       "since_date": "2023-01-01",
-      "until_date": "2026-09-30",
-      "collector_failures": [],
-      "existing_review_count": 776,
-      "new_reviews_added": 30,
+      "until_date": "2026-10-31",
+      "collector_failures": [
+        {
+          "collector": "google_business",
+          "error": "Google Business Profile coverage incomplete: 2/2 profiles failed pagination; first failure: OPENLANE [0x87c0f036384b643f:0x7af4135fd6c841d8]: newest review RPC did not load",
+          "retained_previous_data": true
+        }
+      ],
+      "existing_review_count": 806,
+      "new_reviews_added": 35,
       "youtube_excluded": true,
       "usa_only": true,
       "english_only": true,
@@ -327648,16 +331898,33 @@ window.REVIEW_DATASETS = {
       ],
       "geo_validation_counts": {
         "google_play_us_store": 10,
-        "google_business_us_profile": 6,
-        "trustpilot_us_slug": 1,
-        "birdeye_us_profile": 3,
-        "apple_us_store": 10
+        "trustpilot_us_slug": 6,
+        "bbb_us_business": 6,
+        "birdeye_us_profile": 4,
+        "apple_us_store": 9
       },
       "geo_excluded_counts": {
-        "reddit.com:mixed_source_non_us_marker": 2,
+        "trustpilot.com:trustpilot_us_slug_non_us_marker": 2,
+        "reddit.com:mixed_source_non_us_marker": 3,
         "apps.apple.com:apple_non_us_store": 13
       },
       "geo_excluded_examples": [
+        {
+          "source_website": "trustpilot.com",
+          "source_label": "Trustpilot (openlane.com)",
+          "source_url": "https://www.trustpilot.com/reviews/6ad241db14964705cd853e36",
+          "review_date": "2026-10-16",
+          "reason": "trustpilot_us_slug_non_us_marker",
+          "review_text": "Extremely Disappointing Experience with…. Extremely Disappointing Experience with OPENLANE Canada Over the last six months, I have lost approximately $18,000 on three vehicles purchased through OPENLANE Canada due to major problems that wer"
+        },
+        {
+          "source_website": "trustpilot.com",
+          "source_label": "Trustpilot (openlane.com)",
+          "source_url": "https://www.trustpilot.com/reviews/687f8f0a95c626e61fc3677d",
+          "review_date": "2025-06-26",
+          "reason": "trustpilot_us_slug_non_us_marker",
+          "review_text": "Openlane code of ethics for dealers…. Openlane code of ethics for dealers stipulates that all known problems with a vehicle must be disclaimed even if it's minor. Purchased a truck and upon leaving the compound it wouldn't shift out of firs"
+        },
         {
           "source_website": "reddit.com",
           "source_label": "Reddit r/askcarsales",
@@ -327673,6 +331940,14 @@ window.REVIEW_DATASETS = {
           "review_date": "2026-05-16",
           "reason": "mixed_source_non_us_marker",
           "review_text": "Lease Turn-in/Condition Report Issues Hello, I am helping my elderly aunt on a fixed income deal with a situation with Nissan Canada. Hoping somebody working in the industry could tell me if this process passes their smell test and what gro"
+        },
+        {
+          "source_website": "reddit.com",
+          "source_label": "Reddit r/carflipping",
+          "source_url": "https://www.reddit.com/r/carflipping/comments/1w70kek/can_new_bc_independent_dealer_great_cars_no_buyers/",
+          "review_date": "2026-09-04",
+          "reason": "mixed_source_non_us_marker",
+          "review_text": "[CAN] New BC Independent Dealer: Great cars, no buyers. Hey everyone, I recently got my independent dealer license here in Vancouver, BC. Because I want to keep overhead low at the moment, I'm just renting a desk at a local dealership. I wa"
         },
         {
           "source_website": "apps.apple.com",
@@ -327818,6 +332093,351 @@ window.REVIEW_DATASETS = {
     },
     "reviews": [
       {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Google)",
+        "source_url": "https://reviews.birdeye.com/openlane-166516131772584#review-1",
+        "author": "Fabio Urrutia",
+        "review_date": "2026-10-26",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "De todas las subastas con las que hemos trabajado, OPENLANE ha sido la mejor. Quiero destacar a BETHANY SKATES, quien, aun sin ser ya nuestra representante, siempre nos ha atendido con dedicaci�n y resolvi� cada inconveniente. Gracias por ser tan receptiva, dedicada y amable. OPENLANE necesita cada vez m�s personas como ella. Of all the auctions we have worked with, OPENLANE has been the best. I want to highlight BETHANY SKATES, who, even after no longer being our representative, always took dedicated care of us and resolve... read more",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Helpful Support Experience",
+        "id": "rvw-000807"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1566419386, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14701920094",
+        "author": "Review this 57",
+        "review_date": "2026-10-23",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Security login is stupid. Absolutely stupid to have to wait for a code to get sent to someone else and hope they pay attention and send me the code just so I can do my job absolutely absurd",
+        "geo_validation": "apple_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-000808"
+      },
+      {
+        "source_website": "trustpilot.com",
+        "source_label": "Trustpilot (openlane.com)",
+        "source_url": "https://www.trustpilot.com/reviews/6ad90c10a2e1c70e3e302851",
+        "author": "Trustpilot user",
+        "review_date": "2026-10-21",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Absolute scam artists. Absolute scam artists. They cater to which ever dealer does more business. I sold a truck on here with a freshly rebuilt transmission with less than 100 miles on it. They made me buy it back saying it wouldn’t even move. I didn’t have the cash to buy it back so I had to struggle to floor a truck I didn’t even physically have. Got the truck back and sent a video to my rep driving it down the road. They didn’t care that I almost closed my business. Then the next year they sent reps begging for my business back and offered loads of perks and discounts, even flew in someone from corporate. When I finally agreed to sign back up, Tyler van suckle denied me access. Openlane is a terrible company. I dropped all Openlane owned products because of this. Autoniq and AFC included.",
+        "geo_validation": "trustpilot_us_slug",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-000809"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+        "author": "joe saunders",
+        "review_date": "2026-10-21",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "It crashes every single time you use it",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-000810"
+      },
+      {
+        "source_website": "trustpilot.com",
+        "source_label": "Trustpilot (openlane.com)",
+        "source_url": "https://www.trustpilot.com/reviews/6ad8c4cef9e64e0e926676d6",
+        "author": "Trustpilot user",
+        "review_date": "2026-10-19",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Run, don't walk.... I would give this company negative stars if it was possible. They call themselves a marketplace to avoid NAAA rules. Bought several vehicles and there were undisclosed issues with every one. Some they issued a small credit on after excessive complaining on my part. A wrangler I purchased was actually taken back and refunded after paying a franchise dealer to write a diagnosis for the undisclosed engine (3.6 tick) and transmission (wouldn't shift out of 1st) issues. I had to eat the diagnosis of course. Recently I purchased a CR 5.0 Ford and my mechanic wouldn't even put it on the lift because of the undercarriage rust. Another was an ecodiesel where the CR stated the cat was present only to discover it's fully deleted. Total credit between the two was $500. The platform is built to protect sellers, promote high prices for compromised cars and rip off small dealers who can't afford to hold vehicles or enter a drawn out legal battle. Steer clear unless you can inspect the vehicle yourself!",
+        "geo_validation": "trustpilot_us_slug",
+        "tier1": "Payment Refunds, Transaction Issues and Deposits",
+        "tier2": "Refunds & Membership Billing",
+        "tier3": "Deposit Refund Status",
+        "id": "rvw-000811"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1566419386, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14680059926",
+        "author": "dusselldorf",
+        "review_date": "2026-10-17",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Slow app, Freezing Up. Keep freezing up, slow app, can’t copy any address. Needs to be updated to better experience. One of the worst app in the industry. Please fix this garbage app, it’s shameful that you can do any better.",
+        "geo_validation": "apple_us_store",
+        "tier1": "Vehicle Pickup, Delivery and Scheduling",
+        "tier2": "Scheduled Pickup Status",
+        "tier3": "Pickup Hours and Cutoff",
+        "id": "rvw-000812"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1566419386, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14675409172",
+        "author": "natanael82",
+        "review_date": "2026-10-16",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Garbage. Reset password, and keep telling me it’s wrong than there is no refresh page or saying that I’m not at location when it’s clear always on the app to find my location, over and over again, security is overrated and not carrier friendly, garbage instructions",
+        "geo_validation": "apple_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-000813"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1566419386, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14673702658",
+        "author": "Zahar0629",
+        "review_date": "2026-10-16",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Owner. Thins app work super slow",
+        "geo_validation": "apple_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-000814"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+        "author": "Bryan Priest (Eyzarookie1)",
+        "review_date": "2026-10-15",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "the latest update is utterly horrible app keeps crashing after each picture back to the beginning and have to restart inspection I'd give a negative review if I could just horrible 20 minutes to process unit very much unacceptable do better cars arrive",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Third-Party Inspection Authorization & Scheduling",
+        "tier3": "Previewing/ Inspecting Vehicles",
+        "id": "rvw-000815"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+        "author": "Kurt Berthiaume",
+        "review_date": "2026-10-15",
+        "rating": 4,
+        "sentiment": "positive",
+        "review_text": "Damage pics need to come after the damage inspection, not after the odometer. It'd be more efficient",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Third-Party Inspection Authorization & Scheduling",
+        "tier3": "Previewing/ Inspecting Vehicles",
+        "id": "rvw-000816"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1175036411, us)",
+        "source_url": "https://apps.apple.com/us/app/id1175036411?see-all=reviews&platform=iphone&reviewId=14670404501",
+        "author": "masod qasomi",
+        "review_date": "2026-10-15",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "arbitration policy. ⭐ Very Disappointing Auction and Arbitration Policies My experience with OPENLANE has been extremely disappointing. Their arbitration policies are frustrating and do not provide the protection buyers expect. You can purchase a vehicle believing you have some warranty or arbitration coverage, only to find out that your options are extremely limited. The whole point of arbitration should be to protect buyers when there are legitimate issues with a vehicle. Unfortunately, the policies often make it feel like buyers have no real protection at all. You take the risk, spend your money, and when a problem comes up, getting a fair resolution can be extremely difficult. In my opinion, OPENLANE needs to improve its arbitration process, make its policies clearer, and provide better protection for dealers who buy vehicles through their platform. An auction platform should offer a fair and transparent arbitration process, not leave buyers feeling like they have no options. Based on my experience, I am very disappointed with their arbitration policies and the lack of meaningful support when problems arise. I would strongly encourage other dealers to read every detail of the arbitration terms before bidding",
+        "geo_validation": "apple_us_store",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-000817"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1566419386, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14666452950",
+        "author": "Frustrating 918",
+        "review_date": "2026-10-14",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Freezes. Fix this app it freezes all the time and slows us down",
+        "geo_validation": "apple_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-000818"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.nthgensoftware.traderev.android)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
+        "author": "Hany Girgis",
+        "review_date": "2026-10-13",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "It just keeps on loading. This app needs to be updated ASAP.",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-000819"
+      },
+      {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Google)",
+        "source_url": "https://reviews.birdeye.com/openlane-166516131772584#review-2",
+        "author": "noreply.aztrucksales",
+        "review_date": "2026-10-12",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Highly unethical company. Inspector missed an alert on a Tesla that gives a code on the screen that basically signifies the high voltage battery is bad. They do not cover electric high voltage battery. I disputed not for the battery but for fair and unethical business practices. Open Lane acknowledged that the inspector made a mistake. Will not unwind transaction. Very deceptive business practice. $10000.00 problem on a $14000 vehicle. All of the alerts were when the seller had possession of the vehicle. Below is from their... read more",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Third-Party Inspection Authorization & Scheduling",
+        "tier3": "Previewing/ Inspecting Vehicles",
+        "id": "rvw-000820"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.nthgensoftware.traderev.android)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
+        "author": "Brent Derksen",
+        "review_date": "2026-10-10",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Very problematic app at its best, now no longer works.",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-000821"
+      },
+      {
+        "source_website": "trustpilot.com",
+        "source_label": "Trustpilot (openlane.com)",
+        "source_url": "https://www.trustpilot.com/reviews/6ae23d1ef3fa4c37b9f46bef",
+        "author": "Trustpilot user",
+        "review_date": "2026-10-07",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "I am a used car dealer who purchased a…. I am a used car dealer who purchased a vehicle on OpenLane from a franchised dealership on 10/7/26. Today is 10/28/26 and I still didn't receive the vehicle in my lot. Transport company went twice to pickup the vehicle from the franchised dealership \"the seller\" and first time they told the transport company, they lost the key. The transport company attempted to pick up the Vehicle the following week and they told him the vehicle won't start. I contacted openlane and they refused to unwind the deal even though they had my money for 20 days now. If they doesn't get resolved my way this week, i am contacting auto dealer and opening a complaint.",
+        "geo_validation": "trustpilot_us_slug",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Case Resolution Quality",
+        "tier3": "Issue Resolved",
+        "id": "rvw-000822"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.nthgensoftware.traderev.android)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
+        "author": "Emad Huda",
+        "review_date": "2026-10-07",
+        "rating": 2,
+        "sentiment": "negative",
+        "review_text": "It's a slow app when it does work. Majority of the time it doesn't even load up and open",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-000823"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+        "author": "Archie Grant",
+        "review_date": "2026-10-07",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "app crash everyday. it's slow and when looking for loads ot would start the upload. then keep starting over",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Document Upload & Verification",
+        "tier3": "Upload Troubleshooting",
+        "id": "rvw-000824"
+      },
+      {
+        "source_website": "trustpilot.com",
+        "source_label": "Trustpilot (openlane.com)",
+        "source_url": "https://www.trustpilot.com/reviews/6ac5037dbffa65c0f66bb012",
+        "author": "Trustpilot user",
+        "review_date": "2026-10-06",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Very disappointing experience with…. Very disappointing experience with OPENLANE. OPENLANE needs to take real responsibility for the vehicles sold through its platform, not just collect fees and leave dealers to deal with the problems. I bought an Audi that passed a mechanical inspection, yet the engine failed after only 300 km, costing me approximately $8,000. I’m also dealing with a Subaru with multiple issues, including a non-functioning AC, while the arbitration department won’t even return my calls. If OPENLANE charges for inspections and operates the auction platform, it should stand behind the accuracy of the vehicles being represented and have a fair, responsive arbitration process when something goes wrong.",
+        "geo_validation": "trustpilot_us_slug",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-000825"
+      },
+      {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.nthgensoftware.traderev.android)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
+        "author": "Saajan Brar",
+        "review_date": "2026-10-05",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "\"There was an error logging in. Please try again later.\" The app has been doing this since it launched. I used to be able to go through the adesa app but since that's been discontinued I'm stuck with this useless app. Better off using a web browser.",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-000826"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1175036411, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=1175036411&type=Purple%20Software&reviewId=14626702546",
+        "author": "Micheal23858",
+        "review_date": "2026-10-04",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Zero stars!. I have had an extremely frustrating experience with Openlane, and after evaluating the platform from a dealer’s perspective, I have significant concerns about how the system operates compared with a traditional U.S. dealer auction. 1. The Auction Closing Process Let’s start with the buying process. Auctions close at midnight, which creates an obvious problem for dealers operating on the East Coast. Why should a dealer have to stay awake until 1:00 a.m. Eastern time simply to participate in an auction? The standard response is that dealers can use the “AutoBid” feature. However, that creates two significant problems. First, most dealers are not intending to purchase every vehicle on which they place a bid. A dealer may be monitoring and bidding on 10 or 20 vehicles because they are looking for one or two that fit their inventory needs. AutoBid creates the risk that the dealer wakes up the next morning having purchased multiple vehicles simply because the system continued bidding on their behalf. Second, the way Openlane handles AutoBid appears fundamentally different from a traditional auction. If I establish a maximum bid of $20,000, the other bidders may not see that amount, but Openlane can apparently communicate that amount to the selling dealer. Even more concerning, if the vehicle does not sell and is subsequently relisted, the system can apparently repost my maximum bid as the current/high bid and I am the “leader”. I am not aware of a traditional dealer auction in the United States where a vehicle runs through the auction, fails to sell, is relisted the following week, and the auction automatically establishes the previous bidder’s maximum bid as the new high bid. That is not how I understand the competitive bidding process at a traditional auction. 2. The Platform Does Not Operate Like a Traditional Auction One of the primary reasons I wanted to use Openlane was to replicate some of the efficiencies of a physical dealer auction without having to sit through 100 vehicles before reaching the two or three I am actually interested in purchasing. It would also allow me to bid on multiple vehicles simultaneously without physically running between lanes. However, Openlane does not appear to function like a traditional U.S. dealer auction in several important respects. Instead, the platform often feels more like a combination of CarMax, AutoTrader, and an online auction platform. Vehicles can apparently be relisted repeatedly until they eventually sell through Openlane or to a retail customer. That creates a fundamentally different buying environment from a traditional wholesale auction, where vehicles actually run through a sale and are subject to established auction procedures, arbitration policies, and market-based bidding. The “Buy It Now” pricing is another significant concern. In many cases, the asking prices appear to be 20–30% higher than what comparable vehicles are bringing at Mannheim auctions across the country. If the objective is to purchase wholesale inventory, pricing vehicles substantially above established wholesale market values does not make the platform particularly attractive to dealers. 3. Auction Times and Time-Zone Issues Another major problem is the way auction closing times are presented. Vehicles may be advertised as ending at 9:00 p.m., yet the actual closing time zone appears to in Portugal where they must have the bulk of their business I guess. If it’s a US based business why are we not using US time zones?? A U.S.-based dealer auction should clearly communicate the closing time in the dealer’s applicable U.S. time zone or, at minimum, provide an unmistakable indication of the actual closing time. If Openlane expects dealers to meet strict payment deadlines, transportation deadlines, and other contractual obligations, the auction closing process should be equally precise. 4. The Double Standard Open lane expects me to do follow their outlined rules but tends to change their side of the rules to fit their narrative, and when you call them out in it they get defensive and provide very poor responses! 5. Condition, Inspection, and Arbitration Perhaps my biggest concern is the risk associated with vehicle condition. Based on my experience and conversations with other dealers, it appears that vehicles purchased through Openlane need to be approached with the assumption that the buyer may ultimately be responsible for accepting the vehicle largely “as is.” I know dealers who have attempted to resolve significant condition issues through the arbitration process and have had little success. For example, a good friend purchased a one-ton diesel truck through the platform. The vehicle’s inspection report indicated that the transmission shifted properly. However, the inspector apparently only drove the vehicle a very limited distance around a parking area and verified first, second, and reverse. After my friend received the truck, it would not exceed approximately 35 mph, even with the pedal on the floor. The problem ultimately resulted in approximately $8,000 in repairs. Openlane offered approximately $1,500 toward the repair. That is a substantial difference between the cost of the repair and the resolution offered. Under the traditional dealer-auction model, he would have never owned that vechile! BUYER BEWARE!!! This is not a dealer auto auction!! I have purchased from auctions in Dallas, Houston, OKC, Tulsa, Springfield, Kansas City, St. Louis, and too many others to count…. Never have I seen and dealer auto auction operate like this!",
+        "geo_validation": "apple_us_store",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-000827"
+      },
+      {
+        "source_website": "trustpilot.com",
+        "source_label": "Trustpilot (openlane.com)",
+        "source_url": "https://www.trustpilot.com/reviews/6ac8f138c8c7189ee60b7c91",
+        "author": "Trustpilot user",
+        "review_date": "2026-10-02",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "No Shows two times!!!. Made an appointment. Waited several hours. No one showed up. Called Openlane and was told inspector couldn’t make it. Rescheduled for a week later. Called that morning to confirm. I was told inspector was not working that week! Both times no one contacted me to tell me. I had car washed both times! I rearranged my schedule both times!!! Not a professional company!",
+        "geo_validation": "trustpilot_us_slug",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Helpful Support Experience",
+        "id": "rvw-000828"
+      },
+      {
+        "source_website": "trustpilot.com",
+        "source_label": "Trustpilot (openlane.com)",
+        "source_url": "https://www.trustpilot.com/reviews/6acee26a0c7ebe5c4a1c9c25",
+        "author": "Trustpilot user",
+        "review_date": "2026-09-30",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Stay away if you don’t want to lose money. I purchased with Open lane over the last year as they really started to grow. It has gone down hill as far as the quality of vehicles and FAST. Bottom line is the vehicles that have large issues end up on Openlane. There is no accountability on the selling dealer, in the event of an arbitration, openlane gives you an adjustment, they will give you an extremely low wholesale rate for labor and a used part then subtract a deductible from the total arbitration credit leaving you with a fraction of the repair cost. You cannot unwind a sale. I had 3 bad transmissions in 1 week and begged the company to unwind 1 of the sales because we are not equipped to do transmission after transmission at a small shop, No one wanted to even hear me out. I bought over 450 vehicles from Openlane and I was treated as a nobody. When I expressed my concerns to my rep, I never got a reply back. I decided enough is enough and I am no longer using the platform. The franchise dealers continue to dump their crap on this platform because they have no ratings, never have to buy back a car, and although the “inspectors” claim to test drive the cars, they never seem to find the mechanical issues that exist, And your stuck with the car every time. Stay away if you don’t want to drain your pockets . It’s hard enough for us smaller independents.",
+        "geo_validation": "trustpilot_us_slug",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Third-Party Inspection Authorization & Scheduling",
+        "tier3": "Previewing/ Inspecting Vehicles",
+        "id": "rvw-000829"
+      },
+      {
         "source_website": "google.com",
         "source_label": "Google Business Profile (OPENLANE)",
         "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w5S09ISldXbkJqUzBkWU1HaDJXVlJuT1ZwQmEwRRAB!2m1!1s0x0:0x82ddb1a9ae334e23!3m1!1s2@1:CAIQACodChtycF9oOl9KOHJWWnBjS0dYMGh2WVRnOVpBa0E%7C%7C?hl=en",
@@ -327863,6 +332483,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-000779"
       },
       {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1566419386, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14604538252",
+        "author": "Zeta yyyyu",
+        "review_date": "2026-09-28",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "App. Terribly buggy app, impossible to work with.",
+        "geo_validation": "apple_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-000830"
+      },
+      {
         "source_website": "play.google.com",
         "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
         "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
@@ -327893,6 +332528,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-000781"
       },
       {
+        "source_website": "bbb.org",
+        "source_label": "BBB Complaints",
+        "source_url": "https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/complaints#0382_90024496_25314434",
+        "author": "BBB complainant",
+        "review_date": "2026-09-24",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Service or Repair Issues complaint (Answered). This company is a total scam. REMOVED uses them to inspect their vehicles at the end of leases. The inspector literallyu doctored up pictures to make it look as though there were massive scratches on the car that DO NOT EXIST! And when I called them to speak to someone about their fraudulent report, they told me I had to take it up with the leasing company. The leasing company, however, just sends you back to OpenLane. I tried reaching the inspector, but of course, she refused to communicate also. They falsely report on the condition of the car and then refuse to give you the information you need to have repairs done before the car must be turned in. This company is clearly nothing more than a shill to create additional unearned revenue for the leasing company. REMOVED is a horrible company to begin with. The fact that they have this company report fake damage on your vehicle is just the icing on the cake.",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-000831"
+      },
+      {
         "source_website": "trustpilot.com",
         "source_label": "Trustpilot (openlane.com)",
         "source_url": "https://www.trustpilot.com/reviews/6ab54ef4ab5d9ede5bcf9a0d",
@@ -327921,6 +332571,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Document Upload & Verification",
         "tier3": "Upload Troubleshooting",
         "id": "rvw-000783"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Complaints",
+        "source_url": "https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/complaints#0382_90024496_25300344",
+        "author": "BBB complainant",
+        "review_date": "2026-09-21",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Sales and Advertising Issues complaint (Answered). on 08-14-2026 I sold a vehicle on the openlane marketplace. That sale was confirmed by my field REMOVED and his boss to be a legal sale that would not be unwound due to buyer and employee mistake of not removing a bid in time. They later unwound the deal and promised to get the vehicle resold and cover any loss if the vehicle did not sell for the original amount. They also agreed to cover any floorpan interest. After a month goes by they refuse to honor that deal and accept a live offer that's on the vehicle. They then say they can only offer \"sell fee credits\".",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-000832"
       },
       {
         "source_website": "play.google.com",
@@ -328073,6 +332738,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-000793"
       },
       {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Google)",
+        "source_url": "https://reviews.birdeye.com/openlane-166516131772584#review-3",
+        "author": "Dayvon Hicks",
+        "review_date": "2026-09-03",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "I had a great experience working with Tyler VanSickle at OPENLANE. I was dealing with a stressful situation involving payments and vehicle titles, and Tyler handled everything with professionalism, patience, and clear communication from beginning to end. What I appreciated most was that he took the time to explain what was going on, kept communication open, and worked with everyone involved toward a resolution instead of making an already stressful situation more difficult. He was respectful, straightforward, and followed th... read more",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Helpful Support Experience",
+        "id": "rvw-000833"
+      },
+      {
         "source_website": "apps.apple.com",
         "source_label": "Apple App Store (1566419386, us)",
         "source_url": "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14507327908",
@@ -328149,6 +332829,21 @@ window.REVIEW_DATASETS = {
       },
       {
         "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (1175036411, us)",
+        "source_url": "https://apps.apple.com/us/app/id1175036411?see-all=reviews&platform=iphone&reviewId=14498997760",
+        "author": "Rocky-max",
+        "review_date": "2026-09-01",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Owner. I am a longtime dealer who has purchased more than 400 vehicles through OPENLANE, so my expectations are based on significant experience with their platform and arbitration process. Unfortunately, my recent experience with the arbitration department was extremely disappointing. The biggest concern was not simply the outcome of the arbitration, but the lack of communication and accountability during the process. I was not given a reasonable opportunity to speak with a manager or supervisor to discuss my concerns or have the situation properly reviewed. As a dealer who has spent considerable time and money doing business with OPENLANE, I expect a higher level of customer service, professionalism, and transparency. When an arbitration issue arises, dealers should have access to appropriate management when they believe their concerns have not been properly addressed. I understand that not every arbitration decision will go in my favor, and I can accept a fair decision. However, I expect to be treated with respect and to have a reasonable escalation process available. Being unable to speak with a manager after purchasing more than 400 vehicles through the company is very disappointing. I hope OPENLANE takes dealer concerns seriously and improves communication, transparency, and management accessibility within its arbitration department. Long-term customers deserve to feel that their concerns are heard and properly reviewed",
+        "geo_validation": "apple_us_store",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Case Resolution Quality",
+        "tier3": "Escalation Required",
+        "id": "rvw-000834"
+      },
+      {
+        "source_website": "apps.apple.com",
         "source_label": "Apple App Store (1566419386, us)",
         "source_url": "https://itunes.apple.com/us/review?id=1566419386&type=Purple%20Software&reviewId=14495262345",
         "author": "Userid taken",
@@ -328191,6 +332886,51 @@ window.REVIEW_DATASETS = {
         "tier2": "Agent Professionalism & Responsiveness",
         "tier3": "Helpful Support Experience",
         "id": "rvw-000748"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/customer-reviews#review-1",
+        "author": "Amazing M",
+        "review_date": "2026-08-25",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "I am a frequent OPENLANE customer, purchasing approximately 4 to 5 vehicles per month. I purchased this vehicle for approximately $16,000, relying on OPENLANEs listing, inspection, and condition report.When I received the vehicle, I discovered several significant issues that were not disclosed, including serious suspension problems, broken power running boards, a non-functioning power liftgate, and a very loud and noticeable engine noise that was not mentioned in OPENLANEs condition report.I followed OPENLANEs arbitration process and paid out of pocket for two professional dealership evaluations. After the second, more comprehensive inspection, the dealership determined that the engine needs to be replaced, with an estimated repair cost of approximately $16,000 essentially the same amount I paid for the vehicle. This amount is for the engine alone and does not include the other undisclosed problems.OPENLANEs own arbitration procedures address significant mechanical issues and undisclosed conditions when properly documented. I followed their requested process and provided the documentation. However, after I submitted the second diagnosis confirming the need for engine replacement, OPENLANE stopped responding to me, despite my repeated attempts to resolve the REMOVED a long-term and frequent buyer, I feel seriously financially harmed. The actual condition of this vehicle was substantially different from what was represented, and I am now left with a vehicle whose engine repair alone is approximately equal to its purchase price.I am requesting that OPENLANE accept the return of the vehicle and fully reverse the transaction. I made every reasonable effort to resolve this directly with the company before filing this BBB complaint.",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Communication Follow-up & Escalation",
+        "tier3": "No Callback / Unresolved Case",
+        "id": "rvw-000835"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/customer-reviews#review-2",
+        "author": "Jeff P",
+        "review_date": "2026-08-25",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "i have bought 50 vehicles over the years with openlane some positive bit mostly negative expreiences , my last purchase I bought because of there on site evaluation which said there was no issues , no codes, when the vehicle arrived the 1st thing I do is scan the vehicle and a permanment code stored code showed up which means the vehicle was never scanned because the code would have appeared P1217 Engine Temperature , so I checked the code and it said to check radiator fluid , when I did a pure white milky substance was full in the radiator , I then drove ir a short distance and the temp meter was overheating , in the openlane REMOVED ort the person who evaluated the vehicle said he drove it if that was the case he would have seen it was overheating buit no mention of that , when I arbitrated the vehicle they ignored the fact that the vehicle was mis REMOVED resented and went straight to there policy and wanted me to prove that the headgasket was blown , this wasn't the issue what the issue was how the vehicle was REMOVED esented was incorrect , I have requested a supervisor call me but was infromed that the arb agent was judge and jury , they also said the contact my REMOVED which I have emailed and text with no REMOVED ly , the arb REMOVED the other arb REMOVED was the REMOVED who said call my REMOVED this place has become a joke and I really feel the are going out of business as to the way they are running the company , beware of who you deal with .",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-000836"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/customer-reviews#review-3",
+        "author": "Chris R",
+        "review_date": "2026-08-20",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Inspector never showed. I took off from work for this. They called her and she never answered. Terrible service. I DO NOT RECOMMEND",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Third-Party Inspection Authorization & Scheduling",
+        "tier3": "Previewing/ Inspecting Vehicles",
+        "id": "rvw-000837"
       },
       {
         "source_website": "google.com",
@@ -328731,6 +333471,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Password Reset & Login Troubleshooting",
         "tier3": "App Login Troubleshooting",
         "id": "rvw-000502"
+      },
+      {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Google)",
+        "source_url": "https://reviews.birdeye.com/openlane-166516131772584#review-5",
+        "author": "Khoshhal Ahadi",
+        "review_date": "2026-07-05",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Heavily slanted toward sellers; zero protection for independent buyers This platform is completely seller-oriented and offers zero accountability or protection for buyers. I purchased a vehicle, paid the full asking price immediately, and arranged for my transporter to pick it up. When my transport driver arrived, we discovered the seller had completely reneged on the deal and sold the car to someone else—likely for a few hundred dollars more. To make matters worse, OPENLANE has yet to issue my refund or provide any sort of ... read more",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Payment Refunds, Transaction Issues and Deposits",
+        "tier2": "Refunds & Membership Billing",
+        "tier3": "Deposit Refund Status",
+        "id": "rvw-000838"
       },
       {
         "source_website": "birdeye.com",
@@ -336174,6 +340929,21 @@ window.REVIEW_DATASETS = {
       },
       {
         "source_website": "play.google.com",
+        "source_label": "Google Play (com.nthgensoftware.traderev.android)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.nthgensoftware.traderev.android&hl=en&gl=us",
+        "author": "Omar AA",
+        "review_date": "2024-03-24",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Not android friendly. App keeps crashing. Not the first review about it. Do something about it! Thank you",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Account / Access / Login",
+        "tier2": "Password Reset & Login Troubleshooting",
+        "tier3": "App Login Troubleshooting",
+        "id": "rvw-000839"
+      },
+      {
+        "source_website": "play.google.com",
         "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
         "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
         "author": "Jon Defelice",
@@ -336531,6 +341301,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Agent Professionalism & Responsiveness",
         "tier3": "Rude/Unhelpful Support",
         "id": "rvw-000473"
+      },
+      {
+        "source_website": "bbb.org",
+        "source_label": "BBB Customer Reviews",
+        "source_url": "https://www.bbb.org/us/in/carmel/profile/car-dealers/openlane-inc-0382-90024496/customer-reviews#review-9",
+        "author": "Mark M",
+        "review_date": "2024-02-02",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Arbitration process is terrible. They just screwed me on a 2019 Charger engine. Had me diagnose it at 3 different repair facilities including 2 dealerships. The 3rd dealership was very clear that the engine required replacement. The Arbitration manager REMOVED would only pay for a cam and lifters. REMOVED the director was just as incompetent. REMOVED states engine replacement and attached is a bulletin straight from Dodge but Openlane decided they can now decide what requires replacement. Not the manufacturer. Openlane screwed me for over $3000 this week ## BBB Accreditation: None To become accredited, a business must agree to[BBB Standards for Trust](https://www.bbb.org/all/standards-for-trust)and pass BBB's vetting process. [Why choose a BBB Accredited Business?](https://www.bbb.org/all/why-choose-a-bbb-accredited-business) BBB Business Profiles are provided solely to assist you in exercising your own best judgment. BBB does not verify the accuracy of information provided by third parties, and does not guarantee the accuracy of any information in Business Profiles. As a matter of policy, BBB does not endorse any product, service, or business. Businesses are under no obligation to seek BBB accreditation, and some businesses are not accredited because they have not sought BBB accreditation. When considering complaint information, please consider the company's size and volume of transactions. Note that the nature of complaints and a company’s responses to them are often more important than the number of complaints. BBB Business Profiles generally cover a three-year reporting period. [![Image 9: BBB](https://m.bbb.org/brand/logos/BBB_PrimaryLogo_White_RGB.svg)](https://www.bbb.org/)TM ## For Consumers * [Get a Quote](https://www.bbb.org/get-a-quote) * [Start a Review](https://www.bbb.org/leave-a-review) * [File a Complaint](https://www.bbb.org/file-a-complaint) ## For Businesses * [Get Your Business Listed](https://www.bbb.org/get-listed) * [BBB Accreditation](https://www.bbb.org/get-accredited) * [Apply for BBB Accreditation](https://www.bbb.org/apply) * [Newsroom and Resources](https://www.bbb.org/us/news) ## Affiliated Programs * [BBB Institute for Marketplace Trust](https://www.bbbmarketplacetrust.org/) * [BBB Wise Giving Alliance (Give.org)](https://give.org/) * [BBB National Programs](https://bbbprograms.org/) * [our Twitter (opens in a new tab)](https://x.com/bbb_us) * [our LinkedIn (opens in a new tab)](https://www.linkedin.com/company/better-business-bureau/) * [our Facebook (opens in a new tab)](https://www.facebook.com/BetterBusinessBureau) * [our Instagram (opens in a new tab)](https://www.instagram.com/betterbusinessbureau_/) * [About BBB®](https://www.bbb.org/about) * [Terms of Use](https://www.bbb.org/terms-of-use) * [Privacy Policy](https://www.bbb.org/all/privacy-policy) * [Contact Us](https://www.bbb.org/about/find-your-local-bbb) © 2026 International Association of Better Business Bureaus, Inc. (IABBB). All rights reserved. All trademarks are property of IABBB.",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-000840"
       },
       {
         "id": "rvw-000220",
@@ -339788,6 +344573,21 @@ window.REVIEW_DATASETS = {
         "tier3": "Fees"
       },
       {
+        "source_website": "play.google.com",
+        "source_label": "Google Play (com.openlane.mobile.carsarriveplus)",
+        "source_url": "https://play.google.com/store/apps/details?id=com.openlane.mobile.carsarriveplus&hl=en&gl=us",
+        "author": "Paul Madrid",
+        "review_date": "2023-01-25",
+        "rating": 2,
+        "sentiment": "negative",
+        "review_text": "Glitches constantly costing you time and money",
+        "geo_validation": "google_play_us_store",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-000841"
+      },
+      {
         "source_website": "google.com",
         "source_label": "Google Business Profile (OPENLANE)",
         "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCemYtME1BEAE!2m1!1s0x0:0x7af4135fd6c841d8!3m1!1s2@1:CIHM0ogKEICAgIDBzf-0MA%7C%7C?hl=en",
@@ -339912,14 +344712,14 @@ window.REVIEW_DATASETS = {
   "acv": {
     "meta": {
       "description": "Large-scale English-only ACV textual review/problem dataset from public web sources (recency-first).",
-      "review_count": 1191,
+      "review_count": 1204,
       "source_counts": {
+        "trustpilot.com": 32,
         "google.com": 963,
-        "trustpilot.com": 31,
-        "apps.apple.com": 82,
+        "apps.apple.com": 84,
         "play.google.com": 29,
-        "birdeye.com": 75,
-        "bbb.org": 10,
+        "birdeye.com": 84,
+        "bbb.org": 11,
         "reddit.com": 1
       },
       "source_audit": [
@@ -339976,18 +344776,18 @@ window.REVIEW_DATASETS = {
           "direct_statuses": {},
           "blocked": false,
           "fallback_used": false,
-          "candidate_reviews_seen": 142,
-          "new_reviews_added": 0,
+          "candidate_reviews_seen": 192,
+          "new_reviews_added": 2,
           "advertised_total": null,
-          "latest_candidate_date": "2025-05-01",
+          "latest_candidate_date": "2026-09-15",
           "notes": [
             "Apple RSS can be sparse for some app IDs; HTML supplement captures visible App Store review cards only."
           ],
           "errors": [],
-          "review_count": 82,
+          "review_count": 84,
           "existing_review_count": 82,
           "present": true,
-          "latest_review_date": "2026-08-26",
+          "latest_review_date": "2026-09-15",
           "existing_latest_date": "2026-08-26",
           "status": "ok"
         },
@@ -340011,8 +344811,8 @@ window.REVIEW_DATASETS = {
             "direct BBB complaints blocked for https://www.bbb.org/us/ca/san-diego/profile/used-car-dealers/acv-wholesale-1126-20007945"
           ],
           "errors": [],
-          "review_count": 10,
-          "existing_review_count": 9,
+          "review_count": 11,
+          "existing_review_count": 10,
           "present": true,
           "latest_review_date": "2026-02-27",
           "existing_latest_date": "2026-02-27",
@@ -340032,17 +344832,17 @@ window.REVIEW_DATASETS = {
           "candidate_reviews_seen": 18,
           "new_reviews_added": 1,
           "advertised_total": null,
-          "latest_candidate_date": "2026-09-29",
+          "latest_candidate_date": "2026-10-08",
           "notes": [
             "direct Trustpilot blocked for acvauctions.com",
             "reader challenge for https://www.trustpilot.com/review/acvauctions.com?page=2"
           ],
           "errors": [],
-          "review_count": 31,
-          "existing_review_count": 30,
+          "review_count": 32,
+          "existing_review_count": 31,
           "present": true,
-          "latest_review_date": "2026-09-08",
-          "existing_latest_date": "2026-07-16",
+          "latest_review_date": "2026-10-08",
+          "existing_latest_date": "2026-09-08",
           "status": "ok"
         },
         {
@@ -340080,56 +344880,62 @@ window.REVIEW_DATASETS = {
           "fallback_used": false,
           "candidate_reviews_seen": 18,
           "new_reviews_added": 9,
-          "advertised_total": 4002,
-          "latest_candidate_date": "2026-07-09",
+          "advertised_total": 4066,
+          "latest_candidate_date": "2026-07-05",
           "notes": [
             "Birdeye advertised totals may include syndicated Google/Birdeye network reviews; accepted rows are visible textual review cards that pass filters.",
-            "Advertised total 4002 is much larger than accepted rows 75; source is likely partially covered after filters/pagination."
+            "Advertised total 4066 is much larger than accepted rows 84; source is likely partially covered after filters/pagination."
           ],
           "errors": [],
-          "review_count": 75,
-          "existing_review_count": 66,
+          "review_count": 84,
+          "existing_review_count": 75,
           "present": true,
-          "latest_review_date": "2026-07-04",
+          "latest_review_date": "2026-07-05",
           "existing_latest_date": "2026-07-04",
           "status": "partial"
         },
         {
           "source_website": "google.com",
           "attempted": true,
-          "direct_pages": 114,
+          "direct_pages": 109,
           "fallback_pages": 0,
           "direct_statuses": {
-            "200": 114
+            "200": 109
           },
           "blocked": false,
           "fallback_used": false,
-          "candidate_reviews_seen": 60,
-          "new_reviews_added": 5,
+          "candidate_reviews_seen": 0,
+          "new_reviews_added": 0,
           "advertised_total": null,
-          "latest_candidate_date": "2026-10-06",
+          "latest_candidate_date": null,
           "notes": [
             "Google Business Profile discovery completed: 53/53 queries succeeded and 1 unique validated US profiles were selected.",
-            "Validated 1 US Google Business Profiles; 0 failed and 0 were skipped after the circuit breaker. Successful profiles were paginated newest-first through per-profile incremental overlap boundaries."
+            "Google refresh failed atomically; the last verified Google rows and profile registry were retained."
           ],
-          "errors": [],
+          "errors": [
+            "ACV Auctions [0x89d3125bc9cd70f3:0xd5d809e01cd8d070]: newest review RPC did not load",
+            "Google Business Profile coverage incomplete: 1/1 profiles failed pagination; first failure: ACV Auctions [0x89d3125bc9cd70f3:0xd5d809e01cd8d070]: newest review RPC did not load"
+          ],
+          "retained_after_failed_refresh": true,
           "last_successful_refresh_until": "2026-09-30",
           "review_count": 963,
-          "existing_review_count": 958,
+          "existing_review_count": 963,
           "present": true,
           "latest_review_date": "2026-09-30",
-          "existing_latest_date": "2026-08-29",
-          "status": "ok"
+          "existing_latest_date": "2026-09-30",
+          "status": "retained_after_failed_refresh"
         }
       ],
       "sentiments": {
-        "positive": 800,
-        "negative": 391
+        "positive": 802,
+        "negative": 402
       },
       "source_urls": [
+        "https://www.trustpilot.com/reviews/6ac7d46026490316ae57942d",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25oMVVuQlBkRXBJTUdGdFp6WkVWa0pyUkhSa05YYxAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CAIQACodChtycF9oOnh1UnBPdEpIMGFtZzZEVkJrRHRkNXc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tKdWJGZ3lWVUl4VG1jNFJHaElSRkJzUVVaWlJFRRAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CAIQACodChtycF9oOkJubFgyVUIxTmc4RGhIRFBsQUZZREE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21WcldFRnJNbTlmTjJ4TVVtMWlSblp2U0haaVduYxAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CAIQACodChtycF9oOmVrWEFrMm9fN2xMUm1iRnZvSHZiWnc%7C%7C?hl=en",
+        "https://itunes.apple.com/us/review?id=969808943&type=Purple%20Software&reviewId=14552682963",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21oS1JURmFVM0ZKZWpFMGQwZHhiakJEYWtGd1lYYxAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CAIQACodChtycF9oOmhKRTFaU3FJejE0d0dxbjBDakFwYXc%7C%7C?hl=en",
         "https://www.trustpilot.com/reviews/6aa5b944c575693bb850ffc8",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25CTlgzUmFWM0pIYTNWVE1sUnRVSEIyVUdoUFpuYxAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CAIQACodChtycF9oOnBNX3RaV3JHa3VTMlRtUHB2UGhPZnc%7C%7C?hl=en",
@@ -340236,6 +345042,8 @@ window.REVIEW_DATASETS = {
         "https://www.trustpilot.com/reviews/69120a04dc8a7e3d24713e8c",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xoT2JXMWxkWGRWWWtZM05uQmFhekV6Um14dVdYYxAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CAIQACodChtycF9oOlhObW1ldXdVYkY3NnBaazEzRmxuWXc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25BMFZrcFFhRzFhTVd0Sk9UaGxiRFZQUmpkYWJFRRAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CAIQACodChtycF9oOnA0VkpQaG1aMWtJOThlbDVPRjdabEE%7C%7C?hl=en",
+        "https://reviews.birdeye.com/acv-auctions-164822889606828#review-7",
+        "https://reviews.birdeye.com/acv-auctions-164822889606828#review-9",
         "https://play.google.com/store/apps/details?id=com.acvauctions.acvpro&hl=en&gl=us",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25CWFgxSnJhelU1VWtoVVJFczJVbGgwVm5aMlFrRRAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CAIQACodChtycF9oOnBXX1JrazU5UkhUREs2Ulh0VnZ2QkE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT214TWFUWkhRbWwxVDBaMk9YTnpUVWN5Y0ZFdFZHYxAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CAIQACodChtycF9oOmxMaTZHQml1T0Z2OXNzTUcycFEtVGc%7C%7C?hl=en",
@@ -340257,8 +345065,6 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2poS2NIWkNkMDVNWVdWd1VsOUpOamw1ZERZd2FGRRAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CAIQACodChtycF9oOjhKcHZCd05MYWVwUl9JNjl5dDYwaFE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21WM2FIUkNabTVVVmtRMmJ6aHdkRTVuWkRsSGQyYxAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CAIQACodChtycF9oOmV3aHRCZm5UVkQ2bzhwdE5nZDlHd2c%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21VNVFrUkJXV2Q2Vm5jM1lsWlBObEpuUkUxbGJtYxAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CAIQACodChtycF9oOmU5QkRBWWd6Vnc3YlZPNlJnRE1lbmc%7C%7C?hl=en",
-        "https://reviews.birdeye.com/acv-auctions-164822889606828#review-7",
-        "https://reviews.birdeye.com/acv-auctions-164822889606828#review-9",
         "https://reviews.birdeye.com/acv-auctions-164822889606828?page=2#review-3",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tFeGVscGZWMGRuVFROZlZqQlljaTAyVUZaUVVIYxAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CAIQACodChtycF9oOkExelpfV0dnTTNfVjBYci02UFZQUHc%7C%7C?hl=en",
         "https://www.trustpilot.com/reviews/68ddd7053359d602cfd712ca",
@@ -340424,16 +345230,20 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNveGY2VEh3EAE!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CIHM0ogKEICAgMCoxf6THw%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNvMGJxeVFnEAE!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CIHM0ogKEICAgMCo0bqyQg%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNvMGNLbGRREAE!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CIHM0ogKEICAgMCo0cKldQ%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNvb2FPZ3NnRRAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CIHM0ogKEICAgMCooaOgsgE%7C%7C?hl=en",
-        "https://itunes.apple.com/us/review?id=969808943&type=Purple%20Software&reviewId=12548222243",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNveUlqQnpBRRAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CIHM0ogKEICAgMCoyIjBzAE%7C%7C?hl=en"
+        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNvb2FPZ3NnRRAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CIHM0ogKEICAgMCooaOgsgE%7C%7C?hl=en"
       ],
-      "generated_at_utc": "2026-10-07T02:30:56.450031+00:00",
+      "generated_at_utc": "2026-11-02T21:02:08.534788+00:00",
       "since_date": "2023-01-01",
-      "until_date": "2026-09-30",
-      "collector_failures": [],
-      "existing_review_count": 1175,
-      "new_reviews_added": 16,
+      "until_date": "2026-10-31",
+      "collector_failures": [
+        {
+          "collector": "google_business",
+          "error": "Google Business Profile coverage incomplete: 1/1 profiles failed pagination; first failure: ACV Auctions [0x89d3125bc9cd70f3:0xd5d809e01cd8d070]: newest review RPC did not load",
+          "retained_previous_data": true
+        }
+      ],
+      "existing_review_count": 1191,
+      "new_reviews_added": 13,
       "youtube_excluded": true,
       "usa_only": true,
       "english_only": true,
@@ -340453,10 +345263,10 @@ window.REVIEW_DATASETS = {
         "bbb.org"
       ],
       "geo_validation_counts": {
-        "google_business_us_profile": 5,
         "trustpilot_us_slug": 1,
         "bbb_us_business": 1,
-        "birdeye_us_profile": 9
+        "birdeye_us_profile": 9,
+        "apple_us_store": 2
       },
       "geo_excluded_counts": {},
       "geo_excluded_examples": [],
@@ -340487,6 +345297,21 @@ window.REVIEW_DATASETS = {
       ]
     },
     "reviews": [
+      {
+        "source_website": "trustpilot.com",
+        "source_label": "Trustpilot (acvauctions.com)",
+        "source_url": "https://www.trustpilot.com/reviews/6ac7d46026490316ae57942d",
+        "author": "Trustpilot user",
+        "review_date": "2026-10-08",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Enough Is Enough — Misleading Inspections, Unfair Arbitration, and Worthless Purchase Protection. We are an independent dealer, and I've lost a substantial amount of money dealing with ACV Auctions. After years of buying vehicles through their platform, I've had enough of their inconsistent inspections, arbitration decisions, and refusal to take responsibility when vehicles are materially misrepresented. We purchased vehicles with Purchase Protection on every single transaction, expecting ACV to stand behind its inspection reports and honor legitimate arbitration claims. Instead, even when we presented what we believe were valid claims under NAAA arbitration policies, ACV refused to unwind deals and left us absorbing the losses. Here's what really bothers me: ACV will inspect a vehicle when you're buying it and fail to disclose serious mechanical problems. But when you turn around and try to sell that same vehicle through their platform, suddenly their inspectors discover engine problems, structural issues, and other major defects that weren't mentioned when you purchased it. How is that acceptable? Are there different inspection standards depending on whether ACV is selling you a vehicle or you're trying to sell one? Their arbitration process is even more frustrating. I've had people at their Buffalo headquarters evaluate engine-related complaints by listening to audio recordings and conclude that a vehicle has an engine problem, even when the noise was coming from an accessory. Yet dealers are expected to accept these judgments from people who, in my experience, don't consistently distinguish between engine defects and accessory-related issues. Another example is an inoperative convertible top. ACV fails to disclose that the top doesn't operate, then requests a diagnostic report and repair estimate during arbitration. After you spend time and money obtaining the documentation, they dismiss the issue as cosmetic. Since when is an inoperative mechanical convertible-top system automatically a cosmetic issue? This is exactly the problem. Undisclosed mechanical defects are treated as minor or excluded issues when the dealer is asking for protection. Meanwhile, dealers are left paying for diagnostics, repairs, transportation, arbitration expenses, and vehicles that were not represented accurately. And what exactly are we paying for with Purchase Protection if ACV can simply deny claims and refuse to unwind transactions involving serious undisclosed problems? I understand that used vehicles carry risks. I've been in this business long enough to know that. But there's a difference between normal used-car risk and buying a vehicle based on an inspection report that fails to disclose a material defect. NAAA arbitration standards should mean something. Purchase Protection should mean something. ACV's inspection reports should mean something. Instead, my experience has been a pattern of inconsistent inspections, disputed arbitration decisions, and financial losses pushed onto independent dealers. I'm tired of dealing with a process that seems to protect the auction platform while leaving the purchasing dealer responsible for the consequences of inaccurate disclosures. ACV needs to stop hiding behind technicalities, apply consistent inspection standards, and take responsibility when its reports fail to identify serious problems. Enough is enough. I would strongly caution any independent dealer against relying solely on ACV's inspections or assuming that purchasing their additional protection means a legitimate claim will be honored. One star. Based on my experience, ACV has lost my trust.",
+        "geo_validation": "trustpilot_us_slug",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Third-Party Inspection Authorization & Scheduling",
+        "tier3": "Previewing/ Inspecting Vehicles",
+        "id": "rvw-001192"
+      },
       {
         "source_website": "google.com",
         "source_label": "Google Business Profile (ACV Auctions)",
@@ -340531,6 +345356,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Agent Professionalism & Responsiveness",
         "tier3": "Helpful Support Experience",
         "id": "rvw-001178"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (969808943, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=969808943&type=Purple%20Software&reviewId=14552682963",
+        "author": "Salamokal",
+        "review_date": "2026-09-15",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "MSM auto. Arbitration department is a joke. Go to a real auction or open lane that offers way batter customer service and cheaper buying rates. Every 6 months they just raise price",
+        "geo_validation": "apple_us_store",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-001193"
       },
       {
         "source_website": "google.com",
@@ -340846,6 +345686,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Agent Professionalism & Responsiveness",
         "tier3": "Rude/Unhelpful Support",
         "id": "rvw-000209"
+      },
+      {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Birdeye)",
+        "source_url": "https://reviews.birdeye.com/acv-auctions-164822889606828#review-3",
+        "author": "Kolton W.",
+        "review_date": "2026-07-05",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "They are soft handed order takers. They are only for the seller, the buyer means absolutely nothing to them. They sold me a car with a bad title and i have been fighting them for eight months, as a dealer i cannot sale the car and have been out that money from that day on, they will not call back. they will find any excuse to get off the phone with you to call you back that you will never get. i hope they go under and i will tell everyone to stay away from them and not deal with them ABSOLUTE CROOKS!!!",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Communication Follow-up & Escalation",
+        "tier3": "No Callback / Unresolved Case",
+        "id": "rvw-001194"
       },
       {
         "source_website": "birdeye.com",
@@ -341658,6 +346513,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-000250"
       },
       {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Birdeye)",
+        "source_url": "https://reviews.birdeye.com/acv-auctions-164822889606828#review-4",
+        "author": "Anthony E.",
+        "review_date": "2026-05-06",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "ACV is a scam auction plain and simple. The condition report does not matter to them. over the last year we have bought 40 plus vehicles from them. Green light sales mean nothing to them. This last one was a nightmare. Bought a 2020 Altima on green light when we received the vehicle, we noticed both passenger wheels were worn unevenly and tilted inward at the top. upon further inspection it was determined through a certified mechanic that vehicle had suffered a severe collision on passenger side bending and breaking multiple... read more",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Lot Condition, Listing Status and related",
+        "tier2": "Third-Party Inspection Authorization & Scheduling",
+        "tier3": "Previewing/ Inspecting Vehicles",
+        "id": "rvw-001195"
+      },
+      {
         "source_website": "apps.apple.com",
         "source_label": "Apple App Store (969808943, us)",
         "source_url": "https://itunes.apple.com/us/review?id=969808943&type=Purple%20Software&reviewId=14037081737",
@@ -342421,6 +347291,36 @@ window.REVIEW_DATASETS = {
         "tier2": "Agent Professionalism & Responsiveness",
         "tier3": "Rude/Unhelpful Support",
         "id": "rvw-000267"
+      },
+      {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Birdeye)",
+        "source_url": "https://reviews.birdeye.com/acv-auctions-164822889606828#review-7",
+        "author": "Gustavo C.",
+        "review_date": "2025-11-02",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "BE VERY CAREFUL!!!!! Dis-honest auction. Bought green light, was sold car with odometer fraud (proven) and a bad motor. Loss of 6K. They did NOTHING to help[!!!!!!",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-001196"
+      },
+      {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Birdeye)",
+        "source_url": "https://reviews.birdeye.com/acv-auctions-164822889606828#review-9",
+        "author": "Ben V.",
+        "review_date": "2025-11-02",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "I am working with ACV and especially with my account manager Dan Dickinson for last 2 years and i cant say enough good things about the support and help i have received from them. Dan has made my job a breeze. He is the one of the best at the ACV Auction , He is always on top of Everything. We appreciate ACV and Dan very much. They have been the cornerstone of our business.",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Helpful Support Experience",
+        "id": "rvw-001197"
       },
       {
         "id": "rvw-000017",
@@ -348048,6 +352948,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-000128"
       },
       {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (969808943, us)",
+        "source_url": "https://itunes.apple.com/us/review?id=969808943&type=Purple%20Software&reviewId=11969417263",
+        "author": "Mike Allen aaa",
+        "review_date": "2024-11-19",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "David Jacob. This auction has horrible arbitration policy. They do not give you the option to return the car. If the car has a serious problem they force you to take an adjustment and keep the vehicle that’s not fair. They go after keeping the deal together and screwing the buyer and keeping the seller happy so they could bring more cars.",
+        "geo_validation": "apple_us_store",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-001198"
+      },
+      {
         "id": "rvw-000065",
         "source_website": "bbb.org",
         "source_label": "BBB Complaints",
@@ -348138,6 +353053,21 @@ window.REVIEW_DATASETS = {
         "id": "rvw-001187"
       },
       {
+        "source_website": "bbb.org",
+        "source_label": "BBB Complaints",
+        "source_url": "https://www.bbb.org/us/ca/san-diego/profile/used-car-dealers/acv-wholesale-1126-20007945/complaints#1126_20007945_22547093",
+        "author": "BBB complainant",
+        "review_date": "2024-11-12",
+        "rating": 1,
+        "sentiment": "negative",
+        "review_text": "Service or Repair Issues complaint (Unanswered). Be very carfull dealers in REMOVED dont buy from REMOVED We used to source almost all of our inventory from them, big mistake!!!We just purchased a 2020 GMC Sierra REMOVED and Yeloow light for engine vibrations.Vehicle arrives and we cant start it even with new battery after many many many times finally starts but the cluster is dead and the transmission sounds horrible.Arbitration team REMOVED instructed us to take the vehicle to the dealer for repairs and estimate. Dealer has spent 40 days traing to repair it and initiated a TAC procedure wich is the actual factory helping the dealer to get it repaired, but havent been able too. REMOVED factory is actively looking into it and for now theres no solution as the issue is so big that the whole electrical system is REMOVED quote REMOVED dollars for initial repairs and worned us that it could go up a lot as all the modules and computers on the vehicle as no comunication and they cant establish a final quote nor having a time line when they will finish the repairs.We informed the Arbitration team at REMOVED about the situation with no less than 15 calls per week.Yesterday they decided to issue a 2900 payment to \"cover\" for the repairs and close on their own the claim leaving us with a REMOVED dollars truck that even the dealer hasent been able to repair and we are unsure if they will.We have tried to contac everyone at ACV with no luck. I even writed REMOVED CEO at REMOVED asking for help and uncover the abuse from REMOVED. We have gone over this situation with other vehicles, but this has been by far the worst one.WE ARE STILL WATING FOR HELP ## BBB Accreditation: None To become accredited, a business must agree to[BBB Standards for Trust](https://www.bbb.org/all/standards-for-trust)and pass BBB's vetting process. [Why choose a BBB Accredited Business?](https://www.bbb.org/all/why-choose-a-bbb-accredited-business) BBB Business Profiles are provided solely to assist you in exercising your own best judgment. BBB does not verify the accuracy of information provided by third parties, and does not guarantee the accuracy of any information in Business Profiles. As a matter of policy, BBB does not endorse any product, service, or business. Businesses are under no obligation to seek BBB accreditation, and some businesses are not accredited because they have not sought BBB accreditation. When considering complaint information, please consider the company's size and volume of transactions. Note that the nature of complaints and a company’s responses to them are often more important than the number of complaints. BBB Business Profiles generally cover a three-year reporting period. [![Image 9: BBB](https://m.bbb.org/brand/logos/BBB_PrimaryLogo_White_RGB.svg)](https://www.bbb.org/)TM ## For Consumers * [Get a Quote](https://www.bbb.org/get-a-quote) * [Start a Review](https://www.bbb.org/leave-a-review) * [File a Complaint](https://www.bbb.org/file-a-complaint) ## For Businesses * [Get Your Business Listed](https://www.bbb.org/get-listed) * [BBB Accreditation](https://www.bbb.org/get-accredited) * [Apply for BBB Accreditation](https://www.bbb.org/apply) * [Newsroom and Resources](https://www.bbb.org/us/news) ## Affiliated Programs * [BBB Institute for Marketplace Trust](https://www.bbbmarketplacetrust.org/) * [BBB Wise Giving Alliance (Give.org)](https://give.org/) * [BBB National Programs](https://bbbprograms.org/) * [our Twitter (opens in a new tab)](https://x.com/bbb_us) * [our LinkedIn (opens in a new tab)](https://www.linkedin.com/company/better-business-bureau/) * [our Facebook (opens in a new tab)](https://www.facebook.com/BetterBusinessBureau) * [our Instagram (opens in a new tab)](https://www.instagram.com/betterbusinessbureau_/) * [About BBB®](https://www.bbb.org/about) * [Terms of Use](https://www.bbb.org/terms-of-use) * [Privacy Policy](https://www.bbb.org/all/privacy-policy) * [Contact Us](https://www.bbb.org/about/find-your-local-bbb) © 2026 International Association of Better Business Bureaus, Inc. (IABBB). All rights reserved. All trademarks are property of IABBB.",
+        "geo_validation": "bbb_us_business",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-001199"
+      },
+      {
         "source_website": "google.com",
         "source_label": "Google Business Profile (ACV Auctions)",
         "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMzcF8zUHBnRRAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CIHM0ogKEICAgIC3p_3PpgE%7C%7C?hl=en",
@@ -348181,6 +353111,81 @@ window.REVIEW_DATASETS = {
         "tier2": "Lot Condition Reporting",
         "tier3": "Lot Damage",
         "id": "rvw-000542"
+      },
+      {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Birdeye)",
+        "source_url": "https://reviews.birdeye.com/acv-auctions-164822889606828?page=2#review-3",
+        "author": "Gary D.",
+        "review_date": "2024-11-02",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "customer service is outstanding. Travis Mueller could not be more helpful in assisting me with the purchase of 2 vehicles yesterday. Negotiations were smooth as silk.",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Helpful Support Experience",
+        "id": "rvw-001200"
+      },
+      {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Birdeye)",
+        "source_url": "https://reviews.birdeye.com/acv-auctions-164822889606828?page=2#review-4",
+        "author": "Frank L.",
+        "review_date": "2024-11-02",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Absolutely Horrible, I have never left a negative review about anyone in my life but ACV finally pushed me to the point where I must. There was a Facebook group that had hundreds of bad reviews on this site but I chose to ignore it at now my own peril. They are unethical and I have been burned one to many times with this auction. They have zero ethics and my dealership is done doing business here.",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-001201"
+      },
+      {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Birdeye)",
+        "source_url": "https://reviews.birdeye.com/acv-auctions-164822889606828?page=2#review-5",
+        "author": "Alex Auto S.",
+        "review_date": "2024-11-02",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "ACV is a joke, crook and sell junk. When you do the arbitration they do NOT stand behind their vehicles. We have referred multiple friends to ACV and will contact them to no longer deal with ACV. I have a feeling ACV won't last much longer. Don't waste time and purchase anything from them ever.",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-001202"
+      },
+      {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Birdeye)",
+        "source_url": "https://reviews.birdeye.com/acv-auctions-164822889606828?page=2#review-6",
+        "author": "Tom",
+        "review_date": "2024-11-02",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "I have never been as pissed off from any auction like I am right now with ACV. It seems that eveyday they seem to get worse then then week before! I will lay out some issues that we have faced and hopefully this reaches someone that cares, because I have been asking for a higher up to pass along the issues, and so far nothing. We bought a car from them in Jan, and we sold it soon after. The new buyer found out it was reported stolen, we notified ACV. We obviously unwound the deal and notified ACV. 7 months have gone by ... read more",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-001203"
+      },
+      {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Birdeye)",
+        "source_url": "https://reviews.birdeye.com/acv-auctions-164822889606828?page=2#review-7",
+        "author": "Tom B.",
+        "review_date": "2024-11-02",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Their condition report is a joke. They sell you a green light vehicle with a hidden issues and when you arbitrate it, you have to do your own diagnosis and provide them with the report which incur extra cost. At the end of the arbitration, they notify you that's it's not valid. Don't not trust their CRs, Beware!!!",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-001204"
       },
       {
         "source_website": "google.com",
@@ -358357,10 +363362,10 @@ window.REVIEW_DATASETS = {
   "americas_auto_auction": {
     "meta": {
       "description": "Large-scale English-only America's Auto Auction textual review/problem dataset from public web sources (recency-first).",
-      "review_count": 709,
+      "review_count": 719,
       "source_counts": {
+        "birdeye.com": 121,
         "google.com": 594,
-        "birdeye.com": 111,
         "bbb.org": 4
       },
       "source_audit": [
@@ -358392,10 +363397,10 @@ window.REVIEW_DATASETS = {
           "source_website": "bbb.org",
           "attempted": true,
           "direct_pages": 6,
-          "fallback_pages": 5,
+          "fallback_pages": 6,
           "direct_statuses": {
             "403": 6,
-            "200": 5
+            "200": 6
           },
           "blocked": true,
           "fallback_used": true,
@@ -358411,9 +363416,7 @@ window.REVIEW_DATASETS = {
             "direct BBB complaints blocked for https://www.bbb.org/us/il/crestwood/profile/auto-auction/americas-auto-auction-chicago-0654-12015440",
             "direct BBB complaints blocked for https://www.bbb.org/us/tx/buda/profile/auto-auction/americas-auto-auction-austin-0825-90094147"
           ],
-          "errors": [
-            "reader error for https://www.bbb.org/us/il/centreville/profile/auto-auction/americas-auto-auction-0734-310446804/customer-reviews: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=60)"
-          ],
+          "errors": [],
           "review_count": 4,
           "existing_review_count": 4,
           "present": true,
@@ -358481,63 +363484,68 @@ window.REVIEW_DATASETS = {
           },
           "blocked": false,
           "fallback_used": false,
-          "candidate_reviews_seen": 60,
-          "new_reviews_added": 9,
+          "candidate_reviews_seen": 58,
+          "new_reviews_added": 10,
           "advertised_total": 527,
-          "latest_candidate_date": "2026-09-07",
+          "latest_candidate_date": "2026-10-31",
           "notes": [
             "Birdeye advertised totals may include syndicated Google/Birdeye network reviews; accepted rows are visible textual review cards that pass filters.",
-            "Advertised total 527 is much larger than accepted rows 111; source is likely partially covered after filters/pagination."
+            "Advertised total 527 is much larger than accepted rows 121; source is likely partially covered after filters/pagination."
           ],
           "errors": [],
-          "review_count": 111,
-          "existing_review_count": 102,
+          "review_count": 121,
+          "existing_review_count": 111,
           "present": true,
-          "latest_review_date": "2026-09-07",
-          "existing_latest_date": "2026-08-26",
+          "latest_review_date": "2026-10-31",
+          "existing_latest_date": "2026-09-07",
           "status": "partial"
         },
         {
           "source_website": "google.com",
           "attempted": true,
-          "direct_pages": 291,
+          "direct_pages": 133,
           "fallback_pages": 0,
           "direct_statuses": {
-            "200": 291
+            "200": 133
           },
           "blocked": false,
           "fallback_used": false,
-          "candidate_reviews_seen": 910,
-          "new_reviews_added": 32,
+          "candidate_reviews_seen": 6,
+          "new_reviews_added": 0,
           "advertised_total": null,
           "latest_candidate_date": "2026-10-05",
           "notes": [
-            "Google Business Profile discovery completed: 54/54 queries succeeded and 54 unique validated US profiles were selected.",
-            "Validated 51 US Google Business Profiles; 3 failed and 0 were skipped after the circuit breaker. Successful profiles were paginated newest-first through per-profile incremental overlap boundaries."
+            "Google Business Profile discovery completed: 54/54 queries succeeded and 55 unique validated US profiles were selected.",
+            "Validated 2 US Google Business Profiles; 6 failed and 47 were skipped after the circuit breaker. Successful profiles were paginated newest-first through per-profile incremental overlap boundaries."
           ],
           "errors": [
-            "America's Auto Auction Austin [0x865b52ff3d9c30e9:0xebbb605ccf5ba997]: pagination stopped before the 2026-08-17 boundary/terminal page (10 RPC reviews; advertised=280)",
-            "America's Auto Auction Savannah [0x88fba051dbe89415:0x58f9104724a5a13]: newest review RPC did not load",
-            "America's Auto Auction Shreveport [0x8636daec8db856cf:0xca16bdc1dbd9386f]: newest review RPC did not load"
+            "America's Auctions In Motion Thousand Oaks [0x80e830983731fbb1:0xf56bc5e71d5f7c65]: newest review RPC did not load",
+            "America's Auto Auction Albany [0x88f279eb8fcbfff9:0xbecbdd5ed6e965ae]: newest review RPC did not load",
+            "America's Auto Auction Atlanta [0x88f54f77cd6b3ca3:0x6c1da0d0e62c9fa7]: newest review RPC did not load",
+            "America's Auto Auction Augusta [0x88f9cb84762e7fc1:0xa5a64f1dc5862f60]: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.google.com/maps?cid=11936314851678629728&hl=en&gl=us\", waiting until \"domcontentloaded\"\n",
+            "America's Auto Auction Austin [0x865b52ff3d9c30e9:0xebbb605ccf5ba997]: newest review RPC did not load",
+            "America's Auto Auction Baton Rouge [0x86269f4057e84d9d:0xb5b13ba60c8bebc1]: newest review RPC did not load"
           ],
           "profile_retention_used": true,
-          "profiles_completed": 51,
-          "profiles_failed": 3,
-          "profiles_skipped_after_circuit_breaker": 0,
+          "profiles_completed": 2,
+          "profiles_failed": 6,
+          "profiles_skipped_after_circuit_breaker": 47,
           "last_successful_refresh_until": "2026-08-31",
           "review_count": 594,
-          "existing_review_count": 562,
+          "existing_review_count": 594,
           "present": true,
           "latest_review_date": "2026-09-28",
-          "existing_latest_date": "2026-08-25",
+          "existing_latest_date": "2026-09-28",
           "status": "partial_profile_retention"
         }
       ],
       "sentiments": {
-        "positive": 390,
-        "negative": 319
+        "positive": 395,
+        "negative": 324
       },
       "source_urls": [
+        "https://reviews.birdeye.com/americas-auto-auction-boston-175285312088477#review-1",
+        "https://reviews.birdeye.com/americas-auto-auction-kansas-city-175285312126035#review-1",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pKV1dsaFhPVzR4WW5oSFNuZENhVTFzZG5GWVZHYxAB!2m1!1s0x0:0x4a5f30a10721c63c!3m1!1s2@1:CAIQACodChtycF9oOjJWWlhXOW4xYnhHSndCaU1sdnFYVGc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kMVprSTNPVU5uWmkxTGQyUkNTbmN3Tld0dlJFRRAB!2m1!1s0x0:0x48373f348838596a!3m1!1s2@1:CAIQACodChtycF9oOnd1ZkI3OUNnZi1Ld2RCSncwNWtvREE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1VldsTTNabk5LYTBRelgzSkpRelpWYW0xdWVtYxAB!2m1!1s0x0:0x876abfce109a1191!3m1!1s2@1:CAIQACodChtycF9oOk5VWlM3ZnNKa0QzX3JJQzZVam1uemc%7C%7C?hl=en",
@@ -358550,6 +363558,8 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2swNFUwMDRhVnBrUmxkWWRFeDNPSGgyYUZWS2FVRRAB!2m1!1s0x0:0xbecbdd5ed6e965ae!3m1!1s2@1:CAIQACodChtycF9oOk04U004aVpkRldYdEx3OHh2aFVKaUE%7C%7C?hl=en",
         "https://reviews.birdeye.com/americas-auto-auction-atlanta-175285312123278#review-3",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xSak9WbzRPV1ZPVEhWMWJtcG1NSFV6WmtoNVJYYxAB!2m1!1s0x0:0x78cd4f63c4fd9238!3m1!1s2@1:CAIQACodChtycF9oOlRjOVo4OWVOTHV1bmpmMHUzZkh5RXc%7C%7C?hl=en",
+        "https://reviews.birdeye.com/americas-auto-auction-atlanta-175285312123278#review-5",
+        "https://reviews.birdeye.com/americas-auto-auction-kansas-city-175285312126035#review-4",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kwMmJtdzJZbE5aY0hwNFIyMUhPVVpFTUZCR1NuYxAB!2m1!1s0x0:0xf56bc5e71d5f7c65!3m1!1s2@1:CAIQACodChtycF9oOi02bmw2YlNZcHp4R21HOUZEMFBGSnc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25VeFlVSkRibTF6ZWtWRlZHRk5aR2hGVmxsR2JHYxAB!2m1!1s0x0:0x69bb1d22d647b967!3m1!1s2@1:CAIQACodChtycF9oOnUxYUJDbm1zekVFVGFNZGhFVllGbGc%7C%7C?hl=en",
         "https://reviews.birdeye.com/americas-auto-auction-atlanta-175285312123278#review-1",
@@ -358562,6 +363572,7 @@ window.REVIEW_DATASETS = {
         "https://reviews.birdeye.com/americas-auto-auction-kansas-city-175285312126035#review-3",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21ORFgxcFBOVGhmVjJWQlgxcEtXa3BVZEhZeE4yYxAB!2m1!1s0x0:0xf41ed977b990df4a!3m1!1s2@1:CAIQACodChtycF9oOmNDX1pPNThfV2VBX1pKWkpUdHYxN2c%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkNmRqY3lWa0p1ZUhkd1kwaGxVVXBSVmtKQmQyYxAB!2m1!1s0x0:0xf41ed977b990df4a!3m1!1s2@1:CAIQACodChtycF9oOkd6djcyVkJueHdwY0hlUUpRVkJBd2c%7C%7C?hl=en",
+        "https://reviews.birdeye.com/americas-auto-auction-boston-175285312088477#review-4",
         "https://reviews.birdeye.com/americas-auto-auction-atlanta-175285312123278#review-4",
         "https://reviews.birdeye.com/americas-auto-auction-boston-175285312088477#review-2",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tSS2QydHlTR2d3VmxWM09EQTNVVkYxVEdkVFduYxAB!2m1!1s0x0:0x30cc1248b033d002!3m1!1s2@1:CAIQACodChtycF9oOkRKd2tySGgwVlV3ODA3UVF1TGdTWnc%7C%7C?hl=en",
@@ -358572,7 +363583,6 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s5d01WTmhTbk0wY2paaFUxQmhXQzF1VFRCNVpsRRAB!2m1!1s0x0:0x69bb1d22d647b967!3m1!1s2@1:CAIQACodChtycF9oOk9wMVNhSnM0cjZhU1BhWC1uTTB5ZlE%7C%7C?hl=en",
         "https://reviews.birdeye.com/americas-auto-auction-atlanta-175285312123278#review-2",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xKTk9VNUJkM1pmY2psNVRHZEZNWGxPZFU1NlIzYxAB!2m1!1s0x0:0xf17205dcc576655f!3m1!1s2@1:CAIQACodChtycF9oOlJNOU5Bd3Zfcjl5TGdFMXlOdU56R3c%7C%7C?hl=en",
-        "https://reviews.birdeye.com/americas-auto-auction-atlanta-175285312123278#review-5",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xFeGFXdHllbUpxU20xUmJFSjBZVWRWU2tWcmNIYxAB!2m1!1s0x0:0xd4b21820e6c03fb2!3m1!1s2@1:CAIQACodChtycF9oOlExaWtyemJqSm1RbEJ0YUdVSkVrcHc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25SV09FMVZRMTlzYzNoR1dFcHpSVzlTUkd4bFNIYxAB!2m1!1s0x0:0xf41ed977b990df4a!3m1!1s2@1:CAIQACodChtycF9oOnRWOE1VQ19sc3hGWEpzRW9SRGxlSHc%7C%7C?hl=en",
         "https://reviews.birdeye.com/americas-auto-auction-boston-175285312088477#review-5",
@@ -358593,6 +363603,7 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1SGEwWkNOR1IwY2xBMlUwZHRPRlEwT0dReGNuYxAB!2m1!1s0x0:0x6dcb9e6f48b87d07!3m1!1s2@1:CAIQACodChtycF9oOk5Ha0ZCNGR0clA2U0dtOFQ0OGQxcnc%7C%7C?hl=en",
         "https://reviews.birdeye.com/americas-auto-auction-greater-kalamazoo-175285312088026#review-3",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wU2NqTnpNbWwwTnpkeWJWUlBTVXhWVjI5R2JHYxAB!2m1!1s0x0:0x1aa343ea3eb92075!3m1!1s2@1:CAIQACodChtycF9oOmpScjNzMml0NzdybVRPSUxVV29GbGc%7C%7C?hl=en",
+        "https://reviews.birdeye.com/americas-auto-auction-greater-kalamazoo-175285312088026#review-4",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KSFgwVnpRWEl6Tkc1bVVXRm5iSFkzZGxRNE5WRRAB!2m1!1s0x0:0xbecbdd5ed6e965ae!3m1!1s2@1:CAIQACodChtycF9oOnJHX0VzQXIzNG5mUWFnbHY3dlQ4NVE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xjMmRXMHllbEIwY2xWc1JrUXpVSFV6ZERJdGFuYxAB!2m1!1s0x0:0xfb5905925251d4e3!3m1!1s2@1:CAIQACodChtycF9oOlc2dW0yelB0clVsRkQzUHUzdDItanc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wV2VubGxWalptTmtGb1UxRkRURGxFV1RKWVZIYxAB!2m1!1s0x0:0xde6b19ecf7eda82!3m1!1s2@1:CAIQACodChtycF9oOmpWenllVjZmNkFoU1FDTDlEWTJYVHc%7C%7C?hl=en",
@@ -358616,7 +363627,6 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT214b1RXcExZa3hTV2xCTU5WcEhiVmhoT0RKYWFWRRAB!2m1!1s0x0:0xea66b05d00af738c!3m1!1s2@1:CAIQACodChtycF9oOmxoTWpLYkxSWlBMNVpHbVhhODJaaVE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KV01tWk5kbmRSWTAxYVJsUXljMHRLVDFkak5FRRAB!2m1!1s0x0:0x69bb1d22d647b967!3m1!1s2@1:CAIQACodChtycF9oOnJWMmZNdndRY01aRlQyc0tKT1djNEE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tGMU4zbzFXblJqUm1neE5YRXRTekYwV0dSQ2EyYxAB!2m1!1s0x0:0xfa107851a42a9650!3m1!1s2@1:CAIQACodChtycF9oOkF1N3o1WnRjRmgxNXEtSzF0WGRCa2c%7C%7C?hl=en",
-        "https://reviews.birdeye.com/americas-auto-auction-kansas-city-175285312126035#review-4",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT214bmJuaHRWMDFHVFhaT1NWb3dXRzkyUkRsdFZWRRAB!2m1!1s0x0:0xf41ed977b990df4a!3m1!1s2@1:CAIQACodChtycF9oOmxnbnhtV01GTXZOSVowWG92RDltVVE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xWb1VGZEJablF6TmpGWWNGWldSRTltYkdjdE5FRRAB!2m1!1s0x0:0xb1f5c3c66da56911!3m1!1s2@1:CAIQACodChtycF9oOlVoUFdBZnQzNjFYcFZWRE9mbGctNEE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xacWVrSmxkSEJaVEUxUVpXUmtlbWRWYUZCYU4xRRAB!2m1!1s0x0:0xd4b21820e6c03fb2!3m1!1s2@1:CAIQACodChtycF9oOlZqekJldHBZTE1QZWRkemdVaFBaN1E%7C%7C?hl=en",
@@ -358647,7 +363657,6 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT214eVNUTkxTRlpEWm5ob1VrTnhYMGN5U0VWak1FRRAB!2m1!1s0x0:0xd4b21820e6c03fb2!3m1!1s2@1:CAIQACodChtycF9oOmxySTNLSFZDZnhoUkNxX0cySEVjMEE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21WMVN5MWthbTlDZG5SSldrRlFjbUV4VkZKTGJYYxAB!2m1!1s0x0:0x1aa343ea3eb92075!3m1!1s2@1:CAIQACodChtycF9oOmV1Sy1kam9CdnRJWkFQcmExVFJLbXc%7C%7C?hl=en",
         "https://reviews.birdeye.com/americas-auto-auction-166687512715050#review-5",
-        "https://reviews.birdeye.com/americas-auto-auction-boston-175285312088477#review-4",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSWVRFbFVhSGgwUmprd2IwOVFWM1JsV1c0MWJsRRAB!2m1!1s0x0:0xfb5905925251d4e3!3m1!1s2@1:CAIQACodChtycF9oOjRYTElUaHh0Rjkwb09QV3RlWW41blE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT200NWRpMDNiMFpNV21wTVFYbEtWVkptVlVwM1VsRRAB!2m1!1s0x0:0xcc270adc7d3b2572!3m1!1s2@1:CAIQACodChtycF9oOm45di03b0ZMWmpMQXlKVVJmVUp3UlE%7C%7C?hl=en",
         "https://reviews.birdeye.com/americas-auto-auction-166687512715050#review-3",
@@ -358658,7 +363667,6 @@ window.REVIEW_DATASETS = {
         "https://reviews.birdeye.com/americas-auto-auction-atlanta-175285312123278?page=2#review-3",
         "https://reviews.birdeye.com/americas-auto-auction-atlanta-175285312123278?page=2#review-4",
         "https://reviews.birdeye.com/americas-auto-auction-boston-175285312088477?page=2#review-3",
-        "https://reviews.birdeye.com/americas-auto-auction-greater-kalamazoo-175285312088026#review-4",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xwNU1Ib3RSakZmVmtobVVrczVlVzAwWkZwTU5WRRAB!2m1!1s0x0:0xf56bc5e71d5f7c65!3m1!1s2@1:CAIQACodChtycF9oOlp5MHotRjFfVkhmUks5eW00ZFpMNVE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2poSFQwTk5SMlJIZWpsYVlWUktkbkI0TUVjeFZsRRAB!2m1!1s0x0:0xb1f5c3c66da56911!3m1!1s2@1:CAIQACodChtycF9oOjhHT0NNR2RHejlaYVRKdnB4MEcxVlE%7C%7C?hl=en",
         "https://reviews.birdeye.com/americas-auto-auction-greater-kalamazoo-175285312088026#review-5",
@@ -358698,9 +363706,9 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21sblJUWk1iMnRsUzJORkxUTTNOM1I0VTJVM09GRRAB!2m1!1s0x0:0x8b542760f51c1f29!3m1!1s2@1:CAIQACodChtycF9oOmlnRTZMb2tlS2NFLTM3N3R4U2U3OFE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xkeFVETmtWM2xpVmpobGFGOU5SekZ4Vmpsa2VHYxAB!2m1!1s0x0:0x69bb1d22d647b967!3m1!1s2@1:CAIQACodChtycF9oOldxUDNkV3liVjhlaF9NRzFxVjlkeGc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xKT1VGY3hTM0ZWTkRCUmMycFZOMEY1UldOc1MzYxAB!2m1!1s0x0:0xf41ed977b990df4a!3m1!1s2@1:CAIQACodChtycF9oOlJOUFcxS3FVNDBRc2pVN0F5RWNsS3c%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tnMmRYSm5ObTFNT1VkRFVubDZUamxtYmpaZlZrRRAB!2m1!1s0x0:0xcd18b722b82b3068!3m1!1s2@1:CAIQACodChtycF9oOkg2dXJnNm1MOUdDUnl6TjlmbjZfVkE%7C%7C?hl=en",
         "https://reviews.birdeye.com/americas-auto-auction-166658630045147#review-1",
         "https://reviews.birdeye.com/americas-auto-auction-166658630045147#review-2",
+        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tnMmRYSm5ObTFNT1VkRFVubDZUamxtYmpaZlZrRRAB!2m1!1s0x0:0xcd18b722b82b3068!3m1!1s2@1:CAIQACodChtycF9oOkg2dXJnNm1MOUdDUnl6TjlmbjZfVkE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT210bGVISlFhREJqWTFWWlpESlBVMFphTW1kMlMxRRAB!2m1!1s0x0:0xab9f158e8c0ad9a9!3m1!1s2@1:CAIQACodChtycF9oOmtleHJQaDBjY1VZZDJPU0ZaMmd2S1E%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tsSFFqTkhYM3BuWTNZNVFUaFFTamRKT0dWWGMzYxAB!2m1!1s0x0:0xcc0a9c42311c507c!3m1!1s2@1:CAIQACodChtycF9oOklHQjNHX3pnY3Y5QThQSjdJOGVXc3c%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSemVFUk5PRUZpU1hoMFNGWjRXamN4WVRFNWRYYxAB!2m1!1s0x0:0x6c1da0d0e62c9fa7!3m1!1s2@1:CAIQACodChtycF9oOjRzeERNOEFiSXh0SFZ4WjcxYTE5dXc%7C%7C?hl=en",
@@ -358723,6 +363731,7 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w5WFIydEdUamhXWld0VU9YY3pXazlrTFVaYVZsRRAB!2m1!1s0x0:0xcd18b722b82b3068!3m1!1s2@1:CAIQACodChtycF9oOl9XR2tGTjhWZWtUOXczWk9kLUZaVlE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1eVZYRm9NRkY2ZEVKb1pEZFJhbGRaY25SWkxXYxAB!2m1!1s0x0:0xd4b21820e6c03fb2!3m1!1s2@1:CAIQACodChtycF9oOk5yVXFoMFF6dEJoZDdRaldZcnRZLWc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25CUmNYQm9WR04wYUVGWVVsTkVSVUpKTjNGdVkyYxAB!2m1!1s0x0:0x6c1da0d0e62c9fa7!3m1!1s2@1:CAIQACodChtycF9oOnBRcXBoVGN0aEFYUlNERUJJN3FuY2c%7C%7C?hl=en",
+        "https://reviews.birdeye.com/americas-auto-auction-166658630045147#review-5",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tadGEwZ3pTR1pRVmpnd0xWOUlhV3RFYzFOMWIxRRAB!2m1!1s0x0:0xfa107851a42a9650!3m1!1s2@1:CAIQACodChtycF9oOkZta0gzSGZQVjgwLV9IaWtEc1N1b1E%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxRVZYcExkR2xIZFdseVlWcEhjbVZpZEhCc2MxRRAB!2m1!1s0x0:0x69bb1d22d647b967!3m1!1s2@1:CAIQACodChtycF9oOi1EVXpLdGlHdWlyYVpHcmVidHBsc1E%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tKa1oyTXdhMmhUTkVScVQxRkpjVXd5VERaWldtYxAB!2m1!1s0x0:0x69bb1d22d647b967!3m1!1s2@1:CAIQACodChtycF9oOkJkZ2Mwa2hTNERqT1FJcUwyTDZZWmc%7C%7C?hl=en",
@@ -358737,7 +363746,6 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tadlIydDBlRUp1Y3pScWEyMUpUeTFIVDJsNGNVRRAB!2m1!1s0x0:0x6d813930b9992ad0!3m1!1s2@1:CAIQACodChtycF9oOkZvR2t0eEJuczRqa21JTy1HT2l4cUE%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pBMGVIb3hTbXRZYUcxS1FYZ3hZbXRaTFUxUlZHYxAB!2m1!1s0x0:0xd4b21820e6c03fb2!3m1!1s2@1:CAIQACodChtycF9oOjA0eHoxSmtYaG1KQXgxYmtZLU1RVGc%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2toTWVuQkxkV1JWTTFwaFdETXdkRTlFWTFCalQzYxAB!2m1!1s0x0:0xd4b21820e6c03fb2!3m1!1s2@1:CAIQACodChtycF9oOkhMenBLdWRVM1phWDMwdE9EY1BjT3c%7C%7C?hl=en",
-        "https://reviews.birdeye.com/americas-auto-auction-166658630045147#review-5",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xOM1gxOXhabUZOWWtkRldUWjNabHBKZEdOcU0yYxAB!2m1!1s0x0:0xfb5905925251d4e3!3m1!1s2@1:CAIQACodChtycF9oOlN3X19xZmFNYkdFWTZ3ZlpJdGNqM2c%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21GWWFUUkRNM1ZCWmkxRGJIWlRTWFpPYVRWa1kzYxAB!2m1!1s0x0:0xa66e140b55d08b91!3m1!1s2@1:CAIQACodChtycF9oOmFYaTRDM3VBZi1DbHZTSXZOaTVkY3c%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkMFVETkRNMmxKVVdOUWNsZExZelpoZUhGRWNYYxAB!2m1!1s0x0:0xf41ed977b990df4a!3m1!1s2@1:CAIQACodChtycF9oOkd0UDNDM2lJUWNQcldLYzZheHFEcXc%7C%7C?hl=en",
@@ -358835,16 +363843,14 @@ window.REVIEW_DATASETS = {
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTURveExPUGFnEAE!2m1!1s0x0:0x1aa343ea3eb92075!3m1!1s2@1:CIHM0ogKEICAgMDoxLOPag%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTURvbUszaEZREAE!2m1!1s0x0:0x6c1da0d0e62c9fa7!3m1!1s2@1:CIHM0ogKEICAgMDomK3hFQ%7C%7C?hl=en",
         "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNvLVoyWHpnRRAB!2m1!1s0x0:0x469321afdfbc97af!3m1!1s2@1:CIHM0ogKEICAgMCo-Z2XzgE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNvMmZLVGtBRRAB!2m1!1s0x0:0x6dcb9e6f48b87d07!3m1!1s2@1:CIHM0ogKEICAgMCo2fKTkAE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNvOGJmRHNRRRAB!2m1!1s0x0:0x918f0f1bba8afba4!3m1!1s2@1:CIHM0ogKEICAgMCo8bfDsQE%7C%7C?hl=en",
-        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNvb2E3V29RRRAB!2m1!1s0x0:0x918f0f1bba8afba4!3m1!1s2@1:CIHM0ogKEICAgMCooa7WoQE%7C%7C?hl=en"
+        "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNvMmZLVGtBRRAB!2m1!1s0x0:0x6dcb9e6f48b87d07!3m1!1s2@1:CIHM0ogKEICAgMCo2fKTkAE%7C%7C?hl=en"
       ],
-      "generated_at_utc": "2026-10-07T02:59:14.052223+00:00",
+      "generated_at_utc": "2026-11-02T21:31:38.867235+00:00",
       "since_date": "2023-01-01",
-      "until_date": "2026-09-30",
+      "until_date": "2026-10-31",
       "collector_failures": [],
-      "existing_review_count": 668,
-      "new_reviews_added": 41,
+      "existing_review_count": 709,
+      "new_reviews_added": 10,
       "youtube_excluded": true,
       "usa_only": true,
       "english_only": true,
@@ -358860,8 +363866,7 @@ window.REVIEW_DATASETS = {
         "bbb.org"
       ],
       "geo_validation_counts": {
-        "google_business_us_profile": 32,
-        "birdeye_us_profile": 9
+        "birdeye_us_profile": 10
       },
       "geo_excluded_counts": {},
       "geo_excluded_examples": [],
@@ -358883,8 +363888,8 @@ window.REVIEW_DATASETS = {
           "name": "America's Auctions In Motion Thousand Oaks",
           "address": "889 Mitchell Rd, Thousand Oaks, CA 91320",
           "website": "https://www.americasaa.com/locations/thousand-oaks/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
-          "rating": 3.8,
-          "review_count": 73,
+          "rating": 3.9,
+          "review_count": 72,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -358896,7 +363901,7 @@ window.REVIEW_DATASETS = {
           "website": "https://www.americasaa.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 3.7,
           "review_count": 9,
-          "last_successful_scan_date": "2026-09-30"
+          "last_successful_scan_date": "2026-10-31"
         },
         {
           "feature_id": "0x864e83007896aa21:0x115c74ddcd117789",
@@ -358907,7 +363912,7 @@ window.REVIEW_DATASETS = {
           "website": "",
           "rating": null,
           "review_count": null,
-          "last_successful_scan_date": "2026-09-30"
+          "last_successful_scan_date": "2026-10-31"
         },
         {
           "feature_id": "0x88f279eb8fcbfff9:0xbecbdd5ed6e965ae",
@@ -358928,7 +363933,7 @@ window.REVIEW_DATASETS = {
           "address": "440 Joe Frank Harris Pkwy SE, Cartersville, GA 30120",
           "website": "https://www.americasaa.com/locations/atlanta/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 4.3,
-          "review_count": 374,
+          "review_count": 376,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -358950,7 +363955,7 @@ window.REVIEW_DATASETS = {
           "address": "16611 S I-35 Frontage Rd, Buda, TX 78610",
           "website": "https://www.americasaa.com/locations/austin/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 4.2,
-          "review_count": 280,
+          "review_count": 281,
           "last_successful_scan_date": "2026-08-31"
         },
         {
@@ -358961,7 +363966,7 @@ window.REVIEW_DATASETS = {
           "address": "3960 Blount Rd, Baton Rouge, LA 70807",
           "website": "https://www.americasaa.com/locations/baton-rouge/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 3.8,
-          "review_count": 166,
+          "review_count": 168,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -358972,7 +363977,7 @@ window.REVIEW_DATASETS = {
           "address": "1046 A E Moore Dr, Moody, AL 35004",
           "website": "https://www.americasaa.com/locations/birmingham/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 4.1,
-          "review_count": 296,
+          "review_count": 295,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359015,7 +364020,7 @@ window.REVIEW_DATASETS = {
           "name": "America's Auto Auction Charleston",
           "address": "651 Precast Ln, Moncks Corner, SC 29461",
           "website": "https://www.americasaa.com/locations/charleston/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
-          "rating": 4.3,
+          "rating": 4.4,
           "review_count": 270,
           "last_successful_scan_date": "2026-09-30"
         },
@@ -359027,7 +364032,7 @@ window.REVIEW_DATASETS = {
           "address": "14001 Karlov Ave, Crestwood, IL 60445",
           "website": "https://www.americasaa.com/locations/chicago/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 3.8,
-          "review_count": 262,
+          "review_count": 261,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359049,7 +364054,7 @@ window.REVIEW_DATASETS = {
           "address": "4700 Groveport Rd, Obetz, OH 43207",
           "website": "https://www.americasaa.com/locations/columbus-fair/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 3.9,
-          "review_count": 350,
+          "review_count": 353,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359059,8 +364064,8 @@ window.REVIEW_DATASETS = {
           "name": "America's Auto Auction Corpus Christi",
           "address": "2149 IH-69 Access Rd, Robstown, TX 78380",
           "website": "https://www.corpuschristiautoauction.com/",
-          "rating": 3.9,
-          "review_count": 18,
+          "rating": 4.1,
+          "review_count": 17,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359071,7 +364076,7 @@ window.REVIEW_DATASETS = {
           "address": "2149 Interstate Hwy 69 Acc Rd, Robstown, TX 78380",
           "website": "https://www.americasaa.com/locations/corpus-christi/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 4.2,
-          "review_count": 83,
+          "review_count": 81,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359082,7 +364087,7 @@ window.REVIEW_DATASETS = {
           "address": "219 N Loop 12, Irving, TX 75061",
           "website": "https://www.americasaa.com/locations/dallas/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 4.1,
-          "review_count": 365,
+          "review_count": 366,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359093,7 +364098,7 @@ window.REVIEW_DATASETS = {
           "address": "7175 York St, Denver, CO 80229",
           "website": "https://www.americasaa.com/locations/denver/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 4.2,
-          "review_count": 376,
+          "review_count": 377,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359103,8 +364108,8 @@ window.REVIEW_DATASETS = {
           "name": "America's Auto Auction El Paso",
           "address": "7930 Artcraft Rd, El Paso, TX 79932",
           "website": "https://www.americasaa.com/locations/el-paso/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
-          "rating": 4.3,
-          "review_count": 79,
+          "rating": 4.2,
+          "review_count": 80,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359115,7 +364120,7 @@ window.REVIEW_DATASETS = {
           "address": "12141 US-6, Corry, PA 16407",
           "website": "https://www.americasaa.com/locations/erie/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 4,
-          "review_count": 64,
+          "review_count": 65,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359125,8 +364130,8 @@ window.REVIEW_DATASETS = {
           "name": "America's Auto Auction Greater Kalamazoo",
           "address": "900 US-131, Schoolcraft, MI 49087",
           "website": "https://www.americasaa.com/locations/greater-kalamazoo/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
-          "rating": 4,
-          "review_count": 184,
+          "rating": 4.1,
+          "review_count": 183,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359136,8 +364141,8 @@ window.REVIEW_DATASETS = {
           "name": "America's Auto Auction Greater Peoria",
           "address": "410 Erie Ave, Morton, IL 61550",
           "website": "https://www.americasaa.com/locations/greater-peoria/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
-          "rating": 4.2,
-          "review_count": 112,
+          "rating": 4.3,
+          "review_count": 110,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359148,7 +364153,7 @@ window.REVIEW_DATASETS = {
           "address": "2415 SC-101, Greer, SC 29651",
           "website": "https://www.americasaa.com/locations/greenville/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 4.3,
-          "review_count": 208,
+          "review_count": 210,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359159,7 +364164,7 @@ window.REVIEW_DATASETS = {
           "address": "1100 S York St, Mechanicsburg, PA 17055",
           "website": "https://www.americasaa.com/locations/harrisburg/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 4.5,
-          "review_count": 263,
+          "review_count": 264,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359170,7 +364175,7 @@ window.REVIEW_DATASETS = {
           "address": "1826 Almeda Genoa Rd, Houston, TX 77047",
           "website": "https://www.americasaa.com/locations/houston/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 4.2,
-          "review_count": 391,
+          "review_count": 396,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359181,7 +364186,7 @@ window.REVIEW_DATASETS = {
           "address": "11982 New Kings Rd, Jacksonville, FL 32219",
           "website": "https://www.americasaa.com/locations/jacksonville/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 4.3,
-          "review_count": 167,
+          "review_count": 169,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359192,7 +364197,7 @@ window.REVIEW_DATASETS = {
           "address": "11101 N Congress Ave, Kansas City, MO 64153",
           "website": "https://www.americasaa.com/locations/kansas-city/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 4.2,
-          "review_count": 341,
+          "review_count": 342,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359203,7 +364208,7 @@ window.REVIEW_DATASETS = {
           "address": "1040 Commercial Ave, East Petersburg, PA 17520",
           "website": "https://www.americasaa.com/locations/lancaster/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 4.6,
-          "review_count": 204,
+          "review_count": 205,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359214,7 +364219,7 @@ window.REVIEW_DATASETS = {
           "address": "3038 Losee Rd, North Las Vegas, NV 89030",
           "website": "https://www.americasaa.com/locations/las-vegas/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 4.3,
-          "review_count": 109,
+          "review_count": 110,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359224,8 +364229,8 @@ window.REVIEW_DATASETS = {
           "name": "America's Auto Auction Lone Star Lubbock",
           "address": "2706 Slaton Rd, Lubbock, TX 79404",
           "website": "https://www.americasaa.com/locations/lone-star-lubbock/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
-          "rating": 4.3,
-          "review_count": 145,
+          "rating": 4.4,
+          "review_count": 144,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359236,7 +364241,7 @@ window.REVIEW_DATASETS = {
           "address": "310 Bach Ave, New York Mills, MN 56567",
           "website": "https://www.americasaa.com/locations/minnesota/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 4.1,
-          "review_count": 62,
+          "review_count": 63,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359246,8 +364251,8 @@ window.REVIEW_DATASETS = {
           "name": "America's Auto Auction New Jersey",
           "address": "1005 NJ-33, Freehold, NJ 07728",
           "website": "https://www.americasaa.com/locations/new-jersey/?utm_source=google&utm_medium=organic&utm_campaign",
-          "rating": 4.1,
-          "review_count": 80,
+          "rating": 4.2,
+          "review_count": 79,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359258,7 +364263,7 @@ window.REVIEW_DATASETS = {
           "address": "18310 Wood-Scale Rd, Hammond, LA 70401",
           "website": "https://www.americasaa.com/locations/new-orleans/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 4.5,
-          "review_count": 109,
+          "review_count": 108,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359269,7 +364274,7 @@ window.REVIEW_DATASETS = {
           "address": "10010 Main St, Dansville, NY 14437",
           "website": "https://www.americasaa.com/locations/new-york/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 4.5,
-          "review_count": 104,
+          "review_count": 102,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359280,7 +364285,7 @@ window.REVIEW_DATASETS = {
           "address": "1440 FM 3083, Conroe, TX 77301",
           "website": "https://www.americasaa.com/locations/north-houston/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 4.5,
-          "review_count": 240,
+          "review_count": 238,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359291,7 +364296,7 @@ window.REVIEW_DATASETS = {
           "address": "250 Dittmer Rd, Fairfield, CA 94534",
           "website": "https://www.americasaa.com/locations/northern-california/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 3.9,
-          "review_count": 110,
+          "review_count": 111,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359302,7 +364307,7 @@ window.REVIEW_DATASETS = {
           "address": "66 N Mingo Rd, Tulsa, OK 74116",
           "website": "https://www.americasaa.com/locations/oklahoma/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 4.4,
-          "review_count": 299,
+          "review_count": 301,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359313,7 +364318,7 @@ window.REVIEW_DATASETS = {
           "address": "6615 Mobile Hwy, Pensacola, FL 32526",
           "website": "https://www.americasaa.com/locations/pensacola/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 4.4,
-          "review_count": 71,
+          "review_count": 72,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359324,7 +364329,7 @@ window.REVIEW_DATASETS = {
           "address": "1433 S 19th Ave, Phoenix, AZ 85009",
           "website": "https://www.americasaa.com/locations/phoenix/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 4.1,
-          "review_count": 248,
+          "review_count": 250,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359334,8 +364339,8 @@ window.REVIEW_DATASETS = {
           "name": "America's Auto Auction Pittsburgh",
           "address": "55 E Buffalo Church Rd, Washington, PA 15301",
           "website": "https://www.americasaa.com/locations/pittsburgh/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
-          "rating": 4.1,
-          "review_count": 113,
+          "rating": 4.2,
+          "review_count": 112,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359346,7 +364351,7 @@ window.REVIEW_DATASETS = {
           "address": "3600 Deepwater Terminal Rd, Richmond, VA 23234",
           "website": "https://www.americasaa.com/locations/richmond/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 3.9,
-          "review_count": 218,
+          "review_count": 216,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359357,7 +364362,7 @@ window.REVIEW_DATASETS = {
           "address": "13510 Toepperwein Rd, Live Oak, TX 78233",
           "website": "https://www.americasaa.com/locations/san-antonio/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 4.3,
-          "review_count": 319,
+          "review_count": 317,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359368,7 +364373,7 @@ window.REVIEW_DATASETS = {
           "address": "1712 Dean Forest Rd, Savannah, GA 31408",
           "website": "https://www.americasaa.com/locations/savannah/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 4.3,
-          "review_count": 227,
+          "review_count": 228,
           "last_successful_scan_date": "2026-08-31"
         },
         {
@@ -359379,7 +364384,7 @@ window.REVIEW_DATASETS = {
           "address": "8000 US-80, Shreveport, LA 71119",
           "website": "https://www.americasaa.com/locations/shreveport/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 4.5,
-          "review_count": 102,
+          "review_count": 103,
           "last_successful_scan_date": "2026-08-31"
         },
         {
@@ -359390,7 +364395,7 @@ window.REVIEW_DATASETS = {
           "address": "721 S 45th St, East St Louis, IL 62207",
           "website": "https://www.americasaa.com/locations/st-louis/",
           "rating": 4.3,
-          "review_count": 517,
+          "review_count": 510,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359401,7 +364406,7 @@ window.REVIEW_DATASETS = {
           "address": "9797 Fremont Pike, Perrysburg, OH 43551",
           "website": "https://www.americasaa.com/locations/toledo/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 3.9,
-          "review_count": 222,
+          "review_count": 221,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359423,7 +364428,7 @@ window.REVIEW_DATASETS = {
           "address": "656 S Military Hwy, Virginia Beach, VA 23464",
           "website": "https://www.americasaa.com/locations/virginia/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 4,
-          "review_count": 301,
+          "review_count": 302,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359434,8 +364439,18 @@ window.REVIEW_DATASETS = {
           "address": "4758 Division St, Wayland, MI 49348",
           "website": "https://www.americasaa.com/locations/west-michigan/?utm_source=google&utm_medium=organic&utm_campaign=gmb-westmichigan",
           "rating": 4.3,
-          "review_count": 262,
+          "review_count": 264,
           "last_successful_scan_date": "2026-09-30"
+        },
+        {
+          "feature_id": "0x8803f537e6e82373:0x10cd662169a7670a",
+          "cid": "1210736168525063946",
+          "place_id": "ChIJcyPo5jf1A4gRCmenaSFmzRA",
+          "name": "America's Auto Auction Wisconsin",
+          "address": "215 Pioneer Rd, North Fond Du Lac, WI 54937",
+          "website": "https://www.americasaa.com/locations/wisconsin/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
+          "rating": 4.1,
+          "review_count": 127
         },
         {
           "feature_id": "0x14e4bc8571e3bc0d:0x22b1961cddfc85d9",
@@ -359456,7 +364471,7 @@ window.REVIEW_DATASETS = {
           "address": "3010 Scherer Dr, St. Petersburg, FL 33716",
           "website": "https://www.americasaa.com/locations/tampa-bay/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
           "rating": 4.1,
-          "review_count": 178,
+          "review_count": 179,
           "last_successful_scan_date": "2026-09-30"
         },
         {
@@ -359473,6 +364488,36 @@ window.REVIEW_DATASETS = {
       ]
     },
     "reviews": [
+      {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Google)",
+        "source_url": "https://reviews.birdeye.com/americas-auto-auction-boston-175285312088477#review-1",
+        "author": "shay goncalves",
+        "review_date": "2026-10-31",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "Big shout out to Harley he is awesome caring professional patient everything went fast I was in and out less than 10 minutes this guy deserves a raise awesome customer service and professionalism thanks again Harley for everything",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Helpful Support Experience",
+        "id": "rvw-000710"
+      },
+      {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Google)",
+        "source_url": "https://reviews.birdeye.com/americas-auto-auction-kansas-city-175285312126035#review-1",
+        "author": "Fab C",
+        "review_date": "2026-10-26",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "Great front lines, but Arbitration and PSI are a joke. Do not trust buying online or green light even if you are on the line .... I want to start by saying the people on the front lines here are excellent. The front desk staff is great, friendly, and incredibly helpful. They also have the best sales team and fantastic workers out on the lines. However, the Arbitration and PSI departments make it impossible to trust buying online. I attend many different auctions, and this is by far the worst arbitration process of all the au... read more",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Helpful Support Experience",
+        "id": "rvw-000711"
+      },
       {
         "source_website": "google.com",
         "source_label": "Google Business Profile (America's Auto Auction Lone Star Lubbock)",
@@ -359654,6 +364699,36 @@ window.REVIEW_DATASETS = {
         "id": "rvw-000680"
       },
       {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Google)",
+        "source_url": "https://reviews.birdeye.com/americas-auto-auction-atlanta-175285312123278#review-5",
+        "author": "Raf",
+        "review_date": "2026-09-03",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "RIDICULOUS FIRST AUCTION I’VE BEEN TO THAT’S CHARGING ALMOST 5 TO $700 A CAR. I BOUGHT FIVE CARS AND THEY’RE CHARGING ME THREE GRAND JUST IN BUY FEES. THIS IS ABSURD. I DEAL WITH A LOT OF OPTIONS AND NEVER HAVE I CAME ACROSS THIS. I WOULD LIKE TO SPEAK TO MANAGEMENT OR THE OWNER.",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Rude/Unhelpful Support",
+        "id": "rvw-000712"
+      },
+      {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Google)",
+        "source_url": "https://reviews.birdeye.com/americas-auto-auction-kansas-city-175285312126035#review-4",
+        "author": "ALRASHID",
+        "review_date": "2026-09-03",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "Great auction with a good selection of vehicles. The staff is professional,especially the front desk staff. the process is straightforward, and everything is well organized. I’ve always had a positive experience here and would recommend it to anyone looking for quality vehicles.",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Helpful Support Experience",
+        "id": "rvw-000713"
+      },
+      {
         "source_website": "google.com",
         "source_label": "Google Business Profile (America's Auctions In Motion Thousand Oaks)",
         "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kwMmJtdzJZbE5aY0hwNFIyMUhPVVpFTUZCR1NuYxAB!2m1!1s0x0:0xf56bc5e71d5f7c65!3m1!1s2@1:CAIQACodChtycF9oOi02bmw2YlNZcHp4R21HOUZEMFBGSnc%7C%7C?hl=en",
@@ -359832,6 +364907,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Third-Party Inspection Authorization & Scheduling",
         "tier3": "Previewing/ Inspecting Vehicles",
         "id": "rvw-000634"
+      },
+      {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Google)",
+        "source_url": "https://reviews.birdeye.com/americas-auto-auction-boston-175285312088477#review-4",
+        "author": "mario gracas",
+        "review_date": "2026-08-04",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Worst auction I have been too. Aside from their hours being wrong on the website, there's a bunch of reasons why I don't go there anymore.",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-000714"
       },
       {
         "source_website": "birdeye.com",
@@ -360402,6 +365492,21 @@ window.REVIEW_DATASETS = {
         "tier2": "Agent Professionalism & Responsiveness",
         "tier3": "Helpful Support Experience",
         "id": "rvw-000117"
+      },
+      {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Google)",
+        "source_url": "https://reviews.birdeye.com/americas-auto-auction-greater-kalamazoo-175285312088026#review-4",
+        "author": "Peter Schultz",
+        "review_date": "2026-06-05",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Friendly people, but astronomical fees. Paid $15100 for a green light gold certified car and ended up with an $845 fee including a $75 online bid fee. Really? Adesa only charges $50 for this ridiculous money grab! But the base fee was over $700 for a car that should have had a $550 fee anywhere else. So buyers, be ready to add a few hundred to your fees when bidding here.",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Membership / Licensing / Fees & Bidding Policies",
+        "tier2": "Bidding Process, Rules and Fees",
+        "tier3": "Fees",
+        "id": "rvw-000715"
       },
       {
         "source_website": "google.com",
@@ -362549,6 +367654,36 @@ window.REVIEW_DATASETS = {
         "id": "rvw-000200"
       },
       {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Google)",
+        "source_url": "https://reviews.birdeye.com/americas-auto-auction-166658630045147#review-1",
+        "author": "bassheadtahoe",
+        "review_date": "2025-12-07",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "Its was either these people or the tow company that stole my multi thousand dollar audio system out of my car",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Vehicle Pickup, Delivery and Scheduling",
+        "tier2": "Tow and Storage Charges",
+        "tier3": "Tow and Storage Fees",
+        "id": "rvw-000716"
+      },
+      {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Google)",
+        "source_url": "https://reviews.birdeye.com/americas-auto-auction-166658630045147#review-2",
+        "author": "T Ashford",
+        "review_date": "2025-12-07",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "I love the atmosphere, no hassle. Workers are friendly and very helpful. It's like one big family with the buyers and sellers. Hassle free and awesome selection of cars.",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Helpful Support Experience",
+        "id": "rvw-000717"
+      },
+      {
         "source_website": "google.com",
         "source_label": "Google Business Profile (America's Auto Auction St. Louis)",
         "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tnMmRYSm5ObTFNT1VkRFVubDZUamxtYmpaZlZrRRAB!2m1!1s0x0:0xcd18b722b82b3068!3m1!1s2@1:CAIQACodChtycF9oOkg2dXJnNm1MOUdDUnl6TjlmbjZfVkE%7C%7C?hl=en",
@@ -363282,6 +368417,36 @@ window.REVIEW_DATASETS = {
         "tier2": "Pickup Order Management",
         "tier3": "Gate Pass Assistance",
         "id": "rvw-000044"
+      },
+      {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Google)",
+        "source_url": "https://reviews.birdeye.com/americas-auto-auction-166658630045147#review-5",
+        "author": "Demetrius Smith",
+        "review_date": "2025-11-02",
+        "rating": null,
+        "sentiment": "positive",
+        "review_text": "I am a dealer and have been doing business with this auction for over 25 years before it was changed from tri state and the way I was treated by Julie K was not professional and very wrong I bout a car and sold it and and proof of sale and dated titled when sold she did not want to see it and barred my business from making any purchases and made me pay for tickets tickets that was caused by the buyer who bought the car and told me I responsible for someone else actions and wouldn't let me talk maria or Larry's she instructed... read more",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Customer Service & Communication",
+        "tier2": "Agent Professionalism & Responsiveness",
+        "tier3": "Helpful Support Experience",
+        "id": "rvw-000718"
+      },
+      {
+        "source_website": "birdeye.com",
+        "source_label": "Birdeye (Google)",
+        "source_url": "https://reviews.birdeye.com/americas-auto-auction-st-louis-165330156623701#review-2",
+        "author": "Dmitry M.",
+        "review_date": "2025-11-02",
+        "rating": null,
+        "sentiment": "negative",
+        "review_text": "That's an A+ service for the car pickup. They printed gate pass, gave me a ride to the car, jumpstarted and moved the car that blocked mine",
+        "geo_validation": "birdeye_us_profile",
+        "tier1": "Vehicle Pickup, Delivery and Scheduling",
+        "tier2": "Pickup Order Management",
+        "tier3": "Gate Pass Assistance",
+        "id": "rvw-000719"
       },
       {
         "source_website": "google.com",

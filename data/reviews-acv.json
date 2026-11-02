@@ -1,14 +1,14 @@
 {
   "meta": {
     "description": "Large-scale English-only ACV textual review/problem dataset from public web sources (recency-first).",
-    "review_count": 1191,
+    "review_count": 1204,
     "source_counts": {
+      "trustpilot.com": 32,
       "google.com": 963,
-      "trustpilot.com": 31,
-      "apps.apple.com": 82,
+      "apps.apple.com": 84,
       "play.google.com": 29,
-      "birdeye.com": 75,
-      "bbb.org": 10,
+      "birdeye.com": 84,
+      "bbb.org": 11,
       "reddit.com": 1
     },
     "source_audit": [
@@ -65,18 +65,18 @@
         "direct_statuses": {},
         "blocked": false,
         "fallback_used": false,
-        "candidate_reviews_seen": 142,
-        "new_reviews_added": 0,
+        "candidate_reviews_seen": 192,
+        "new_reviews_added": 2,
         "advertised_total": null,
-        "latest_candidate_date": "2025-05-01",
+        "latest_candidate_date": "2026-09-15",
         "notes": [
           "Apple RSS can be sparse for some app IDs; HTML supplement captures visible App Store review cards only."
         ],
         "errors": [],
-        "review_count": 82,
+        "review_count": 84,
         "existing_review_count": 82,
         "present": true,
-        "latest_review_date": "2026-08-26",
+        "latest_review_date": "2026-09-15",
         "existing_latest_date": "2026-08-26",
         "status": "ok"
       },
@@ -100,8 +100,8 @@
           "direct BBB complaints blocked for https://www.bbb.org/us/ca/san-diego/profile/used-car-dealers/acv-wholesale-1126-20007945"
         ],
         "errors": [],
-        "review_count": 10,
-        "existing_review_count": 9,
+        "review_count": 11,
+        "existing_review_count": 10,
         "present": true,
         "latest_review_date": "2026-02-27",
         "existing_latest_date": "2026-02-27",
@@ -121,17 +121,17 @@
         "candidate_reviews_seen": 18,
         "new_reviews_added": 1,
         "advertised_total": null,
-        "latest_candidate_date": "2026-09-29",
+        "latest_candidate_date": "2026-10-08",
         "notes": [
           "direct Trustpilot blocked for acvauctions.com",
           "reader challenge for https://www.trustpilot.com/review/acvauctions.com?page=2"
         ],
         "errors": [],
-        "review_count": 31,
-        "existing_review_count": 30,
+        "review_count": 32,
+        "existing_review_count": 31,
         "present": true,
-        "latest_review_date": "2026-09-08",
-        "existing_latest_date": "2026-07-16",
+        "latest_review_date": "2026-10-08",
+        "existing_latest_date": "2026-09-08",
         "status": "ok"
       },
       {
@@ -169,56 +169,62 @@
         "fallback_used": false,
         "candidate_reviews_seen": 18,
         "new_reviews_added": 9,
-        "advertised_total": 4002,
-        "latest_candidate_date": "2026-07-09",
+        "advertised_total": 4066,
+        "latest_candidate_date": "2026-07-05",
         "notes": [
           "Birdeye advertised totals may include syndicated Google/Birdeye network reviews; accepted rows are visible textual review cards that pass filters.",
-          "Advertised total 4002 is much larger than accepted rows 75; source is likely partially covered after filters/pagination."
+          "Advertised total 4066 is much larger than accepted rows 84; source is likely partially covered after filters/pagination."
         ],
         "errors": [],
-        "review_count": 75,
-        "existing_review_count": 66,
+        "review_count": 84,
+        "existing_review_count": 75,
         "present": true,
-        "latest_review_date": "2026-07-04",
+        "latest_review_date": "2026-07-05",
         "existing_latest_date": "2026-07-04",
         "status": "partial"
       },
       {
         "source_website": "google.com",
         "attempted": true,
-        "direct_pages": 114,
+        "direct_pages": 109,
         "fallback_pages": 0,
         "direct_statuses": {
-          "200": 114
+          "200": 109
         },
         "blocked": false,
         "fallback_used": false,
-        "candidate_reviews_seen": 60,
-        "new_reviews_added": 5,
+        "candidate_reviews_seen": 0,
+        "new_reviews_added": 0,
         "advertised_total": null,
-        "latest_candidate_date": "2026-10-06",
+        "latest_candidate_date": null,
         "notes": [
           "Google Business Profile discovery completed: 53/53 queries succeeded and 1 unique validated US profiles were selected.",
-          "Validated 1 US Google Business Profiles; 0 failed and 0 were skipped after the circuit breaker. Successful profiles were paginated newest-first through per-profile incremental overlap boundaries."
+          "Google refresh failed atomically; the last verified Google rows and profile registry were retained."
         ],
-        "errors": [],
+        "errors": [
+          "ACV Auctions [0x89d3125bc9cd70f3:0xd5d809e01cd8d070]: newest review RPC did not load",
+          "Google Business Profile coverage incomplete: 1/1 profiles failed pagination; first failure: ACV Auctions [0x89d3125bc9cd70f3:0xd5d809e01cd8d070]: newest review RPC did not load"
+        ],
+        "retained_after_failed_refresh": true,
         "last_successful_refresh_until": "2026-09-30",
         "review_count": 963,
-        "existing_review_count": 958,
+        "existing_review_count": 963,
         "present": true,
         "latest_review_date": "2026-09-30",
-        "existing_latest_date": "2026-08-29",
-        "status": "ok"
+        "existing_latest_date": "2026-09-30",
+        "status": "retained_after_failed_refresh"
       }
     ],
     "sentiments": {
-      "positive": 800,
-      "negative": 391
+      "positive": 802,
+      "negative": 402
     },
     "source_urls": [
+      "https://www.trustpilot.com/reviews/6ac7d46026490316ae57942d",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25oMVVuQlBkRXBJTUdGdFp6WkVWa0pyUkhSa05YYxAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CAIQACodChtycF9oOnh1UnBPdEpIMGFtZzZEVkJrRHRkNXc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tKdWJGZ3lWVUl4VG1jNFJHaElSRkJzUVVaWlJFRRAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CAIQACodChtycF9oOkJubFgyVUIxTmc4RGhIRFBsQUZZREE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21WcldFRnJNbTlmTjJ4TVVtMWlSblp2U0haaVduYxAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CAIQACodChtycF9oOmVrWEFrMm9fN2xMUm1iRnZvSHZiWnc%7C%7C?hl=en",
+      "https://itunes.apple.com/us/review?id=969808943&type=Purple%20Software&reviewId=14552682963",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21oS1JURmFVM0ZKZWpFMGQwZHhiakJEYWtGd1lYYxAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CAIQACodChtycF9oOmhKRTFaU3FJejE0d0dxbjBDakFwYXc%7C%7C?hl=en",
       "https://www.trustpilot.com/reviews/6aa5b944c575693bb850ffc8",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25CTlgzUmFWM0pIYTNWVE1sUnRVSEIyVUdoUFpuYxAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CAIQACodChtycF9oOnBNX3RaV3JHa3VTMlRtUHB2UGhPZnc%7C%7C?hl=en",
@@ -325,6 +331,8 @@
       "https://www.trustpilot.com/reviews/69120a04dc8a7e3d24713e8c",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xoT2JXMWxkWGRWWWtZM05uQmFhekV6Um14dVdYYxAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CAIQACodChtycF9oOlhObW1ldXdVYkY3NnBaazEzRmxuWXc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25BMFZrcFFhRzFhTVd0Sk9UaGxiRFZQUmpkYWJFRRAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CAIQACodChtycF9oOnA0VkpQaG1aMWtJOThlbDVPRjdabEE%7C%7C?hl=en",
+      "https://reviews.birdeye.com/acv-auctions-164822889606828#review-7",
+      "https://reviews.birdeye.com/acv-auctions-164822889606828#review-9",
       "https://play.google.com/store/apps/details?id=com.acvauctions.acvpro&hl=en&gl=us",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25CWFgxSnJhelU1VWtoVVJFczJVbGgwVm5aMlFrRRAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CAIQACodChtycF9oOnBXX1JrazU5UkhUREs2Ulh0VnZ2QkE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT214TWFUWkhRbWwxVDBaMk9YTnpUVWN5Y0ZFdFZHYxAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CAIQACodChtycF9oOmxMaTZHQml1T0Z2OXNzTUcycFEtVGc%7C%7C?hl=en",
@@ -346,8 +354,6 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2poS2NIWkNkMDVNWVdWd1VsOUpOamw1ZERZd2FGRRAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CAIQACodChtycF9oOjhKcHZCd05MYWVwUl9JNjl5dDYwaFE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21WM2FIUkNabTVVVmtRMmJ6aHdkRTVuWkRsSGQyYxAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CAIQACodChtycF9oOmV3aHRCZm5UVkQ2bzhwdE5nZDlHd2c%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21VNVFrUkJXV2Q2Vm5jM1lsWlBObEpuUkUxbGJtYxAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CAIQACodChtycF9oOmU5QkRBWWd6Vnc3YlZPNlJnRE1lbmc%7C%7C?hl=en",
-      "https://reviews.birdeye.com/acv-auctions-164822889606828#review-7",
-      "https://reviews.birdeye.com/acv-auctions-164822889606828#review-9",
       "https://reviews.birdeye.com/acv-auctions-164822889606828?page=2#review-3",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tFeGVscGZWMGRuVFROZlZqQlljaTAyVUZaUVVIYxAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CAIQACodChtycF9oOkExelpfV0dnTTNfVjBYci02UFZQUHc%7C%7C?hl=en",
       "https://www.trustpilot.com/reviews/68ddd7053359d602cfd712ca",
@@ -513,16 +519,20 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNveGY2VEh3EAE!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CIHM0ogKEICAgMCoxf6THw%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNvMGJxeVFnEAE!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CIHM0ogKEICAgMCo0bqyQg%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNvMGNLbGRREAE!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CIHM0ogKEICAgMCo0cKldQ%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNvb2FPZ3NnRRAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CIHM0ogKEICAgMCooaOgsgE%7C%7C?hl=en",
-      "https://itunes.apple.com/us/review?id=969808943&type=Purple%20Software&reviewId=12548222243",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNveUlqQnpBRRAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CIHM0ogKEICAgMCoyIjBzAE%7C%7C?hl=en"
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNvb2FPZ3NnRRAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CIHM0ogKEICAgMCooaOgsgE%7C%7C?hl=en"
     ],
-    "generated_at_utc": "2026-10-07T02:30:56.450031+00:00",
+    "generated_at_utc": "2026-11-02T21:02:08.534788+00:00",
     "since_date": "2023-01-01",
-    "until_date": "2026-09-30",
-    "collector_failures": [],
-    "existing_review_count": 1175,
-    "new_reviews_added": 16,
+    "until_date": "2026-10-31",
+    "collector_failures": [
+      {
+        "collector": "google_business",
+        "error": "Google Business Profile coverage incomplete: 1/1 profiles failed pagination; first failure: ACV Auctions [0x89d3125bc9cd70f3:0xd5d809e01cd8d070]: newest review RPC did not load",
+        "retained_previous_data": true
+      }
+    ],
+    "existing_review_count": 1191,
+    "new_reviews_added": 13,
     "youtube_excluded": true,
     "usa_only": true,
     "english_only": true,
@@ -542,10 +552,10 @@
       "bbb.org"
     ],
     "geo_validation_counts": {
-      "google_business_us_profile": 5,
       "trustpilot_us_slug": 1,
       "bbb_us_business": 1,
-      "birdeye_us_profile": 9
+      "birdeye_us_profile": 9,
+      "apple_us_store": 2
     },
     "geo_excluded_counts": {},
     "geo_excluded_examples": [],
@@ -576,6 +586,21 @@
     ]
   },
   "reviews": [
+    {
+      "source_website": "trustpilot.com",
+      "source_label": "Trustpilot (acvauctions.com)",
+      "source_url": "https://www.trustpilot.com/reviews/6ac7d46026490316ae57942d",
+      "author": "Trustpilot user",
+      "review_date": "2026-10-08",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Enough Is Enough — Misleading Inspections, Unfair Arbitration, and Worthless Purchase Protection. We are an independent dealer, and I've lost a substantial amount of money dealing with ACV Auctions. After years of buying vehicles through their platform, I've had enough of their inconsistent inspections, arbitration decisions, and refusal to take responsibility when vehicles are materially misrepresented. We purchased vehicles with Purchase Protection on every single transaction, expecting ACV to stand behind its inspection reports and honor legitimate arbitration claims. Instead, even when we presented what we believe were valid claims under NAAA arbitration policies, ACV refused to unwind deals and left us absorbing the losses. Here's what really bothers me: ACV will inspect a vehicle when you're buying it and fail to disclose serious mechanical problems. But when you turn around and try to sell that same vehicle through their platform, suddenly their inspectors discover engine problems, structural issues, and other major defects that weren't mentioned when you purchased it. How is that acceptable? Are there different inspection standards depending on whether ACV is selling you a vehicle or you're trying to sell one? Their arbitration process is even more frustrating. I've had people at their Buffalo headquarters evaluate engine-related complaints by listening to audio recordings and conclude that a vehicle has an engine problem, even when the noise was coming from an accessory. Yet dealers are expected to accept these judgments from people who, in my experience, don't consistently distinguish between engine defects and accessory-related issues. Another example is an inoperative convertible top. ACV fails to disclose that the top doesn't operate, then requests a diagnostic report and repair estimate during arbitration. After you spend time and money obtaining the documentation, they dismiss the issue as cosmetic. Since when is an inoperative mechanical convertible-top system automatically a cosmetic issue? This is exactly the problem. Undisclosed mechanical defects are treated as minor or excluded issues when the dealer is asking for protection. Meanwhile, dealers are left paying for diagnostics, repairs, transportation, arbitration expenses, and vehicles that were not represented accurately. And what exactly are we paying for with Purchase Protection if ACV can simply deny claims and refuse to unwind transactions involving serious undisclosed problems? I understand that used vehicles carry risks. I've been in this business long enough to know that. But there's a difference between normal used-car risk and buying a vehicle based on an inspection report that fails to disclose a material defect. NAAA arbitration standards should mean something. Purchase Protection should mean something. ACV's inspection reports should mean something. Instead, my experience has been a pattern of inconsistent inspections, disputed arbitration decisions, and financial losses pushed onto independent dealers. I'm tired of dealing with a process that seems to protect the auction platform while leaving the purchasing dealer responsible for the consequences of inaccurate disclosures. ACV needs to stop hiding behind technicalities, apply consistent inspection standards, and take responsibility when its reports fail to identify serious problems. Enough is enough. I would strongly caution any independent dealer against relying solely on ACV's inspections or assuming that purchasing their additional protection means a legitimate claim will be honored. One star. Based on my experience, ACV has lost my trust.",
+      "geo_validation": "trustpilot_us_slug",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Third-Party Inspection Authorization & Scheduling",
+      "tier3": "Previewing/ Inspecting Vehicles",
+      "id": "rvw-001192"
+    },
     {
       "source_website": "google.com",
       "source_label": "Google Business Profile (ACV Auctions)",
@@ -620,6 +645,21 @@
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Helpful Support Experience",
       "id": "rvw-001178"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (969808943, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=969808943&type=Purple%20Software&reviewId=14552682963",
+      "author": "Salamokal",
+      "review_date": "2026-09-15",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "MSM auto. Arbitration department is a joke. Go to a real auction or open lane that offers way batter customer service and cheaper buying rates. Every 6 months they just raise price",
+      "geo_validation": "apple_us_store",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-001193"
     },
     {
       "source_website": "google.com",
@@ -935,6 +975,21 @@
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support",
       "id": "rvw-000209"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Birdeye)",
+      "source_url": "https://reviews.birdeye.com/acv-auctions-164822889606828#review-3",
+      "author": "Kolton W.",
+      "review_date": "2026-07-05",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "They are soft handed order takers. They are only for the seller, the buyer means absolutely nothing to them. They sold me a car with a bad title and i have been fighting them for eight months, as a dealer i cannot sale the car and have been out that money from that day on, they will not call back. they will find any excuse to get off the phone with you to call you back that you will never get. i hope they go under and i will tell everyone to stay away from them and not deal with them ABSOLUTE CROOKS!!!",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Communication Follow-up & Escalation",
+      "tier3": "No Callback / Unresolved Case",
+      "id": "rvw-001194"
     },
     {
       "source_website": "birdeye.com",
@@ -1747,6 +1802,21 @@
       "id": "rvw-000250"
     },
     {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Birdeye)",
+      "source_url": "https://reviews.birdeye.com/acv-auctions-164822889606828#review-4",
+      "author": "Anthony E.",
+      "review_date": "2026-05-06",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "ACV is a scam auction plain and simple. The condition report does not matter to them. over the last year we have bought 40 plus vehicles from them. Green light sales mean nothing to them. This last one was a nightmare. Bought a 2020 Altima on green light when we received the vehicle, we noticed both passenger wheels were worn unevenly and tilted inward at the top. upon further inspection it was determined through a certified mechanic that vehicle had suffered a severe collision on passenger side bending and breaking multiple... read more",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Third-Party Inspection Authorization & Scheduling",
+      "tier3": "Previewing/ Inspecting Vehicles",
+      "id": "rvw-001195"
+    },
+    {
       "source_website": "apps.apple.com",
       "source_label": "Apple App Store (969808943, us)",
       "source_url": "https://itunes.apple.com/us/review?id=969808943&type=Purple%20Software&reviewId=14037081737",
@@ -2510,6 +2580,36 @@
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support",
       "id": "rvw-000267"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Birdeye)",
+      "source_url": "https://reviews.birdeye.com/acv-auctions-164822889606828#review-7",
+      "author": "Gustavo C.",
+      "review_date": "2025-11-02",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "BE VERY CAREFUL!!!!! Dis-honest auction. Bought green light, was sold car with odometer fraud (proven) and a bad motor. Loss of 6K. They did NOTHING to help[!!!!!!",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-001196"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Birdeye)",
+      "source_url": "https://reviews.birdeye.com/acv-auctions-164822889606828#review-9",
+      "author": "Ben V.",
+      "review_date": "2025-11-02",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "I am working with ACV and especially with my account manager Dan Dickinson for last 2 years and i cant say enough good things about the support and help i have received from them. Dan has made my job a breeze. He is the one of the best at the ACV Auction , He is always on top of Everything. We appreciate ACV and Dan very much. They have been the cornerstone of our business.",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-001197"
     },
     {
       "id": "rvw-000017",
@@ -8137,6 +8237,21 @@
       "id": "rvw-000128"
     },
     {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (969808943, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=969808943&type=Purple%20Software&reviewId=11969417263",
+      "author": "Mike Allen aaa",
+      "review_date": "2024-11-19",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "David Jacob. This auction has horrible arbitration policy. They do not give you the option to return the car. If the car has a serious problem they force you to take an adjustment and keep the vehicle that’s not fair. They go after keeping the deal together and screwing the buyer and keeping the seller happy so they could bring more cars.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-001198"
+    },
+    {
       "id": "rvw-000065",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
@@ -8227,6 +8342,21 @@
       "id": "rvw-001187"
     },
     {
+      "source_website": "bbb.org",
+      "source_label": "BBB Complaints",
+      "source_url": "https://www.bbb.org/us/ca/san-diego/profile/used-car-dealers/acv-wholesale-1126-20007945/complaints#1126_20007945_22547093",
+      "author": "BBB complainant",
+      "review_date": "2024-11-12",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Service or Repair Issues complaint (Unanswered). Be very carfull dealers in REMOVED dont buy from REMOVED We used to source almost all of our inventory from them, big mistake!!!We just purchased a 2020 GMC Sierra REMOVED and Yeloow light for engine vibrations.Vehicle arrives and we cant start it even with new battery after many many many times finally starts but the cluster is dead and the transmission sounds horrible.Arbitration team REMOVED instructed us to take the vehicle to the dealer for repairs and estimate. Dealer has spent 40 days traing to repair it and initiated a TAC procedure wich is the actual factory helping the dealer to get it repaired, but havent been able too. REMOVED factory is actively looking into it and for now theres no solution as the issue is so big that the whole electrical system is REMOVED quote REMOVED dollars for initial repairs and worned us that it could go up a lot as all the modules and computers on the vehicle as no comunication and they cant establish a final quote nor having a time line when they will finish the repairs.We informed the Arbitration team at REMOVED about the situation with no less than 15 calls per week.Yesterday they decided to issue a 2900 payment to \"cover\" for the repairs and close on their own the claim leaving us with a REMOVED dollars truck that even the dealer hasent been able to repair and we are unsure if they will.We have tried to contac everyone at ACV with no luck. I even writed REMOVED CEO at REMOVED asking for help and uncover the abuse from REMOVED. We have gone over this situation with other vehicles, but this has been by far the worst one.WE ARE STILL WATING FOR HELP ## BBB Accreditation: None To become accredited, a business must agree to[BBB Standards for Trust](https://www.bbb.org/all/standards-for-trust)and pass BBB's vetting process. [Why choose a BBB Accredited Business?](https://www.bbb.org/all/why-choose-a-bbb-accredited-business) BBB Business Profiles are provided solely to assist you in exercising your own best judgment. BBB does not verify the accuracy of information provided by third parties, and does not guarantee the accuracy of any information in Business Profiles. As a matter of policy, BBB does not endorse any product, service, or business. Businesses are under no obligation to seek BBB accreditation, and some businesses are not accredited because they have not sought BBB accreditation. When considering complaint information, please consider the company's size and volume of transactions. Note that the nature of complaints and a company’s responses to them are often more important than the number of complaints. BBB Business Profiles generally cover a three-year reporting period. [![Image 9: BBB](https://m.bbb.org/brand/logos/BBB_PrimaryLogo_White_RGB.svg)](https://www.bbb.org/)TM ## For Consumers * [Get a Quote](https://www.bbb.org/get-a-quote) * [Start a Review](https://www.bbb.org/leave-a-review) * [File a Complaint](https://www.bbb.org/file-a-complaint) ## For Businesses * [Get Your Business Listed](https://www.bbb.org/get-listed) * [BBB Accreditation](https://www.bbb.org/get-accredited) * [Apply for BBB Accreditation](https://www.bbb.org/apply) * [Newsroom and Resources](https://www.bbb.org/us/news) ## Affiliated Programs * [BBB Institute for Marketplace Trust](https://www.bbbmarketplacetrust.org/) * [BBB Wise Giving Alliance (Give.org)](https://give.org/) * [BBB National Programs](https://bbbprograms.org/) * [our Twitter (opens in a new tab)](https://x.com/bbb_us) * [our LinkedIn (opens in a new tab)](https://www.linkedin.com/company/better-business-bureau/) * [our Facebook (opens in a new tab)](https://www.facebook.com/BetterBusinessBureau) * [our Instagram (opens in a new tab)](https://www.instagram.com/betterbusinessbureau_/) * [About BBB®](https://www.bbb.org/about) * [Terms of Use](https://www.bbb.org/terms-of-use) * [Privacy Policy](https://www.bbb.org/all/privacy-policy) * [Contact Us](https://www.bbb.org/about/find-your-local-bbb) © 2026 International Association of Better Business Bureaus, Inc. (IABBB). All rights reserved. All trademarks are property of IABBB.",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-001199"
+    },
+    {
       "source_website": "google.com",
       "source_label": "Google Business Profile (ACV Auctions)",
       "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMzcF8zUHBnRRAB!2m1!1s0x0:0xd5d809e01cd8d070!3m1!1s2@1:CIHM0ogKEICAgIC3p_3PpgE%7C%7C?hl=en",
@@ -8270,6 +8400,81 @@
       "tier2": "Lot Condition Reporting",
       "tier3": "Lot Damage",
       "id": "rvw-000542"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Birdeye)",
+      "source_url": "https://reviews.birdeye.com/acv-auctions-164822889606828?page=2#review-3",
+      "author": "Gary D.",
+      "review_date": "2024-11-02",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "customer service is outstanding. Travis Mueller could not be more helpful in assisting me with the purchase of 2 vehicles yesterday. Negotiations were smooth as silk.",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-001200"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Birdeye)",
+      "source_url": "https://reviews.birdeye.com/acv-auctions-164822889606828?page=2#review-4",
+      "author": "Frank L.",
+      "review_date": "2024-11-02",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Absolutely Horrible, I have never left a negative review about anyone in my life but ACV finally pushed me to the point where I must. There was a Facebook group that had hundreds of bad reviews on this site but I chose to ignore it at now my own peril. They are unethical and I have been burned one to many times with this auction. They have zero ethics and my dealership is done doing business here.",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-001201"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Birdeye)",
+      "source_url": "https://reviews.birdeye.com/acv-auctions-164822889606828?page=2#review-5",
+      "author": "Alex Auto S.",
+      "review_date": "2024-11-02",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "ACV is a joke, crook and sell junk. When you do the arbitration they do NOT stand behind their vehicles. We have referred multiple friends to ACV and will contact them to no longer deal with ACV. I have a feeling ACV won't last much longer. Don't waste time and purchase anything from them ever.",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-001202"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Birdeye)",
+      "source_url": "https://reviews.birdeye.com/acv-auctions-164822889606828?page=2#review-6",
+      "author": "Tom",
+      "review_date": "2024-11-02",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "I have never been as pissed off from any auction like I am right now with ACV. It seems that eveyday they seem to get worse then then week before! I will lay out some issues that we have faced and hopefully this reaches someone that cares, because I have been asking for a higher up to pass along the issues, and so far nothing. We bought a car from them in Jan, and we sold it soon after. The new buyer found out it was reported stolen, we notified ACV. We obviously unwound the deal and notified ACV. 7 months have gone by ... read more",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-001203"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Birdeye)",
+      "source_url": "https://reviews.birdeye.com/acv-auctions-164822889606828?page=2#review-7",
+      "author": "Tom B.",
+      "review_date": "2024-11-02",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Their condition report is a joke. They sell you a green light vehicle with a hidden issues and when you arbitrate it, you have to do your own diagnosis and provide them with the report which incur extra cost. At the end of the arbitration, they notify you that's it's not valid. Don't not trust their CRs, Beware!!!",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-001204"
     },
     {
       "source_website": "google.com",

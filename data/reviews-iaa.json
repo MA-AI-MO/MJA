@@ -1,14 +1,14 @@
 {
   "meta": {
     "description": "Large-scale English-only IAA textual review/problem dataset from public web sources (recency-first).",
-    "review_count": 4636,
+    "review_count": 4696,
     "source_counts": {
+      "trustpilot.com": 94,
+      "play.google.com": 258,
+      "apps.apple.com": 156,
       "google.com": 2364,
-      "bbb.org": 770,
-      "apps.apple.com": 152,
-      "trustpilot.com": 92,
-      "play.google.com": 252,
-      "reddit.com": 1003,
+      "bbb.org": 817,
+      "reddit.com": 1004,
       "complaintsboard.com": 3
     },
     "source_audit": [
@@ -21,7 +21,7 @@
         "blocked": false,
         "fallback_used": false,
         "candidate_reviews_seen": 0,
-        "new_reviews_added": 0,
+        "new_reviews_added": 1,
         "advertised_total": null,
         "latest_candidate_date": null,
         "notes": [
@@ -29,10 +29,10 @@
           "reddit_arctic_shift ran; candidate count is not separately tracked for this collector."
         ],
         "errors": [],
-        "review_count": 1003,
+        "review_count": 1004,
         "existing_review_count": 1003,
         "present": true,
-        "latest_review_date": "2026-07-30",
+        "latest_review_date": "2026-09-16",
         "existing_latest_date": "2026-07-30",
         "status": "ok"
       },
@@ -44,17 +44,17 @@
         "direct_statuses": {},
         "blocked": false,
         "fallback_used": false,
-        "candidate_reviews_seen": 1362,
-        "new_reviews_added": 1,
+        "candidate_reviews_seen": 1363,
+        "new_reviews_added": 6,
         "advertised_total": null,
-        "latest_candidate_date": "2026-10-05",
+        "latest_candidate_date": "2026-10-30",
         "notes": [],
         "errors": [],
-        "review_count": 252,
-        "existing_review_count": 251,
+        "review_count": 258,
+        "existing_review_count": 252,
         "present": true,
-        "latest_review_date": "2026-09-02",
-        "existing_latest_date": "2026-08-31",
+        "latest_review_date": "2026-10-23",
+        "existing_latest_date": "2026-09-02",
         "status": "ok"
       },
       {
@@ -66,93 +66,91 @@
         "blocked": false,
         "fallback_used": false,
         "candidate_reviews_seen": 293,
-        "new_reviews_added": 7,
+        "new_reviews_added": 4,
         "advertised_total": null,
-        "latest_candidate_date": "2026-10-01",
+        "latest_candidate_date": "2026-10-23",
         "notes": [
           "Apple RSS can be sparse for some app IDs; HTML supplement captures visible App Store review cards only."
         ],
         "errors": [],
-        "review_count": 152,
-        "existing_review_count": 145,
+        "review_count": 156,
+        "existing_review_count": 152,
         "present": true,
-        "latest_review_date": "2026-09-16",
-        "existing_latest_date": "2026-08-27",
+        "latest_review_date": "2026-10-23",
+        "existing_latest_date": "2026-09-16",
         "status": "ok"
       },
       {
         "source_website": "bbb.org",
         "attempted": true,
-        "direct_pages": 16,
-        "fallback_pages": 16,
+        "direct_pages": 23,
+        "fallback_pages": 23,
         "direct_statuses": {
-          "403": 16,
-          "200": 16
+          "403": 23,
+          "200": 23
         },
         "blocked": true,
         "fallback_used": true,
-        "candidate_reviews_seen": 20,
-        "new_reviews_added": 13,
+        "candidate_reviews_seen": 60,
+        "new_reviews_added": 47,
         "advertised_total": null,
-        "latest_candidate_date": "2026-09-24",
+        "latest_candidate_date": "2026-10-06",
         "notes": [
+          "direct BBB customer reviews blocked for https://www.bbb.org/us/az/tucson/profile/auto-auction/iaa-tucson-1286-20009500",
+          "reader challenge for https://www.bbb.org/us/az/tucson/profile/auto-auction/iaa-tucson-1286-20009500/customer-reviews",
+          "direct BBB customer reviews blocked for https://www.bbb.org/us/fl/jacksonville/profile/auto-auction/iaa-0403-235995143",
+          "direct BBB customer reviews blocked for https://www.bbb.org/us/ga/rincon/profile/auto-auction/iaa-0403-235995144",
           "direct BBB customer reviews blocked for https://www.bbb.org/us/il/granite-city/profile/auto-auction/iaa-0734-310253272",
-          "reader challenge for https://www.bbb.org/us/il/granite-city/profile/auto-auction/iaa-0734-310253272/customer-reviews",
           "direct BBB customer reviews blocked for https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839",
-          "reader challenge for https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews",
+          "reader challenge for https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=6",
           "direct BBB customer reviews blocked for https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/details",
-          "direct BBB customer reviews blocked for https://www.bbb.org/us/mo/springfield/profile/auto-auction/iaa-0734-1000020438",
+          "direct BBB customer reviews blocked for https://www.bbb.org/us/ny/medford/profile/auto-auction/iaa-0121-143499",
           "direct BBB customer reviews blocked for https://www.bbb.org/us/sc/lexington/profile/auto-auction/iaa-0663-34111613",
-          "reader challenge for https://www.bbb.org/us/sc/lexington/profile/auto-auction/iaa-0663-34111613/customer-reviews",
           "direct BBB customer reviews blocked for https://www.bbb.org/us/sc/ravenel/profile/auto-auction/iaa-0663-34311514",
-          "direct BBB customer reviews blocked for https://www.bbb.org/us/tx/el-paso/profile/auto-auction/iaa-0895-99127620",
+          "direct BBB complaints blocked for https://www.bbb.org/us/az/tucson/profile/auto-auction/iaa-tucson-1286-20009500",
+          "direct BBB complaints blocked for https://www.bbb.org/us/fl/jacksonville/profile/auto-auction/iaa-0403-235995143",
+          "direct BBB complaints blocked for https://www.bbb.org/us/ga/rincon/profile/auto-auction/iaa-0403-235995144",
           "direct BBB complaints blocked for https://www.bbb.org/us/il/granite-city/profile/auto-auction/iaa-0734-310253272",
           "direct BBB complaints blocked for https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839",
-          "reader challenge for https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=3",
+          "reader challenge for https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=2",
           "direct BBB complaints blocked for https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/details",
           "reader challenge for https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/details/complaints",
-          "direct BBB complaints blocked for https://www.bbb.org/us/mo/springfield/profile/auto-auction/iaa-0734-1000020438",
-          "reader challenge for https://www.bbb.org/us/mo/springfield/profile/auto-auction/iaa-0734-1000020438/complaints",
-          "direct BBB complaints blocked for https://www.bbb.org/us/sc/lexington/profile/auto-auction/iaa-0663-34111613",
-          "direct BBB complaints blocked for https://www.bbb.org/us/sc/ravenel/profile/auto-auction/iaa-0663-34311514",
-          "direct BBB complaints blocked for https://www.bbb.org/us/tx/el-paso/profile/auto-auction/iaa-0895-99127620",
-          "reader challenge for https://www.bbb.org/us/tx/el-paso/profile/auto-auction/iaa-0895-99127620/complaints"
+          "direct BBB complaints blocked for https://www.bbb.org/us/ny/medford/profile/auto-auction/iaa-0121-143499",
+          "direct BBB complaints blocked for https://www.bbb.org/us/sc/ravenel/profile/auto-auction/iaa-0663-34311514"
         ],
         "errors": [],
-        "review_count": 770,
-        "existing_review_count": 757,
+        "review_count": 817,
+        "existing_review_count": 770,
         "present": true,
         "latest_review_date": "2026-09-24",
-        "existing_latest_date": "2026-08-12",
+        "existing_latest_date": "2026-09-24",
         "status": "ok"
       },
       {
         "source_website": "trustpilot.com",
         "attempted": true,
         "direct_pages": 1,
-        "fallback_pages": 3,
+        "fallback_pages": 2,
         "direct_statuses": {
           "403": 1,
-          "200": 2,
-          "503": 1
+          "200": 2
         },
         "blocked": true,
         "fallback_used": true,
-        "candidate_reviews_seen": 35,
-        "new_reviews_added": 1,
+        "candidate_reviews_seen": 16,
+        "new_reviews_added": 2,
         "advertised_total": null,
-        "latest_candidate_date": "2026-09-11",
+        "latest_candidate_date": "2026-10-26",
         "notes": [
-          "direct Trustpilot blocked for iaai.com"
+          "direct Trustpilot blocked for iaai.com",
+          "reader challenge for https://www.trustpilot.com/review/iaai.com?page=2"
         ],
-        "errors": [
-          "reader status 503 for https://www.trustpilot.com/review/iaai.com?page=3"
-        ],
-        "review_count": 92,
-        "existing_review_count": 91,
+        "errors": [],
+        "review_count": 94,
+        "existing_review_count": 92,
         "present": true,
-        "latest_review_date": "2026-09-11",
-        "existing_latest_date": "2026-07-31",
+        "latest_review_date": "2026-10-26",
+        "existing_latest_date": "2026-09-11",
         "status": "ok"
       },
       {
@@ -227,50 +225,55 @@
       {
         "source_website": "google.com",
         "attempted": true,
-        "direct_pages": 1041,
+        "direct_pages": 286,
         "fallback_pages": 0,
         "direct_statuses": {
-          "200": 1041
+          "200": 286
         },
         "blocked": false,
         "fallback_used": false,
-        "candidate_reviews_seen": 3754,
-        "new_reviews_added": 67,
+        "candidate_reviews_seen": 8,
+        "new_reviews_added": 0,
         "advertised_total": null,
-        "latest_candidate_date": "2026-10-06",
+        "latest_candidate_date": "2025-10-21",
         "notes": [
-          "Google Business Profile discovery completed: 121/121 queries succeeded and 306 unique validated US profiles were selected.",
-          "Validated 297 US Google Business Profiles; 9 failed and 0 were skipped after the circuit breaker. Successful profiles were paginated newest-first through per-profile incremental overlap boundaries."
+          "Google Business Profile discovery completed: 131/131 queries succeeded and 310 unique validated US profiles were selected.",
+          "Validated 2 US Google Business Profiles; 6 failed and 302 were skipped after the circuit breaker. Successful profiles were paginated newest-first through per-profile incremental overlap boundaries."
         ],
         "errors": [
-          "IAA Colorado Springs [0x871341385b24393b:0x1a3a083d05d0b7dc]: newest review RPC did not load",
-          "IAA Colton [0x80dcad89df16ccd5:0xd55c3f5a9c4e9800]: newest review RPC did not load",
-          "IAA Columbus [0x88388457fb02622b:0xbca32c67b12a39ef]: newest review RPC did not load",
-          "IAA Reno [0x80993d3e6fec0491:0xafde27a19a447c70]: newest review RPC did not load",
-          "IAA Vehicle Purchasing [0x89c6d179dc795415:0x5cbd2b95197dccf9]: newest review RPC did not load",
-          "IAA Vehicle Purchasing [0x8640c87a21c394fb:0xef477b41410bb390]: newest review RPC did not load",
-          "IAA Vehicle Purchasing [0x881131a51728f71f:0xe3cc5beaee1c71ef]: Response.body: Protocol error (Network.getResponseBody): No data found for resource with given identifier\nResponse body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.",
-          "IAA York Springs [0x89c8fb8f240f3b3d:0xa96265759c9445a3]: newest review RPC did not load",
-          "Insurance Auto Auctions [0x8626dd2eac57f63d:0xfa1537fbe6611010]: newest review RPC did not load"
+          "Auto Auction Insurance [0x8881c58137f61ecd:0xabecba8ed5a95f0c]: Response.body: Protocol error (Network.getResponseBody): No data found for resource with given identifier\nResponse body is not available for a response that was navigated away from. Read response.body() before triggering any navigation.",
+          "IAA Abilene [0x8656859fd806721d:0x1c9eadd6f9b8fefa]: newest review RPC did not load",
+          "IAA Akron-Canton [0x8836fb149c514035:0x5fd3cb09819cb4cf]: newest review RPC did not load",
+          "IAA Albany [0x89de730ae2b661b3:0x9d58bae6b93a9718]: newest review RPC did not load",
+          "IAA Albuquerque [0x87220ea7338e1f9d:0x1e3799baac92c395]: newest review RPC did not load",
+          "IAA Altoona [0x89cbbcfa7c283bbd:0x82eef90752880501]: newest review RPC did not load"
         ],
         "profile_retention_used": true,
-        "profiles_completed": 297,
-        "profiles_failed": 9,
-        "profiles_skipped_after_circuit_breaker": 0,
+        "profiles_completed": 2,
+        "profiles_failed": 6,
+        "profiles_skipped_after_circuit_breaker": 302,
         "last_successful_refresh_until": "2026-08-31",
         "review_count": 2364,
-        "existing_review_count": 2297,
+        "existing_review_count": 2364,
         "present": true,
         "latest_review_date": "2026-09-30",
-        "existing_latest_date": "2026-08-31",
+        "existing_latest_date": "2026-09-30",
         "status": "partial_profile_retention"
       }
     ],
     "sentiments": {
-      "positive": 1258,
-      "negative": 3378
+      "positive": 1262,
+      "negative": 3434
     },
     "source_urls": [
+      "https://www.trustpilot.com/reviews/6adfead517bcdc3a8111d9e8",
+      "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14701578942",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14694293076",
+      "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "https://www.trustpilot.com/reviews/6ada67a0bb8901999243d664",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14664102565",
+      "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14634381211",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT200NGIyc3dXbWMyT1MxalIxUk9aWGhvY0U0M1ZXYxAB!2m1!1s0x0:0x39aff743b6ab6474!3m1!1s2@1:CAIQACodChtycF9oOm44b2swWmc2OS1jR1ROZXhocE43VWc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pOSWNISk5NVTFHTVhNMFFsWldVMGhLZWxWUE5IYxAB!2m1!1s0x0:0xb8b3f34dab55ccfc!3m1!1s2@1:CAIQACodChtycF9oOjNIcHJNMU1GMXM0QlZWU0hKelVPNHc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tKb1RYRldhWE5UVW1ONVJIRTFObk5CWTJ0SVFXYxAB!2m1!1s0x0:0xb8c4fe5f5fcf919a!3m1!1s2@1:CAIQACodChtycF9oOkJoTXFWaXNTUmN5RHE1NnNBY2tIQWc%7C%7C?hl=en",
@@ -288,7 +291,10 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2poMlNITnJXamREVDBaeU5uUjJPRXRPY3kxdGRtYxAB!2m1!1s0x0:0xa3c33669c6a71f68!3m1!1s2@1:CAIQACodChtycF9oOjh2SHNrWjdDT0ZyNnR2OEtOcy1tdmc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2poSGNUZGlNVUpqTFRSWVVHUm1jVkpvUld0SlVIYxAB!2m1!1s0x0:0xbb829155aa6f38b!3m1!1s2@1:CAIQACodChtycF9oOjhHcTdiMUJjLTRYUGRmcVJoRWtJUHc%7C%7C?hl=en",
       "http://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25316665",
+      "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25316665",
+      "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25313214",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pORmNtVkpjMmRGVkRsMVIzSldSVWxXU2sxclZuYxAB!2m1!1s0x0:0x1b67af71683ad526!3m1!1s2@1:CAIQACodChtycF9oOjNFcmVJc2dFVDl1R3JWRUlWSk1rVnc%7C%7C?hl=en",
+      "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-1",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s5U2FqaE1XVVk0YjA5UFNucEJjRzgzU0hWWFVVRRAB!2m1!1s0x0:0x392318b8b52e205a!3m1!1s2@1:CAIQACodChtycF9oOk9SajhMWUY4b09PSnpBcG83SHVXUUE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xndGMwSkJPWEpZVURsSVUzbDFZV1YxTW5WVmNIYxAB!2m1!1s0x0:0xe796f989f764a33!3m1!1s2@1:CAIQACodChtycF9oOlgtc0JBOXJYUDlIU3l1YWV1MnVVcHc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21JeWVrdzVjR3BNVmxFMlVIaHRiMWxPWkRWZlYwRRAB!2m1!1s0x0:0x488a347a8332b2b4!3m1!1s2@1:CAIQACodChtycF9oOmIyekw5cGpMVlE2UHhtb1lOZDVfV0E%7C%7C?hl=en",
@@ -298,6 +304,7 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pkVE1tUTBSMUZ6VlhGa1RIbGlaM1pJYVRoc1NsRRAB!2m1!1s0x0:0xb5c38b17330efcec!3m1!1s2@1:CAIQACodChtycF9oOjdTMmQ0R1FzVXFkTHliZ3ZIaThsSlE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCS2FWcDBXVjh4UldKc2JVNTFZVTVFUTFocVVuYxAB!2m1!1s0x0:0x51981c72702f2dae!3m1!1s2@1:CAIQACodChtycF9oOjBKaVp0WV8xRWJsbU51YU5EQ1hqUnc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xSR1kzTnhiQzFDYTB0M2JYSlJSemsyY2tkNGVYYxAB!2m1!1s0x0:0xb01055d887bcc00a!3m1!1s2@1:CAIQACodChtycF9oOlRGY3NxbC1Ca0t3bXJRRzk2ckd4eXc%7C%7C?hl=en",
+      "https://www.reddit.com/r/askcarsales/comments/1whw4l1/seller_claims_2023_f150_is_clean_title_but_nmvtis/",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xKNGExbFNUM0p3VFZwWlprZEthems0T1VwU1QyYxAB!2m1!1s0x0:0x9c1ff93570651d1e!3m1!1s2@1:CAIQACodChtycF9oOlJ4a1lST3JwTVpZZkdKazk4OUpST2c%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21VM2NHMHRSa3MyYWt4cVFsWk9hVFF3TmxsdFdtYxAB!2m1!1s0x0:0xa81efc0b37367649!3m1!1s2@1:CAIQACodChtycF9oOmU3cG0tRks2akxqQlZOaTQwNlltWmc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tablNHdFhWV3R0YUZwVVgzSjZhVlJuYm1WalZsRRAB!2m1!1s0x0:0xfc9a09ed0161c0f3!3m1!1s2@1:CAIQACodChtycF9oOkZnSGtXVWttaFpUX3J6aVRnbmVjVlE%7C%7C?hl=en",
@@ -308,7 +315,9 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2toQlVIQlJaSGhyWmtVemRrMXdPRTlqT1RGaE4xRRAB!2m1!1s0x0:0xda1db98ee2488d9f!3m1!1s2@1:CAIQACodChtycF9oOkhBUHBRZHhrZkUzdk1wOE9jOTFhN1E%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21sTlFXTnZWR3BzYVRoVlVYSTFhazVrYzJwRk1IYxAB!2m1!1s0x0:0x2fe664df1444100c!3m1!1s2@1:CAIQACodChtycF9oOmlNQWNvVGpsaThVUXI1ak5kc2pFMHc%7C%7C?hl=en",
       "http://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25279510",
+      "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25279510",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25aM1ZFUkxWVkpQWW10elozRm1NelZCZWtOeE1rRRAB!2m1!1s0x0:0x7663bf049478e612!3m1!1s2@1:CAIQACodChtycF9oOnZ3VERLVVJPYmtzZ3FmMzVBekNxMkE%7C%7C?hl=en",
+      "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-2",
       "https://www.trustpilot.com/reviews/6aa8a6d2cfe292e2dcde1be1",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tSME1rWnBkVTVFZVZwYWFWZElXVWhvUmtRNVoyYxAB!2m1!1s0x0:0xfc9a09ed0161c0f3!3m1!1s2@1:CAIQACodChtycF9oOkR0MkZpdU5EeVpaaVdIWUhoRkQ5Z2c%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pocVZYbzRjM1ZmUkdSaWJrOXNMVzB3VTJOR1UyYxAB!2m1!1s0x0:0x33948ef3b7cc8649!3m1!1s2@1:CAIQACodChtycF9oOjhqVXo4c3VfRGRibk9sLW0wU2NGU2c%7C%7C?hl=en",
@@ -319,6 +328,7 @@
       "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14534956498",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201d2JuZHFjbEJZZEZsSVZXeDVVREkzTUZWcllYYxAB!2m1!1s0x0:0x205b296902026570!3m1!1s2@1:CAIQACodChtycF9oOm5wbndqclBYdFlIVWx5UDI3MFVrYXc%7C%7C?hl=en",
       "http://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25253668",
+      "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25253668",
       "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14525680329",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20xbmRYSXRkREZSTkRSTWRFOWpOV2xrWmxGVWFrRRAB!2m1!1s0x0:0x62628ad46f7b0c29!3m1!1s2@1:CAIQACodChtycF9oOm1ndXItdDFRNDRMdE9jNWlkZlFUakE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25Wb1MwbERSakkyZWtwNllYcE9SbkpDTWpoemQzYxAB!2m1!1s0x0:0xb5c38b17330efcec!3m1!1s2@1:CAIQACodChtycF9oOnVoS0lDRjI2ekp6YXpORnJCMjhzd3c%7C%7C?hl=en",
@@ -328,18 +338,20 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT205UVoyOTBiVE5hTkUxclowcG1jbXBrU1VkRWFGRRAB!2m1!1s0x0:0x837ee3387ce774c8!3m1!1s2@1:CAIQACodChtycF9oOm9QZ290bTNaNE1rZ0pmcmpkSUdEaFE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2psRWFFRnRNekpZZUd0MGQxbGhUMWxHWm14U2NrRRAB!2m1!1s0x0:0xa72a1695591cb5d1!3m1!1s2@1:CAIQACodChtycF9oOjlEaEFtMzJYeGt0d1lhT1lGZmxSckE%7C%7C?hl=en",
       "http://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25237555",
+      "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25237555",
       "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14506154633",
-      "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21oS2RYcE5XR2hNT1ZOYVJsTXhPWGxxZGpKeVlXYxAB!2m1!1s0x0:0xaa76b17581de6535!3m1!1s2@1:CAIQACodChtycF9oOmhKdXpNWGhMOVNaRlMxOXlqdjJyYWc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21OMmN6WkdiemRoTVRsbFNreFBiMFpOT0ZKdE1uYxAB!2m1!1s0x0:0x8bf3ad55fac88f40!3m1!1s2@1:CAIQACodChtycF9oOmN2czZGbzdhMTllSkxPb0ZNOFJtMnc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21acmNVUnVkbVpYWW5CdVkxYzNOVFJGTVY5clNVRRAB!2m1!1s0x0:0x3f3f38c767a5e20!3m1!1s2@1:CAIQACodChtycF9oOmZrcURudmZXYnBuY1c3NTRFMV9rSUE%7C%7C?hl=en",
       "http://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25231906",
+      "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25231906",
       "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14503875074",
       "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14502404513",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxc2VETlBaRlEwY25Wb1dFVnVOR2RHVlc1MFQyYxAB!2m1!1s0x0:0x1a095bfb12d35f3!3m1!1s2@1:CAIQACodChtycF9oOi1seDNPZFQ0cnVoWEVuNGdGVW50T2c%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25wa2RWYzBMVzVJZDNkdlIwcFlNMVZCVDBsVlptYxAB!2m1!1s0x0:0xaa76b17581de6535!3m1!1s2@1:CAIQACodChtycF9oOnpkdVc0LW5Id3dvR0pYM1VBT0lVZmc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w5RkxYTkdSbGxCUjI4M1oxRktkMkUyVjE5dmQyYxAB!2m1!1s0x0:0xf7cb04c70278006a!3m1!1s2@1:CAIQACodChtycF9oOl9FLXNGRllBR283Z1FKd2E2V19vd2c%7C%7C?hl=en",
       "http://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25222141",
+      "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25222141",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tOQk1YVkhUVlpYUTNSNloyMU1kVmRQUlU5d2JVRRAB!2m1!1s0x0:0xb26fd41cd92b561e!3m1!1s2@1:CAIQACodChtycF9oOkNBMXVHTVZXQ3R6Z21MdVdPRU9wbUE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xRNGNDMWtWa2wxWkRSU05tZ3pMVU42YUhoS1UyYxAB!2m1!1s0x0:0x3f3f38c767a5e20!3m1!1s2@1:CAIQACodChtycF9oOlQ4cC1kVkl1ZDRSNmgzLUN6aHhKU2c%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21GVlNqWm9aRlYwZVVvNVFYQXRYMDVFUlMxcVVHYxAB!2m1!1s0x0:0xda1db98ee2488d9f!3m1!1s2@1:CAIQACodChtycF9oOmFVSjZoZFV0eUo5QXAtX05ERS1qUGc%7C%7C?hl=en",
@@ -369,14 +381,13 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25WWk5VaFljMWRpWkZKT1pIVXhjMVpCVTBaRWRIYxAB!2m1!1s0x0:0x958b455418cae1cd!3m1!1s2@1:CAIQACodChtycF9oOnVZNUhYc1diZFJOZHUxc1ZBU0ZEdHc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pOcGVsTTNOV05TUWw5WGJ6aDZXWHBST1hGc2FGRRAB!2m1!1s0x0:0x1a3a083d05d0b7dc!3m1!1s2@1:CAIQACodChtycF9oOjNpelM3NWNSQl9Xbzh6WXpROXFsaFE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21KeFVuQk9SRFJQUXpWblRFWkxaRlZwUWtWMGVIYxAB!2m1!1s0x0:0xcafbe63b825c3f9f!3m1!1s2@1:CAIQACodChtycF9oOmJxUnBORDRPQzVnTEZLZFVpQkV0eHc%7C%7C?hl=en",
-      "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tWQ2VtUnhNR041ZWtOamRtdHZPSGwyTWxWVlRtYxAB!2m1!1s0x0:0xe89f33ad72bda19a!3m1!1s2@1:CAIQACodChtycF9oOkVCemRxMGN5ekNjdmtvOHl2MlVVTmc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21GaGNHZzBTbFF4TVdocVUyeFFVRGh3ZGxaV2VrRRAB!2m1!1s0x0:0xfebd1083e0cb9cc!3m1!1s2@1:CAIQACodChtycF9oOmFhcGg0SlQxMWhqU2xQUDhwdlZWekE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2psa1lVWm1VbVJoYWtOcVZscFFRa1ZhT1hGSGMwRRAB!2m1!1s0x0:0x958b455418cae1cd!3m1!1s2@1:CAIQACodChtycF9oOjlkYUZmUmRhakNqVlpQQkVaOXFHc0E%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21kSlZrVTNVRlJmT1VGTGJVaGxjalpFUlVWbFdWRRAB!2m1!1s0x0:0x9a141ff415b8b2e2!3m1!1s2@1:CAIQACodChtycF9oOmdJVkU3UFRfOUFLbUhlcjZERUVlWVE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21kWWVtNHlUa2d5TVVvd1JUTXdPRFptZERscGJYYxAB!2m1!1s0x0:0xdb9f7b8d5e8b4707!3m1!1s2@1:CAIQACodChtycF9oOmdYem4yTkgyMUowRTMwODZmdDlpbXc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t4bGJsTXlVMHhpV2xSTlgyTmxWV2t0YWtsT1QwRRAB!2m1!1s0x0:0x599797e633531527!3m1!1s2@1:CAIQACodChtycF9oOkxlblMyU0xiWlRNX2NlVWktaklOT0E%7C%7C?hl=en",
-      "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-1",
+      "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-3",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tWVmNrMUlhQzFNYkV0Q1UxSjFTRXBQVEZwelJYYxAB!2m1!1s0x0:0x9d58bae6b93a9718!3m1!1s2@1:CAIQACodChtycF9oOkVVck1IaC1MbEtCU1J1SEpPTFpzRXc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tKVlRTMUpTRmx2U2s1dmNuWjZOMkpGY1RSTWVrRRAB!2m1!1s0x0:0xab9261d86ba82dc4!3m1!1s2@1:CAIQACodChtycF9oOkJVTS1JSFlvSk5vcnZ6N2JFcTRMekE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xwbU5IQkpZazlzZURVNWNYbGtiMEZ2ZG1KbGRrRRAB!2m1!1s0x0:0x771752c764c96f5c!3m1!1s2@1:CAIQACodChtycF9oOlpmNHBJYk9seDU5cXlkb0FvdmJldkE%7C%7C?hl=en",
@@ -389,7 +400,7 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCeVlsVXRNSFI2YnpGSFlTMW1PVXR4V1MxbGNGRRAB!2m1!1s0x0:0x1b67af71683ad526!3m1!1s2@1:CAIQACodChtycF9oOlByYlUtMHR6bzFHYS1mOUtxWS1lcFE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xsUU1qTnNkbEIyUWxSNk0zRnpibXQ2TURONVgyYxAB!2m1!1s0x0:0x958b455418cae1cd!3m1!1s2@1:CAIQACodChtycF9oOllQMjNsdlB2QlR6M3Fzbmt6MDN5X2c%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSWk0yTk9aMVZvVGxWRmVEaFlVMjVzVVRsM1ZsRRAB!2m1!1s0x0:0x2fe664df1444100c!3m1!1s2@1:CAIQACodChtycF9oOjRZM2NOZ1VoTlVFeDhYU25sUTl3VlE%7C%7C?hl=en",
-      "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-2",
+      "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-4",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tScWFucGFNRXBCVjBzM2JUbDFkMEpGY1VNNVRrRRAB!2m1!1s0x0:0x800231f6ecf66307!3m1!1s2@1:CAIQACodChtycF9oOkRqanpaMEpBV0s3bTl1d0JFcUM5TkE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21oNVVHNXlhVGRZVGxVNVVVOTJaMkpDWDJOT04yYxAB!2m1!1s0x0:0xc2bbe2dc11a9cbbc!3m1!1s2@1:CAIQACodChtycF9oOmh5UG5yaTdYTlU5UU92Z2JCX2NON2c%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25wVVVVaHNORzFyZWsxRU0xbEVhWFZUVjE4MlUzYxAB!2m1!1s0x0:0xc2bbe2dc11a9cbbc!3m1!1s2@1:CAIQACodChtycF9oOnpUUUhsNG1rek1EM1lEaXVTV182U3c%7C%7C?hl=en",
@@ -413,7 +424,7 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wa1prcFJjV0Z1ZFVsa09FRnBiV1YyYzJSM2NuYxAB!2m1!1s0x0:0x7c5a9bad104537cb!3m1!1s2@1:CAIQACodChtycF9oOmpkZkpRcWFudUlkOEFpbWV2c2R3cnc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCRWVYUkNURkJIYjNJMExYbFFXbmhqTkVsSFltYxAB!2m1!1s0x0:0x4bcdf230036ec30d!3m1!1s2@1:CAIQACodChtycF9oOjBEeXRCTFBHb3I0LXlQWnhjNElHYmc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tab1dUazJlVGhPUzJSd2RTMTFSMjlWTnpWbVZuYxAB!2m1!1s0x0:0x80c0c0b24aa6bbd8!3m1!1s2@1:CAIQACodChtycF9oOkZoWTk2eThOS2RwdS11R29VNzVmVnc%7C%7C?hl=en",
-      "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-3",
+      "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-5",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25WWVYwNXJSV1F6YVdWTVRYcERRVTUxTlhoS1pWRRAB!2m1!1s0x0:0x66c9d2d9fe94352a!3m1!1s2@1:CAIQACodChtycF9oOnVYV05rRWQzaWVMTXpDQU51NXhKZVE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21Zek1reEVhVmQ2Um05S2JtNUtiamx0WjJKbGJGRRAB!2m1!1s0x0:0x5ffa596f1b75e166!3m1!1s2@1:CAIQACodChtycF9oOmYzMkxEaVd6Rm9Kbm5KbjltZ2JlbFE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kWGJHMDFUMWd3UjNOeVZFVkpPSEJFTjBwMFVGRRAB!2m1!1s0x0:0xfad68827101771bb!3m1!1s2@1:CAIQACodChtycF9oOndXbG01T1gwR3NyVEVJOHBEN0p0UFE%7C%7C?hl=en",
@@ -434,7 +445,7 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201TmJuWmFVMTgwT1RKUVdHTXdRblp6VlZRelJYYxAB!2m1!1s0x0:0x67cfbd53a57f5cd9!3m1!1s2@1:CAIQACodChtycF9oOm5NbnZaU180OTJQWGMwQnZzVVQzRXc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25aaFYyOURWREpyY0ZGWVJrTkNlRVZpTTE5Tk9XYxAB!2m1!1s0x0:0x342729a2d1c7161b!3m1!1s2@1:CAIQACodChtycF9oOnZhV29DVDJrcFFYRkNCeEViM19NOWc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tSVGRqaGFia2h1YUU5NVYwazVZazVNVDFCUmRHYxAB!2m1!1s0x0:0x342729a2d1c7161b!3m1!1s2@1:CAIQACodChtycF9oOkRTdjhabkhuaE95V0k5Yk5MT1BRdGc%7C%7C?hl=en",
-      "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-4",
+      "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-6",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25SdWVUQTJaalZCYlRseFRsRkpSSFpwUTJkd09IYxAB!2m1!1s0x0:0x13e18df5c46335be!3m1!1s2@1:CAIQACodChtycF9oOnRueTA2ZjVBbTlxTlFJRHZpQ2dwOHc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21SbFkzaHZUWGhwU0hndGIwVm1WV3R1WVhsRFEwRRAB!2m1!1s0x0:0xab9261d86ba82dc4!3m1!1s2@1:CAIQACodChtycF9oOmRlY3hvTXhpSHgtb0VmVWtuYXlDQ0E%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KV1JEVkhPVUpDZEc5Q1pVYzFiRmxqYVZORlpFRRAB!2m1!1s0x0:0x7b98fe795b0e5a23!3m1!1s2@1:CAIQACodChtycF9oOnJWRDVHOUJCdG9CZUc1bFljaVNFZEE%7C%7C?hl=en",
@@ -458,7 +469,7 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21Sd1kzSkxVMmxrYm5GU1RqZHNiVlZXTkVGUU9YYxAB!2m1!1s0x0:0x54120a0f8cb3c862!3m1!1s2@1:CAIQACodChtycF9oOmRwY3JLU2lkbnFSTjdsbVVWNEFQOXc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t4emRFRmhkMWhyVGpWa1ZUSm5kemxhYVRSNGFIYxAB!2m1!1s0x0:0xa9023afef87eccd7!3m1!1s2@1:CAIQACodChtycF9oOkxzdEFhd1hrTjVkVTJndzlaaTR4aHc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25aU1pHa3lUVU5PZERsS2VVRTFiRkZIWkU1Q1EyYxAB!2m1!1s0x0:0x78a12aad59b29e47!3m1!1s2@1:CAIQACodChtycF9oOnZSZGkyTUNOdDlKeUE1bFFHZE5CQ2c%7C%7C?hl=en",
-      "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-5",
+      "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-7",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tseU4zWjVYMEZMTUU5M2RuUnVaMXBrV25aUFJIYxAB!2m1!1s0x0:0x35381bbe27419722!3m1!1s2@1:CAIQACodChtycF9oOklyN3Z5X0FLME93dnRuZ1pkWnZPRHc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pKT2MzTnNkMnRyYkZWRU5sbG1ibDk0WVdNNGNsRRAB!2m1!1s0x0:0x1d82e9d933de0c0a!3m1!1s2@1:CAIQACodChtycF9oOjJOc3Nsd2trbFVENllmbl94YWM4clE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xWaGJEWjViRWxYTkZBNExWOU9OazVEVTBKdE9IYxAB!2m1!1s0x0:0x488a347a8332b2b4!3m1!1s2@1:CAIQACodChtycF9oOlVhbDZ5bElXNFA4LV9ONk5DU0JtOHc%7C%7C?hl=en",
@@ -487,7 +498,7 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xaZmNsUlhTR2gxZFc4d2JEQnNia0l5VDA5Q2RHYxAB!2m1!1s0x0:0xfc9a09ed0161c0f3!3m1!1s2@1:CAIQACodChtycF9oOlZfclRXSGh1dW8wbDBsbkIyT09CdGc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21SR1MwUmxiVkpSY0V3eGRXb3lRMjlJYUVGNU5YYxAB!2m1!1s0x0:0x1d82e9d933de0c0a!3m1!1s2@1:CAIQACodChtycF9oOmRGS0RlbVJRcEwxdWoyQ29IaEF5NXc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kwdFFWVndSbFpSWmtGR1JraDRiVkZKVGpaTlpsRRAB!2m1!1s0x0:0x488a347a8332b2b4!3m1!1s2@1:CAIQACodChtycF9oOi0tQVVwRlZRZkFGRkh4bVFJTjZNZlE%7C%7C?hl=en",
-      "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-6",
+      "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-8",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCeWR6UmtWV1ZtVkd4alkwUlFVVUpOWDNndFNGRRAB!2m1!1s0x0:0x5a0ffcf7187a7c64!3m1!1s2@1:CAIQACodChtycF9oOlBydzRkVWVmVGxjY0RQUUJNX3gtSFE%7C%7C?hl=en",
       "https://www.trustpilot.com/reviews/6a3e851d82e8bd0f700d6c7c",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tWWFVUZEJVMmhKYmtoWVFUaGFibkk0T1dKb2RYYxAB!2m1!1s0x0:0xab9261d86ba82dc4!3m1!1s2@1:CAIQACodChtycF9oOkVXUTdBU2hJbkhYQThabnI4OWJodXc%7C%7C?hl=en",
@@ -554,30 +565,14 @@
       "http://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=2#0654_88276839_24907481",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pjd1luZzVURmRFWldkRmRFbzRORlIwTWxsNlZVRRAB!2m1!1s0x0:0xf72ae4ea6bebc079!3m1!1s2@1:CAIQACodChtycF9oOjcwYng5TFdEZWdFdEo4NFR0Mll6VUE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kNFdWaExlbTV5Y1RCelJWb3dUV1kwV2pReFpYYxAB!2m1!1s0x0:0xa9023afef87eccd7!3m1!1s2@1:CAIQACodChtycF9oOnd4WVhLem5ycTBzRVowTWY0WjQxZXc%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KTk9VaEhMVzVoVXpVeFRtSmpkMlZxVTFkRE0xRRAB!2m1!1s0x0:0xd206ccc1faab34c2!3m1!1s2@1:CAIQACodChtycF9oOnJNOUhHLW5hUzUxTmJjd2VqU1dDM1E%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21KWGVUSTFPRmRCZWtGdGNqazNWRFZpYzBsRFZtYxAB!2m1!1s0x0:0xf319dd37c46d5d05!3m1!1s2@1:CAIQACodChtycF9oOmJXeTI1OFdBekFtcjk3VDVic0lDVmc%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pkbE9ITlBNR0ozTjNGZlFUUTFhVFI1VjJkalFuYxAB!2m1!1s0x0:0xf319dd37c46d5d05!3m1!1s2@1:CAIQACodChtycF9oOjdlOHNPMGJ3N3FfQTQ1aTR5V2djQnc%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KS1dYTktTVzlHYWtkTGJGbGtjRkp2ZFhKbk0wRRAB!2m1!1s0x0:0xe9e7b47c8d71b6b6!3m1!1s2@1:CAIQACodChtycF9oOnJKWXNKSW9GakdLbFlkcFJvdXJnM0E%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pkMVNIcGpOMjVWVkZaVFpFNTZZV2htVjFOMmIwRRAB!2m1!1s0x0:0x7a263376a9ba6f28!3m1!1s2@1:CAIQACodChtycF9oOjd1SHpjN25VVFZTZE56YWhmV1N2b0E%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tNMGQxYzFUMWRXYWpsQk0wMXdVa2xuZEdaRVJuYxAB!2m1!1s0x0:0xc9a30c2bad4f8282!3m1!1s2@1:CAIQACodChtycF9oOkM0d1c1T1dWajlBM01wUklndGZERnc%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2paVU5WRkNMVWR6ZFZJMFgwMWxkeTFmV1Y5UVZtYxAB!2m1!1s0x0:0x771752c764c96f5c!3m1!1s2@1:CAIQACodChtycF9oOjZUNVFCLUdzdVI0X01ldy1fWV9QVmc%7C%7C?hl=en",
-      "http://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_24900724",
-      "http://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints?page=2#0654_88276839_24900724",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25aQ1kzWkZTbFJaU0c5a1VESnJhWEZYVHpaa05VRRAB!2m1!1s0x0:0x1643c908409b6d25!3m1!1s2@1:CAIQACodChtycF9oOnZCY3ZFSlRZSG9kUDJraXFXTzZkNUE%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w4dFNHOVJTM2t0VWxCUGFHTlljQzB3VVVwc2NFRRAB!2m1!1s0x0:0xc9a30c2bad4f8282!3m1!1s2@1:CAIQACodChtycF9oOl8tSG9RS3ktUlBPaGNYcC0wUUpscEE%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21odU5rNXRhMnB1WkRocFRXMU9VMEZtVG1FeGIxRRAB!2m1!1s0x0:0xfe971f774f85ceb9!3m1!1s2@1:CAIQACodChtycF9oOmhuNk5ta2puZDhpTW1OU0FmTmExb1E%7C%7C?hl=en",
-      "https://www.trustpilot.com/reviews/6a1876c5133821263e6809f5",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xBMlZVcHliREYzU0ZacU1sWTFNRGt3ZVVKTmMxRRAB!2m1!1s0x0:0x5d8666815a217707!3m1!1s2@1:CAIQACodChtycF9oOlA2VUpybDF3SFZqMlY1MDkweUJNc1E%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCTU5uVktVVVYyYVc5YVVXVkNiRnB4Y0ZoRk5GRRAB!2m1!1s0x0:0x1d82e9d933de0c0a!3m1!1s2@1:CAIQACodChtycF9oOjBMNnVKUUV2aW9aUWVCbFpxcFhFNFE%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kQ1RFSnFZbEpDYVZGQ09GOXhOMXBMWTJSclUyYxAB!2m1!1s0x0:0xa9023afef87eccd7!3m1!1s2@1:CAIQACodChtycF9oOndCTEJqYlJCaVFCOF9xN1pLY2RrU2c%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pWZlpqbG1ibXhYYmtRNVRVbGFVMlp1TTJnM1UxRRAB!2m1!1s0x0:0x342729a2d1c7161b!3m1!1s2@1:CAIQACodChtycF9oOjVfZjlmbmxXbkQ5TUlaU2ZuM2g3U1E%7C%7C?hl=en"
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KTk9VaEhMVzVoVXpVeFRtSmpkMlZxVTFkRE0xRRAB!2m1!1s0x0:0xd206ccc1faab34c2!3m1!1s2@1:CAIQACodChtycF9oOnJNOUhHLW5hUzUxTmJjd2VqU1dDM1E%7C%7C?hl=en"
     ],
-    "generated_at_utc": "2026-10-07T01:31:10.437334+00:00",
+    "generated_at_utc": "2026-11-02T19:58:05.519668+00:00",
     "since_date": "2023-01-01",
-    "until_date": "2026-09-30",
+    "until_date": "2026-10-31",
     "collector_failures": [],
-    "existing_review_count": 4547,
-    "new_reviews_added": 89,
+    "existing_review_count": 4636,
+    "new_reviews_added": 60,
     "youtube_excluded": true,
     "usa_only": true,
     "english_only": true,
@@ -598,15 +593,15 @@
       "bbb.org"
     ],
     "geo_validation_counts": {
-      "google_play_us_store": 1,
-      "google_business_us_profile": 67,
-      "trustpilot_us_slug": 1,
-      "bbb_us_business": 13,
-      "apple_us_store": 7
+      "google_play_us_store": 6,
+      "trustpilot_us_slug": 2,
+      "mixed_source_ok": 1,
+      "bbb_us_business": 47,
+      "apple_us_store": 4
     },
     "geo_excluded_counts": {
       "play.google.com:google_play_us_store_non_us_marker": 7,
-      "trustpilot.com:trustpilot_us_slug_non_us_marker": 3,
+      "trustpilot.com:trustpilot_us_slug_non_us_marker": 1,
       "complaintsboard.com:complaintsboard_us_profile_non_us_marker": 1,
       "apps.apple.com:apple_non_us_store": 14
     },
@@ -674,22 +669,6 @@
         "review_date": "2026-09-08",
         "reason": "trustpilot_us_slug_non_us_marker",
         "review_text": "scamer. this is actual scam company. listed car mentioned the damaged in one area , but in purpose hiding the substantial damaged in other area. photos not clear. miss leading , did not disclosed true information. this company can't get awa"
-      },
-      {
-        "source_website": "trustpilot.com",
-        "source_label": "Trustpilot (iaai.com)",
-        "source_url": "https://www.trustpilot.com/reviews/68f2ada067bc62568782c085",
-        "review_date": "2024-10-17",
-        "reason": "trustpilot_us_slug_non_us_marker",
-        "review_text": "Bought a car from Charlottes Salvage on…. Bought a car from Charlottes Salvage on Synetiq auctions a few years ago. Bidded 3 hours before at £1430 and was the highest bidder at £720 until 10 minutes before the auction started. Then at 10 mi"
-      },
-      {
-        "source_website": "trustpilot.com",
-        "source_label": "Trustpilot (iaai.com)",
-        "source_url": "https://www.trustpilot.com/reviews/68c83be8172e8eb29d664b3b",
-        "review_date": "2025-09-15",
-        "reason": "trustpilot_us_slug_non_us_marker",
-        "review_text": "I bought a car from IAA UK in…. I bought a car from IAA UK in [month/year]. The auction listing and VIN data showed the engine code as CUNA (GTD spec, 184PS), but when I collected the vehicle it was fitted with CRBC (150PS). When I raised t"
       },
       {
         "source_website": "complaintsboard.com",
@@ -770,6 +749,22 @@
         "review_date": "2025-09-23",
         "reason": "apple_non_us_store",
         "review_text": "Absolute garbage. They charge high fees , okay.. can you just provide a basic working app????"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (468532534, ca)",
+        "source_url": "https://apps.apple.com/ca/app/id468532534?see-all=reviews&platform=iphone&reviewId=12950398341",
+        "review_date": "2025-07-29",
+        "reason": "apple_non_us_store",
+        "review_text": "STILL DOESN’T WORK IN CANADA. And their website for mobile brings me back to the top everytime I tap on a vehicle. Fire these people who don’t know how to make a website"
+      },
+      {
+        "source_website": "apps.apple.com",
+        "source_label": "Apple App Store (468532534, ca)",
+        "source_url": "https://apps.apple.com/ca/app/id468532534?see-all=reviews&platform=iphone&reviewId=11277660542",
+        "review_date": "2024-05-17",
+        "reason": "apple_non_us_store",
+        "review_text": "Need access to Canada on this App. Stop restricting the app to USA only. Open it up to access Canada"
       }
     ],
     "active_collectors": [
@@ -806,7 +801,7 @@
         "website": "https://www.iaai.com/",
         "rating": 4.2,
         "review_count": 6,
-        "last_successful_scan_date": "2026-09-30"
+        "last_successful_scan_date": "2026-10-31"
       },
       {
         "feature_id": "0x8644b6bac575a881:0x5417b88cf109b559",
@@ -817,7 +812,7 @@
         "website": "https://www.iaai.com/",
         "rating": 3.7,
         "review_count": 3,
-        "last_successful_scan_date": "2026-09-30"
+        "last_successful_scan_date": "2026-10-31"
       },
       {
         "feature_id": "0x8656859fd806721d:0x1c9eadd6f9b8fefa",
@@ -880,9 +875,9 @@
         "place_id": "ChIJZ6eJm_lEAYcRm_7GKq8tccM",
         "name": "IAA Amarillo",
         "address": "11150 Farm to Market Rd 1541, Amarillo, TX 79118",
-        "website": "https://www.iaai.com/locations/437?utm_source=reputation",
+        "website": "https://www.iaai.com/locations/437?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 4.2,
-        "review_count": 43,
+        "review_count": 44,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -903,8 +898,8 @@
         "name": "IAA Anchorage",
         "address": "1446 Mystery Ave, Wasilla, AK 99654",
         "website": "https://www.iaai.com/locations/372?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 4,
-        "review_count": 41,
+        "rating": 3.8,
+        "review_count": 44,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -915,7 +910,7 @@
         "address": "2591 S Casaloma Dr, Appleton, WI 54914",
         "website": "https://www.iaai.com/locations/522?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 4.3,
-        "review_count": 66,
+        "review_count": 67,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -926,7 +921,7 @@
         "address": "4900 Hendersonville Rd, Fletcher, NC 28732",
         "website": "https://www.iaai.com/locations/751?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.6,
-        "review_count": 86,
+        "review_count": 85,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -936,8 +931,8 @@
         "name": "IAA Ashland",
         "address": "123 4 Wheel Dr, Ashland, KY 41102",
         "website": "https://www.iaai.com/locations/651?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.9,
-        "review_count": 32,
+        "rating": 3.8,
+        "review_count": 33,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -948,7 +943,7 @@
         "address": "125 Old Hwy 138, Loganville, GA 30052",
         "website": "https://www.iaai.com/locations/710?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.8,
-        "review_count": 105,
+        "review_count": 106,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -958,8 +953,8 @@
         "name": "IAA Atlanta East",
         "address": "1045 Atlanta Hwy SE, Winder, GA 30680",
         "website": "https://www.iaai.com/locations/707?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.8,
-        "review_count": 185,
+        "rating": 3.9,
+        "review_count": 186,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -981,7 +976,7 @@
         "address": "1930 Rex Rd, Lake City, GA 30260",
         "website": "https://www.iaai.com/locations/705?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.2,
-        "review_count": 324,
+        "review_count": 320,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -992,7 +987,7 @@
         "address": "1871 GA-101, Rockmart, GA 30153",
         "website": "",
         "rating": 5,
-        "review_count": 1,
+        "review_count": 2,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1013,8 +1008,8 @@
         "name": "IAA Austin",
         "address": "2191 TX-21, Dale, TX 78616",
         "website": "https://www.iaai.com/locations/418?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.7,
-        "review_count": 222,
+        "rating": 3.8,
+        "review_count": 220,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1046,8 +1041,8 @@
         "name": "IAA Avenel",
         "address": "87 Randolph Ave, Avenel, NJ 07001",
         "website": "https://www.iaai.com/locations/607?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.8,
-        "review_count": 174,
+        "rating": 3.9,
+        "review_count": 172,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1101,8 +1096,8 @@
         "name": "IAA Birmingham",
         "address": "1600 AL-150, Bessemer, AL 35022",
         "website": "https://www.iaai.com/locations/727?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.3,
-        "review_count": 86,
+        "rating": 3.5,
+        "review_count": 84,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1134,8 +1129,8 @@
         "name": "IAA Bowling Green",
         "address": "710 Woodford Ave, Bowling Green, KY 42101",
         "website": "https://www.iaai.com/locations/658?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.5,
-        "review_count": 63,
+        "rating": 3.4,
+        "review_count": 64,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1146,7 +1141,7 @@
         "address": "396 River Rd, Bridgeport, PA 19405",
         "website": "https://www.iaai.com/locations/647?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 4.1,
-        "review_count": 105,
+        "review_count": 106,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1168,7 +1163,7 @@
         "address": "366 Vulcan St, Buffalo, NY 14207",
         "website": "https://www.iaai.com/locations/624?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.4,
-        "review_count": 112,
+        "review_count": 111,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1189,8 +1184,8 @@
         "name": "IAA Casper",
         "address": "2305 Salt Creek Hwy Unit C, Casper, WY 82601",
         "website": "https://www.iaai.com/locations/376?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.6,
-        "review_count": 9,
+        "rating": 3.5,
+        "review_count": 10,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1200,8 +1195,8 @@
         "name": "IAA Central New Jersey",
         "address": "426 Texas Rd, Morganville, NJ 07751",
         "website": "https://www.iaai.com/locations/614?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.7,
-        "review_count": 104,
+        "rating": 3.8,
+        "review_count": 102,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1212,7 +1207,7 @@
         "address": "430 Tannenbaum Rd, Ravenel, SC 29470",
         "website": "https://www.iaai.com/locations/720?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.9,
-        "review_count": 58,
+        "review_count": 59,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1223,7 +1218,7 @@
         "address": "1710 Starita Rd, Charlotte, NC 28206",
         "website": "https://www.iaai.com/locations/714?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.9,
-        "review_count": 167,
+        "review_count": 169,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1245,7 +1240,7 @@
         "address": "605 Healy Rd, East Dundee, IL 60118",
         "website": "https://www.iaai.com/locations/514?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 4,
-        "review_count": 129,
+        "review_count": 130,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1256,7 +1251,7 @@
         "address": "16425 Crawford Ave, Markham, IL 60428",
         "website": "https://www.iaai.com/locations/515?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 2.9,
-        "review_count": 161,
+        "review_count": 160,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1278,7 +1273,7 @@
         "address": "10100 Windisch Rd, West Chester Township, OH 45069",
         "website": "https://www.iaai.com/locations/653?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.3,
-        "review_count": 74,
+        "review_count": 73,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1300,7 +1295,7 @@
         "address": "5152 126th Ave N, Clearwater, FL 33760",
         "website": "https://www.iaai.com/locations/745?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.9,
-        "review_count": 103,
+        "review_count": 102,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1311,7 +1306,7 @@
         "address": "7437 Deer Trail Ln, Lorain, OH 44053",
         "website": "https://www.iaai.com/locations/663?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.5,
-        "review_count": 163,
+        "review_count": 164,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1355,7 +1350,7 @@
         "address": "5100 Merle Rd, Concord, NC 28025",
         "website": "https://www.iaai.com/locations/746?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 4,
-        "review_count": 137,
+        "review_count": 136,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1364,9 +1359,9 @@
         "place_id": "ChIJzclvCrpLDogRb9Brx59OkUQ",
         "name": "IAA Corporate Headquarters",
         "address": "Two Westbrook Corporate Center 10th Floor, Westchester, IL 60154",
-        "website": "https://www.iaai.com/company?utm_source=reputation",
-        "rating": 2.3,
-        "review_count": 98,
+        "website": "https://www.iaai.com/company?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
+        "rating": 2.4,
+        "review_count": 94,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1388,7 +1383,7 @@
         "address": "15201 Review Rd, Culpeper, VA 22701",
         "website": "https://www.iaai.com/locations/726?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 4.1,
-        "review_count": 111,
+        "review_count": 112,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1399,7 +1394,7 @@
         "address": "204 Mars Rd, Wilmer, TX 75172",
         "website": "https://www.iaai.com/locations/441?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.5,
-        "review_count": 246,
+        "review_count": 244,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1410,7 +1405,7 @@
         "address": "4226 E Main St, Grand Prairie, TX 75050",
         "website": "https://www.iaai.com/locations/443?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 2.9,
-        "review_count": 601,
+        "review_count": 588,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1421,7 +1416,7 @@
         "address": "5403 Rockingham Rd, Davenport, IA 52802",
         "website": "https://www.iaai.com/locations/534?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 4,
-        "review_count": 90,
+        "review_count": 91,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1443,7 +1438,7 @@
         "address": "8510 Brighton Rd, Commerce City, CO 80022",
         "website": "https://www.iaai.com/locations/374?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.8,
-        "review_count": 157,
+        "review_count": 156,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1453,8 +1448,8 @@
         "name": "IAA Des Moines",
         "address": "1000 Armstrong Dr, De Soto, IA 50069",
         "website": "https://www.iaai.com/locations/536?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.4,
-        "review_count": 103,
+        "rating": 3.5,
+        "review_count": 104,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1498,7 +1493,7 @@
         "address": "2780 Willow Pass Rd, Bay Point, CA 94565",
         "website": "https://www.iaai.com/locations/332?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.6,
-        "review_count": 163,
+        "review_count": 162,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1519,7 +1514,7 @@
         "name": "IAA Elkton",
         "address": "183 Zeitler Rd, Elkton, MD 21921",
         "website": "https://www.iaai.com/locations/786?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.8,
+        "rating": 3.7,
         "review_count": 26,
         "last_successful_scan_date": "2026-09-30"
       },
@@ -1564,7 +1559,7 @@
         "address": "4401 37th St N, Fargo, ND 58102",
         "website": "https://www.iaai.com/locations/363?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.9,
-        "review_count": 88,
+        "review_count": 89,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1575,7 +1570,7 @@
         "address": "2801 E Pridemore Dr, Lincoln, AR 72744",
         "website": "https://www.iaai.com/locations/435?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.3,
-        "review_count": 91,
+        "review_count": 90,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1585,8 +1580,8 @@
         "name": "IAA Flint",
         "address": "3088 S Dye Rd, Flint, MI 48507",
         "website": "https://www.iaai.com/locations/502?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.2,
-        "review_count": 94,
+        "rating": 3.3,
+        "review_count": 95,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1597,7 +1592,7 @@
         "address": "9951 Banana Ave, Fontana, CA 92335",
         "website": "https://www.iaai.com/locations/132?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.6,
-        "review_count": 69,
+        "review_count": 70,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1608,7 +1603,7 @@
         "address": "11950 FL-82, Fort Myers, FL 33913",
         "website": "https://www.iaai.com/locations/749?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.4,
-        "review_count": 47,
+        "review_count": 48,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1641,7 +1636,7 @@
         "address": "3748 Mcpherson Dr, Justin, TX 76247",
         "website": "https://www.iaai.com/locations/465?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.5,
-        "review_count": 227,
+        "review_count": 228,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1651,8 +1646,8 @@
         "name": "IAA Fremont",
         "address": "6700 Stevenson Blvd, Fremont, CA 94538",
         "website": "https://www.iaai.com/locations/334?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.3,
-        "review_count": 157,
+        "rating": 3.4,
+        "review_count": 158,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1663,7 +1658,7 @@
         "address": "1805 N Lafayette Ave, Fresno, CA 93705",
         "website": "https://www.iaai.com/locations/337?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.2,
-        "review_count": 103,
+        "review_count": 105,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1674,7 +1669,7 @@
         "address": "700 100th St SW, Byron Center, MI 49315",
         "website": "https://www.iaai.com/locations/518?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.6,
-        "review_count": 80,
+        "review_count": 81,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1685,7 +1680,7 @@
         "address": "171 Carden Rd, Graham, NC 27253",
         "website": "https://www.iaai.com/locations/715?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.6,
-        "review_count": 129,
+        "review_count": 128,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1696,7 +1691,7 @@
         "address": "422 Scuffletown Rd, Simpsonville, SC 29681",
         "website": "https://www.iaai.com/locations/761?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.7,
-        "review_count": 105,
+        "review_count": 106,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1717,8 +1712,8 @@
         "name": "IAA Gulf Coast",
         "address": "8209 Old Stage Rd, Moss Point, MS 39562",
         "website": "https://www.iaai.com/locations/427?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.9,
-        "review_count": 92,
+        "rating": 4,
+        "review_count": 90,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1728,8 +1723,8 @@
         "name": "IAA Hartford",
         "address": "47 Newberry Rd, East Windsor, CT 06088",
         "website": "https://www.iaai.com/locations/623?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 4.1,
-        "review_count": 66,
+        "rating": 4,
+        "review_count": 67,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1750,8 +1745,8 @@
         "name": "IAA High Point",
         "address": "6695 Auction Rd, High Point, NC 27263",
         "website": "https://www.iaai.com/locations/790?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 4.3,
-        "review_count": 28,
+        "rating": 4.4,
+        "review_count": 29,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1773,7 +1768,7 @@
         "address": "2535 W Mt Houston Rd, Houston, TX 77038",
         "website": "https://www.iaai.com/locations/456?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3,
-        "review_count": 721,
+        "review_count": 717,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1783,8 +1778,8 @@
         "name": "IAA Houston North",
         "address": "16602 E Hardy Rd, Houston, TX 77032",
         "website": "https://www.iaai.com/locations/440?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.3,
-        "review_count": 297,
+        "rating": 3.4,
+        "review_count": 294,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1795,7 +1790,7 @@
         "address": "2839 FM 1462, Rosharon, TX 77583",
         "website": "https://www.iaai.com/locations/414?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.7,
-        "review_count": 137,
+        "review_count": 138,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1827,7 +1822,7 @@
         "name": "IAA Indianapolis",
         "address": "3302 S Harding St, Indianapolis, IN 46217",
         "website": "https://www.iaai.com/locations/541?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 2.8,
+        "rating": 2.9,
         "review_count": 103,
         "last_successful_scan_date": "2026-09-30"
       },
@@ -1839,7 +1834,7 @@
         "address": "1947 S County Road (SCR) 1240E, Crothersville, IN 47229",
         "website": "https://www.iaai.com/locations/548?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 4.6,
-        "review_count": 45,
+        "review_count": 46,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1860,8 +1855,8 @@
         "name": "IAA Jacksonville",
         "address": "186 Pecan Park Rd, Jacksonville, FL 32218",
         "website": "https://www.iaai.com/locations/712?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.7,
-        "review_count": 51,
+        "rating": 3.8,
+        "review_count": 50,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1872,7 +1867,7 @@
         "address": "2663 S 88th St, Kansas City, KS 66111",
         "website": "https://www.iaai.com/locations/527?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 2.7,
-        "review_count": 390,
+        "review_count": 382,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1893,8 +1888,8 @@
         "name": "IAA Knoxville",
         "address": "3634 E Governor John Sevier Hwy, Knoxville, TN 37914",
         "website": "https://www.iaai.com/locations/754?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.8,
-        "review_count": 103,
+        "rating": 3.7,
+        "review_count": 104,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1905,7 +1900,7 @@
         "address": "425 LA-93, Scott, LA 70583",
         "website": "https://www.iaai.com/locations/760?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.9,
-        "review_count": 65,
+        "review_count": 66,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1915,8 +1910,8 @@
         "name": "IAA Lake City",
         "address": "5670 N Pkwy, Lake City, GA 30260",
         "website": "https://www.iaai.com/Locations/702?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 4.3,
-        "review_count": 9,
+        "rating": 4,
+        "review_count": 10,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1948,8 +1943,8 @@
         "name": "IAA Lexington",
         "address": "424 Two Notch Rd, Lexington, SC 29073",
         "website": "https://www.iaai.com/locations/780?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 4,
-        "review_count": 96,
+        "rating": 4.1,
+        "review_count": 95,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1959,8 +1954,8 @@
         "name": "IAA Lincoln",
         "address": "301 Madigan Dr, Lincoln, IL 62656",
         "website": "https://www.iaai.com/locations/509?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.6,
-        "review_count": 34,
+        "rating": 3.7,
+        "review_count": 35,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1971,7 +1966,7 @@
         "address": "4900 S Kerr Rd, Scott, AR 72142",
         "website": "https://www.iaai.com/locations/423?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.6,
-        "review_count": 190,
+        "review_count": 189,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1981,8 +1976,8 @@
         "name": "IAA Long Island",
         "address": "66 Peconic Ave, Medford, NY 11763",
         "website": "https://www.iaai.com/locations/613?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3,
-        "review_count": 253,
+        "rating": 3.1,
+        "review_count": 251,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1992,8 +1987,8 @@
         "name": "IAA Longview",
         "address": "5577 US-80, Longview, TX 75605",
         "website": "https://www.iaai.com/locations/419?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 4,
-        "review_count": 110,
+        "rating": 4.1,
+        "review_count": 108,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2003,8 +1998,8 @@
         "name": "IAA Los Angeles",
         "address": "18300 S Vermont Ave, Gardena, CA 90248",
         "website": "https://www.iaai.com/locations/134?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.4,
-        "review_count": 151,
+        "rating": 3.5,
+        "review_count": 148,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2015,7 +2010,7 @@
         "address": "1903 N Blinn Ave, Wilmington, CA 90744",
         "website": "https://www.iaai.com/locations/130?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3,
-        "review_count": 41,
+        "review_count": 40,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2026,7 +2021,7 @@
         "address": "891 Ballardsville Rd, Eminence, KY 40019",
         "website": "https://www.iaai.com/locations/669?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 4,
-        "review_count": 88,
+        "review_count": 87,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2048,7 +2043,7 @@
         "address": "2200 Trade Dr, Macon, GA 31217",
         "website": "https://www.iaai.com/locations/734?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.6,
-        "review_count": 80,
+        "review_count": 79,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2059,7 +2054,7 @@
         "address": "75 Lowell Rd, Salem, NH 03079",
         "website": "https://www.iaai.com/locations/643?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.6,
-        "review_count": 54,
+        "review_count": 53,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2080,8 +2075,8 @@
         "name": "IAA Memphis",
         "address": "3033 Fite Rd, Millington, TN 38053",
         "website": "https://www.iaai.com/locations/738?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.8,
-        "review_count": 131,
+        "rating": 3.9,
+        "review_count": 129,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2091,8 +2086,8 @@
         "name": "IAA Metro DC",
         "address": "14149 Brandywine Rd, Brandywine, MD 20613",
         "website": "https://www.iaai.com/locations/721?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.5,
-        "review_count": 144,
+        "rating": 3.6,
+        "review_count": 147,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2103,7 +2098,7 @@
         "address": "20499 Stirling Rd, Southwest Ranches, FL 33332",
         "website": "https://www.iaai.com/locations/736?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 4,
-        "review_count": 270,
+        "review_count": 267,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2114,7 +2109,7 @@
         "address": "N70W25277 Indian Grass Ln, Sussex, WI 53089",
         "website": "https://www.iaai.com/locations/521?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 4,
-        "review_count": 95,
+        "review_count": 96,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2125,7 +2120,7 @@
         "address": "28261 Dressler Ct, Randolph, MN 55065",
         "website": "https://www.iaai.com/locations/528?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.2,
-        "review_count": 25,
+        "review_count": 24,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2157,8 +2152,8 @@
         "name": "IAA Mobile",
         "address": "3600 Desirrah Dr, Mobile, AL 36618",
         "website": "https://www.iaai.com/Locations/794?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 2.3,
-        "review_count": 6,
+        "rating": 2.7,
+        "review_count": 7,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2179,8 +2174,8 @@
         "name": "IAA Nashville",
         "address": "3896 Stewarts Ln, Nashville, TN 37218",
         "website": "https://www.iaai.com/locations/753?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.3,
-        "review_count": 187,
+        "rating": 3.4,
+        "review_count": 188,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2201,8 +2196,8 @@
         "name": "IAA New Orleans East",
         "address": "6600 Almonaster Ave, New Orleans, LA 70126",
         "website": "https://www.iaai.com/locations/432?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.5,
-        "review_count": 118,
+        "rating": 3.6,
+        "review_count": 116,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2212,8 +2207,8 @@
         "name": "IAA Newburgh",
         "address": "39 Stone Castle Rd, Rock Tavern, NY 12575",
         "website": "https://www.iaai.com/locations/635?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.8,
-        "review_count": 83,
+        "rating": 3.9,
+        "review_count": 82,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2224,7 +2219,7 @@
         "address": "7245 Laurel Canyon Blvd, North Hollywood, CA 91605",
         "website": "https://www.iaai.com/locations/111?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.1,
-        "review_count": 273,
+        "review_count": 272,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2245,8 +2240,8 @@
         "name": "IAA Oklahoma City",
         "address": "7300 I-35, Oklahoma City, OK 73121",
         "website": "https://www.iaai.com/locations/421?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.1,
-        "review_count": 269,
+        "rating": 3.2,
+        "review_count": 267,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2256,7 +2251,7 @@
         "name": "IAA Omaha",
         "address": "14749 Meredythe Plaza, Springfield, NE 68059",
         "website": "https://www.iaai.com/locations/525?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.6,
+        "rating": 3.7,
         "review_count": 197,
         "last_successful_scan_date": "2026-09-30"
       },
@@ -2289,8 +2284,8 @@
         "name": "IAA Orlando North",
         "address": "2500 Adesa Dr, Sanford, FL 32773",
         "website": "https://www.iaai.com/locations/743?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.8,
-        "review_count": 96,
+        "rating": 3.9,
+        "review_count": 95,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2300,8 +2295,8 @@
         "name": "IAA Paducah",
         "address": "1701 Lane Rd, Paducah, KY 42003",
         "website": "https://www.iaai.com/locations/659?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 4.1,
-        "review_count": 35,
+        "rating": 4,
+        "review_count": 36,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2345,7 +2340,7 @@
         "address": "2299 W Broadway Rd, Phoenix, AZ 85041",
         "website": "https://www.iaai.com/locations/151?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.2,
-        "review_count": 492,
+        "review_count": 481,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2389,7 +2384,7 @@
         "address": "W10321 WI-16, Portage, WI 53901",
         "website": "https://www.iaai.com/locations/523?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 4.1,
-        "review_count": 39,
+        "review_count": 38,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2399,8 +2394,8 @@
         "name": "IAA Portland",
         "address": "4415 NE 158th Ave, Portland, OR 97230",
         "website": "https://www.iaai.com/locations/308?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.7,
-        "review_count": 228,
+        "rating": 3.8,
+        "review_count": 226,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2411,7 +2406,7 @@
         "address": "9 Moodys Dr, Gorham, ME 04038",
         "website": "https://www.iaai.com/locations/670?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.9,
-        "review_count": 29,
+        "review_count": 30,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2421,8 +2416,8 @@
         "name": "IAA Portland South",
         "address": "605 S Pacific Hwy, Woodburn, OR 97071",
         "website": "https://www.iaai.com/locations/315?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 4,
-        "review_count": 17,
+        "rating": 4.1,
+        "review_count": 18,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2432,7 +2427,7 @@
         "name": "IAA Portland West",
         "address": "10498 N Vancouver Way, Portland, OR 97217",
         "website": "https://www.iaai.com/locations/311?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.3,
+        "rating": 3.4,
         "review_count": 78,
         "last_successful_scan_date": "2026-09-30"
       },
@@ -2455,7 +2450,7 @@
         "address": "Moroni Feed Rd, Nephi, UT 84648",
         "website": "https://www.iaai.com/locations/343?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3,
-        "review_count": 8,
+        "review_count": 9,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2466,7 +2461,7 @@
         "address": "1250 E Main St, Pulaski, VA 24301",
         "website": "https://www.iaai.com/locations/724?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 4,
-        "review_count": 75,
+        "review_count": 76,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2476,8 +2471,8 @@
         "name": "IAA Raleigh",
         "address": "60 Sadisco Rd, Clayton, NC 27520",
         "website": "https://www.iaai.com/locations/747?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.6,
-        "review_count": 239,
+        "rating": 3.7,
+        "review_count": 238,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2499,7 +2494,7 @@
         "address": "10390 Sadisco Dr, Ashland, VA 23005",
         "website": "https://www.iaai.com/locations/711?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.3,
-        "review_count": 95,
+        "review_count": 96,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2509,8 +2504,8 @@
         "name": "IAA Riverside",
         "address": "3600 Pyrite St, Jurupa Valley, CA 92509",
         "website": "https://www.iaai.com/",
-        "rating": 3.9,
-        "review_count": 79,
+        "rating": 4,
+        "review_count": 78,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2521,7 +2516,7 @@
         "address": "1576 Quarterwood Rd, Montvale, VA 24122",
         "website": "https://www.iaai.com/locations/782?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 4.4,
-        "review_count": 34,
+        "review_count": 35,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2543,7 +2538,7 @@
         "address": "11499 Douglas Rd, Rancho Cordova, CA 95742",
         "website": "https://www.iaai.com/locations/331?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.5,
-        "review_count": 153,
+        "review_count": 152,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2565,7 +2560,7 @@
         "address": "1800 S 1100 W, Ogden, UT 84401",
         "website": "https://www.iaai.com/locations/342?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.2,
-        "review_count": 162,
+        "review_count": 159,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2576,7 +2571,7 @@
         "address": "11275 S Zarzamora St, San Antonio, TX 78224",
         "website": "https://www.iaai.com/locations/442?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.6,
-        "review_count": 268,
+        "review_count": 267,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2597,8 +2592,8 @@
         "name": "IAA Santa Clarita",
         "address": "14320 Soledad Canyon Rd, Santa Clarita, CA 91387",
         "website": "https://www.iaai.com/locations/128?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 2.8,
-        "review_count": 33,
+        "rating": 2.7,
+        "review_count": 34,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2619,8 +2614,8 @@
         "name": "IAA Sayreville",
         "address": "580 Jernee Mill Rd, Sayreville, NJ 08872",
         "website": "https://www.iaai.com/locations/606?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.9,
-        "review_count": 58,
+        "rating": 4,
+        "review_count": 57,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2630,8 +2625,8 @@
         "name": "IAA Scranton",
         "address": "103 Thompson St, Pittston, PA 18640",
         "website": "https://www.iaai.com/locations/636?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 4.3,
-        "review_count": 70,
+        "rating": 4.4,
+        "review_count": 69,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2641,8 +2636,8 @@
         "name": "IAA Seattle",
         "address": "15801 110th Ave E, Puyallup, WA 98374",
         "website": "https://www.iaai.com/locations/327?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3,
-        "review_count": 454,
+        "rating": 3.1,
+        "review_count": 445,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2652,9 +2647,19 @@
         "name": "IAA Shady Spring",
         "address": "4163 Pluto Rd, Shady Spring, WV 25918",
         "website": "https://www.iaai.com/locations/679?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.8,
-        "review_count": 38,
+        "rating": 3.9,
+        "review_count": 39,
         "last_successful_scan_date": "2026-09-30"
+      },
+      {
+        "feature_id": "0x886ca745da98292f:0xc10f3440c7588bd1",
+        "cid": "13911395226797771729",
+        "place_id": "ChIJLymY2kWnbIgR0YtYx0A0D8E",
+        "name": "IAA shop",
+        "address": "2000 S Banner Ave, Indianapolis, IN 46241",
+        "website": "",
+        "rating": 5,
+        "review_count": 1
       },
       {
         "feature_id": "0x8636db6bfb1b137d:0x38100db5333881b7",
@@ -2686,7 +2691,7 @@
         "address": "25631 IN-2, South Bend, IN 46619",
         "website": "https://www.iaai.com/locations/542?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.6,
-        "review_count": 106,
+        "review_count": 105,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2696,8 +2701,8 @@
         "name": "IAA Southern New Jersey",
         "address": "250 Blackwood-Barnsboro Rd, Turnersville, NJ 08012",
         "website": "https://www.iaai.com/locations/612?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.4,
-        "review_count": 90,
+        "rating": 3.5,
+        "review_count": 91,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2718,8 +2723,8 @@
         "name": "IAA Spokane",
         "address": "3520 N Tschirley Rd, Spokane Valley, WA 99216",
         "website": "https://www.iaai.com/locations/322?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.3,
-        "review_count": 136,
+        "rating": 3.4,
+        "review_count": 133,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2729,8 +2734,8 @@
         "name": "IAA Springfield",
         "address": "1155 N Eldon Ave Bldg. B, Springfield, MO 65803",
         "website": "https://www.iaai.com/locations/531?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 4.3,
-        "review_count": 53,
+        "rating": 4.4,
+        "review_count": 55,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2752,7 +2757,7 @@
         "address": "2436 Old Country Inn Dr, Caseyville, IL 62232",
         "website": "https://www.iaai.com/locations/524?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 2.7,
-        "review_count": 90,
+        "review_count": 89,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2795,8 +2800,8 @@
         "name": "IAA Suffolk",
         "address": "1389 Portsmouth Blvd, Suffolk, VA 23434",
         "website": "https://www.iaai.com/locations/765?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.2,
-        "review_count": 89,
+        "rating": 3.3,
+        "review_count": 91,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2817,8 +2822,8 @@
         "name": "IAA Tampa",
         "address": "1208 17th St E, Palmetto, FL 34221",
         "website": "https://www.iaai.com/locations/713?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 4,
-        "review_count": 70,
+        "rating": 4.1,
+        "review_count": 69,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2828,8 +2833,8 @@
         "name": "IAA Tampa North",
         "address": "8838 Bolton Ave, Hudson, FL 34667",
         "website": "https://www.iaai.com/locations/778?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.5,
-        "review_count": 67,
+        "rating": 3.6,
+        "review_count": 66,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2840,7 +2845,7 @@
         "address": "580 Myricks St, East Taunton, MA 02718",
         "website": "https://www.iaai.com/locations/640?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.5,
-        "review_count": 116,
+        "review_count": 119,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2862,7 +2867,7 @@
         "address": "211 Production Dr, Yorktown, VA 23693",
         "website": "https://www.iaai.com/locations/725?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.6,
-        "review_count": 103,
+        "review_count": 102,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2884,7 +2889,7 @@
         "address": "4650 E Irvington Rd, Tucson, AZ 85714",
         "website": "https://www.iaai.com/locations/424?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.9,
-        "review_count": 175,
+        "review_count": 176,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -2894,8 +2899,8 @@
         "name": "IAA Tulsa",
         "address": "5311 W 46th St, Tulsa, OK 74107",
         "website": "https://www.iaai.com/locations/436?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.3,
-        "review_count": 187,
+        "rating": 3.4,
+        "review_count": 184,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -3005,7 +3010,7 @@
         "address": "1710 Starita Rd # C, Charlotte, NC 28206",
         "website": "",
         "rating": 3.9,
-        "review_count": 39,
+        "review_count": 40,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -3040,6 +3045,16 @@
         "rating": 3.6,
         "review_count": 65,
         "last_successful_scan_date": "2026-09-30"
+      },
+      {
+        "feature_id": "0x881131a51728f71f:0xf9d28c9a6f4d8f31",
+        "cid": "18001605255473499953",
+        "place_id": "ChIJH_coF6UxEYgRMY9Nb5qM0vk",
+        "name": "IAA Vehicle Donation",
+        "address": "25631 IN-2, South Bend, IN 46619",
+        "website": "",
+        "rating": null,
+        "review_count": null
       },
       {
         "feature_id": "0x8836fb149c514035:0xe11fbb12ade3794d",
@@ -3169,8 +3184,8 @@
         "name": "IAA Vehicle Purchasing",
         "address": "10100 Windisch Rd, West Chester Township, OH 45069",
         "website": "http://cars.iaai.com/?utm_source=google&utm_medium=lf&utm_term=purschase&utm_campaign=Pages",
-        "rating": 3.6,
-        "review_count": 99,
+        "rating": 3.7,
+        "review_count": 97,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -3224,8 +3239,8 @@
         "name": "IAA Vehicle Purchasing",
         "address": "11275 S Zarzamora St, San Antonio, TX 78224",
         "website": "http://cars.iaai.com/?utm_source=google&utm_medium=lf&utm_term=purschase&utm_campaign=Pages",
-        "rating": 3,
-        "review_count": 15,
+        "rating": 3.1,
+        "review_count": 14,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -3240,14 +3255,24 @@
         "last_successful_scan_date": "2026-09-30"
       },
       {
+        "feature_id": "0x809ae822c2bbc8a1:0xf76162bd2d2e43f5",
+        "cid": "17825637364755481589",
+        "place_id": "ChIJoci7wiLomoAR9UMuLb1iYfc",
+        "name": "IAA Vehicle Purchasing",
+        "address": "11499 Douglas Rd Ste b, Rancho Cordova, CA 95742",
+        "website": "http://cars.iaai.com/?utm_source=google&utm_medium=lf&utm_term=purschase&utm_campaign=Pages",
+        "rating": 3.1,
+        "review_count": 13
+      },
+      {
         "feature_id": "0x87cf61bdece4f36d:0x7afba4ae430c12a0",
         "cid": "8861857760137712288",
         "place_id": "ChIJbfPk7L1hz4cRoBIMQ66k-3o",
         "name": "IAA Vehicle Purchasing",
         "address": "1155 N Eldon Ave Apt B, Springfield, MO 65803",
         "website": "http://cars.iaai.com/?utm_source=google&utm_medium=lf&utm_term=purschase&utm_campaign=Pages",
-        "rating": 3.9,
-        "review_count": 59,
+        "rating": 4,
+        "review_count": 60,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -3367,8 +3392,8 @@
         "name": "IAA Vehicle Purchasing",
         "address": "1800 S 1100 W, Ogden, UT 84401",
         "website": "http://cars.iaai.com/?utm_source=google&utm_medium=lf&utm_term=purschase&utm_campaign=Pages",
-        "rating": 3.7,
-        "review_count": 23,
+        "rating": 3.9,
+        "review_count": 22,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -3401,7 +3426,7 @@
         "address": "2299 W Broadway Rd Apt B, Phoenix, AZ 85041",
         "website": "http://cars.iaai.com/?utm_source=google&utm_medium=lf&utm_term=purschase&utm_campaign=Pages",
         "rating": 3.5,
-        "review_count": 110,
+        "review_count": 105,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -3413,6 +3438,16 @@
         "website": "http://cars.iaai.com/?utm_source=google&utm_medium=lf&utm_term=purschase&utm_campaign=Pages",
         "rating": 3.8,
         "review_count": 13
+      },
+      {
+        "feature_id": "0x88e76ceaaaaaaaab:0xbbd9fcc3a1a4335d",
+        "cid": "13536128072199451485",
+        "place_id": "ChIJq6qqqups54gRXTOkocP82bs",
+        "name": "IAA Vehicle Purchasing",
+        "address": "2500 Adesa Dr # B, Sanford, FL 32773",
+        "website": "http://cars.iaai.com/?utm_source=google&utm_medium=lf&utm_term=purschase&utm_campaign=Pages",
+        "rating": 2.7,
+        "review_count": 3
       },
       {
         "feature_id": "0x8640c87a21c394fb:0xef477b41410bb390",
@@ -3443,8 +3478,8 @@
         "name": "IAA Vehicle Purchasing",
         "address": "280 E Sullivan Rd, Aurora, IL 60505",
         "website": "http://cars.iaai.com/?utm_source=google&utm_medium=lf&utm_term=purschase&utm_campaign=Pages",
-        "rating": 4.5,
-        "review_count": 2,
+        "rating": 4,
+        "review_count": 1,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -3476,8 +3511,8 @@
         "name": "IAA Vehicle Purchasing",
         "address": "301 Malapart Rd # C, Lafayette, LA 70507",
         "website": "http://cars.iaai.com/?utm_source=google&utm_medium=lf&utm_term=purschase&utm_campaign=Pages",
-        "rating": 4.3,
-        "review_count": 12,
+        "rating": 4.1,
+        "review_count": 10,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -3499,7 +3534,7 @@
         "address": "3302 S Harding St, Indianapolis, IN 46217",
         "website": "http://cars.iaai.com/?utm_source=google&utm_medium=lf&utm_term=purschase&utm_campaign=Pages",
         "rating": 3.7,
-        "review_count": 216,
+        "review_count": 214,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -3663,8 +3698,8 @@
         "name": "IAA Vehicle Purchasing",
         "address": "66 Peconic Ave, Medford, NY 11763",
         "website": "http://cars.iaai.com/?utm_source=google&utm_medium=lf&utm_term=purschase&utm_campaign=Pages",
-        "rating": 3.9,
-        "review_count": 14,
+        "rating": 4.3,
+        "review_count": 12,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -3763,7 +3798,7 @@
         "address": "6335 N Broadway Ave, Park City, KS 67219",
         "website": "https://www.iaai.com/locations/533?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
         "rating": 3.6,
-        "review_count": 128,
+        "review_count": 129,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -3773,8 +3808,8 @@
         "name": "IAA Wilmington",
         "address": "415 Madeline Trask Dr, Castle Hayne, NC 28429",
         "website": "https://www.iaai.com/locations/733?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.6,
-        "review_count": 97,
+        "rating": 3.7,
+        "review_count": 96,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -3784,8 +3819,8 @@
         "name": "IAA York Springs",
         "address": "10 Auction Dr, York Springs, PA 17372",
         "website": "https://www.iaai.com/locations/664?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3.7,
-        "review_count": 59,
+        "rating": 3.6,
+        "review_count": 57,
         "last_successful_scan_date": "2026-08-31"
       },
       {
@@ -3806,8 +3841,8 @@
         "name": "IAA-ACE Carson",
         "address": "16920 S Figueroa St, Gardena, CA 90248",
         "website": "https://www.iaai.com/locations/200?utm_source=Google&utm_medium=organic&utm_campaign=dac-local-listing-sitelocation",
-        "rating": 3,
-        "review_count": 12,
+        "rating": 3.2,
+        "review_count": 11,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -3883,8 +3918,8 @@
         "name": "Insurance auto auction",
         "address": "3225 S Hollywood Blvd, Las Vegas, NV 89122",
         "website": "https://www.iaai.com/locations/152",
-        "rating": 3.4,
-        "review_count": 16,
+        "rating": 3.2,
+        "review_count": 17,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -4031,6 +4066,17 @@
         "last_successful_scan_date": "2026-09-30"
       },
       {
+        "feature_id": "0x865c5098977c831b:0x4413613d6dc5ad98",
+        "cid": "4905371335599173016",
+        "place_id": "ChIJG4N8l5hQXIYRmK3FbT1hE0Q",
+        "name": "Insurance Auto Auctions Inc",
+        "address": "10475 Somerset Rd, San Antonio, TX 78211",
+        "website": "https://www.iaai.com/",
+        "rating": 3.2,
+        "review_count": 20,
+        "last_successful_scan_date": "2026-09-30"
+      },
+      {
         "feature_id": "0x87136bad5d27e661:0xeee23954f793b962",
         "cid": "17213383762857146722",
         "place_id": "ChIJYeYnXa1rE4cRYrmT91Q54u4",
@@ -4097,17 +4143,6 @@
         "last_successful_scan_date": "2026-09-30"
       },
       {
-        "feature_id": "0x0:0x4413613d6dc5ad98",
-        "cid": "4905371335599173016",
-        "place_id": "",
-        "name": "Insurance Auto Auctions Inc",
-        "address": "Previously validated U.S. Google Business Profile",
-        "website": "",
-        "rating": null,
-        "review_count": 2,
-        "last_successful_scan_date": "2026-09-30"
-      },
-      {
         "feature_id": "0x87f827956667b64f:0x6c9b188404afd11a",
         "cid": "7825875732779749658",
         "place_id": "ChIJT7ZnZpUn-IcRGtGvBIQYm2w",
@@ -4125,8 +4160,8 @@
         "name": "Insurance Auto Auctions, Inc",
         "address": "4460 IL-162, Granite City, IL 62040",
         "website": "http://www.iaai.com/",
-        "rating": 3.5,
-        "review_count": 76,
+        "rating": 3.6,
+        "review_count": 74,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -4154,6 +4189,186 @@
     ]
   },
   "reviews": [
+    {
+      "source_website": "trustpilot.com",
+      "source_label": "Trustpilot (iaai.com)",
+      "source_url": "https://www.trustpilot.com/reviews/6adfead517bcdc3a8111d9e8",
+      "author": "Trustpilot user",
+      "review_date": "2026-10-26",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Very unprofessional and disappointing…. Very unprofessional and disappointing experience My experience with Impact Auto Insurance was extremely disappointing. Initially, I was told that I could enroll in their auto insurance coverage, so I trusted that information and proceeded to cancel my existing coverage with another insurance company. Only afterward was I told that they had made a mistake and that they could not insure me after all. This was incredibly frustrating and unprofessional. I relied on the information their representative provided, and as a result, I cancelled my previous insurance unnecessarily and wasted a significant amount of time trying to resolve an issue that should have been clarified from the beginning. I also find it very strange that they apparently accept customers on study visas but refuse to insure those on work permits. This is the first time I have encountered such a distinction with an insurance company, and I would have expected this eligibility requirement to be communicated clearly before telling a customer they could obtain coverage. Mistakes can happen, but a company should take responsibility for providing incorrect information, especially when it directly affects a customer’s insurance arrangements. The lack of clarity and professionalism in this experience has left me extremely dissatisfied. I would strongly recommend confirming your eligibility carefully before making any changes to your existing insurance based on what you are told by Impact Auto Insurance.",
+      "geo_validation": "trustpilot_us_slug",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-004641"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaa.mobile.IaaTow)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaa.mobile.IaaTow&hl=en&gl=us",
+      "author": "William Eggleston",
+      "review_date": "2026-10-23",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Very Buggy, Fails often Could use multiple improvements such as Vin scan override, for vehicles such a GM That have qr code on Vin number placard. other issues are app crashes, ect.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-004642"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14701578942",
+      "author": "jerrell18",
+      "review_date": "2026-10-23",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "The update is greed. The $5-6 for features that where once free will lose a lot of customers online",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-004643"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14694293076",
+      "author": "macos zammaripa",
+      "review_date": "2026-10-21",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Iaa is now very greedy charging for everything. Iaa is now charging to simply hear the engine and do a 360 of vehicle. Even to simply WATCH the live auctions. (Which they always have done for free) they already make enough money from customers that purchase THOUSANDS OF VEHICLES IN ONE DAY. Copart is now significantly alot better.",
+      "geo_validation": "apple_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-004644"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Roman",
+      "review_date": "2026-10-19",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "can't press the bid button in live auctions if you prebid which is completely ridiculous, and the new terms of service shows up as \"error connection timed out\", and the accept button doesn't work, so I can't actually get into the app, it just crashes 👎🚮",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-004645"
+    },
+    {
+      "source_website": "trustpilot.com",
+      "source_label": "Trustpilot (iaai.com)",
+      "source_url": "https://www.trustpilot.com/reviews/6ada67a0bb8901999243d664",
+      "author": "Trustpilot user",
+      "review_date": "2026-10-17",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "I called in and talked to the manager…. I called in and talked to the manager who was supposed to get back to me three days ago. Talk to them yesterday was gonna get a call back. I've haven't heard nothing. They lack poor customer service. They don't care about any customers and they will take you exactly for what you're gonna give them. I highly do not suggest them and I am reporting them to the Better Business Bureau as they have done nothing but screw people over including myself all it takes is one phone call and a communication and I couldn't even get that from the manager nor the other people that work there also. I will be definitely taking this up further. beware, many tow companies refuse to even work with them because they will not return calls answer phone calls, and leave you on hold for 34 minutes at a time. They come \"highly\"unrecommended by many local companies and the Boise Idaho area.",
+      "geo_validation": "trustpilot_us_slug",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Support Access & Response Time",
+      "tier3": "Long Hold Time / Hard to Reach Support",
+      "id": "rvw-004646"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Mila 1",
+      "review_date": "2026-10-14",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "To view a car, you people want to take charges, I'm just going to uninstall this app. Be misbehaving while the Chinese cars take over the markets.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-004647"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14664102565",
+      "author": "alawy 67",
+      "review_date": "2026-10-13",
+      "rating": 3,
+      "sentiment": "negative",
+      "review_text": "Bad auction. Cars are so expensive here also the dispatch , unfortunately no competitive environment here !",
+      "geo_validation": "apple_us_store",
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Scheduled Pickup Status",
+      "tier3": "Missed/ Delayed Pickup and Dispatch Window",
+      "id": "rvw-004648"
+    },
+    {
+      "source_website": "apps.apple.com",
+      "source_label": "Apple App Store (468532534, us)",
+      "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14634381211",
+      "author": "Aqiqullah",
+      "review_date": "2026-10-06",
+      "rating": 5,
+      "sentiment": "positive",
+      "review_text": "Atlas auto sales. Great app to buy vehicles",
+      "geo_validation": "apple_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-004649"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Ruben Hernandez",
+      "review_date": "2026-10-05",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "The new update sucks and now they want o nickle and dime you with fees to access previously free videos and photos.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-004650"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Alex Atenci",
+      "review_date": "2026-10-02",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "I’m officially moving to Copart now that they’ve locked the features that made this app amazing—like the engine video and 360-degree view—behind a paywall; that’s exactly how you get people to hate your app.",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-004651"
+    },
+    {
+      "source_website": "play.google.com",
+      "source_label": "Google Play (com.iaai.android)",
+      "source_url": "https://play.google.com/store/apps/details?id=com.iaai.android&hl=en&gl=us",
+      "author": "Carlos Monteverde",
+      "review_date": "2026-10-02",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "horrible idea for the app update and guest fees. Ive gotten a few and would show potential clients cars on the app. then transfer them to my grandpa's to close the business and more as a favor to them because I didn't get anything out of it... but I guess youll lose my helping branch. see y'all later 🫡",
+      "geo_validation": "google_play_us_store",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-004652"
+    },
     {
       "source_website": "google.com",
       "source_label": "Google Business Profile (IAA Los Angeles)",
@@ -4410,6 +4625,36 @@
       "id": "rvw-004568"
     },
     {
+      "source_website": "bbb.org",
+      "source_label": "BBB Complaints",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25316665",
+      "author": "BBB complainant",
+      "review_date": "2026-09-24",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Service or Repair Issues complaint (Answered). On 9/2/26 I purchased a vehicle from the IAA online auction. On 9/3/26 their transportation company picked up the vehicle to deliver it. On 9/4/26 their transportation company car was delivered, but I was told by the driver he couldnt get the key out, because the battery was dead. 9/4/26 i had my brother bring his jump box to start the car and get the key out. The car wouldnt hold a charge, so it could stay started so my brother took the key. Then I had him pull the battery and we put it on a charger. On 9/4/26 I contacted the buyer center and spoke with one REMOVED about the car not starting nor driving like they said it did. I then told her they said the primary damage was hail only. She asked if I knew about the start policy and I told her yes, but the they said it was hail damage and it runs and starts. I also said they couldnt have tested it, because it wouldnt start and when it does, it dies immediately. I was given the branch manger number and email to speak with him about the issue. On 9/4/26 I left a verbal message as well as an email for REMOVED the branch manger and explained my concerns. On 9/5/26 the battery was installed and the car still couldnt stay started/hold a charge. On 9/22/26 I sent the vehicle to Car-X, and they put a new battery to diagnose the vehicle for not starting/running. They installed the new battery and did some work on the exhaust, and they still couldnt get the car to run or hold a charge. On 9/23/26 I was told that the car needs a timing and thats why it wants to start nor run. I had to get the car towed back to my son's house on 9/23/26 after getting it towed to the shop on 9/22/26. ![Image 20](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-004653"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Complaints",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25313214",
+      "author": "BBB complainant",
+      "review_date": "2026-09-24",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Service or Repair Issues complaint (Answered). I am filing this complaint against Insurance Auto Auctions (IAAI) due to major technical issues with their online payment platform that are preventing international business buyers from completing account registration.I am trying to register my business (FULL BLAST AUTOS) as a licensed buyer on IAAI so we can begin bidding. To complete the setup, I am required to pay the $225 annual membership fee. I have tried using three completely different, valid bank cards, and every single attempt gets rejected by the IAAI payment system with a generic \"declined\" error.The main problem happened last night: REMOVED account was actually debited $225 for the registration fee, but the IAAI website still showed \"Payment Declined.\"When I reached out to IAAI Customer Support, I was told the payment was \"voided\" on their end and that my bank would eventually drop the pending charge. This is extremely frustrating. My money is tied up in pending charges, my business setup is completely stuck, and I still cannot bid on vehicles.This isn't just an issue on my bank's end; IAAIs payment portal clearly has a glitch when processing international card transactions. It takes the money or holds the funds on the buyer's card but fails to complete the transaction on the portal side. Many international buyers and dealers are likely facing this exact same wall when trying to pay their initial setup fee.I need IAAI to fix this issue so I can actually pay for and use the service I am trying to sign up for.Clear any pending holds or allow me an alternative way to finalize the $225 fee without my card being declined again and Fix the Portal by having your technical/billing team look into the international payment gateway so other dealers don't have their funds held up by system errors.The email linked to my account is REMOVED. ![Image 22](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-004654"
+    },
+    {
       "source_website": "google.com",
       "source_label": "Google Business Profile (IAA Fort Wayne)",
       "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pORmNtVkpjMmRGVkRsMVIzSldSVWxXU2sxclZuYxAB!2m1!1s0x0:0x1b67af71683ad526!3m1!1s2@1:CAIQACodChtycF9oOjNFcmVJc2dFVDl1R3JWRUlWSk1rVnc%7C%7C?hl=en",
@@ -4423,6 +4668,21 @@
       "tier2": "Lot Condition Reporting",
       "tier3": "Lot Damage",
       "id": "rvw-004569"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-1",
+      "author": "keshiann s",
+      "review_date": "2026-09-23",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "I wish I could leave zero stars. these people are thriving my 2025 Hyundai Tucson was towed there. They deemed my car a total loss when I got to the car over $2000 of my belongings were missing from the car and they do not want to take responsibility for my missing items. They damaged the car more than it already was a brand-new car they walk on the seats with shoes thoroughly went through my things stole down to my air fresheners out of the car. ![Image 20](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage",
+      "id": "rvw-004655"
     },
     {
       "source_website": "google.com",
@@ -4558,6 +4818,21 @@
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support",
       "id": "rvw-004578"
+    },
+    {
+      "source_website": "reddit.com",
+      "source_label": "Reddit r/askcarsales",
+      "source_url": "https://www.reddit.com/r/askcarsales/comments/1whw4l1/seller_claims_2023_f150_is_clean_title_but_nmvtis/",
+      "author": "Afraid-Appointment31",
+      "review_date": "2026-09-16",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Seller claims 2023 F-150 is Clean Title, but NMVTIS shows Total Loss / IAA Salvage Auction I’m looking at a 2023 f150 with 24k miles. Carfax/bumper.com show it’s been stolen before and insurance totaled it out. Dealer won it on an auction it had minor damage just a few plastic pieces. He’s selling it as a clean title he has digital copy’s of an unbranded Georgia and Texas title. I’m in Georgia buying it. What’s the chance the title is actually clean and I won’t get screwed with a salvage when going to register it. It’s a really good deal so I’m willing to take the risk but I’m not trying to get screwed with a salvage. I’ve seen the truck in person it’s a great truck. Bumper.com does show salvage history but 0 title brands.. VIN-1ftfw1ed6pfc74448",
+      "geo_validation": "mixed_source_ok",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage",
+      "id": "rvw-004656"
     },
     {
       "source_website": "google.com",
@@ -4710,6 +4985,21 @@
       "id": "rvw-004588"
     },
     {
+      "source_website": "bbb.org",
+      "source_label": "BBB Complaints",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25279510",
+      "author": "BBB complainant",
+      "review_date": "2026-09-15",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Customer Service Issues complaint (Answered). On 08/27/2026 I bought a 2018 REMOVED malibu from Insurance Auto Auction REMOVED branch, the car was given a score ratings of 50/50 and having a primary damage of rear and secondary damage ad front end.I received the vehicle in my possession on 08/30/26 and was immediately shocked because the car has extensive hail damage which is obviously the primary damage on the car, I then reached out to the branch immediately informing them of the situation however the manager is out of office indefinitely so my email went to the office supervisor REMOVED who responded and said there's nothing he can do.On September 3rd I reached out to the corporate office asking to get assistance in dealing with the matter and getting a regional manager that supervise the branch to see that the person who writes the description and grades the vehicle when it enters the auction for sale made an error which influenced my decision to purchase the car because the primary damage on the car is hail and that was never disclosed.I sent the car to the Miami branch and immediately the person who checked the car in when it entered listed the primary damage on the car has hail damage even though it was later changed once I pointed that fact out to buyer services who told me a managing director would contact me within 72hrs and today I have never gotten a call or email from a managing director or supervisor to try and resolve the matter but instead because of my persistence a csr REMOVED closed the case because I insisted I wanted to speak to a supervisor. ![Image 25](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Communication Follow-up & Escalation",
+      "tier3": "No Callback / Unresolved Case",
+      "id": "rvw-004657"
+    },
+    {
       "source_website": "google.com",
       "source_label": "Google Business Profile (IAA Ashland)",
       "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25aM1ZFUkxWVkpQWW10elozRm1NelZCZWtOeE1rRRAB!2m1!1s0x0:0x7663bf049478e612!3m1!1s2@1:CAIQACodChtycF9oOnZ3VERLVVJPYmtzZ3FmMzVBekNxMkE%7C%7C?hl=en",
@@ -4723,6 +5013,21 @@
       "tier2": "Third-Party Inspection Authorization & Scheduling",
       "tier3": "Previewing/ Inspecting Vehicles",
       "id": "rvw-004589"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-2",
+      "author": "Katherine G",
+      "review_date": "2026-09-14",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Would give negative rating if possible. Car was shown running on video with no codes there was also no front-end damage in pics of vehicle. Battery had been disconnected to clear all the 54 codes this car had. Drove 4 miles and had to have towed. They damaged the front spoiler by moving car on loader brining car out of lot. Car has blown engine that is going to cost over $1,000 to replace. This place is a scam and should not be allowed to operate. Had issues with customer service from the beginning and should have been my sign to run. Thanks for taking a young kid's money who desperately needs a car to get back and forth to work. Place is a scam definitely would not recommend. ![Image 21](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-004658"
     },
     {
       "source_website": "trustpilot.com",
@@ -4875,6 +5180,21 @@
       "id": "rvw-004599"
     },
     {
+      "source_website": "bbb.org",
+      "source_label": "BBB Complaints",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25253668",
+      "author": "BBB complainant",
+      "review_date": "2026-09-09",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Service or Repair Issues complaint (Answered). This company was contracted by Title Max. When my car was picked up from where I had it, it had all my work tools in the trunk. I valued them at REMOVED minimum. That was my livelihood and how I sustain myself. I went to recuperate my car and through all the duress Ive had to encounter they failed to advise me to look in my vehicle to see if anything was missing and I didnt look. Upon returning home I looked in the trunk of my car, and all my tools were missing!! I have tried to reach out to them and have gotten no response. I called their corporate office, and they said I would have to handle up with the office I was dealing with. Im exhausted and tired of waiting for them just to play the run around game. This is work being affected as well as my mental state. I need immediate action and I need it resolved in a timely manner. I cannot afford to pay for the consequences that they have thieves working for them and Im pretty sure they can trace back who came in contact with my car and take appropriate action. ![Image 26](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Support Access & Response Time",
+      "tier3": "Delayed Email/Phone Response",
+      "id": "rvw-004659"
+    },
+    {
       "source_website": "apps.apple.com",
       "source_label": "Apple App Store (468532534, us)",
       "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14525680329",
@@ -5010,6 +5330,21 @@
       "id": "rvw-004608"
     },
     {
+      "source_website": "bbb.org",
+      "source_label": "BBB Complaints",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25237555",
+      "author": "BBB complainant",
+      "review_date": "2026-09-03",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Customer Service Issues complaint (Answered). I purchased a vehicle on 09/02/2026 online pictures and information showing that its a black car with 8900 miles, on a 09/03/2026 was going to pick it up and pay for it and checked CARFAX to see if this mileage real, I found that its not a black vehicle, its a blue vehicle with 103k miles, I called several times to cancel the purchase but they said that they made a mistake and either pay for it and pick it up or pay $1000 and when I requested to talk to a manager they said that no one will help me out and there is no proof that I even called, this is a scam, why they post the wrong information in the first place, why do I pay for their mistake? ![Image 30](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-004660"
+    },
+    {
       "source_website": "apps.apple.com",
       "source_label": "Apple App Store (468532534, us)",
       "source_url": "https://itunes.apple.com/us/review?id=468532534&type=Purple%20Software&reviewId=14506154633",
@@ -5098,6 +5433,21 @@
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support",
       "id": "rvw-004614"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Complaints",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25231906",
+      "author": "BBB complainant",
+      "review_date": "2026-09-02",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Service or Repair Issues complaint (Answered). I am filing this complaint because I am trying to resolve a serious title/documentation issue involving a vehicle that was sold through your auction.I am the current owner of a 2011 Buick Lacrosse CXS that I purchased from the person who bought the vehicle from your auction. The vehicle came with a Tennessee rebuilt title, but there is an issue with the title/ownership paperwork that is preventing me from properly titling and registering the vehicle in REMOVED I have contacted the auction multiple times asking for documentation that would help establish the vehicles chain of ownership and resolve the title issue. Each time, I have been told that the auction will not provide me with any paperwork because I was not the person who originally purchased the vehicle from the auction.I understand that I was not the auctions direct buyer. However, I am the current owner of the vehicle, and I am attempting to legally resolve a title problem involving a vehicle that passed through the auction. I have made reasonable attempts to resolve this issue without involving the courts, but the auction is refusing to cooperate or provide any documentation that may be necessary to correct the title.I am not asking the auction for a refund or compensation. I am asking the auction to cooperate in resolving the title issue by providing any documentation that it is legally able to provide regarding the vehicles sale, ownership history, or title transfer, or by communicating with the appropriate parties to help correct the title.I am requesting that management review this matter and provide a reasonable resolution rather than simply refusing to assist because I was not the original auction buyer. ![Image 31](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-004661"
     },
     {
       "source_website": "apps.apple.com",
@@ -5203,6 +5553,21 @@
       "tier2": "Lot Condition Reporting",
       "tier3": "Lot Damage",
       "id": "rvw-004618"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Complaints",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/complaints#0654_88276839_25222141",
+      "author": "BBB complainant",
+      "review_date": "2026-08-31",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Service or Repair Issues complaint (Answered). On August 11th I was involved in a hit and run accident that forced me to use my uninsured motorist insurance. Damage was done to my rear bumper and front bumper. My insurance company had my car towed to IAA for estimated repair costs on August 13th. When my car arrived at the REMOVED body shop on August 19th my bumper was even more damaged and completely removed from my vehicle. It is also not able to be reattached. IAA told my insurance company that I my front bumper was already in that condition. My insurance company sided with them and is refusing to repair my front bumper under the current uninsured motorist claim. ![Image 32](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage",
+      "id": "rvw-004662"
     },
     {
       "source_website": "play.google.com",
@@ -5805,6 +6170,21 @@
       "id": "rvw-004360"
     },
     {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-3",
+      "author": "lauren w",
+      "review_date": "2026-08-12",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Their drivers and yard works steal everything out of your vehicle!!!! Took over $700 worth of stuff out of truck and how the Nerve to act like they were concerned with my items. Went back a couple days later. Guess who was sitting in my chair that was stolen out of my car, the yard manager ![Image 22](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-004663"
+    },
+    {
       "source_website": "google.com",
       "source_label": "Google Business Profile (IAA Albany)",
       "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tWVmNrMUlhQzFNYkV0Q1UxSjFTRXBQVEZwelJYYxAB!2m1!1s0x0:0x9d58bae6b93a9718!3m1!1s2@1:CAIQACodChtycF9oOkVVck1IaC1MbEtCU1J1SEpPTFpzRXc%7C%7C?hl=en",
@@ -5998,6 +6378,21 @@
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support",
       "id": "rvw-004373"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-4",
+      "author": "Jeremy A",
+      "review_date": "2026-08-05",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "My car was accidently picked up from a tow yard by a 3rd party your company hired. Upon recurring my car back all of my possessions were in the trunk, besides everything from my glove box, center console and one floor mat. REMOVED from REMOVED, REMOVED is a horrible branch manager. His secretary's told me IAA hired the tow company and now REMOVED the horrible manager is saying they didn't. Regardless, you have liars working for your company. I wish I could leave zero stars. ![Image 23](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-004664"
     },
     {
       "source_website": "google.com",
@@ -6390,6 +6785,21 @@
       "id": "rvw-004386"
     },
     {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-5",
+      "author": "Ahmed R",
+      "review_date": "2026-07-29",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "This rubbish business does not even deserve a zero rating. Negative rating is the fair judgment for those liars. I purchased a car online through IAA. The car had a video showing the engine starts. The description said the car *Run and Drive\". When I went to pick the car from REMOVED/St. REMOVED, I was shocked by the rudeness behavior of agents there. The car had a dead battery, and I had to get a jump start. When i asked the agent REMOVED help. She even neglected me. The car had a very weird engine sound and rough transmission. The steering wheel severely shakes when driving at 30 mph and higher. I ended up selling the car as junk same day. No kidding. I wasted $1300 and faced a horrible time. DO NOT go for this garbage place unless you get the car inspected by an expert REMOVED have been warned. ![Image 24](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-004665"
+    },
+    {
       "source_website": "google.com",
       "source_label": "Google Business Profile (IAA Detroit)",
       "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25WWVYwNXJSV1F6YVdWTVRYcERRVTUxTlhoS1pWRRAB!2m1!1s0x0:0x66c9d2d9fe94352a!3m1!1s2@1:CAIQACodChtycF9oOnVYV05rRWQzaWVMTXpDQU51NXhKZVE%7C%7C?hl=en",
@@ -6763,6 +7173,21 @@
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support",
       "id": "rvw-004389"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-6",
+      "author": "Roberts J",
+      "review_date": "2026-07-20",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "REMOVED-REMOVED, this location is big scammer Branch manager full of himself Very rude. And buyers service is same If I could leave a review under 1 I would!!!!!! ![Image 25](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-004666"
     },
     {
       "source_website": "play.google.com",
@@ -7168,6 +7593,21 @@
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support",
       "id": "rvw-004391"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-7",
+      "author": "Demario R",
+      "review_date": "2026-07-09",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "REMOVED the manager of IAA insurance auction north 6242 black acre trl Acworth ga call the sheriff on me cause I'm Urban black n was misinformed about picking up my vehicle I felt so embarrassed cause I was misinformed in the sheriff office was call just so they can tell him isn't nothing they can do now I'm worried about my personal n my vehicle this how IAA treat paying customer n no I didn't show no aggressive I was only confused in the sheriff got call Wow REMOVED turn a male version of a REMOVED I wonder if a was white would the sheriff would have been CALL??? I wasn't aggressive just confused about my truck that a paid for Already... Sheriff told him they couldn't trespass me cause IAA still have my truck I'm doing the right steps somebody got to be held accountable for these actions I reach out RB Global for this Racist REMOVED nothing from my vehicle is missing or have my vehicle damaged b4 I get it back .... Stay tuned for update on this situation. ![Image 26](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-004667"
     },
     {
       "source_website": "google.com",
@@ -7648,6 +8088,21 @@
       "tier2": "Communication Follow-up & Escalation",
       "tier3": "No Callback / Unresolved Case",
       "id": "rvw-004393"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-8",
+      "author": "Toni N",
+      "review_date": "2026-06-28",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "My REMOVED was towed to AAI Towing in REMOVED, REMOVED, after an accident, but the situation was already dire before that. Just one week earlier, my home had burned down, leaving me displaced and forcing me to store many of my remaining belongings in my car. When the responding officer told me to remove my personal items, I was overwhelmed and physically exhausted, able to carry only what I could manage on foot. I had no choice but to leave behind much of what I had left, knowing how much I had already lost. When I later went to REMOVED Towing to retrieve the rest of my belongings, I discovered that numerous valuable items were missing. During the accident, a container holding approximately $1,500 in coins broke open, scattering the contents throughout the vehicle. When I recovered my car, only the pennies remained. The rest of the coins were gone. The following items were also missing: * $150 iPhone backup power bank * $200 charging port * $300 Apple AirPods * Three charging cords * $700 limited-edition REMOVED sunglasses * Six gift cards The total value of the missing property is well over $4,000. After losing my home in a fire just days before, discovering that my belongings were missing from my vehicle made an already devastating situation even worse. While I cannot say who was responsible, my vehicle and its contents were in AAI Towing's custody when these items disappeared. Companies entrusted with customers vehicles should have procedures in place to protect personal property and hold employees accountable. Based on my experience, I cannot recommend REMOVED Towing. No one should have to worry about their belongings disappearing while their vehicle is being stored after an accident. ![Image 27](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Communication Follow-up & Escalation",
+      "tier3": "No Callback / Unresolved Case",
+      "id": "rvw-004668"
     },
     {
       "source_website": "google.com",
@@ -10020,6 +10475,21 @@
       "id": "rvw-004404"
     },
     {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-9",
+      "author": "Andrew B",
+      "review_date": "2026-05-04",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Sold a vehicle with \"Actual\" mileage to me. When I got the title, it said \"Not Actual Mileage.\" I understand they sell \"as-is,\" but the mileage is a \"brand\" that has to be disclosed at time of sale. Well, they don't care. The REMOVED didn't do anything, the Attorney General didn't do anything. I'm stuck with 8000 loss. NEVER DEALING WITH THIS COMPANY AGAIN. I bought cars from them for years. Some of which went REMOVED in the junk yard, because the condition was not as described. HOWEVER, this time, lying about the title brand, enough is enough. ![Image 28](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage",
+      "id": "rvw-004669"
+    },
+    {
       "source_website": "google.com",
       "source_label": "Google Business Profile (IAA Chicago South)",
       "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21Oa2VYQnVNVlkwTVRSVWRFUkxTVGhMTW5wQ2NsRRAB!2m1!1s0x0:0x443be6285395907e!3m1!1s2@1:CAIQACodChtycF9oOmNkeXBuMVY0MTRUdERLSThLMnpCclE%7C%7C?hl=en",
@@ -10738,6 +11208,21 @@
       "tier2": "Bidding Process, Rules and Fees",
       "tier3": "Fees",
       "id": "rvw-004407"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews#review-10",
+      "author": "Travis K",
+      "review_date": "2026-04-15",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "This is the worst company in the auction business they could care less about their customers. All they do is come up with more fees, and more fees and are constantly changing how they do business. Do not do business with them! Buy from REMOVED or any other company and save yourself the headache. Would give zero stars if I was allowed. ![Image 29](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-004670"
     },
     {
       "source_website": "google.com",
@@ -11790,6 +12275,21 @@
       "id": "rvw-004409"
     },
     {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#review-2",
+      "author": "Sandra C",
+      "review_date": "2026-03-23",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "The people working at this company are very unprofessional and extremely difficult to deal with. They will totally tear up your vehicle, lose the parts, lose the key, take all your belongings out of the vehicle, and not claim responsibility for it. Intake pictures are supposed to be available to view when a vehicle is placed in the lot. They do not take responsibility at all!! Evidently, they don't because they are unable to produce them. Hope and pray that you never have to deal with them!!! Wish I could l leave no star rating because they don't even deserve one star. ![Image 21](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-004671"
+    },
+    {
       "id": "rvw-000007",
       "source_website": "bbb.org",
       "source_label": "BBB Complaints",
@@ -12540,6 +13040,21 @@
       "id": "rvw-004412"
     },
     {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#review-3",
+      "author": "Sunil D",
+      "review_date": "2026-03-08",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Do not believe what they say, especially engine starting REMOVED& Drive. I bought a REMOVED. After deliver, I checked the oil, no oil in the engine. Oil leaking under, when I added oil. They have started the engine without oil. Broken engine. It was my first & last with IAAI auction. ![Image 22](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-004672"
+    },
+    {
       "source_website": "google.com",
       "source_label": "Google Business Profile (IAA Northern Virginia)",
       "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21sM1VHd3llRzh0TkU5MGJUaEtURTVVY214VmRWRRAB!2m1!1s0x0:0xb8c4fe5f5fcf919a!3m1!1s2@1:CAIQACodChtycF9oOml3UGwyeG8tNE90bThKTE5UcmxVdVE%7C%7C?hl=en",
@@ -12675,6 +13190,21 @@
       "id": "rvw-004413"
     },
     {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#review-4",
+      "author": "Sara B",
+      "review_date": "2026-03-06",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "If I could leave a review under 1 star, I would buy a car from them that started runs and drives. No issues it had on the listing, and I got there after buying it on their sit dead, I charged it the car wouldn't even shift into gear so got it towed just to find out hours later while motor and transmission is blown the car is worthless wasted my time with paying for it and a broker . Mother of 4 kid's you guys should be ashamed of yourself. Nothing but crooks!! DO NOT BUY A CAR FROM THEM AT ALL DO NOT RECOMMEND THEM WORST AUCTION IVE EVER BOUGHT FROM. ![Image 23](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-004673"
+    },
+    {
       "source_website": "google.com",
       "source_label": "Google Business Profile (IAA Honolulu)",
       "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t0RE9EZDJSRnBRUkY5SVNtWmlhMkZZWDBOWVdsRRAB!2m1!1s0x0:0xcded72ce75c6f598!3m1!1s2@1:CAIQACodChtycF9oOktDODd2RFpQRF9ISmZia2FYX0NYWlE%7C%7C?hl=en",
@@ -12763,6 +13293,21 @@
       "tier2": "Bidding Process, Rules and Fees",
       "tier3": "Fees",
       "id": "rvw-004414"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#review-5",
+      "author": "Ari L",
+      "review_date": "2026-03-05",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "REMOVED app and website, when do you plan to fix it? They charge so much money for fees and have the slowest website always giving errors and freezing super annoying makes me want to quit buying here. ![Image 24](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-004674"
     },
     {
       "source_website": "google.com",
@@ -13408,6 +13953,21 @@
       "tier2": "Communication Follow-up & Escalation",
       "tier3": "No Callback / Unresolved Case",
       "id": "rvw-004416"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#review-6",
+      "author": "Jasmine R",
+      "review_date": "2026-02-18",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "REMOVED. If I could leave a zero I would. Steer clear of these crooks. If an issue arises, good luck getting any help. The manager REMOVED is terrible- will NEVER respond to emails or calls. We purchased a vehicle that had airbags listed and when the car was delivered you can clearly see that the airbags were blown and glued. This company is pure evil- stay away!!! ![Image 25](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Communication Follow-up & Escalation",
+      "tier3": "No Callback / Unresolved Case",
+      "id": "rvw-004675"
     },
     {
       "source_website": "google.com",
@@ -14640,6 +15200,21 @@
       "id": "rvw-004421"
     },
     {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#review-7",
+      "author": "Meron T",
+      "review_date": "2026-01-22",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Sold me a car that wouldnt start nor run & drive. Totally opposite of what the car was listed as on the website. Will NEVER purchase a car from this location. Dishonesty and extortion is the name of the game here.IAA REMOVED ![Image 26](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Listing Status",
+      "tier3": "Selling/ Relisting vehicle or Parts purchase",
+      "id": "rvw-004676"
+    },
+    {
       "source_website": "reddit.com",
       "source_label": "Reddit r/carflipping",
       "source_url": "https://www.reddit.com/r/carflipping/comments/1qj86zb/how_i_preinspect_cars_before_bidding/",
@@ -15178,6 +15753,21 @@
       "tier2": "Case Resolution Quality",
       "tier3": "Issue Not Resolved",
       "id": "rvw-004423"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#review-8",
+      "author": "Jose O",
+      "review_date": "2026-01-12",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Bought cars since Nov 2025 and didn't receive titles for them,still waiting for a response from branch manager for weeks now on resolving this issue and have not heard from him very unprofessional ![Image 27](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Case Resolution Quality",
+      "tier3": "Issue Not Resolved",
+      "id": "rvw-004677"
     },
     {
       "source_website": "google.com",
@@ -15735,6 +16325,21 @@
       "id": "rvw-004425"
     },
     {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#review-9",
+      "author": "Charlie W",
+      "review_date": "2025-12-30",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Worse Auc*ion in *he world,I have over 7 million spen* over 16 years wi*h iaa. Im finally done, I hi* my breaking poin*. ye* *hey have *he nerve *o *ry and respond *o *hese horrible reviews, how you guys even phan*om a response, you don * have 1 good review ou* of hundreds? Tha* says every*hing in i*self.fees are ou*rageous, bough* a car *ha* says run and drive and i* was missing *he compu*er, *ha*'s like saying your ice ska*ing on a pond when i*s 90 degrees ou*side, jus* s*raigh* lies.. And as far as offering people *o come see *he REMOVED, nor your french road REMOVED holding loca*ions, offer viewing. ![Image 28](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Communication Follow-up & Escalation",
+      "tier3": "No Callback / Unresolved Case",
+      "id": "rvw-004678"
+    },
+    {
       "source_website": "google.com",
       "source_label": "Google Business Profile (IAA Long Island)",
       "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s5U01GSmZURlJGVjBGb1dFbFBTa3hqU2xGTU5uYxAB!2m1!1s0x0:0x837ee3387ce774c8!3m1!1s2@1:CAIQACodChtycF9oOk9SMFJfTFRFV0FoWElPSkxjSlFMNnc%7C%7C?hl=en",
@@ -16093,6 +16698,21 @@
       "tier2": "Lot Condition Reporting",
       "tier3": "Lot Damage",
       "id": "rvw-004427"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=2#review-10",
+      "author": "jimbo N",
+      "review_date": "2025-12-17",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "This business is NOT BBB accredited, so ask yourself why.Super suspicious.This company is 100% hiding pertinent information about the damaged cars they sell. They are hiding mileage numbers, and they are hiding running/damage information. its \"company policy\" and they will refuse to explain anything, just repeat boilerplate like robots.Smells REMOVED the past iaai may have been more honest than copart, but i treat them the same now. Be warned ![Image 29](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage",
+      "id": "rvw-004679"
     },
     {
       "id": "rvw-000044",
@@ -17263,6 +17883,21 @@
       "tier2": "Bidding Process, Rules and Fees",
       "tier3": "Fees",
       "id": "rvw-004433"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=3#review-1",
+      "author": "Corl C",
+      "review_date": "2025-11-22",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Iaai no longer operates as a legitimate auction. Winning a vehicle only to have the sale immediately declined and transferred to Buy Now undermines the entire purpose of an auction process. This happens all the time. At this point, it functions no differently than a conventional car dealership especially in the case of Progressive. The situation has become quite frustrating. A total joke. ![Image 19](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-004680"
     },
     {
       "source_website": "google.com",
@@ -18658,6 +19293,21 @@
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support",
       "id": "rvw-004438"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=3#review-2",
+      "author": "Robert L",
+      "review_date": "2025-10-14",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Ive been using Iaa for 10 years and should of learned my REMOVED by now. I purchased a car today and THEY made it so i cannot pay for it. Ive used IPay for 10 yrs, now all the sudden its been suspended and i need to have a letter from my bank, ok, so i try a credit card which i had to add to my account. REMOVED charhed the card twice but yet i still cant usr the card to pay for it. Just spent over an hout to get nowhere. Between the fees that have gotten out of control, and terrible customer service im done with REMOVED. Ive went to the branch myself to look at a car, but when they delivered it afyer i bought it the convertors were cut off and battery was missing, both were there when i saw it AT THE BRANCH, they refused to do anything, i bought a car that showed up with no keys, bit was one pictured on the auction, did nothing again, i bought a car with a \"clear\" title that i couldnt even title because the title was \"junk\" in the system because it came from a junkyard, spent months trying to have them fix it, never did, ended up scrapping it, they did nothing, i had a car the loader driver smashed the drivers side in on accident, they did nothing again, i bought a motorcycle and the seat, windshield, exhaust and battery were all missing when i DROVE TO THE BRANCH to get it, yep, they did nothing again. REMOVED bought cars that were listed as run and drive, but when i got them the engine knocked like crazy, no way they didnt notice that, and yet oddly enough they didnt take a video of ot running???? Yea.....go figure.Ive got 10 yrs of bad experiences with them. REMOVED services is a complete joke, just a waste of time......everytime!!! I should of quit buying when they staryed charging you to pay for your cars, thats right, theres fees just to pay your bill. They always come up with another reason for another fee. Your cars price will double by the time they get done. It makes perfect sense they have a 1 star rating. If you could have a negative rating, they would. ![Image 20](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-004681"
     },
     {
       "source_website": "google.com",
@@ -20940,6 +21590,21 @@
       "id": "rvw-004445"
     },
     {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=3#review-4",
+      "author": "luis g",
+      "review_date": "2025-08-26",
+      "rating": 3,
+      "sentiment": "positive",
+      "review_text": "the action is doing great, but i have license for many years and i notice they are not trust in many cars, for example many cars that have not wheel is posted as run and drive, that is playing with the customers it is lie ![Image 22](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Lot Condition Reporting",
+      "tier3": "Lot Damage",
+      "id": "rvw-004682"
+    },
+    {
       "id": "rvw-000088",
       "source_website": "apps.apple.com",
       "source_label": "Apple App Store (468532534, us)",
@@ -21073,6 +21738,21 @@
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support",
       "id": "rvw-004447"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=3#review-5",
+      "author": "Heather A",
+      "review_date": "2025-08-25",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "I got a buyer's account because I had plans to purchase a wrecked vehicle to rebuild. Had only bid on a couple in several month's time. My account was hacked and I figured it out immediately as it was tied to my REMOVED account. To the tune of just over $20,000. I immediately put a stop payment in with REMOVED. I had proof of the change in information on my IAA account. My ID on file did NOT match the information that was given at purchase. Long list of proof. It took being on hold for over an hour with IAA and they attempted to insist I needed to pay for the cars that I never bid on. Long story short their communication from customer service never returned follow REMOVED Over 2 months later they contacted me via email demanding a police report. Try explaining that to your local PD. A police report for items that were never taken, never in my possession, and money that never changed hands. Dealing with them was a complete nightmare. ![Image 23](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Support Access & Response Time",
+      "tier3": "Long Hold Time / Hard to Reach Support",
+      "id": "rvw-004683"
     },
     {
       "source_website": "google.com",
@@ -22875,6 +23555,21 @@
       "id": "rvw-004452"
     },
     {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=3#review-7",
+      "author": "JAMES C",
+      "review_date": "2025-07-22",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "their check bounced and cost me a lot of money, still trying to get my money from them, they got a car for free from me, this is a joke dont fall this scam ![Image 25](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-004684"
+    },
+    {
       "id": "rvw-000113",
       "source_website": "play.google.com",
       "source_label": "Google Play (com.iaai.android)",
@@ -23173,6 +23868,21 @@
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support",
       "id": "rvw-004454"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=3#review-8",
+      "author": "Et C",
+      "review_date": "2025-07-18",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Poor customer service in yard they need it manager long time wasted ![Image 26](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-004685"
     },
     {
       "id": "rvw-000116",
@@ -23848,6 +24558,21 @@
       "tier2": "Listing Status",
       "tier3": "Selling/ Relisting vehicle or Parts purchase",
       "id": "rvw-004459"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=3#review-9",
+      "author": "Taylor S",
+      "review_date": "2025-07-11",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "My car was repossessed on July 9th. I paid to get my car out on July 9th and set and appointment to get my car out at 130 July 10th. Come to find out everything was already taken out and had writing all over my car. Beyond that being frustrating, the expect you to go over all your inventory in a small space and make sure you hurry up REMOVED sign that everything was accounted for. It wasn't until I got in my car when I realized my headphones were missing. I had a pair of beats ($290) in my center console at the time the vehicle was taken. On top of that, I had $45 in my change compartment in cash. I called the company 10 minutes after leaving the place, and the girls replied , well did you sign the paper ? I said yes, she said then there's nothing I can do for you. What a shady a REMOVED business you guys run. And from the looks of it, there's multiple people with the same theft issue. Clearly you guys aren't doing right by the community and by your customers. You guys should be held accountable for the amount of theft there has been. Its disgusting how badly you treat your customers. ![Image 27](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Lot Condition, Listing Status and related",
+      "tier2": "Listing Status",
+      "tier3": "Selling/ Relisting vehicle or Parts purchase",
+      "id": "rvw-004686"
     },
     {
       "source_website": "google.com",
@@ -26158,6 +26883,21 @@
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support",
       "id": "rvw-004474"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=3#review-10",
+      "author": "Daniel P",
+      "review_date": "2025-05-28",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Know that you are f REMOVED ked if IAA ends up handling your claim. I got rear-ended in a total loss collision nearly a month ago and my bank has still not received payment. Im unable to purchase a new vehicle until my car is paid off and now the insurance company wont pay for the rental anymore so I have to pay out-of-pocket because they took so long. Turns out you do still end up the loser in a read-end accident if IAA is handling the claim. REMOVED was unhelpful in getting more insight into why the claim was taking so long. It seems the department managing paperwork and reaching out to different entities is full of lazy, good for nothings.TLDR: IAA process claims so slow it will cost you. Dont expect their customer service to be of any assistance either. ![Image 28](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-004687"
     },
     {
       "source_website": "google.com",
@@ -33285,6 +34025,36 @@
       "id": "rvw-004498"
     },
     {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=4#review-4",
+      "author": "Dan N",
+      "review_date": "2025-02-12",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "I have used this service for a few years and lately the customer service has been very poor on a corporate level. In the last two auctions, i have been the high bidder (#REMOVED) at end of the bidding process, both before on the block auction and at the end of on the block auction. At both times, it was shown on the screen shot that car was sold for my high bid, yet after auction the car was not shown to be sold to me. I was also not notified that i was overbid and the car was not rescheduled for another auction.I talked to a representative at the branch level, and they couldn't figure out why i was not awarded the bid in both instances and referred me to the corporate office. I filed two different cases, which were closed without anyone talking to me. I tried calling and was put on hold for over an hour both times and finally give up. Finally, last Saturday, Feb. 8, i was able to talk to a representative who started another case #REMOVED. Today, Feb 12, i started a chat with a company representative about the case submitted. After waiting 40 minutes i was able to chat with a representative. After explaining the situation, the representative stated the seller can decide who buys the vehicle and i was probably overbid. When i mentioned the usual company policy of being notified that i was not the high bidder and then that the web site showed i was not overbid and in fact the web site showed i had lost by $0, the company representative closed the chat. When I tried logging on with the case number, it was shown that the case had been closed. I won't be paying for another year of being able to bid as it seems being high bidder on a vehicle is not always the case and the company can make excuses of why a car is not awarded to the highest bidder. Also, the customer service department is rude and nonexistent. ![Image 21](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Support Access & Response Time",
+      "tier3": "Long Hold Time / Hard to Reach Support",
+      "id": "rvw-004688"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=4#review-5",
+      "author": "Timothy C",
+      "review_date": "2025-02-12",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Towed my car and took the title and the tag back in 2/2021. The tag was never returned to REMOVED like the driver stated it would be. I am now getting tickets for tolls up and down i95. ![Image 22](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Tow and Storage Charges",
+      "tier3": "Tow and Storage Fees",
+      "id": "rvw-004689"
+    },
+    {
       "id": "rvw-000332",
       "source_website": "reddit.com",
       "source_label": "Reddit r/saskatoon",
@@ -33673,6 +34443,21 @@
       "tier2": "Support Access & Response Time",
       "tier3": "Delayed Email/Phone Response",
       "id": "rvw-004501"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=4#review-6",
+      "author": "Paul L",
+      "review_date": "2025-02-08",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "They took my $200 and never gave me auction/bidding access. I attempted 5 times to contact them but no reply of anything other than an auto reply. This is a fraudulent company. Do not use them. ![Image 23](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Support Access & Response Time",
+      "tier3": "Delayed Email/Phone Response",
+      "id": "rvw-004690"
     },
     {
       "id": "rvw-000345",
@@ -36285,6 +37070,21 @@
       "id": "rvw-004507"
     },
     {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=4#review-7",
+      "author": "Charline H",
+      "review_date": "2024-12-29",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "I had an extremely frustrating experience with TitleMax after my vehicle was repossessed. It took TWO WEEKS just to get an appointment to retrieve my personal belongings. When I finally got there, I wasnt allowed to access the vehicle myself or even observe their employees as they removed my REMOVED make matters worse, some of my belongings were missing, including a brand-new pair of boots and a registered handgun. They also flat-out refused to let me retrieve my dashcam, which wasnt even wired into the dashboard; BUT THAT WAS THEIR EXCUSE TO NOT HAND IT OVER!This level of unprofessionalism and lack of accountability is unacceptable. People trust these companies to act responsibly with their property, but this experience has shown otherwise. My advice: avoid them at all costs if you can. THEY DO NOT VALUE YOUR PROPERTY OR YOUR RIGHTS! ![Image 24](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-004691"
+    },
+    {
       "id": "rvw-000431",
       "source_website": "apps.apple.com",
       "source_label": "Apple App Store (468532534, us)",
@@ -36463,6 +37263,21 @@
       "tier2": "Bidding Process, Rules and Fees",
       "tier3": "Fees",
       "id": "rvw-004508"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=4#review-8",
+      "author": "Lawayne E",
+      "review_date": "2024-12-27",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "We dont buy much on here anymore. Their fees are exorbitant. ????We paid $2400 in fees for the last pickup we bought from IAA. Robbery! ![Image 25](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-004692"
     },
     {
       "id": "rvw-000436",
@@ -38160,6 +38975,21 @@
       "id": "rvw-004511"
     },
     {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=5#review-3",
+      "author": "James E",
+      "review_date": "2024-11-26",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "I highly recommend all customers to stay away from this company. They are running a \"REMOVED We agreed on the price to pick up my car. The driver showed up with no check. I called numerous times to determine the root cause for this substandard customer service. Their agents hung up on me three times after I waited 30 minutes each time. The dispatcher, REMOVED, was very unprofessional and incompetent. All stakeholders should be held accountable, the owners, the managers, and staff should not be allowed to run a \"REMOVED on their customers without accountability safeguards in place. \"STOP THE REMOVED ![Image 21](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-004693"
+    },
+    {
       "source_website": "google.com",
       "source_label": "Google Business Profile (IAA Birmingham)",
       "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNQaWRtV3VnRRAB!2m1!1s0x0:0x57cbc859949de793!3m1!1s2@1:CIHM0ogKEICAgICPidmWugE%7C%7C?hl=en",
@@ -38518,6 +39348,21 @@
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Rude/Unhelpful Support",
       "id": "rvw-004512"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=5#review-4",
+      "author": "William B",
+      "review_date": "2024-11-22",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "If I could give no stars I would. My car was sent here after a accident. They stole a watch, some cologne and a bunch of change from my car. Damaged it in the process of delivering it by breaking and scraping the paint of my front bumper that had no damage. All they will do is pay for a front bumper no paint even though they damaged it. Very unprofessional and incompetent people that can't properly do their job. He acknowledged that they have a issue with people stealing but won't do anything to recover my stolen property. ![Image 22](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-004694"
     },
     {
       "id": "rvw-000490",
@@ -39133,6 +39978,21 @@
       "tier2": "Bidding Process, Rules and Fees",
       "tier3": "Fees",
       "id": "rvw-004513"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=5#review-5",
+      "author": "Gary H",
+      "review_date": "2024-11-13",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Expensive fee led about fees and bidding process to they REMOVED they REMOVED ![Image 23](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-004695"
     },
     {
       "id": "rvw-000511",
@@ -40063,6 +40923,21 @@
       "tier2": "Tow and Storage Charges",
       "tier3": "Tow and Storage Fees",
       "id": "rvw-004514"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=5#review-6",
+      "author": "Wesley M",
+      "review_date": "2024-10-28",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Hot garbage company we were forced to use with REMOVED. I will be complaining to statefarm as well to have them pick literally anyone REMOVED a call 15 minutes before pick up on the wrong day, the day we specifically said would not work. We had scheduled for a different day SPECIFICALLY. We finally got them to show up today instead. And they don't give ANY warning, despite being told we would get at least 15 mins of warning today (even though it was initially agreed we'd have an hour before having to complain to them they got the day wrong). Their tow guy INSISTED on parking in the bicycle lane which is a hazard to both us AND bicyclists rather than going in the alleyway where we had agreed to meet initially. Could have gone to one of the adjacent streets that had much less traffic, but dude insisted on parking like a inconsiderate jerk instead. ![Image 24](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Tow and Storage Charges",
+      "tier3": "Tow and Storage Fees",
+      "id": "rvw-004696"
     },
     {
       "id": "rvw-000537",
@@ -41010,6 +41885,21 @@
       "id": "rvw-004515"
     },
     {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=5#review-7",
+      "author": "Maryana R",
+      "review_date": "2024-10-12",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "IAAI sells salvage vehicles as clean titles . They did this to me on 2 different occasions with 2 different vehicles. In conjunction with partner SCA auctions, IAAI is misrepresenting salvage vehicle cars as clean. Coincidentally, the auction sale date is the same as the salvage/total loss date for both vehicles. DMV code enforcement will be notified immediately ![Image 25](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Title, Ownership, POA and Documentation",
+      "tier2": "Title Delivery & Status",
+      "tier3": "Title Not Received",
+      "id": "rvw-004697"
+    },
+    {
       "id": "rvw-000571",
       "source_website": "reddit.com",
       "source_label": "Reddit r/GR86",
@@ -41490,6 +42380,21 @@
       "id": "rvw-004516"
     },
     {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=5#review-8",
+      "author": "Logan H",
+      "review_date": "2024-10-08",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Very poor example of an iaa.This place needs some serious change.First off,I was greeted by a very rude lady, where I was then charged $20 extra for title processing(is this not what buyers fees are for?),and then I am asked for my DOT transporter # (Im a licensed vehicle dealer,I do not have a dot #)So after going around in circles for 10 minutes,she then brings the manager in on it.50 minutes later,we get everything sorted out inside,so I then go outside to load my vehicle up.While I am strapping this car down,I turn around to the new security guard standing behind REMOVED ask him what he was doing,and he then goes on to provoke a verbal fight with me.He then ask me where I am from,and then proceeds to tell me that he is from the REMOVED,and that he doesnt do things my way.He also told me that he was homies with pistol REMOVED trying to scare me.(I have all of this recorded,and this has been sent to the manager of this branch.) So after I finally get him away from me,he then tells me to use my gun if Im going to pull it on him.(I didnt even have a gun on me).So I finally got everything strapped in and ready to go,when he is standing in the parking lot at the front door flipping me off and calling me racial slurs. ![Image 26](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-004698"
+    },
+    {
       "id": "rvw-000586",
       "source_website": "reddit.com",
       "source_label": "Reddit r/CyberStuck",
@@ -41803,6 +42708,21 @@
       "tier2": "Password Reset & Login Troubleshooting",
       "tier3": "App Login Troubleshooting",
       "id": "rvw-004517"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=5#review-9",
+      "author": "Gold S",
+      "review_date": "2024-09-28",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "We are a dealership we bought a car on 09-27-2024 2016 Chrysler 200 The car on the app said run & drive I get the car front of the office no power I went back to the office ask for jump box or jump cable the 3 girls on the office said one time We dont have jump box Someone coming pick up the car I asked him for jump 2nd problem the car out of gas I called my friend get me jump box and gas and waiting outside I saw someone bought a REMOVED Corolla she went to the office And then one of the 3 girls comes out with jump box I went to her gentle asked her why you guys telling me you dont have jump box she starting yelling at me Anyway we canceled our membership ![Image 27](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Account / Access / Login",
+      "tier2": "Password Reset & Login Troubleshooting",
+      "tier3": "App Login Troubleshooting",
+      "id": "rvw-004699"
     },
     {
       "id": "rvw-000593",
@@ -42478,6 +43398,21 @@
       "tier2": "Support Access & Response Time",
       "tier3": "Long Hold Time / Hard to Reach Support",
       "id": "rvw-004518"
+    },
+    {
+      "source_website": "bbb.org",
+      "source_label": "BBB Customer Reviews",
+      "source_url": "https://www.bbb.org/us/il/westchester/profile/auto-auction/iaa-0654-88276839/customer-reviews?page=5#review-10",
+      "author": "Darren W",
+      "review_date": "2024-09-16",
+      "rating": 1,
+      "sentiment": "negative",
+      "review_text": "Someone stole my credit card information and used it to make around $18000 in purchases with IAA. I called IAA to try and find out the details of the purchases and have them shut down the account, but after over 20-minutes on hold, the IAA representative could give me no resolution, would not provide details on the sale that would assist in investigation, and would not provide details on the account created by the person who criminally used my credit card to make unapproved purchases. Not helpful. ![Image 28](https://m.bbb.org/prod/ProfileImages/2ac96d4f-f1ab-438c-a852-58eec2b70423.jpeg?tx=c_limit,h_51,w_65)",
+      "geo_validation": "bbb_us_business",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Support Access & Response Time",
+      "tier3": "Long Hold Time / Hard to Reach Support",
+      "id": "rvw-004700"
     },
     {
       "id": "rvw-000612",

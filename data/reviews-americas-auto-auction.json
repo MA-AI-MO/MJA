@@ -1,10 +1,10 @@
 {
   "meta": {
     "description": "Large-scale English-only America's Auto Auction textual review/problem dataset from public web sources (recency-first).",
-    "review_count": 709,
+    "review_count": 719,
     "source_counts": {
+      "birdeye.com": 121,
       "google.com": 594,
-      "birdeye.com": 111,
       "bbb.org": 4
     },
     "source_audit": [
@@ -36,10 +36,10 @@
         "source_website": "bbb.org",
         "attempted": true,
         "direct_pages": 6,
-        "fallback_pages": 5,
+        "fallback_pages": 6,
         "direct_statuses": {
           "403": 6,
-          "200": 5
+          "200": 6
         },
         "blocked": true,
         "fallback_used": true,
@@ -55,9 +55,7 @@
           "direct BBB complaints blocked for https://www.bbb.org/us/il/crestwood/profile/auto-auction/americas-auto-auction-chicago-0654-12015440",
           "direct BBB complaints blocked for https://www.bbb.org/us/tx/buda/profile/auto-auction/americas-auto-auction-austin-0825-90094147"
         ],
-        "errors": [
-          "reader error for https://www.bbb.org/us/il/centreville/profile/auto-auction/americas-auto-auction-0734-310446804/customer-reviews: HTTPSConnectionPool(host='r.jina.ai', port=443): Read timed out. (read timeout=60)"
-        ],
+        "errors": [],
         "review_count": 4,
         "existing_review_count": 4,
         "present": true,
@@ -125,63 +123,68 @@
         },
         "blocked": false,
         "fallback_used": false,
-        "candidate_reviews_seen": 60,
-        "new_reviews_added": 9,
+        "candidate_reviews_seen": 58,
+        "new_reviews_added": 10,
         "advertised_total": 527,
-        "latest_candidate_date": "2026-09-07",
+        "latest_candidate_date": "2026-10-31",
         "notes": [
           "Birdeye advertised totals may include syndicated Google/Birdeye network reviews; accepted rows are visible textual review cards that pass filters.",
-          "Advertised total 527 is much larger than accepted rows 111; source is likely partially covered after filters/pagination."
+          "Advertised total 527 is much larger than accepted rows 121; source is likely partially covered after filters/pagination."
         ],
         "errors": [],
-        "review_count": 111,
-        "existing_review_count": 102,
+        "review_count": 121,
+        "existing_review_count": 111,
         "present": true,
-        "latest_review_date": "2026-09-07",
-        "existing_latest_date": "2026-08-26",
+        "latest_review_date": "2026-10-31",
+        "existing_latest_date": "2026-09-07",
         "status": "partial"
       },
       {
         "source_website": "google.com",
         "attempted": true,
-        "direct_pages": 291,
+        "direct_pages": 133,
         "fallback_pages": 0,
         "direct_statuses": {
-          "200": 291
+          "200": 133
         },
         "blocked": false,
         "fallback_used": false,
-        "candidate_reviews_seen": 910,
-        "new_reviews_added": 32,
+        "candidate_reviews_seen": 6,
+        "new_reviews_added": 0,
         "advertised_total": null,
         "latest_candidate_date": "2026-10-05",
         "notes": [
-          "Google Business Profile discovery completed: 54/54 queries succeeded and 54 unique validated US profiles were selected.",
-          "Validated 51 US Google Business Profiles; 3 failed and 0 were skipped after the circuit breaker. Successful profiles were paginated newest-first through per-profile incremental overlap boundaries."
+          "Google Business Profile discovery completed: 54/54 queries succeeded and 55 unique validated US profiles were selected.",
+          "Validated 2 US Google Business Profiles; 6 failed and 47 were skipped after the circuit breaker. Successful profiles were paginated newest-first through per-profile incremental overlap boundaries."
         ],
         "errors": [
-          "America's Auto Auction Austin [0x865b52ff3d9c30e9:0xebbb605ccf5ba997]: pagination stopped before the 2026-08-17 boundary/terminal page (10 RPC reviews; advertised=280)",
-          "America's Auto Auction Savannah [0x88fba051dbe89415:0x58f9104724a5a13]: newest review RPC did not load",
-          "America's Auto Auction Shreveport [0x8636daec8db856cf:0xca16bdc1dbd9386f]: newest review RPC did not load"
+          "America's Auctions In Motion Thousand Oaks [0x80e830983731fbb1:0xf56bc5e71d5f7c65]: newest review RPC did not load",
+          "America's Auto Auction Albany [0x88f279eb8fcbfff9:0xbecbdd5ed6e965ae]: newest review RPC did not load",
+          "America's Auto Auction Atlanta [0x88f54f77cd6b3ca3:0x6c1da0d0e62c9fa7]: newest review RPC did not load",
+          "America's Auto Auction Augusta [0x88f9cb84762e7fc1:0xa5a64f1dc5862f60]: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.google.com/maps?cid=11936314851678629728&hl=en&gl=us\", waiting until \"domcontentloaded\"\n",
+          "America's Auto Auction Austin [0x865b52ff3d9c30e9:0xebbb605ccf5ba997]: newest review RPC did not load",
+          "America's Auto Auction Baton Rouge [0x86269f4057e84d9d:0xb5b13ba60c8bebc1]: newest review RPC did not load"
         ],
         "profile_retention_used": true,
-        "profiles_completed": 51,
-        "profiles_failed": 3,
-        "profiles_skipped_after_circuit_breaker": 0,
+        "profiles_completed": 2,
+        "profiles_failed": 6,
+        "profiles_skipped_after_circuit_breaker": 47,
         "last_successful_refresh_until": "2026-08-31",
         "review_count": 594,
-        "existing_review_count": 562,
+        "existing_review_count": 594,
         "present": true,
         "latest_review_date": "2026-09-28",
-        "existing_latest_date": "2026-08-25",
+        "existing_latest_date": "2026-09-28",
         "status": "partial_profile_retention"
       }
     ],
     "sentiments": {
-      "positive": 390,
-      "negative": 319
+      "positive": 395,
+      "negative": 324
     },
     "source_urls": [
+      "https://reviews.birdeye.com/americas-auto-auction-boston-175285312088477#review-1",
+      "https://reviews.birdeye.com/americas-auto-auction-kansas-city-175285312126035#review-1",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pKV1dsaFhPVzR4WW5oSFNuZENhVTFzZG5GWVZHYxAB!2m1!1s0x0:0x4a5f30a10721c63c!3m1!1s2@1:CAIQACodChtycF9oOjJWWlhXOW4xYnhHSndCaU1sdnFYVGc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kMVprSTNPVU5uWmkxTGQyUkNTbmN3Tld0dlJFRRAB!2m1!1s0x0:0x48373f348838596a!3m1!1s2@1:CAIQACodChtycF9oOnd1ZkI3OUNnZi1Ld2RCSncwNWtvREE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1VldsTTNabk5LYTBRelgzSkpRelpWYW0xdWVtYxAB!2m1!1s0x0:0x876abfce109a1191!3m1!1s2@1:CAIQACodChtycF9oOk5VWlM3ZnNKa0QzX3JJQzZVam1uemc%7C%7C?hl=en",
@@ -194,6 +197,8 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2swNFUwMDRhVnBrUmxkWWRFeDNPSGgyYUZWS2FVRRAB!2m1!1s0x0:0xbecbdd5ed6e965ae!3m1!1s2@1:CAIQACodChtycF9oOk04U004aVpkRldYdEx3OHh2aFVKaUE%7C%7C?hl=en",
       "https://reviews.birdeye.com/americas-auto-auction-atlanta-175285312123278#review-3",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xSak9WbzRPV1ZPVEhWMWJtcG1NSFV6WmtoNVJYYxAB!2m1!1s0x0:0x78cd4f63c4fd9238!3m1!1s2@1:CAIQACodChtycF9oOlRjOVo4OWVOTHV1bmpmMHUzZkh5RXc%7C%7C?hl=en",
+      "https://reviews.birdeye.com/americas-auto-auction-atlanta-175285312123278#review-5",
+      "https://reviews.birdeye.com/americas-auto-auction-kansas-city-175285312126035#review-4",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kwMmJtdzJZbE5aY0hwNFIyMUhPVVpFTUZCR1NuYxAB!2m1!1s0x0:0xf56bc5e71d5f7c65!3m1!1s2@1:CAIQACodChtycF9oOi02bmw2YlNZcHp4R21HOUZEMFBGSnc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25VeFlVSkRibTF6ZWtWRlZHRk5aR2hGVmxsR2JHYxAB!2m1!1s0x0:0x69bb1d22d647b967!3m1!1s2@1:CAIQACodChtycF9oOnUxYUJDbm1zekVFVGFNZGhFVllGbGc%7C%7C?hl=en",
       "https://reviews.birdeye.com/americas-auto-auction-atlanta-175285312123278#review-1",
@@ -206,6 +211,7 @@
       "https://reviews.birdeye.com/americas-auto-auction-kansas-city-175285312126035#review-3",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21ORFgxcFBOVGhmVjJWQlgxcEtXa3BVZEhZeE4yYxAB!2m1!1s0x0:0xf41ed977b990df4a!3m1!1s2@1:CAIQACodChtycF9oOmNDX1pPNThfV2VBX1pKWkpUdHYxN2c%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkNmRqY3lWa0p1ZUhkd1kwaGxVVXBSVmtKQmQyYxAB!2m1!1s0x0:0xf41ed977b990df4a!3m1!1s2@1:CAIQACodChtycF9oOkd6djcyVkJueHdwY0hlUUpRVkJBd2c%7C%7C?hl=en",
+      "https://reviews.birdeye.com/americas-auto-auction-boston-175285312088477#review-4",
       "https://reviews.birdeye.com/americas-auto-auction-atlanta-175285312123278#review-4",
       "https://reviews.birdeye.com/americas-auto-auction-boston-175285312088477#review-2",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tSS2QydHlTR2d3VmxWM09EQTNVVkYxVEdkVFduYxAB!2m1!1s0x0:0x30cc1248b033d002!3m1!1s2@1:CAIQACodChtycF9oOkRKd2tySGgwVlV3ODA3UVF1TGdTWnc%7C%7C?hl=en",
@@ -216,7 +222,6 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s5d01WTmhTbk0wY2paaFUxQmhXQzF1VFRCNVpsRRAB!2m1!1s0x0:0x69bb1d22d647b967!3m1!1s2@1:CAIQACodChtycF9oOk9wMVNhSnM0cjZhU1BhWC1uTTB5ZlE%7C%7C?hl=en",
       "https://reviews.birdeye.com/americas-auto-auction-atlanta-175285312123278#review-2",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xKTk9VNUJkM1pmY2psNVRHZEZNWGxPZFU1NlIzYxAB!2m1!1s0x0:0xf17205dcc576655f!3m1!1s2@1:CAIQACodChtycF9oOlJNOU5Bd3Zfcjl5TGdFMXlOdU56R3c%7C%7C?hl=en",
-      "https://reviews.birdeye.com/americas-auto-auction-atlanta-175285312123278#review-5",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xFeGFXdHllbUpxU20xUmJFSjBZVWRWU2tWcmNIYxAB!2m1!1s0x0:0xd4b21820e6c03fb2!3m1!1s2@1:CAIQACodChtycF9oOlExaWtyemJqSm1RbEJ0YUdVSkVrcHc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25SV09FMVZRMTlzYzNoR1dFcHpSVzlTUkd4bFNIYxAB!2m1!1s0x0:0xf41ed977b990df4a!3m1!1s2@1:CAIQACodChtycF9oOnRWOE1VQ19sc3hGWEpzRW9SRGxlSHc%7C%7C?hl=en",
       "https://reviews.birdeye.com/americas-auto-auction-boston-175285312088477#review-5",
@@ -237,6 +242,7 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1SGEwWkNOR1IwY2xBMlUwZHRPRlEwT0dReGNuYxAB!2m1!1s0x0:0x6dcb9e6f48b87d07!3m1!1s2@1:CAIQACodChtycF9oOk5Ha0ZCNGR0clA2U0dtOFQ0OGQxcnc%7C%7C?hl=en",
       "https://reviews.birdeye.com/americas-auto-auction-greater-kalamazoo-175285312088026#review-3",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wU2NqTnpNbWwwTnpkeWJWUlBTVXhWVjI5R2JHYxAB!2m1!1s0x0:0x1aa343ea3eb92075!3m1!1s2@1:CAIQACodChtycF9oOmpScjNzMml0NzdybVRPSUxVV29GbGc%7C%7C?hl=en",
+      "https://reviews.birdeye.com/americas-auto-auction-greater-kalamazoo-175285312088026#review-4",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KSFgwVnpRWEl6Tkc1bVVXRm5iSFkzZGxRNE5WRRAB!2m1!1s0x0:0xbecbdd5ed6e965ae!3m1!1s2@1:CAIQACodChtycF9oOnJHX0VzQXIzNG5mUWFnbHY3dlQ4NVE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xjMmRXMHllbEIwY2xWc1JrUXpVSFV6ZERJdGFuYxAB!2m1!1s0x0:0xfb5905925251d4e3!3m1!1s2@1:CAIQACodChtycF9oOlc2dW0yelB0clVsRkQzUHUzdDItanc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wV2VubGxWalptTmtGb1UxRkRURGxFV1RKWVZIYxAB!2m1!1s0x0:0xde6b19ecf7eda82!3m1!1s2@1:CAIQACodChtycF9oOmpWenllVjZmNkFoU1FDTDlEWTJYVHc%7C%7C?hl=en",
@@ -260,7 +266,6 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT214b1RXcExZa3hTV2xCTU5WcEhiVmhoT0RKYWFWRRAB!2m1!1s0x0:0xea66b05d00af738c!3m1!1s2@1:CAIQACodChtycF9oOmxoTWpLYkxSWlBMNVpHbVhhODJaaVE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KV01tWk5kbmRSWTAxYVJsUXljMHRLVDFkak5FRRAB!2m1!1s0x0:0x69bb1d22d647b967!3m1!1s2@1:CAIQACodChtycF9oOnJWMmZNdndRY01aRlQyc0tKT1djNEE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tGMU4zbzFXblJqUm1neE5YRXRTekYwV0dSQ2EyYxAB!2m1!1s0x0:0xfa107851a42a9650!3m1!1s2@1:CAIQACodChtycF9oOkF1N3o1WnRjRmgxNXEtSzF0WGRCa2c%7C%7C?hl=en",
-      "https://reviews.birdeye.com/americas-auto-auction-kansas-city-175285312126035#review-4",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT214bmJuaHRWMDFHVFhaT1NWb3dXRzkyUkRsdFZWRRAB!2m1!1s0x0:0xf41ed977b990df4a!3m1!1s2@1:CAIQACodChtycF9oOmxnbnhtV01GTXZOSVowWG92RDltVVE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xWb1VGZEJablF6TmpGWWNGWldSRTltYkdjdE5FRRAB!2m1!1s0x0:0xb1f5c3c66da56911!3m1!1s2@1:CAIQACodChtycF9oOlVoUFdBZnQzNjFYcFZWRE9mbGctNEE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xacWVrSmxkSEJaVEUxUVpXUmtlbWRWYUZCYU4xRRAB!2m1!1s0x0:0xd4b21820e6c03fb2!3m1!1s2@1:CAIQACodChtycF9oOlZqekJldHBZTE1QZWRkemdVaFBaN1E%7C%7C?hl=en",
@@ -291,7 +296,6 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT214eVNUTkxTRlpEWm5ob1VrTnhYMGN5U0VWak1FRRAB!2m1!1s0x0:0xd4b21820e6c03fb2!3m1!1s2@1:CAIQACodChtycF9oOmxySTNLSFZDZnhoUkNxX0cySEVjMEE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21WMVN5MWthbTlDZG5SSldrRlFjbUV4VkZKTGJYYxAB!2m1!1s0x0:0x1aa343ea3eb92075!3m1!1s2@1:CAIQACodChtycF9oOmV1Sy1kam9CdnRJWkFQcmExVFJLbXc%7C%7C?hl=en",
       "https://reviews.birdeye.com/americas-auto-auction-166687512715050#review-5",
-      "https://reviews.birdeye.com/americas-auto-auction-boston-175285312088477#review-4",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSWVRFbFVhSGgwUmprd2IwOVFWM1JsV1c0MWJsRRAB!2m1!1s0x0:0xfb5905925251d4e3!3m1!1s2@1:CAIQACodChtycF9oOjRYTElUaHh0Rjkwb09QV3RlWW41blE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT200NWRpMDNiMFpNV21wTVFYbEtWVkptVlVwM1VsRRAB!2m1!1s0x0:0xcc270adc7d3b2572!3m1!1s2@1:CAIQACodChtycF9oOm45di03b0ZMWmpMQXlKVVJmVUp3UlE%7C%7C?hl=en",
       "https://reviews.birdeye.com/americas-auto-auction-166687512715050#review-3",
@@ -302,7 +306,6 @@
       "https://reviews.birdeye.com/americas-auto-auction-atlanta-175285312123278?page=2#review-3",
       "https://reviews.birdeye.com/americas-auto-auction-atlanta-175285312123278?page=2#review-4",
       "https://reviews.birdeye.com/americas-auto-auction-boston-175285312088477?page=2#review-3",
-      "https://reviews.birdeye.com/americas-auto-auction-greater-kalamazoo-175285312088026#review-4",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xwNU1Ib3RSakZmVmtobVVrczVlVzAwWkZwTU5WRRAB!2m1!1s0x0:0xf56bc5e71d5f7c65!3m1!1s2@1:CAIQACodChtycF9oOlp5MHotRjFfVkhmUks5eW00ZFpMNVE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2poSFQwTk5SMlJIZWpsYVlWUktkbkI0TUVjeFZsRRAB!2m1!1s0x0:0xb1f5c3c66da56911!3m1!1s2@1:CAIQACodChtycF9oOjhHT0NNR2RHejlaYVRKdnB4MEcxVlE%7C%7C?hl=en",
       "https://reviews.birdeye.com/americas-auto-auction-greater-kalamazoo-175285312088026#review-5",
@@ -342,9 +345,9 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21sblJUWk1iMnRsUzJORkxUTTNOM1I0VTJVM09GRRAB!2m1!1s0x0:0x8b542760f51c1f29!3m1!1s2@1:CAIQACodChtycF9oOmlnRTZMb2tlS2NFLTM3N3R4U2U3OFE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xkeFVETmtWM2xpVmpobGFGOU5SekZ4Vmpsa2VHYxAB!2m1!1s0x0:0x69bb1d22d647b967!3m1!1s2@1:CAIQACodChtycF9oOldxUDNkV3liVjhlaF9NRzFxVjlkeGc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xKT1VGY3hTM0ZWTkRCUmMycFZOMEY1UldOc1MzYxAB!2m1!1s0x0:0xf41ed977b990df4a!3m1!1s2@1:CAIQACodChtycF9oOlJOUFcxS3FVNDBRc2pVN0F5RWNsS3c%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tnMmRYSm5ObTFNT1VkRFVubDZUamxtYmpaZlZrRRAB!2m1!1s0x0:0xcd18b722b82b3068!3m1!1s2@1:CAIQACodChtycF9oOkg2dXJnNm1MOUdDUnl6TjlmbjZfVkE%7C%7C?hl=en",
       "https://reviews.birdeye.com/americas-auto-auction-166658630045147#review-1",
       "https://reviews.birdeye.com/americas-auto-auction-166658630045147#review-2",
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tnMmRYSm5ObTFNT1VkRFVubDZUamxtYmpaZlZrRRAB!2m1!1s0x0:0xcd18b722b82b3068!3m1!1s2@1:CAIQACodChtycF9oOkg2dXJnNm1MOUdDUnl6TjlmbjZfVkE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT210bGVISlFhREJqWTFWWlpESlBVMFphTW1kMlMxRRAB!2m1!1s0x0:0xab9f158e8c0ad9a9!3m1!1s2@1:CAIQACodChtycF9oOmtleHJQaDBjY1VZZDJPU0ZaMmd2S1E%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tsSFFqTkhYM3BuWTNZNVFUaFFTamRKT0dWWGMzYxAB!2m1!1s0x0:0xcc0a9c42311c507c!3m1!1s2@1:CAIQACodChtycF9oOklHQjNHX3pnY3Y5QThQSjdJOGVXc3c%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSemVFUk5PRUZpU1hoMFNGWjRXamN4WVRFNWRYYxAB!2m1!1s0x0:0x6c1da0d0e62c9fa7!3m1!1s2@1:CAIQACodChtycF9oOjRzeERNOEFiSXh0SFZ4WjcxYTE5dXc%7C%7C?hl=en",
@@ -367,6 +370,7 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w5WFIydEdUamhXWld0VU9YY3pXazlrTFVaYVZsRRAB!2m1!1s0x0:0xcd18b722b82b3068!3m1!1s2@1:CAIQACodChtycF9oOl9XR2tGTjhWZWtUOXczWk9kLUZaVlE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1eVZYRm9NRkY2ZEVKb1pEZFJhbGRaY25SWkxXYxAB!2m1!1s0x0:0xd4b21820e6c03fb2!3m1!1s2@1:CAIQACodChtycF9oOk5yVXFoMFF6dEJoZDdRaldZcnRZLWc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25CUmNYQm9WR04wYUVGWVVsTkVSVUpKTjNGdVkyYxAB!2m1!1s0x0:0x6c1da0d0e62c9fa7!3m1!1s2@1:CAIQACodChtycF9oOnBRcXBoVGN0aEFYUlNERUJJN3FuY2c%7C%7C?hl=en",
+      "https://reviews.birdeye.com/americas-auto-auction-166658630045147#review-5",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tadGEwZ3pTR1pRVmpnd0xWOUlhV3RFYzFOMWIxRRAB!2m1!1s0x0:0xfa107851a42a9650!3m1!1s2@1:CAIQACodChtycF9oOkZta0gzSGZQVjgwLV9IaWtEc1N1b1E%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxRVZYcExkR2xIZFdseVlWcEhjbVZpZEhCc2MxRRAB!2m1!1s0x0:0x69bb1d22d647b967!3m1!1s2@1:CAIQACodChtycF9oOi1EVXpLdGlHdWlyYVpHcmVidHBsc1E%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tKa1oyTXdhMmhUTkVScVQxRkpjVXd5VERaWldtYxAB!2m1!1s0x0:0x69bb1d22d647b967!3m1!1s2@1:CAIQACodChtycF9oOkJkZ2Mwa2hTNERqT1FJcUwyTDZZWmc%7C%7C?hl=en",
@@ -381,7 +385,6 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tadlIydDBlRUp1Y3pScWEyMUpUeTFIVDJsNGNVRRAB!2m1!1s0x0:0x6d813930b9992ad0!3m1!1s2@1:CAIQACodChtycF9oOkZvR2t0eEJuczRqa21JTy1HT2l4cUE%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pBMGVIb3hTbXRZYUcxS1FYZ3hZbXRaTFUxUlZHYxAB!2m1!1s0x0:0xd4b21820e6c03fb2!3m1!1s2@1:CAIQACodChtycF9oOjA0eHoxSmtYaG1KQXgxYmtZLU1RVGc%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2toTWVuQkxkV1JWTTFwaFdETXdkRTlFWTFCalQzYxAB!2m1!1s0x0:0xd4b21820e6c03fb2!3m1!1s2@1:CAIQACodChtycF9oOkhMenBLdWRVM1phWDMwdE9EY1BjT3c%7C%7C?hl=en",
-      "https://reviews.birdeye.com/americas-auto-auction-166658630045147#review-5",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xOM1gxOXhabUZOWWtkRldUWjNabHBKZEdOcU0yYxAB!2m1!1s0x0:0xfb5905925251d4e3!3m1!1s2@1:CAIQACodChtycF9oOlN3X19xZmFNYkdFWTZ3ZlpJdGNqM2c%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21GWWFUUkRNM1ZCWmkxRGJIWlRTWFpPYVRWa1kzYxAB!2m1!1s0x0:0xa66e140b55d08b91!3m1!1s2@1:CAIQACodChtycF9oOmFYaTRDM3VBZi1DbHZTSXZOaTVkY3c%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkMFVETkRNMmxKVVdOUWNsZExZelpoZUhGRWNYYxAB!2m1!1s0x0:0xf41ed977b990df4a!3m1!1s2@1:CAIQACodChtycF9oOkd0UDNDM2lJUWNQcldLYzZheHFEcXc%7C%7C?hl=en",
@@ -479,16 +482,14 @@
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTURveExPUGFnEAE!2m1!1s0x0:0x1aa343ea3eb92075!3m1!1s2@1:CIHM0ogKEICAgMDoxLOPag%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTURvbUszaEZREAE!2m1!1s0x0:0x6c1da0d0e62c9fa7!3m1!1s2@1:CIHM0ogKEICAgMDomK3hFQ%7C%7C?hl=en",
       "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNvLVoyWHpnRRAB!2m1!1s0x0:0x469321afdfbc97af!3m1!1s2@1:CIHM0ogKEICAgMCo-Z2XzgE%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNvMmZLVGtBRRAB!2m1!1s0x0:0x6dcb9e6f48b87d07!3m1!1s2@1:CIHM0ogKEICAgMCo2fKTkAE%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNvOGJmRHNRRRAB!2m1!1s0x0:0x918f0f1bba8afba4!3m1!1s2@1:CIHM0ogKEICAgMCo8bfDsQE%7C%7C?hl=en",
-      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNvb2E3V29RRRAB!2m1!1s0x0:0x918f0f1bba8afba4!3m1!1s2@1:CIHM0ogKEICAgMCooa7WoQE%7C%7C?hl=en"
+      "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNvMmZLVGtBRRAB!2m1!1s0x0:0x6dcb9e6f48b87d07!3m1!1s2@1:CIHM0ogKEICAgMCo2fKTkAE%7C%7C?hl=en"
     ],
-    "generated_at_utc": "2026-10-07T02:59:14.052223+00:00",
+    "generated_at_utc": "2026-11-02T21:31:38.867235+00:00",
     "since_date": "2023-01-01",
-    "until_date": "2026-09-30",
+    "until_date": "2026-10-31",
     "collector_failures": [],
-    "existing_review_count": 668,
-    "new_reviews_added": 41,
+    "existing_review_count": 709,
+    "new_reviews_added": 10,
     "youtube_excluded": true,
     "usa_only": true,
     "english_only": true,
@@ -504,8 +505,7 @@
       "bbb.org"
     ],
     "geo_validation_counts": {
-      "google_business_us_profile": 32,
-      "birdeye_us_profile": 9
+      "birdeye_us_profile": 10
     },
     "geo_excluded_counts": {},
     "geo_excluded_examples": [],
@@ -527,8 +527,8 @@
         "name": "America's Auctions In Motion Thousand Oaks",
         "address": "889 Mitchell Rd, Thousand Oaks, CA 91320",
         "website": "https://www.americasaa.com/locations/thousand-oaks/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
-        "rating": 3.8,
-        "review_count": 73,
+        "rating": 3.9,
+        "review_count": 72,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -540,7 +540,7 @@
         "website": "https://www.americasaa.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 3.7,
         "review_count": 9,
-        "last_successful_scan_date": "2026-09-30"
+        "last_successful_scan_date": "2026-10-31"
       },
       {
         "feature_id": "0x864e83007896aa21:0x115c74ddcd117789",
@@ -551,7 +551,7 @@
         "website": "",
         "rating": null,
         "review_count": null,
-        "last_successful_scan_date": "2026-09-30"
+        "last_successful_scan_date": "2026-10-31"
       },
       {
         "feature_id": "0x88f279eb8fcbfff9:0xbecbdd5ed6e965ae",
@@ -572,7 +572,7 @@
         "address": "440 Joe Frank Harris Pkwy SE, Cartersville, GA 30120",
         "website": "https://www.americasaa.com/locations/atlanta/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 4.3,
-        "review_count": 374,
+        "review_count": 376,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -594,7 +594,7 @@
         "address": "16611 S I-35 Frontage Rd, Buda, TX 78610",
         "website": "https://www.americasaa.com/locations/austin/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 4.2,
-        "review_count": 280,
+        "review_count": 281,
         "last_successful_scan_date": "2026-08-31"
       },
       {
@@ -605,7 +605,7 @@
         "address": "3960 Blount Rd, Baton Rouge, LA 70807",
         "website": "https://www.americasaa.com/locations/baton-rouge/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 3.8,
-        "review_count": 166,
+        "review_count": 168,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -616,7 +616,7 @@
         "address": "1046 A E Moore Dr, Moody, AL 35004",
         "website": "https://www.americasaa.com/locations/birmingham/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 4.1,
-        "review_count": 296,
+        "review_count": 295,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -659,7 +659,7 @@
         "name": "America's Auto Auction Charleston",
         "address": "651 Precast Ln, Moncks Corner, SC 29461",
         "website": "https://www.americasaa.com/locations/charleston/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
-        "rating": 4.3,
+        "rating": 4.4,
         "review_count": 270,
         "last_successful_scan_date": "2026-09-30"
       },
@@ -671,7 +671,7 @@
         "address": "14001 Karlov Ave, Crestwood, IL 60445",
         "website": "https://www.americasaa.com/locations/chicago/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 3.8,
-        "review_count": 262,
+        "review_count": 261,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -693,7 +693,7 @@
         "address": "4700 Groveport Rd, Obetz, OH 43207",
         "website": "https://www.americasaa.com/locations/columbus-fair/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 3.9,
-        "review_count": 350,
+        "review_count": 353,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -703,8 +703,8 @@
         "name": "America's Auto Auction Corpus Christi",
         "address": "2149 IH-69 Access Rd, Robstown, TX 78380",
         "website": "https://www.corpuschristiautoauction.com/",
-        "rating": 3.9,
-        "review_count": 18,
+        "rating": 4.1,
+        "review_count": 17,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -715,7 +715,7 @@
         "address": "2149 Interstate Hwy 69 Acc Rd, Robstown, TX 78380",
         "website": "https://www.americasaa.com/locations/corpus-christi/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 4.2,
-        "review_count": 83,
+        "review_count": 81,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -726,7 +726,7 @@
         "address": "219 N Loop 12, Irving, TX 75061",
         "website": "https://www.americasaa.com/locations/dallas/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 4.1,
-        "review_count": 365,
+        "review_count": 366,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -737,7 +737,7 @@
         "address": "7175 York St, Denver, CO 80229",
         "website": "https://www.americasaa.com/locations/denver/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 4.2,
-        "review_count": 376,
+        "review_count": 377,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -747,8 +747,8 @@
         "name": "America's Auto Auction El Paso",
         "address": "7930 Artcraft Rd, El Paso, TX 79932",
         "website": "https://www.americasaa.com/locations/el-paso/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
-        "rating": 4.3,
-        "review_count": 79,
+        "rating": 4.2,
+        "review_count": 80,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -759,7 +759,7 @@
         "address": "12141 US-6, Corry, PA 16407",
         "website": "https://www.americasaa.com/locations/erie/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 4,
-        "review_count": 64,
+        "review_count": 65,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -769,8 +769,8 @@
         "name": "America's Auto Auction Greater Kalamazoo",
         "address": "900 US-131, Schoolcraft, MI 49087",
         "website": "https://www.americasaa.com/locations/greater-kalamazoo/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
-        "rating": 4,
-        "review_count": 184,
+        "rating": 4.1,
+        "review_count": 183,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -780,8 +780,8 @@
         "name": "America's Auto Auction Greater Peoria",
         "address": "410 Erie Ave, Morton, IL 61550",
         "website": "https://www.americasaa.com/locations/greater-peoria/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
-        "rating": 4.2,
-        "review_count": 112,
+        "rating": 4.3,
+        "review_count": 110,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -792,7 +792,7 @@
         "address": "2415 SC-101, Greer, SC 29651",
         "website": "https://www.americasaa.com/locations/greenville/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 4.3,
-        "review_count": 208,
+        "review_count": 210,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -803,7 +803,7 @@
         "address": "1100 S York St, Mechanicsburg, PA 17055",
         "website": "https://www.americasaa.com/locations/harrisburg/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 4.5,
-        "review_count": 263,
+        "review_count": 264,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -814,7 +814,7 @@
         "address": "1826 Almeda Genoa Rd, Houston, TX 77047",
         "website": "https://www.americasaa.com/locations/houston/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 4.2,
-        "review_count": 391,
+        "review_count": 396,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -825,7 +825,7 @@
         "address": "11982 New Kings Rd, Jacksonville, FL 32219",
         "website": "https://www.americasaa.com/locations/jacksonville/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 4.3,
-        "review_count": 167,
+        "review_count": 169,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -836,7 +836,7 @@
         "address": "11101 N Congress Ave, Kansas City, MO 64153",
         "website": "https://www.americasaa.com/locations/kansas-city/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 4.2,
-        "review_count": 341,
+        "review_count": 342,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -847,7 +847,7 @@
         "address": "1040 Commercial Ave, East Petersburg, PA 17520",
         "website": "https://www.americasaa.com/locations/lancaster/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 4.6,
-        "review_count": 204,
+        "review_count": 205,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -858,7 +858,7 @@
         "address": "3038 Losee Rd, North Las Vegas, NV 89030",
         "website": "https://www.americasaa.com/locations/las-vegas/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 4.3,
-        "review_count": 109,
+        "review_count": 110,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -868,8 +868,8 @@
         "name": "America's Auto Auction Lone Star Lubbock",
         "address": "2706 Slaton Rd, Lubbock, TX 79404",
         "website": "https://www.americasaa.com/locations/lone-star-lubbock/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
-        "rating": 4.3,
-        "review_count": 145,
+        "rating": 4.4,
+        "review_count": 144,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -880,7 +880,7 @@
         "address": "310 Bach Ave, New York Mills, MN 56567",
         "website": "https://www.americasaa.com/locations/minnesota/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 4.1,
-        "review_count": 62,
+        "review_count": 63,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -890,8 +890,8 @@
         "name": "America's Auto Auction New Jersey",
         "address": "1005 NJ-33, Freehold, NJ 07728",
         "website": "https://www.americasaa.com/locations/new-jersey/?utm_source=google&utm_medium=organic&utm_campaign",
-        "rating": 4.1,
-        "review_count": 80,
+        "rating": 4.2,
+        "review_count": 79,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -902,7 +902,7 @@
         "address": "18310 Wood-Scale Rd, Hammond, LA 70401",
         "website": "https://www.americasaa.com/locations/new-orleans/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 4.5,
-        "review_count": 109,
+        "review_count": 108,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -913,7 +913,7 @@
         "address": "10010 Main St, Dansville, NY 14437",
         "website": "https://www.americasaa.com/locations/new-york/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 4.5,
-        "review_count": 104,
+        "review_count": 102,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -924,7 +924,7 @@
         "address": "1440 FM 3083, Conroe, TX 77301",
         "website": "https://www.americasaa.com/locations/north-houston/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 4.5,
-        "review_count": 240,
+        "review_count": 238,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -935,7 +935,7 @@
         "address": "250 Dittmer Rd, Fairfield, CA 94534",
         "website": "https://www.americasaa.com/locations/northern-california/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 3.9,
-        "review_count": 110,
+        "review_count": 111,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -946,7 +946,7 @@
         "address": "66 N Mingo Rd, Tulsa, OK 74116",
         "website": "https://www.americasaa.com/locations/oklahoma/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 4.4,
-        "review_count": 299,
+        "review_count": 301,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -957,7 +957,7 @@
         "address": "6615 Mobile Hwy, Pensacola, FL 32526",
         "website": "https://www.americasaa.com/locations/pensacola/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 4.4,
-        "review_count": 71,
+        "review_count": 72,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -968,7 +968,7 @@
         "address": "1433 S 19th Ave, Phoenix, AZ 85009",
         "website": "https://www.americasaa.com/locations/phoenix/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 4.1,
-        "review_count": 248,
+        "review_count": 250,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -978,8 +978,8 @@
         "name": "America's Auto Auction Pittsburgh",
         "address": "55 E Buffalo Church Rd, Washington, PA 15301",
         "website": "https://www.americasaa.com/locations/pittsburgh/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
-        "rating": 4.1,
-        "review_count": 113,
+        "rating": 4.2,
+        "review_count": 112,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -990,7 +990,7 @@
         "address": "3600 Deepwater Terminal Rd, Richmond, VA 23234",
         "website": "https://www.americasaa.com/locations/richmond/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 3.9,
-        "review_count": 218,
+        "review_count": 216,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1001,7 +1001,7 @@
         "address": "13510 Toepperwein Rd, Live Oak, TX 78233",
         "website": "https://www.americasaa.com/locations/san-antonio/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 4.3,
-        "review_count": 319,
+        "review_count": 317,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1012,7 +1012,7 @@
         "address": "1712 Dean Forest Rd, Savannah, GA 31408",
         "website": "https://www.americasaa.com/locations/savannah/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 4.3,
-        "review_count": 227,
+        "review_count": 228,
         "last_successful_scan_date": "2026-08-31"
       },
       {
@@ -1023,7 +1023,7 @@
         "address": "8000 US-80, Shreveport, LA 71119",
         "website": "https://www.americasaa.com/locations/shreveport/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 4.5,
-        "review_count": 102,
+        "review_count": 103,
         "last_successful_scan_date": "2026-08-31"
       },
       {
@@ -1034,7 +1034,7 @@
         "address": "721 S 45th St, East St Louis, IL 62207",
         "website": "https://www.americasaa.com/locations/st-louis/",
         "rating": 4.3,
-        "review_count": 517,
+        "review_count": 510,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1045,7 +1045,7 @@
         "address": "9797 Fremont Pike, Perrysburg, OH 43551",
         "website": "https://www.americasaa.com/locations/toledo/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 3.9,
-        "review_count": 222,
+        "review_count": 221,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1067,7 +1067,7 @@
         "address": "656 S Military Hwy, Virginia Beach, VA 23464",
         "website": "https://www.americasaa.com/locations/virginia/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 4,
-        "review_count": 301,
+        "review_count": 302,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1078,8 +1078,18 @@
         "address": "4758 Division St, Wayland, MI 49348",
         "website": "https://www.americasaa.com/locations/west-michigan/?utm_source=google&utm_medium=organic&utm_campaign=gmb-westmichigan",
         "rating": 4.3,
-        "review_count": 262,
+        "review_count": 264,
         "last_successful_scan_date": "2026-09-30"
+      },
+      {
+        "feature_id": "0x8803f537e6e82373:0x10cd662169a7670a",
+        "cid": "1210736168525063946",
+        "place_id": "ChIJcyPo5jf1A4gRCmenaSFmzRA",
+        "name": "America's Auto Auction Wisconsin",
+        "address": "215 Pioneer Rd, North Fond Du Lac, WI 54937",
+        "website": "https://www.americasaa.com/locations/wisconsin/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
+        "rating": 4.1,
+        "review_count": 127
       },
       {
         "feature_id": "0x14e4bc8571e3bc0d:0x22b1961cddfc85d9",
@@ -1100,7 +1110,7 @@
         "address": "3010 Scherer Dr, St. Petersburg, FL 33716",
         "website": "https://www.americasaa.com/locations/tampa-bay/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
         "rating": 4.1,
-        "review_count": 178,
+        "review_count": 179,
         "last_successful_scan_date": "2026-09-30"
       },
       {
@@ -1117,6 +1127,36 @@
     ]
   },
   "reviews": [
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/americas-auto-auction-boston-175285312088477#review-1",
+      "author": "shay goncalves",
+      "review_date": "2026-10-31",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Big shout out to Harley he is awesome caring professional patient everything went fast I was in and out less than 10 minutes this guy deserves a raise awesome customer service and professionalism thanks again Harley for everything",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000710"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/americas-auto-auction-kansas-city-175285312126035#review-1",
+      "author": "Fab C",
+      "review_date": "2026-10-26",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Great front lines, but Arbitration and PSI are a joke. Do not trust buying online or green light even if you are on the line .... I want to start by saying the people on the front lines here are excellent. The front desk staff is great, friendly, and incredibly helpful. They also have the best sales team and fantastic workers out on the lines. However, the Arbitration and PSI departments make it impossible to trust buying online. I attend many different auctions, and this is by far the worst arbitration process of all the au... read more",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000711"
+    },
     {
       "source_website": "google.com",
       "source_label": "Google Business Profile (America's Auto Auction Lone Star Lubbock)",
@@ -1298,6 +1338,36 @@
       "id": "rvw-000680"
     },
     {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/americas-auto-auction-atlanta-175285312123278#review-5",
+      "author": "Raf",
+      "review_date": "2026-09-03",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "RIDICULOUS FIRST AUCTION I’VE BEEN TO THAT’S CHARGING ALMOST 5 TO $700 A CAR. I BOUGHT FIVE CARS AND THEY’RE CHARGING ME THREE GRAND JUST IN BUY FEES. THIS IS ABSURD. I DEAL WITH A LOT OF OPTIONS AND NEVER HAVE I CAME ACROSS THIS. I WOULD LIKE TO SPEAK TO MANAGEMENT OR THE OWNER.",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Rude/Unhelpful Support",
+      "id": "rvw-000712"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/americas-auto-auction-kansas-city-175285312126035#review-4",
+      "author": "ALRASHID",
+      "review_date": "2026-09-03",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "Great auction with a good selection of vehicles. The staff is professional,especially the front desk staff. the process is straightforward, and everything is well organized. I’ve always had a positive experience here and would recommend it to anyone looking for quality vehicles.",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000713"
+    },
+    {
       "source_website": "google.com",
       "source_label": "Google Business Profile (America's Auctions In Motion Thousand Oaks)",
       "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kwMmJtdzJZbE5aY0hwNFIyMUhPVVpFTUZCR1NuYxAB!2m1!1s0x0:0xf56bc5e71d5f7c65!3m1!1s2@1:CAIQACodChtycF9oOi02bmw2YlNZcHp4R21HOUZEMFBGSnc%7C%7C?hl=en",
@@ -1476,6 +1546,21 @@
       "tier2": "Third-Party Inspection Authorization & Scheduling",
       "tier3": "Previewing/ Inspecting Vehicles",
       "id": "rvw-000634"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/americas-auto-auction-boston-175285312088477#review-4",
+      "author": "mario gracas",
+      "review_date": "2026-08-04",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Worst auction I have been too. Aside from their hours being wrong on the website, there's a bunch of reasons why I don't go there anymore.",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-000714"
     },
     {
       "source_website": "birdeye.com",
@@ -2046,6 +2131,21 @@
       "tier2": "Agent Professionalism & Responsiveness",
       "tier3": "Helpful Support Experience",
       "id": "rvw-000117"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/americas-auto-auction-greater-kalamazoo-175285312088026#review-4",
+      "author": "Peter Schultz",
+      "review_date": "2026-06-05",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Friendly people, but astronomical fees. Paid $15100 for a green light gold certified car and ended up with an $845 fee including a $75 online bid fee. Really? Adesa only charges $50 for this ridiculous money grab! But the base fee was over $700 for a car that should have had a $550 fee anywhere else. So buyers, be ready to add a few hundred to your fees when bidding here.",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Membership / Licensing / Fees & Bidding Policies",
+      "tier2": "Bidding Process, Rules and Fees",
+      "tier3": "Fees",
+      "id": "rvw-000715"
     },
     {
       "source_website": "google.com",
@@ -4193,6 +4293,36 @@
       "id": "rvw-000200"
     },
     {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/americas-auto-auction-166658630045147#review-1",
+      "author": "bassheadtahoe",
+      "review_date": "2025-12-07",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "Its was either these people or the tow company that stole my multi thousand dollar audio system out of my car",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Tow and Storage Charges",
+      "tier3": "Tow and Storage Fees",
+      "id": "rvw-000716"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/americas-auto-auction-166658630045147#review-2",
+      "author": "T Ashford",
+      "review_date": "2025-12-07",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "I love the atmosphere, no hassle. Workers are friendly and very helpful. It's like one big family with the buyers and sellers. Hassle free and awesome selection of cars.",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000717"
+    },
+    {
       "source_website": "google.com",
       "source_label": "Google Business Profile (America's Auto Auction St. Louis)",
       "source_url": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tnMmRYSm5ObTFNT1VkRFVubDZUamxtYmpaZlZrRRAB!2m1!1s0x0:0xcd18b722b82b3068!3m1!1s2@1:CAIQACodChtycF9oOkg2dXJnNm1MOUdDUnl6TjlmbjZfVkE%7C%7C?hl=en",
@@ -4926,6 +5056,36 @@
       "tier2": "Pickup Order Management",
       "tier3": "Gate Pass Assistance",
       "id": "rvw-000044"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/americas-auto-auction-166658630045147#review-5",
+      "author": "Demetrius Smith",
+      "review_date": "2025-11-02",
+      "rating": null,
+      "sentiment": "positive",
+      "review_text": "I am a dealer and have been doing business with this auction for over 25 years before it was changed from tri state and the way I was treated by Julie K was not professional and very wrong I bout a car and sold it and and proof of sale and dated titled when sold she did not want to see it and barred my business from making any purchases and made me pay for tickets tickets that was caused by the buyer who bought the car and told me I responsible for someone else actions and wouldn't let me talk maria or Larry's she instructed... read more",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Customer Service & Communication",
+      "tier2": "Agent Professionalism & Responsiveness",
+      "tier3": "Helpful Support Experience",
+      "id": "rvw-000718"
+    },
+    {
+      "source_website": "birdeye.com",
+      "source_label": "Birdeye (Google)",
+      "source_url": "https://reviews.birdeye.com/americas-auto-auction-st-louis-165330156623701#review-2",
+      "author": "Dmitry M.",
+      "review_date": "2025-11-02",
+      "rating": null,
+      "sentiment": "negative",
+      "review_text": "That's an A+ service for the car pickup. They printed gate pass, gave me a ride to the car, jumpstarted and moved the car that blocked mine",
+      "geo_validation": "birdeye_us_profile",
+      "tier1": "Vehicle Pickup, Delivery and Scheduling",
+      "tier2": "Pickup Order Management",
+      "tier3": "Gate Pass Assistance",
+      "id": "rvw-000719"
     },
     {
       "source_website": "google.com",
